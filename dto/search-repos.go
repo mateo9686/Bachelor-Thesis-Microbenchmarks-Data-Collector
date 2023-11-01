@@ -1,6 +1,6 @@
 package dto
 
-import "repos-fetcher/model"
+import "microbenchmarks-data-collector/model"
 
 type SearchReposDto struct {
 	TotalCount int `json:"total_count"`

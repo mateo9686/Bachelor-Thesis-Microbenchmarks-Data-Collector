@@ -1,8 +1,8 @@
 package service
 
 import (
+	"microbenchmarks-data-collector/model"
 	"os"
-	"repos-fetcher/model"
 
 	"github.com/gocarina/gocsv"
 )

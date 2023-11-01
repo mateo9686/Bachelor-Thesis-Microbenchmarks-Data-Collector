@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"microbenchmarks-data-collector/config"
+	"microbenchmarks-data-collector/dto"
+	"microbenchmarks-data-collector/model"
 	"net/http"
 	"net/url"
-	"repos-fetcher/config"
-	"repos-fetcher/dto"
-	"repos-fetcher/model"
 	"time"
 )
 

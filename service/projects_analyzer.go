@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"microbenchmarks-data-collector/config"
+	"microbenchmarks-data-collector/model"
 	"os/exec"
-	"repos-fetcher/config"
-	"repos-fetcher/model"
 	"strings"
 	"sync"
 )

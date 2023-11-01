@@ -1,6 +1,6 @@
 package service
 
-import "repos-fetcher/model"
+import "microbenchmarks-data-collector/model"
 
 type GitReposSavingStrategy interface {
 	saveToFile(gitRepos []model.GitRepo, path string)

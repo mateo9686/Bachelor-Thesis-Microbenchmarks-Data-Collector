@@ -3,7 +3,7 @@ package service
 import (
 	"encoding/json"
 	"io/ioutil"
-	"repos-fetcher/model"
+	"microbenchmarks-data-collector/model"
 )
 
 type JsonGitReposReadWriteStrategy struct{}

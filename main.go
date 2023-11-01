@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 	"log"
+	"microbenchmarks-data-collector/config"
+	"microbenchmarks-data-collector/model"
+	"microbenchmarks-data-collector/service"
 	"os"
-	"repos-fetcher/config"
-	"repos-fetcher/model"
-	"repos-fetcher/service"
 	"strings"
 )
 
