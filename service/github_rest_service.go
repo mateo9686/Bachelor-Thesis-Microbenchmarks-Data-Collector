@@ -8,6 +8,7 @@ import (
 	"microbenchmarks-data-collector/config"
 	"microbenchmarks-data-collector/dto"
 	"microbenchmarks-data-collector/model"
+	"microbenchmarks-data-collector/strategies"
 	"net/http"
 	"net/url"
 	"time"
@@ -52,7 +53,7 @@ MainLoop:
 			remainingToClone = maxResultsCount
 		}
 	}
-	Save(repos, csvFilePath, CsvGitReposReadWriteStrategy{})
+	Save(repos, csvFilePath, strategies.CsvGitReposReadWriteStrategy{})
 	log.Printf("INFO: Data fetched and saved in %s", csvFilePath)
 }
 
@@ -131,10 +132,10 @@ func getRequestParameters(count, page int) url.Values {
 	return params
 }
 
-func Save(repos []model.GitRepo, path string, saver GitReposSavingStrategy) {
-	saver.saveToFile(repos, path)
+func Save(repos []model.GitRepo, path string, saver strategies.GitReposSavingStrategy) {
+	saver.SaveToFile(repos, path)
 }
 
-func Read(path string, target interface{}, reader GitReposReadingStrategy) {
-	reader.readFromFile(path, target)
+func Read(path string, target interface{}, reader strategies.GitReposReadingStrategy) {
+	reader.ReadFromFile(path, target)
 }

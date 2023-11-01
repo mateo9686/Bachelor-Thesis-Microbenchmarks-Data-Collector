@@ -1,4 +1,4 @@
-package service
+package strategies
 
 import (
 	"encoding/json"
@@ -8,7 +8,7 @@ import (
 
 type JsonGitReposReadWriteStrategy struct{}
 
-func (strategy JsonGitReposReadWriteStrategy) saveToFile(gitRepos []model.GitRepo, path string) {
+func (strategy JsonGitReposReadWriteStrategy) SaveToFile(gitRepos []model.GitRepo, path string) {
 	file, err := json.MarshalIndent(gitRepos, "", " ")
 	if err != nil {
 		panic(err)
@@ -16,4 +16,4 @@ func (strategy JsonGitReposReadWriteStrategy) saveToFile(gitRepos []model.GitRep
 	_ = ioutil.WriteFile("test.json", file, 0666)
 }
 
-func (strategy JsonGitReposReadWriteStrategy) readFromFile(path string, target interface{}) {}
+func (strategy JsonGitReposReadWriteStrategy) ReadFromFile(path string, target interface{}) {}

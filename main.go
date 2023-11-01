@@ -6,6 +6,7 @@ import (
 	"microbenchmarks-data-collector/config"
 	"microbenchmarks-data-collector/model"
 	"microbenchmarks-data-collector/service"
+	"microbenchmarks-data-collector/strategies"
 	"os"
 	"strings"
 )
@@ -23,7 +24,7 @@ func main() {
 	}
 
 	var gitRepos []model.GitRepo
-	service.Read(csvFilePath, &gitRepos, service.CsvGitReposReadWriteStrategy{})
+	service.Read(csvFilePath, &gitRepos, strategies.CsvGitReposReadWriteStrategy{})
 
 	var projectsInfo []model.GoProjectInfo
 	os.MkdirAll(config.ResultsPath, 0755)

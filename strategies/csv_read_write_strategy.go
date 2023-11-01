@@ -1,4 +1,4 @@
-package service
+package strategies
 
 import (
 	"microbenchmarks-data-collector/model"
@@ -9,7 +9,7 @@ import (
 
 type CsvGitReposReadWriteStrategy struct{}
 
-func (strategy CsvGitReposReadWriteStrategy) saveToFile(gitRepos []model.GitRepo, path string) {
+func (strategy CsvGitReposReadWriteStrategy) SaveToFile(gitRepos []model.GitRepo, path string) {
 	file, err := os.Create(path)
 	if err != nil {
 		panic(err)
@@ -17,7 +17,7 @@ func (strategy CsvGitReposReadWriteStrategy) saveToFile(gitRepos []model.GitRepo
 	gocsv.MarshalFile(&gitRepos, file)
 }
 
-func (strategy CsvGitReposReadWriteStrategy) readFromFile(path string, target interface{}) {
+func (strategy CsvGitReposReadWriteStrategy) ReadFromFile(path string, target interface{}) {
 	bytes, err := os.ReadFile(path)
 	if err != nil {
 		panic(err)
