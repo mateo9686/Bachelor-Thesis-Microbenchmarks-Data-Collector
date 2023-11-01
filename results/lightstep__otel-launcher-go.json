@@ -1,0 +1,379 @@
+{
+  "Name": "lightstep/otel-launcher-go",
+  "Path": "./repositories/lightstep__otel-launcher-go",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T18:49:22Z",
+    "benchmarkCount": 22,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 22,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/lightstep/otel-launcher-go/lightstep/sdk/internal",
+        "succeded": true,
+        "duration": "4.050s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkResourceUnequal-12",
+            "runs": 4471785,
+            "nsPerOp": 521.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResourceEqual-12",
+            "runs": 34498128,
+            "nsPerOp": 38.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkResourceUnequal",
+            "modificationCount": 1,
+            "createdOn": "2023-06-21",
+            "lastUpdateOn": "2023-06-21"
+          },
+          {
+            "name": "BenchmarkResourceEqual",
+            "modificationCount": 1,
+            "createdOn": "2023-06-21",
+            "lastUpdateOn": "2023-06-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lightstep/otel-launcher-go/lightstep/sdk/metric",
+        "succeded": true,
+        "duration": "36.112s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCounterAddNoAttrs-12",
+            "runs": 8095250,
+            "nsPerOp": 279.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSafe-12",
+            "runs": 1000000,
+            "nsPerOp": 1692,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSafeBypass-12",
+            "runs": 4853422,
+            "nsPerOp": 282.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrUnsafe-12",
+            "runs": 1673307,
+            "nsPerOp": 1366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrUnsafeBypass-12",
+            "runs": 2897503,
+            "nsPerOp": 498.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSliceReuseSafe-12",
+            "runs": 1000000,
+            "nsPerOp": 1377,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSliceReuseSafeBypass-12",
+            "runs": 5764062,
+            "nsPerOp": 222.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSliceReuseUnsafe-12",
+            "runs": 1000000,
+            "nsPerOp": 1657,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSliceReuseUnsafeBypass-12",
+            "runs": 6184015,
+            "nsPerOp": 202.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddOneInvalidAttr-12",
+            "runs": 436334,
+            "nsPerOp": 2641,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddManyAttrs-12",
+            "runs": 583749,
+            "nsPerOp": 2105,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddManyAttrsUnsafe-12",
+            "runs": 707563,
+            "nsPerOp": 1762,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddManyInvalidAttrs-12",
+            "runs": 482544,
+            "nsPerOp": 2718,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddManyInvalidAttrsUnsafe-12",
+            "runs": 442058,
+            "nsPerOp": 2711,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterAddManyFilteredAttrs-12",
+            "runs": 793263,
+            "nsPerOp": 1352,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterCollectOneAttrNoReuse-12",
+            "runs": 215454,
+            "nsPerOp": 5310,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterCollectOneAttrWithReuse-12",
+            "runs": 270674,
+            "nsPerOp": 4546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterCollectTenAttrs-12",
+            "runs": 77431,
+            "nsPerOp": 13638,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterCollectTenAttrsTenTimes-12",
+            "runs": 10000,
+            "nsPerOp": 140359,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCounterAddNoAttrs",
+            "modificationCount": 2,
+            "createdOn": "2022-05-23",
+            "lastUpdateOn": "2023-02-15"
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSafe",
+            "modificationCount": 4,
+            "createdOn": "2022-05-23",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSafeBypass",
+            "modificationCount": 2,
+            "createdOn": "2022-05-23",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrUnsafe",
+            "modificationCount": 2,
+            "createdOn": "2023-02-15",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrUnsafeBypass",
+            "modificationCount": 2,
+            "createdOn": "2023-02-15",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSliceReuseSafe",
+            "modificationCount": 2,
+            "createdOn": "2023-04-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSliceReuseSafeBypass",
+            "modificationCount": 2,
+            "createdOn": "2023-04-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSliceReuseUnsafe",
+            "modificationCount": 2,
+            "createdOn": "2023-04-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddOneAttrSliceReuseUnsafeBypass",
+            "modificationCount": 2,
+            "createdOn": "2023-04-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddOneInvalidAttr",
+            "modificationCount": 4,
+            "createdOn": "2022-05-23",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddManyAttrs",
+            "modificationCount": 3,
+            "createdOn": "2022-05-23",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddManyAttrsUnsafe",
+            "modificationCount": 2,
+            "createdOn": "2023-02-15",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddManyInvalidAttrs",
+            "modificationCount": 4,
+            "createdOn": "2022-09-12",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddManyInvalidAttrsUnsafe",
+            "modificationCount": 3,
+            "createdOn": "2022-09-12",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterAddManyFilteredAttrs",
+            "modificationCount": 3,
+            "createdOn": "2022-09-12",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterCollectOneAttrNoReuse",
+            "modificationCount": 3,
+            "createdOn": "2022-05-23",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterCollectOneAttrWithReuse",
+            "modificationCount": 3,
+            "createdOn": "2022-05-23",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterCollectTenAttrs",
+            "modificationCount": 3,
+            "createdOn": "2022-05-23",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkCounterCollectTenAttrsTenTimes",
+            "modificationCount": 3,
+            "createdOn": "2022-05-23",
+            "lastUpdateOn": "2023-05-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lightstep/otel-launcher-go/lightstep/sdk/metric/internal/doevery",
+        "succeded": true,
+        "duration": "1.850s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDoEvery-12",
+            "runs": 230721,
+            "nsPerOp": 7744,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDoEvery",
+            "modificationCount": 1,
+            "createdOn": "2022-09-01",
+            "lastUpdateOn": "2022-09-01"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "lightstep/otel-launcher-go",
+    "name": "otel-launcher-go",
+    "private": false,
+    "html_url": "https://github.com/lightstep/otel-launcher-go",
+    "description": "Launcher, a Lightstep Distro for OpenTelemetry Go 🚀",
+    "fork": false,
+    "created_at": "2020-06-22T23:29:58Z",
+    "updated_at": "2023-10-21T06:35:32Z",
+    "pushed_at": "2023-10-20T20:52:15Z",
+    "ssh_url": "git@github.com:lightstep/otel-launcher-go.git",
+    "stargazers_count": 102,
+    "watchers_count": 102,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 28,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 17,
+    "topics": [
+      "golang",
+      "opentelemetry"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 110,
+    "Lines": 20238,
+    "Blank": 2952,
+    "Code": 13820,
+    "Comment": 3466,
+    "Bytes": 613625,
+    "Complexity": 1237
+  }
+}

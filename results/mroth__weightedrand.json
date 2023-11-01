@@ -1,0 +1,997 @@
+{
+  "Name": "mroth/weightedrand",
+  "Path": "./repositories/mroth__weightedrand",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T10:50:14Z",
+    "benchmarkCount": 70,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 70,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/mroth/weightedrand/examples/compbench",
+        "succeded": true,
+        "duration": "66.790s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMultiple/size=1e1/concurrency=single/lib=randutil-12",
+            "runs": 1000000,
+            "nsPerOp": 1032,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e1/concurrency=single/lib=weightedrand-12",
+            "runs": 30647380,
+            "nsPerOp": 37.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e1/concurrency=parallel/lib=weightedrand-12",
+            "runs": 200130974,
+            "nsPerOp": 6.238,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e1/concurrency=parallel/lib=randutil-12",
+            "runs": 5516659,
+            "nsPerOp": 277.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e2/concurrency=single/lib=randutil-12",
+            "runs": 1000000,
+            "nsPerOp": 1311,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e2/concurrency=single/lib=weightedrand-12",
+            "runs": 18593871,
+            "nsPerOp": 65.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e2/concurrency=parallel/lib=weightedrand-12",
+            "runs": 126075680,
+            "nsPerOp": 9.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e2/concurrency=parallel/lib=randutil-12",
+            "runs": 4441748,
+            "nsPerOp": 271.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e3/concurrency=single/lib=randutil-12",
+            "runs": 466638,
+            "nsPerOp": 2539,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e3/concurrency=single/lib=weightedrand-12",
+            "runs": 15718705,
+            "nsPerOp": 72.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e3/concurrency=parallel/lib=weightedrand-12",
+            "runs": 79286169,
+            "nsPerOp": 14.52,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e3/concurrency=parallel/lib=randutil-12",
+            "runs": 1629912,
+            "nsPerOp": 752.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e4/concurrency=single/lib=randutil-12",
+            "runs": 127518,
+            "nsPerOp": 10470,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e4/concurrency=single/lib=weightedrand-12",
+            "runs": 10894161,
+            "nsPerOp": 98.49,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e4/concurrency=parallel/lib=weightedrand-12",
+            "runs": 91414021,
+            "nsPerOp": 16.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e4/concurrency=parallel/lib=randutil-12",
+            "runs": 634020,
+            "nsPerOp": 1865,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e5/concurrency=single/lib=randutil-12",
+            "runs": 13567,
+            "nsPerOp": 79721,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e5/concurrency=single/lib=weightedrand-12",
+            "runs": 7935493,
+            "nsPerOp": 134.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e5/concurrency=parallel/lib=weightedrand-12",
+            "runs": 61955840,
+            "nsPerOp": 18.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e5/concurrency=parallel/lib=randutil-12",
+            "runs": 75518,
+            "nsPerOp": 14983,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e6/concurrency=single/lib=randutil-12",
+            "runs": 501,
+            "nsPerOp": 2314795,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e6/concurrency=single/lib=weightedrand-12",
+            "runs": 2809284,
+            "nsPerOp": 453.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e6/concurrency=parallel/lib=weightedrand-12",
+            "runs": 8157780,
+            "nsPerOp": 142.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e6/concurrency=parallel/lib=randutil-12",
+            "runs": 918,
+            "nsPerOp": 1118084,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e7/concurrency=single/lib=randutil-12",
+            "runs": 39,
+            "nsPerOp": 28100618,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e7/concurrency=single/lib=weightedrand-12",
+            "runs": 1593697,
+            "nsPerOp": 729.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e7/concurrency=parallel/lib=weightedrand-12",
+            "runs": 11839430,
+            "nsPerOp": 95.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiple/size=1e7/concurrency=parallel/lib=randutil-12",
+            "runs": 112,
+            "nsPerOp": 9965249,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e1/lib=randutil-12",
+            "runs": 969552,
+            "nsPerOp": 1140,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e1/lib=weightedrand-12",
+            "runs": 2610236,
+            "nsPerOp": 543.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e2/lib=randutil-12",
+            "runs": 1000000,
+            "nsPerOp": 1162,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e2/lib=weightedrand-12",
+            "runs": 779176,
+            "nsPerOp": 1507,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e3/lib=randutil-12",
+            "runs": 396847,
+            "nsPerOp": 2588,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e3/lib=weightedrand-12",
+            "runs": 115468,
+            "nsPerOp": 9556,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e4/lib=randutil-12",
+            "runs": 120028,
+            "nsPerOp": 9165,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e4/lib=weightedrand-12",
+            "runs": 14932,
+            "nsPerOp": 85190,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e5/lib=randutil-12",
+            "runs": 14385,
+            "nsPerOp": 84207,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e5/lib=weightedrand-12",
+            "runs": 1412,
+            "nsPerOp": 888375,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e6/lib=randutil-12",
+            "runs": 482,
+            "nsPerOp": 2439393,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e6/lib=weightedrand-12",
+            "runs": 142,
+            "nsPerOp": 8395513,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e7/lib=randutil-12",
+            "runs": 27,
+            "nsPerOp": 70210116,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingle/size=1e7/lib=weightedrand-12",
+            "runs": 1,
+            "nsPerOp": 1013185870,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkMultiple",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkSingle",
+            "modificationCount": 3,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2023-08-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mroth/weightedrand/v2",
+        "succeded": true,
+        "duration": "64.916s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewChooser/size=1e1-12",
+            "runs": 1000000,
+            "nsPerOp": 1045,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChooser/size=1e2-12",
+            "runs": 310243,
+            "nsPerOp": 3825,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChooser/size=1e3-12",
+            "runs": 45272,
+            "nsPerOp": 27667,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChooser/size=1e4-12",
+            "runs": 5631,
+            "nsPerOp": 250917,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChooser/size=1e5-12",
+            "runs": 518,
+            "nsPerOp": 2457842,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChooser/size=1e6-12",
+            "runs": 58,
+            "nsPerOp": 23111369,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChooser/size=1e7-12",
+            "runs": 1,
+            "nsPerOp": 1046668909,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPick/size=1e1-12",
+            "runs": 22586347,
+            "nsPerOp": 64.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPick/size=1e2-12",
+            "runs": 21380158,
+            "nsPerOp": 54.52,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPick/size=1e3-12",
+            "runs": 15644918,
+            "nsPerOp": 74.49,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPick/size=1e4-12",
+            "runs": 13069414,
+            "nsPerOp": 90.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPick/size=1e5-12",
+            "runs": 6331299,
+            "nsPerOp": 189.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPick/size=1e6-12",
+            "runs": 2794699,
+            "nsPerOp": 628.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPick/size=1e7-12",
+            "runs": 1244085,
+            "nsPerOp": 952.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickParallel/size=1e1-12",
+            "runs": 205323902,
+            "nsPerOp": 7.028,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickParallel/size=1e2-12",
+            "runs": 113058435,
+            "nsPerOp": 11.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickParallel/size=1e3-12",
+            "runs": 100312171,
+            "nsPerOp": 12.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickParallel/size=1e4-12",
+            "runs": 81852816,
+            "nsPerOp": 14.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickParallel/size=1e5-12",
+            "runs": 51715916,
+            "nsPerOp": 20.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickParallel/size=1e6-12",
+            "runs": 23761168,
+            "nsPerOp": 51.49,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickParallel/size=1e7-12",
+            "runs": 12413512,
+            "nsPerOp": 100.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickSourceParallel/size=1e1-12",
+            "runs": 224535249,
+            "nsPerOp": 5.074,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickSourceParallel/size=1e2-12",
+            "runs": 162443893,
+            "nsPerOp": 7.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickSourceParallel/size=1e3-12",
+            "runs": 130807200,
+            "nsPerOp": 10.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickSourceParallel/size=1e4-12",
+            "runs": 96928982,
+            "nsPerOp": 11.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickSourceParallel/size=1e5-12",
+            "runs": 60534082,
+            "nsPerOp": 17.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickSourceParallel/size=1e6-12",
+            "runs": 24671610,
+            "nsPerOp": 47.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPickSourceParallel/size=1e7-12",
+            "runs": 11035702,
+            "nsPerOp": 113,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewChooser",
+            "modificationCount": 5,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkNewChooser",
+            "modificationCount": 5,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkNewChooser",
+            "modificationCount": 5,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkNewChooser",
+            "modificationCount": 5,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkNewChooser",
+            "modificationCount": 5,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkNewChooser",
+            "modificationCount": 5,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkNewChooser",
+            "modificationCount": 5,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPick",
+            "modificationCount": 7,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPick",
+            "modificationCount": 7,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPick",
+            "modificationCount": 7,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPick",
+            "modificationCount": 7,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPick",
+            "modificationCount": 7,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPick",
+            "modificationCount": 7,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPick",
+            "modificationCount": 7,
+            "createdOn": "2018-07-03",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickParallel",
+            "modificationCount": 5,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickParallel",
+            "modificationCount": 5,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickParallel",
+            "modificationCount": 5,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickParallel",
+            "modificationCount": 5,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickParallel",
+            "modificationCount": 5,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickParallel",
+            "modificationCount": 5,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickParallel",
+            "modificationCount": 5,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickSourceParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickSourceParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickSourceParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickSourceParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickSourceParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickSourceParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          },
+          {
+            "name": "BenchmarkPickSourceParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-08-13"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "mroth/weightedrand",
+    "name": "weightedrand",
+    "private": false,
+    "html_url": "https://github.com/mroth/weightedrand",
+    "description": ":balance_scale: Fast weighted random selection for Go",
+    "fork": false,
+    "created_at": "2018-07-03T20:11:35Z",
+    "updated_at": "2023-10-22T20:03:08Z",
+    "pushed_at": "2023-10-20T16:44:26Z",
+    "ssh_url": "git@github.com:mroth/weightedrand.git",
+    "stargazers_count": 344,
+    "watchers_count": 344,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 47,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 2,
+    "topics": [
+      "go",
+      "golang",
+      "random",
+      "sampling",
+      "weighted-random"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 5,
+    "Lines": 703,
+    "Blank": 78,
+    "Code": 526,
+    "Comment": 99,
+    "Bytes": 18937,
+    "Complexity": 84
+  }
+}

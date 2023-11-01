@@ -1,0 +1,2910 @@
+{
+  "Name": "cortexproject/cortex",
+  "Path": "./repositories/cortexproject__cortex",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T00:08:06Z",
+    "benchmarkCount": 206,
+    "benchmarkSuiteCount": 18,
+    "successfulBenchmarkCount": 194,
+    "successfulBenchmarkSuitesCount": 18,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/api",
+        "succeded": true,
+        "duration": "17.091s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Compression/gzip-100K-labels-12",
+            "runs": 52,
+            "nsPerOp": 37169931,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Compression/gzip-1M-labels-12",
+            "runs": 5,
+            "nsPerOp": 213641209,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Compression/gzip-10-labels-12",
+            "runs": 5610,
+            "nsPerOp": 182477,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Compression/gzip-100-labels-12",
+            "runs": 5017,
+            "nsPerOp": 261902,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Compression/gzip-1K-labels-12",
+            "runs": 1672,
+            "nsPerOp": 677725,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Compression/gzip-10K-labels-12",
+            "runs": 320,
+            "nsPerOp": 3252525,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Compression",
+            "modificationCount": 1,
+            "createdOn": "2023-05-15",
+            "lastUpdateOn": "2023-05-15"
+          },
+          {
+            "name": "Benchmark_Compression",
+            "modificationCount": 1,
+            "createdOn": "2023-05-15",
+            "lastUpdateOn": "2023-05-15"
+          },
+          {
+            "name": "Benchmark_Compression",
+            "modificationCount": 1,
+            "createdOn": "2023-05-15",
+            "lastUpdateOn": "2023-05-15"
+          },
+          {
+            "name": "Benchmark_Compression",
+            "modificationCount": 1,
+            "createdOn": "2023-05-15",
+            "lastUpdateOn": "2023-05-15"
+          },
+          {
+            "name": "Benchmark_Compression",
+            "modificationCount": 1,
+            "createdOn": "2023-05-15",
+            "lastUpdateOn": "2023-05-15"
+          },
+          {
+            "name": "Benchmark_Compression",
+            "modificationCount": 1,
+            "createdOn": "2023-05-15",
+            "lastUpdateOn": "2023-05-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/cortexpb",
+        "succeded": true,
+        "duration": "7.248s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromLabelAdaptersToLabelsWithCopy-12",
+            "runs": 4990446,
+            "nsPerOp": 215,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshallWriteRequest/no-pool-12",
+            "runs": 22732,
+            "nsPerOp": 49845,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshallWriteRequest/byte_pool-12",
+            "runs": 38110,
+            "nsPerOp": 34662,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshallWriteRequest/byte_and_write_pool-12",
+            "runs": 30532,
+            "nsPerOp": 36665,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromLabelAdaptersToLabelsWithCopy",
+            "modificationCount": 1,
+            "createdOn": "2021-02-15",
+            "lastUpdateOn": "2021-02-15"
+          },
+          {
+            "name": "BenchmarkMarshallWriteRequest",
+            "modificationCount": 1,
+            "createdOn": "2023-03-07",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkMarshallWriteRequest",
+            "modificationCount": 1,
+            "createdOn": "2023-03-07",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkMarshallWriteRequest",
+            "modificationCount": 1,
+            "createdOn": "2023-03-07",
+            "lastUpdateOn": "2023-03-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/distributor",
+        "succeded": false,
+        "duration": "34.333s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDistributor_Push/ingestion_rate_limit_reached-12",
+            "runs": 256,
+            "nsPerOp": 4197864,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistributor_Push/too_many_labels_limit_reached-12",
+            "runs": 568,
+            "nsPerOp": 1902819,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistributor_Push/max_label_name_length_limit_reached-12",
+            "runs": 134,
+            "nsPerOp": 8701469,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistributor_Push/max_label_value_length_limit_reached-12",
+            "runs": 283,
+            "nsPerOp": 3613653,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistributor_Push/max_label_size_bytes_per_series_limit_reached-12",
+            "runs": 298,
+            "nsPerOp": 4216002,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistributor_Push/timestamp_too_old-12",
+            "runs": 190,
+            "nsPerOp": 6448049,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistributor_Push/timestamp_too_new-12",
+            "runs": 297,
+            "nsPerOp": 17374070,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDistributor_Push",
+            "modificationCount": 12,
+            "createdOn": "2021-03-23",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "BenchmarkDistributor_Push",
+            "modificationCount": 12,
+            "createdOn": "2021-03-23",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "BenchmarkDistributor_Push",
+            "modificationCount": 12,
+            "createdOn": "2021-03-23",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "BenchmarkDistributor_Push",
+            "modificationCount": 12,
+            "createdOn": "2021-03-23",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "BenchmarkDistributor_Push",
+            "modificationCount": 12,
+            "createdOn": "2021-03-23",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "BenchmarkDistributor_Push",
+            "modificationCount": 12,
+            "createdOn": "2021-03-23",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "BenchmarkDistributor_Push",
+            "modificationCount": 12,
+            "createdOn": "2021-03-23",
+            "lastUpdateOn": "2023-04-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/ingester",
+        "succeded": false,
+        "duration": "222.941s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkActiveSeriesTest_single_series/50-12",
+            "runs": 17550252,
+            "nsPerOp": 71.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveSeriesTest_single_series/100-12",
+            "runs": 19943244,
+            "nsPerOp": 69.08,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveSeriesTest_single_series/500-12",
+            "runs": 17425830,
+            "nsPerOp": 65.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveSeries_UpdateSeries-12",
+            "runs": 1000000,
+            "nsPerOp": 5649,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveSeries_Purge_once-12",
+            "runs": 524,
+            "nsPerOp": 2262674,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveSeries_Purge_twice-12",
+            "runs": 715,
+            "nsPerOp": 1671312,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIngesterPush-12",
+            "runs": 1,
+            "nsPerOp": 1612461795,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-user_series_limit_reached,_scenario:_no_concurrency,_limits:_limits_set-12",
+            "runs": 286,
+            "nsPerOp": 6622381,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-user_series_limit_reached,_scenario:_no_concurrency,_limits:_no_limits-12",
+            "runs": 211,
+            "nsPerOp": 5930015,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-user_series_limit_reached,_scenario:_low_concurrency,_limits:_no_limits-12",
+            "runs": 12,
+            "nsPerOp": 125323896,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-user_series_limit_reached,_scenario:_low_concurrency,_limits:_limits_set-12",
+            "runs": 10,
+            "nsPerOp": 105329316,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-user_series_limit_reached,_scenario:_high_concurrency,_limits:_no_limits-12",
+            "runs": 1,
+            "nsPerOp": 1953586910,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-user_series_limit_reached,_scenario:_high_concurrency,_limits:_limits_set-12",
+            "runs": 1,
+            "nsPerOp": 1399697217,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-metric_series_limit_reached,_scenario:_no_concurrency,_limits:_no_limits-12",
+            "runs": 181,
+            "nsPerOp": 9450623,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-metric_series_limit_reached,_scenario:_no_concurrency,_limits:_limits_set-12",
+            "runs": 416,
+            "nsPerOp": 6791073,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-metric_series_limit_reached,_scenario:_low_concurrency,_limits:_no_limits-12",
+            "runs": 10,
+            "nsPerOp": 132399346,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-metric_series_limit_reached,_scenario:_low_concurrency,_limits:_limits_set-12",
+            "runs": 6,
+            "nsPerOp": 200924152,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-metric_series_limit_reached,_scenario:_high_concurrency,_limits:_no_limits-12",
+            "runs": 1,
+            "nsPerOp": 2856161071,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_per-metric_series_limit_reached,_scenario:_high_concurrency,_limits:_limits_set-12",
+            "runs": 1,
+            "nsPerOp": 2936544728,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_very_low_ingestion_rate_limit,_scenario:_no_concurrency,_limits:_limits_set",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "ingester_test.go:1390: unexpected error. expected: push rate reached actual: cannot push more samples: ingester's samples push rate limit reached"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_very_low_ingestion_rate_limit,_scenario:_low_concurrency,_limits:_limits_set",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "ingester_test.go:1390: unexpected error. expected: push rate reached actual: cannot push more samples: ingester's samples push rate limit reached"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_very_low_ingestion_rate_limit,_scenario:_high_concurrency,_limits:_limits_set",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "ingester_test.go:1390: unexpected error. expected: push rate reached actual: cannot push more samples: ingester's samples push rate limit reached"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_max_number_of_tenants_reached,_scenario:_low_concurrency,_limits:_limits_set-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_max_number_of_tenants_reached,_scenario:_high_concurrency,_limits:_limits_set-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_max_number_of_tenants_reached,_scenario:_no_concurrency,_limits:_limits_set-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_max_number_of_series_reached,_scenario:_no_concurrency,_limits:_limits_set-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_max_number_of_series_reached,_scenario:_low_concurrency,_limits:_limits_set-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_max_number_of_series_reached,_scenario:_high_concurrency,_limits:_limits_set-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_max_inflight_requests_reached,_scenario:_no_concurrency,_limits:_limits_set-12",
+            "runs": 439,
+            "nsPerOp": 4196021,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_max_inflight_requests_reached,_scenario:_low_concurrency,_limits:_limits_set-12",
+            "runs": 5,
+            "nsPerOp": 391439954,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_max_inflight_requests_reached,_scenario:_high_concurrency,_limits:_limits_set-12",
+            "runs": 1,
+            "nsPerOp": 2750393392,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_bound_samples,_scenario:_no_concurrency,_limits:_no_limits-12",
+            "runs": 171,
+            "nsPerOp": 8753982,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_bound_samples,_scenario:_no_concurrency,_limits:_limits_set-12",
+            "runs": 289,
+            "nsPerOp": 9154024,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_bound_samples,_scenario:_low_concurrency,_limits:_no_limits-12",
+            "runs": 10,
+            "nsPerOp": 104997727,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_bound_samples,_scenario:_low_concurrency,_limits:_limits_set-12",
+            "runs": 10,
+            "nsPerOp": 117142617,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_bound_samples,_scenario:_high_concurrency,_limits:_no_limits-12",
+            "runs": 1,
+            "nsPerOp": 1780380657,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_bound_samples,_scenario:_high_concurrency,_limits:_limits_set-12",
+            "runs": 1,
+            "nsPerOp": 1490834803,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_order_samples,_scenario:_no_concurrency,_limits:_no_limits-12",
+            "runs": 106,
+            "nsPerOp": 11888809,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_order_samples,_scenario:_no_concurrency,_limits:_limits_set-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_order_samples,_scenario:_low_concurrency,_limits:_no_limits-12",
+            "runs": 9,
+            "nsPerOp": 153238350,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_order_samples,_scenario:_low_concurrency,_limits:_limits_set-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_order_samples,_scenario:_high_concurrency,_limits:_limits_set",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "ingester_test.go:1319: unexpected error. expected: out of order sample actual: cannot push more samples: ingester's samples push rate limit reached"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError/failure:_out_of_order_samples,_scenario:_high_concurrency,_limits:_no_limits-12",
+            "runs": 1,
+            "nsPerOp": 2725233493,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ingester_MetricsForLabelMatchers-12",
+            "runs": 26,
+            "nsPerOp": 129817773,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIngester_QueryStream_Chunks-12",
+            "runs": 1329,
+            "nsPerOp": 891620,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkActiveSeriesTest_single_series",
+            "modificationCount": 1,
+            "createdOn": "2020-09-16",
+            "lastUpdateOn": "2020-09-16"
+          },
+          {
+            "name": "BenchmarkActiveSeriesTest_single_series",
+            "modificationCount": 1,
+            "createdOn": "2020-09-16",
+            "lastUpdateOn": "2020-09-16"
+          },
+          {
+            "name": "BenchmarkActiveSeriesTest_single_series",
+            "modificationCount": 1,
+            "createdOn": "2020-09-16",
+            "lastUpdateOn": "2020-09-16"
+          },
+          {
+            "name": "BenchmarkActiveSeries_UpdateSeries",
+            "modificationCount": 2,
+            "createdOn": "2020-09-16",
+            "lastUpdateOn": "2023-01-31"
+          },
+          {
+            "name": "BenchmarkActiveSeries_Purge_once",
+            "modificationCount": 1,
+            "createdOn": "2020-09-16",
+            "lastUpdateOn": "2020-09-16"
+          },
+          {
+            "name": "BenchmarkActiveSeries_Purge_twice",
+            "modificationCount": 1,
+            "createdOn": "2020-09-16",
+            "lastUpdateOn": "2020-09-16"
+          },
+          {
+            "name": "BenchmarkIngesterPush",
+            "modificationCount": 1,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2022-08-11"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_PushOnError",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2023-04-28"
+          },
+          {
+            "name": "Benchmark_Ingester_MetricsForLabelMatchers",
+            "modificationCount": 1,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2022-08-11"
+          },
+          {
+            "name": "BenchmarkIngester_QueryStream_Chunks",
+            "modificationCount": 2,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2022-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/ingester/client",
+        "succeded": true,
+        "duration": "2.441s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSeriesMap-12",
+            "runs": 8,
+            "nsPerOp": 219152586,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSeriesMap",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/querier",
+        "succeded": true,
+        "duration": "12.963s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_newBlockQuerierSeries-12",
+            "runs": 4843219,
+            "nsPerOp": 312.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_blockQuerierSeriesSet_iteration-12",
+            "runs": 1,
+            "nsPerOp": 2377031424,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBucketIndexBlocksFinder_GetBlocks-12",
+            "runs": 24145,
+            "nsPerOp": 48423,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_newBlockQuerierSeries",
+            "modificationCount": 3,
+            "createdOn": "2020-05-26",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "Benchmark_blockQuerierSeriesSet_iteration",
+            "modificationCount": 5,
+            "createdOn": "2020-05-29",
+            "lastUpdateOn": "2023-02-24"
+          },
+          {
+            "name": "BenchmarkBucketIndexBlocksFinder_GetBlocks",
+            "modificationCount": 3,
+            "createdOn": "2020-12-21",
+            "lastUpdateOn": "2021-02-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/querier/batch",
+        "succeded": true,
+        "duration": "102.546s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate/chunks:_1000_samples_per_chunk:_100_duplication_factor:_1_encoding:_PrometheusXorChunk-12",
+            "runs": 142,
+            "nsPerOp": 12248703,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate/chunks:_1000_samples_per_chunk:_100_duplication_factor:_3_encoding:_PrometheusXorChunk-12",
+            "runs": 27,
+            "nsPerOp": 50100192,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate/chunks:_100_samples_per_chunk:_100_duplication_factor:_1_encoding:_PrometheusXorChunk-12",
+            "runs": 1122,
+            "nsPerOp": 1143219,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate/chunks:_100_samples_per_chunk:_100_duplication_factor:_3_encoding:_PrometheusXorChunk-12",
+            "runs": 270,
+            "nsPerOp": 6682193,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate/chunks:_1_samples_per_chunk:_100_duplication_factor:_1_encoding:_PrometheusXorChunk-12",
+            "runs": 61748,
+            "nsPerOp": 17707,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate/chunks:_1_samples_per_chunk:_100_duplication_factor:_3_encoding:_PrometheusXorChunk-12",
+            "runs": 19364,
+            "nsPerOp": 67677,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_30s_seekStep:_15s-12",
+            "runs": 33,
+            "nsPerOp": 32526540,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_30s_seekStep:_30s-12",
+            "runs": 39,
+            "nsPerOp": 28116127,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_30s_seekStep:_60s-12",
+            "runs": 45,
+            "nsPerOp": 22551091,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_30s_seekStep:_300s-12",
+            "runs": 63,
+            "nsPerOp": 28861331,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_30s_seekStep:_900s-12",
+            "runs": 31,
+            "nsPerOp": 34682878,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_30s_seekStep:_1500s-12",
+            "runs": 15,
+            "nsPerOp": 69919521,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_30s_seekStep:_3000s-12",
+            "runs": 100,
+            "nsPerOp": 19840537,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_30s_seekStep:_6000s-12",
+            "runs": 175,
+            "nsPerOp": 5959045,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_10s_seekStep:_5s-12",
+            "runs": 27,
+            "nsPerOp": 43520851,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_10s_seekStep:_10s-12",
+            "runs": 44,
+            "nsPerOp": 44468041,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_10s_seekStep:_20s-12",
+            "runs": 42,
+            "nsPerOp": 94823381,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_10s_seekStep:_100s-12",
+            "runs": 16,
+            "nsPerOp": 101722690,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_10s_seekStep:_300s-12",
+            "runs": 21,
+            "nsPerOp": 63965618,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_10s_seekStep:_500s-12",
+            "runs": 21,
+            "nsPerOp": 69475853,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_10s_seekStep:_1000s-12",
+            "runs": 49,
+            "nsPerOp": 60820814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek/scrapeInterval_10s_seekStep:_2000s-12",
+            "runs": 100,
+            "nsPerOp": 10393872,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate",
+            "modificationCount": 6,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate",
+            "modificationCount": 6,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate",
+            "modificationCount": 6,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate",
+            "modificationCount": 6,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate",
+            "modificationCount": 6,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_CreateAndIterate",
+            "modificationCount": 6,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkNewChunkMergeIterator_Seek",
+            "modificationCount": 1,
+            "createdOn": "2023-03-29",
+            "lastUpdateOn": "2023-03-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/querier/tripperware/instantquery",
+        "succeded": true,
+        "duration": "23.182s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Decode/100_samples-12",
+            "runs": 2619,
+            "nsPerOp": 978313,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Decode/1000_samples-12",
+            "runs": 531,
+            "nsPerOp": 2073198,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Decode/10000_samples-12",
+            "runs": 55,
+            "nsPerOp": 22359427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Decode/100000_samples-12",
+            "runs": 4,
+            "nsPerOp": 388573531,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Decode/1000000_samples-12",
+            "runs": 1,
+            "nsPerOp": 2719518457,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Decode",
+            "modificationCount": 1,
+            "createdOn": "2023-05-17",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "Benchmark_Decode",
+            "modificationCount": 1,
+            "createdOn": "2023-05-17",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "Benchmark_Decode",
+            "modificationCount": 1,
+            "createdOn": "2023-05-17",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "Benchmark_Decode",
+            "modificationCount": 1,
+            "createdOn": "2023-05-17",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "Benchmark_Decode",
+            "modificationCount": 1,
+            "createdOn": "2023-05-17",
+            "lastUpdateOn": "2023-05-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/querier/tripperware/queryrange",
+        "succeded": true,
+        "duration": "6.699s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPrometheusCodec_DecodeResponse-12",
+            "runs": 5,
+            "nsPerOp": 205539098,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrometheusCodec_EncodeResponse-12",
+            "runs": 3,
+            "nsPerOp": 447692997,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPrometheusCodec_DecodeResponse",
+            "modificationCount": 7,
+            "createdOn": "2019-01-01",
+            "lastUpdateOn": "2022-09-08"
+          },
+          {
+            "name": "BenchmarkPrometheusCodec_EncodeResponse",
+            "modificationCount": 3,
+            "createdOn": "2019-01-01",
+            "lastUpdateOn": "2021-03-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/ring",
+        "succeded": true,
+        "duration": "617.667s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBatch10x100-12",
+            "runs": 3154,
+            "nsPerOp": 459601,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBatch100x100-12",
+            "runs": 1555,
+            "nsPerOp": 677480,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBatch100x1000-12",
+            "runs": 217,
+            "nsPerOp": 5466478,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_1,_num_tokens_=_128,_update_tokens_=_false-12",
+            "runs": 8295,
+            "nsPerOp": 144524,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_1,_num_tokens_=_128,_update_tokens_=_true-12",
+            "runs": 328,
+            "nsPerOp": 3859992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_1,_num_tokens_=_256,_update_tokens_=_false-12",
+            "runs": 7543,
+            "nsPerOp": 151366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_1,_num_tokens_=_256,_update_tokens_=_true-12",
+            "runs": 188,
+            "nsPerOp": 7711766,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_1,_num_tokens_=_512,_update_tokens_=_false-12",
+            "runs": 7414,
+            "nsPerOp": 156020,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_1,_num_tokens_=_512,_update_tokens_=_true-12",
+            "runs": 91,
+            "nsPerOp": 21150241,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_3,_num_tokens_=_128,_update_tokens_=_false-12",
+            "runs": 7338,
+            "nsPerOp": 161558,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_3,_num_tokens_=_128,_update_tokens_=_true-12",
+            "runs": 370,
+            "nsPerOp": 3128268,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_3,_num_tokens_=_256,_update_tokens_=_false-12",
+            "runs": 6865,
+            "nsPerOp": 305081,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_3,_num_tokens_=_256,_update_tokens_=_true-12",
+            "runs": 85,
+            "nsPerOp": 14195608,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_3,_num_tokens_=_512,_update_tokens_=_false-12",
+            "runs": 7190,
+            "nsPerOp": 159059,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_50,_num_zones_=_3,_num_tokens_=_512,_update_tokens_=_true-12",
+            "runs": 82,
+            "nsPerOp": 14110775,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_1,_num_tokens_=_128,_update_tokens_=_false-12",
+            "runs": 3783,
+            "nsPerOp": 376029,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_1,_num_tokens_=_128,_update_tokens_=_true-12",
+            "runs": 123,
+            "nsPerOp": 11069040,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_1,_num_tokens_=_256,_update_tokens_=_false-12",
+            "runs": 2952,
+            "nsPerOp": 368870,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_1,_num_tokens_=_256,_update_tokens_=_true-12",
+            "runs": 62,
+            "nsPerOp": 17860775,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_1,_num_tokens_=_512,_update_tokens_=_false-12",
+            "runs": 2648,
+            "nsPerOp": 525540,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_1,_num_tokens_=_512,_update_tokens_=_true-12",
+            "runs": 24,
+            "nsPerOp": 50888379,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_3,_num_tokens_=_128,_update_tokens_=_false-12",
+            "runs": 3350,
+            "nsPerOp": 313499,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_3,_num_tokens_=_128,_update_tokens_=_true-12",
+            "runs": 165,
+            "nsPerOp": 20375327,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_3,_num_tokens_=_256,_update_tokens_=_false-12",
+            "runs": 2940,
+            "nsPerOp": 610054,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_3,_num_tokens_=_256,_update_tokens_=_true-12",
+            "runs": 22,
+            "nsPerOp": 66469526,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_3,_num_tokens_=_512,_update_tokens_=_false-12",
+            "runs": 2712,
+            "nsPerOp": 408802,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_100,_num_zones_=_3,_num_tokens_=_512,_update_tokens_=_true-12",
+            "runs": 30,
+            "nsPerOp": 49417301,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_1,_num_tokens_=_128,_update_tokens_=_false-12",
+            "runs": 579,
+            "nsPerOp": 3104990,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_1,_num_tokens_=_128,_update_tokens_=_true-12",
+            "runs": 15,
+            "nsPerOp": 66823702,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_1,_num_tokens_=_256,_update_tokens_=_false-12",
+            "runs": 504,
+            "nsPerOp": 2113708,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_1,_num_tokens_=_256,_update_tokens_=_true-12",
+            "runs": 4,
+            "nsPerOp": 313336721,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_1,_num_tokens_=_512,_update_tokens_=_false-12",
+            "runs": 433,
+            "nsPerOp": 2422028,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_1,_num_tokens_=_512,_update_tokens_=_true-12",
+            "runs": 6,
+            "nsPerOp": 199693102,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_3,_num_tokens_=_128,_update_tokens_=_false-12",
+            "runs": 672,
+            "nsPerOp": 2080841,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_3,_num_tokens_=_128,_update_tokens_=_true-12",
+            "runs": 26,
+            "nsPerOp": 50416765,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_3,_num_tokens_=_256,_update_tokens_=_false-12",
+            "runs": 669,
+            "nsPerOp": 1597257,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_3,_num_tokens_=_256,_update_tokens_=_true-12",
+            "runs": 2,
+            "nsPerOp": 839533550,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_3,_num_tokens_=_512,_update_tokens_=_false-12",
+            "runs": 463,
+            "nsPerOp": 3626941,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateRingState/num_instances_=_500,_num_zones_=_3,_num_tokens_=_512,_update_tokens_=_true-12",
+            "runs": 6,
+            "nsPerOp": 209288747,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_50,_num_zones_=_1,_shard_size_=_3-12",
+            "runs": 22266,
+            "nsPerOp": 62048,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_50,_num_zones_=_1,_shard_size_=_10-12",
+            "runs": 5182,
+            "nsPerOp": 276337,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_50,_num_zones_=_1,_shard_size_=_30-12",
+            "runs": 1462,
+            "nsPerOp": 847005,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_50,_num_zones_=_3,_shard_size_=_3-12",
+            "runs": 10000,
+            "nsPerOp": 128106,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_50,_num_zones_=_3,_shard_size_=_10-12",
+            "runs": 3188,
+            "nsPerOp": 418952,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_50,_num_zones_=_3,_shard_size_=_30-12",
+            "runs": 1771,
+            "nsPerOp": 801291,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_100,_num_zones_=_1,_shard_size_=_3-12",
+            "runs": 24001,
+            "nsPerOp": 63431,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_100,_num_zones_=_1,_shard_size_=_10-12",
+            "runs": 6622,
+            "nsPerOp": 219339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_100,_num_zones_=_1,_shard_size_=_30-12",
+            "runs": 1915,
+            "nsPerOp": 748399,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_100,_num_zones_=_3,_shard_size_=_3-12",
+            "runs": 16684,
+            "nsPerOp": 73335,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_100,_num_zones_=_3,_shard_size_=_10-12",
+            "runs": 6135,
+            "nsPerOp": 423996,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_100,_num_zones_=_3,_shard_size_=_30-12",
+            "runs": 1114,
+            "nsPerOp": 1687278,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_1000,_num_zones_=_1,_shard_size_=_3-12",
+            "runs": 14859,
+            "nsPerOp": 190422,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_1000,_num_zones_=_1,_shard_size_=_10-12",
+            "runs": 4960,
+            "nsPerOp": 330590,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_1000,_num_zones_=_1,_shard_size_=_30-12",
+            "runs": 1416,
+            "nsPerOp": 1095823,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_1000,_num_zones_=_3,_shard_size_=_3-12",
+            "runs": 10699,
+            "nsPerOp": 128301,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_1000,_num_zones_=_3,_shard_size_=_10-12",
+            "runs": 4534,
+            "nsPerOp": 336899,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard/num_instances_=_1000,_num_zones_=_3,_shard_size_=_30-12",
+            "runs": 1514,
+            "nsPerOp": 705693,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_50,_num_zones_=_1,_shard_size_=_3-12",
+            "runs": 4884078,
+            "nsPerOp": 244.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_50,_num_zones_=_1,_shard_size_=_10-12",
+            "runs": 1958272,
+            "nsPerOp": 814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_50,_num_zones_=_1,_shard_size_=_30-12",
+            "runs": 608239,
+            "nsPerOp": 3877,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_50,_num_zones_=_3,_shard_size_=_3-12",
+            "runs": 3010903,
+            "nsPerOp": 483.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_50,_num_zones_=_3,_shard_size_=_10-12",
+            "runs": 399111,
+            "nsPerOp": 2673,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_50,_num_zones_=_3,_shard_size_=_30-12",
+            "runs": 472422,
+            "nsPerOp": 3689,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_100,_num_zones_=_1,_shard_size_=_3-12",
+            "runs": 3566065,
+            "nsPerOp": 412,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_100,_num_zones_=_1,_shard_size_=_10-12",
+            "runs": 1000000,
+            "nsPerOp": 1058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_100,_num_zones_=_1,_shard_size_=_30-12",
+            "runs": 492225,
+            "nsPerOp": 2500,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_100,_num_zones_=_3,_shard_size_=_3-12",
+            "runs": 4574574,
+            "nsPerOp": 253.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_100,_num_zones_=_3,_shard_size_=_10-12",
+            "runs": 1574491,
+            "nsPerOp": 862.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_100,_num_zones_=_3,_shard_size_=_30-12",
+            "runs": 584492,
+            "nsPerOp": 1989,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_1000,_num_zones_=_1,_shard_size_=_3-12",
+            "runs": 4374625,
+            "nsPerOp": 258.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_1000,_num_zones_=_1,_shard_size_=_10-12",
+            "runs": 1989830,
+            "nsPerOp": 592.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_1000,_num_zones_=_1,_shard_size_=_30-12",
+            "runs": 722530,
+            "nsPerOp": 1585,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_1000,_num_zones_=_3,_shard_size_=_3-12",
+            "runs": 4780887,
+            "nsPerOp": 245.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_1000,_num_zones_=_3,_shard_size_=_10-12",
+            "runs": 1000000,
+            "nsPerOp": 1188,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached/num_instances_=_1000,_num_zones_=_3,_shard_size_=_30-12",
+            "runs": 520224,
+            "nsPerOp": 2649,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard_512Tokens-12",
+            "runs": 1905,
+            "nsPerOp": 727880,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRing_Get-12",
+            "runs": 217882,
+            "nsPerOp": 6380,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBatch10x100",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkBatch100x100",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkBatch100x1000",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkUpdateRingState",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShardCached",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_ShuffleShard_512Tokens",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRing_Get",
+            "modificationCount": 2,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2023-01-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/ring/bench",
+        "succeded": true,
+        "duration": "2.859s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMemberlistReceiveWithRingDesc-12",
+            "runs": 99266,
+            "nsPerOp": 10503,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMemberlistReceiveWithRingDesc",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/scheduler/queue",
+        "succeded": true,
+        "duration": "9.144s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetNextRequest-12",
+            "runs": 7771,
+            "nsPerOp": 158167,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueueRequest-12",
+            "runs": 4059,
+            "nsPerOp": 311976,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetNextRequest",
+            "modificationCount": 5,
+            "createdOn": "2020-11-09",
+            "lastUpdateOn": "2022-12-09"
+          },
+          {
+            "name": "BenchmarkQueueRequest",
+            "modificationCount": 5,
+            "createdOn": "2020-11-09",
+            "lastUpdateOn": "2022-12-09"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/storage/tsdb/bucketindex",
+        "succeded": true,
+        "duration": "3.841s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadIndex-12",
+            "runs": 339,
+            "nsPerOp": 3922088,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadIndex",
+            "modificationCount": 5,
+            "createdOn": "2020-12-09",
+            "lastUpdateOn": "2022-05-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/storegateway",
+        "succeded": true,
+        "duration": "17.867s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMetricsCollections10-12",
+            "runs": 417,
+            "nsPerOp": 2905449,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricsCollections100-12",
+            "runs": 33,
+            "nsPerOp": 47374857,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricsCollections1000-12",
+            "runs": 3,
+            "nsPerOp": 365199385,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricsCollections10000-12",
+            "runs": 1,
+            "nsPerOp": 3469746956,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMetricsCollections10",
+            "modificationCount": 1,
+            "createdOn": "2020-01-21",
+            "lastUpdateOn": "2020-01-21"
+          },
+          {
+            "name": "BenchmarkMetricsCollections100",
+            "modificationCount": 1,
+            "createdOn": "2020-01-21",
+            "lastUpdateOn": "2020-01-21"
+          },
+          {
+            "name": "BenchmarkMetricsCollections1000",
+            "modificationCount": 1,
+            "createdOn": "2020-01-21",
+            "lastUpdateOn": "2020-01-21"
+          },
+          {
+            "name": "BenchmarkMetricsCollections10000",
+            "modificationCount": 1,
+            "createdOn": "2020-01-21",
+            "lastUpdateOn": "2020-01-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/util",
+        "succeded": true,
+        "duration": "247.506s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp/0-12",
+            "runs": 61505737,
+            "nsPerOp": 20.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp/5-12",
+            "runs": 4173512,
+            "nsPerOp": 296.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp/10-12",
+            "runs": 2747947,
+            "nsPerOp": 425.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp/25-12",
+            "runs": 2413173,
+            "nsPerOp": 448.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp/50-12",
+            "runs": 22797045,
+            "nsPerOp": 371.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp/100-12",
+            "runs": 3083162,
+            "nsPerOp": 438.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge/0-12",
+            "runs": 48121473,
+            "nsPerOp": 22.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge/5-12",
+            "runs": 1374108,
+            "nsPerOp": 879.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge/10-12",
+            "runs": 35634225,
+            "nsPerOp": 107.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge/25-12",
+            "runs": 1000000,
+            "nsPerOp": 9347,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge/50-12",
+            "runs": 5839413,
+            "nsPerOp": 35379,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge/100-12",
+            "runs": 26120,
+            "nsPerOp": 58754,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetMetricsWithLabelNames-12",
+            "runs": 1533,
+            "nsPerOp": 1047403,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetLabels_SmallSet-12",
+            "runs": 165494,
+            "nsPerOp": 7070,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetLabels_MediumSet-12",
+            "runs": 476,
+            "nsPerOp": 2336036,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_UpdateUserTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkActiveUsers_Purge",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkGetMetricsWithLabelNames",
+            "modificationCount": 1,
+            "createdOn": "2021-04-29",
+            "lastUpdateOn": "2021-04-29"
+          },
+          {
+            "name": "BenchmarkGetLabels_SmallSet",
+            "modificationCount": 1,
+            "createdOn": "2021-02-25",
+            "lastUpdateOn": "2021-02-25"
+          },
+          {
+            "name": "BenchmarkGetLabels_MediumSet",
+            "modificationCount": 1,
+            "createdOn": "2021-02-25",
+            "lastUpdateOn": "2021-02-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/util/grpcencoding",
+        "succeded": true,
+        "duration": "9.096s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCompress/snappy-12",
+            "runs": 439032,
+            "nsPerOp": 3079,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompress/snappy-block-12",
+            "runs": 502518,
+            "nsPerOp": 2093,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompress/zstd-12",
+            "runs": 148215,
+            "nsPerOp": 7794,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecompress/snappy-12",
+            "runs": 74487,
+            "nsPerOp": 15524,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecompress/snappy-block-12",
+            "runs": 119575,
+            "nsPerOp": 14518,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecompress/zstd-12",
+            "runs": 44510,
+            "nsPerOp": 27603,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCompress",
+            "modificationCount": 2,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-05-10"
+          },
+          {
+            "name": "BenchmarkCompress",
+            "modificationCount": 2,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-05-10"
+          },
+          {
+            "name": "BenchmarkCompress",
+            "modificationCount": 2,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-05-10"
+          },
+          {
+            "name": "BenchmarkDecompress",
+            "modificationCount": 1,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-03-22"
+          },
+          {
+            "name": "BenchmarkDecompress",
+            "modificationCount": 1,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-03-22"
+          },
+          {
+            "name": "BenchmarkDecompress",
+            "modificationCount": 1,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-03-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/util/limiter",
+        "succeded": true,
+        "duration": "6.186s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkQueryLimiter_AddSeries-12",
+            "runs": 23079,
+            "nsPerOp": 51460,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryLimiter_AddSeriesBatch-12",
+            "runs": 53680,
+            "nsPerOp": 29345,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRateLimiter_CustomMultiTenant-12",
+            "runs": 12252400,
+            "nsPerOp": 95.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRateLimiter_OriginalSingleTenant-12",
+            "runs": 17469259,
+            "nsPerOp": 69.46,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkQueryLimiter_AddSeries",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkQueryLimiter_AddSeriesBatch",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkRateLimiter_CustomMultiTenant",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          },
+          {
+            "name": "BenchmarkRateLimiter_OriginalSingleTenant",
+            "modificationCount": 1,
+            "createdOn": "2022-01-13",
+            "lastUpdateOn": "2022-01-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cortexproject/cortex/pkg/util/log",
+        "succeded": true,
+        "duration": "3.140s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDisallowedLogLevels-12",
+            "runs": 777164,
+            "nsPerOp": 1647,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDisallowedLogLevels",
+            "modificationCount": 1,
+            "createdOn": "2023-05-10",
+            "lastUpdateOn": "2023-05-10"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "cortexproject/cortex",
+    "name": "cortex",
+    "private": false,
+    "html_url": "https://github.com/cortexproject/cortex",
+    "description": "A horizontally scalable, highly available, multi-tenant, long term Prometheus.",
+    "fork": false,
+    "created_at": "2016-09-09T11:23:12Z",
+    "updated_at": "2023-10-23T03:25:03Z",
+    "pushed_at": "2023-10-23T18:17:13Z",
+    "ssh_url": "git@github.com:cortexproject/cortex.git",
+    "homepage": "https://cortexmetrics.io/",
+    "stargazers_count": 5232,
+    "watchers_count": 5232,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": true,
+    "has_discussions": true,
+    "forks": 770,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 198,
+    "topics": [
+      "cncf",
+      "hacktoberfest",
+      "kubernetes",
+      "monitoring",
+      "prometheus"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 5710,
+    "Lines": 1787871,
+    "Blank": 180540,
+    "Code": 1350917,
+    "Comment": 256414,
+    "Bytes": 60247982,
+    "Complexity": 226482
+  }
+}

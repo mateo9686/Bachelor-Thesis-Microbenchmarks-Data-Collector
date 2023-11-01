@@ -1,0 +1,2043 @@
+{
+  "Name": "rudderlabs/rudder-server",
+  "Path": "./repositories/rudderlabs__rudder-server",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T22:02:37Z",
+    "benchmarkCount": 141,
+    "benchmarkSuiteCount": 14,
+    "successfulBenchmarkCount": 133,
+    "successfulBenchmarkSuitesCount": 14,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/archiver",
+        "succeded": true,
+        "duration": "279.450s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkArchiverIsolation/numWorkspaces:_25_-_numSourcePerWorkspace:_4_-_numJobsPerSource:_1000_-_totalJobs:_100000-12",
+            "runs": 1,
+            "nsPerOp": 70209774216,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArchiverIsolation/numWorkspaces:_100_-_numSourcePerWorkspace:_5_-_numJobsPerSource:_1000_-_totalJobs:_500000-12",
+            "runs": 1,
+            "nsPerOp": 208436131435,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkArchiverIsolation",
+            "modificationCount": 1,
+            "createdOn": "2023-08-17",
+            "lastUpdateOn": "2023-08-17"
+          },
+          {
+            "name": "BenchmarkArchiverIsolation",
+            "modificationCount": 1,
+            "createdOn": "2023-08-17",
+            "lastUpdateOn": "2023-08-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/enterprise/reporting",
+        "succeded": true,
+        "duration": "0.598s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJsonNestedSearch/JsonNested_used_fn-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.04285,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJsonNestedSearch",
+            "modificationCount": 2,
+            "createdOn": "2022-11-07",
+            "lastUpdateOn": "2023-06-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/event-schema",
+        "succeded": true,
+        "duration": "6.469s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEventSchemaHandleEvent-12",
+            "runs": 1,
+            "nsPerOp": 6383196462,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEventSchemaHandleEvent",
+            "modificationCount": 2,
+            "createdOn": "2020-11-11",
+            "lastUpdateOn": "2022-08-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/gateway/internal/bot",
+        "succeded": true,
+        "duration": "3.097s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIsBotUserAgent/Complex_User_Agent-12",
+            "runs": 59500,
+            "nsPerOp": 22102,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsBotUserAgent/Simple_User_Agent-12",
+            "runs": 3938829,
+            "nsPerOp": 317.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIsBotUserAgent",
+            "modificationCount": 1,
+            "createdOn": "2023-06-16",
+            "lastUpdateOn": "2023-06-16"
+          },
+          {
+            "name": "BenchmarkIsBotUserAgent",
+            "modificationCount": 1,
+            "createdOn": "2023-06-16",
+            "lastUpdateOn": "2023-06-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/jobsdb",
+        "succeded": false,
+        "duration": "48.801s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJobsdb/store_and_consume_10000_jobs_using_16_stream(s)_with_reader_writer_queues-12",
+            "runs": 1,
+            "nsPerOp": 6457031893,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJobsdb/store_and_consume_10000_jobs_using_16_stream(s)_without_reader_writer_queues-12",
+            "runs": 1,
+            "nsPerOp": 5105902109,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJobsdb/store_and_consume_10000_jobs_using_64_stream(s)_with_reader_writer_queues-12",
+            "runs": 1,
+            "nsPerOp": 4432973849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJobsdb/store_and_consume_10000_jobs_using_64_stream(s)_without_reader_writer_queues-12",
+            "runs": 1,
+            "nsPerOp": 2815570498,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJobsdb/store_and_consume_10000_jobs_using_256_stream(s)_with_reader_writer_queues-12",
+            "runs": 1,
+            "nsPerOp": 5459139552,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJobsdb/store_and_consume_10000_jobs_using_256_stream(s)_without_reader_writer_queues-12",
+            "runs": 1,
+            "nsPerOp": 3651410618,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJobsdb/store_and_consume_10000_jobs_using_512_stream(s)_with_reader_writer_queues-12",
+            "runs": 1,
+            "nsPerOp": 5260530180,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJobsdb/store_and_consume_10000_jobs_using_512_stream(s)_without_reader_writer_queues-12",
+            "runs": 1,
+            "nsPerOp": 2674510355,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJobsdb",
+            "modificationCount": 14,
+            "createdOn": "2021-09-28",
+            "lastUpdateOn": "2023-08-21"
+          },
+          {
+            "name": "BenchmarkJobsdb",
+            "modificationCount": 14,
+            "createdOn": "2021-09-28",
+            "lastUpdateOn": "2023-08-21"
+          },
+          {
+            "name": "BenchmarkJobsdb",
+            "modificationCount": 14,
+            "createdOn": "2021-09-28",
+            "lastUpdateOn": "2023-08-21"
+          },
+          {
+            "name": "BenchmarkJobsdb",
+            "modificationCount": 14,
+            "createdOn": "2021-09-28",
+            "lastUpdateOn": "2023-08-21"
+          },
+          {
+            "name": "BenchmarkJobsdb",
+            "modificationCount": 14,
+            "createdOn": "2021-09-28",
+            "lastUpdateOn": "2023-08-21"
+          },
+          {
+            "name": "BenchmarkJobsdb",
+            "modificationCount": 14,
+            "createdOn": "2021-09-28",
+            "lastUpdateOn": "2023-08-21"
+          },
+          {
+            "name": "BenchmarkJobsdb",
+            "modificationCount": 14,
+            "createdOn": "2021-09-28",
+            "lastUpdateOn": "2023-08-21"
+          },
+          {
+            "name": "BenchmarkJobsdb",
+            "modificationCount": 14,
+            "createdOn": "2021-09-28",
+            "lastUpdateOn": "2023-08-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/processor",
+        "succeded": false,
+        "duration": "661.222s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_makeCommonMetadataFromSingularEvent-12",
+            "runs": 225481,
+            "nsPerOp": 5042,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes/isolation_mode_none_workspaces_10_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 152686879405,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes/isolation_mode_workspace_workspaces_10_total_jobs_200000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "processor_isolation_test.go:198:"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes/isolation_mode_source_workspaces_10_total_jobs_200000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "processor_isolation_test.go:198:"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes/isolation_mode_none_workspaces_50_total_jobs_200000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "processor_isolation_test.go:198:"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes/isolation_mode_workspace_workspaces_50_total_jobs_200000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "processor_isolation_test.go:198:"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes/isolation_mode_source_workspaces_50_total_jobs_200000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "processor_isolation_test.go:198:"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes/isolation_mode_none_workspaces_100_total_jobs_200000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "processor_isolation_test.go:198:"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes/isolation_mode_workspace_workspaces_100_total_jobs_200000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "processor_isolation_test.go:198:"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes/isolation_mode_source_workspaces_100_total_jobs_200000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "processor_isolation_test.go:198:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_makeCommonMetadataFromSingularEvent",
+            "modificationCount": 3,
+            "createdOn": "2022-04-10",
+            "lastUpdateOn": "2023-08-21"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes",
+            "modificationCount": 2,
+            "createdOn": "2023-02-17",
+            "lastUpdateOn": "2023-04-21"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes",
+            "modificationCount": 2,
+            "createdOn": "2023-02-17",
+            "lastUpdateOn": "2023-04-21"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes",
+            "modificationCount": 2,
+            "createdOn": "2023-02-17",
+            "lastUpdateOn": "2023-04-21"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes",
+            "modificationCount": 2,
+            "createdOn": "2023-02-17",
+            "lastUpdateOn": "2023-04-21"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes",
+            "modificationCount": 2,
+            "createdOn": "2023-02-17",
+            "lastUpdateOn": "2023-04-21"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes",
+            "modificationCount": 2,
+            "createdOn": "2023-02-17",
+            "lastUpdateOn": "2023-04-21"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes",
+            "modificationCount": 2,
+            "createdOn": "2023-02-17",
+            "lastUpdateOn": "2023-04-21"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes",
+            "modificationCount": 2,
+            "createdOn": "2023-02-17",
+            "lastUpdateOn": "2023-04-21"
+          },
+          {
+            "name": "BenchmarkProcessorIsolationModes",
+            "modificationCount": 2,
+            "createdOn": "2023-02-17",
+            "lastUpdateOn": "2023-04-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/router",
+        "succeded": false,
+        "duration": "660.169s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_SJSON_SET-12",
+            "runs": 32548,
+            "nsPerOp": 34908,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_JSON_MARSHAL-12",
+            "runs": 140769,
+            "nsPerOp": 10739,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_FASTJSON_MARSHAL-12",
+            "runs": 170556,
+            "nsPerOp": 7546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes/isolation_mode_none_cardinality_10_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 71796968510,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes/isolation_mode_workspace_cardinality_10_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 115854593172,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes/isolation_mode_destination_cardinality_10_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 60883863872,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes/isolation_mode_none_cardinality_50_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 100053949695,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes/isolation_mode_workspace_cardinality_50_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 85980381249,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes/isolation_mode_destination_cardinality_50_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 88206943887,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes/isolation_mode_none_cardinality_100_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 84761522505,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_SJSON_SET",
+            "modificationCount": 1,
+            "createdOn": "2022-07-05",
+            "lastUpdateOn": "2022-07-05"
+          },
+          {
+            "name": "Benchmark_JSON_MARSHAL",
+            "modificationCount": 1,
+            "createdOn": "2022-07-05",
+            "lastUpdateOn": "2022-07-05"
+          },
+          {
+            "name": "Benchmark_FASTJSON_MARSHAL",
+            "modificationCount": 2,
+            "createdOn": "2022-07-05",
+            "lastUpdateOn": "2022-12-14"
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-06-08",
+            "lastUpdateOn": "2023-06-08"
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-06-08",
+            "lastUpdateOn": "2023-06-08"
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-06-08",
+            "lastUpdateOn": "2023-06-08"
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-06-08",
+            "lastUpdateOn": "2023-06-08"
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-06-08",
+            "lastUpdateOn": "2023-06-08"
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-06-08",
+            "lastUpdateOn": "2023-06-08"
+          },
+          {
+            "name": "BenchmarkRouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-06-08",
+            "lastUpdateOn": "2023-06-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/router/batchrouter",
+        "succeded": false,
+        "duration": "660.330s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_GetStorageDateFormat-12",
+            "runs": 571999,
+            "nsPerOp": 2724,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_JSONUnmarshal-12",
+            "runs": 1876,
+            "nsPerOp": 680742,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBatchrouterIsolationModes/isolation_mode_none_cardinality_10_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 309937672525,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBatchrouterIsolationModes/isolation_mode_workspace_cardinality_10_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 42876751183,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBatchrouterIsolationModes/isolation_mode_destination_cardinality_10_total_jobs_200000-12",
+            "runs": 1,
+            "nsPerOp": 73203535715,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_GetStorageDateFormat",
+            "modificationCount": 5,
+            "createdOn": "2022-06-03",
+            "lastUpdateOn": "2023-06-26"
+          },
+          {
+            "name": "Benchmark_JSONUnmarshal",
+            "modificationCount": 5,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-06-26"
+          },
+          {
+            "name": "BenchmarkBatchrouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-05-11",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkBatchrouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-05-11",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkBatchrouterIsolationModes",
+            "modificationCount": 1,
+            "createdOn": "2023-05-11",
+            "lastUpdateOn": "2023-05-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/services/dedup",
+        "succeded": true,
+        "duration": "1.908s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Dedup/no_duplicates_1000_batch_unique-12",
+            "runs": 150006,
+            "nsPerOp": 10223,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Dedup",
+            "modificationCount": 10,
+            "createdOn": "2022-02-17",
+            "lastUpdateOn": "2023-06-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/services/rsources",
+        "succeded": true,
+        "duration": "6.454s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParamsParsing/parse_params_using_gjson.ForEach-12",
+            "runs": 1334514,
+            "nsPerOp": 1068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParamsParsing/parse_params_using_gjson.GetBytes_3_times-12",
+            "runs": 793878,
+            "nsPerOp": 1576,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParamsParsing/parse_params_using_jsoniter.Unmarshall-12",
+            "runs": 1099196,
+            "nsPerOp": 1124,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParamsParsing",
+            "modificationCount": 2,
+            "createdOn": "2022-06-14",
+            "lastUpdateOn": "2022-06-16"
+          },
+          {
+            "name": "BenchmarkParamsParsing",
+            "modificationCount": 2,
+            "createdOn": "2022-06-14",
+            "lastUpdateOn": "2022-06-16"
+          },
+          {
+            "name": "BenchmarkParamsParsing",
+            "modificationCount": 2,
+            "createdOn": "2022-06-14",
+            "lastUpdateOn": "2022-06-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/services/streammanager/kafka/client",
+        "succeded": true,
+        "duration": "330.369s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCompression/none/1.0kB-1-1ns-12",
+            "runs": 1214,
+            "nsPerOp": 849575,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/1.0kB-1-1ms-12",
+            "runs": 1371,
+            "nsPerOp": 787825,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/1.0kB-100-1ns-12",
+            "runs": 732,
+            "nsPerOp": 1430890,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/1.0kB-100-1ms-12",
+            "runs": 842,
+            "nsPerOp": 1253103,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/1.0kB-1000-1ns-12",
+            "runs": 178,
+            "nsPerOp": 6653730,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/1.0kB-1000-1ms-12",
+            "runs": 219,
+            "nsPerOp": 5804439,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/10.2kB-1-1ns-12",
+            "runs": 1984,
+            "nsPerOp": 512681,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/10.2kB-1-1ms-12",
+            "runs": 2140,
+            "nsPerOp": 487294,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/10.2kB-100-1ns-12",
+            "runs": 348,
+            "nsPerOp": 3343181,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/10.2kB-100-1ms-12",
+            "runs": 325,
+            "nsPerOp": 3977801,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/10.2kB-1000-1ns-12",
+            "runs": 22,
+            "nsPerOp": 45937387,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/10.2kB-1000-1ms-12",
+            "runs": 24,
+            "nsPerOp": 56870833,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/102.4kB-1-1ns-12",
+            "runs": 1094,
+            "nsPerOp": 1248966,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/102.4kB-1-1ms-12",
+            "runs": 994,
+            "nsPerOp": 1140404,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/102.4kB-100-1ns-12",
+            "runs": 25,
+            "nsPerOp": 50385212,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/102.4kB-100-1ms-12",
+            "runs": 27,
+            "nsPerOp": 48762519,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/102.4kB-1000-1ns-12",
+            "runs": 3,
+            "nsPerOp": 448181302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/102.4kB-1000-1ms-12",
+            "runs": 2,
+            "nsPerOp": 631781528,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/1.0kB-1-1ns-12",
+            "runs": 505,
+            "nsPerOp": 2061514,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/1.0kB-1-1ms-12",
+            "runs": 607,
+            "nsPerOp": 1797561,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/1.0kB-100-1ns-12",
+            "runs": 534,
+            "nsPerOp": 2146465,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/1.0kB-100-1ms-12",
+            "runs": 519,
+            "nsPerOp": 2093234,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/1.0kB-1000-1ns-12",
+            "runs": 130,
+            "nsPerOp": 9172742,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/1.0kB-1000-1ms-12",
+            "runs": 132,
+            "nsPerOp": 9150633,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/10.2kB-1-1ns-12",
+            "runs": 958,
+            "nsPerOp": 1214752,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/10.2kB-1-1ms-12",
+            "runs": 1114,
+            "nsPerOp": 1143166,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/10.2kB-100-1ns-12",
+            "runs": 235,
+            "nsPerOp": 5118328,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/10.2kB-100-1ms-12",
+            "runs": 218,
+            "nsPerOp": 4950261,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/10.2kB-1000-1ns-12",
+            "runs": 24,
+            "nsPerOp": 48828162,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/10.2kB-1000-1ms-12",
+            "runs": 26,
+            "nsPerOp": 48336815,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/102.4kB-1-1ns-12",
+            "runs": 699,
+            "nsPerOp": 1581113,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/102.4kB-1-1ms-12",
+            "runs": 802,
+            "nsPerOp": 1583256,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/102.4kB-100-1ns-12",
+            "runs": 18,
+            "nsPerOp": 55996859,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/102.4kB-100-1ms-12",
+            "runs": 19,
+            "nsPerOp": 58252536,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/102.4kB-1000-1ns-12",
+            "runs": 2,
+            "nsPerOp": 705424630,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/102.4kB-1000-1ms-12",
+            "runs": 2,
+            "nsPerOp": 577693062,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/1.0kB-1-1ns-12",
+            "runs": 462,
+            "nsPerOp": 2651739,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/1.0kB-1-1ms-12",
+            "runs": 489,
+            "nsPerOp": 2159935,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/1.0kB-100-1ns-12",
+            "runs": 566,
+            "nsPerOp": 2595976,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/1.0kB-100-1ms-12",
+            "runs": 556,
+            "nsPerOp": 1972809,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/1.0kB-1000-1ns-12",
+            "runs": 152,
+            "nsPerOp": 7169155,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/1.0kB-1000-1ms-12",
+            "runs": 174,
+            "nsPerOp": 6456750,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/10.2kB-1-1ns-12",
+            "runs": 870,
+            "nsPerOp": 1336065,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/10.2kB-1-1ms-12",
+            "runs": 967,
+            "nsPerOp": 1123583,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/10.2kB-100-1ns-12",
+            "runs": 266,
+            "nsPerOp": 4176882,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/10.2kB-100-1ms-12",
+            "runs": 180,
+            "nsPerOp": 5657959,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/10.2kB-1000-1ns-12",
+            "runs": 26,
+            "nsPerOp": 43173023,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/10.2kB-1000-1ms-12",
+            "runs": 27,
+            "nsPerOp": 40086346,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/102.4kB-1-1ns-12",
+            "runs": 480,
+            "nsPerOp": 2436341,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/102.4kB-1-1ms-12",
+            "runs": 656,
+            "nsPerOp": 2086621,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/102.4kB-100-1ns-12",
+            "runs": 18,
+            "nsPerOp": 60493009,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/102.4kB-100-1ms-12",
+            "runs": 14,
+            "nsPerOp": 86848112,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/102.4kB-1000-1ns-12",
+            "runs": 2,
+            "nsPerOp": 541493366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/102.4kB-1000-1ms-12",
+            "runs": 2,
+            "nsPerOp": 556814208,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/1.0kB-1-1ns-12",
+            "runs": 278,
+            "nsPerOp": 4202012,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/1.0kB-1-1ms-12",
+            "runs": 301,
+            "nsPerOp": 3475075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/1.0kB-100-1ns-12",
+            "runs": 240,
+            "nsPerOp": 4183253,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/1.0kB-100-1ms-12",
+            "runs": 454,
+            "nsPerOp": 2792298,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/1.0kB-1000-1ns-12",
+            "runs": 193,
+            "nsPerOp": 6352544,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/1.0kB-1000-1ms-12",
+            "runs": 182,
+            "nsPerOp": 6847587,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/10.2kB-1-1ns-12",
+            "runs": 1024,
+            "nsPerOp": 1241675,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/10.2kB-1-1ms-12",
+            "runs": 987,
+            "nsPerOp": 1132491,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/10.2kB-100-1ns-12",
+            "runs": 351,
+            "nsPerOp": 3015445,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/10.2kB-100-1ms-12",
+            "runs": 373,
+            "nsPerOp": 2918890,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/10.2kB-1000-1ns-12",
+            "runs": 45,
+            "nsPerOp": 26958451,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/10.2kB-1000-1ms-12",
+            "runs": 42,
+            "nsPerOp": 27588988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/102.4kB-1-1ns-12",
+            "runs": 970,
+            "nsPerOp": 1169442,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/102.4kB-1-1ms-12",
+            "runs": 1032,
+            "nsPerOp": 1310224,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/102.4kB-100-1ns-12",
+            "runs": 21,
+            "nsPerOp": 64444218,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/102.4kB-100-1ms-12",
+            "runs": 8,
+            "nsPerOp": 144282088,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/102.4kB-1000-1ns-12",
+            "runs": 1,
+            "nsPerOp": 1221939856,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/102.4kB-1000-1ms-12",
+            "runs": 2,
+            "nsPerOp": 502651224,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/1.0kB-1-1ns-12",
+            "runs": 507,
+            "nsPerOp": 2083444,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/1.0kB-1-1ms-12",
+            "runs": 873,
+            "nsPerOp": 1193972,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/1.0kB-100-1ns-12",
+            "runs": 654,
+            "nsPerOp": 1756816,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/1.0kB-100-1ms-12",
+            "runs": 711,
+            "nsPerOp": 1665124,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/1.0kB-1000-1ns-12",
+            "runs": 186,
+            "nsPerOp": 6099546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/1.0kB-1000-1ms-12",
+            "runs": 156,
+            "nsPerOp": 6828735,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/10.2kB-1-1ns-12",
+            "runs": 1276,
+            "nsPerOp": 917649,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/10.2kB-1-1ms-12",
+            "runs": 1042,
+            "nsPerOp": 1069538,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/10.2kB-100-1ns-12",
+            "runs": 390,
+            "nsPerOp": 2849151,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/10.2kB-100-1ms-12",
+            "runs": 442,
+            "nsPerOp": 2707452,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/10.2kB-1000-1ns-12",
+            "runs": 37,
+            "nsPerOp": 29621231,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/10.2kB-1000-1ms-12",
+            "runs": 40,
+            "nsPerOp": 26777863,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/102.4kB-1-1ns-12",
+            "runs": 873,
+            "nsPerOp": 1350868,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/102.4kB-1-1ms-12",
+            "runs": 910,
+            "nsPerOp": 1402366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/102.4kB-100-1ns-12",
+            "runs": 36,
+            "nsPerOp": 34378023,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/102.4kB-100-1ms-12",
+            "runs": 30,
+            "nsPerOp": 39475660,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/102.4kB-1000-1ns-12",
+            "runs": 3,
+            "nsPerOp": 416844309,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/102.4kB-1000-1ms-12",
+            "runs": 3,
+            "nsPerOp": 342587719,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 1,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/utils/misc",
+        "succeded": true,
+        "duration": "8.361s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_GOOGLE_UUID-12",
+            "runs": 8956850,
+            "nsPerOp": 124.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_GOOGLE_UUID_STR_GOFRS-12",
+            "runs": 2337224,
+            "nsPerOp": 474.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_GOOGLE_UUID_BIN_GOFRS-12",
+            "runs": 7889744,
+            "nsPerOp": 126.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_FAST_UUID-12",
+            "runs": 9229168,
+            "nsPerOp": 118.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_GOFRS_UUID-12",
+            "runs": 1737180,
+            "nsPerOp": 739.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_GOOGLE_UUID",
+            "modificationCount": 1,
+            "createdOn": "2022-02-01",
+            "lastUpdateOn": "2022-02-01"
+          },
+          {
+            "name": "Benchmark_GOOGLE_UUID_STR_GOFRS",
+            "modificationCount": 1,
+            "createdOn": "2022-02-01",
+            "lastUpdateOn": "2022-02-01"
+          },
+          {
+            "name": "Benchmark_GOOGLE_UUID_BIN_GOFRS",
+            "modificationCount": 1,
+            "createdOn": "2022-02-01",
+            "lastUpdateOn": "2022-02-01"
+          },
+          {
+            "name": "Benchmark_FAST_UUID",
+            "modificationCount": 2,
+            "createdOn": "2022-02-01",
+            "lastUpdateOn": "2022-12-01"
+          },
+          {
+            "name": "Benchmark_GOFRS_UUID",
+            "modificationCount": 1,
+            "createdOn": "2022-02-01",
+            "lastUpdateOn": "2022-02-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/warehouse/internal/service",
+        "succeded": true,
+        "duration": "1.600s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStageFileBatching-12",
+            "runs": 475,
+            "nsPerOp": 2410354,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStageFileBatching",
+            "modificationCount": 2,
+            "createdOn": "2023-01-25",
+            "lastUpdateOn": "2023-03-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rudderlabs/rudder-server/warehouse/utils",
+        "succeded": true,
+        "duration": "3.605s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetQueryType/expected-12",
+            "runs": 1000000,
+            "nsPerOp": 1277,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetQueryType/unexpected-12",
+            "runs": 125224,
+            "nsPerOp": 9647,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetQueryType",
+            "modificationCount": 2,
+            "createdOn": "2023-07-21",
+            "lastUpdateOn": "2023-09-29"
+          },
+          {
+            "name": "BenchmarkGetQueryType",
+            "modificationCount": 2,
+            "createdOn": "2023-07-21",
+            "lastUpdateOn": "2023-09-29"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "rudderlabs/rudder-server",
+    "name": "rudder-server",
+    "private": false,
+    "html_url": "https://github.com/rudderlabs/rudder-server",
+    "description": "Privacy and Security focused Segment-alternative, in Golang and React  ",
+    "fork": false,
+    "created_at": "2019-07-19T09:24:38Z",
+    "updated_at": "2023-10-23T08:19:06Z",
+    "pushed_at": "2023-10-23T18:41:30Z",
+    "ssh_url": "git@github.com:rudderlabs/rudder-server.git",
+    "homepage": "https://www.rudderstack.com/",
+    "stargazers_count": 3729,
+    "watchers_count": 3729,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 279,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 37,
+    "topics": [
+      "bigquery",
+      "customer-data",
+      "customer-data-lake",
+      "customer-data-pipeline",
+      "customer-data-platform",
+      "data-integration",
+      "data-pipeline",
+      "data-synchronization",
+      "data-warehouse",
+      "etl",
+      "golang",
+      "hybrid-cloud",
+      "privacy",
+      "redshift",
+      "rudderstack",
+      "security",
+      "segment-alternative",
+      "snowflake",
+      "warehouse-first",
+      "warehouse-management"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 714,
+    "Lines": 177510,
+    "Blank": 20692,
+    "Code": 150776,
+    "Comment": 6042,
+    "Bytes": 5664279,
+    "Complexity": 15980
+  }
+}

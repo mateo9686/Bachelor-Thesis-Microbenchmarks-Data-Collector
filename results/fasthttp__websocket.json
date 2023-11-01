@@ -1,0 +1,337 @@
+{
+  "Name": "fasthttp/websocket",
+  "Path": "./repositories/fasthttp__websocket",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T13:16:28Z",
+    "benchmarkCount": 20,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 20,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/fasthttp/websocket",
+        "succeded": true,
+        "duration": "36.760s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWriteNoCompression-12",
+            "runs": 1000000,
+            "nsPerOp": 1533,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteWithCompression-12",
+            "runs": 306714,
+            "nsPerOp": 4069,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBroadcast/NoCompression-12",
+            "runs": 99,
+            "nsPerOp": 12361509,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBroadcast/Compression-12",
+            "runs": 69,
+            "nsPerOp": 16662216,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBroadcast/NoCompressionPrepared-12",
+            "runs": 126,
+            "nsPerOp": 9851217,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBroadcast/CompressionPrepared-12",
+            "runs": 123,
+            "nsPerOp": 9642209,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-2/align-4/byte-12",
+            "runs": 303978471,
+            "nsPerOp": 3.709,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-2/align-4/word-12",
+            "runs": 307013214,
+            "nsPerOp": 4.369,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-4/align-4/byte-12",
+            "runs": 242342726,
+            "nsPerOp": 5.229,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-4/align-4/word-12",
+            "runs": 189869271,
+            "nsPerOp": 6.563,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-8/align-4/byte-12",
+            "runs": 132963391,
+            "nsPerOp": 9.472,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-8/align-4/word-12",
+            "runs": 100000000,
+            "nsPerOp": 14.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-16/align-4/byte-12",
+            "runs": 71152237,
+            "nsPerOp": 21.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-16/align-4/word-12",
+            "runs": 40147746,
+            "nsPerOp": 31.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-32/align-4/byte-12",
+            "runs": 34706786,
+            "nsPerOp": 53.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-32/align-4/word-12",
+            "runs": 30310287,
+            "nsPerOp": 55.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-512/align-4/byte-12",
+            "runs": 1000000,
+            "nsPerOp": 1023,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-512/align-4/word-12",
+            "runs": 13448469,
+            "nsPerOp": 110.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-1024/align-4/byte-12",
+            "runs": 916690,
+            "nsPerOp": 1787,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMaskBytes/size-1024/align-4/word-12",
+            "runs": 4096214,
+            "nsPerOp": 287.8,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWriteNoCompression",
+            "modificationCount": 3,
+            "createdOn": "2017-01-13",
+            "lastUpdateOn": "2023-08-26"
+          },
+          {
+            "name": "BenchmarkWriteWithCompression",
+            "modificationCount": 4,
+            "createdOn": "2017-01-13",
+            "lastUpdateOn": "2023-08-26"
+          },
+          {
+            "name": "BenchmarkBroadcast",
+            "modificationCount": 2,
+            "createdOn": "2017-02-14",
+            "lastUpdateOn": "2022-01-02"
+          },
+          {
+            "name": "BenchmarkBroadcast",
+            "modificationCount": 2,
+            "createdOn": "2017-02-14",
+            "lastUpdateOn": "2022-01-02"
+          },
+          {
+            "name": "BenchmarkBroadcast",
+            "modificationCount": 2,
+            "createdOn": "2017-02-14",
+            "lastUpdateOn": "2022-01-02"
+          },
+          {
+            "name": "BenchmarkBroadcast",
+            "modificationCount": 2,
+            "createdOn": "2017-02-14",
+            "lastUpdateOn": "2022-01-02"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          },
+          {
+            "name": "BenchmarkMaskBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-10-20",
+            "lastUpdateOn": "2016-10-20"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "fasthttp/websocket",
+    "name": "websocket",
+    "private": false,
+    "html_url": "https://github.com/fasthttp/websocket",
+    "description": "WebSocket implementation for fasthttp.",
+    "fork": false,
+    "created_at": "2018-08-26T15:08:10Z",
+    "updated_at": "2023-10-19T00:13:40Z",
+    "pushed_at": "2023-10-17T11:26:10Z",
+    "ssh_url": "git@github.com:fasthttp/websocket.git",
+    "stargazers_count": 474,
+    "watchers_count": 474,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 52,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 2,
+    "topics": [
+      "fasthttp",
+      "go",
+      "golang",
+      "websocket"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "url": "https://api.github.com/licenses/bsd-3-clause",
+      "spdx_id": "BSD-3-Clause",
+      "node_id": "MDc6TGljZW5zZTU=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 44,
+    "Lines": 8597,
+    "Blank": 1018,
+    "Code": 6543,
+    "Comment": 1036,
+    "Bytes": 223889,
+    "Complexity": 1659
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "Name": "vbatts/tar-split",
+  "Path": "./repositories/vbatts__tar-split",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T14:15:46Z",
+    "benchmarkCount": 12,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 12,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/vbatts/tar-split/archive/tar",
+        "succeded": true,
+        "duration": "14.625s",
+        "benchmarks": [
+          {
+            "name": "Benchmark/Writer/USTAR-12",
+            "runs": 10000,
+            "nsPerOp": 207674,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/Writer/GNU-12",
+            "runs": 193396,
+            "nsPerOp": 10836,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/Writer/PAX-12",
+            "runs": 122970,
+            "nsPerOp": 18204,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/Reader/USTAR-12",
+            "runs": 252172,
+            "nsPerOp": 9927,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/Reader/GNU-12",
+            "runs": 222254,
+            "nsPerOp": 6269,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/Reader/PAX-12",
+            "runs": 143874,
+            "nsPerOp": 15842,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark",
+            "modificationCount": 3,
+            "createdOn": "2018-09-05",
+            "lastUpdateOn": "2023-07-20"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 3,
+            "createdOn": "2018-09-05",
+            "lastUpdateOn": "2023-07-20"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 3,
+            "createdOn": "2018-09-05",
+            "lastUpdateOn": "2023-07-20"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 3,
+            "createdOn": "2018-09-05",
+            "lastUpdateOn": "2023-07-20"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 3,
+            "createdOn": "2018-09-05",
+            "lastUpdateOn": "2023-07-20"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 3,
+            "createdOn": "2018-09-05",
+            "lastUpdateOn": "2023-07-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/vbatts/tar-split/cmd/tar-split",
+        "succeded": true,
+        "duration": "8.995s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUpstreamTar-12",
+            "runs": 1495,
+            "nsPerOp": 749423,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOurTarNoAccounting-12",
+            "runs": 1351,
+            "nsPerOp": 1060672,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOurTarYesAccounting-12",
+            "runs": 2301,
+            "nsPerOp": 1314817,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUpstreamTar",
+            "modificationCount": 3,
+            "createdOn": "2016-07-26",
+            "lastUpdateOn": "2023-07-20"
+          },
+          {
+            "name": "BenchmarkOurTarNoAccounting",
+            "modificationCount": 3,
+            "createdOn": "2016-07-26",
+            "lastUpdateOn": "2023-07-20"
+          },
+          {
+            "name": "BenchmarkOurTarYesAccounting",
+            "modificationCount": 3,
+            "createdOn": "2016-07-26",
+            "lastUpdateOn": "2023-07-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/vbatts/tar-split/tar/asm",
+        "succeded": true,
+        "duration": "10.768s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAsm-12",
+            "runs": 1,
+            "nsPerOp": 10053524054,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAsm",
+            "modificationCount": 2,
+            "createdOn": "2015-12-02",
+            "lastUpdateOn": "2023-07-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/vbatts/tar-split/tar/storage",
+        "succeded": true,
+        "duration": "9.416s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPutter-12",
+            "runs": 23184,
+            "nsPerOp": 241167,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetPut-12",
+            "runs": 20000,
+            "nsPerOp": 59825,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPutter",
+            "modificationCount": 1,
+            "createdOn": "2015-08-13",
+            "lastUpdateOn": "2015-08-13"
+          },
+          {
+            "name": "BenchmarkGetPut",
+            "modificationCount": 5,
+            "createdOn": "2015-02-23",
+            "lastUpdateOn": "2023-07-20"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "vbatts/tar-split",
+    "name": "tar-split",
+    "private": false,
+    "html_url": "https://github.com/vbatts/tar-split",
+    "description": "checksum-reproducible tar archives (utility/library)",
+    "fork": false,
+    "created_at": "2015-02-19T21:54:01Z",
+    "updated_at": "2023-08-18T08:07:07Z",
+    "pushed_at": "2023-08-26T12:26:36Z",
+    "ssh_url": "git@github.com:vbatts/tar-split.git",
+    "stargazers_count": 88,
+    "watchers_count": 88,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 33,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 3,
+    "topics": [
+      "checksum",
+      "disassembly",
+      "golang",
+      "payload",
+      "tar-archive"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "url": "https://api.github.com/licenses/bsd-3-clause",
+      "spdx_id": "BSD-3-Clause",
+      "node_id": "MDc6TGljZW5zZTU=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 34,
+    "Lines": 9391,
+    "Blank": 663,
+    "Code": 7511,
+    "Comment": 1217,
+    "Bytes": 264560,
+    "Complexity": 1608
+  }
+}

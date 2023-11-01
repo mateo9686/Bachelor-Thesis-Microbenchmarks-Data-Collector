@@ -1,0 +1,913 @@
+{
+  "Name": "AbelChe/evil_minio",
+  "Path": "./repositories/AbelChe__evil_minio",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T08:50:50Z",
+    "benchmarkCount": 61,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 61,
+    "successfulBenchmarkSuitesCount": 6,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/minio/minio/internal/config",
+        "succeded": true,
+        "duration": "8.201s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncrypt/1KB-12",
+            "runs": 36472,
+            "nsPerOp": 31476,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncrypt/512KB-12",
+            "runs": 4287,
+            "nsPerOp": 306493,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncrypt/1MB-12",
+            "runs": 2728,
+            "nsPerOp": 576069,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncrypt/10MB-12",
+            "runs": 312,
+            "nsPerOp": 3741586,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncrypt",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkEncrypt",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkEncrypt",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkEncrypt",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minio/minio/internal/dsync",
+        "succeded": true,
+        "duration": "43.919s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRWMutexWrite100-12",
+            "runs": 2600,
+            "nsPerOp": 454113,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexWrite10-12",
+            "runs": 1454,
+            "nsPerOp": 847646,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexWorkWrite100-12",
+            "runs": 3834,
+            "nsPerOp": 519656,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexWorkWrite10-12",
+            "runs": 1904,
+            "nsPerOp": 867834,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutexUncontended-12",
+            "runs": 882,
+            "nsPerOp": 1891788,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutex-12",
+            "runs": 645,
+            "nsPerOp": 2722342,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutexSlack-12",
+            "runs": 100,
+            "nsPerOp": 10994001,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutexWork-12",
+            "runs": 205,
+            "nsPerOp": 6154421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutexWorkSlack-12",
+            "runs": 141,
+            "nsPerOp": 8832967,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutexNoSpin-12",
+            "runs": 1070,
+            "nsPerOp": 1296445,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutexSpin-12",
+            "runs": 265,
+            "nsPerOp": 3779603,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalMsgLockArgs-12",
+            "runs": 5287075,
+            "nsPerOp": 343.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendMsgLockArgs-12",
+            "runs": 19256955,
+            "nsPerOp": 83.27,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalLockArgs-12",
+            "runs": 7702317,
+            "nsPerOp": 153.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeLockArgs-12",
+            "runs": 10203880,
+            "nsPerOp": 113.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeLockArgs-12",
+            "runs": 4411869,
+            "nsPerOp": 342.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRWMutexWrite100",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkRWMutexWrite10",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkRWMutexWorkWrite100",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkRWMutexWorkWrite10",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkMutexUncontended",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkMutex",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkMutexSlack",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkMutexWork",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkMutexWorkSlack",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkMutexNoSpin",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkMutexSpin",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkMarshalMsgLockArgs",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkAppendMsgLockArgs",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkUnmarshalLockArgs",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkEncodeLockArgs",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkDecodeLockArgs",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minio/minio/internal/s3select",
+        "succeded": false,
+        "duration": "660.424s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSelectAll_100K-12",
+            "runs": 15,
+            "nsPerOp": 86040566,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelectAll_1M-12",
+            "runs": 1,
+            "nsPerOp": 1073675918,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelectAll_2M-12",
+            "runs": 1,
+            "nsPerOp": 5729000893,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSelectAll_100K",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkSelectAll_1M",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkSelectAll_2M",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minio/minio/internal/s3select/csv",
+        "succeded": true,
+        "duration": "29.958s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReaderBasic-12",
+            "runs": 382,
+            "nsPerOp": 3188918,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/97K-12",
+            "runs": 543,
+            "nsPerOp": 2172885,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/194K-12",
+            "runs": 298,
+            "nsPerOp": 3816661,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/389K-12",
+            "runs": 231,
+            "nsPerOp": 8138681,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/778K-12",
+            "runs": 135,
+            "nsPerOp": 9077939,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/1557K-12",
+            "runs": 201,
+            "nsPerOp": 6914238,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/3115K-12",
+            "runs": 100,
+            "nsPerOp": 11617929,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/6230K-12",
+            "runs": 100,
+            "nsPerOp": 36808322,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/12461K-12",
+            "runs": 26,
+            "nsPerOp": 84060982,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/24922K-12",
+            "runs": 7,
+            "nsPerOp": 197810457,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/49844K-12",
+            "runs": 13,
+            "nsPerOp": 79063927,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderHuge/99689K-12",
+            "runs": 8,
+            "nsPerOp": 140298292,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderReplace-12",
+            "runs": 1242,
+            "nsPerOp": 1031965,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderReplaceTwo-12",
+            "runs": 535,
+            "nsPerOp": 2417787,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReaderBasic",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderHuge",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderReplace",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReaderReplaceTwo",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minio/minio/internal/s3select/json",
+        "succeded": true,
+        "duration": "42.131s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPReader/10.json-12",
+            "runs": 7392,
+            "nsPerOp": 205032,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/11.json-12",
+            "runs": 2403,
+            "nsPerOp": 681047,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/12.json-12",
+            "runs": 3414,
+            "nsPerOp": 427186,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/2.json-12",
+            "runs": 2250,
+            "nsPerOp": 609988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/3.json-12",
+            "runs": 1772,
+            "nsPerOp": 611836,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/4.json-12",
+            "runs": 2122,
+            "nsPerOp": 590520,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/5.json-12",
+            "runs": 2619,
+            "nsPerOp": 400559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/6.json-12",
+            "runs": 2666,
+            "nsPerOp": 446988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/7.json-12",
+            "runs": 3099,
+            "nsPerOp": 395607,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/8.json-12",
+            "runs": 3931,
+            "nsPerOp": 295615,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPReader/9.json-12",
+            "runs": 5305,
+            "nsPerOp": 249492,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/10.json-12",
+            "runs": 19190,
+            "nsPerOp": 75165,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/11.json-12",
+            "runs": 52502,
+            "nsPerOp": 20967,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/12.json-12",
+            "runs": 72408,
+            "nsPerOp": 17914,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/2.json-12",
+            "runs": 57957,
+            "nsPerOp": 30617,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/3.json-12",
+            "runs": 31069,
+            "nsPerOp": 53270,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/4.json-12",
+            "runs": 10000,
+            "nsPerOp": 108198,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/5.json-12",
+            "runs": 27692,
+            "nsPerOp": 50564,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/6.json-12",
+            "runs": 41478,
+            "nsPerOp": 45371,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/7.json-12",
+            "runs": 19648,
+            "nsPerOp": 65681,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/8.json-12",
+            "runs": 22682,
+            "nsPerOp": 51068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader/9.json-12",
+            "runs": 20671,
+            "nsPerOp": 85705,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkPReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minio/minio/internal/workers",
+        "succeded": true,
+        "duration": "6.004s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWorkers_N5_J10-12",
+            "runs": 58964,
+            "nsPerOp": 17062,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWorkers_N5_J100-12",
+            "runs": 10221,
+            "nsPerOp": 168899,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWorkers_N5_J10",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          },
+          {
+            "name": "BenchmarkWorkers_N5_J100",
+            "modificationCount": 1,
+            "createdOn": "2023-03-27",
+            "lastUpdateOn": "2023-03-27"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "AbelChe/evil_minio",
+    "name": "evil_minio",
+    "private": false,
+    "html_url": "https://github.com/AbelChe/evil_minio",
+    "description": "EXP for CVE-2023-28434 MinIO unauthorized to RCE",
+    "fork": false,
+    "created_at": "2023-03-27T08:53:04Z",
+    "updated_at": "2023-10-21T04:43:33Z",
+    "pushed_at": "2023-04-04T05:26:59Z",
+    "ssh_url": "git@github.com:AbelChe/evil_minio.git",
+    "stargazers_count": 270,
+    "watchers_count": 270,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 36,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 4,
+    "topics": [
+      "cve-2023-28434",
+      "minio"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "spdx_id": "AGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTE=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 779,
+    "Lines": 276402,
+    "Blank": 27191,
+    "Code": 212687,
+    "Comment": 36524,
+    "Bytes": 8343762,
+    "Complexity": 51840
+  }
+}

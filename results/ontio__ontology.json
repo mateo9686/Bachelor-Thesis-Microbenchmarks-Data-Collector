@@ -1,0 +1,287 @@
+{
+  "Name": "ontio/ontology",
+  "Path": "./repositories/ontio__ontology",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T17:57:55Z",
+    "benchmarkCount": 14,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 14,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/ontio/ontology/common/serialization",
+        "succeded": true,
+        "duration": "13.982s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWriteVarUint-12",
+            "runs": 27699970,
+            "nsPerOp": 43.59,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteVarBytes-12",
+            "runs": 10447069,
+            "nsPerOp": 117.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteVarString-12",
+            "runs": 8989920,
+            "nsPerOp": 115.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadVarUint-12",
+            "runs": 7807633,
+            "nsPerOp": 163.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadVarBytes-12",
+            "runs": 5547685,
+            "nsPerOp": 246.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadVarString-12",
+            "runs": 4963364,
+            "nsPerOp": 231.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerialize-12",
+            "runs": 985032,
+            "nsPerOp": 1492,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesXReader-12",
+            "runs": 161634,
+            "nsPerOp": 7518,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWriteVarUint",
+            "modificationCount": 1,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2017-01-16"
+          },
+          {
+            "name": "BenchmarkWriteVarBytes",
+            "modificationCount": 1,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2017-01-16"
+          },
+          {
+            "name": "BenchmarkWriteVarString",
+            "modificationCount": 2,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2018-04-13"
+          },
+          {
+            "name": "BenchmarkReadVarUint",
+            "modificationCount": 2,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2017-06-28"
+          },
+          {
+            "name": "BenchmarkReadVarBytes",
+            "modificationCount": 2,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2017-06-28"
+          },
+          {
+            "name": "BenchmarkReadVarString",
+            "modificationCount": 3,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2018-04-13"
+          },
+          {
+            "name": "BenchmarkSerialize",
+            "modificationCount": 3,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2018-04-13"
+          },
+          {
+            "name": "BenchmarkBytesXReader",
+            "modificationCount": 1,
+            "createdOn": "2018-07-31",
+            "lastUpdateOn": "2018-07-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ontio/ontology/merkle",
+        "succeded": false,
+        "duration": "1.343s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMerkleInsert-12",
+            "runs": 1360,
+            "nsPerOp": 848674,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMerkleInsert",
+            "modificationCount": 3,
+            "createdOn": "2017-11-03",
+            "lastUpdateOn": "2017-12-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ontio/ontology/smartcontract/service/native/ontfs/pdp",
+        "succeded": true,
+        "duration": "7.452s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGenUniqueIdWithFileBlocks-12",
+            "runs": 1,
+            "nsPerOp": 1968256668,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenProofWithBlocks-12",
+            "runs": 1,
+            "nsPerOp": 2794298877,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyProofWithUniqueId-12",
+            "runs": 1,
+            "nsPerOp": 2683220680,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGenUniqueIdWithFileBlocks",
+            "modificationCount": 1,
+            "createdOn": "2020-05-15",
+            "lastUpdateOn": "2020-05-15"
+          },
+          {
+            "name": "BenchmarkGenProofWithBlocks",
+            "modificationCount": 1,
+            "createdOn": "2020-05-15",
+            "lastUpdateOn": "2020-05-15"
+          },
+          {
+            "name": "BenchmarkVerifyProofWithUniqueId",
+            "modificationCount": 1,
+            "createdOn": "2020-05-15",
+            "lastUpdateOn": "2020-05-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ontio/ontology/smartcontract/service/native/ontfs/pdp/merkle_pdp",
+        "succeded": true,
+        "duration": "5.393s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHash-12",
+            "runs": 1,
+            "nsPerOp": 1837902553,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify-12",
+            "runs": 1,
+            "nsPerOp": 3545885059,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHash",
+            "modificationCount": 1,
+            "createdOn": "2020-05-15",
+            "lastUpdateOn": "2020-05-15"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 1,
+            "createdOn": "2020-05-15",
+            "lastUpdateOn": "2020-05-15"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "ontio/ontology",
+    "name": "ontology",
+    "private": false,
+    "html_url": "https://github.com/ontio/ontology",
+    "description": "Official Go implementation of the Ontology protocol. https://dev-docs.ont.io/#/",
+    "fork": false,
+    "created_at": "2018-04-13T06:41:29Z",
+    "updated_at": "2023-10-20T10:28:40Z",
+    "pushed_at": "2023-10-19T06:23:12Z",
+    "ssh_url": "git@github.com:ontio/ontology.git",
+    "stargazers_count": 814,
+    "watchers_count": 814,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 328,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 68,
+    "topics": [
+      "blockchain",
+      "distributed-ledger",
+      "golang",
+      "high-performance",
+      "ontology"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "lgpl-3.0",
+      "name": "GNU Lesser General Public License v3.0",
+      "url": "https://api.github.com/licenses/lgpl-3.0",
+      "spdx_id": "LGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTEy",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 618,
+    "Lines": 114516,
+    "Blank": 12663,
+    "Code": 86894,
+    "Comment": 14959,
+    "Bytes": 3433796,
+    "Complexity": 18225
+  }
+}

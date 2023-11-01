@@ -1,0 +1,425 @@
+{
+  "Name": "cloudwego/hertz",
+  "Path": "./repositories/cloudwego__hertz",
+  "GoVersion": "1.16",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T23:07:18Z",
+    "benchmarkCount": 24,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 22,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/cloudwego/hertz/pkg/app/server/binding",
+        "succeded": true,
+        "duration": "2.166s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Binding-12",
+            "runs": 1910998,
+            "nsPerOp": 791.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Binding",
+            "modificationCount": 1,
+            "createdOn": "2023-09-22",
+            "lastUpdateOn": "2023-09-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cloudwego/hertz/pkg/common/stackless",
+        "succeded": true,
+        "duration": "3.004s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFuncOverhead-12",
+            "runs": 1624003,
+            "nsPerOp": 717.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFuncPure-12",
+            "runs": 100000000,
+            "nsPerOp": 10.73,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFuncOverhead",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkFuncPure",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cloudwego/hertz/pkg/protocol",
+        "succeded": true,
+        "duration": "19.413s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHTTPHeaderGet-12",
+            "runs": 7332400,
+            "nsPerOp": 171,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHertzHeaderGet-12",
+            "runs": 38230624,
+            "nsPerOp": 31.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPHeaderSet-12",
+            "runs": 5767101,
+            "nsPerOp": 266.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHertzHeaderSet-12",
+            "runs": 21237968,
+            "nsPerOp": 53.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPHeaderAdd-12",
+            "runs": 1000000,
+            "nsPerOp": 1388,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHertzHeaderAdd-12",
+            "runs": 2295312,
+            "nsPerOp": 518.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRefreshServerDate-12",
+            "runs": 414632,
+            "nsPerOp": 3160,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkURIParsePath-12",
+            "runs": 39539613,
+            "nsPerOp": 29.28,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkURIParsePathQueryString-12",
+            "runs": 36549684,
+            "nsPerOp": 31.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkURIParsePathQueryStringHash-12",
+            "runs": 28451694,
+            "nsPerOp": 37.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkURIParseHostname-12",
+            "runs": 29057044,
+            "nsPerOp": 38.04,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkURIFullURI-12",
+            "runs": 138517574,
+            "nsPerOp": 8.778,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHTTPHeaderGet",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkHertzHeaderGet",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkHTTPHeaderSet",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkHertzHeaderSet",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkHTTPHeaderAdd",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkHertzHeaderAdd",
+            "modificationCount": 2,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-07-04"
+          },
+          {
+            "name": "BenchmarkRefreshServerDate",
+            "modificationCount": 1,
+            "createdOn": "2022-07-04",
+            "lastUpdateOn": "2022-07-04"
+          },
+          {
+            "name": "BenchmarkURIParsePath",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkURIParsePathQueryString",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkURIParsePathQueryStringHash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkURIParseHostname",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkURIFullURI",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cloudwego/hertz/pkg/protocol/http1",
+        "succeded": true,
+        "duration": "1.734s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkServer_Serve-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "short"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkServer_Serve",
+            "modificationCount": 1,
+            "createdOn": "2023-01-17",
+            "lastUpdateOn": "2023-01-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cloudwego/hertz/pkg/route",
+        "succeded": false,
+        "duration": "12.903s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTree_FindStatic-12",
+            "runs": 131116,
+            "nsPerOp": 9121,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTree_FindGithub-12",
+            "runs": 85471,
+            "nsPerOp": 13477,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTree_FindStaticTsr-12",
+            "runs": 113751890,
+            "nsPerOp": 11.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTree_FindParam-12",
+            "runs": 22693284,
+            "nsPerOp": 53.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTree_FindParamTsr-12",
+            "runs": 18109278,
+            "nsPerOp": 71.25,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTree_FindAny-12",
+            "runs": 20380584,
+            "nsPerOp": 70.07,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTree_FindAnyFallback-12",
+            "runs": 12968239,
+            "nsPerOp": 101.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRouteStatic-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "2023/10/27"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTree_FindStatic",
+            "modificationCount": 2,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2023-02-08"
+          },
+          {
+            "name": "BenchmarkTree_FindGithub",
+            "modificationCount": 2,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2023-02-08"
+          },
+          {
+            "name": "BenchmarkTree_FindStaticTsr",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkTree_FindParam",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkTree_FindParamTsr",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkTree_FindAny",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkTree_FindAnyFallback",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          },
+          {
+            "name": "BenchmarkRouteStatic",
+            "modificationCount": 1,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2022-05-31"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "cloudwego/hertz",
+    "name": "hertz",
+    "private": false,
+    "html_url": "https://github.com/cloudwego/hertz",
+    "description": "Go HTTP framework with high-performance and strong-extensibility for building micro-services.",
+    "fork": false,
+    "created_at": "2022-05-12T14:05:09Z",
+    "updated_at": "2023-10-23T03:31:28Z",
+    "pushed_at": "2023-10-23T07:17:03Z",
+    "ssh_url": "git@github.com:cloudwego/hertz.git",
+    "homepage": "https://www.cloudwego.io",
+    "stargazers_count": 4262,
+    "watchers_count": 4262,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 378,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 43,
+    "topics": [
+      "go",
+      "http",
+      "microservices"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 323,
+    "Lines": 72709,
+    "Blank": 8254,
+    "Code": 52209,
+    "Comment": 12246,
+    "Bytes": 2118580,
+    "Complexity": 9387
+  }
+}

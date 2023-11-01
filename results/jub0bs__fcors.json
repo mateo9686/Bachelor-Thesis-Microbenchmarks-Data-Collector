@@ -1,0 +1,2664 @@
+{
+  "Name": "jub0bs/fcors",
+  "Path": "./repositories/jub0bs__fcors",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T12:56:20Z",
+    "benchmarkCount": 198,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 198,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/jub0bs/fcors",
+        "succeded": true,
+        "duration": "68.658s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMiddleware/allow_arbitrary_origin_init-12",
+            "runs": 491098,
+            "nsPerOp": 3143,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_init-12",
+            "runs": 328578,
+            "nsPerOp": 3317,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_multiple_origins_init-12",
+            "runs": 23922,
+            "nsPerOp": 60692,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_pathological_origin_init-12",
+            "runs": 104613,
+            "nsPerOp": 12392,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_two_pathological_origins_init-12",
+            "runs": 24088,
+            "nsPerOp": 51083,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_with_credentials_with_any_request_headers_init-12",
+            "runs": 716359,
+            "nsPerOp": 2055,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_with_credentials_and_expose_some_response_headers_init-12",
+            "runs": 251404,
+            "nsPerOp": 4211,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/without_CORS_config_vs_CORS_preflight_request_from_some_origin-12",
+            "runs": 206508925,
+            "nsPerOp": 7.253,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/without_CORS_config_vs_actual_CORS_request_from_some_origin-12",
+            "runs": 186388646,
+            "nsPerOp": 6.103,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_arbitrary_origin_vs_CORS_preflight_request_from_some_origin-12",
+            "runs": 4888647,
+            "nsPerOp": 273.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_arbitrary_origin_vs_actual_CORS_request_from_some_origin-12",
+            "runs": 13083297,
+            "nsPerOp": 101.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_vs_CORS_preflight_request_from_allowed_origin-12",
+            "runs": 3249499,
+            "nsPerOp": 464.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_vs_actual_CORS_request_from_allowed_origin-12",
+            "runs": 9350608,
+            "nsPerOp": 126.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_vs_CORS_preflight_request_from_disallowed_origin-12",
+            "runs": 4826162,
+            "nsPerOp": 257.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_vs_actual_CORS_request_from_disallowed_origin-12",
+            "runs": 14475615,
+            "nsPerOp": 88.18,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_multiple_origins_vs_CORS_preflight_request_from_allowed_origin-12",
+            "runs": 3532347,
+            "nsPerOp": 349,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_multiple_origins_vs_actual_CORS_request_from_allowed_origin-12",
+            "runs": 4493224,
+            "nsPerOp": 479,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_multiple_origins_vs_CORS_preflight_request_from_disallowed_origin-12",
+            "runs": 3592965,
+            "nsPerOp": 305.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_multiple_origins_vs_actual_CORS_request_from_disallowed_origin-12",
+            "runs": 3730600,
+            "nsPerOp": 292.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_multiple_origins_vs_CORS_preflight_request_from_abnormally_long_origin-12",
+            "runs": 10093591,
+            "nsPerOp": 214.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_multiple_origins_vs_actual_CORS_request_from_abnormally_long_origin-12",
+            "runs": 9197965,
+            "nsPerOp": 136.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_pathological_origin_vs_CORS_preflight_request_from_pathological_disallowed_origin-12",
+            "runs": 2091214,
+            "nsPerOp": 573,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_pathological_origin_vs_actual_CORS_request_from_pathological_disallowed_origin-12",
+            "runs": 12743282,
+            "nsPerOp": 90.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_pathological_origin_vs_CORS_preflight_request_from_allowed_origin-12",
+            "runs": 1901206,
+            "nsPerOp": 747.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_pathological_origin_vs_actual_CORS_request_from_allowed_origin-12",
+            "runs": 12263271,
+            "nsPerOp": 102.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_two_pathological_origins_vs_CORS_preflight_request_from_pathological_disallowed_origin-12",
+            "runs": 275601,
+            "nsPerOp": 5288,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_two_pathological_origins_vs_actual_CORS_request_from_pathological_disallowed_origin-12",
+            "runs": 305347,
+            "nsPerOp": 3550,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_two_pathological_origins_vs_CORS_preflight_request_from_allowed_origin-12",
+            "runs": 269868,
+            "nsPerOp": 4749,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_two_pathological_origins_vs_actual_CORS_request_from_allowed_origin-12",
+            "runs": 237636,
+            "nsPerOp": 4873,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_with_credentials_with_any_request_headers_vs_CORS_preflight_request_from_allowed_origin_with_adversarial_ACRH-12",
+            "runs": 4483216,
+            "nsPerOp": 280,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_with_credentials_and_expose_some_response_headers_vs_CORS_preflight_request_from_allowed_origin-12",
+            "runs": 4662349,
+            "nsPerOp": 279.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddleware/allow_one_origin_with_credentials_and_expose_some_response_headers_vs_actual_CORS_request_from_allowed_origin-12",
+            "runs": 7786038,
+            "nsPerOp": 208.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddlewareInvocationVary/allow_multiple_origins_vs_CORS_preflight_request_from_allowed_origin-12",
+            "runs": 1738425,
+            "nsPerOp": 955.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMiddlewareInvocationVary/allow_multiple_origins_vs_actual_CORS_request_from_allowed_origin-12",
+            "runs": 2348990,
+            "nsPerOp": 561.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddleware",
+            "modificationCount": 5,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddlewareInvocationVary",
+            "modificationCount": 4,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkMiddlewareInvocationVary",
+            "modificationCount": 4,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2023-09-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/jub0bs/fcors/internal/origin",
+        "succeded": true,
+        "duration": "300.758s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of__versus_origin_https://foo.example.com-12",
+            "runs": 100000000,
+            "nsPerOp": 10.33,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of__versus_origin_http://foo.example.com-12",
+            "runs": 158699228,
+            "nsPerOp": 7.555,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_versus_origin_https://foo.example.com-12",
+            "runs": 9695841,
+            "nsPerOp": 110.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_versus_origin_http://foo.example.com-12",
+            "runs": 140382897,
+            "nsPerOp": 8.45,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_versus_origin_https://foo.example.com:9090-12",
+            "runs": 10123016,
+            "nsPerOp": 127,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_versus_origin_https://foo.example.com.-12",
+            "runs": 51623880,
+            "nsPerOp": 26.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_versus_origin_https://example.com-12",
+            "runs": 14555632,
+            "nsPerOp": 78.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_versus_origin_https://fooexample.com-12",
+            "runs": 21890139,
+            "nsPerOp": 75.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_versus_origin_https://foo.example.computer-12",
+            "runs": 35026705,
+            "nsPerOp": 39.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_versus_origin_https://qux.baz.bar.foo.example.com-12",
+            "runs": 11250064,
+            "nsPerOp": 109.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254_versus_origin_http://169.254.169.254-12",
+            "runs": 50396968,
+            "nsPerOp": 21.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254_versus_origin_http://169.254.169.254:6060-12",
+            "runs": 22677240,
+            "nsPerOp": 59.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254_versus_origin_http://168.254.169.254-12",
+            "runs": 54285916,
+            "nsPerOp": 22.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254_versus_origin_http://[2001:db8:aaaa:1111::100]-12",
+            "runs": 66449630,
+            "nsPerOp": 20.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://[2001:db8:aaaa:1111::100]_versus_origin_http://[2001:db8:aaaa:1111::100]-12",
+            "runs": 38090372,
+            "nsPerOp": 30.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://[2001:db8:aaaa:1111::100]_versus_origin_http://[2001:db8:aaaa:1111::100]:6060-12",
+            "runs": 24041662,
+            "nsPerOp": 41.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://[2001:db8:aaaa:1111::100]_versus_origin_http://[2001:db8:aaaa:1111::111]-12",
+            "runs": 54219748,
+            "nsPerOp": 21.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://[2001:db8:aaaa:1111::100]_versus_origin_http://168.254.169.254-12",
+            "runs": 89813748,
+            "nsPerOp": 15.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com._versus_origin_https://foo.example.com.-12",
+            "runs": 9182720,
+            "nsPerOp": 115.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com._versus_origin_http://foo.example.com.-12",
+            "runs": 100000000,
+            "nsPerOp": 11.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com._versus_origin_https://foo.example.com.:9090-12",
+            "runs": 8473015,
+            "nsPerOp": 129.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com._versus_origin_https://foo.example.com-12",
+            "runs": 43942636,
+            "nsPerOp": 30.52,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com._versus_origin_https://example.com.-12",
+            "runs": 11536604,
+            "nsPerOp": 151.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com._versus_origin_https://fooexample.com.-12",
+            "runs": 10892653,
+            "nsPerOp": 147.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com._versus_origin_https://foo.example.comp.uter-12",
+            "runs": 44016081,
+            "nsPerOp": 24.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com._versus_origin_https://qux.baz.bar.foo.example.com.-12",
+            "runs": 11655964,
+            "nsPerOp": 102.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_versus_origin_https://bar.foo.example.com-12",
+            "runs": 11112183,
+            "nsPerOp": 100.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_versus_origin_https://foo.example.com-12",
+            "runs": 11965562,
+            "nsPerOp": 83.64,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_versus_origin_https://foo.example.com:6060-12",
+            "runs": 15169282,
+            "nsPerOp": 86.33,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_versus_origin_http://foo.example.com-12",
+            "runs": 177007983,
+            "nsPerOp": 6.959,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_versus_origin_https://quux.example.com-12",
+            "runs": 15247156,
+            "nsPerOp": 77.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_versus_origin_https://baz.bar.foo.example.com-12",
+            "runs": 14393532,
+            "nsPerOp": 97.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_versus_origin_https://bar.foo.example.com-12",
+            "runs": 11719984,
+            "nsPerOp": 124,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_versus_origin_https://baz.bar.foo.example.com-12",
+            "runs": 8747394,
+            "nsPerOp": 136.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_versus_origin_https://foo.example.com-12",
+            "runs": 9126640,
+            "nsPerOp": 130.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_versus_origin_https://foo.example.com:6060-12",
+            "runs": 5630631,
+            "nsPerOp": 223.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_versus_origin_http://foo.example.com-12",
+            "runs": 100000000,
+            "nsPerOp": 18.34,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_versus_origin_https://quux.example.com-12",
+            "runs": 7733404,
+            "nsPerOp": 142.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_https://*.foo.example.com_versus_origin_https://foo.example.com-12",
+            "runs": 9191052,
+            "nsPerOp": 147.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_https://*.foo.example.com_versus_origin_https://bar.foo.example.com-12",
+            "runs": 11013146,
+            "nsPerOp": 137.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_https://*.foo.example.com_versus_origin_http://foo.example.com-12",
+            "runs": 128448859,
+            "nsPerOp": 9.053,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_https://*.foo.example.com_versus_origin_http://bar.foo.example.com-12",
+            "runs": 131982849,
+            "nsPerOp": 10.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_https://*.foo.example.com_versus_origin_https://foo.example.com:6060-12",
+            "runs": 10966956,
+            "nsPerOp": 150.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_https://*.foo.example.com_versus_origin_https://bar.foo.example.com:6060-12",
+            "runs": 7154708,
+            "nsPerOp": 235.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_https://*.foo.example.com_versus_origin_https://qux.example.com-12",
+            "runs": 8517201,
+            "nsPerOp": 128.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com_https://*.foo.example.com_versus_origin_https://baz.bar.foo.example.com-12",
+            "runs": 14924390,
+            "nsPerOp": 113.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.example.com_versus_origin_https://foo.example.com-12",
+            "runs": 12203419,
+            "nsPerOp": 101.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.example.com_versus_origin_https://bar.foo.example.com-12",
+            "runs": 8007280,
+            "nsPerOp": 175.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.example.com_versus_origin_http://foo.example.com-12",
+            "runs": 67401348,
+            "nsPerOp": 14.89,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.example.com_versus_origin_http://bar.foo.example.com-12",
+            "runs": 100000000,
+            "nsPerOp": 14.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.example.com_versus_origin_https://foo.example.com:6060-12",
+            "runs": 6404337,
+            "nsPerOp": 208.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.example.com_versus_origin_https://bar.foo.example.com:6060-12",
+            "runs": 6687255,
+            "nsPerOp": 171.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.example.com_versus_origin_https://qux.example.com-12",
+            "runs": 13778450,
+            "nsPerOp": 101.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.example.com_versus_origin_https://baz.bar.foo.example.com-12",
+            "runs": 12700422,
+            "nsPerOp": 85.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_versus_origin_https://foo.example.com:9090-12",
+            "runs": 18004772,
+            "nsPerOp": 80.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_versus_origin_http://foo.example.com:9090-12",
+            "runs": 100000000,
+            "nsPerOp": 11.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_versus_origin_https://foo.example.com:8080-12",
+            "runs": 9838489,
+            "nsPerOp": 118.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_versus_origin_https://foo.example.com-12",
+            "runs": 8852176,
+            "nsPerOp": 127.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_versus_origin_https://qux.example.com:9090-12",
+            "runs": 12107103,
+            "nsPerOp": 96.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_versus_origin_https://bar.foo.example.com:9090-12",
+            "runs": 10839950,
+            "nsPerOp": 121.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_versus_origin_https://baz.bar.foo.example.com:9090-12",
+            "runs": 6888326,
+            "nsPerOp": 260.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:8080_https://foo.example.com:9090_versus_origin_https://foo.example.com:8080-12",
+            "runs": 8703254,
+            "nsPerOp": 167.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:8080_https://foo.example.com:9090_versus_origin_https://foo.example.com:9090-12",
+            "runs": 10344512,
+            "nsPerOp": 211.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:8080_https://foo.example.com:9090_versus_origin_https://foo.example.com:7070-12",
+            "runs": 3388388,
+            "nsPerOp": 318.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:8080_https://foo.example.com:9090_versus_origin_http://foo.example.com:9090-12",
+            "runs": 99617997,
+            "nsPerOp": 13.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:8080_https://foo.example.com:9090_versus_origin_http://foo.example.com:8080-12",
+            "runs": 54851979,
+            "nsPerOp": 28.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:8080_https://foo.example.com:9090_versus_origin_https://foo.example.com-12",
+            "runs": 3830301,
+            "nsPerOp": 314.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:8080_https://foo.example.com:9090_versus_origin_https://qux.example.com:9090-12",
+            "runs": 3826460,
+            "nsPerOp": 331,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:8080_https://foo.example.com:9090_versus_origin_https://bar.foo.example.com:9090-12",
+            "runs": 5384854,
+            "nsPerOp": 235.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:8080_https://foo.example.com:9090_versus_origin_https://baz.bar.foo.example.com:9090-12",
+            "runs": 7812409,
+            "nsPerOp": 158.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_versus_origin_https://foo.example.com-12",
+            "runs": 5308468,
+            "nsPerOp": 262.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_versus_origin_https://foo.example.com:8080-12",
+            "runs": 7958868,
+            "nsPerOp": 149.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_versus_origin_https://foo.example.com:9090-12",
+            "runs": 8556414,
+            "nsPerOp": 142.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_versus_origin_https://qux.example.com:9090-12",
+            "runs": 11021832,
+            "nsPerOp": 127.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_versus_origin_https://bar.foo.example.com:9090-12",
+            "runs": 7825194,
+            "nsPerOp": 160.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_versus_origin_https://baz.bar.foo.example.com:9090-12",
+            "runs": 8763254,
+            "nsPerOp": 150.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_https://foo.example.com:*_versus_origin_https://foo.example.com-12",
+            "runs": 6877999,
+            "nsPerOp": 184.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_https://foo.example.com:*_versus_origin_https://foo.example.com:8080-12",
+            "runs": 7088244,
+            "nsPerOp": 183.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_https://foo.example.com:*_versus_origin_https://foo.example.com:9090-12",
+            "runs": 8837055,
+            "nsPerOp": 180,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_https://foo.example.com:*_versus_origin_https://qux.example.com:9090-12",
+            "runs": 6966032,
+            "nsPerOp": 164.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_https://foo.example.com:*_versus_origin_https://bar.foo.example.com:9090-12",
+            "runs": 5777281,
+            "nsPerOp": 211.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:9090_https://foo.example.com:*_versus_origin_https://baz.bar.foo.example.com:9090-12",
+            "runs": 8235984,
+            "nsPerOp": 176.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_https://foo.example.com:9090_versus_origin_https://foo.example.com-12",
+            "runs": 6584085,
+            "nsPerOp": 154.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_https://foo.example.com:9090_versus_origin_https://foo.example.com:8080-12",
+            "runs": 10864310,
+            "nsPerOp": 129.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_https://foo.example.com:9090_versus_origin_https://foo.example.com:9090-12",
+            "runs": 10324887,
+            "nsPerOp": 190,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_https://foo.example.com:9090_versus_origin_https://qux.example.com:9090-12",
+            "runs": 7631019,
+            "nsPerOp": 138.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_https://foo.example.com:9090_versus_origin_https://bar.foo.example.com:9090-12",
+            "runs": 9335611,
+            "nsPerOp": 149.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://foo.example.com:*_https://foo.example.com:9090_versus_origin_https://baz.bar.foo.example.com:9090-12",
+            "runs": 12276122,
+            "nsPerOp": 133.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_versus_origin_http://169.254.169.254-12",
+            "runs": 22894656,
+            "nsPerOp": 47.89,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_versus_origin_http://169.254.169.254:8080-12",
+            "runs": 24122192,
+            "nsPerOp": 48.52,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_versus_origin_http://169.254.169.254:9090-12",
+            "runs": 26206106,
+            "nsPerOp": 58.85,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_versus_origin_http://169.254.169.255-12",
+            "runs": 48784099,
+            "nsPerOp": 25.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_versus_origin_http://169.254.169.255:8080-12",
+            "runs": 47941015,
+            "nsPerOp": 28.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_versus_origin_http://169.254.169.255:9090-12",
+            "runs": 47973370,
+            "nsPerOp": 27.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_http://169.254.169.254:9090_versus_origin_http://169.254.169.254-12",
+            "runs": 23413297,
+            "nsPerOp": 54.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_http://169.254.169.254:9090_versus_origin_http://169.254.169.254:8080-12",
+            "runs": 29288324,
+            "nsPerOp": 42.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_http://169.254.169.254:9090_versus_origin_http://169.254.169.254:9090-12",
+            "runs": 25537591,
+            "nsPerOp": 60.43,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_http://169.254.169.254:9090_versus_origin_http://169.254.169.255-12",
+            "runs": 45199431,
+            "nsPerOp": 31.55,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_http://169.254.169.254:9090_versus_origin_http://169.254.169.255:8080-12",
+            "runs": 46143597,
+            "nsPerOp": 24.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:*_http://169.254.169.254:9090_versus_origin_http://169.254.169.255:9090-12",
+            "runs": 81739364,
+            "nsPerOp": 24.27,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:9090_http://169.254.169.254:*_versus_origin_http://169.254.169.254-12",
+            "runs": 41099228,
+            "nsPerOp": 33.71,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:9090_http://169.254.169.254:*_versus_origin_http://169.254.169.254:8080-12",
+            "runs": 47227928,
+            "nsPerOp": 34.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:9090_http://169.254.169.254:*_versus_origin_http://169.254.169.254:9090-12",
+            "runs": 36955044,
+            "nsPerOp": 38.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:9090_http://169.254.169.254:*_versus_origin_http://169.254.169.255-12",
+            "runs": 58985367,
+            "nsPerOp": 21.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:9090_http://169.254.169.254:*_versus_origin_http://169.254.169.255:8080-12",
+            "runs": 52181403,
+            "nsPerOp": 22.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_http://169.254.169.254:9090_http://169.254.169.254:*_versus_origin_http://169.254.169.255:9090-12",
+            "runs": 72053000,
+            "nsPerOp": 23.48,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://bar.foo.example.com-12",
+            "runs": 7623153,
+            "nsPerOp": 166.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com-12",
+            "runs": 2437519,
+            "nsPerOp": 544.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://quux.foo.example.com-12",
+            "runs": 8297503,
+            "nsPerOp": 169.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://qux.quux.foo.example.com-12",
+            "runs": 9850413,
+            "nsPerOp": 151.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://bar.foo.example.com-12",
+            "runs": 100000000,
+            "nsPerOp": 11.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://bar.foo.example.com:9090-12",
+            "runs": 6837601,
+            "nsPerOp": 166.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://foo.example.com-12",
+            "runs": 10123600,
+            "nsPerOp": 127.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://quux.example.com-12",
+            "runs": 9882733,
+            "nsPerOp": 136.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://baz.bar.foo.example.com-12",
+            "runs": 7471722,
+            "nsPerOp": 173.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://foo.example.com-12",
+            "runs": 100000000,
+            "nsPerOp": 12.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://quux.example.com-12",
+            "runs": 70565683,
+            "nsPerOp": 16.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://baz.bar.foo.example.com-12",
+            "runs": 100000000,
+            "nsPerOp": 19.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://foo.example.com:9090-12",
+            "runs": 94153054,
+            "nsPerOp": 20.04,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://quux.example.com:9090-12",
+            "runs": 100000000,
+            "nsPerOp": 27.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://*.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://baz.bar.foo.example.com:9090-12",
+            "runs": 67075333,
+            "nsPerOp": 33.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://bar.foo.example.com-12",
+            "runs": 6116578,
+            "nsPerOp": 176.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://baz.bar.foo.example.com-12",
+            "runs": 8935354,
+            "nsPerOp": 206.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com-12",
+            "runs": 7268143,
+            "nsPerOp": 147.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://quux.foo.example.com-12",
+            "runs": 11155002,
+            "nsPerOp": 202.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://qux.quux.foo.example.com-12",
+            "runs": 2297535,
+            "nsPerOp": 437,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://bar.foo.example.com-12",
+            "runs": 80288224,
+            "nsPerOp": 13.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://bar.foo.example.com:9090-12",
+            "runs": 6321546,
+            "nsPerOp": 276.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://foo.example.com-12",
+            "runs": 7797790,
+            "nsPerOp": 149.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_https://quux.example.com-12",
+            "runs": 11362464,
+            "nsPerOp": 163.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://baz.bar.foo.example.com-12",
+            "runs": 117186855,
+            "nsPerOp": 20.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://foo.example.com-12",
+            "runs": 39403305,
+            "nsPerOp": 33.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://quux.example.com-12",
+            "runs": 87712764,
+            "nsPerOp": 16.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://foo.example.com:9090-12",
+            "runs": 100000000,
+            "nsPerOp": 13.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://quux.example.com:9090-12",
+            "runs": 66376978,
+            "nsPerOp": 15.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://**.foo.example.com_https://foo.bar.baz.qux.quux.foo.bar.baz.qux.quux.foo.example.com_https://quux.foo.example.com_https://qux.quux.foo.example.com_versus_origin_http://baz.bar.foo.example.com:9090-12",
+            "runs": 100000000,
+            "nsPerOp": 14.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a_versus_origin_https://a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a-12",
+            "runs": 287334,
+            "nsPerOp": 5450,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorpus/corpus_made_up_of_https://a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a_versus_origin_https://b.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a.a-12",
+            "runs": 353155,
+            "nsPerOp": 5870,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/domain_without_port-12",
+            "runs": 10339718,
+            "nsPerOp": 144.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/unsupported_scheme-12",
+            "runs": 71111739,
+            "nsPerOp": 17.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/unsupported_scheme_starting_with_supported_scheme-12",
+            "runs": 64947058,
+            "nsPerOp": 23.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/brackets_containing_non-IPv6_chars-12",
+            "runs": 24662030,
+            "nsPerOp": 59.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/unmatched_left_bracket-12",
+            "runs": 30755763,
+            "nsPerOp": 35.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/brackets_containing_non-IPv6_chars#01-12",
+            "runs": 43954663,
+            "nsPerOp": 27.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/brackets_containing_non-IPv6_chars#02-12",
+            "runs": 35807040,
+            "nsPerOp": 29.96,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/valid_compressed_IPv6-12",
+            "runs": 31690105,
+            "nsPerOp": 39.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/valid_compressed_IPv6_followed_by_a_trailing_full_stop-12",
+            "runs": 43062771,
+            "nsPerOp": 23.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/domain_with_colon_but_without_port-12",
+            "runs": 23359009,
+            "nsPerOp": 65.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/domain_with_a_leading_full_stop-12",
+            "runs": 70540188,
+            "nsPerOp": 34.25,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/domain_with_invalid_char_after_host-12",
+            "runs": 21524074,
+            "nsPerOp": 62.17,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/domain_followed_by_character_other_than_colon-12",
+            "runs": 19477660,
+            "nsPerOp": 59.71,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/domain_with_colon_but_with_non-numeric_port-12",
+            "runs": 20702385,
+            "nsPerOp": 49.17,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/domain_with_colon_but_with_non-numeric_port_starting_with_digits-12",
+            "runs": 24861903,
+            "nsPerOp": 96.33,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/domain_port-12",
+            "runs": 11212832,
+            "nsPerOp": 112.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/ipv4_port-12",
+            "runs": 19591195,
+            "nsPerOp": 79.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/ipv4_with_trailing_full_stop-12",
+            "runs": 19526331,
+            "nsPerOp": 67.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/malformed_ipv4_with_one_too_many_octets-12",
+            "runs": 21471950,
+            "nsPerOp": 60.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/ipv4_with_overflowing_octet-12",
+            "runs": 18717602,
+            "nsPerOp": 54.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/ipv4_with_trailing_full_stop_and_port-12",
+            "runs": 19530166,
+            "nsPerOp": 155.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/invalid_TLD-12",
+            "runs": 4718830,
+            "nsPerOp": 256.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/longer_invalid_TLD-12",
+            "runs": 5003742,
+            "nsPerOp": 562.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/valid_domain_with_all-numeric_label_in_the_middle-12",
+            "runs": 6401803,
+            "nsPerOp": 229.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/ipv6_with_port-12",
+            "runs": 18265594,
+            "nsPerOp": 136.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/deep_subdomain-12",
+            "runs": 196572956,
+            "nsPerOp": 15.63,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkCorpus",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "jub0bs/fcors",
+    "name": "fcors",
+    "private": false,
+    "html_url": "https://github.com/jub0bs/fcors",
+    "description": "a principled CORS middleware library for Go",
+    "fork": false,
+    "created_at": "2022-12-21T13:28:29Z",
+    "updated_at": "2023-10-15T02:39:29Z",
+    "pushed_at": "2023-10-16T21:06:51Z",
+    "ssh_url": "git@github.com:jub0bs/fcors.git",
+    "homepage": "https://pkg.go.dev/github.com/jub0bs/fcors",
+    "stargazers_count": 67,
+    "watchers_count": 67,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "cors",
+      "go",
+      "golang",
+      "http",
+      "middleware",
+      "server",
+      "web-security"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 33,
+    "Lines": 11244,
+    "Blank": 287,
+    "Code": 10117,
+    "Comment": 840,
+    "Bytes": 369044,
+    "Complexity": 563
+  }
+}

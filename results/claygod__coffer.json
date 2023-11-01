@@ -1,0 +1,241 @@
+{
+  "Name": "claygod/coffer",
+  "Path": "./repositories/claygod__coffer",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T00:19:58Z",
+    "benchmarkCount": 11,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 10,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/claygod/coffer",
+        "succeded": true,
+        "duration": "18.378s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkClean-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.01411,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCofferWriteParallel32NotConcurent-12",
+            "runs": 50384,
+            "nsPerOp": 40136,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCofferWriteParallel32HiConcurent-12",
+            "runs": 30954,
+            "nsPerOp": 45020,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCofferTransactionSequence-12",
+            "runs": 2293,
+            "nsPerOp": 603963,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCofferTransactionPar32NotConcurent-12",
+            "runs": 3,
+            "nsPerOp": 476194849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCofferTransactionPar32HalfConcurent-12",
+            "runs": 4,
+            "nsPerOp": 286593854,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkClean",
+            "modificationCount": 5,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2019-10-31"
+          },
+          {
+            "name": "BenchmarkCofferWriteParallel32NotConcurent",
+            "modificationCount": 6,
+            "createdOn": "2019-09-24",
+            "lastUpdateOn": "2019-10-17"
+          },
+          {
+            "name": "BenchmarkCofferWriteParallel32HiConcurent",
+            "modificationCount": 8,
+            "createdOn": "2019-09-24",
+            "lastUpdateOn": "2019-10-17"
+          },
+          {
+            "name": "BenchmarkCofferTransactionSequence",
+            "modificationCount": 4,
+            "createdOn": "2019-09-29",
+            "lastUpdateOn": "2019-10-17"
+          },
+          {
+            "name": "BenchmarkCofferTransactionPar32NotConcurent",
+            "modificationCount": 4,
+            "createdOn": "2019-09-29",
+            "lastUpdateOn": "2019-10-31"
+          },
+          {
+            "name": "BenchmarkCofferTransactionPar32HalfConcurent",
+            "modificationCount": 7,
+            "createdOn": "2019-09-24",
+            "lastUpdateOn": "2019-10-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/claygod/coffer/services/batcher",
+        "succeded": true,
+        "duration": "1.672s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkClientParallel-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "====================Parallel======================"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkClientParallel",
+            "modificationCount": 2,
+            "createdOn": "2019-09-16",
+            "lastUpdateOn": "2019-09-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/claygod/coffer/services/journal",
+        "succeded": false,
+        "duration": "4.993s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkClient-12",
+            "runs": 234046,
+            "nsPerOp": 4783,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBatcherClient-12",
+            "runs": 266768,
+            "nsPerOp": 4898,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 2,
+            "createdOn": "2019-09-16",
+            "lastUpdateOn": "2019-09-18"
+          },
+          {
+            "name": "BenchmarkBatcherClient",
+            "modificationCount": 2,
+            "createdOn": "2019-05-14",
+            "lastUpdateOn": "2019-10-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/claygod/coffer/services/resources",
+        "succeded": true,
+        "duration": "3.439s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSetFreeMemory-12",
+            "runs": 10000,
+            "nsPerOp": 195998,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSetFreeDisk-12",
+            "runs": 260232,
+            "nsPerOp": 5150,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSetFreeMemory",
+            "modificationCount": 2,
+            "createdOn": "2019-05-14",
+            "lastUpdateOn": "2019-07-09"
+          },
+          {
+            "name": "BenchmarkSetFreeDisk",
+            "modificationCount": 2,
+            "createdOn": "2019-05-14",
+            "lastUpdateOn": "2019-07-09"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "claygod/coffer",
+    "name": "coffer",
+    "private": false,
+    "html_url": "https://github.com/claygod/coffer",
+    "description": "Simply ACID* key-value database. At the medium or even low latency it tries to provide greater throughput without losing the ACID properties of the database. The database provides the ability to create record headers at own discretion and use them as transactions. The maximum size of stored data is limited by the size of the computer's RAM.",
+    "fork": false,
+    "created_at": "2019-05-13T18:30:23Z",
+    "updated_at": "2023-07-19T22:30:32Z",
+    "pushed_at": "2023-04-09T17:17:50Z",
+    "ssh_url": "git@github.com:claygod/coffer.git",
+    "stargazers_count": 34,
+    "watchers_count": 34,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 4,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 1,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 48,
+    "Lines": 7526,
+    "Blank": 1024,
+    "Code": 5119,
+    "Comment": 1383,
+    "Bytes": 183015,
+    "Complexity": 1425
+  }
+}

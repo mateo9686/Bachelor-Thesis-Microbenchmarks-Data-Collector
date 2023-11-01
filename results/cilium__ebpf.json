@@ -1,0 +1,1407 @@
+{
+  "Name": "cilium/ebpf",
+  "Path": "./repositories/cilium__ebpf",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T23:59:18Z",
+    "benchmarkCount": 98,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 86,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/cilium/ebpf",
+        "succeded": false,
+        "duration": "1.296s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewCollection",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "collection_test.go:708: map .rodata.test: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          },
+          {
+            "name": "BenchmarkNewCollectionManyProgs",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "collection_test.go:727: map kprobe_map: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          },
+          {
+            "name": "BenchmarkELFLoader-12",
+            "runs": 1867,
+            "nsPerOp": 626622,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStats",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "info_test.go:273: load program: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          },
+          {
+            "name": "BenchmarkMarshaling",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "map_test.go:1805: creating map: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          },
+          {
+            "name": "BenchmarkPerCPUMarshalling",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "map_test.go:1899: creating map: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          },
+          {
+            "name": "BenchmarkMap",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "map_test.go:1936: creating map: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          },
+          {
+            "name": "BenchmarkIterate",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "map_test.go:2005: creating map: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewCollection",
+            "modificationCount": 1,
+            "createdOn": "2022-09-09",
+            "lastUpdateOn": "2022-09-09"
+          },
+          {
+            "name": "BenchmarkNewCollectionManyProgs",
+            "modificationCount": 1,
+            "createdOn": "2023-01-26",
+            "lastUpdateOn": "2023-01-26"
+          },
+          {
+            "name": "BenchmarkELFLoader",
+            "modificationCount": 1,
+            "createdOn": "2022-04-18",
+            "lastUpdateOn": "2022-04-18"
+          },
+          {
+            "name": "BenchmarkStats",
+            "modificationCount": 2,
+            "createdOn": "2021-03-08",
+            "lastUpdateOn": "2021-11-17"
+          },
+          {
+            "name": "BenchmarkMarshaling",
+            "modificationCount": 4,
+            "createdOn": "2019-08-20",
+            "lastUpdateOn": "2023-06-07"
+          },
+          {
+            "name": "BenchmarkPerCPUMarshalling",
+            "modificationCount": 2,
+            "createdOn": "2021-09-23",
+            "lastUpdateOn": "2022-11-05"
+          },
+          {
+            "name": "BenchmarkMap",
+            "modificationCount": 4,
+            "createdOn": "2019-09-04",
+            "lastUpdateOn": "2022-11-05"
+          },
+          {
+            "name": "BenchmarkIterate",
+            "modificationCount": 2,
+            "createdOn": "2019-02-20",
+            "lastUpdateOn": "2023-06-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cilium/ebpf/asm",
+        "succeded": true,
+        "duration": "10.777s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRead64bitImmediate-12",
+            "runs": 16448468,
+            "nsPerOp": 79.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite64BitImmediate-12",
+            "runs": 16774107,
+            "nsPerOp": 73.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetadata/add_first-12",
+            "runs": 15206850,
+            "nsPerOp": 78.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetadata/add_last-12",
+            "runs": 15726698,
+            "nsPerOp": 76.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetadata/add_existing-12",
+            "runs": 96182270,
+            "nsPerOp": 12.12,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetadata/get_miss-12",
+            "runs": 403983082,
+            "nsPerOp": 3.275,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRead64bitImmediate",
+            "modificationCount": 1,
+            "createdOn": "2021-12-20",
+            "lastUpdateOn": "2021-12-20"
+          },
+          {
+            "name": "BenchmarkWrite64BitImmediate",
+            "modificationCount": 1,
+            "createdOn": "2021-12-20",
+            "lastUpdateOn": "2021-12-20"
+          },
+          {
+            "name": "BenchmarkMetadata",
+            "modificationCount": 1,
+            "createdOn": "2022-04-18",
+            "lastUpdateOn": "2022-04-18"
+          },
+          {
+            "name": "BenchmarkMetadata",
+            "modificationCount": 1,
+            "createdOn": "2022-04-18",
+            "lastUpdateOn": "2022-04-18"
+          },
+          {
+            "name": "BenchmarkMetadata",
+            "modificationCount": 1,
+            "createdOn": "2022-04-18",
+            "lastUpdateOn": "2022-04-18"
+          },
+          {
+            "name": "BenchmarkMetadata",
+            "modificationCount": 1,
+            "createdOn": "2022-04-18",
+            "lastUpdateOn": "2022-04-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cilium/ebpf/btf",
+        "succeded": false,
+        "duration": "80.242s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseVmlinux-12",
+            "runs": 12,
+            "nsPerOp": 105874701,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSpecCopy-12",
+            "runs": 18,
+            "nsPerOp": 72386033,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/byte_off-12",
+            "runs": 1568839,
+            "nsPerOp": 684.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/byte_sz-12",
+            "runs": 1508490,
+            "nsPerOp": 790.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/field_exists-12",
+            "runs": 1696185,
+            "nsPerOp": 685,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/signed",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "core_test.go:742: relocate Struct:\"sk_buff\": target Struct:\"sk_buff\": signed: type *btf.Union: no signedness"
+          },
+          {
+            "name": "BenchmarkCORESkBuff/lshift_u64-12",
+            "runs": 1683496,
+            "nsPerOp": 1032,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/rshift_u64-12",
+            "runs": 1540021,
+            "nsPerOp": 664.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/local_type_id-12",
+            "runs": 16926710,
+            "nsPerOp": 61.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/target_type_id-12",
+            "runs": 2019638,
+            "nsPerOp": 662.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/type_exists-12",
+            "runs": 1803082,
+            "nsPerOp": 619.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/type_size-12",
+            "runs": 1859736,
+            "nsPerOp": 688.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/enumval_exists-12",
+            "runs": 1545178,
+            "nsPerOp": 1600,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCORESkBuff/enumval_value-12",
+            "runs": 1000000,
+            "nsPerOp": 1122,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshaler-12",
+            "runs": 4081,
+            "nsPerOp": 258006,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildVmlinux-12",
+            "runs": 7,
+            "nsPerOp": 469908353,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPostorderTraversal/single_type-12",
+            "runs": 10090562,
+            "nsPerOp": 158.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPostorderTraversal/cycle(1)-12",
+            "runs": 989404,
+            "nsPerOp": 1696,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPostorderTraversal/cycle(10)-12",
+            "runs": 422744,
+            "nsPerOp": 6091,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPostorderTraversal/gov_update_cpu_data-12",
+            "runs": 608,
+            "nsPerOp": 1675109,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCopy-12",
+            "runs": 277929,
+            "nsPerOp": 4409,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Void-12",
+            "runs": 234538308,
+            "nsPerOp": 4.441,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Int[unsigned_size=0]-12",
+            "runs": 285292123,
+            "nsPerOp": 4.722,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Pointer[target=\u003cnil\u003e]-12",
+            "runs": 6161199,
+            "nsPerOp": 202.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Array[index=\u003cnil\u003e_type=\u003cnil\u003e_n=0]-12",
+            "runs": 5534178,
+            "nsPerOp": 266.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Struct[fields=2]-12",
+            "runs": 7633984,
+            "nsPerOp": 132.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Union[fields=2]-12",
+            "runs": 8714745,
+            "nsPerOp": 131.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Enum[size=0_values=0]-12",
+            "runs": 265896559,
+            "nsPerOp": 4.621,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Fwd[struct]-12",
+            "runs": 286309816,
+            "nsPerOp": 4.364,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Typedef[\u003cnil\u003e]-12",
+            "runs": 7840489,
+            "nsPerOp": 137.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Volatile[\u003cnil\u003e]-12",
+            "runs": 8598886,
+            "nsPerOp": 223.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Const[\u003cnil\u003e]-12",
+            "runs": 5298835,
+            "nsPerOp": 251.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Restrict[\u003cnil\u003e]-12",
+            "runs": 3667431,
+            "nsPerOp": 314.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Func[static_proto=\u003cnil\u003e]-12",
+            "runs": 3160285,
+            "nsPerOp": 380.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/FuncProto[args=2_return=\u003cnil\u003e]-12",
+            "runs": 3555394,
+            "nsPerOp": 311.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Var[static]-12",
+            "runs": 5611766,
+            "nsPerOp": 279.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Datasec-12",
+            "runs": 4005217,
+            "nsPerOp": 250.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnderlyingType/no_unwrapping-12",
+            "runs": 32055991,
+            "nsPerOp": 31.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnderlyingType/single_unwrapping-12",
+            "runs": 25298779,
+            "nsPerOp": 52.96,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseVmlinux",
+            "modificationCount": 7,
+            "createdOn": "2021-11-18",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkSpecCopy",
+            "modificationCount": 1,
+            "createdOn": "2023-03-28",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkCORESkBuff",
+            "modificationCount": 1,
+            "createdOn": "2023-07-03",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkMarshaler",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkBuildVmlinux",
+            "modificationCount": 6,
+            "createdOn": "2022-10-12",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkPostorderTraversal",
+            "modificationCount": 2,
+            "createdOn": "2022-09-09",
+            "lastUpdateOn": "2022-11-15"
+          },
+          {
+            "name": "BenchmarkPostorderTraversal",
+            "modificationCount": 2,
+            "createdOn": "2022-09-09",
+            "lastUpdateOn": "2022-11-15"
+          },
+          {
+            "name": "BenchmarkPostorderTraversal",
+            "modificationCount": 2,
+            "createdOn": "2022-09-09",
+            "lastUpdateOn": "2022-11-15"
+          },
+          {
+            "name": "BenchmarkPostorderTraversal",
+            "modificationCount": 2,
+            "createdOn": "2022-09-09",
+            "lastUpdateOn": "2022-11-15"
+          },
+          {
+            "name": "BenchmarkCopy",
+            "modificationCount": 2,
+            "createdOn": "2019-11-27",
+            "lastUpdateOn": "2022-04-27"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2022-09-06",
+            "lastUpdateOn": "2022-09-07"
+          },
+          {
+            "name": "BenchmarkUnderlyingType",
+            "modificationCount": 2,
+            "createdOn": "2022-01-28",
+            "lastUpdateOn": "2022-04-27"
+          },
+          {
+            "name": "BenchmarkUnderlyingType",
+            "modificationCount": 2,
+            "createdOn": "2022-01-28",
+            "lastUpdateOn": "2022-04-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cilium/ebpf/internal/kconfig",
+        "succeded": true,
+        "duration": "4.319s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse-12",
+            "runs": 100,
+            "nsPerOp": 12872778,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseFiltered-12",
+            "runs": 328,
+            "nsPerOp": 4604439,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 7,
+            "createdOn": "2021-11-18",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkParseFiltered",
+            "modificationCount": 2,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-05-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cilium/ebpf/internal/sysenc",
+        "succeded": true,
+        "duration": "69.492s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMarshal/*[1]uint64-12",
+            "runs": 8759436,
+            "nsPerOp": 157.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*int16-12",
+            "runs": 11563348,
+            "nsPerOp": 126.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*uint16-12",
+            "runs": 11425116,
+            "nsPerOp": 122.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*int32-12",
+            "runs": 11188263,
+            "nsPerOp": 105.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*uint32-12",
+            "runs": 6758419,
+            "nsPerOp": 151.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*int64-12",
+            "runs": 7270694,
+            "nsPerOp": 150.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*uint64-12",
+            "runs": 9449632,
+            "nsPerOp": 168.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]uint8-12",
+            "runs": 62069905,
+            "nsPerOp": 23.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*sysenc.explicitPad-12",
+            "runs": 4122369,
+            "nsPerOp": 295.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]sysenc.explicitPad-12",
+            "runs": 2412868,
+            "nsPerOp": 526,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]sysenc.explicitPad#01-12",
+            "runs": 1000000,
+            "nsPerOp": 1105,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]sysenc.explicitPad#02-12",
+            "runs": 2256597,
+            "nsPerOp": 505,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*sysenc.struc-12",
+            "runs": 1839739,
+            "nsPerOp": 1105,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]sysenc.struc-12",
+            "runs": 1530726,
+            "nsPerOp": 855.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]sysenc.struc#01-12",
+            "runs": 1000000,
+            "nsPerOp": 1680,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]sysenc.struc#02-12",
+            "runs": 1000000,
+            "nsPerOp": 1949,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int16-12",
+            "runs": 12359886,
+            "nsPerOp": 101.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uint16-12",
+            "runs": 20577476,
+            "nsPerOp": 70.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int32-12",
+            "runs": 17486058,
+            "nsPerOp": 87.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uint32-12",
+            "runs": 14131857,
+            "nsPerOp": 84.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int64-12",
+            "runs": 18135268,
+            "nsPerOp": 99.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uint64-12",
+            "runs": 14826176,
+            "nsPerOp": 92.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/sysenc.struc-12",
+            "runs": 1309663,
+            "nsPerOp": 1068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/*[1]uint64-12",
+            "runs": 9711660,
+            "nsPerOp": 155,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/*int16-12",
+            "runs": 9765217,
+            "nsPerOp": 123.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/*uint16-12",
+            "runs": 12171832,
+            "nsPerOp": 110.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/*int32-12",
+            "runs": 16004233,
+            "nsPerOp": 65.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/*uint32-12",
+            "runs": 17122882,
+            "nsPerOp": 72.89,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/*int64-12",
+            "runs": 18574350,
+            "nsPerOp": 75.47,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/*uint64-12",
+            "runs": 14891608,
+            "nsPerOp": 73.08,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/[]uint8-12",
+            "runs": 17240917,
+            "nsPerOp": 75.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/*sysenc.explicitPad-12",
+            "runs": 8148361,
+            "nsPerOp": 123.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/[]sysenc.explicitPad-12",
+            "runs": 6020572,
+            "nsPerOp": 213.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/[]sysenc.explicitPad#01-12",
+            "runs": 6042862,
+            "nsPerOp": 210.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/[]sysenc.explicitPad#02-12",
+            "runs": 5042302,
+            "nsPerOp": 222.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/*sysenc.struc-12",
+            "runs": 3996944,
+            "nsPerOp": 329,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/[]sysenc.struc-12",
+            "runs": 4394250,
+            "nsPerOp": 244.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/[]sysenc.struc#01-12",
+            "runs": 2240613,
+            "nsPerOp": 487.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/[]sysenc.struc#02-12",
+            "runs": 2106817,
+            "nsPerOp": 574.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 2,
+            "createdOn": "2023-06-22",
+            "lastUpdateOn": "2023-06-27"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cilium/ebpf/perf",
+        "succeded": false,
+        "duration": "0.016s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReader",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "reader_test.go:637: creating map: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          },
+          {
+            "name": "BenchmarkReadInto",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "reader_test.go:637: creating map: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 4,
+            "createdOn": "2019-09-30",
+            "lastUpdateOn": "2023-03-23"
+          },
+          {
+            "name": "BenchmarkReadInto",
+            "modificationCount": 5,
+            "createdOn": "2019-08-23",
+            "lastUpdateOn": "2023-03-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cilium/ebpf/ringbuf",
+        "succeded": false,
+        "duration": "0.012s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReader/normal_epoll_with_timeout_-1",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "reader_test.go:333: creating map: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          },
+          {
+            "name": "BenchmarkReadInto",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "reader_test.go:365: creating map: map create: operation not permitted (MEMLOCK may be too low, consider rlimit.RemoveMemlock)"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 4,
+            "createdOn": "2019-09-30",
+            "lastUpdateOn": "2023-03-23"
+          },
+          {
+            "name": "BenchmarkReadInto",
+            "modificationCount": 5,
+            "createdOn": "2019-08-23",
+            "lastUpdateOn": "2023-03-23"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "cilium/ebpf",
+    "name": "ebpf",
+    "private": false,
+    "html_url": "https://github.com/cilium/ebpf",
+    "description": "ebpf-go is a pure-Go library to read, modify and load eBPF programs and attach them to various hooks in the Linux kernel.",
+    "fork": false,
+    "created_at": "2019-09-05T20:13:28Z",
+    "updated_at": "2023-10-23T14:37:08Z",
+    "pushed_at": "2023-10-22T11:07:36Z",
+    "ssh_url": "git@github.com:cilium/ebpf.git",
+    "homepage": "https://pkg.go.dev/github.com/cilium/ebpf",
+    "stargazers_count": 5058,
+    "watchers_count": 5058,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 555,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 43,
+    "topics": [
+      "btf",
+      "ebpf",
+      "go",
+      "golang",
+      "linux"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 246,
+    "Lines": 47333,
+    "Blank": 7017,
+    "Code": 34490,
+    "Comment": 5826,
+    "Bytes": 1187127,
+    "Complexity": 7285
+  }
+}

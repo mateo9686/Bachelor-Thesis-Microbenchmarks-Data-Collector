@@ -1,0 +1,346 @@
+{
+  "Name": "codenotary/immudb",
+  "Path": "./repositories/codenotary__immudb",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T02:20:20Z",
+    "benchmarkCount": 16,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 10,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/codenotary/immudb/embedded/ahtree",
+        "succeded": false,
+        "duration": "9.751s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAppend",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "ahtree_test.go:1010:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 12,
+            "createdOn": "2020-10-22",
+            "lastUpdateOn": "2023-04-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/codenotary/immudb/embedded/appendable/singleapp",
+        "succeded": false,
+        "duration": "2.228s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAppendFlush-12",
+            "runs": 440,
+            "nsPerOp": 2502616,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendFlushless-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAppendFlush",
+            "modificationCount": 4,
+            "createdOn": "2022-08-01",
+            "lastUpdateOn": "2022-10-25"
+          },
+          {
+            "name": "BenchmarkAppendFlushless",
+            "modificationCount": 4,
+            "createdOn": "2022-08-01",
+            "lastUpdateOn": "2022-10-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/codenotary/immudb/embedded/document",
+        "succeded": true,
+        "duration": "10.678s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHex-12",
+            "runs": 19091719,
+            "nsPerOp": 83.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertion-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "immudb"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHex",
+            "modificationCount": 2,
+            "createdOn": "2023-03-17",
+            "lastUpdateOn": "2023-04-12"
+          },
+          {
+            "name": "BenchmarkInsertion",
+            "modificationCount": 3,
+            "createdOn": "2023-09-14",
+            "lastUpdateOn": "2023-09-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/codenotary/immudb/embedded/sql",
+        "succeded": true,
+        "duration": "1.479s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsertInto-12",
+            "runs": 1,
+            "nsPerOp": 1252905196,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsertInto",
+            "modificationCount": 8,
+            "createdOn": "2023-02-08",
+            "lastUpdateOn": "2023-09-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/codenotary/immudb/embedded/store",
+        "succeded": false,
+        "duration": "87.791s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSyncedAppend-12",
+            "runs": 1,
+            "nsPerOp": 1568940454,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncAppend-12",
+            "runs": 1,
+            "nsPerOp": 8446495497,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSyncedAppendWithExtCommitAllowance-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "immudb"
+          },
+          {
+            "name": "BenchmarkAsyncAppendWithExtCommitAllowance-12",
+            "runs": 1,
+            "nsPerOp": 10317804381,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExportTx",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "immustore_test.go:3111:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSyncedAppend",
+            "modificationCount": 21,
+            "createdOn": "2020-09-24",
+            "lastUpdateOn": "2023-01-16"
+          },
+          {
+            "name": "BenchmarkAsyncAppend",
+            "modificationCount": 17,
+            "createdOn": "2020-09-24",
+            "lastUpdateOn": "2023-01-16"
+          },
+          {
+            "name": "BenchmarkSyncedAppendWithExtCommitAllowance",
+            "modificationCount": 7,
+            "createdOn": "2022-09-13",
+            "lastUpdateOn": "2023-05-01"
+          },
+          {
+            "name": "BenchmarkAsyncAppendWithExtCommitAllowance",
+            "modificationCount": 16,
+            "createdOn": "2020-09-24",
+            "lastUpdateOn": "2023-05-01"
+          },
+          {
+            "name": "BenchmarkExportTx",
+            "modificationCount": 3,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/codenotary/immudb/embedded/tbtree",
+        "succeded": true,
+        "duration": "262.685s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRandomInsertion-12",
+            "runs": 1,
+            "nsPerOp": 65286071614,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandomRead-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "immudb"
+          },
+          {
+            "name": "BenchmarkAscendingBulkInsertion-12",
+            "runs": 1,
+            "nsPerOp": 5708861387,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDescendingBulkInsertion-12",
+            "runs": 1,
+            "nsPerOp": 6184945804,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandomBulkInsertion-12",
+            "runs": 1,
+            "nsPerOp": 21957838390,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRandomInsertion",
+            "modificationCount": 13,
+            "createdOn": "2020-10-06",
+            "lastUpdateOn": "2022-10-25"
+          },
+          {
+            "name": "BenchmarkRandomRead",
+            "modificationCount": 5,
+            "createdOn": "2021-09-07",
+            "lastUpdateOn": "2022-10-25"
+          },
+          {
+            "name": "BenchmarkAscendingBulkInsertion",
+            "modificationCount": 5,
+            "createdOn": "2022-02-02",
+            "lastUpdateOn": "2022-10-25"
+          },
+          {
+            "name": "BenchmarkDescendingBulkInsertion",
+            "modificationCount": 5,
+            "createdOn": "2022-02-02",
+            "lastUpdateOn": "2022-10-25"
+          },
+          {
+            "name": "BenchmarkRandomBulkInsertion",
+            "modificationCount": 9,
+            "createdOn": "2022-02-02",
+            "lastUpdateOn": "2022-12-29"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "codenotary/immudb",
+    "name": "immudb",
+    "private": false,
+    "html_url": "https://github.com/codenotary/immudb",
+    "description": "immudb - immutable database based on zero trust, SQL/Key-Value/Document model, tamperproof, data change history",
+    "fork": false,
+    "created_at": "2019-11-07T08:22:16Z",
+    "updated_at": "2023-10-23T16:57:11Z",
+    "pushed_at": "2023-10-23T18:22:41Z",
+    "ssh_url": "git@github.com:codenotary/immudb.git",
+    "homepage": "https://immudb.io",
+    "stargazers_count": 8375,
+    "watchers_count": 8375,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 332,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 104,
+    "topics": [
+      "auditable",
+      "compliance",
+      "cryptographic",
+      "database",
+      "gdpr",
+      "go",
+      "immutable",
+      "immutable-database",
+      "key-value",
+      "merkle-tree",
+      "pci-dss",
+      "performance",
+      "sql",
+      "tamper-evident",
+      "tamperproof",
+      "timetravel",
+      "verification",
+      "verify",
+      "zero-trust"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 800,
+    "Lines": 187052,
+    "Blank": 29493,
+    "Code": 135179,
+    "Comment": 22380,
+    "Bytes": 5624563,
+    "Complexity": 19492
+  }
+}

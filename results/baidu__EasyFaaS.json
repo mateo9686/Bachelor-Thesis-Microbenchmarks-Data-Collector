@@ -1,0 +1,432 @@
+{
+  "Name": "baidu/EasyFaaS",
+  "Path": "./repositories/baidu__EasyFaaS",
+  "GoVersion": "1.13",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T16:21:05Z",
+    "benchmarkCount": 27,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 27,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/baidu/easyfaas/pkg/controller/rtctrl",
+        "succeded": true,
+        "duration": "14.651s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFindAndMark_1Conc1Func10Rt-12",
+            "runs": 281202,
+            "nsPerOp": 4831,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindAndMark_1Conc1Func100Rt-12",
+            "runs": 293546,
+            "nsPerOp": 4793,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindAndMark_1Conc1Func400Rt-12",
+            "runs": 406280,
+            "nsPerOp": 3129,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindAndMark_1Conc1Func800Rt-12",
+            "runs": 506697,
+            "nsPerOp": 2289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindAndMark_1Conc10Func800Rt-12",
+            "runs": 1099226,
+            "nsPerOp": 1116,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindAndMark_100Conc1Func10Rt-12",
+            "runs": 311179,
+            "nsPerOp": 3251,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindAndMark_200Conc1Func10Rt-12",
+            "runs": 307531,
+            "nsPerOp": 3258,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindAndMark_400Conc1Func10Rt-12",
+            "runs": 334479,
+            "nsPerOp": 4934,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFindAndMark_1Conc1Func10Rt",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkFindAndMark_1Conc1Func100Rt",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkFindAndMark_1Conc1Func400Rt",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkFindAndMark_1Conc1Func800Rt",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkFindAndMark_1Conc10Func800Rt",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkFindAndMark_100Conc1Func10Rt",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkFindAndMark_200Conc1Func10Rt",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkFindAndMark_400Conc1Func10Rt",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/baidu/easyfaas/pkg/util/cache",
+        "succeded": true,
+        "duration": "66.687s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCacheGetExpiring-12",
+            "runs": 330427,
+            "nsPerOp": 3100,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetNotExpiring-12",
+            "runs": 100000000,
+            "nsPerOp": 18.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapGet-12",
+            "runs": 100000000,
+            "nsPerOp": 11.91,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexInterfaceMapGetStruct-12",
+            "runs": 24996150,
+            "nsPerOp": 48.47,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexInterfaceMapGetString-12",
+            "runs": 43609081,
+            "nsPerOp": 34.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetConcurrentExpiring-12",
+            "runs": 1229953,
+            "nsPerOp": 1153,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetConcurrentNotExpiring-12",
+            "runs": 41613693,
+            "nsPerOp": 35.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapGetConcurrent-12",
+            "runs": 52173206,
+            "nsPerOp": 24.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetManyConcurrentExpiring-12",
+            "runs": 51654496,
+            "nsPerOp": 187.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetManyConcurrentNotExpiring-12",
+            "runs": 170718568,
+            "nsPerOp": 41.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheSetExpiring-12",
+            "runs": 349608,
+            "nsPerOp": 3482,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheSetNotExpiring-12",
+            "runs": 31685317,
+            "nsPerOp": 31.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapSet-12",
+            "runs": 40309562,
+            "nsPerOp": 28.27,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheSetDelete-12",
+            "runs": 17329711,
+            "nsPerOp": 79.48,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapSetDelete-12",
+            "runs": 20095894,
+            "nsPerOp": 69.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheSetDeleteSingleLock-12",
+            "runs": 15022425,
+            "nsPerOp": 78.48,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapSetDeleteSingleLock-12",
+            "runs": 17390275,
+            "nsPerOp": 78.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIncrementInt-12",
+            "runs": 10708460,
+            "nsPerOp": 127.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteExpiredLoop-12",
+            "runs": 21,
+            "nsPerOp": 54398427,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCacheGetExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkCacheGetNotExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkRWMutexMapGet",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkRWMutexInterfaceMapGetStruct",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkRWMutexInterfaceMapGetString",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkCacheGetConcurrentExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkCacheGetConcurrentNotExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkRWMutexMapGetConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkCacheGetManyConcurrentExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkCacheGetManyConcurrentNotExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkCacheSetExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkCacheSetNotExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkRWMutexMapSet",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkCacheSetDelete",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkRWMutexMapSetDelete",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkCacheSetDeleteSingleLock",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkRWMutexMapSetDeleteSingleLock",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkIncrementInt",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          },
+          {
+            "name": "BenchmarkDeleteExpiredLoop",
+            "modificationCount": 1,
+            "createdOn": "2021-04-06",
+            "lastUpdateOn": "2021-04-06"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "baidu/EasyFaaS",
+    "name": "EasyFaaS",
+    "private": false,
+    "html_url": "https://github.com/baidu/EasyFaaS",
+    "description": "EasyFaaS是一个依赖轻、适配性强、资源占用少、无状态且高性能的函数计算服务引擎",
+    "fork": false,
+    "created_at": "2021-04-06T13:33:45Z",
+    "updated_at": "2023-09-26T07:41:09Z",
+    "pushed_at": "2022-10-20T01:54:55Z",
+    "ssh_url": "git@github.com:baidu/EasyFaaS.git",
+    "stargazers_count": 619,
+    "watchers_count": 619,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 69,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 8,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 288,
+    "Lines": 36193,
+    "Blank": 4011,
+    "Code": 25898,
+    "Comment": 6284,
+    "Bytes": 1031034,
+    "Complexity": 4691
+  }
+}

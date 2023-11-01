@@ -1,0 +1,536 @@
+{
+  "Name": "openconfig/gnmic",
+  "Path": "./repositories/openconfig__gnmic",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T20:48:22Z",
+    "benchmarkCount": 34,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 34,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/openconfig/gnmic/formatters/event_drop",
+        "succeded": true,
+        "duration": "3.180s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkApply-12",
+            "runs": 19992,
+            "nsPerOp": 54423,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkApply",
+            "modificationCount": 2,
+            "createdOn": "2023-03-07",
+            "lastUpdateOn": "2023-07-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/openconfig/gnmic/outputs/prometheus_output",
+        "succeded": true,
+        "duration": "11.932s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMetricName/with_prefix_with_subscription_with_value_no-append-subsc-12",
+            "runs": 376609,
+            "nsPerOp": 4416,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricName/with_prefix_with_subscription_with_value_with_append-subsc-12",
+            "runs": 359368,
+            "nsPerOp": 4062,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricName/with_prefix-bad-chars_with_subscription_with_value_with_append-subsc-12",
+            "runs": 281196,
+            "nsPerOp": 5988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricName/without_prefix_with_subscription_with_value_no-append-subsc-12",
+            "runs": 1000000,
+            "nsPerOp": 1409,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricName/without_prefix_with_subscription_with_value_with_append-subsc-12",
+            "runs": 296053,
+            "nsPerOp": 3455,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricName/without_prefix_with_subscription-bad-chars_with_value-bad-chars_with_append-subsc-12",
+            "runs": 558598,
+            "nsPerOp": 4274,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMetricName",
+            "modificationCount": 2,
+            "createdOn": "2021-01-07",
+            "lastUpdateOn": "2022-06-16"
+          },
+          {
+            "name": "BenchmarkMetricName",
+            "modificationCount": 2,
+            "createdOn": "2021-01-07",
+            "lastUpdateOn": "2022-06-16"
+          },
+          {
+            "name": "BenchmarkMetricName",
+            "modificationCount": 2,
+            "createdOn": "2021-01-07",
+            "lastUpdateOn": "2022-06-16"
+          },
+          {
+            "name": "BenchmarkMetricName",
+            "modificationCount": 2,
+            "createdOn": "2021-01-07",
+            "lastUpdateOn": "2022-06-16"
+          },
+          {
+            "name": "BenchmarkMetricName",
+            "modificationCount": 2,
+            "createdOn": "2021-01-07",
+            "lastUpdateOn": "2022-06-16"
+          },
+          {
+            "name": "BenchmarkMetricName",
+            "modificationCount": 2,
+            "createdOn": "2021-01-07",
+            "lastUpdateOn": "2022-06-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/openconfig/gnmic/utils",
+        "succeded": true,
+        "duration": "47.039s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParsePath/path_with_colon_in_key_value-12",
+            "runs": 213055,
+            "nsPerOp": 4877,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_without_origin_with_colon_in_path_elem-12",
+            "runs": 244486,
+            "nsPerOp": 5089,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_origin_and_slash_only-12",
+            "runs": 1000000,
+            "nsPerOp": 1296,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_origin_and_colon_in_key_value-12",
+            "runs": 248148,
+            "nsPerOp": 6651,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_origin_and_colon_space_in_key_value-12",
+            "runs": 182338,
+            "nsPerOp": 5666,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_colon_in_path_elem-12",
+            "runs": 179712,
+            "nsPerOp": 7368,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_one_path_element-12",
+            "runs": 1000000,
+            "nsPerOp": 1211,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_one_path_element_with_slash-12",
+            "runs": 1000000,
+            "nsPerOp": 1844,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_two_path_elements-12",
+            "runs": 466454,
+            "nsPerOp": 2332,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_empty_origin-12",
+            "runs": 1000000,
+            "nsPerOp": 1023,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_empty_origin_and_slash_only-12",
+            "runs": 1365762,
+            "nsPerOp": 996.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_colon_in_2_path_elems-12",
+            "runs": 180217,
+            "nsPerOp": 8050,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_escaped_open_bracket-12",
+            "runs": 297502,
+            "nsPerOp": 5719,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_origin_and_colon_space_in_key_value_double_quoted_value-12",
+            "runs": 230328,
+            "nsPerOp": 5804,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/empty_path-12",
+            "runs": 5217278,
+            "nsPerOp": 212.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_key_missing_equal_sign-12",
+            "runs": 668923,
+            "nsPerOp": 2323,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_two_path_elements_with_key-12",
+            "runs": 250383,
+            "nsPerOp": 5957,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_origin_and_key-12",
+            "runs": 354906,
+            "nsPerOp": 4707,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_origin_and_multiple_keys-12",
+            "runs": 149528,
+            "nsPerOp": 9542,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_slash_only-12",
+            "runs": 1547379,
+            "nsPerOp": 875.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_origin_only-12",
+            "runs": 1000000,
+            "nsPerOp": 1119,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_origin-12",
+            "runs": 440202,
+            "nsPerOp": 2498,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_escaped_close_bracket-12",
+            "runs": 201093,
+            "nsPerOp": 5786,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_colon_in_first_path_elem-12",
+            "runs": 326731,
+            "nsPerOp": 4617,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_missing_closing_bracket-12",
+            "runs": 1000000,
+            "nsPerOp": 1098,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_missing_open_bracket-12",
+            "runs": 1000000,
+            "nsPerOp": 1070,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePath/path_with_multiple_path_elements_and_multiple_keys-12",
+            "runs": 259750,
+            "nsPerOp": 7040,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          },
+          {
+            "name": "BenchmarkParsePath",
+            "modificationCount": 3,
+            "createdOn": "2020-11-22",
+            "lastUpdateOn": "2020-11-22"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "openconfig/gnmic",
+    "name": "gnmic",
+    "private": false,
+    "html_url": "https://github.com/openconfig/gnmic",
+    "description": "gNMIc is a gNMI CLI client and collector",
+    "fork": false,
+    "created_at": "2022-08-09T17:59:02Z",
+    "updated_at": "2023-10-19T09:45:32Z",
+    "pushed_at": "2023-10-23T08:14:02Z",
+    "ssh_url": "git@github.com:openconfig/gnmic.git",
+    "homepage": "https://gnmic.openconfig.net",
+    "stargazers_count": 115,
+    "watchers_count": 115,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 29,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 44,
+    "topics": [
+      "gnmi",
+      "telemetry"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 234,
+    "Lines": 54774,
+    "Blank": 3239,
+    "Code": 48684,
+    "Comment": 2851,
+    "Bytes": 1460134,
+    "Complexity": 8950
+  }
+}

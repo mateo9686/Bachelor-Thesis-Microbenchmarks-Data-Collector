@@ -1,0 +1,424 @@
+{
+  "Name": "cloe-lang/cloe",
+  "Path": "./repositories/cloe-lang__cloe",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T12:20:13Z",
+    "benchmarkCount": 25,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 25,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/cloe-lang/cloe/src/lib/builtins",
+        "succeded": true,
+        "duration": "8.403s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkYFactorial-12",
+            "runs": 1918,
+            "nsPerOp": 1106218,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkYInfiniteRecursion-12",
+            "runs": 830269,
+            "nsPerOp": 1407,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkY-12",
+            "runs": 1000000,
+            "nsPerOp": 1207,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoY-12",
+            "runs": 2047718,
+            "nsPerOp": 1242,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkYFactorial",
+            "modificationCount": 1,
+            "createdOn": "2018-03-07",
+            "lastUpdateOn": "2018-03-07"
+          },
+          {
+            "name": "BenchmarkYInfiniteRecursion",
+            "modificationCount": 4,
+            "createdOn": "2018-01-04",
+            "lastUpdateOn": "2018-03-25"
+          },
+          {
+            "name": "BenchmarkY",
+            "modificationCount": 1,
+            "createdOn": "2018-03-07",
+            "lastUpdateOn": "2018-03-07"
+          },
+          {
+            "name": "BenchmarkGoY",
+            "modificationCount": 1,
+            "createdOn": "2018-01-01",
+            "lastUpdateOn": "2018-01-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cloe-lang/cloe/src/lib/compile",
+        "succeded": true,
+        "duration": "17.042s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFilter-12",
+            "runs": 1,
+            "nsPerOp": 3459269281,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilterBare-12",
+            "runs": 8,
+            "nsPerOp": 148250783,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSort100-12",
+            "runs": 79,
+            "nsPerOp": 28727420,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSort1000-12",
+            "runs": 8,
+            "nsPerOp": 130559787,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSort10000-12",
+            "runs": 2,
+            "nsPerOp": 676937965,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMap-12",
+            "runs": 80334,
+            "nsPerOp": 15274,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoMap-12",
+            "runs": 541972,
+            "nsPerOp": 7532,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFilter",
+            "modificationCount": 2,
+            "createdOn": "2018-01-05",
+            "lastUpdateOn": "2018-01-11"
+          },
+          {
+            "name": "BenchmarkFilterBare",
+            "modificationCount": 4,
+            "createdOn": "2018-01-05",
+            "lastUpdateOn": "2018-03-25"
+          },
+          {
+            "name": "BenchmarkSort100",
+            "modificationCount": 1,
+            "createdOn": "2018-01-03",
+            "lastUpdateOn": "2018-01-03"
+          },
+          {
+            "name": "BenchmarkSort1000",
+            "modificationCount": 1,
+            "createdOn": "2018-01-03",
+            "lastUpdateOn": "2018-01-03"
+          },
+          {
+            "name": "BenchmarkSort10000",
+            "modificationCount": 1,
+            "createdOn": "2018-01-03",
+            "lastUpdateOn": "2018-01-03"
+          },
+          {
+            "name": "BenchmarkMap",
+            "modificationCount": 1,
+            "createdOn": "2017-12-31",
+            "lastUpdateOn": "2017-12-31"
+          },
+          {
+            "name": "BenchmarkGoMap",
+            "modificationCount": 3,
+            "createdOn": "2018-01-01",
+            "lastUpdateOn": "2018-01-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cloe-lang/cloe/src/lib/core",
+        "succeded": true,
+        "duration": "24.894s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIf-12",
+            "runs": 477684,
+            "nsPerOp": 3145,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThunkEval-12",
+            "runs": 1311333,
+            "nsPerOp": 1392,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppWithInfo-12",
+            "runs": 2599782,
+            "nsPerOp": 479.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPApp-12",
+            "runs": 3815319,
+            "nsPerOp": 615.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiplePApp-12",
+            "runs": 690723,
+            "nsPerOp": 1792,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCopyBoolean-12",
+            "runs": 507366139,
+            "nsPerOp": 2.525,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCopyDictionary-12",
+            "runs": 440275198,
+            "nsPerOp": 2.382,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCopyFunction-12",
+            "runs": 535306790,
+            "nsPerOp": 2.402,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCopyList-12",
+            "runs": 537097459,
+            "nsPerOp": 2.477,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCopyNil-12",
+            "runs": 401763514,
+            "nsPerOp": 2.828,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCopyNumber-12",
+            "runs": 574723132,
+            "nsPerOp": 2.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCopyString-12",
+            "runs": 20254333,
+            "nsPerOp": 59.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCopyError-12",
+            "runs": 468623851,
+            "nsPerOp": 2.418,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCopyInefficientUnboxedType-12",
+            "runs": 51036160,
+            "nsPerOp": 39.33,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIf",
+            "modificationCount": 2,
+            "createdOn": "2018-01-06",
+            "lastUpdateOn": "2018-01-11"
+          },
+          {
+            "name": "BenchmarkThunkEval",
+            "modificationCount": 2,
+            "createdOn": "2018-03-07",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkAppWithInfo",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkPApp",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkMultiplePApp",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkValueCopyBoolean",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkValueCopyDictionary",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkValueCopyFunction",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkValueCopyList",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkValueCopyNil",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkValueCopyNumber",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkValueCopyString",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          },
+          {
+            "name": "BenchmarkValueCopyError",
+            "modificationCount": 2,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-05-18"
+          },
+          {
+            "name": "BenchmarkValueCopyInefficientUnboxedType",
+            "modificationCount": 1,
+            "createdOn": "2018-03-26",
+            "lastUpdateOn": "2018-03-26"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "cloe-lang/cloe",
+    "name": "cloe",
+    "private": false,
+    "html_url": "https://github.com/cloe-lang/cloe",
+    "description": "Cloe programming language",
+    "fork": false,
+    "created_at": "2017-02-26T07:50:38Z",
+    "updated_at": "2023-10-06T16:57:36Z",
+    "pushed_at": "2023-05-31T09:01:59Z",
+    "ssh_url": "git@github.com:cloe-lang/cloe.git",
+    "homepage": "https://cloe-lang.org",
+    "stargazers_count": 405,
+    "watchers_count": 405,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 14,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 11,
+    "topics": [
+      "asynchronous",
+      "concurrent",
+      "functional",
+      "language",
+      "lazy",
+      "parallel",
+      "reactive"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 199,
+    "Lines": 13304,
+    "Blank": 2583,
+    "Code": 10338,
+    "Comment": 383,
+    "Bytes": 289029,
+    "Complexity": 1271
+  }
+}

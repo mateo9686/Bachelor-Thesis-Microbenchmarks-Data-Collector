@@ -1,0 +1,637 @@
+{
+  "Name": "go-graphite/carbon-clickhouse",
+  "Path": "./repositories/go-graphite__carbon-clickhouse",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T03:42:30Z",
+    "benchmarkCount": 41,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 41,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/lomik/carbon-clickhouse/helper/RowBinary",
+        "succeded": true,
+        "duration": "13.784s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTimestampToDays-12",
+            "runs": 100000000,
+            "nsPerOp": 11.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowTimestampToDays-12",
+            "runs": 6130348,
+            "nsPerOp": 232.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadFileDirect-12",
+            "runs": 1173,
+            "nsPerOp": 981467,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadFileReverse-12",
+            "runs": 1468,
+            "nsPerOp": 796237,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverseOriginal-12",
+            "runs": 1000000,
+            "nsPerOp": 1291,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricInplace-12",
+            "runs": 5007823,
+            "nsPerOp": 208.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverseBytes-12",
+            "runs": 7448583,
+            "nsPerOp": 253.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverseBytesTo-12",
+            "runs": 27571430,
+            "nsPerOp": 72.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverseBytesToLong-12",
+            "runs": 5852874,
+            "nsPerOp": 172.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTimestampToDays",
+            "modificationCount": 1,
+            "createdOn": "2018-02-28",
+            "lastUpdateOn": "2018-02-28"
+          },
+          {
+            "name": "BenchmarkSlowTimestampToDays",
+            "modificationCount": 2,
+            "createdOn": "2018-02-28",
+            "lastUpdateOn": "2022-11-13"
+          },
+          {
+            "name": "BenchmarkReadFileDirect",
+            "modificationCount": 1,
+            "createdOn": "2019-06-02",
+            "lastUpdateOn": "2019-06-02"
+          },
+          {
+            "name": "BenchmarkReadFileReverse",
+            "modificationCount": 1,
+            "createdOn": "2019-06-02",
+            "lastUpdateOn": "2019-06-02"
+          },
+          {
+            "name": "BenchmarkReverseOriginal",
+            "modificationCount": 1,
+            "createdOn": "2019-05-31",
+            "lastUpdateOn": "2019-05-31"
+          },
+          {
+            "name": "BenchmarkMetricInplace",
+            "modificationCount": 2,
+            "createdOn": "2019-05-31",
+            "lastUpdateOn": "2020-10-26"
+          },
+          {
+            "name": "BenchmarkReverseBytes",
+            "modificationCount": 1,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2020-10-26"
+          },
+          {
+            "name": "BenchmarkReverseBytesTo",
+            "modificationCount": 2,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-09-15"
+          },
+          {
+            "name": "BenchmarkReverseBytesToLong",
+            "modificationCount": 1,
+            "createdOn": "2021-09-15",
+            "lastUpdateOn": "2021-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lomik/carbon-clickhouse/helper/tags",
+        "succeded": true,
+        "duration": "10.335s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGraphite-12",
+            "runs": 285374,
+            "nsPerOp": 3742,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGraphiteBroken-12",
+            "runs": 1000000,
+            "nsPerOp": 1866,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGraphiteEscaped-12",
+            "runs": 177920,
+            "nsPerOp": 5975,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGraphiteBuffered-12",
+            "runs": 394662,
+            "nsPerOp": 2999,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGraphiteBrokenBuffered-12",
+            "runs": 1000000,
+            "nsPerOp": 1210,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGraphiteEscapedBuffered-12",
+            "runs": 454317,
+            "nsPerOp": 3683,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGraphite",
+            "modificationCount": 3,
+            "createdOn": "2018-01-29",
+            "lastUpdateOn": "2020-10-27"
+          },
+          {
+            "name": "BenchmarkGraphiteBroken",
+            "modificationCount": 1,
+            "createdOn": "2022-09-03",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkGraphiteEscaped",
+            "modificationCount": 2,
+            "createdOn": "2020-10-27",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkGraphiteBuffered",
+            "modificationCount": 1,
+            "createdOn": "2022-09-03",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkGraphiteBrokenBuffered",
+            "modificationCount": 1,
+            "createdOn": "2022-09-03",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkGraphiteEscapedBuffered",
+            "modificationCount": 1,
+            "createdOn": "2022-09-03",
+            "lastUpdateOn": "2022-09-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lomik/carbon-clickhouse/receiver",
+        "succeded": true,
+        "duration": "22.934s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPlainParseBuffer-12",
+            "runs": 2071609,
+            "nsPerOp": 600.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPlainParseBufferTagged-12",
+            "runs": 830936,
+            "nsPerOp": 1827,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot/hello.world-12",
+            "runs": 65811561,
+            "nsPerOp": 22.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot/hello..world-12",
+            "runs": 78732847,
+            "nsPerOp": 25.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot/..hello..world..-12",
+            "runs": 22231575,
+            "nsPerOp": 58.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot/hello.world.lon.metric.with..dots-12",
+            "runs": 28638500,
+            "nsPerOp": 36.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot/hello.world.lon.metric.without.dots-12",
+            "runs": 44627155,
+            "nsPerOp": 31.49,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProm1Snappy-12",
+            "runs": 3447,
+            "nsPerOp": 409765,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProm1UnpackFast-12",
+            "runs": 690,
+            "nsPerOp": 1519752,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProm1UnpackSlow-12",
+            "runs": 132,
+            "nsPerOp": 11242887,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTelegrafHttpJson5-12",
+            "runs": 25330,
+            "nsPerOp": 57726,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPlainParseBuffer",
+            "modificationCount": 11,
+            "createdOn": "2016-11-28",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkPlainParseBufferTagged",
+            "modificationCount": 9,
+            "createdOn": "2016-11-28",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot",
+            "modificationCount": 2,
+            "createdOn": "2016-12-06",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot",
+            "modificationCount": 2,
+            "createdOn": "2016-12-06",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot",
+            "modificationCount": 2,
+            "createdOn": "2016-12-06",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot",
+            "modificationCount": 2,
+            "createdOn": "2016-12-06",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkRemoveDoubleDot",
+            "modificationCount": 2,
+            "createdOn": "2016-12-06",
+            "lastUpdateOn": "2022-09-03"
+          },
+          {
+            "name": "BenchmarkProm1Snappy",
+            "modificationCount": 1,
+            "createdOn": "2019-05-28",
+            "lastUpdateOn": "2019-05-28"
+          },
+          {
+            "name": "BenchmarkProm1UnpackFast",
+            "modificationCount": 2,
+            "createdOn": "2019-05-28",
+            "lastUpdateOn": "2019-05-31"
+          },
+          {
+            "name": "BenchmarkProm1UnpackSlow",
+            "modificationCount": 2,
+            "createdOn": "2019-05-28",
+            "lastUpdateOn": "2019-05-31"
+          },
+          {
+            "name": "BenchmarkTelegrafHttpJson5",
+            "modificationCount": 2,
+            "createdOn": "2022-12-07",
+            "lastUpdateOn": "2022-12-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lomik/carbon-clickhouse/uploader",
+        "succeded": true,
+        "duration": "37.396s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIndexParseFileUncompressed/______________________Uncompressed_68446-12",
+            "runs": 10,
+            "nsPerOp": 105078174,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexParseFileCompressed/________________________Compressed_68446-12",
+            "runs": 8,
+            "nsPerOp": 135949119,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexParseFileUncompressedNoDaily/__Uncompressed_without_daily_index_68446-12",
+            "runs": 13,
+            "nsPerOp": 108839991,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexParseFileCompressedNoDaily/____Compressed_without_daily_index_68446-12",
+            "runs": 12,
+            "nsPerOp": 128162863,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexParseFileUncompressedParallel/______________________Uncompressed_68446/______________________Uncompressed_68446-12",
+            "runs": 6,
+            "nsPerOp": 184266138,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUrlParse-12",
+            "runs": 672441,
+            "nsPerOp": 3856,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagParse-12",
+            "runs": 661551,
+            "nsPerOp": 2565,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagParseToSlice-12",
+            "runs": 1000000,
+            "nsPerOp": 1901,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeySprintf-12",
+            "runs": 2282439,
+            "nsPerOp": 476.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyConcat-12",
+            "runs": 11483713,
+            "nsPerOp": 122.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTaggedParseNameShort-12",
+            "runs": 146084,
+            "nsPerOp": 10567,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTaggedParseNameLong-12",
+            "runs": 17055,
+            "nsPerOp": 83899,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTaggedParseFileUncompressed/______________________Uncompressed_68446-12",
+            "runs": 1,
+            "nsPerOp": 4075605616,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTaggedParseFileCompressed/________________________Compressed_68446-12",
+            "runs": 1,
+            "nsPerOp": 1988252826,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTaggedParseFileUncompressedParallel/______________________Uncompressed_68446-12",
+            "runs": 1,
+            "nsPerOp": 1799293700,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIndexParseFileUncompressed",
+            "modificationCount": 1,
+            "createdOn": "2022-08-31",
+            "lastUpdateOn": "2022-08-31"
+          },
+          {
+            "name": "BenchmarkIndexParseFileCompressed",
+            "modificationCount": 1,
+            "createdOn": "2022-08-31",
+            "lastUpdateOn": "2022-08-31"
+          },
+          {
+            "name": "BenchmarkIndexParseFileUncompressedNoDaily",
+            "modificationCount": 1,
+            "createdOn": "2022-08-31",
+            "lastUpdateOn": "2022-08-31"
+          },
+          {
+            "name": "BenchmarkIndexParseFileCompressedNoDaily",
+            "modificationCount": 2,
+            "createdOn": "2022-08-31",
+            "lastUpdateOn": "2022-08-31"
+          },
+          {
+            "name": "BenchmarkIndexParseFileUncompressedParallel",
+            "modificationCount": 1,
+            "createdOn": "2022-12-07",
+            "lastUpdateOn": "2022-12-07"
+          },
+          {
+            "name": "BenchmarkUrlParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-01",
+            "lastUpdateOn": "2022-09-01"
+          },
+          {
+            "name": "BenchmarkTagParse",
+            "modificationCount": 1,
+            "createdOn": "2022-09-01",
+            "lastUpdateOn": "2022-09-01"
+          },
+          {
+            "name": "BenchmarkTagParseToSlice",
+            "modificationCount": 4,
+            "createdOn": "2022-09-01",
+            "lastUpdateOn": "2022-12-07"
+          },
+          {
+            "name": "BenchmarkKeySprintf",
+            "modificationCount": 1,
+            "createdOn": "2020-10-22",
+            "lastUpdateOn": "2020-10-22"
+          },
+          {
+            "name": "BenchmarkKeyConcat",
+            "modificationCount": 2,
+            "createdOn": "2020-10-22",
+            "lastUpdateOn": "2021-08-19"
+          },
+          {
+            "name": "BenchmarkTaggedParseNameShort",
+            "modificationCount": 4,
+            "createdOn": "2022-09-01",
+            "lastUpdateOn": "2022-12-07"
+          },
+          {
+            "name": "BenchmarkTaggedParseNameLong",
+            "modificationCount": 4,
+            "createdOn": "2022-09-01",
+            "lastUpdateOn": "2022-12-07"
+          },
+          {
+            "name": "BenchmarkTaggedParseFileUncompressed",
+            "modificationCount": 1,
+            "createdOn": "2022-09-01",
+            "lastUpdateOn": "2022-09-01"
+          },
+          {
+            "name": "BenchmarkTaggedParseFileCompressed",
+            "modificationCount": 1,
+            "createdOn": "2022-09-01",
+            "lastUpdateOn": "2022-09-01"
+          },
+          {
+            "name": "BenchmarkTaggedParseFileUncompressedParallel",
+            "modificationCount": 1,
+            "createdOn": "2022-12-07",
+            "lastUpdateOn": "2022-12-07"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "go-graphite/carbon-clickhouse",
+    "name": "carbon-clickhouse",
+    "private": false,
+    "html_url": "https://github.com/go-graphite/carbon-clickhouse",
+    "description": "Graphite metrics receiver with ClickHouse as storage",
+    "fork": false,
+    "created_at": "2016-11-02T18:10:37Z",
+    "updated_at": "2023-10-03T13:53:44Z",
+    "pushed_at": "2023-08-07T09:33:36Z",
+    "ssh_url": "git@github.com:go-graphite/carbon-clickhouse.git",
+    "stargazers_count": 177,
+    "watchers_count": 177,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 46,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 10,
+    "topics": [
+      "carbon",
+      "clickhouse",
+      "graphite",
+      "timeseries"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 930,
+    "Lines": 425832,
+    "Blank": 33927,
+    "Code": 338270,
+    "Comment": 53635,
+    "Bytes": 15047824,
+    "Complexity": 41379
+  }
+}

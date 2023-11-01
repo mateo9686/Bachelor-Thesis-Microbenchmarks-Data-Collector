@@ -1,0 +1,366 @@
+{
+  "Name": "facebookincubator/nvdtools",
+  "Path": "./repositories/facebookincubator__nvdtools",
+  "GoVersion": "1.14",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T12:20:46Z",
+    "benchmarkCount": 18,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 18,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/facebookincubator/nvdtools/cmd/cpe2cve",
+        "succeded": true,
+        "duration": "1.460s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkProcessInputJSON-12",
+            "runs": 10000,
+            "nsPerOp": 139388,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkProcessInputJSON",
+            "modificationCount": 5,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2019-08-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/facebookincubator/nvdtools/cvefeed",
+        "succeded": true,
+        "duration": "1.258s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMatchJSON-12",
+            "runs": 1000000,
+            "nsPerOp": 1218,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMatchJSON",
+            "modificationCount": 4,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2019-08-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/facebookincubator/nvdtools/cvefeed/nvd",
+        "succeded": true,
+        "duration": "1.812s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSmartVerCmp-12",
+            "runs": 1956612,
+            "nsPerOp": 605.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSmartVerCmp",
+            "modificationCount": 1,
+            "createdOn": "2019-01-29",
+            "lastUpdateOn": "2019-01-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/facebookincubator/nvdtools/cvss2",
+        "succeded": true,
+        "duration": "2.565s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkScore-12",
+            "runs": 17860525,
+            "nsPerOp": 67.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse-12",
+            "runs": 467842,
+            "nsPerOp": 2687,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkScore",
+            "modificationCount": 1,
+            "createdOn": "2019-05-19",
+            "lastUpdateOn": "2019-05-19"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2019-05-19",
+            "lastUpdateOn": "2019-11-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/facebookincubator/nvdtools/cvss3",
+        "succeded": true,
+        "duration": "1.686s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse-12",
+            "runs": 191906,
+            "nsPerOp": 8419,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2019-05-19",
+            "lastUpdateOn": "2019-11-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/facebookincubator/nvdtools/rpm",
+        "succeded": true,
+        "duration": "4.354s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkVersionCompare-12",
+            "runs": 3019309,
+            "nsPerOp": 412.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse-12",
+            "runs": 6081206,
+            "nsPerOp": 191.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToWFN-12",
+            "runs": 1000000,
+            "nsPerOp": 1325,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkVersionCompare",
+            "modificationCount": 2,
+            "createdOn": "2019-08-16",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2019-05-19",
+            "lastUpdateOn": "2019-11-29"
+          },
+          {
+            "name": "BenchmarkToWFN",
+            "modificationCount": 3,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2019-08-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/facebookincubator/nvdtools/wfn",
+        "succeded": true,
+        "duration": "16.384s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUnbindFmtString-12",
+            "runs": 1000000,
+            "nsPerOp": 2341,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompare-12",
+            "runs": 5724446,
+            "nsPerOp": 318.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch-12",
+            "runs": 6129992,
+            "nsPerOp": 188.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsDisjoint-12",
+            "runs": 145889772,
+            "nsPerOp": 8.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasWildcard/has-12",
+            "runs": 78191384,
+            "nsPerOp": 23.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasWildcard/has_not-12",
+            "runs": 19993587,
+            "nsPerOp": 61.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasWildcard/has_escaped-12",
+            "runs": 25590177,
+            "nsPerOp": 50.21,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnbindURI-12",
+            "runs": 405948,
+            "nsPerOp": 3100,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWFNize-12",
+            "runs": 1236332,
+            "nsPerOp": 872.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUnbindFmtString",
+            "modificationCount": 1,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2018-11-05"
+          },
+          {
+            "name": "BenchmarkCompare",
+            "modificationCount": 1,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2018-11-05"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 4,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2019-08-14"
+          },
+          {
+            "name": "BenchmarkIsDisjoint",
+            "modificationCount": 1,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2018-11-05"
+          },
+          {
+            "name": "BenchmarkHasWildcard",
+            "modificationCount": 2,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2020-04-07"
+          },
+          {
+            "name": "BenchmarkHasWildcard",
+            "modificationCount": 2,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2020-04-07"
+          },
+          {
+            "name": "BenchmarkHasWildcard",
+            "modificationCount": 2,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2020-04-07"
+          },
+          {
+            "name": "BenchmarkUnbindURI",
+            "modificationCount": 1,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2018-11-05"
+          },
+          {
+            "name": "BenchmarkWFNize",
+            "modificationCount": 1,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2018-11-05"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "facebookincubator/nvdtools",
+    "name": "nvdtools",
+    "private": false,
+    "html_url": "https://github.com/facebookincubator/nvdtools",
+    "description": "A set of tools to work with the feeds (vulnerabilities, CPE dictionary etc.) distributed by National Vulnerability Database (NVD)",
+    "fork": false,
+    "created_at": "2018-09-10T01:25:23Z",
+    "updated_at": "2023-10-21T20:32:13Z",
+    "pushed_at": "2023-10-10T10:26:59Z",
+    "ssh_url": "git@github.com:facebookincubator/nvdtools.git",
+    "stargazers_count": 405,
+    "watchers_count": 405,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 86,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 10,
+    "topics": [
+      "golang",
+      "nvd",
+      "security",
+      "unix-tools",
+      "vulnerability-management"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 196,
+    "Lines": 26292,
+    "Blank": 3053,
+    "Code": 19343,
+    "Comment": 3896,
+    "Bytes": 740122,
+    "Complexity": 3545
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "Name": "1pkg/varint",
+  "Path": "./repositories/1pkg__varint",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-23T23:52:44Z",
+    "benchmarkCount": 19,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 19,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/1pkg/varint",
+        "succeded": true,
+        "duration": "51.019s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkVarIntSupport/Benchmark_VarInt_Sort-12",
+            "runs": 1,
+            "nsPerOp": 3324541769,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntSupport/Benchmark_VarInt_Encode-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.01098,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntSupport/Benchmark_VarInt_Decode-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0138,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Arithmetic_Operations/100000000_integers,_4_bits_width/VarInt-12",
+            "runs": 7969969,
+            "nsPerOp": 167.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Arithmetic_Operations/100000000_integers,_4_bits_width/Uint8_Slice-12",
+            "runs": 887015052,
+            "nsPerOp": 1.426,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Arithmetic_Operations/10000000_integers,_64_bits_width/VarInt-12",
+            "runs": 9038216,
+            "nsPerOp": 123,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Arithmetic_Operations/10000000_integers,_64_bits_width/Uint64_Slice-12",
+            "runs": 676547182,
+            "nsPerOp": 1.926,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Arithmetic_Operations/10000000_integers,_100_bits_width/VarInt-12",
+            "runs": 5678170,
+            "nsPerOp": 233.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Arithmetic_Operations/10000000_integers,_100_bits_width/BigInt_Slice-12",
+            "runs": 1422474,
+            "nsPerOp": 813.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Arithmetic_Operations/100000_integers,_10000_bits_width/VarInt-12",
+            "runs": 11176,
+            "nsPerOp": 136871,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Arithmetic_Operations/100000_integers,_10000_bits_width/BigInt_Slice-12",
+            "runs": 935187,
+            "nsPerOp": 2559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Bitwise_Operations/100000000_integers,_4_bits_width/VarInt-12",
+            "runs": 2715099,
+            "nsPerOp": 420.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Bitwise_Operations/100000000_integers,_4_bits_width/Uint8_Slice-12",
+            "runs": 283600939,
+            "nsPerOp": 4.658,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Bitwise_Operations/10000000_integers,_64_bits_width/VarInt-12",
+            "runs": 10151175,
+            "nsPerOp": 144.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Bitwise_Operations/10000000_integers,_64_bits_width/Uint64_Slice-12",
+            "runs": 291242287,
+            "nsPerOp": 4.837,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Bitwise_Operations/10000000_integers,_100_bits_width/VarInt-12",
+            "runs": 5427272,
+            "nsPerOp": 287.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Bitwise_Operations/10000000_integers,_100_bits_width/BigInt_Slice-12",
+            "runs": 6630265,
+            "nsPerOp": 237.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Bitwise_Operations/100000_integers,_10000_bits_width/VarInt-12",
+            "runs": 287870,
+            "nsPerOp": 3918,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVarIntOperations/Benchmark_Bitwise_Operations/100000_integers,_10000_bits_width/BigInt_Slice-12",
+            "runs": 3930880,
+            "nsPerOp": 267.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkVarIntSupport",
+            "modificationCount": 3,
+            "createdOn": "2022-11-02",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkVarIntSupport",
+            "modificationCount": 3,
+            "createdOn": "2022-11-02",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkVarIntSupport",
+            "modificationCount": 3,
+            "createdOn": "2022-11-02",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          },
+          {
+            "name": "BenchmarkVarIntOperations",
+            "modificationCount": 9,
+            "createdOn": "2022-09-24",
+            "lastUpdateOn": "2022-11-14"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "1pkg/varint",
+    "name": "varint",
+    "private": false,
+    "html_url": "https://github.com/1pkg/varint",
+    "description": "VarInt: fast \u0026 memory efficient arbitrary bit width integers in Go.",
+    "fork": false,
+    "created_at": "2022-07-24T06:24:34Z",
+    "updated_at": "2023-06-18T04:44:25Z",
+    "pushed_at": "2022-11-17T05:58:07Z",
+    "ssh_url": "git@github.com:1pkg/varint.git",
+    "stargazers_count": 33,
+    "watchers_count": 33,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 2,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "arithmetic",
+      "array",
+      "bigint",
+      "bits",
+      "bitwise",
+      "go",
+      "golang",
+      "memory"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 9,
+    "Lines": 3049,
+    "Blank": 90,
+    "Code": 2282,
+    "Comment": 677,
+    "Bytes": 101833,
+    "Complexity": 344
+  }
+}

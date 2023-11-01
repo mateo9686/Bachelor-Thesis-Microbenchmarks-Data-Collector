@@ -1,0 +1,738 @@
+{
+  "Name": "gphper/grm",
+  "Path": "./repositories/gphper__grm",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T04:05:32Z",
+    "benchmarkCount": 49,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 47,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/go-redis/redis",
+        "succeded": false,
+        "duration": "47.185s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecode/RespError-single-12",
+            "runs": 129435,
+            "nsPerOp": 9700,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespStatus-single-12",
+            "runs": 120355,
+            "nsPerOp": 9175,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespInt-single-12",
+            "runs": 141777,
+            "nsPerOp": 9290,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespString-single-12",
+            "runs": 110804,
+            "nsPerOp": 9500,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespArray-single-12",
+            "runs": 104450,
+            "nsPerOp": 10067,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespPipeline-single-12",
+            "runs": 107416,
+            "nsPerOp": 13031,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespTxPipeline-single-12",
+            "runs": 92575,
+            "nsPerOp": 12929,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/DynamicGoroutine-single-pool=5-12",
+            "runs": 265382,
+            "nsPerOp": 4951,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/DynamicGoroutine-single-pool=20-12",
+            "runs": 568804,
+            "nsPerOp": 3876,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/DynamicGoroutine-single-pool=50-12",
+            "runs": 150865,
+            "nsPerOp": 10199,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/DynamicGoroutine-single-pool=100-12",
+            "runs": 118519,
+            "nsPerOp": 9262,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/StaticGoroutine-single-pool=5-12",
+            "runs": 161901,
+            "nsPerOp": 8492,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/StaticGoroutine-single-pool=20-12",
+            "runs": 254492,
+            "nsPerOp": 6283,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/StaticGoroutine-single-pool=50-12",
+            "runs": 214090,
+            "nsPerOp": 4931,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/StaticGoroutine-single-pool=100-12",
+            "runs": 281494,
+            "nsPerOp": 4039,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespError-cluster-12",
+            "runs": 100623,
+            "nsPerOp": 13838,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespStatus-cluster-12",
+            "runs": 84937,
+            "nsPerOp": 11787,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespInt-cluster-12",
+            "runs": 80704,
+            "nsPerOp": 13840,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespString-cluster-12",
+            "runs": 101342,
+            "nsPerOp": 11396,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespArray-cluster-12",
+            "runs": 95539,
+            "nsPerOp": 12982,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespPipeline-cluster-12",
+            "runs": 35586,
+            "nsPerOp": 29596,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/RespTxPipeline-cluster",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_decode_test.go:260: response error, got \"redis: expected '*', but got line \\\"+QUEUED\\\"\", want nil"
+          },
+          {
+            "name": "BenchmarkDecode/DynamicGoroutine-cluster-pool=5-12",
+            "runs": 121910,
+            "nsPerOp": 9435,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/DynamicGoroutine-cluster-pool=20-12",
+            "runs": 155503,
+            "nsPerOp": 7405,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/DynamicGoroutine-cluster-pool=50-12",
+            "runs": 226690,
+            "nsPerOp": 5571,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/DynamicGoroutine-cluster-pool=100-12",
+            "runs": 208476,
+            "nsPerOp": 4863,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/StaticGoroutine-cluster-pool=5-12",
+            "runs": 214700,
+            "nsPerOp": 4795,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/StaticGoroutine-cluster-pool=20-12",
+            "runs": 649788,
+            "nsPerOp": 1970,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/StaticGoroutine-cluster-pool=50-12",
+            "runs": 536296,
+            "nsPerOp": 2247,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/StaticGoroutine-cluster-pool=100-12",
+            "runs": 553524,
+            "nsPerOp": 2022,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRedisPing-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkRedisPing",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-redis/redis/internal/pool",
+        "succeded": true,
+        "duration": "19.576s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPoolGetPut/pool=1-12",
+            "runs": 179774,
+            "nsPerOp": 6884,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetPut/pool=2-12",
+            "runs": 352215,
+            "nsPerOp": 3497,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetPut/pool=8-12",
+            "runs": 829946,
+            "nsPerOp": 1432,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetPut/pool=32-12",
+            "runs": 1214439,
+            "nsPerOp": 1076,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetPut/pool=64-12",
+            "runs": 1000000,
+            "nsPerOp": 1188,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetPut/pool=128-12",
+            "runs": 858757,
+            "nsPerOp": 1278,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetRemove/pool=1-12",
+            "runs": 22990,
+            "nsPerOp": 49540,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetRemove/pool=2-12",
+            "runs": 42900,
+            "nsPerOp": 28899,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetRemove/pool=8-12",
+            "runs": 252710,
+            "nsPerOp": 4467,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetRemove/pool=32-12",
+            "runs": 359950,
+            "nsPerOp": 2866,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetRemove/pool=64-12",
+            "runs": 423039,
+            "nsPerOp": 2846,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolGetRemove/pool=128-12",
+            "runs": 382741,
+            "nsPerOp": 3028,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPoolGetPut",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetPut",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetPut",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetPut",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetPut",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetPut",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetRemove",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetRemove",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetRemove",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetRemove",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetRemove",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkPoolGetRemove",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-redis/redis/internal/proto",
+        "succeded": true,
+        "duration": "13.948s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReader_ParseReply_Status-12",
+            "runs": 12430542,
+            "nsPerOp": 102.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader_ParseReply_Int-12",
+            "runs": 35749279,
+            "nsPerOp": 34.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader_ParseReply_Error-12",
+            "runs": 14122988,
+            "nsPerOp": 152.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader_ParseReply_String-12",
+            "runs": 10331007,
+            "nsPerOp": 114.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReader_ParseReply_Slice-12",
+            "runs": 3384746,
+            "nsPerOp": 611.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteBuffer_Append-12",
+            "runs": 6568348,
+            "nsPerOp": 283.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReader_ParseReply_Status",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkReader_ParseReply_Int",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkReader_ParseReply_Error",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkReader_ParseReply_String",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkReader_ParseReply_Slice",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkWriteBuffer_Append",
+            "modificationCount": 1,
+            "createdOn": "2022-07-08",
+            "lastUpdateOn": "2022-07-08"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "gphper/grm",
+    "name": "grm",
+    "private": false,
+    "html_url": "https://github.com/gphper/grm",
+    "description": "redis可视化工具（gin+element-plus）【部署简单便捷，SSH连接，用户校验，操作日志、命令行模式、LUA脚本执行、Redis监控等】",
+    "fork": false,
+    "created_at": "2022-06-06T11:37:50Z",
+    "updated_at": "2023-10-09T07:04:23Z",
+    "pushed_at": "2023-03-19T03:22:04Z",
+    "ssh_url": "git@github.com:gphper/grm.git",
+    "stargazers_count": 183,
+    "watchers_count": 183,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 30,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 2,
+    "topics": [
+      "database-gui",
+      "element-plus",
+      "gin",
+      "golang",
+      "redis-client",
+      "redis-gui",
+      "redis-gui-client",
+      "visualizer",
+      "vue3",
+      "xterm-js"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 110,
+    "Lines": 32338,
+    "Blank": 5057,
+    "Code": 25914,
+    "Comment": 1367,
+    "Bytes": 795260,
+    "Complexity": 3284
+  }
+}

@@ -1,0 +1,3907 @@
+{
+  "Name": "songzhibin97/gkit",
+  "Path": "./repositories/songzhibin97__gkit",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T09:05:53Z",
+    "benchmarkCount": 278,
+    "benchmarkSuiteCount": 25,
+    "successfulBenchmarkCount": 278,
+    "successfulBenchmarkSuitesCount": 25,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/songzhibin97/gkit/cache/local_cache",
+        "succeded": true,
+        "duration": "82.867s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCacheGetExpiring-12",
+            "runs": 95729521,
+            "nsPerOp": 13.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetNotExpiring-12",
+            "runs": 86388428,
+            "nsPerOp": 13.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapGet-12",
+            "runs": 100000000,
+            "nsPerOp": 10.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexInterfaceMapGetStruct-12",
+            "runs": 29118297,
+            "nsPerOp": 37.96,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexInterfaceMapGetString-12",
+            "runs": 46941396,
+            "nsPerOp": 25.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetConcurrentExpiring-12",
+            "runs": 30805032,
+            "nsPerOp": 39.89,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetConcurrentNotExpiring-12",
+            "runs": 38352795,
+            "nsPerOp": 44.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapGetConcurrent-12",
+            "runs": 45468242,
+            "nsPerOp": 23.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetManyConcurrentExpiring-12",
+            "runs": 100000000,
+            "nsPerOp": 25.48,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheGetManyConcurrentNotExpiring-12",
+            "runs": 771379178,
+            "nsPerOp": 11.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheSetExpiring-12",
+            "runs": 34060058,
+            "nsPerOp": 57.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheSetNotExpiring-12",
+            "runs": 29547085,
+            "nsPerOp": 48.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapSet-12",
+            "runs": 23597912,
+            "nsPerOp": 69.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheSetDelete-12",
+            "runs": 7983483,
+            "nsPerOp": 146.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapSetDelete-12",
+            "runs": 12313216,
+            "nsPerOp": 102.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheSetDeleteSingleLock-12",
+            "runs": 11186708,
+            "nsPerOp": 95.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexMapSetDeleteSingleLock-12",
+            "runs": 14905642,
+            "nsPerOp": 94.07,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIncrementInt-12",
+            "runs": 5145528,
+            "nsPerOp": 205.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteExpiredLoop-12",
+            "runs": 206,
+            "nsPerOp": 14726360,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCacheGetExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkCacheGetNotExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutexMapGet",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutexInterfaceMapGetStruct",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutexInterfaceMapGetString",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkCacheGetConcurrentExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkCacheGetConcurrentNotExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutexMapGetConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkCacheGetManyConcurrentExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkCacheGetManyConcurrentNotExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkCacheSetExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkCacheSetNotExpiring",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutexMapSet",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkCacheSetDelete",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutexMapSetDelete",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkCacheSetDeleteSingleLock",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutexMapSetDeleteSingleLock",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkIncrementInt",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          },
+          {
+            "name": "BenchmarkDeleteExpiredLoop",
+            "modificationCount": 1,
+            "createdOn": "2021-05-19",
+            "lastUpdateOn": "2021-05-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/cache/mbuffer",
+        "succeded": true,
+        "duration": "54.532s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNormal4096-12",
+            "runs": 970676,
+            "nsPerOp": 4795,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMCache4096-12",
+            "runs": 5732281,
+            "nsPerOp": 243,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNormal10M-12",
+            "runs": 100,
+            "nsPerOp": 11679554,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMCache10M-12",
+            "runs": 7554411,
+            "nsPerOp": 218.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNormal4096Parallel-12",
+            "runs": 1281,
+            "nsPerOp": 4505336,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMCache4096Parallel-12",
+            "runs": 10000,
+            "nsPerOp": 1191915,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNormal10MParallel-12",
+            "runs": 100,
+            "nsPerOp": 222059908,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMCache10MParallel-12",
+            "runs": 15441,
+            "nsPerOp": 193163,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBsr-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3093,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNormal4096",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMCache4096",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkNormal10M",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMCache10M",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkNormal4096Parallel",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMCache4096Parallel",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkNormal10MParallel",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMCache10MParallel",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkBsr",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/container/group",
+        "succeded": true,
+        "duration": "1.872s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGroupGet-12",
+            "runs": 1880805,
+            "nsPerOp": 607.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGroupGet",
+            "modificationCount": 2,
+            "createdOn": "2021-01-14",
+            "lastUpdateOn": "2021-02-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/container/pool",
+        "succeded": true,
+        "duration": "12.817s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkList-12",
+            "runs": 220902,
+            "nsPerOp": 5488,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkList1-12",
+            "runs": 202604,
+            "nsPerOp": 5631,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkList2-12",
+            "runs": 684,
+            "nsPerOp": 1689072,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPool3-12",
+            "runs": 13,
+            "nsPerOp": 77028434,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkList4-12",
+            "runs": 13,
+            "nsPerOp": 76999676,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkList5-12",
+            "runs": 13,
+            "nsPerOp": 76954757,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkList",
+            "modificationCount": 4,
+            "createdOn": "2021-01-18",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkList1",
+            "modificationCount": 5,
+            "createdOn": "2021-01-17",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkList2",
+            "modificationCount": 5,
+            "createdOn": "2021-01-17",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkPool3",
+            "modificationCount": 5,
+            "createdOn": "2021-01-17",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkList4",
+            "modificationCount": 5,
+            "createdOn": "2021-01-17",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkList5",
+            "modificationCount": 5,
+            "createdOn": "2021-01-17",
+            "lastUpdateOn": "2021-02-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/container/queue/codel",
+        "succeded": true,
+        "duration": "3.480s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAQM-12",
+            "runs": 4368,
+            "nsPerOp": 234720,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAQM",
+            "modificationCount": 1,
+            "createdOn": "2021-01-23",
+            "lastUpdateOn": "2021-01-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/internal/clock",
+        "succeded": true,
+        "duration": "10.100s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetTimeInMs/GetTimeMillis-12",
+            "runs": 252552230,
+            "nsPerOp": 4.623,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetTimeInMs/GetTimeMillisDirect-12",
+            "runs": 511709695,
+            "nsPerOp": 2.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetTimeInMsWithTicker-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.9066,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNow/util.Now-12",
+            "runs": 416377,
+            "nsPerOp": 2632,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNow/time.Now-12",
+            "runs": 452895,
+            "nsPerOp": 3223,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetTimeInMs",
+            "modificationCount": 2,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-12-07"
+          },
+          {
+            "name": "BenchmarkGetTimeInMs",
+            "modificationCount": 2,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-12-07"
+          },
+          {
+            "name": "BenchmarkGetTimeInMsWithTicker",
+            "modificationCount": 1,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-02-02"
+          },
+          {
+            "name": "BenchmarkNow",
+            "modificationCount": 1,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-02-02"
+          },
+          {
+            "name": "BenchmarkNow",
+            "modificationCount": 1,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-02-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/internal/stat",
+        "succeded": true,
+        "duration": "31.756s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRollingCounterIncr-12",
+            "runs": 648006,
+            "nsPerOp": 2696,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingCounterReduce-12",
+            "runs": 896481,
+            "nsPerOp": 1358,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRollingCounterIncr",
+            "modificationCount": 2,
+            "createdOn": "2021-01-20",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkRollingCounterReduce",
+            "modificationCount": 3,
+            "createdOn": "2021-01-20",
+            "lastUpdateOn": "2021-12-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/internal/sys/mutex",
+        "succeded": true,
+        "duration": "1.348s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Mutex_TryLock-12",
+            "runs": 1743,
+            "nsPerOp": 712894,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Mutex_TryLock",
+            "modificationCount": 2,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-12-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/internal/wyhash",
+        "succeded": true,
+        "duration": "83.397s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDigest/33-12",
+            "runs": 17797180,
+            "nsPerOp": 70.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDigest/64-12",
+            "runs": 12132428,
+            "nsPerOp": 83.32,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDigest/96-12",
+            "runs": 77259866,
+            "nsPerOp": 16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDigest/128-12",
+            "runs": 62455153,
+            "nsPerOp": 21.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDigest/129-12",
+            "runs": 41989370,
+            "nsPerOp": 36.97,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDigest/240-12",
+            "runs": 21388436,
+            "nsPerOp": 61.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDigest/241-12",
+            "runs": 23040848,
+            "nsPerOp": 56.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDigest/512-12",
+            "runs": 17678847,
+            "nsPerOp": 76.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDigest/1024-12",
+            "runs": 8821338,
+            "nsPerOp": 134.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDigest/10240-12",
+            "runs": 1742448,
+            "nsPerOp": 624.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/0-12",
+            "runs": 322984226,
+            "nsPerOp": 3.495,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/1-12",
+            "runs": 320685566,
+            "nsPerOp": 5.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/2-12",
+            "runs": 100000000,
+            "nsPerOp": 10.18,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/3-12",
+            "runs": 174769044,
+            "nsPerOp": 8.041,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/4-12",
+            "runs": 202412209,
+            "nsPerOp": 5.492,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/5-12",
+            "runs": 176859378,
+            "nsPerOp": 9.496,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/6-12",
+            "runs": 190741186,
+            "nsPerOp": 5.546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/7-12",
+            "runs": 213398467,
+            "nsPerOp": 6.905,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/8-12",
+            "runs": 213536565,
+            "nsPerOp": 5.275,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/9-12",
+            "runs": 293104648,
+            "nsPerOp": 4.984,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/10-12",
+            "runs": 291759218,
+            "nsPerOp": 6.622,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/11-12",
+            "runs": 247605148,
+            "nsPerOp": 4.124,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/12-12",
+            "runs": 299339049,
+            "nsPerOp": 5.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/13-12",
+            "runs": 346501420,
+            "nsPerOp": 3.427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/14-12",
+            "runs": 314811144,
+            "nsPerOp": 3.412,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/15-12",
+            "runs": 316618350,
+            "nsPerOp": 5.169,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/16-12",
+            "runs": 213553418,
+            "nsPerOp": 6.829,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/17-12",
+            "runs": 100000000,
+            "nsPerOp": 13.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/21-12",
+            "runs": 100000000,
+            "nsPerOp": 10.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/24-12",
+            "runs": 133368822,
+            "nsPerOp": 13.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/29-12",
+            "runs": 145445286,
+            "nsPerOp": 10.17,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/32-12",
+            "runs": 100000000,
+            "nsPerOp": 10.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/33-12",
+            "runs": 103984090,
+            "nsPerOp": 10.17,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/64-12",
+            "runs": 115098472,
+            "nsPerOp": 12.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/69-12",
+            "runs": 100000000,
+            "nsPerOp": 12.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/96-12",
+            "runs": 100000000,
+            "nsPerOp": 11.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/97-12",
+            "runs": 87444996,
+            "nsPerOp": 17.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/128-12",
+            "runs": 50817438,
+            "nsPerOp": 19.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/129-12",
+            "runs": 81586903,
+            "nsPerOp": 16.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/240-12",
+            "runs": 38533856,
+            "nsPerOp": 33.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/241-12",
+            "runs": 49911632,
+            "nsPerOp": 32.59,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/512-12",
+            "runs": 24865786,
+            "nsPerOp": 51.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/1024-12",
+            "runs": 21042097,
+            "nsPerOp": 59.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWyhash/102400-12",
+            "runs": 247420,
+            "nsPerOp": 5145,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkDigest",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkWyhash",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/log",
+        "succeded": true,
+        "duration": "6.970s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHelperPrint-12",
+            "runs": 2685222,
+            "nsPerOp": 416.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHelperPrintf-12",
+            "runs": 3197266,
+            "nsPerOp": 588.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHelperPrintw-12",
+            "runs": 4005510,
+            "nsPerOp": 429.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHelperPrint",
+            "modificationCount": 2,
+            "createdOn": "2020-12-28",
+            "lastUpdateOn": "2021-06-07"
+          },
+          {
+            "name": "BenchmarkHelperPrintf",
+            "modificationCount": 2,
+            "createdOn": "2020-12-28",
+            "lastUpdateOn": "2021-06-07"
+          },
+          {
+            "name": "BenchmarkHelperPrintw",
+            "modificationCount": 2,
+            "createdOn": "2020-12-28",
+            "lastUpdateOn": "2021-06-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/overload/bbr",
+        "succeded": true,
+        "duration": "198.150s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBBRAllowUnderLowLoad-12",
+            "runs": 163048,
+            "nsPerOp": 7935,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBBRAllowUnderHighLoad-12",
+            "runs": 285727,
+            "nsPerOp": 4334,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderLowLoad-12",
+            "runs": 257923224,
+            "nsPerOp": 4.929,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderHighLoad-12",
+            "runs": 322803,
+            "nsPerOp": 7434,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderUnstableLoad-12",
+            "runs": 106858,
+            "nsPerOp": 9358,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBBRAllowUnderLowLoad",
+            "modificationCount": 2,
+            "createdOn": "2021-01-20",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkBBRAllowUnderHighLoad",
+            "modificationCount": 2,
+            "createdOn": "2021-01-20",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderLowLoad",
+            "modificationCount": 2,
+            "createdOn": "2021-01-20",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderHighLoad",
+            "modificationCount": 2,
+            "createdOn": "2021-01-20",
+            "lastUpdateOn": "2021-02-04"
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderUnstableLoad",
+            "modificationCount": 2,
+            "createdOn": "2021-01-20",
+            "lastUpdateOn": "2021-02-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/structure/hashset",
+        "succeded": true,
+        "duration": "44.080s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkValueAsBool-12",
+            "runs": 1349143,
+            "nsPerOp": 1361,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueAsEmptyStruct-12",
+            "runs": 1902082,
+            "nsPerOp": 968,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddAfterContains-12",
+            "runs": 2328249,
+            "nsPerOp": 1922,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddWithoutContains-12",
+            "runs": 1000000,
+            "nsPerOp": 2018,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoveAfterContains_Missing-12",
+            "runs": 2930704,
+            "nsPerOp": 799.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoveWithoutContains_Missing-12",
+            "runs": 1000000,
+            "nsPerOp": 1885,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoveAfterContains_Hitting-12",
+            "runs": 4203382,
+            "nsPerOp": 385.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoveWithoutContains_Hitting-12",
+            "runs": 2176036,
+            "nsPerOp": 769.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkValueAsBool",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkValueAsEmptyStruct",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkAddAfterContains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkAddWithoutContains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkRemoveAfterContains_Missing",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkRemoveWithoutContains_Missing",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkRemoveAfterContains_Hitting",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkRemoveWithoutContains_Hitting",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/structure/lscq",
+        "succeded": true,
+        "duration": "27.391s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDefault/EnqueueOnly/LSCQ-12",
+            "runs": 29843613,
+            "nsPerOp": 36.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/EnqueueOnly/LinkedQueue-12",
+            "runs": 9544670,
+            "nsPerOp": 109.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/EnqueueOnly/MSQueue-12",
+            "runs": 3695816,
+            "nsPerOp": 316.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/DequeueOnlyEmpty/LSCQ-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6837,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/DequeueOnlyEmpty/LinkedQueue-12",
+            "runs": 42550904,
+            "nsPerOp": 26.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/DequeueOnlyEmpty/MSQueue-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.018,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Pair/LSCQ-12",
+            "runs": 26471763,
+            "nsPerOp": 38.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Pair/LinkedQueue-12",
+            "runs": 9842680,
+            "nsPerOp": 117.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Pair/MSQueue-12",
+            "runs": 3953779,
+            "nsPerOp": 309.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/50Enqueue50Dequeue/LSCQ-12",
+            "runs": 66721927,
+            "nsPerOp": 18.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/50Enqueue50Dequeue/LinkedQueue-12",
+            "runs": 17348330,
+            "nsPerOp": 65.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/50Enqueue50Dequeue/MSQueue-12",
+            "runs": 7973406,
+            "nsPerOp": 154.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/30Enqueue70Dequeue/LSCQ-12",
+            "runs": 21677172,
+            "nsPerOp": 58.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/30Enqueue70Dequeue/LinkedQueue-12",
+            "runs": 25165700,
+            "nsPerOp": 55.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/30Enqueue70Dequeue/MSQueue-12",
+            "runs": 10959069,
+            "nsPerOp": 112.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/70Enqueue30Dequeue/LSCQ-12",
+            "runs": 38359045,
+            "nsPerOp": 42.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/70Enqueue30Dequeue/LinkedQueue-12",
+            "runs": 12763580,
+            "nsPerOp": 98.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/70Enqueue30Dequeue/MSQueue-12",
+            "runs": 5265166,
+            "nsPerOp": 232.8,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/structure/skipmap",
+        "succeded": true,
+        "duration": "124.304s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoadOrStoreExist-12",
+            "runs": 347835786,
+            "nsPerOp": 3.013,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreLazyExist-12",
+            "runs": 227461960,
+            "nsPerOp": 4.557,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreExistSingle-12",
+            "runs": 48364489,
+            "nsPerOp": 41.43,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreLazyExistSingle-12",
+            "runs": 29824416,
+            "nsPerOp": 45.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreRandom-12",
+            "runs": 1000000,
+            "nsPerOp": 1126,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreLazyRandom-12",
+            "runs": 2472711,
+            "nsPerOp": 631.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreRandomSingle-12",
+            "runs": 1000000,
+            "nsPerOp": 2123,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreLazyRandomSingle-12",
+            "runs": 1000000,
+            "nsPerOp": 6024,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStore/skipmap-12",
+            "runs": 1000000,
+            "nsPerOp": 1665,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStore/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 2107,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad100Hits/skipmap-12",
+            "runs": 64319739,
+            "nsPerOp": 21.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad100Hits/sync.Map-12",
+            "runs": 76985775,
+            "nsPerOp": 14.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad50Hits/skipmap-12",
+            "runs": 53452963,
+            "nsPerOp": 20.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad50Hits/sync.Map-12",
+            "runs": 88658380,
+            "nsPerOp": 15.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadNoHits/skipmap-12",
+            "runs": 50347341,
+            "nsPerOp": 24.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadNoHits/sync.Map-12",
+            "runs": 111889011,
+            "nsPerOp": 16.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark50Store50Load/skipmap-12",
+            "runs": 1000000,
+            "nsPerOp": 1048,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark50Store50Load/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 1396,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark30Store70Load/skipmap-12",
+            "runs": 1717003,
+            "nsPerOp": 1116,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark30Store70Load/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 2148,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Delete9Store90Load/skipmap-12",
+            "runs": 2741984,
+            "nsPerOp": 862.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Delete9Store90Load/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 1778,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Range9Delete90Store900Load/skipmap-12",
+            "runs": 1000000,
+            "nsPerOp": 2339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Range9Delete90Store900Load/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 28708,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringStore/skipmap-12",
+            "runs": 1760556,
+            "nsPerOp": 679.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringStore/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 1684,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringLoad50Hits/skipmap-12",
+            "runs": 29278020,
+            "nsPerOp": 50.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringLoad50Hits/sync.Map-12",
+            "runs": 30954936,
+            "nsPerOp": 42.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString30Store70Load/skipmap-12",
+            "runs": 3088827,
+            "nsPerOp": 487.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString30Store70Load/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 1485,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString1Delete9Store90Load/skipmap-12",
+            "runs": 1724323,
+            "nsPerOp": 625.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString1Delete9Store90Load/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 1887,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString1Range9Delete90Store900Load/skipmap-12",
+            "runs": 1327080,
+            "nsPerOp": 1147,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString1Range9Delete90Store900Load/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 24619,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoadOrStoreExist",
+            "modificationCount": 1,
+            "createdOn": "2022-11-13",
+            "lastUpdateOn": "2022-11-13"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreLazyExist",
+            "modificationCount": 1,
+            "createdOn": "2022-11-13",
+            "lastUpdateOn": "2022-11-13"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreExistSingle",
+            "modificationCount": 1,
+            "createdOn": "2022-11-13",
+            "lastUpdateOn": "2022-11-13"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreLazyExistSingle",
+            "modificationCount": 1,
+            "createdOn": "2022-11-13",
+            "lastUpdateOn": "2022-11-13"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreRandom",
+            "modificationCount": 1,
+            "createdOn": "2022-11-13",
+            "lastUpdateOn": "2022-11-13"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreLazyRandom",
+            "modificationCount": 1,
+            "createdOn": "2022-11-13",
+            "lastUpdateOn": "2022-11-13"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreRandomSingle",
+            "modificationCount": 1,
+            "createdOn": "2022-11-13",
+            "lastUpdateOn": "2022-11-13"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreLazyRandomSingle",
+            "modificationCount": 1,
+            "createdOn": "2022-11-13",
+            "lastUpdateOn": "2022-11-13"
+          },
+          {
+            "name": "BenchmarkStore",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkStore",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkLoad100Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkLoad100Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkLoad50Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkLoad50Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkLoadNoHits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkLoadNoHits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark50Store50Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark50Store50Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark30Store70Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark30Store70Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Delete9Store90Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Delete9Store90Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Range9Delete90Store900Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Range9Delete90Store900Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkStringStore",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkStringStore",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkStringLoad50Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkStringLoad50Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString30Store70Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString30Store70Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString1Delete9Store90Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString1Delete9Store90Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString1Range9Delete90Store900Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString1Range9Delete90Store900Load",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/structure/skipset",
+        "succeded": true,
+        "duration": "105.834s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAdd/skipset-12",
+            "runs": 4142552,
+            "nsPerOp": 409.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdd/sync.Map-12",
+            "runs": 1378683,
+            "nsPerOp": 888.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContains100Hits/skipset-12",
+            "runs": 100000000,
+            "nsPerOp": 10.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContains100Hits/sync.Map-12",
+            "runs": 128646289,
+            "nsPerOp": 9.908,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContains50Hits/skipset-12",
+            "runs": 103758648,
+            "nsPerOp": 12.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContains50Hits/sync.Map-12",
+            "runs": 174141548,
+            "nsPerOp": 9.526,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContainsNoHits/skipset-12",
+            "runs": 106323948,
+            "nsPerOp": 11.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContainsNoHits/sync.Map-12",
+            "runs": 176734034,
+            "nsPerOp": 8.759,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark50Add50Contains/skipset-12",
+            "runs": 3787636,
+            "nsPerOp": 337.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark50Add50Contains/sync.Map-12",
+            "runs": 1308292,
+            "nsPerOp": 867.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark30Add70Contains/skipset-12",
+            "runs": 7121036,
+            "nsPerOp": 233.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark30Add70Contains/sync.Map-12",
+            "runs": 1472062,
+            "nsPerOp": 836.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Remove9Add90Contains/skipset-12",
+            "runs": 19427332,
+            "nsPerOp": 311.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Remove9Add90Contains/sync.Map-12",
+            "runs": 1691084,
+            "nsPerOp": 691.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Range9Remove90Add900Contains/skipset-12",
+            "runs": 6530754,
+            "nsPerOp": 3280,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Range9Remove90Add900Contains/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 11896,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringAdd/skipset-12",
+            "runs": 3466042,
+            "nsPerOp": 493.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringAdd/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 1584,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringContains50Hits/skipset-12",
+            "runs": 46519945,
+            "nsPerOp": 25.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringContains50Hits/sync.Map-12",
+            "runs": 73955151,
+            "nsPerOp": 17.25,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString30Add70Contains/skipset-12",
+            "runs": 7524812,
+            "nsPerOp": 255.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString30Add70Contains/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 1025,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString1Remove9Add90Contains/skipset-12",
+            "runs": 13474582,
+            "nsPerOp": 207.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString1Remove9Add90Contains/sync.Map-12",
+            "runs": 1510678,
+            "nsPerOp": 1133,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString1Range9Remove90Add900Contains/skipset-12",
+            "runs": 3132092,
+            "nsPerOp": 1686,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString1Range9Remove90Add900Contains/sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 18385,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAdd",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkAdd",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkContains100Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkContains100Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkContains50Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkContains50Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkContainsNoHits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkContainsNoHits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark50Add50Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark50Add50Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark30Add70Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark30Add70Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Remove9Add90Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Remove9Add90Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Range9Remove90Add900Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Range9Remove90Add900Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkStringAdd",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkStringAdd",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkStringContains50Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkStringContains50Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString30Add70Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString30Add70Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString1Remove9Add90Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString1Remove9Add90Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString1Range9Remove90Add900Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkString1Range9Remove90Add900Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/structure/zset",
+        "succeded": true,
+        "duration": "11.609s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkContains100Hits/sortedset-12",
+            "runs": 36062450,
+            "nsPerOp": 28.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContains50Hits/sortedset-12",
+            "runs": 46461577,
+            "nsPerOp": 23.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContainsNoHits/sortedset-12",
+            "runs": 50428159,
+            "nsPerOp": 23.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdd/sortedset-12",
+            "runs": 13104174,
+            "nsPerOp": 106.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Add99Contains/sortedset-12",
+            "runs": 18032061,
+            "nsPerOp": 93.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark10Add90Contains/sortedset-12",
+            "runs": 10712794,
+            "nsPerOp": 120.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark50Add50Contains/sortedset-12",
+            "runs": 11915816,
+            "nsPerOp": 106.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1Add3Incr6Remove90Contains/sortedset-12",
+            "runs": 11265903,
+            "nsPerOp": 101.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkContains100Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkContains50Hits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkContainsNoHits",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkAdd",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Add99Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark10Add90Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark50Add50Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "Benchmark1Add3Incr6Remove90Contains",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/sys/fastrand",
+        "succeded": true,
+        "duration": "15.926s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSingleCore/math/rand-Uint32()-12",
+            "runs": 100000000,
+            "nsPerOp": 10.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleCore/fast-rand-Uint32()-12",
+            "runs": 392281832,
+            "nsPerOp": 2.756,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleCore/math/rand-Uint64()-12",
+            "runs": 151725013,
+            "nsPerOp": 8.469,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleCore/fast-rand-Uint64()-12",
+            "runs": 168161827,
+            "nsPerOp": 6.605,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleCore/math/rand-Read1000-12",
+            "runs": 647968,
+            "nsPerOp": 1654,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleCore/fast-rand-Read1000-12",
+            "runs": 7877618,
+            "nsPerOp": 217.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultipleCore/math/rand-Uint32()-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.9289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultipleCore/fast-rand-Uint32()-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5544,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultipleCore/math/rand-Uint64()-12",
+            "runs": 718400403,
+            "nsPerOp": 1.433,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultipleCore/fast-rand-Uint64()-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.9576,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultipleCore/math/rand-Read1000-12",
+            "runs": 443188,
+            "nsPerOp": 2736,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultipleCore/fast-rand-Read1000-12",
+            "runs": 12347161,
+            "nsPerOp": 97.46,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSingleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSingleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSingleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSingleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSingleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSingleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMultipleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMultipleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMultipleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMultipleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMultipleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkMultipleCore",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/sys/mutex",
+        "succeded": true,
+        "duration": "1.249s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Mutex_TryLock-12",
+            "runs": 1546,
+            "nsPerOp": 732866,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Mutex_TryLock",
+            "modificationCount": 2,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-12-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/sys/nanotime",
+        "succeded": true,
+        "duration": "3.429s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTimeNow-12",
+            "runs": 313011,
+            "nsPerOp": 3888,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRuntimeNanotime-12",
+            "runs": 459547,
+            "nsPerOp": 2546,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTimeNow",
+            "modificationCount": 1,
+            "createdOn": "2022-07-04",
+            "lastUpdateOn": "2022-07-04"
+          },
+          {
+            "name": "BenchmarkRuntimeNanotime",
+            "modificationCount": 1,
+            "createdOn": "2022-07-04",
+            "lastUpdateOn": "2022-07-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/sys/syncx",
+        "succeded": true,
+        "duration": "84.409s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSyncPool-12",
+            "runs": 10000,
+            "nsPerOp": 119857,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSyncXPool-12",
+            "runs": 16759,
+            "nsPerOp": 85745,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSyncPoolParallel-12",
+            "runs": 37975,
+            "nsPerOp": 74918,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSyncXPoolParallel-12",
+            "runs": 68419,
+            "nsPerOp": 21347,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSyncPoolParallel1-12",
+            "runs": 100000000,
+            "nsPerOp": 11.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSyncXPoolParallel1-12",
+            "runs": 100000000,
+            "nsPerOp": 13.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/syncx-1-12",
+            "runs": 100000000,
+            "nsPerOp": 10.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/sync-1-12",
+            "runs": 114729486,
+            "nsPerOp": 10.25,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/syncx-4-12",
+            "runs": 100000000,
+            "nsPerOp": 11.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/sync-4-12",
+            "runs": 52478733,
+            "nsPerOp": 21.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/syncx-16-12",
+            "runs": 401104365,
+            "nsPerOp": 4.853,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/sync-16-12",
+            "runs": 58129962,
+            "nsPerOp": 21.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/syncx-64-12",
+            "runs": 132795477,
+            "nsPerOp": 13.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/sync-64-12",
+            "runs": 71232182,
+            "nsPerOp": 23.89,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/syncx-256-12",
+            "runs": 287904723,
+            "nsPerOp": 6.885,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex100Read/sync-256-12",
+            "runs": 51670190,
+            "nsPerOp": 21.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/syncx-1-12",
+            "runs": 99755748,
+            "nsPerOp": 12.48,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/sync-1-12",
+            "runs": 120737166,
+            "nsPerOp": 9.858,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/syncx-4-12",
+            "runs": 25024293,
+            "nsPerOp": 50.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/sync-4-12",
+            "runs": 25329421,
+            "nsPerOp": 49.22,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/syncx-16-12",
+            "runs": 19824880,
+            "nsPerOp": 55.49,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/sync-16-12",
+            "runs": 18104850,
+            "nsPerOp": 61.85,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/syncx-64-12",
+            "runs": 22459000,
+            "nsPerOp": 50.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/sync-64-12",
+            "runs": 24171901,
+            "nsPerOp": 70.33,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/syncx-256-12",
+            "runs": 17305171,
+            "nsPerOp": 145.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read/sync-256-12",
+            "runs": 16642092,
+            "nsPerOp": 73.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/syncx-1-12",
+            "runs": 37947362,
+            "nsPerOp": 31.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/sync-1-12",
+            "runs": 107097084,
+            "nsPerOp": 10.89,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/syncx-4-12",
+            "runs": 14374058,
+            "nsPerOp": 85.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/sync-4-12",
+            "runs": 37141084,
+            "nsPerOp": 33.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/syncx-16-12",
+            "runs": 14271404,
+            "nsPerOp": 92.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/sync-16-12",
+            "runs": 51559324,
+            "nsPerOp": 35.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/syncx-64-12",
+            "runs": 14359186,
+            "nsPerOp": 140.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/sync-64-12",
+            "runs": 42034978,
+            "nsPerOp": 43.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/syncx-256-12",
+            "runs": 4664100,
+            "nsPerOp": 322.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read/sync-256-12",
+            "runs": 73445538,
+            "nsPerOp": 46.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/syncx-1-12",
+            "runs": 7592817,
+            "nsPerOp": 146.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/sync-1-12",
+            "runs": 70244901,
+            "nsPerOp": 15.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/syncx-4-12",
+            "runs": 4288524,
+            "nsPerOp": 243.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/sync-4-12",
+            "runs": 30520972,
+            "nsPerOp": 39.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/syncx-16-12",
+            "runs": 5030888,
+            "nsPerOp": 207.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/sync-16-12",
+            "runs": 27391428,
+            "nsPerOp": 43.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/syncx-64-12",
+            "runs": 4846999,
+            "nsPerOp": 297.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/sync-64-12",
+            "runs": 27935973,
+            "nsPerOp": 39.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/syncx-256-12",
+            "runs": 1851645,
+            "nsPerOp": 746.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read/sync-256-12",
+            "runs": 28968462,
+            "nsPerOp": 57.73,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSyncPool",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSyncXPool",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSyncPoolParallel",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSyncXPoolParallel",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSyncPoolParallel1",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkSyncXPoolParallel1",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex100Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex1Write99Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex10Write90Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          },
+          {
+            "name": "BenchmarkRWMutex50Write50Read",
+            "modificationCount": 1,
+            "createdOn": "2022-05-19",
+            "lastUpdateOn": "2022-05-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/sys/xxhash3",
+        "succeded": true,
+        "duration": "21.785s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDefault/Len0_16/Target64-12",
+            "runs": 12289616,
+            "nsPerOp": 102.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Len0_16/Target128-12",
+            "runs": 6573678,
+            "nsPerOp": 169,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Len17_128/Target64-12",
+            "runs": 941702,
+            "nsPerOp": 1264,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Len17_128/Target128-12",
+            "runs": 555038,
+            "nsPerOp": 2075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Len129_240/Target64-12",
+            "runs": 532860,
+            "nsPerOp": 2314,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Len129_240/Target128-12",
+            "runs": 317308,
+            "nsPerOp": 3363,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Len241_1024/Target64-12",
+            "runs": 10081,
+            "nsPerOp": 126658,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Len241_1024/Target128-12",
+            "runs": 10000,
+            "nsPerOp": 142400,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Scalar/Target64-12",
+            "runs": 248,
+            "nsPerOp": 4297108,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/Scalar/Target128-12",
+            "runs": 248,
+            "nsPerOp": 4539672,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/AVX2/Target64-12",
+            "runs": 511,
+            "nsPerOp": 2393200,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/AVX2/Target128-12",
+            "runs": 477,
+            "nsPerOp": 2421075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/SSE2/Target64-12",
+            "runs": 411,
+            "nsPerOp": 2716919,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefault/SSE2/Target128-12",
+            "runs": 409,
+            "nsPerOp": 2669952,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          },
+          {
+            "name": "BenchmarkDefault",
+            "modificationCount": 1,
+            "createdOn": "2022-06-17",
+            "lastUpdateOn": "2022-06-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/tools/bind/internal/bytesconv",
+        "succeded": true,
+        "duration": "3.571s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBytesConvBytesToStrRaw-12",
+            "runs": 19226029,
+            "nsPerOp": 69.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesConvBytesToStr-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3219,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesConvStrToBytesRaw-12",
+            "runs": 17353444,
+            "nsPerOp": 75.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesConvStrToBytes-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3075,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBytesConvBytesToStrRaw",
+            "modificationCount": 1,
+            "createdOn": "2021-09-23",
+            "lastUpdateOn": "2021-09-23"
+          },
+          {
+            "name": "BenchmarkBytesConvBytesToStr",
+            "modificationCount": 1,
+            "createdOn": "2021-09-23",
+            "lastUpdateOn": "2021-09-23"
+          },
+          {
+            "name": "BenchmarkBytesConvStrToBytesRaw",
+            "modificationCount": 1,
+            "createdOn": "2021-09-23",
+            "lastUpdateOn": "2021-09-23"
+          },
+          {
+            "name": "BenchmarkBytesConvStrToBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-09-23",
+            "lastUpdateOn": "2021-09-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/tools/match",
+        "succeded": true,
+        "duration": "2.576s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAscii-12",
+            "runs": 100000000,
+            "nsPerOp": 12.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnicode-12",
+            "runs": 50962135,
+            "nsPerOp": 25.19,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAscii",
+            "modificationCount": 1,
+            "createdOn": "2021-08-13",
+            "lastUpdateOn": "2021-08-13"
+          },
+          {
+            "name": "BenchmarkUnicode",
+            "modificationCount": 1,
+            "createdOn": "2021-08-13",
+            "lastUpdateOn": "2021-08-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/tools/pretty",
+        "succeded": true,
+        "duration": "9.500s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPretty-12",
+            "runs": 876608,
+            "nsPerOp": 2289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrettySortKeys-12",
+            "runs": 249109,
+            "nsPerOp": 4541,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUgly-12",
+            "runs": 1861404,
+            "nsPerOp": 605.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUglyInPlace-12",
+            "runs": 3789808,
+            "nsPerOp": 304,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSONIndent-12",
+            "runs": 293997,
+            "nsPerOp": 4460,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSONCompact-12",
+            "runs": 590739,
+            "nsPerOp": 2679,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPretty",
+            "modificationCount": 1,
+            "createdOn": "2021-08-18",
+            "lastUpdateOn": "2021-08-18"
+          },
+          {
+            "name": "BenchmarkPrettySortKeys",
+            "modificationCount": 2,
+            "createdOn": "2021-08-18",
+            "lastUpdateOn": "2021-12-07"
+          },
+          {
+            "name": "BenchmarkUgly",
+            "modificationCount": 1,
+            "createdOn": "2021-08-18",
+            "lastUpdateOn": "2021-08-18"
+          },
+          {
+            "name": "BenchmarkUglyInPlace",
+            "modificationCount": 2,
+            "createdOn": "2021-08-18",
+            "lastUpdateOn": "2021-12-07"
+          },
+          {
+            "name": "BenchmarkJSONIndent",
+            "modificationCount": 1,
+            "createdOn": "2021-08-18",
+            "lastUpdateOn": "2021-08-18"
+          },
+          {
+            "name": "BenchmarkJSONCompact",
+            "modificationCount": 1,
+            "createdOn": "2021-08-18",
+            "lastUpdateOn": "2021-08-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/songzhibin97/gkit/window",
+        "succeded": true,
+        "duration": "26.694s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWindow-12",
+            "runs": 1000000,
+            "nsPerOp": 26626,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWindow",
+            "modificationCount": 5,
+            "createdOn": "2021-01-12",
+            "lastUpdateOn": "2022-01-19"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "songzhibin97/gkit",
+    "name": "gkit",
+    "private": false,
+    "html_url": "https://github.com/songzhibin97/gkit",
+    "description": "A collection of basic usability component tools dedicated to providing micro-services and single services, drawing on some excellent open source project features such as kratos, go-kit, mosn, sentinel, gopkg core components. I hope you will use and mention issue and pr more often.",
+    "fork": false,
+    "created_at": "2020-12-27T07:46:46Z",
+    "updated_at": "2023-10-16T02:29:37Z",
+    "pushed_at": "2023-10-20T03:31:30Z",
+    "ssh_url": "git@github.com:songzhibin97/gkit.git",
+    "stargazers_count": 277,
+    "watchers_count": 277,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 42,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "go",
+      "golang",
+      "infrastructure",
+      "microservice"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 410,
+    "Lines": 69805,
+    "Blank": 7015,
+    "Code": 53893,
+    "Comment": 8897,
+    "Bytes": 1894162,
+    "Complexity": 12376
+  }
+}

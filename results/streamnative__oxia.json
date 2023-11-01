@@ -1,0 +1,281 @@
+{
+  "Name": "streamnative/oxia",
+  "Path": "./repositories/streamnative__oxia",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T23:57:44Z",
+    "benchmarkCount": 14,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 14,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "oxia/common",
+        "succeded": true,
+        "duration": "10.943s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCond1-12",
+            "runs": 615044,
+            "nsPerOp": 2642,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond2-12",
+            "runs": 289072,
+            "nsPerOp": 5663,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond4-12",
+            "runs": 205056,
+            "nsPerOp": 7302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond8-12",
+            "runs": 94281,
+            "nsPerOp": 15549,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond16-12",
+            "runs": 61852,
+            "nsPerOp": 22502,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond32-12",
+            "runs": 25490,
+            "nsPerOp": 49590,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCond1",
+            "modificationCount": 1,
+            "createdOn": "2022-12-28",
+            "lastUpdateOn": "2022-12-28"
+          },
+          {
+            "name": "BenchmarkCond2",
+            "modificationCount": 1,
+            "createdOn": "2022-12-28",
+            "lastUpdateOn": "2022-12-28"
+          },
+          {
+            "name": "BenchmarkCond4",
+            "modificationCount": 1,
+            "createdOn": "2022-12-28",
+            "lastUpdateOn": "2022-12-28"
+          },
+          {
+            "name": "BenchmarkCond8",
+            "modificationCount": 1,
+            "createdOn": "2022-12-28",
+            "lastUpdateOn": "2022-12-28"
+          },
+          {
+            "name": "BenchmarkCond16",
+            "modificationCount": 1,
+            "createdOn": "2022-12-28",
+            "lastUpdateOn": "2022-12-28"
+          },
+          {
+            "name": "BenchmarkCond32",
+            "modificationCount": 1,
+            "createdOn": "2022-12-28",
+            "lastUpdateOn": "2022-12-28"
+          }
+        ]
+      },
+      {
+        "pkg": "oxia/proto",
+        "succeded": true,
+        "duration": "6.210s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_ProtoMarshall-12",
+            "runs": 431694,
+            "nsPerOp": 4460,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_VTProtoMarshall-12",
+            "runs": 542365,
+            "nsPerOp": 3720,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_VTProtoMarshall_WithBuffer-12",
+            "runs": 9794250,
+            "nsPerOp": 125.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_ProtoMarshall",
+            "modificationCount": 1,
+            "createdOn": "2023-07-22",
+            "lastUpdateOn": "2023-07-22"
+          },
+          {
+            "name": "Benchmark_VTProtoMarshall",
+            "modificationCount": 1,
+            "createdOn": "2023-07-22",
+            "lastUpdateOn": "2023-07-22"
+          },
+          {
+            "name": "Benchmark_VTProtoMarshall_WithBuffer",
+            "modificationCount": 1,
+            "createdOn": "2023-07-22",
+            "lastUpdateOn": "2023-07-22"
+          }
+        ]
+      },
+      {
+        "pkg": "oxia/server/kv",
+        "succeded": true,
+        "duration": "4.916s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStandardCompare-12",
+            "runs": 65206639,
+            "nsPerOp": 28.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareWithSlash-12",
+            "runs": 4210366,
+            "nsPerOp": 350.8,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStandardCompare",
+            "modificationCount": 1,
+            "createdOn": "2022-11-07",
+            "lastUpdateOn": "2022-11-07"
+          },
+          {
+            "name": "BenchmarkCompareWithSlash",
+            "modificationCount": 1,
+            "createdOn": "2022-11-07",
+            "lastUpdateOn": "2022-11-07"
+          }
+        ]
+      },
+      {
+        "pkg": "oxia/server/wal",
+        "succeded": true,
+        "duration": "7.240s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFSync_stdlib-12",
+            "runs": 141910,
+            "nsPerOp": 13777,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFSync_x_sys-12",
+            "runs": 115636,
+            "nsPerOp": 10446,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMSync-12",
+            "runs": 129044,
+            "nsPerOp": 8954,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFSync_stdlib",
+            "modificationCount": 2,
+            "createdOn": "2023-01-14",
+            "lastUpdateOn": "2023-06-14"
+          },
+          {
+            "name": "BenchmarkFSync_x_sys",
+            "modificationCount": 2,
+            "createdOn": "2023-01-14",
+            "lastUpdateOn": "2023-06-14"
+          },
+          {
+            "name": "BenchmarkMSync",
+            "modificationCount": 3,
+            "createdOn": "2023-01-14",
+            "lastUpdateOn": "2023-07-10"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "streamnative/oxia",
+    "name": "oxia",
+    "private": false,
+    "html_url": "https://github.com/streamnative/oxia",
+    "description": "Oxia - Metadata store and coordination system",
+    "fork": false,
+    "created_at": "2022-02-03T00:28:48Z",
+    "updated_at": "2023-10-22T16:25:09Z",
+    "pushed_at": "2023-10-19T22:04:01Z",
+    "ssh_url": "git@github.com:streamnative/oxia.git",
+    "stargazers_count": 139,
+    "watchers_count": 139,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": true,
+    "has_discussions": true,
+    "forks": 18,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 6,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 195,
+    "Lines": 50620,
+    "Blank": 6035,
+    "Code": 40753,
+    "Comment": 3832,
+    "Bytes": 1345392,
+    "Complexity": 7593
+  }
+}

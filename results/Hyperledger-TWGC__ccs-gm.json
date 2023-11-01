@@ -1,0 +1,727 @@
+{
+  "Name": "Hyperledger-TWGC/ccs-gm",
+  "Path": "./repositories/Hyperledger-TWGC__ccs-gm",
+  "GoVersion": "1.16",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T21:58:41Z",
+    "benchmarkCount": 48,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 48,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/Hyperledger-TWGC/ccs-gm/sm2",
+        "succeded": true,
+        "duration": "14.955s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSign-12",
+            "runs": 41404,
+            "nsPerOp": 32530,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEcdsaSign-12",
+            "runs": 32402,
+            "nsPerOp": 37696,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify-12",
+            "runs": 28908,
+            "nsPerOp": 40557,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEcdsaVerify-12",
+            "runs": 12237,
+            "nsPerOp": 92769,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSignWithDigest-12",
+            "runs": 52964,
+            "nsPerOp": 26384,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyWithDigest-12",
+            "runs": 32539,
+            "nsPerOp": 35863,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSignWithASN1-12",
+            "runs": 33396,
+            "nsPerOp": 38759,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyWithASN1-12",
+            "runs": 24583,
+            "nsPerOp": 47001,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 4,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-12-31"
+          },
+          {
+            "name": "BenchmarkEcdsaSign",
+            "modificationCount": 2,
+            "createdOn": "2020-08-20",
+            "lastUpdateOn": "2020-12-31"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 6,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-12-31"
+          },
+          {
+            "name": "BenchmarkEcdsaVerify",
+            "modificationCount": 2,
+            "createdOn": "2020-08-20",
+            "lastUpdateOn": "2020-12-31"
+          },
+          {
+            "name": "BenchmarkSignWithDigest",
+            "modificationCount": 4,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-12-31"
+          },
+          {
+            "name": "BenchmarkVerifyWithDigest",
+            "modificationCount": 4,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-12-31"
+          },
+          {
+            "name": "BenchmarkSignWithASN1",
+            "modificationCount": 5,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-12-31"
+          },
+          {
+            "name": "BenchmarkVerifyWithASN1",
+            "modificationCount": 5,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-12-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Hyperledger-TWGC/ccs-gm/sm3",
+        "succeded": true,
+        "duration": "7.360s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHash8Bytes-12",
+            "runs": 1945378,
+            "nsPerOp": 695.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHash1K-12",
+            "runs": 152552,
+            "nsPerOp": 8312,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHash8K-12",
+            "runs": 18356,
+            "nsPerOp": 68963,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHash8Bytes",
+            "modificationCount": 1,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-08-03"
+          },
+          {
+            "name": "BenchmarkHash1K",
+            "modificationCount": 1,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-08-03"
+          },
+          {
+            "name": "BenchmarkHash8K",
+            "modificationCount": 2,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-12-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Hyperledger-TWGC/ccs-gm/sm4",
+        "succeded": true,
+        "duration": "15.408s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSm4Ecb8Bytes-12",
+            "runs": 1310890,
+            "nsPerOp": 2106,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSm4Ecb1K-12",
+            "runs": 35468,
+            "nsPerOp": 42256,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSm4Ecb8K-12",
+            "runs": 4969,
+            "nsPerOp": 328850,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSm4Cipher_Encrypt-12",
+            "runs": 3326407,
+            "nsPerOp": 344,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSm4Cipher_Decrypt-12",
+            "runs": 4453855,
+            "nsPerOp": 253.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSm4Cbc8Bytes-12",
+            "runs": 1000000,
+            "nsPerOp": 1478,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSm4Cbc1K-12",
+            "runs": 51964,
+            "nsPerOp": 22680,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSm4Cbc8K-12",
+            "runs": 9068,
+            "nsPerOp": 174183,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSm4Ecb8Bytes",
+            "modificationCount": 1,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-08-03"
+          },
+          {
+            "name": "BenchmarkSm4Ecb1K",
+            "modificationCount": 1,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-08-03"
+          },
+          {
+            "name": "BenchmarkSm4Ecb8K",
+            "modificationCount": 1,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-08-03"
+          },
+          {
+            "name": "BenchmarkSm4Cipher_Encrypt",
+            "modificationCount": 2,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-12-31"
+          },
+          {
+            "name": "BenchmarkSm4Cipher_Decrypt",
+            "modificationCount": 2,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-12-31"
+          },
+          {
+            "name": "BenchmarkSm4Cbc8Bytes",
+            "modificationCount": 1,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-08-03"
+          },
+          {
+            "name": "BenchmarkSm4Cbc1K",
+            "modificationCount": 1,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-08-03"
+          },
+          {
+            "name": "BenchmarkSm4Cbc8K",
+            "modificationCount": 2,
+            "createdOn": "2020-08-03",
+            "lastUpdateOn": "2020-09-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Hyperledger-TWGC/ccs-gm/tls",
+        "succeded": true,
+        "duration": "47.480s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHandshakeServer/RSA-12",
+            "runs": 1579,
+            "nsPerOp": 771569,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandshakeServer/ECDHE-P256-RSA-12",
+            "runs": 1498,
+            "nsPerOp": 905581,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandshakeServer/ECDHE-P256-ECDSA-P256-12",
+            "runs": 5874,
+            "nsPerOp": 185727,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandshakeServer/ECDHE-X25519-ECDSA-P256-12",
+            "runs": 4905,
+            "nsPerOp": 293194,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandshakeServer/ECDHE-P521-ECDSA-P521-12",
+            "runs": 358,
+            "nsPerOp": 3629146,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/MaxPacket/1MB-12",
+            "runs": 100,
+            "nsPerOp": 10006467,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/MaxPacket/2MB-12",
+            "runs": 99,
+            "nsPerOp": 13902080,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/MaxPacket/4MB-12",
+            "runs": 39,
+            "nsPerOp": 31940914,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/MaxPacket/8MB-12",
+            "runs": 24,
+            "nsPerOp": 52050560,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/MaxPacket/16MB-12",
+            "runs": 9,
+            "nsPerOp": 122742485,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/MaxPacket/32MB-12",
+            "runs": 6,
+            "nsPerOp": 193113202,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/MaxPacket/64MB-12",
+            "runs": 3,
+            "nsPerOp": 377042314,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/DynamicPacket/1MB-12",
+            "runs": 93,
+            "nsPerOp": 12798068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/DynamicPacket/2MB-12",
+            "runs": 50,
+            "nsPerOp": 35417515,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/DynamicPacket/4MB-12",
+            "runs": 33,
+            "nsPerOp": 58405407,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/DynamicPacket/8MB-12",
+            "runs": 19,
+            "nsPerOp": 87945365,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/DynamicPacket/16MB-12",
+            "runs": 7,
+            "nsPerOp": 148439103,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/DynamicPacket/32MB-12",
+            "runs": 6,
+            "nsPerOp": 192959794,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThroughput/DynamicPacket/64MB-12",
+            "runs": 3,
+            "nsPerOp": 393182230,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/MaxPacket/200kbps-12",
+            "runs": 2,
+            "nsPerOp": 697313726,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/MaxPacket/500kbps-12",
+            "runs": 4,
+            "nsPerOp": 281876513,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/MaxPacket/1000kbps-12",
+            "runs": 8,
+            "nsPerOp": 143777528,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/MaxPacket/2000kbps-12",
+            "runs": 15,
+            "nsPerOp": 75319396,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/MaxPacket/5000kbps-12",
+            "runs": 36,
+            "nsPerOp": 33538285,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/DynamicPacket/200kbps-12",
+            "runs": 8,
+            "nsPerOp": 137209974,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/DynamicPacket/500kbps-12",
+            "runs": 20,
+            "nsPerOp": 58749842,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/DynamicPacket/1000kbps-12",
+            "runs": 34,
+            "nsPerOp": 33102367,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/DynamicPacket/2000kbps-12",
+            "runs": 61,
+            "nsPerOp": 22101289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLatency/DynamicPacket/5000kbps-12",
+            "runs": 93,
+            "nsPerOp": 12809745,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHandshakeServer",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkHandshakeServer",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkHandshakeServer",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkHandshakeServer",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkHandshakeServer",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkThroughput",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          },
+          {
+            "name": "BenchmarkLatency",
+            "modificationCount": 1,
+            "createdOn": "2020-07-17",
+            "lastUpdateOn": "2020-07-17"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "Hyperledger-TWGC/ccs-gm",
+    "name": "ccs-gm",
+    "private": false,
+    "html_url": "https://github.com/Hyperledger-TWGC/ccs-gm",
+    "description": "中国网安go语言国密库",
+    "fork": false,
+    "created_at": "2020-07-17T05:09:47Z",
+    "updated_at": "2023-09-24T01:49:20Z",
+    "pushed_at": "2023-03-25T12:05:46Z",
+    "ssh_url": "git@github.com:Hyperledger-TWGC/ccs-gm.git",
+    "stargazers_count": 123,
+    "watchers_count": 123,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 53,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 4,
+    "topics": [
+      "gm",
+      "gmsw",
+      "golang-library"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 79,
+    "Lines": 33915,
+    "Blank": 3530,
+    "Code": 26734,
+    "Comment": 3651,
+    "Bytes": 1208874,
+    "Complexity": 5066
+  }
+}

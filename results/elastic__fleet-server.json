@@ -1,0 +1,614 @@
+{
+  "Name": "elastic/fleet-server",
+  "Path": "./repositories/elastic__fleet-server",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T11:32:36Z",
+    "benchmarkCount": 39,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 39,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/elastic/fleet-server/v7/internal/pkg/api",
+        "succeded": true,
+        "duration": "5.062s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMakeUpdatePolicyBody-12",
+            "runs": 316083,
+            "nsPerOp": 5559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_CheckinT_writeResponse-12",
+            "runs": 125418,
+            "nsPerOp": 9575,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParallel_CheckinT_writeResponse-12",
+            "runs": 340546,
+            "nsPerOp": 3332,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMakeUpdatePolicyBody",
+            "modificationCount": 2,
+            "createdOn": "2021-04-20",
+            "lastUpdateOn": "2022-04-11"
+          },
+          {
+            "name": "Benchmark_CheckinT_writeResponse",
+            "modificationCount": 1,
+            "createdOn": "2023-10-03",
+            "lastUpdateOn": "2023-10-03"
+          },
+          {
+            "name": "BenchmarkParallel_CheckinT_writeResponse",
+            "modificationCount": 2,
+            "createdOn": "2023-10-03",
+            "lastUpdateOn": "2023-10-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/elastic/fleet-server/v7/internal/pkg/bulk",
+        "succeded": true,
+        "duration": "25.821s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMockBulk/1-12",
+            "runs": 5850,
+            "nsPerOp": 198183,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMockBulk/8-12",
+            "runs": 1826,
+            "nsPerOp": 692987,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMockBulk/64-12",
+            "runs": 174,
+            "nsPerOp": 5901544,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMockBulk/4096-12",
+            "runs": 7,
+            "nsPerOp": 145968561,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMockBulk/32768-12",
+            "runs": 1,
+            "nsPerOp": 1567074876,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock/1-12",
+            "runs": 400116,
+            "nsPerOp": 3312,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock/8-12",
+            "runs": 109971,
+            "nsPerOp": 12957,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock/64-12",
+            "runs": 10000,
+            "nsPerOp": 106824,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock/4096-12",
+            "runs": 214,
+            "nsPerOp": 6083635,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock/32768-12",
+            "runs": 31,
+            "nsPerOp": 49799344,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock/131072-12",
+            "runs": 6,
+            "nsPerOp": 467824320,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMockBulk",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkMockBulk",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkMockBulk",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkMockBulk",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkMockBulk",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock",
+            "modificationCount": 4,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2023-01-12"
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock",
+            "modificationCount": 4,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2023-01-12"
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock",
+            "modificationCount": 4,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2023-01-12"
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock",
+            "modificationCount": 4,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2023-01-12"
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock",
+            "modificationCount": 4,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2023-01-12"
+          },
+          {
+            "name": "BenchmarkMultiUpdateMock",
+            "modificationCount": 4,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2023-01-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/elastic/fleet-server/v7/internal/pkg/checkin",
+        "succeded": true,
+        "duration": "37.553s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBulk_1-12",
+            "runs": 328412,
+            "nsPerOp": 5427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulk_64-12",
+            "runs": 5304,
+            "nsPerOp": 314514,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulk_8192-12",
+            "runs": 14,
+            "nsPerOp": 90658613,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulk_37268-12",
+            "runs": 2,
+            "nsPerOp": 587289158,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulk_131072-12",
+            "runs": 1,
+            "nsPerOp": 3201672050,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulk_262144-12",
+            "runs": 1,
+            "nsPerOp": 3762065607,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkFlush_1-12",
+            "runs": 8283,
+            "nsPerOp": 217582,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkFlush_64-12",
+            "runs": 408,
+            "nsPerOp": 5634575,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkFlush_8192-12",
+            "runs": 2,
+            "nsPerOp": 573442786,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkFlush_37268-12",
+            "runs": 1,
+            "nsPerOp": 1525169124,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkFlush_131072-12",
+            "runs": 1,
+            "nsPerOp": 4815794593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkFlush_262144-12",
+            "runs": 1,
+            "nsPerOp": 10179251853,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBulk_1",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulk_64",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulk_8192",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulk_37268",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulk_131072",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulk_262144",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulkFlush_1",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulkFlush_64",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulkFlush_8192",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulkFlush_37268",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulkFlush_131072",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          },
+          {
+            "name": "BenchmarkBulkFlush_262144",
+            "modificationCount": 1,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-04-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/elastic/fleet-server/v7/internal/pkg/dsl",
+        "succeded": true,
+        "duration": "12.745s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRenderOne-12",
+            "runs": 527350,
+            "nsPerOp": 1992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRender-12",
+            "runs": 884820,
+            "nsPerOp": 2307,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalNode-12",
+            "runs": 66691,
+            "nsPerOp": 18262,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalNode2-12",
+            "runs": 31638,
+            "nsPerOp": 38580,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSprintf-12",
+            "runs": 1000000,
+            "nsPerOp": 1558,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRender2-12",
+            "runs": 693969,
+            "nsPerOp": 1760,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRenderOne",
+            "modificationCount": 2,
+            "createdOn": "2020-11-10",
+            "lastUpdateOn": "2022-05-06"
+          },
+          {
+            "name": "BenchmarkRender",
+            "modificationCount": 2,
+            "createdOn": "2020-11-10",
+            "lastUpdateOn": "2022-05-06"
+          },
+          {
+            "name": "BenchmarkMarshalNode",
+            "modificationCount": 2,
+            "createdOn": "2020-11-10",
+            "lastUpdateOn": "2022-05-06"
+          },
+          {
+            "name": "BenchmarkMarshalNode2",
+            "modificationCount": 2,
+            "createdOn": "2020-11-10",
+            "lastUpdateOn": "2022-05-06"
+          },
+          {
+            "name": "BenchmarkSprintf",
+            "modificationCount": 2,
+            "createdOn": "2020-11-10",
+            "lastUpdateOn": "2022-05-06"
+          },
+          {
+            "name": "BenchmarkRender2",
+            "modificationCount": 2,
+            "createdOn": "2020-11-10",
+            "lastUpdateOn": "2022-05-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/elastic/fleet-server/v7/internal/pkg/policy",
+        "succeded": true,
+        "duration": "12.152s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSubsSimple-12",
+            "runs": 124788838,
+            "nsPerOp": 9.688,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubs/32-12",
+            "runs": 5269256,
+            "nsPerOp": 223.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubs/1024-12",
+            "runs": 160093,
+            "nsPerOp": 7387,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubs/2048-12",
+            "runs": 77740,
+            "nsPerOp": 14830,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubs/65536-12",
+            "runs": 811,
+            "nsPerOp": 1447285,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubs/131072-12",
+            "runs": 403,
+            "nsPerOp": 3951063,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubs/524288-12",
+            "runs": 73,
+            "nsPerOp": 25969396,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSubsSimple",
+            "modificationCount": 1,
+            "createdOn": "2021-07-14",
+            "lastUpdateOn": "2021-07-14"
+          },
+          {
+            "name": "BenchmarkSubs",
+            "modificationCount": 1,
+            "createdOn": "2021-07-14",
+            "lastUpdateOn": "2021-07-14"
+          },
+          {
+            "name": "BenchmarkSubs",
+            "modificationCount": 1,
+            "createdOn": "2021-07-14",
+            "lastUpdateOn": "2021-07-14"
+          },
+          {
+            "name": "BenchmarkSubs",
+            "modificationCount": 1,
+            "createdOn": "2021-07-14",
+            "lastUpdateOn": "2021-07-14"
+          },
+          {
+            "name": "BenchmarkSubs",
+            "modificationCount": 1,
+            "createdOn": "2021-07-14",
+            "lastUpdateOn": "2021-07-14"
+          },
+          {
+            "name": "BenchmarkSubs",
+            "modificationCount": 1,
+            "createdOn": "2021-07-14",
+            "lastUpdateOn": "2021-07-14"
+          },
+          {
+            "name": "BenchmarkSubs",
+            "modificationCount": 1,
+            "createdOn": "2021-07-14",
+            "lastUpdateOn": "2021-07-14"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "elastic/fleet-server",
+    "name": "fleet-server",
+    "private": false,
+    "html_url": "https://github.com/elastic/fleet-server",
+    "description": "The Fleet server allows managing a fleet of Elastic Agents.",
+    "fork": false,
+    "created_at": "2020-11-10T15:28:43Z",
+    "updated_at": "2023-09-13T05:14:01Z",
+    "pushed_at": "2023-10-23T16:22:44Z",
+    "ssh_url": "git@github.com:elastic/fleet-server.git",
+    "stargazers_count": 62,
+    "watchers_count": 62,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 74,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 108,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 279,
+    "Lines": 50697,
+    "Blank": 7341,
+    "Code": 39045,
+    "Comment": 4311,
+    "Bytes": 1444098,
+    "Complexity": 6496
+  }
+}

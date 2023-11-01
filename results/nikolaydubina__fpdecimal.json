@@ -1,0 +1,537 @@
+{
+  "Name": "nikolaydubina/fpdecimal",
+  "Path": "./repositories/nikolaydubina__fpdecimal",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-23T19:13:36Z",
+    "benchmarkCount": 35,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 35,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/nikolaydubina/fpdecimal",
+        "succeded": true,
+        "duration": "66.684s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse/small-12",
+            "runs": 46684986,
+            "nsPerOp": 24.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/large-12",
+            "runs": 13435118,
+            "nsPerOp": 83.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint/small-12",
+            "runs": 8485047,
+            "nsPerOp": 265.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint/large-12",
+            "runs": 4607076,
+            "nsPerOp": 261.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArithmetic/add-12",
+            "runs": 658020042,
+            "nsPerOp": 1.805,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArithmetic/div-12",
+            "runs": 129878065,
+            "nsPerOp": 10.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArithmetic/divmod-12",
+            "runs": 100000000,
+            "nsPerOp": 13.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFixedPointDecimalToString/small-12",
+            "runs": 10687149,
+            "nsPerOp": 228.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFixedPointDecimalToString/large-12",
+            "runs": 5736704,
+            "nsPerOp": 182.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendFixedPointDecimal/small-12",
+            "runs": 7609377,
+            "nsPerOp": 194.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendFixedPointDecimal/large-12",
+            "runs": 23528048,
+            "nsPerOp": 166.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_Atoi/small-12",
+            "runs": 61600898,
+            "nsPerOp": 20.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_Atoi/large-12",
+            "runs": 24992307,
+            "nsPerOp": 48.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint_int_strconv_Itoa/small-12",
+            "runs": 17480727,
+            "nsPerOp": 61.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint_int_strconv_Itoa/large-12",
+            "runs": 6088402,
+            "nsPerOp": 257.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_ParseInt/small/int32-12",
+            "runs": 54229882,
+            "nsPerOp": 23.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_ParseInt/small/int64-12",
+            "runs": 59044608,
+            "nsPerOp": 22.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_ParseInt/large/int64-12",
+            "runs": 27272409,
+            "nsPerOp": 39.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint_int_strconv_FormatInt/small-12",
+            "runs": 42790123,
+            "nsPerOp": 36.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_float_strconv_ParseFloat/small/float32-12",
+            "runs": 31378172,
+            "nsPerOp": 41.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_float_strconv_ParseFloat/small/float64-12",
+            "runs": 24520830,
+            "nsPerOp": 49.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_float_strconv_ParseFloat/large/float32-12",
+            "runs": 5251632,
+            "nsPerOp": 269.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_float_strconv_ParseFloat/large/float64-12",
+            "runs": 8815927,
+            "nsPerOp": 158.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint_float_strconv_FormatFloat/small/float32-12",
+            "runs": 2130067,
+            "nsPerOp": 694.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint_float_strconv_FormatFloat/small/float64-12",
+            "runs": 1000000,
+            "nsPerOp": 1013,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint_float_strconv_FormatFloat/large/float32-12",
+            "runs": 1901841,
+            "nsPerOp": 569.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint_float_strconv_FormatFloat/large/float64-12",
+            "runs": 1396459,
+            "nsPerOp": 1041,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_float_fmt_Sscanf/small-12",
+            "runs": 831734,
+            "nsPerOp": 2154,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse_float_fmt_Sscanf/large-12",
+            "runs": 637214,
+            "nsPerOp": 3150,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint_float_fmt_Sprintf/small-12",
+            "runs": 2939632,
+            "nsPerOp": 411,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrint_float_fmt_Sprintf/large-12",
+            "runs": 2745832,
+            "nsPerOp": 412.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArithmetic_int64/add-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.112,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArithmetic_int64/div-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8645,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArithmetic_int64/divmod-12",
+            "runs": 233351796,
+            "nsPerOp": 5.251,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArithmetic_int64/mod-12",
+            "runs": 247505397,
+            "nsPerOp": 4.464,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 7,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 7,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkPrint",
+            "modificationCount": 8,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkPrint",
+            "modificationCount": 8,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkArithmetic",
+            "modificationCount": 5,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkArithmetic",
+            "modificationCount": 5,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkArithmetic",
+            "modificationCount": 5,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkFixedPointDecimalToString",
+            "modificationCount": 1,
+            "createdOn": "2022-10-13",
+            "lastUpdateOn": "2022-10-13"
+          },
+          {
+            "name": "BenchmarkFixedPointDecimalToString",
+            "modificationCount": 1,
+            "createdOn": "2022-10-13",
+            "lastUpdateOn": "2022-10-13"
+          },
+          {
+            "name": "BenchmarkAppendFixedPointDecimal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-13",
+            "lastUpdateOn": "2022-10-13"
+          },
+          {
+            "name": "BenchmarkAppendFixedPointDecimal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-13",
+            "lastUpdateOn": "2022-10-13"
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_Atoi",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_Atoi",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkPrint_int_strconv_Itoa",
+            "modificationCount": 3,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-30"
+          },
+          {
+            "name": "BenchmarkPrint_int_strconv_Itoa",
+            "modificationCount": 3,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-30"
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_ParseInt",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_ParseInt",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkParse_int_strconv_ParseInt",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkPrint_int_strconv_FormatInt",
+            "modificationCount": 3,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-30"
+          },
+          {
+            "name": "BenchmarkParse_float_strconv_ParseFloat",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkParse_float_strconv_ParseFloat",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkParse_float_strconv_ParseFloat",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkParse_float_strconv_ParseFloat",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkPrint_float_strconv_FormatFloat",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkPrint_float_strconv_FormatFloat",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkPrint_float_strconv_FormatFloat",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkPrint_float_strconv_FormatFloat",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkParse_float_fmt_Sscanf",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkParse_float_fmt_Sscanf",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkPrint_float_fmt_Sprintf",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkPrint_float_fmt_Sprintf",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2022-05-28"
+          },
+          {
+            "name": "BenchmarkArithmetic_int64",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkArithmetic_int64",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkArithmetic_int64",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          },
+          {
+            "name": "BenchmarkArithmetic_int64",
+            "modificationCount": 2,
+            "createdOn": "2022-05-28",
+            "lastUpdateOn": "2023-05-18"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "nikolaydubina/fpdecimal",
+    "name": "fpdecimal",
+    "private": false,
+    "html_url": "https://github.com/nikolaydubina/fpdecimal",
+    "description": "🛫 Fixed-Point Decimals",
+    "fork": false,
+    "created_at": "2022-05-27T12:01:28Z",
+    "updated_at": "2023-09-30T04:51:03Z",
+    "pushed_at": "2023-08-05T10:22:39Z",
+    "ssh_url": "git@github.com:nikolaydubina/fpdecimal.git",
+    "stargazers_count": 25,
+    "watchers_count": 25,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 4,
+    "topics": [
+      "decoding",
+      "encoding",
+      "fixed-point-arithmetic",
+      "go",
+      "json",
+      "money",
+      "numerics",
+      "performance",
+      "serialization"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 7,
+    "Lines": 1181,
+    "Blank": 151,
+    "Code": 999,
+    "Comment": 31,
+    "Bytes": 22517,
+    "Complexity": 284
+  }
+}

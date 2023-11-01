@@ -1,0 +1,561 @@
+{
+  "Name": "crowdsecurity/crowdsec",
+  "Path": "./repositories/crowdsecurity__crowdsec",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T01:32:08Z",
+    "benchmarkCount": 35,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 34,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/crowdsecurity/crowdsec/pkg/acquisition/modules/syslog/internal/parser/rfc3164",
+        "succeded": true,
+        "duration": "23.464s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_20_09:33:54_UDMPRO,a2edd0c6ae48,udm-1.10.0.3686_kernel:_[1670546.400229]_IN=eth9_OUT=_MAC=24:5a:4c:7b:0a:4c:34:27:92:67:0f:2b:08:00_SRC=79.124.62.34_DST=x.x.x.x_LEN=44_TOS=0x00_PREC=0x00_TTL=243_ID=37520_PROTO=TCP_SPT=55055_DPT=51443_WINDOW=1024_RES=0x00_SYN_URGP=0-12",
+            "runs": 372010,
+            "nsPerOp": 3512,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_20_09:33:54_UDMPRO,a2edd0c6ae48,udm-1.10.0.3686_kernel:_foo-12",
+            "runs": 207919,
+            "nsPerOp": 6021,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_20_09:33:54_UDMPRO,a2edd0c6ae48,udm-1.10.0.3686_kernel:_foo#01-12",
+            "runs": 402699,
+            "nsPerOp": 3302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/foobar-12",
+            "runs": 3331094,
+            "nsPerOp": 355.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003e-12",
+            "runs": 2823675,
+            "nsPerOp": 393,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_02_09:33:54-12",
+            "runs": 1513422,
+            "nsPerOp": 721.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_02_09:33:54_foo.bar-12",
+            "runs": 785872,
+            "nsPerOp": 2002,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_02_09:33:54_foo.bar_bla[42-12",
+            "runs": 456948,
+            "nsPerOp": 2898,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_02_09:33:54_foo.bar_bla[42]-12",
+            "runs": 406923,
+            "nsPerOp": 2734,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_02_09:33:54_foo.bar_bla[42]:___-12",
+            "runs": 386252,
+            "nsPerOp": 2670,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_02_09:33:54_foo.bar_bla-12",
+            "runs": 463698,
+            "nsPerOp": 2459,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/\u003c12\u003eMay_02_09:33:54_foo.bar_bla:-12",
+            "runs": 752938,
+            "nsPerOp": 2592,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/#00-12",
+            "runs": 3715464,
+            "nsPerOp": 312.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/crowdsecurity/crowdsec/pkg/acquisition/modules/syslog/internal/parser/rfc5424",
+        "succeded": true,
+        "duration": "28.056s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse/[no]_empty_input-12",
+            "runs": 4862678,
+            "nsPerOp": 295.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[no]_multiple_syslog_messages_on_multiple_lines-12",
+            "runs": 374134,
+            "nsPerOp": 3162,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[no]_impossible_timestamp-12",
+            "runs": 3607888,
+            "nsPerOp": 316.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[no]_malformed_structured_data-12",
+            "runs": 376807,
+            "nsPerOp": 3416,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[no]_with_duplicated_structured_data_id-12",
+            "runs": 3218731,
+            "nsPerOp": 338.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_minimal-12",
+            "runs": 360590,
+            "nsPerOp": 3706,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_average_message-12",
+            "runs": 988410,
+            "nsPerOp": 1767,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_complicated_message-12",
+            "runs": 1044940,
+            "nsPerOp": 982,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_very_long_message-12",
+            "runs": 211032,
+            "nsPerOp": 5312,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_all_max_length_and_complete-12",
+            "runs": 3789873,
+            "nsPerOp": 311.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_all_max_length_except_structured_data_and_message-12",
+            "runs": 3077293,
+            "nsPerOp": 357.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_minimal_with_message_containing_newline-12",
+            "runs": 418900,
+            "nsPerOp": 3177,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_w/o_procid,_w/o_structured_data,_with_message_starting_with_BOM-12",
+            "runs": 838365,
+            "nsPerOp": 1368,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_minimal_with_UTF-8_message-12",
+            "runs": 310737,
+            "nsPerOp": 3659,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_minimal_with_UTF-8_message_starting_with_BOM-12",
+            "runs": 328602,
+            "nsPerOp": 3773,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_with_structured_data_id,_w/o_structured_data_params-12",
+            "runs": 3814288,
+            "nsPerOp": 314.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_with_multiple_structured_data-12",
+            "runs": 3048765,
+            "nsPerOp": 388.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_with_escaped_backslash_within_structured_data_param_value,_with_message-12",
+            "runs": 3873614,
+            "nsPerOp": 334.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_with_UTF-8_structured_data_param_value,_with_message-12",
+            "runs": 1000000,
+            "nsPerOp": 1096,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-10-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/crowdsecurity/crowdsec/pkg/parser",
+        "succeded": false,
+        "duration": "1.565s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParser-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "time=\"2023-10-27T03:33:44+02:00\""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParser",
+            "modificationCount": 6,
+            "createdOn": "2020-05-15",
+            "lastUpdateOn": "2022-09-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/crowdsecurity/crowdsec/pkg/time/rate",
+        "succeded": true,
+        "duration": "2.597s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAllowN-12",
+            "runs": 14007343,
+            "nsPerOp": 88.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWaitNNoDelay-12",
+            "runs": 445912,
+            "nsPerOp": 2737,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAllowN",
+            "modificationCount": 1,
+            "createdOn": "2020-05-15",
+            "lastUpdateOn": "2020-05-15"
+          },
+          {
+            "name": "BenchmarkWaitNNoDelay",
+            "modificationCount": 2,
+            "createdOn": "2020-05-15",
+            "lastUpdateOn": "2020-05-20"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "crowdsecurity/crowdsec",
+    "name": "crowdsec",
+    "private": false,
+    "html_url": "https://github.com/crowdsecurity/crowdsec",
+    "description": "CrowdSec - the open-source and participative security solution offering crowdsourced protection against malicious IPs and access to the most advanced real-world CTI.",
+    "fork": false,
+    "created_at": "2020-05-15T09:38:05Z",
+    "updated_at": "2023-10-23T14:56:45Z",
+    "pushed_at": "2023-10-23T12:16:02Z",
+    "ssh_url": "git@github.com:crowdsecurity/crowdsec.git",
+    "homepage": "https://crowdsec.net",
+    "stargazers_count": 7134,
+    "watchers_count": 7134,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 383,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 145,
+    "topics": [
+      "attacks-prevention",
+      "detection",
+      "linux",
+      "protection",
+      "security"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 425,
+    "Lines": 107002,
+    "Blank": 12557,
+    "Code": 86197,
+    "Comment": 8248,
+    "Bytes": 3031852,
+    "Complexity": 17055
+  }
+}

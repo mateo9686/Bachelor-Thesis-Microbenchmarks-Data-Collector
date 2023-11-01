@@ -1,0 +1,687 @@
+{
+  "Name": "google/go-cloud",
+  "Path": "./repositories/google__go-cloud",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T02:38:39Z",
+    "benchmarkCount": 36,
+    "benchmarkSuiteCount": 16,
+    "successfulBenchmarkCount": 17,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "gocloud.dev/docstore/mongodocstore",
+        "succeded": false,
+        "duration": "3.019s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConformance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "mongo_test.go:204: connecting to mongodb://localhost:27017: server selection error: context deadline exceeded, current topology: { Type: Unknown, Servers: [{ Addr: localhost:27017, Type: Unknown, Last error: dial tcp [::1]:27017: connect: connection refused }, ] }"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConformance",
+            "modificationCount": 3,
+            "createdOn": "2019-04-22",
+            "lastUpdateOn": "2019-08-01"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/blob/azureblob",
+        "succeded": false,
+        "duration": "1.249s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAzureblob/BenchmarkRead",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "drivertest.go:2619: blob (key \"readbenchmark-blob\") (code=Unknown): PUT https://gocloudblobtests.blob.core.windows.net/go-cloud-bucket/readbenchmark-blob"
+          },
+          {
+            "name": "BenchmarkAzureblob/BenchmarkWriteReadDelete",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "drivertest.go:2660: blob (key \"writereaddeletebenchmark-blob-1\") (code=Unknown): PUT https://gocloudblobtests.blob.core.windows.net/go-cloud-bucket/writereaddeletebenchmark-blob-1"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAzureblob",
+            "modificationCount": 4,
+            "createdOn": "2019-01-15",
+            "lastUpdateOn": "2022-12-01"
+          },
+          {
+            "name": "BenchmarkAzureblob",
+            "modificationCount": 4,
+            "createdOn": "2019-01-15",
+            "lastUpdateOn": "2022-12-01"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/blob/fileblob",
+        "succeded": true,
+        "duration": "2.467s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFileblob/BenchmarkRead-12",
+            "runs": 155235,
+            "nsPerOp": 7529,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileblob/BenchmarkWriteReadDelete-12",
+            "runs": 6877,
+            "nsPerOp": 170313,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFileblob",
+            "modificationCount": 5,
+            "createdOn": "2018-05-10",
+            "lastUpdateOn": "2019-03-06"
+          },
+          {
+            "name": "BenchmarkFileblob",
+            "modificationCount": 5,
+            "createdOn": "2018-05-10",
+            "lastUpdateOn": "2019-03-06"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/blob/gcsblob",
+        "succeded": false,
+        "duration": "0.103s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGcsblob",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "gcsblob_test.go:114: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGcsblob",
+            "modificationCount": 2,
+            "createdOn": "2019-01-15",
+            "lastUpdateOn": "2019-05-15"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/blob/memblob",
+        "succeded": true,
+        "duration": "4.986s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMemblob/BenchmarkRead-12",
+            "runs": 518169,
+            "nsPerOp": 3747,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemblob/BenchmarkWriteReadDelete-12",
+            "runs": 2859,
+            "nsPerOp": 664967,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMemblob",
+            "modificationCount": 2,
+            "createdOn": "2019-01-15",
+            "lastUpdateOn": "2019-03-01"
+          },
+          {
+            "name": "BenchmarkMemblob",
+            "modificationCount": 2,
+            "createdOn": "2019-01-15",
+            "lastUpdateOn": "2019-03-01"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/blob/s3blob",
+        "succeded": false,
+        "duration": "25.237s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkS3blob/BenchmarkRead",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "drivertest.go:2619: blob (key \"readbenchmark-blob\") (code=Unknown): NoCredentialProviders: no valid providers in chain. Deprecated."
+          },
+          {
+            "name": "BenchmarkS3blob/BenchmarkWriteReadDelete",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "drivertest.go:2660: blob (key \"writereaddeletebenchmark-blob-1\") (code=Unknown): NoCredentialProviders: no valid providers in chain. Deprecated."
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkS3blob",
+            "modificationCount": 1,
+            "createdOn": "2019-01-15",
+            "lastUpdateOn": "2019-01-15"
+          },
+          {
+            "name": "BenchmarkS3blob",
+            "modificationCount": 1,
+            "createdOn": "2019-01-15",
+            "lastUpdateOn": "2019-01-15"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/docstore/awsdynamodb",
+        "succeded": false,
+        "duration": "75.644s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPutVSTransact/1-Items",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:60: NoCredentialProviders: no valid providers in chain. Deprecated."
+          },
+          {
+            "name": "BenchmarkPutVSTransact/2-Items",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:60: NoCredentialProviders: no valid providers in chain. Deprecated."
+          },
+          {
+            "name": "BenchmarkPutVSTransact/3-Items",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:60: NoCredentialProviders: no valid providers in chain. Deprecated."
+          },
+          {
+            "name": "BenchmarkPutVSTransact/4-Items",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:60: NoCredentialProviders: no valid providers in chain. Deprecated."
+          },
+          {
+            "name": "BenchmarkPutVSTransact/5-Items",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:60: NoCredentialProviders: no valid providers in chain. Deprecated."
+          },
+          {
+            "name": "BenchmarkConformance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "dynamo_test.go:194: NoCredentialProviders: no valid providers in chain. Deprecated."
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPutVSTransact",
+            "modificationCount": 2,
+            "createdOn": "2019-05-24",
+            "lastUpdateOn": "2023-06-14"
+          },
+          {
+            "name": "BenchmarkPutVSTransact",
+            "modificationCount": 2,
+            "createdOn": "2019-05-24",
+            "lastUpdateOn": "2023-06-14"
+          },
+          {
+            "name": "BenchmarkPutVSTransact",
+            "modificationCount": 2,
+            "createdOn": "2019-05-24",
+            "lastUpdateOn": "2023-06-14"
+          },
+          {
+            "name": "BenchmarkPutVSTransact",
+            "modificationCount": 2,
+            "createdOn": "2019-05-24",
+            "lastUpdateOn": "2023-06-14"
+          },
+          {
+            "name": "BenchmarkPutVSTransact",
+            "modificationCount": 2,
+            "createdOn": "2019-05-24",
+            "lastUpdateOn": "2023-06-14"
+          },
+          {
+            "name": "BenchmarkConformance",
+            "modificationCount": 3,
+            "createdOn": "2019-04-22",
+            "lastUpdateOn": "2019-08-01"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/docstore/gcpfirestore",
+        "succeded": false,
+        "duration": "0.038s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConformance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "fs_test.go:171: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConformance",
+            "modificationCount": 3,
+            "createdOn": "2019-04-22",
+            "lastUpdateOn": "2019-08-01"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/pubsub/awssnssqs",
+        "succeded": false,
+        "duration": "25.105s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSNSSQS",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "awssnssqs_test.go:646: creating SNS topic \"BenchmarkSNSSQS-topic\": NoCredentialProviders: no valid providers in chain. Deprecated."
+          },
+          {
+            "name": "BenchmarkSQS",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "awssnssqs_test.go:646: creating SQS queue \"BenchmarkSQS-topic\": creating SQS queue \"BenchmarkSQS-topic\": NoCredentialProviders: no valid providers in chain. Deprecated."
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSNSSQS",
+            "modificationCount": 2,
+            "createdOn": "2019-02-04",
+            "lastUpdateOn": "2019-05-13"
+          },
+          {
+            "name": "BenchmarkSQS",
+            "modificationCount": 3,
+            "createdOn": "2019-02-04",
+            "lastUpdateOn": "2019-05-13"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/pubsub/azuresb",
+        "succeded": false,
+        "duration": "0.020s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAzureServiceBusPubSub",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "azuresb_test.go:321: azuresb: benchmark requires environment variable SERVICEBUS_CONNECTION_STRING to run"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAzureServiceBusPubSub",
+            "modificationCount": 5,
+            "createdOn": "2019-03-19",
+            "lastUpdateOn": "2022-08-03"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/pubsub/gcppubsub",
+        "succeded": false,
+        "duration": "0.046s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGcpPubSub",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "gcppubsub_test.go:154: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGcpPubSub",
+            "modificationCount": 7,
+            "createdOn": "2019-01-25",
+            "lastUpdateOn": "2021-05-26"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/pubsub/mempubsub",
+        "succeded": true,
+        "duration": "24.349s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMemPubSub/BenchmarkReceive-12",
+            "runs": 20,
+            "nsPerOp": 234035420,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemPubSub/BenchmarkSend-12",
+            "runs": 45,
+            "nsPerOp": 213135792,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMemPubSub",
+            "modificationCount": 2,
+            "createdOn": "2019-01-25",
+            "lastUpdateOn": "2019-04-11"
+          },
+          {
+            "name": "BenchmarkMemPubSub",
+            "modificationCount": 2,
+            "createdOn": "2019-01-25",
+            "lastUpdateOn": "2019-04-11"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/server/requestlog",
+        "succeded": true,
+        "duration": "4.333s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStackdriverLog-12",
+            "runs": 322370,
+            "nsPerOp": 4099,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkE2E/Baseline-12",
+            "runs": 9639,
+            "nsPerOp": 183815,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkE2E/WithLog-12",
+            "runs": 6866,
+            "nsPerOp": 155323,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStackdriverLog",
+            "modificationCount": 1,
+            "createdOn": "2018-04-19",
+            "lastUpdateOn": "2018-04-19"
+          },
+          {
+            "name": "BenchmarkE2E",
+            "modificationCount": 1,
+            "createdOn": "2018-04-19",
+            "lastUpdateOn": "2018-04-19"
+          },
+          {
+            "name": "BenchmarkE2E",
+            "modificationCount": 1,
+            "createdOn": "2018-04-19",
+            "lastUpdateOn": "2018-04-19"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/pubsub/kafkapubsub",
+        "succeded": false,
+        "duration": "0.770s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkKafka",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "kafka_test.go:439: kafka: client has run out of available brokers to talk to: dial tcp [::1]:9092: connect: connection refused"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkKafka",
+            "modificationCount": 2,
+            "createdOn": "2019-04-25",
+            "lastUpdateOn": "2019-07-03"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/pubsub/natspubsub",
+        "succeded": true,
+        "duration": "71.333s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNatsQueuePubSub/V1/BenchmarkReceive-12",
+            "runs": 1,
+            "nsPerOp": 1169062213,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNatsQueuePubSub/V1/BenchmarkSend-12",
+            "runs": 18,
+            "nsPerOp": 177747727,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNatsQueuePubSub/V2/BenchmarkReceive-12",
+            "runs": 2,
+            "nsPerOp": 673366363,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNatsQueuePubSub/V2/BenchmarkSend-12",
+            "runs": 3,
+            "nsPerOp": 515042046,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNatsPubSub/V1/BenchmarkReceive-12",
+            "runs": 1,
+            "nsPerOp": 1860734103,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNatsPubSub/V1/BenchmarkSend-12",
+            "runs": 4,
+            "nsPerOp": 425724664,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNatsPubSub/V2/BenchmarkReceive-12",
+            "runs": 2,
+            "nsPerOp": 579384412,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNatsPubSub/V2/BenchmarkSend-12",
+            "runs": 6,
+            "nsPerOp": 179923593,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNatsQueuePubSub",
+            "modificationCount": 3,
+            "createdOn": "2019-03-14",
+            "lastUpdateOn": "2023-07-21"
+          },
+          {
+            "name": "BenchmarkNatsQueuePubSub",
+            "modificationCount": 3,
+            "createdOn": "2019-03-14",
+            "lastUpdateOn": "2023-07-21"
+          },
+          {
+            "name": "BenchmarkNatsQueuePubSub",
+            "modificationCount": 3,
+            "createdOn": "2019-03-14",
+            "lastUpdateOn": "2023-07-21"
+          },
+          {
+            "name": "BenchmarkNatsQueuePubSub",
+            "modificationCount": 3,
+            "createdOn": "2019-03-14",
+            "lastUpdateOn": "2023-07-21"
+          },
+          {
+            "name": "BenchmarkNatsPubSub",
+            "modificationCount": 9,
+            "createdOn": "2019-03-14",
+            "lastUpdateOn": "2023-07-21"
+          },
+          {
+            "name": "BenchmarkNatsPubSub",
+            "modificationCount": 9,
+            "createdOn": "2019-03-14",
+            "lastUpdateOn": "2023-07-21"
+          },
+          {
+            "name": "BenchmarkNatsPubSub",
+            "modificationCount": 9,
+            "createdOn": "2019-03-14",
+            "lastUpdateOn": "2023-07-21"
+          },
+          {
+            "name": "BenchmarkNatsPubSub",
+            "modificationCount": 9,
+            "createdOn": "2019-03-14",
+            "lastUpdateOn": "2023-07-21"
+          }
+        ]
+      },
+      {
+        "pkg": "gocloud.dev/pubsub/rabbitpubsub",
+        "succeded": false,
+        "duration": "0.021s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRabbit",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "rabbit_test.go:54: dial tcp [::1]:5672: connect: connection refused"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRabbit",
+            "modificationCount": 6,
+            "createdOn": "2019-01-25",
+            "lastUpdateOn": "2019-04-11"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "google/go-cloud",
+    "name": "go-cloud",
+    "private": false,
+    "html_url": "https://github.com/google/go-cloud",
+    "description": "The Go Cloud Development Kit (Go CDK): A library and tools for open cloud development in Go.",
+    "fork": false,
+    "created_at": "2018-03-21T22:57:26Z",
+    "updated_at": "2023-10-22T07:29:15Z",
+    "pushed_at": "2023-10-21T05:57:26Z",
+    "ssh_url": "git@github.com:google/go-cloud.git",
+    "homepage": "https://gocloud.dev/",
+    "stargazers_count": 9213,
+    "watchers_count": 9213,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 827,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 10,
+    "topics": [
+      "aws",
+      "azure",
+      "cloud",
+      "gcp",
+      "go",
+      "golang",
+      "hybrid-cloud",
+      "multi-cloud",
+      "portable",
+      "server"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 289,
+    "Lines": 71717,
+    "Blank": 6396,
+    "Code": 51524,
+    "Comment": 13797,
+    "Bytes": 2281721,
+    "Complexity": 11282
+  }
+}

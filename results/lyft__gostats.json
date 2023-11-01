@@ -1,0 +1,1716 @@
+{
+  "Name": "lyft/gostats",
+  "Path": "./repositories/lyft__gostats",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T09:05:32Z",
+    "benchmarkCount": 125,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 125,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/lyft/gostats",
+        "succeded": true,
+        "duration": "19.375s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFlushCounter-12",
+            "runs": 14478478,
+            "nsPerOp": 157.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFlushTimer-12",
+            "runs": 2783376,
+            "nsPerOp": 605.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStore_MutexContention-12",
+            "runs": 5265930,
+            "nsPerOp": 230.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStore_NewCounterWithTags-12",
+            "runs": 662409,
+            "nsPerOp": 2454,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStore_ScopeWithTags-12",
+            "runs": 674460,
+            "nsPerOp": 2431,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStore_ScopeNoTags-12",
+            "runs": 2109752,
+            "nsPerOp": 559.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParallelCounter-12",
+            "runs": 53625615,
+            "nsPerOp": 32.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreNewPerInstanceCounter/HasTag-12",
+            "runs": 1000000,
+            "nsPerOp": 1111,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreNewPerInstanceCounter/MissingTag-12",
+            "runs": 1000000,
+            "nsPerOp": 1320,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFlushCounter",
+            "modificationCount": 1,
+            "createdOn": "2020-06-17",
+            "lastUpdateOn": "2020-06-17"
+          },
+          {
+            "name": "BenchmarkFlushTimer",
+            "modificationCount": 1,
+            "createdOn": "2020-06-17",
+            "lastUpdateOn": "2020-06-17"
+          },
+          {
+            "name": "BenchmarkStore_MutexContention",
+            "modificationCount": 3,
+            "createdOn": "2017-04-18",
+            "lastUpdateOn": "2019-01-11"
+          },
+          {
+            "name": "BenchmarkStore_NewCounterWithTags",
+            "modificationCount": 2,
+            "createdOn": "2018-12-19",
+            "lastUpdateOn": "2019-01-11"
+          },
+          {
+            "name": "BenchmarkStore_ScopeWithTags",
+            "modificationCount": 1,
+            "createdOn": "2019-01-11",
+            "lastUpdateOn": "2019-01-11"
+          },
+          {
+            "name": "BenchmarkStore_ScopeNoTags",
+            "modificationCount": 2,
+            "createdOn": "2019-01-11",
+            "lastUpdateOn": "2019-02-13"
+          },
+          {
+            "name": "BenchmarkParallelCounter",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkStoreNewPerInstanceCounter",
+            "modificationCount": 1,
+            "createdOn": "2020-08-07",
+            "lastUpdateOn": "2020-08-07"
+          },
+          {
+            "name": "BenchmarkStoreNewPerInstanceCounter",
+            "modificationCount": 1,
+            "createdOn": "2020-08-07",
+            "lastUpdateOn": "2020-08-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lyft/gostats/internal/tags",
+        "succeded": true,
+        "duration": "205.752s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSerializeTags/1-12",
+            "runs": 3231049,
+            "nsPerOp": 373.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTags/2-12",
+            "runs": 1976726,
+            "nsPerOp": 690.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTags/3-12",
+            "runs": 929238,
+            "nsPerOp": 1149,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTags/4-12",
+            "runs": 999102,
+            "nsPerOp": 1498,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTags/5-12",
+            "runs": 1000000,
+            "nsPerOp": 1771,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTags/6-12",
+            "runs": 1000000,
+            "nsPerOp": 1783,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTags/7-12",
+            "runs": 647048,
+            "nsPerOp": 1999,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTags/8-12",
+            "runs": 853812,
+            "nsPerOp": 2366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTags/9-12",
+            "runs": 500338,
+            "nsPerOp": 2583,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTags/10-12",
+            "runs": 447454,
+            "nsPerOp": 4174,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/1-12",
+            "runs": 10236140,
+            "nsPerOp": 108.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/2-12",
+            "runs": 7943137,
+            "nsPerOp": 132,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/3-12",
+            "runs": 6965799,
+            "nsPerOp": 170.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/4-12",
+            "runs": 6597496,
+            "nsPerOp": 205.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/5-12",
+            "runs": 4124463,
+            "nsPerOp": 258.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/6-12",
+            "runs": 3881770,
+            "nsPerOp": 402.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/7-12",
+            "runs": 3764859,
+            "nsPerOp": 347.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/8-12",
+            "runs": 2981703,
+            "nsPerOp": 395.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/9-12",
+            "runs": 2227464,
+            "nsPerOp": 599.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeTagSet/10-12",
+            "runs": 2601973,
+            "nsPerOp": 550.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSearch-12",
+            "runs": 9007898,
+            "nsPerOp": 136.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSearch_Reference-12",
+            "runs": 5423032,
+            "nsPerOp": 346,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSort/2-12",
+            "runs": 49653114,
+            "nsPerOp": 28.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSort/3-12",
+            "runs": 43253341,
+            "nsPerOp": 39.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSort/4-12",
+            "runs": 15594680,
+            "nsPerOp": 66.99,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSort/5-12",
+            "runs": 13450052,
+            "nsPerOp": 96.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSort/6-12",
+            "runs": 7940148,
+            "nsPerOp": 147.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSort/7-12",
+            "runs": 7474770,
+            "nsPerOp": 174,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSort/8-12",
+            "runs": 7378255,
+            "nsPerOp": 164.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSort/9-12",
+            "runs": 2357766,
+            "nsPerOp": 477.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSort/10-12",
+            "runs": 2820121,
+            "nsPerOp": 470.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysNotEqual/2-12",
+            "runs": 33217356,
+            "nsPerOp": 44.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysNotEqual/4-12",
+            "runs": 9536325,
+            "nsPerOp": 156.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysNotEqual/6-12",
+            "runs": 7390899,
+            "nsPerOp": 202.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysNotEqual/8-12",
+            "runs": 4706785,
+            "nsPerOp": 285.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysNotEqual/10-12",
+            "runs": 5778987,
+            "nsPerOp": 241,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysHalfEqual/2-12",
+            "runs": 32665342,
+            "nsPerOp": 63.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysHalfEqual/4-12",
+            "runs": 10624926,
+            "nsPerOp": 99.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysHalfEqual/6-12",
+            "runs": 6867100,
+            "nsPerOp": 221.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysHalfEqual/8-12",
+            "runs": 8186803,
+            "nsPerOp": 180.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysHalfEqual/10-12",
+            "runs": 4037104,
+            "nsPerOp": 248.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysEqual/2-12",
+            "runs": 31811259,
+            "nsPerOp": 48.74,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysEqual/4-12",
+            "runs": 17608274,
+            "nsPerOp": 63.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysEqual/6-12",
+            "runs": 11696334,
+            "nsPerOp": 113,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysEqual/8-12",
+            "runs": 10517106,
+            "nsPerOp": 99.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeTagSets/KeysEqual/10-12",
+            "runs": 13199647,
+            "nsPerOp": 94.18,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSetSearch_Reference-12",
+            "runs": 27488774,
+            "nsPerOp": 54.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTagSetSearch-12",
+            "runs": 52746234,
+            "nsPerOp": 38.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/1_1-12",
+            "runs": 3108547,
+            "nsPerOp": 321.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/1_2-12",
+            "runs": 2362872,
+            "nsPerOp": 507.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/1_3-12",
+            "runs": 2004698,
+            "nsPerOp": 588.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/1_4-12",
+            "runs": 1763499,
+            "nsPerOp": 749.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/1_5-12",
+            "runs": 1000000,
+            "nsPerOp": 1052,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/1_6-12",
+            "runs": 1000000,
+            "nsPerOp": 1148,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/1_7-12",
+            "runs": 1000000,
+            "nsPerOp": 1301,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/1_8-12",
+            "runs": 1000000,
+            "nsPerOp": 1916,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/2_1-12",
+            "runs": 2818429,
+            "nsPerOp": 552.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/2_2-12",
+            "runs": 1619913,
+            "nsPerOp": 628,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/2_3-12",
+            "runs": 1470637,
+            "nsPerOp": 755.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/2_4-12",
+            "runs": 1297766,
+            "nsPerOp": 1104,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/2_5-12",
+            "runs": 773553,
+            "nsPerOp": 1484,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/2_6-12",
+            "runs": 1000000,
+            "nsPerOp": 1592,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/2_7-12",
+            "runs": 1000000,
+            "nsPerOp": 1673,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/2_8-12",
+            "runs": 739424,
+            "nsPerOp": 1451,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/3_1-12",
+            "runs": 2924529,
+            "nsPerOp": 456.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/3_2-12",
+            "runs": 1546622,
+            "nsPerOp": 706.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/3_3-12",
+            "runs": 906642,
+            "nsPerOp": 1157,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/3_4-12",
+            "runs": 1000000,
+            "nsPerOp": 1459,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/3_5-12",
+            "runs": 1000000,
+            "nsPerOp": 1593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/3_6-12",
+            "runs": 1000000,
+            "nsPerOp": 1100,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/3_7-12",
+            "runs": 601104,
+            "nsPerOp": 1805,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/3_8-12",
+            "runs": 969709,
+            "nsPerOp": 1306,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/4_1-12",
+            "runs": 2415895,
+            "nsPerOp": 507.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/4_2-12",
+            "runs": 1578068,
+            "nsPerOp": 719.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/4_3-12",
+            "runs": 1276208,
+            "nsPerOp": 844.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/4_4-12",
+            "runs": 1218996,
+            "nsPerOp": 1199,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/4_5-12",
+            "runs": 891496,
+            "nsPerOp": 1222,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/4_6-12",
+            "runs": 757635,
+            "nsPerOp": 1514,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/4_7-12",
+            "runs": 757963,
+            "nsPerOp": 1614,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/4_8-12",
+            "runs": 740124,
+            "nsPerOp": 1584,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/5_1-12",
+            "runs": 2220538,
+            "nsPerOp": 589.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/5_2-12",
+            "runs": 1524900,
+            "nsPerOp": 821.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/5_3-12",
+            "runs": 1470093,
+            "nsPerOp": 927.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/5_4-12",
+            "runs": 890607,
+            "nsPerOp": 1239,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/5_5-12",
+            "runs": 1000000,
+            "nsPerOp": 1272,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/5_6-12",
+            "runs": 1000000,
+            "nsPerOp": 1601,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/5_7-12",
+            "runs": 671664,
+            "nsPerOp": 1963,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/5_8-12",
+            "runs": 569818,
+            "nsPerOp": 2187,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/6_1-12",
+            "runs": 1543368,
+            "nsPerOp": 687.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/6_2-12",
+            "runs": 1304628,
+            "nsPerOp": 905.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/6_3-12",
+            "runs": 1000000,
+            "nsPerOp": 1046,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/6_4-12",
+            "runs": 939346,
+            "nsPerOp": 1202,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/6_5-12",
+            "runs": 894213,
+            "nsPerOp": 1338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/6_6-12",
+            "runs": 703407,
+            "nsPerOp": 1797,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/6_7-12",
+            "runs": 961472,
+            "nsPerOp": 2587,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/6_8-12",
+            "runs": 518138,
+            "nsPerOp": 3077,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/7_1-12",
+            "runs": 1000000,
+            "nsPerOp": 1001,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/7_2-12",
+            "runs": 807817,
+            "nsPerOp": 1409,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/7_3-12",
+            "runs": 1000000,
+            "nsPerOp": 1174,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/7_4-12",
+            "runs": 790761,
+            "nsPerOp": 1523,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/7_5-12",
+            "runs": 765295,
+            "nsPerOp": 1580,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/7_6-12",
+            "runs": 746710,
+            "nsPerOp": 1917,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/7_7-12",
+            "runs": 763029,
+            "nsPerOp": 1959,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/7_8-12",
+            "runs": 560746,
+            "nsPerOp": 1953,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/8_1-12",
+            "runs": 1507504,
+            "nsPerOp": 727.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/8_2-12",
+            "runs": 1084758,
+            "nsPerOp": 1102,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/8_3-12",
+            "runs": 1000000,
+            "nsPerOp": 1366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/8_4-12",
+            "runs": 874501,
+            "nsPerOp": 1376,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/8_5-12",
+            "runs": 747000,
+            "nsPerOp": 1434,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/8_6-12",
+            "runs": 657741,
+            "nsPerOp": 2188,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/8_7-12",
+            "runs": 661296,
+            "nsPerOp": 2237,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScopeMergeTags/8_8-12",
+            "runs": 1000000,
+            "nsPerOp": 1521,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTags",
+            "modificationCount": 3,
+            "createdOn": "2019-02-13",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkSerializeTagSet",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkTagSearch",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkTagSearch_Reference",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkTagSort",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkTagSort",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkTagSort",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkTagSort",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkTagSort",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkTagSort",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkTagSort",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkTagSort",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkTagSort",
+            "modificationCount": 1,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-05-27"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkMergeTagSets",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkTagSetSearch_Reference",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkTagSetSearch",
+            "modificationCount": 2,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkScopeMergeTags",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lyft/gostats/mock",
+        "succeded": true,
+        "duration": "5.432s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFlushCounter-12",
+            "runs": 17405515,
+            "nsPerOp": 61.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFlushCounter_Parallel-12",
+            "runs": 47821389,
+            "nsPerOp": 21.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFlushTimer-12",
+            "runs": 11245605,
+            "nsPerOp": 88.97,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFlushTimer_Parallel-12",
+            "runs": 49009941,
+            "nsPerOp": 26.73,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFlushCounter",
+            "modificationCount": 1,
+            "createdOn": "2020-06-17",
+            "lastUpdateOn": "2020-06-17"
+          },
+          {
+            "name": "BenchmarkFlushCounter_Parallel",
+            "modificationCount": 1,
+            "createdOn": "2020-06-17",
+            "lastUpdateOn": "2020-06-17"
+          },
+          {
+            "name": "BenchmarkFlushTimer",
+            "modificationCount": 1,
+            "createdOn": "2020-06-17",
+            "lastUpdateOn": "2020-06-17"
+          },
+          {
+            "name": "BenchmarkFlushTimer_Parallel",
+            "modificationCount": 1,
+            "createdOn": "2020-06-17",
+            "lastUpdateOn": "2020-06-17"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "lyft/gostats",
+    "name": "gostats",
+    "private": false,
+    "html_url": "https://github.com/lyft/gostats",
+    "description": "Go client for Stats",
+    "fork": false,
+    "created_at": "2016-12-27T22:01:18Z",
+    "updated_at": "2023-05-29T07:54:29Z",
+    "pushed_at": "2023-10-12T02:12:44Z",
+    "ssh_url": "git@github.com:lyft/gostats.git",
+    "stargazers_count": 56,
+    "watchers_count": 56,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 22,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 7,
+    "topics": [
+      "lyft"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 29,
+    "Lines": 6560,
+    "Blank": 824,
+    "Code": 5248,
+    "Comment": 488,
+    "Bytes": 152524,
+    "Complexity": 902
+  }
+}

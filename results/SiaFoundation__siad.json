@@ -1,0 +1,770 @@
+{
+  "Name": "SiaFoundation/siad",
+  "Path": "./repositories/SiaFoundation__siad",
+  "GoVersion": "1.13",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T21:54:30Z",
+    "benchmarkCount": 46,
+    "benchmarkSuiteCount": 12,
+    "successfulBenchmarkCount": 45,
+    "successfulBenchmarkSuitesCount": 11,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "go.sia.tech/siad/crypto",
+        "succeded": true,
+        "duration": "8.200s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkChaCha20Poly1305/encrypt-1KiB-12",
+            "runs": 1080536,
+            "nsPerOp": 1468,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChaCha20Poly1305/decrypt-1KiB-12",
+            "runs": 1000000,
+            "nsPerOp": 1515,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChaCha20Poly1305/encrypt-4MiB-12",
+            "runs": 240,
+            "nsPerOp": 4238525,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChaCha20Poly1305/decrypt-4MiB-12",
+            "runs": 262,
+            "nsPerOp": 4871339,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkChaCha20Poly1305",
+            "modificationCount": 1,
+            "createdOn": "2018-12-14",
+            "lastUpdateOn": "2018-12-14"
+          },
+          {
+            "name": "BenchmarkChaCha20Poly1305",
+            "modificationCount": 1,
+            "createdOn": "2018-12-14",
+            "lastUpdateOn": "2018-12-14"
+          },
+          {
+            "name": "BenchmarkChaCha20Poly1305",
+            "modificationCount": 1,
+            "createdOn": "2018-12-14",
+            "lastUpdateOn": "2018-12-14"
+          },
+          {
+            "name": "BenchmarkChaCha20Poly1305",
+            "modificationCount": 1,
+            "createdOn": "2018-12-14",
+            "lastUpdateOn": "2018-12-14"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/internal/smux",
+        "succeded": true,
+        "duration": "5.918s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAcceptClose-12",
+            "runs": 7137,
+            "nsPerOp": 217973,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConnSmux-12",
+            "runs": 950,
+            "nsPerOp": 2706974,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConnTCP-12",
+            "runs": 10000,
+            "nsPerOp": 143409,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAcceptClose",
+            "modificationCount": 1,
+            "createdOn": "2017-06-07",
+            "lastUpdateOn": "2017-06-07"
+          },
+          {
+            "name": "BenchmarkConnSmux",
+            "modificationCount": 1,
+            "createdOn": "2017-06-07",
+            "lastUpdateOn": "2017-06-07"
+          },
+          {
+            "name": "BenchmarkConnTCP",
+            "modificationCount": 1,
+            "createdOn": "2017-06-07",
+            "lastUpdateOn": "2017-06-07"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/modules",
+        "succeded": true,
+        "duration": "102.305s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRSEncode-12",
+            "runs": 541,
+            "nsPerOp": 3372096,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRSRecover-12",
+            "runs": 364,
+            "nsPerOp": 3273783,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRSSubCodeRecover-12",
+            "runs": 1562,
+            "nsPerOp": 1001467,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackFiles1000-12",
+            "runs": 252,
+            "nsPerOp": 5814686,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackFiles10000-12",
+            "runs": 4,
+            "nsPerOp": 340099728,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackFiles100000-12",
+            "runs": 1,
+            "nsPerOp": 81794950872,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMerkleRootSetEncode-12",
+            "runs": 3034,
+            "nsPerOp": 487578,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSliceCryptoHashEncode-12",
+            "runs": 854,
+            "nsPerOp": 1483101,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMerkleRootSetSave-12",
+            "runs": 1075,
+            "nsPerOp": 1223546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSliceCryptoHashSave-12",
+            "runs": 423,
+            "nsPerOp": 6601535,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRSEncode",
+            "modificationCount": 1,
+            "createdOn": "2020-10-27",
+            "lastUpdateOn": "2020-10-27"
+          },
+          {
+            "name": "BenchmarkRSRecover",
+            "modificationCount": 1,
+            "createdOn": "2020-10-27",
+            "lastUpdateOn": "2020-10-27"
+          },
+          {
+            "name": "BenchmarkRSSubCodeRecover",
+            "modificationCount": 1,
+            "createdOn": "2020-10-27",
+            "lastUpdateOn": "2020-10-27"
+          },
+          {
+            "name": "BenchmarkPackFiles1000",
+            "modificationCount": 2,
+            "createdOn": "2020-02-13",
+            "lastUpdateOn": "2020-02-17"
+          },
+          {
+            "name": "BenchmarkPackFiles10000",
+            "modificationCount": 2,
+            "createdOn": "2020-02-13",
+            "lastUpdateOn": "2020-02-17"
+          },
+          {
+            "name": "BenchmarkPackFiles100000",
+            "modificationCount": 2,
+            "createdOn": "2020-02-13",
+            "lastUpdateOn": "2020-02-17"
+          },
+          {
+            "name": "BenchmarkMerkleRootSetEncode",
+            "modificationCount": 3,
+            "createdOn": "2017-02-16",
+            "lastUpdateOn": "2017-03-24"
+          },
+          {
+            "name": "BenchmarkSliceCryptoHashEncode",
+            "modificationCount": 3,
+            "createdOn": "2017-02-16",
+            "lastUpdateOn": "2017-03-24"
+          },
+          {
+            "name": "BenchmarkMerkleRootSetSave",
+            "modificationCount": 4,
+            "createdOn": "2017-02-16",
+            "lastUpdateOn": "2017-04-21"
+          },
+          {
+            "name": "BenchmarkSliceCryptoHashSave",
+            "modificationCount": 4,
+            "createdOn": "2017-02-16",
+            "lastUpdateOn": "2017-04-21"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/modules/host/contractmanager",
+        "succeded": true,
+        "duration": "108.046s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSectorLocations-12",
+            "runs": 1,
+            "nsPerOp": 16045652010,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFolders-12",
+            "runs": 4170054,
+            "nsPerOp": 288.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnsetManySectors-12",
+            "runs": 3,
+            "nsPerOp": 559896767,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSectorLocations",
+            "modificationCount": 10,
+            "createdOn": "2016-10-27",
+            "lastUpdateOn": "2021-01-28"
+          },
+          {
+            "name": "BenchmarkStorageFolders",
+            "modificationCount": 6,
+            "createdOn": "2016-10-28",
+            "lastUpdateOn": "2016-11-15"
+          },
+          {
+            "name": "BenchmarkUnsetManySectors",
+            "modificationCount": 1,
+            "createdOn": "2016-11-17",
+            "lastUpdateOn": "2016-11-17"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/modules/host/registry",
+        "succeded": true,
+        "duration": "1.516s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRegistryUpdate-12",
+            "runs": 51031,
+            "nsPerOp": 24525,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRegistryUpdate",
+            "modificationCount": 9,
+            "createdOn": "2020-09-29",
+            "lastUpdateOn": "2021-05-31"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/modules/renter",
+        "succeded": true,
+        "duration": "3.505s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBubbleMetadata-12",
+            "runs": 744,
+            "nsPerOp": 1587120,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddDatum-12",
+            "runs": 14785,
+            "nsPerOp": 70046,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBubbleMetadata",
+            "modificationCount": 2,
+            "createdOn": "2021-02-26",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkAddDatum",
+            "modificationCount": 3,
+            "createdOn": "2021-03-04",
+            "lastUpdateOn": "2021-03-05"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/modules/renter/filesystem/siadir",
+        "succeded": true,
+        "duration": "1.484s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSaveSiaDir-12",
+            "runs": 52738,
+            "nsPerOp": 23369,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSaveSiaDir",
+            "modificationCount": 1,
+            "createdOn": "2021-03-08",
+            "lastUpdateOn": "2021-03-08"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/modules/renter/filesystem/siafile",
+        "succeded": true,
+        "duration": "17.360s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoadSiaFile-12",
+            "runs": 17378,
+            "nsPerOp": 81376,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandomChunkWriteSingleThreaded-12",
+            "runs": 2322,
+            "nsPerOp": 1249254,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandomChunkWriteMultiThreaded-12",
+            "runs": 967,
+            "nsPerOp": 1158028,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandomChunkRead-12",
+            "runs": 23288,
+            "nsPerOp": 65180,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnapshot10MB-12",
+            "runs": 4400,
+            "nsPerOp": 296528,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnapshot100MB-12",
+            "runs": 8478,
+            "nsPerOp": 172805,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnapshot1GB-12",
+            "runs": 7758,
+            "nsPerOp": 133799,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnapshot10GB-12",
+            "runs": 10000,
+            "nsPerOp": 159451,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoadSiaFile",
+            "modificationCount": 3,
+            "createdOn": "2019-07-24",
+            "lastUpdateOn": "2020-10-27"
+          },
+          {
+            "name": "BenchmarkRandomChunkWriteSingleThreaded",
+            "modificationCount": 1,
+            "createdOn": "2019-07-25",
+            "lastUpdateOn": "2019-07-25"
+          },
+          {
+            "name": "BenchmarkRandomChunkWriteMultiThreaded",
+            "modificationCount": 2,
+            "createdOn": "2019-07-24",
+            "lastUpdateOn": "2019-07-25"
+          },
+          {
+            "name": "BenchmarkRandomChunkRead",
+            "modificationCount": 4,
+            "createdOn": "2019-07-24",
+            "lastUpdateOn": "2020-10-27"
+          },
+          {
+            "name": "BenchmarkSnapshot10MB",
+            "modificationCount": 1,
+            "createdOn": "2019-01-11",
+            "lastUpdateOn": "2019-01-11"
+          },
+          {
+            "name": "BenchmarkSnapshot100MB",
+            "modificationCount": 1,
+            "createdOn": "2019-01-11",
+            "lastUpdateOn": "2019-01-11"
+          },
+          {
+            "name": "BenchmarkSnapshot1GB",
+            "modificationCount": 2,
+            "createdOn": "2019-01-11",
+            "lastUpdateOn": "2019-01-11"
+          },
+          {
+            "name": "BenchmarkSnapshot10GB",
+            "modificationCount": 2,
+            "createdOn": "2019-01-11",
+            "lastUpdateOn": "2019-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/modules/wallet",
+        "succeded": false,
+        "duration": "0.102s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAddressTransactions",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "transactions_test.go:515: block has no known parent"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAddressTransactions",
+            "modificationCount": 7,
+            "createdOn": "2017-10-11",
+            "lastUpdateOn": "2020-09-11"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/persist",
+        "succeded": true,
+        "duration": "68.792s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWrite512MiB-12",
+            "runs": 2,
+            "nsPerOp": 500137780,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite512MiBTrunc-12",
+            "runs": 5721,
+            "nsPerOp": 198556,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite512MiBRand-12",
+            "runs": 4,
+            "nsPerOp": 400055131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead512MiB-12",
+            "runs": 8,
+            "nsPerOp": 276895814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead512MiBRand-12",
+            "runs": 8,
+            "nsPerOp": 127786928,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTruncate512MiB-12",
+            "runs": 2,
+            "nsPerOp": 1137846239,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWrite512MiB",
+            "modificationCount": 5,
+            "createdOn": "2017-04-13",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkWrite512MiBTrunc",
+            "modificationCount": 5,
+            "createdOn": "2017-04-13",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkWrite512MiBRand",
+            "modificationCount": 4,
+            "createdOn": "2017-04-13",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkRead512MiB",
+            "modificationCount": 4,
+            "createdOn": "2017-04-13",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkRead512MiBRand",
+            "modificationCount": 4,
+            "createdOn": "2017-04-13",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkTruncate512MiB",
+            "modificationCount": 4,
+            "createdOn": "2017-04-13",
+            "lastUpdateOn": "2020-05-12"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/sync",
+        "succeded": true,
+        "duration": "3.017s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkThreadGroup-12",
+            "runs": 1535704,
+            "nsPerOp": 802.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWaitGroup-12",
+            "runs": 1000000,
+            "nsPerOp": 1295,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkThreadGroup",
+            "modificationCount": 4,
+            "createdOn": "2016-05-25",
+            "lastUpdateOn": "2020-09-11"
+          },
+          {
+            "name": "BenchmarkWaitGroup",
+            "modificationCount": 1,
+            "createdOn": "2016-05-25",
+            "lastUpdateOn": "2016-05-25"
+          }
+        ]
+      },
+      {
+        "pkg": "go.sia.tech/siad/types",
+        "succeded": true,
+        "duration": "10.073s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncodeEmptyBlock-12",
+            "runs": 2105169,
+            "nsPerOp": 515.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeEmptyBlock-12",
+            "runs": 1529018,
+            "nsPerOp": 1212,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeHeavyBlock-12",
+            "runs": 120249,
+            "nsPerOp": 10834,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeHeavyBlock-12",
+            "runs": 82567,
+            "nsPerOp": 18493,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStandaloneValid-12",
+            "runs": 1118,
+            "nsPerOp": 1427961,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncodeEmptyBlock",
+            "modificationCount": 6,
+            "createdOn": "2015-08-20",
+            "lastUpdateOn": "2017-09-01"
+          },
+          {
+            "name": "BenchmarkDecodeEmptyBlock",
+            "modificationCount": 3,
+            "createdOn": "2015-08-20",
+            "lastUpdateOn": "2017-09-01"
+          },
+          {
+            "name": "BenchmarkEncodeHeavyBlock",
+            "modificationCount": 2,
+            "createdOn": "2017-09-01",
+            "lastUpdateOn": "2017-09-01"
+          },
+          {
+            "name": "BenchmarkDecodeHeavyBlock",
+            "modificationCount": 2,
+            "createdOn": "2015-08-20",
+            "lastUpdateOn": "2017-09-01"
+          },
+          {
+            "name": "BenchmarkStandaloneValid",
+            "modificationCount": 8,
+            "createdOn": "2015-08-04",
+            "lastUpdateOn": "2018-10-15"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "SiaFoundation/siad",
+    "name": "siad",
+    "private": false,
+    "html_url": "https://github.com/SiaFoundation/siad",
+    "description": "The Sia daemon",
+    "fork": false,
+    "created_at": "2021-02-23T17:43:39Z",
+    "updated_at": "2023-10-02T06:58:44Z",
+    "pushed_at": "2023-08-02T17:37:57Z",
+    "ssh_url": "git@github.com:SiaFoundation/siad.git",
+    "homepage": "https://sia.tech",
+    "stargazers_count": 122,
+    "watchers_count": 122,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 28,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 15,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 768,
+    "Lines": 255322,
+    "Blank": 24316,
+    "Code": 184065,
+    "Comment": 46941,
+    "Bytes": 8010381,
+    "Complexity": 53621
+  }
+}

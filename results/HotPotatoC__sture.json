@@ -1,0 +1,961 @@
+{
+  "Name": "HotPotatoC/sture",
+  "Path": "./repositories/HotPotatoC__sture",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T00:23:40Z",
+    "benchmarkCount": 65,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 65,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/HotPotatoC/sture/hashtable",
+        "succeded": true,
+        "duration": "80.775s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOpenAddressingHashTable_Set-12",
+            "runs": 1000000,
+            "nsPerOp": 1323,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAddressingHashTable_Get-12",
+            "runs": 2775151,
+            "nsPerOp": 715.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAddressingHashTable_Del-12",
+            "runs": 8098011,
+            "nsPerOp": 258.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChainedHashTable_Set-12",
+            "runs": 1741978,
+            "nsPerOp": 862,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChainedHashTable_Get-12",
+            "runs": 1000000,
+            "nsPerOp": 1019,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChainedHashTable_Del-12",
+            "runs": 1000000,
+            "nsPerOp": 1058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStdlibMap_Set-12",
+            "runs": 2212491,
+            "nsPerOp": 997.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStdlibMap_Get-12",
+            "runs": 9313976,
+            "nsPerOp": 226.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStdlibMap_Del-12",
+            "runs": 5359431,
+            "nsPerOp": 881.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOpenAddressingHashTable_Set",
+            "modificationCount": 1,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-03-23"
+          },
+          {
+            "name": "BenchmarkOpenAddressingHashTable_Get",
+            "modificationCount": 1,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-03-23"
+          },
+          {
+            "name": "BenchmarkOpenAddressingHashTable_Del",
+            "modificationCount": 1,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-03-23"
+          },
+          {
+            "name": "BenchmarkChainedHashTable_Set",
+            "modificationCount": 1,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-03-23"
+          },
+          {
+            "name": "BenchmarkChainedHashTable_Get",
+            "modificationCount": 1,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-03-23"
+          },
+          {
+            "name": "BenchmarkChainedHashTable_Del",
+            "modificationCount": 1,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-03-23"
+          },
+          {
+            "name": "BenchmarkStdlibMap_Set",
+            "modificationCount": 1,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-03-23"
+          },
+          {
+            "name": "BenchmarkStdlibMap_Get",
+            "modificationCount": 1,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-03-23"
+          },
+          {
+            "name": "BenchmarkStdlibMap_Del",
+            "modificationCount": 1,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-03-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/HotPotatoC/sture/linkedlist",
+        "succeded": true,
+        "duration": "69.830s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLinkedList_Append-12",
+            "runs": 10309416,
+            "nsPerOp": 116.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_PushHead-12",
+            "runs": 20396455,
+            "nsPerOp": 102.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_InsertAt-12",
+            "runs": 11095028,
+            "nsPerOp": 129.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_Pop/benchmarkLinkedListPop100k-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.055,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_Pop/benchmarkLinkedListPop1m-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6834,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_Pop/benchmarkLinkedListPop10m-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6715,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_PopHead/benchmarkLinkedListPopHead100k-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5253,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_PopHead/benchmarkLinkedListPopHead1m-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_PopHead/benchmarkLinkedListPopHead10m-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7055,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_Find/benchmarkLinkedListFind100k-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3014,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_Find/benchmarkLinkedListFind1m-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6027,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_Find/benchmarkLinkedListFind10m-12",
+            "runs": 275790715,
+            "nsPerOp": 3.834,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLinkedList_Append",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_PushHead",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_InsertAt",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_Pop",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_Pop",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_Pop",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_PopHead",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_PopHead",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_PopHead",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_Find",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_Find",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkLinkedList_Find",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2022-04-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/HotPotatoC/sture/queue",
+        "succeded": true,
+        "duration": "45.913s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkQueue_Enqueue/Queue-12",
+            "runs": 14494281,
+            "nsPerOp": 89.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue/Priority_Queue-12",
+            "runs": 5442772,
+            "nsPerOp": 248.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue/Ring_Buffer/1024-12",
+            "runs": 152955345,
+            "nsPerOp": 10.04,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue/Ring_Buffer/65536-12",
+            "runs": 218475986,
+            "nsPerOp": 5.108,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue/Ring_Buffer/262144-12",
+            "runs": 285469880,
+            "nsPerOp": 4.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue/Ring_Buffer/1048576-12",
+            "runs": 238430715,
+            "nsPerOp": 6.462,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue/Ring_Buffer/16777216-12",
+            "runs": 198441777,
+            "nsPerOp": 5.957,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Queue/100k-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7067,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Queue/1m-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5216,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Queue/10m-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8474,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Priority_Queue/100k-12",
+            "runs": 628149853,
+            "nsPerOp": 1.716,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Priority_Queue/1m-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.422,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Priority_Queue/10m-12",
+            "runs": 792364087,
+            "nsPerOp": 2.098,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Ring_Buffer/1024-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.9673,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Ring_Buffer/65536-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8935,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Ring_Buffer/262144-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.146,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Ring_Buffer/1048576-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.395,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue/Ring_Buffer/16777216-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.9354,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkQueue_Enqueue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Enqueue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          },
+          {
+            "name": "BenchmarkQueue_Dequeue",
+            "modificationCount": 1,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-03-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/HotPotatoC/sture/stack",
+        "succeded": true,
+        "duration": "19.063s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStack_Add-12",
+            "runs": 1000000,
+            "nsPerOp": 1093,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStack_Pop/100k-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7544,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStack_Pop/1m-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStack_Pop/10m-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7798,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStack_Add",
+            "modificationCount": 2,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkStack_Pop",
+            "modificationCount": 2,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkStack_Pop",
+            "modificationCount": 2,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkStack_Pop",
+            "modificationCount": 2,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/HotPotatoC/sture/tree",
+        "succeded": true,
+        "duration": "98.575s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAVLTree_Insert-12",
+            "runs": 1650382,
+            "nsPerOp": 887.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N/100-12",
+            "runs": 10969935,
+            "nsPerOp": 132.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N/1k-12",
+            "runs": 6888817,
+            "nsPerOp": 154.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N/10k-12",
+            "runs": 6269400,
+            "nsPerOp": 200.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N/100k-12",
+            "runs": 1800460,
+            "nsPerOp": 683.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N/1m-12",
+            "runs": 754840,
+            "nsPerOp": 3851,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N/100-12",
+            "runs": 34394685,
+            "nsPerOp": 33.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N/1k-12",
+            "runs": 66485806,
+            "nsPerOp": 16.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N/10k-12",
+            "runs": 69963994,
+            "nsPerOp": 21.74,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N/100k-12",
+            "runs": 63073239,
+            "nsPerOp": 22.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N/1m-12",
+            "runs": 945922,
+            "nsPerOp": 4855,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_InsertRandom-12",
+            "runs": 2674660,
+            "nsPerOp": 491.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N/100-12",
+            "runs": 14615230,
+            "nsPerOp": 109.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N/1k-12",
+            "runs": 6335947,
+            "nsPerOp": 163.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N/10k-12",
+            "runs": 4587489,
+            "nsPerOp": 230.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N/100k-12",
+            "runs": 1589694,
+            "nsPerOp": 702.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N/1m-12",
+            "runs": 934112,
+            "nsPerOp": 3021,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N/100-12",
+            "runs": 43265528,
+            "nsPerOp": 82.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N/1k-12",
+            "runs": 23957676,
+            "nsPerOp": 42.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N/10k-12",
+            "runs": 25645618,
+            "nsPerOp": 69.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N/100k-12",
+            "runs": 22075227,
+            "nsPerOp": 50.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N/1m-12",
+            "runs": 991648,
+            "nsPerOp": 1546,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAVLTree_Insert",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkAVLTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_InsertRandom",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_SearchRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          },
+          {
+            "name": "BenchmarkBSTree_RemoveRandom_N",
+            "modificationCount": 3,
+            "createdOn": "2022-03-27",
+            "lastUpdateOn": "2022-04-15"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "HotPotatoC/sture",
+    "name": "sture",
+    "private": false,
+    "html_url": "https://github.com/HotPotatoC/sture",
+    "description": "🧱 Sture is a collection of data structures based on Go 1.18+ Generics (Stack, Queue, Linked List, etc.)",
+    "fork": false,
+    "created_at": "2022-03-20T10:45:55Z",
+    "updated_at": "2022-07-26T04:06:26Z",
+    "pushed_at": "2022-04-15T15:30:33Z",
+    "ssh_url": "git@github.com:HotPotatoC/sture.git",
+    "stargazers_count": 34,
+    "watchers_count": 34,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 2,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "constraints",
+      "data-structures",
+      "generics",
+      "go",
+      "golang",
+      "programming",
+      "typesafe"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 36,
+    "Lines": 3620,
+    "Blank": 725,
+    "Code": 2655,
+    "Comment": 240,
+    "Bytes": 74682,
+    "Complexity": 612
+  }
+}

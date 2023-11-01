@@ -1,0 +1,684 @@
+{
+  "Name": "didi/GateKeeper",
+  "Path": "./repositories/didi__GateKeeper",
+  "GoVersion": "1.16",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T12:36:48Z",
+    "benchmarkCount": 44,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 44,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/didi/gatekeeper/golang_common/trace",
+        "succeded": true,
+        "duration": "2.943s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetTraceId-12",
+            "runs": 196047,
+            "nsPerOp": 7775,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetLocalIP-12",
+            "runs": 2161,
+            "nsPerOp": 595411,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetTraceId",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkGetLocalIP",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/didi/gatekeeper/golang_common/zerolog/diode",
+        "succeded": true,
+        "duration": "4.110s",
+        "benchmarks": [
+          {
+            "name": "Benchmark/Waiter-12",
+            "runs": 4346660,
+            "nsPerOp": 268.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/Pooler-12",
+            "runs": 3067806,
+            "nsPerOp": 357.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/didi/gatekeeper/golang_common/zerolog/hlog",
+        "succeded": true,
+        "duration": "9.362s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHandlers/Single-12",
+            "runs": 1244905,
+            "nsPerOp": 1033,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandlers/Combined-12",
+            "runs": 762891,
+            "nsPerOp": 2207,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandlers/SingleDisabled-12",
+            "runs": 2217318,
+            "nsPerOp": 480.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandlers/CombinedDisabled-12",
+            "runs": 2129335,
+            "nsPerOp": 610.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDataRace-12",
+            "runs": 2193259,
+            "nsPerOp": 590.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHandlers",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkHandlers",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkHandlers",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkHandlers",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkDataRace",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/didi/gatekeeper/golang_common/zerolog/internal/cbor",
+        "succeded": true,
+        "duration": "36.902s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAppendString/EncodingFirst-12",
+            "runs": 161009418,
+            "nsPerOp": 7.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/EncodingMiddle-12",
+            "runs": 169563772,
+            "nsPerOp": 8.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/EncodingLast-12",
+            "runs": 138961117,
+            "nsPerOp": 8.825,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/MultiBytesFirst-12",
+            "runs": 123476890,
+            "nsPerOp": 11.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/MultiBytesMiddle-12",
+            "runs": 100000000,
+            "nsPerOp": 11.07,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/MultiBytesLast-12",
+            "runs": 100000000,
+            "nsPerOp": 10.96,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/NoEncoding-12",
+            "runs": 135439434,
+            "nsPerOp": 8.327,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendTime/Integer-12",
+            "runs": 57687834,
+            "nsPerOp": 19.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendTime/Float-12",
+            "runs": 36663478,
+            "nsPerOp": 32.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/int-Negative-12",
+            "runs": 126503301,
+            "nsPerOp": 11.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/uint16-12",
+            "runs": 100000000,
+            "nsPerOp": 15.68,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/int8-12",
+            "runs": 100000000,
+            "nsPerOp": 10.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/int-Positive-12",
+            "runs": 100000000,
+            "nsPerOp": 11.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/uint8-12",
+            "runs": 148540603,
+            "nsPerOp": 7.262,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/uint32-12",
+            "runs": 90242024,
+            "nsPerOp": 11.43,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/uint64-12",
+            "runs": 63959250,
+            "nsPerOp": 27.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/int16-12",
+            "runs": 104106843,
+            "nsPerOp": 11.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/int32-12",
+            "runs": 100000000,
+            "nsPerOp": 10.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt/int64-12",
+            "runs": 97291770,
+            "nsPerOp": 15.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendFloat/Float32-12",
+            "runs": 131382032,
+            "nsPerOp": 8.511,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendFloat/Float64-12",
+            "runs": 78501171,
+            "nsPerOp": 15.42,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendTime",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendTime",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendInt",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendFloat",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendFloat",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/didi/gatekeeper/golang_common/zerolog/internal/json",
+        "succeded": true,
+        "duration": "27.367s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAppendBytes/EncodingLast-12",
+            "runs": 11705292,
+            "nsPerOp": 115.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendBytes/MultiBytesFirst-12",
+            "runs": 9335547,
+            "nsPerOp": 158.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendBytes/MultiBytesMiddle-12",
+            "runs": 7530180,
+            "nsPerOp": 177.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendBytes/MultiBytesLast-12",
+            "runs": 7560895,
+            "nsPerOp": 150,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendBytes/NoEncoding-12",
+            "runs": 15049267,
+            "nsPerOp": 107,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendBytes/EncodingFirst-12",
+            "runs": 9762738,
+            "nsPerOp": 156,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendBytes/EncodingMiddle-12",
+            "runs": 9531062,
+            "nsPerOp": 131.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/NoEncoding-12",
+            "runs": 24261189,
+            "nsPerOp": 61.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/EncodingFirst-12",
+            "runs": 7409068,
+            "nsPerOp": 160.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/EncodingMiddle-12",
+            "runs": 9340628,
+            "nsPerOp": 118.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/EncodingLast-12",
+            "runs": 13381351,
+            "nsPerOp": 85.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/MultiBytesFirst-12",
+            "runs": 6953275,
+            "nsPerOp": 205.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/MultiBytesMiddle-12",
+            "runs": 9751380,
+            "nsPerOp": 135.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendString/MultiBytesLast-12",
+            "runs": 12957520,
+            "nsPerOp": 80.28,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAppendBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          },
+          {
+            "name": "BenchmarkAppendString",
+            "modificationCount": 1,
+            "createdOn": "2021-09-20",
+            "lastUpdateOn": "2021-09-20"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "didi/GateKeeper",
+    "name": "GateKeeper",
+    "private": false,
+    "html_url": "https://github.com/didi/GateKeeper",
+    "description": "A high-performance Golang gateway that supports rapid development and plug-inization",
+    "fork": false,
+    "created_at": "2019-09-23T08:41:09Z",
+    "updated_at": "2023-09-05T09:01:02Z",
+    "pushed_at": "2023-05-05T02:28:43Z",
+    "ssh_url": "git@github.com:didi/GateKeeper.git",
+    "stargazers_count": 422,
+    "watchers_count": 422,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 73,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 2,
+    "topics": [
+      "gateway",
+      "gateway-microservice",
+      "golang"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 208,
+    "Lines": 27613,
+    "Blank": 2795,
+    "Code": 22392,
+    "Comment": 2426,
+    "Bytes": 758915,
+    "Complexity": 3394
+  }
+}

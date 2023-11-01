@@ -1,0 +1,239 @@
+{
+  "Name": "seefan/gossdb",
+  "Path": "./repositories/seefan__gossdb",
+  "GoVersion": "1.14",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T22:20:10Z",
+    "benchmarkCount": 11,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 5,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/seefan/gossdb/v2/pool",
+        "succeded": false,
+        "duration": "0.959s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConnectors_NewClient10",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "connectors_test.go:21: dial tcp 127.0.0.1:8888: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient100",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "connectors_test.go:111: dial tcp 127.0.0.1:8888: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient1000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "connectors_test.go:141: dial tcp 127.0.0.1:8888: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient5000",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "connectors_test.go:170: dial tcp 127.0.0.1:8888: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient5000a-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1687,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient5000b-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1534,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConnectors_Set1k",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "connectors_test.go:334: dial tcp 127.0.0.1:8888: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkConnectors_Get1k",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "connectors_test.go:361: dial tcp 127.0.0.1:8888: connect: connection refused"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConnectors_NewClient10",
+            "modificationCount": 8,
+            "createdOn": "2019-05-07",
+            "lastUpdateOn": "2020-11-02"
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient100",
+            "modificationCount": 6,
+            "createdOn": "2019-05-08",
+            "lastUpdateOn": "2020-11-02"
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient1000",
+            "modificationCount": 7,
+            "createdOn": "2019-05-08",
+            "lastUpdateOn": "2020-11-02"
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient5000",
+            "modificationCount": 9,
+            "createdOn": "2019-05-07",
+            "lastUpdateOn": "2020-11-02"
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient5000a",
+            "modificationCount": 1,
+            "createdOn": "2019-05-18",
+            "lastUpdateOn": "2019-05-18"
+          },
+          {
+            "name": "BenchmarkConnectors_NewClient5000b",
+            "modificationCount": 1,
+            "createdOn": "2019-05-18",
+            "lastUpdateOn": "2019-05-18"
+          },
+          {
+            "name": "BenchmarkConnectors_Set1k",
+            "modificationCount": 1,
+            "createdOn": "2019-06-18",
+            "lastUpdateOn": "2019-06-18"
+          },
+          {
+            "name": "BenchmarkConnectors_Get1k",
+            "modificationCount": 2,
+            "createdOn": "2019-06-18",
+            "lastUpdateOn": "2020-05-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/seefan/gossdb/v2/queue",
+        "succeded": true,
+        "duration": "3.377s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkQueues-12",
+            "runs": 130004606,
+            "nsPerOp": 8.991,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueueq-12",
+            "runs": 698628256,
+            "nsPerOp": 1.569,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkQueues",
+            "modificationCount": 1,
+            "createdOn": "2020-11-02",
+            "lastUpdateOn": "2020-11-02"
+          },
+          {
+            "name": "BenchmarkQueueq",
+            "modificationCount": 1,
+            "createdOn": "2020-11-02",
+            "lastUpdateOn": "2020-11-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/seefan/gossdb/v2/ssdbclient",
+        "succeded": true,
+        "duration": "1.399s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConnectors_conv-12",
+            "runs": 99021657,
+            "nsPerOp": 13.88,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConnectors_conv",
+            "modificationCount": 1,
+            "createdOn": "2023-07-18",
+            "lastUpdateOn": "2023-07-18"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "seefan/gossdb",
+    "name": "gossdb",
+    "private": false,
+    "html_url": "https://github.com/seefan/gossdb",
+    "description": "ssdb client for go with pool surport",
+    "fork": false,
+    "created_at": "2014-11-17T04:17:49Z",
+    "updated_at": "2023-05-11T02:14:35Z",
+    "pushed_at": "2023-09-07T07:28:21Z",
+    "ssh_url": "git@github.com:seefan/gossdb.git",
+    "stargazers_count": 127,
+    "watchers_count": 127,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 47,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 1,
+    "topics": [
+      "go",
+      "golang",
+      "gossdb",
+      "pool",
+      "ssdb"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 25,
+    "Lines": 4846,
+    "Blank": 397,
+    "Code": 3187,
+    "Comment": 1262,
+    "Bytes": 131013,
+    "Complexity": 1055
+  }
+}

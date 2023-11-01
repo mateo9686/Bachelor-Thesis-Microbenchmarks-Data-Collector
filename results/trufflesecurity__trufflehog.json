@@ -1,0 +1,2554 @@
+{
+  "Name": "trufflesecurity/trufflehog",
+  "Path": "./repositories/trufflesecurity__trufflehog",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T03:05:24Z",
+    "benchmarkCount": 169,
+    "benchmarkSuiteCount": 31,
+    "successfulBenchmarkCount": 169,
+    "successfulBenchmarkSuitesCount": 31,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/cache/memory",
+        "succeded": true,
+        "duration": "51.677s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSet-12",
+            "runs": 359875,
+            "nsPerOp": 3526,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 399686,
+            "nsPerOp": 2985,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDelete-12",
+            "runs": 1966405,
+            "nsPerOp": 604.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCount-12",
+            "runs": 97999870,
+            "nsPerOp": 10.55,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContents-12",
+            "runs": 3,
+            "nsPerOp": 357927951,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSet",
+            "modificationCount": 1,
+            "createdOn": "2023-03-20",
+            "lastUpdateOn": "2023-03-20"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 1,
+            "createdOn": "2023-03-20",
+            "lastUpdateOn": "2023-03-20"
+          },
+          {
+            "name": "BenchmarkDelete",
+            "modificationCount": 1,
+            "createdOn": "2023-03-20",
+            "lastUpdateOn": "2023-03-20"
+          },
+          {
+            "name": "BenchmarkCount",
+            "modificationCount": 1,
+            "createdOn": "2023-03-20",
+            "lastUpdateOn": "2023-03-20"
+          },
+          {
+            "name": "BenchmarkContents",
+            "modificationCount": 1,
+            "createdOn": "2023-03-20",
+            "lastUpdateOn": "2023-03-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/common",
+        "succeded": true,
+        "duration": "1.365s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSkipFile-12",
+            "runs": 80273743,
+            "nsPerOp": 15.87,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSkipFile",
+            "modificationCount": 1,
+            "createdOn": "2023-03-06",
+            "lastUpdateOn": "2023-03-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/custom_detectors",
+        "succeded": true,
+        "duration": "3.571s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkProductIndices-12",
+            "runs": 299522,
+            "nsPerOp": 5699,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkProductIndices",
+            "modificationCount": 2,
+            "createdOn": "2022-12-02",
+            "lastUpdateOn": "2022-12-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/decoders",
+        "succeded": true,
+        "duration": "8.356s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromChunkSmall-12",
+            "runs": 1,
+            "nsPerOp": 1291345551,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromChunkMedium-12",
+            "runs": 1,
+            "nsPerOp": 1314022421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromChunkLarge-12",
+            "runs": 1,
+            "nsPerOp": 1092963314,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtf16ToUtf8-12",
+            "runs": 6970444,
+            "nsPerOp": 193.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_extractSubstrings-12",
+            "runs": 1937971,
+            "nsPerOp": 1275,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromChunkSmall",
+            "modificationCount": 2,
+            "createdOn": "2022-04-15",
+            "lastUpdateOn": "2023-04-20"
+          },
+          {
+            "name": "BenchmarkFromChunkMedium",
+            "modificationCount": 2,
+            "createdOn": "2022-04-15",
+            "lastUpdateOn": "2023-04-20"
+          },
+          {
+            "name": "BenchmarkFromChunkLarge",
+            "modificationCount": 2,
+            "createdOn": "2022-04-15",
+            "lastUpdateOn": "2023-04-20"
+          },
+          {
+            "name": "BenchmarkUtf16ToUtf8",
+            "modificationCount": 1,
+            "createdOn": "2023-04-20",
+            "lastUpdateOn": "2023-04-20"
+          },
+          {
+            "name": "Benchmark_extractSubstrings",
+            "modificationCount": 1,
+            "createdOn": "2022-11-15",
+            "lastUpdateOn": "2022-11-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/apilayer",
+        "succeded": true,
+        "duration": "14.256s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 100,
+            "nsPerOp": 14564268,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 12,
+            "nsPerOp": 92165825,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 9742986,
+            "nsPerOp": 127,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 229286,
+            "nsPerOp": 7077,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 16227,
+            "nsPerOp": 78096,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1041,
+            "nsPerOp": 1027022,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/appointedd",
+        "succeded": true,
+        "duration": "14.208s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 19,
+            "nsPerOp": 74580000,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 13555580,
+            "nsPerOp": 144.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 214917,
+            "nsPerOp": 7153,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 20844,
+            "nsPerOp": 67056,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 2292,
+            "nsPerOp": 732494,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 170,
+            "nsPerOp": 8126783,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/braintreepayments",
+        "succeded": true,
+        "duration": "14.586s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 729,
+            "nsPerOp": 1834848,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 66,
+            "nsPerOp": 18919399,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 6,
+            "nsPerOp": 181975192,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 7548349,
+            "nsPerOp": 162.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 139198,
+            "nsPerOp": 7738,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 15276,
+            "nsPerOp": 79700,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/codeclimate",
+        "succeded": true,
+        "duration": "10.512s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1878,
+            "nsPerOp": 549493,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 231,
+            "nsPerOp": 5821828,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 21,
+            "nsPerOp": 60551075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 21413574,
+            "nsPerOp": 68.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 363322,
+            "nsPerOp": 4210,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 28764,
+            "nsPerOp": 46137,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/demio",
+        "succeded": true,
+        "duration": "12.084s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 17013873,
+            "nsPerOp": 84.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 173107,
+            "nsPerOp": 7912,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 13526,
+            "nsPerOp": 80424,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 915,
+            "nsPerOp": 1126027,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 105,
+            "nsPerOp": 10999237,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 9,
+            "nsPerOp": 111620726,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/duply",
+        "succeded": true,
+        "duration": "13.072s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1210,
+            "nsPerOp": 1128277,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 108,
+            "nsPerOp": 9915930,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 10,
+            "nsPerOp": 107811364,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 15402088,
+            "nsPerOp": 89.85,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 153714,
+            "nsPerOp": 7248,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 14683,
+            "nsPerOp": 77559,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/ecostruxureit",
+        "succeded": true,
+        "duration": "11.164s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 2126,
+            "nsPerOp": 555842,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 219,
+            "nsPerOp": 5410612,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 24,
+            "nsPerOp": 53662263,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 13221754,
+            "nsPerOp": 80.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 306146,
+            "nsPerOp": 3849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 26614,
+            "nsPerOp": 42130,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/flightlabs",
+        "succeded": true,
+        "duration": "9.989s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 10707440,
+            "nsPerOp": 111.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 21782,
+            "nsPerOp": 61338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1718,
+            "nsPerOp": 670111,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 187,
+            "nsPerOp": 5801171,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 22,
+            "nsPerOp": 52590389,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 13006513,
+            "nsPerOp": 80.52,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/formsite",
+        "succeded": true,
+        "duration": "13.169s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 78027,
+            "nsPerOp": 13231,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 10000,
+            "nsPerOp": 261302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 405,
+            "nsPerOp": 2661520,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 63,
+            "nsPerOp": 18937461,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 6,
+            "nsPerOp": 235922538,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 4623849,
+            "nsPerOp": 216.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/getresponse",
+        "succeded": true,
+        "duration": "15.028s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 17623,
+            "nsPerOp": 80495,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1630,
+            "nsPerOp": 950908,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 133,
+            "nsPerOp": 9889859,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 15,
+            "nsPerOp": 101326296,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 16483093,
+            "nsPerOp": 117.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 200893,
+            "nsPerOp": 6341,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/gtmetrix",
+        "succeded": true,
+        "duration": "13.183s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 13,
+            "nsPerOp": 106539456,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 11289308,
+            "nsPerOp": 126.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 216409,
+            "nsPerOp": 6599,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 28134,
+            "nsPerOp": 42695,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 2000,
+            "nsPerOp": 599421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 202,
+            "nsPerOp": 5815682,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/heatmapapi",
+        "succeded": true,
+        "duration": "10.117s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 2245,
+            "nsPerOp": 544662,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 212,
+            "nsPerOp": 5547476,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 24,
+            "nsPerOp": 54227046,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 18014570,
+            "nsPerOp": 72.27,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 355206,
+            "nsPerOp": 3842,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 33538,
+            "nsPerOp": 41339,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/holistic",
+        "succeded": true,
+        "duration": "10.373s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 28484,
+            "nsPerOp": 43414,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 2204,
+            "nsPerOp": 530181,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 235,
+            "nsPerOp": 5483683,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 22,
+            "nsPerOp": 52124733,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 19227429,
+            "nsPerOp": 62.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 283796,
+            "nsPerOp": 4279,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/kanbantool",
+        "succeded": true,
+        "duration": "10.804s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 9,
+            "nsPerOp": 128282536,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 19074508,
+            "nsPerOp": 74.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 121333,
+            "nsPerOp": 10276,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 10000,
+            "nsPerOp": 105583,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 818,
+            "nsPerOp": 1286031,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 100,
+            "nsPerOp": 12881536,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/lemlist",
+        "succeded": true,
+        "duration": "11.851s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 225,
+            "nsPerOp": 5522197,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 20,
+            "nsPerOp": 52666150,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 22505865,
+            "nsPerOp": 85.28,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 310851,
+            "nsPerOp": 5502,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 15879,
+            "nsPerOp": 92077,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1381,
+            "nsPerOp": 1187937,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/monkeylearn",
+        "succeded": true,
+        "duration": "18.353s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 6516789,
+            "nsPerOp": 264.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 58894,
+            "nsPerOp": 21680,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 10000,
+            "nsPerOp": 204934,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 247,
+            "nsPerOp": 4326466,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 100,
+            "nsPerOp": 19163207,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 12,
+            "nsPerOp": 177022455,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/opsgenie",
+        "succeded": true,
+        "duration": "18.433s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 100,
+            "nsPerOp": 24910800,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 4,
+            "nsPerOp": 302470260,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 7143861,
+            "nsPerOp": 253.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 164616,
+            "nsPerOp": 14062,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 13194,
+            "nsPerOp": 130065,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 903,
+            "nsPerOp": 1250746,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/parseur",
+        "succeded": true,
+        "duration": "17.265s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 50,
+            "nsPerOp": 34589795,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 12,
+            "nsPerOp": 151248091,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 7886236,
+            "nsPerOp": 157.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 129681,
+            "nsPerOp": 8630,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 14280,
+            "nsPerOp": 84398,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1225,
+            "nsPerOp": 1195773,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/prodpad",
+        "succeded": true,
+        "duration": "14.501s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1594,
+            "nsPerOp": 1012560,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 145,
+            "nsPerOp": 8518988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 12,
+            "nsPerOp": 85659702,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 9123548,
+            "nsPerOp": 121.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 262863,
+            "nsPerOp": 5826,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 32300,
+            "nsPerOp": 42394,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/salesmate",
+        "succeded": true,
+        "duration": "10.145s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 72,
+            "nsPerOp": 15191829,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 9,
+            "nsPerOp": 151043627,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 15972214,
+            "nsPerOp": 71.34,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 119576,
+            "nsPerOp": 13930,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 8154,
+            "nsPerOp": 142185,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 768,
+            "nsPerOp": 2493841,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/scalr",
+        "succeded": true,
+        "duration": "14.542s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 40,
+            "nsPerOp": 34613120,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 4,
+            "nsPerOp": 259892131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 1000000,
+            "nsPerOp": 1132,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 118405,
+            "nsPerOp": 10676,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 4542,
+            "nsPerOp": 252566,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 674,
+            "nsPerOp": 2175314,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/shopify",
+        "succeded": true,
+        "duration": "15.083s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 6486219,
+            "nsPerOp": 206.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 74497,
+            "nsPerOp": 17562,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 5898,
+            "nsPerOp": 187034,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 792,
+            "nsPerOp": 2432962,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 57,
+            "nsPerOp": 21907935,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 7,
+            "nsPerOp": 220873097,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/tokeet",
+        "succeded": true,
+        "duration": "19.249s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 5907159,
+            "nsPerOp": 198.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 87009,
+            "nsPerOp": 21700,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 8539,
+            "nsPerOp": 160829,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 753,
+            "nsPerOp": 3697015,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 49,
+            "nsPerOp": 44634478,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 4,
+            "nsPerOp": 321430957,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/transferwise",
+        "succeded": true,
+        "duration": "12.993s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1117,
+            "nsPerOp": 1687359,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 92,
+            "nsPerOp": 13193117,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 7,
+            "nsPerOp": 167619866,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 7334484,
+            "nsPerOp": 172.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 172189,
+            "nsPerOp": 9450,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 10000,
+            "nsPerOp": 104768,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/twist",
+        "succeded": true,
+        "duration": "15.198s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 8,
+            "nsPerOp": 157251060,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 12133551,
+            "nsPerOp": 211.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 230592,
+            "nsPerOp": 6536,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 23961,
+            "nsPerOp": 54968,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 1747,
+            "nsPerOp": 803083,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 132,
+            "nsPerOp": 9523151,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/detectors/websitepulse",
+        "succeded": true,
+        "duration": "12.196s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromData/xsmall-12",
+            "runs": 15120507,
+            "nsPerOp": 79.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/small-12",
+            "runs": 136928,
+            "nsPerOp": 7539,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/medium-12",
+            "runs": 16818,
+            "nsPerOp": 148604,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/large-12",
+            "runs": 616,
+            "nsPerOp": 1777770,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xlarge-12",
+            "runs": 66,
+            "nsPerOp": 18641174,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromData/xxlarge-12",
+            "runs": 7,
+            "nsPerOp": 143671542,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          },
+          {
+            "name": "BenchmarkFromData",
+            "modificationCount": 3,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2023-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/trufflesecurity/trufflehog/v3/pkg/handlers",
+        "succeded": true,
+        "duration": "2.985s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadToMax-12",
+            "runs": 537,
+            "nsPerOp": 3391429,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadToMax",
+            "modificationCount": 1,
+            "createdOn": "2023-08-29",
+            "lastUpdateOn": "2023-08-29"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "trufflesecurity/trufflehog",
+    "name": "trufflehog",
+    "private": false,
+    "html_url": "https://github.com/trufflesecurity/trufflehog",
+    "description": "Find and verify credentials",
+    "fork": false,
+    "created_at": "2016-12-31T05:08:12Z",
+    "updated_at": "2023-10-23T16:00:00Z",
+    "pushed_at": "2023-10-23T18:46:46Z",
+    "ssh_url": "git@github.com:trufflesecurity/trufflehog.git",
+    "homepage": "https://trufflesecurity.com",
+    "stargazers_count": 12499,
+    "watchers_count": 12499,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1451,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 193,
+    "topics": [
+      "credentials",
+      "devsecops",
+      "dynamic-analysis",
+      "hacktoberfest",
+      "precommit",
+      "scanning",
+      "secret",
+      "secret-management",
+      "secrets",
+      "security",
+      "security-tools",
+      "trufflehog",
+      "verification"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "spdx_id": "AGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTE=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 1802,
+    "Lines": 227888,
+    "Blank": 25638,
+    "Code": 191322,
+    "Comment": 10928,
+    "Bytes": 6221062,
+    "Complexity": 31660
+  }
+}

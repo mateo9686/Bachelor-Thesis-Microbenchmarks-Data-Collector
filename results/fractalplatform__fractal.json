@@ -1,0 +1,568 @@
+{
+  "Name": "fractalplatform/fractal",
+  "Path": "./repositories/fractalplatform__fractal",
+  "GoVersion": "1.11",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T12:18:41Z",
+    "benchmarkCount": 33,
+    "benchmarkSuiteCount": 8,
+    "successfulBenchmarkCount": 33,
+    "successfulBenchmarkSuitesCount": 8,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/fractalplatform/fractal/common",
+        "succeded": true,
+        "duration": "5.385s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAddressHex-12",
+            "runs": 457357,
+            "nsPerOp": 5261,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCutCustomTrim-12",
+            "runs": 52629104,
+            "nsPerOp": 52.23,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAddressHex",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkCutCustomTrim",
+            "modificationCount": 1,
+            "createdOn": "2019-10-09",
+            "lastUpdateOn": "2019-10-09"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/fractalplatform/fractal/common/prque",
+        "succeded": true,
+        "duration": "5.980s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPush-12",
+            "runs": 4898739,
+            "nsPerOp": 205.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPop-12",
+            "runs": 286624,
+            "nsPerOp": 4197,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPush",
+            "modificationCount": 1,
+            "createdOn": "2019-05-13",
+            "lastUpdateOn": "2019-05-13"
+          },
+          {
+            "name": "BenchmarkPop",
+            "modificationCount": 1,
+            "createdOn": "2019-05-13",
+            "lastUpdateOn": "2019-05-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/fractalplatform/fractal/crypto",
+        "succeded": true,
+        "duration": "6.320s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSha3-12",
+            "runs": 639650,
+            "nsPerOp": 2936,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEcrecoverSignature-12",
+            "runs": 2188,
+            "nsPerOp": 576741,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifySignature-12",
+            "runs": 5145,
+            "nsPerOp": 317096,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecompressPubkey-12",
+            "runs": 61688,
+            "nsPerOp": 17290,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSha3",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkEcrecoverSignature",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkVerifySignature",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkDecompressPubkey",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/fractalplatform/fractal/event",
+        "succeded": true,
+        "duration": "17.332s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFeedSend1000-12",
+            "runs": 3168,
+            "nsPerOp": 379085,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscribe-12",
+            "runs": 1,
+            "nsPerOp": 15008198332,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFeedSend1000",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkSubscribe",
+            "modificationCount": 7,
+            "createdOn": "2019-01-21",
+            "lastUpdateOn": "2019-05-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/fractalplatform/fractal/p2p/netutil",
+        "succeded": true,
+        "duration": "2.708s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCheckRelayIP-12",
+            "runs": 2288610,
+            "nsPerOp": 755,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCheckRelayIP",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/fractalplatform/fractal/state/mtp",
+        "succeded": true,
+        "duration": "37.097s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHexToCompact-12",
+            "runs": 13206638,
+            "nsPerOp": 138.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompactToHex-12",
+            "runs": 5237869,
+            "nsPerOp": 279.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeybytesToHex-12",
+            "runs": 3993220,
+            "nsPerOp": 281.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHexToKeybytes-12",
+            "runs": 11947406,
+            "nsPerOp": 130.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProve-12",
+            "runs": 378,
+            "nsPerOp": 3395058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyProof-12",
+            "runs": 28795,
+            "nsPerOp": 38992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 1834708,
+            "nsPerOp": 813.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetDB-12",
+            "runs": 3990886,
+            "nsPerOp": 371.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateBE-12",
+            "runs": 822849,
+            "nsPerOp": 1460,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdateLE-12",
+            "runs": 782294,
+            "nsPerOp": 2514,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHash-12",
+            "runs": 322986,
+            "nsPerOp": 5058,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHexToCompact",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkCompactToHex",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkKeybytesToHex",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkHexToKeybytes",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkProve",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkVerifyProof",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkGetDB",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkUpdateBE",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkUpdateLE",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          },
+          {
+            "name": "BenchmarkHash",
+            "modificationCount": 1,
+            "createdOn": "2019-03-21",
+            "lastUpdateOn": "2019-03-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/fractalplatform/fractal/txpool",
+        "succeded": true,
+        "duration": "49.378s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPendingDemotion100-12",
+            "runs": 734,
+            "nsPerOp": 1658025,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPendingDemotion1000-12",
+            "runs": 37,
+            "nsPerOp": 27650302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPendingDemotion10000-12",
+            "runs": 1,
+            "nsPerOp": 2513179610,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFuturePromotion100-12",
+            "runs": 255929019,
+            "nsPerOp": 4.628,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFuturePromotion1000-12",
+            "runs": 348296226,
+            "nsPerOp": 4.292,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFuturePromotion10000-12",
+            "runs": 139332578,
+            "nsPerOp": 7.569,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolBatchInsert100-12",
+            "runs": 21,
+            "nsPerOp": 64217689,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolBatchInsert1000-12",
+            "runs": 2,
+            "nsPerOp": 851123777,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPoolBatchInsert10000-12",
+            "runs": 1,
+            "nsPerOp": 8883509663,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPendingDemotion100",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkPendingDemotion1000",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkPendingDemotion10000",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkFuturePromotion100",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkFuturePromotion1000",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkFuturePromotion10000",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkPoolBatchInsert100",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkPoolBatchInsert1000",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkPoolBatchInsert10000",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/fractalplatform/fractal/utils/rlp",
+        "succeded": true,
+        "duration": "5.811s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecode-12",
+            "runs": 110,
+            "nsPerOp": 9499868,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeIntSliceReuse-12",
+            "runs": 162,
+            "nsPerOp": 8076294,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          },
+          {
+            "name": "BenchmarkDecodeIntSliceReuse",
+            "modificationCount": 1,
+            "createdOn": "2019-01-17",
+            "lastUpdateOn": "2019-01-17"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "fractalplatform/fractal",
+    "name": "fractal",
+    "private": false,
+    "html_url": "https://github.com/fractalplatform/fractal",
+    "fork": false,
+    "created_at": "2019-01-17T12:35:05Z",
+    "updated_at": "2023-07-01T22:02:27Z",
+    "pushed_at": "2023-02-25T00:34:24Z",
+    "ssh_url": "git@github.com:fractalplatform/fractal.git",
+    "stargazers_count": 65,
+    "watchers_count": 65,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 35,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 5,
+    "topics": [
+      "blockchain",
+      "fractal",
+      "go",
+      "golang"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "spdx_id": "GPL-3.0",
+      "node_id": "MDc6TGljZW5zZTk=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 1088,
+    "Lines": 422842,
+    "Blank": 40301,
+    "Code": 334775,
+    "Comment": 47766,
+    "Bytes": 14398525,
+    "Complexity": 49074
+  }
+}

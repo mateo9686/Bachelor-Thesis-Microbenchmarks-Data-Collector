@@ -1,0 +1,272 @@
+{
+  "Name": "anacrolix/torrent",
+  "Path": "./repositories/anacrolix__torrent",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T23:53:28Z",
+    "benchmarkCount": 12,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 12,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/anacrolix/torrent/bencode",
+        "succeded": true,
+        "duration": "1.781s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMarshalThenUnmarshalKrpcMsg-12",
+            "runs": 66934,
+            "nsPerOp": 23770,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMarshalThenUnmarshalKrpcMsg",
+            "modificationCount": 3,
+            "createdOn": "2018-07-23",
+            "lastUpdateOn": "2021-09-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/anacrolix/torrent/iplist",
+        "succeded": true,
+        "duration": "1.191s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseP2pBlocklist-12",
+            "runs": 239086,
+            "nsPerOp": 4731,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseP2pBlocklist",
+            "modificationCount": 2,
+            "createdOn": "2014-11-28",
+            "lastUpdateOn": "2014-12-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/anacrolix/torrent/mse",
+        "succeded": true,
+        "duration": "9.344s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHandshakeDefault-12",
+            "runs": 836,
+            "nsPerOp": 1829227,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStreamRC4-12",
+            "runs": 84,
+            "nsPerOp": 12403314,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStreamPlaintext-12",
+            "runs": 1098,
+            "nsPerOp": 1037023,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPipeRC4-12",
+            "runs": 53049,
+            "nsPerOp": 22975,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkeysReceive-12",
+            "runs": 100,
+            "nsPerOp": 15013351,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHandshakeDefault",
+            "modificationCount": 5,
+            "createdOn": "2015-03-12",
+            "lastUpdateOn": "2021-09-13"
+          },
+          {
+            "name": "BenchmarkStreamRC4",
+            "modificationCount": 3,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2017-09-13"
+          },
+          {
+            "name": "BenchmarkStreamPlaintext",
+            "modificationCount": 3,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2017-09-13"
+          },
+          {
+            "name": "BenchmarkPipeRC4",
+            "modificationCount": 4,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2021-09-13"
+          },
+          {
+            "name": "BenchmarkSkeysReceive",
+            "modificationCount": 3,
+            "createdOn": "2021-01-04",
+            "lastUpdateOn": "2021-11-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/anacrolix/torrent/peer_protocol",
+        "succeded": true,
+        "duration": "1.854s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecodePieces-12",
+            "runs": 1507418,
+            "nsPerOp": 692.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecodePieces",
+            "modificationCount": 7,
+            "createdOn": "2017-09-12",
+            "lastUpdateOn": "2021-09-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/anacrolix/torrent/request-strategy",
+        "succeded": true,
+        "duration": "10.461s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPieceRequestOrder/TidwallBtree/NoPathHints-12",
+            "runs": 162,
+            "nsPerOp": 13800245,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPieceRequestOrder/TidwallBtree/SharedPathHint-12",
+            "runs": 100,
+            "nsPerOp": 19637365,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPieceRequestOrder/TidwallBtree/PathHintPerPiece-12",
+            "runs": 100,
+            "nsPerOp": 25952292,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPieceRequestOrder/AjwernerBtree-12",
+            "runs": 92,
+            "nsPerOp": 11821825,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPieceRequestOrder",
+            "modificationCount": 2,
+            "createdOn": "2021-12-17",
+            "lastUpdateOn": "2021-12-18"
+          },
+          {
+            "name": "BenchmarkPieceRequestOrder",
+            "modificationCount": 2,
+            "createdOn": "2021-12-17",
+            "lastUpdateOn": "2021-12-18"
+          },
+          {
+            "name": "BenchmarkPieceRequestOrder",
+            "modificationCount": 2,
+            "createdOn": "2021-12-17",
+            "lastUpdateOn": "2021-12-18"
+          },
+          {
+            "name": "BenchmarkPieceRequestOrder",
+            "modificationCount": 2,
+            "createdOn": "2021-12-17",
+            "lastUpdateOn": "2021-12-18"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "anacrolix/torrent",
+    "name": "torrent",
+    "private": false,
+    "html_url": "https://github.com/anacrolix/torrent",
+    "description": "Full-featured BitTorrent client package and utilities",
+    "fork": false,
+    "created_at": "2015-01-08T21:10:42Z",
+    "updated_at": "2023-10-23T16:13:12Z",
+    "pushed_at": "2023-10-14T04:13:13Z",
+    "ssh_url": "git@github.com:anacrolix/torrent.git",
+    "stargazers_count": 4955,
+    "watchers_count": 4955,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 604,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 47,
+    "topics": [
+      "bittorrent",
+      "go",
+      "magnet-link",
+      "p2p",
+      "streaming",
+      "torrent",
+      "tracker"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mpl-2.0",
+      "name": "Mozilla Public License 2.0",
+      "url": "https://api.github.com/licenses/mpl-2.0",
+      "spdx_id": "MPL-2.0",
+      "node_id": "MDc6TGljZW5zZTE0",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 300,
+    "Lines": 32255,
+    "Blank": 3264,
+    "Code": 26853,
+    "Comment": 2138,
+    "Bytes": 811819,
+    "Complexity": 4507
+  }
+}

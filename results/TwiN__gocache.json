@@ -1,0 +1,690 @@
+{
+  "Name": "TwiN/gocache",
+  "Path": "./repositories/TwiN__gocache",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-23T21:06:07Z",
+    "benchmarkCount": 46,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 46,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/TwiN/gocache/v2",
+        "succeded": true,
+        "duration": "92.687s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMap_Get-12",
+            "runs": 11722605,
+            "nsPerOp": 125.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMap_Set/small_value-12",
+            "runs": 1000000,
+            "nsPerOp": 1977,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMap_Set/medium_value-12",
+            "runs": 1785230,
+            "nsPerOp": 873.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMap_Set/large_value-12",
+            "runs": 1327570,
+            "nsPerOp": 754.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_Get/FirstInFirstOut-12",
+            "runs": 10361640,
+            "nsPerOp": 144.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_Get/LeastRecentlyUsed-12",
+            "runs": 8820246,
+            "nsPerOp": 116.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_Set/FirstInFirstOut_small_value-12",
+            "runs": 268824,
+            "nsPerOp": 4824,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_Set/FirstInFirstOut_medium_value-12",
+            "runs": 318633,
+            "nsPerOp": 4432,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_Set/FirstInFirstOut_large_value-12",
+            "runs": 312591,
+            "nsPerOp": 3730,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_Set/LeastRecentlyUsed_small_value-12",
+            "runs": 304657,
+            "nsPerOp": 3720,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_Set/LeastRecentlyUsed_medium_value-12",
+            "runs": 258691,
+            "nsPerOp": 4198,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_Set/LeastRecentlyUsed_large_value-12",
+            "runs": 337189,
+            "nsPerOp": 3613,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetUsingMaxMemoryUsage/small_value-12",
+            "runs": 314036,
+            "nsPerOp": 3967,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetUsingMaxMemoryUsage/medium_value-12",
+            "runs": 263116,
+            "nsPerOp": 8015,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetUsingMaxMemoryUsage/large_value-12",
+            "runs": 162648,
+            "nsPerOp": 9292,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize/100_small_value-12",
+            "runs": 264036,
+            "nsPerOp": 4410,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize/10000_small_value-12",
+            "runs": 189096,
+            "nsPerOp": 6770,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize/100000_small_value-12",
+            "runs": 257434,
+            "nsPerOp": 6309,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize/100_medium_value-12",
+            "runs": 307239,
+            "nsPerOp": 3535,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize/10000_medium_value-12",
+            "runs": 289743,
+            "nsPerOp": 4015,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize/100000_medium_value-12",
+            "runs": 322364,
+            "nsPerOp": 3343,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize/100_large_value-12",
+            "runs": 403249,
+            "nsPerOp": 3178,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize/10000_large_value-12",
+            "runs": 356379,
+            "nsPerOp": 3896,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize/100000_large_value-12",
+            "runs": 335817,
+            "nsPerOp": 3977,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU/100_small_value-12",
+            "runs": 389251,
+            "nsPerOp": 4853,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU/10000_small_value-12",
+            "runs": 281037,
+            "nsPerOp": 3974,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU/100000_small_value-12",
+            "runs": 300846,
+            "nsPerOp": 3620,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU/100_medium_value-12",
+            "runs": 358863,
+            "nsPerOp": 3964,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU/10000_medium_value-12",
+            "runs": 333939,
+            "nsPerOp": 3741,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU/100000_medium_value-12",
+            "runs": 320271,
+            "nsPerOp": 4160,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU/100_large_value-12",
+            "runs": 341556,
+            "nsPerOp": 3892,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU/10000_large_value-12",
+            "runs": 366027,
+            "nsPerOp": 3801,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU/100000_large_value-12",
+            "runs": 285703,
+            "nsPerOp": 4194,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_GetSetMultipleConcurrent-12",
+            "runs": 36007,
+            "nsPerOp": 43393,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_GetSetConcurrentWithFrequentEviction/FirstInFirstOut-12",
+            "runs": 115998,
+            "nsPerOp": 10932,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_GetSetConcurrentWithFrequentEviction/LeastRecentlyUsed-12",
+            "runs": 164958,
+            "nsPerOp": 8079,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_GetConcurrently/FirstInFirstOut-12",
+            "runs": 1180352,
+            "nsPerOp": 1088,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_GetConcurrently/LeastRecentlyUsed-12",
+            "runs": 871326,
+            "nsPerOp": 1321,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointer/true_with_nil_struct_pointer-12",
+            "runs": 328851,
+            "nsPerOp": 3714,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointer/true-12",
+            "runs": 329408,
+            "nsPerOp": 4129,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointer/false_with_nil_struct_pointer-12",
+            "runs": 335143,
+            "nsPerOp": 3611,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointer/false-12",
+            "runs": 347486,
+            "nsPerOp": 3800,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointerWithConcurrency/true_with_nil_struct_pointer-12",
+            "runs": 292483,
+            "nsPerOp": 4690,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointerWithConcurrency/true-12",
+            "runs": 264399,
+            "nsPerOp": 4884,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointerWithConcurrency/false_with_nil_struct_pointer-12",
+            "runs": 325094,
+            "nsPerOp": 4010,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointerWithConcurrency/false-12",
+            "runs": 295756,
+            "nsPerOp": 4988,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMap_Get",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2022-11-01"
+          },
+          {
+            "name": "BenchmarkMap_Set",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2022-11-01"
+          },
+          {
+            "name": "BenchmarkMap_Set",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2022-11-01"
+          },
+          {
+            "name": "BenchmarkMap_Set",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2022-11-01"
+          },
+          {
+            "name": "BenchmarkCache_Get",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_Get",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_Set",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_Set",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_Set",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_Set",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_Set",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_Set",
+            "modificationCount": 8,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetUsingMaxMemoryUsage",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetUsingMaxMemoryUsage",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetUsingMaxMemoryUsage",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSize",
+            "modificationCount": 4,
+            "createdOn": "2020-10-26",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU",
+            "modificationCount": 7,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU",
+            "modificationCount": 7,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU",
+            "modificationCount": 7,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU",
+            "modificationCount": 7,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU",
+            "modificationCount": 7,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU",
+            "modificationCount": 7,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU",
+            "modificationCount": 7,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU",
+            "modificationCount": 7,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_SetWithMaxSizeAndLRU",
+            "modificationCount": 7,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_GetSetMultipleConcurrent",
+            "modificationCount": 6,
+            "createdOn": "2020-06-30",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_GetSetConcurrentWithFrequentEviction",
+            "modificationCount": 8,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_GetSetConcurrentWithFrequentEviction",
+            "modificationCount": 8,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_GetConcurrently",
+            "modificationCount": 5,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-06-14"
+          },
+          {
+            "name": "BenchmarkCache_GetConcurrently",
+            "modificationCount": 5,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-06-14"
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointer",
+            "modificationCount": 3,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointer",
+            "modificationCount": 3,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointer",
+            "modificationCount": 3,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointer",
+            "modificationCount": 3,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointerWithConcurrency",
+            "modificationCount": 4,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointerWithConcurrency",
+            "modificationCount": 4,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointerWithConcurrency",
+            "modificationCount": 4,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          },
+          {
+            "name": "BenchmarkCache_WithForceNilInterfaceOnNilPointerWithConcurrency",
+            "modificationCount": 4,
+            "createdOn": "2020-07-01",
+            "lastUpdateOn": "2021-01-12"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "TwiN/gocache",
+    "name": "gocache",
+    "private": false,
+    "html_url": "https://github.com/TwiN/gocache",
+    "description": "High performance and lightweight in-memory cache library with LRU and FIFO support as well as memory-usage-based-eviction",
+    "fork": false,
+    "created_at": "2020-07-01T03:08:36Z",
+    "updated_at": "2023-09-10T17:10:16Z",
+    "pushed_at": "2023-09-07T01:09:03Z",
+    "ssh_url": "git@github.com:TwiN/gocache.git",
+    "stargazers_count": 28,
+    "watchers_count": 28,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 4,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "cache",
+      "caching",
+      "expiration",
+      "expire",
+      "fifo",
+      "fifo-cache",
+      "go",
+      "go-cache",
+      "golang",
+      "in-memory",
+      "inmemory",
+      "inmemory-cache",
+      "key-value",
+      "kvstore",
+      "lru",
+      "lru-cache",
+      "memory-usage",
+      "memory-usage-based-eviction",
+      "ttl"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 11,
+    "Lines": 2610,
+    "Blank": 189,
+    "Code": 2129,
+    "Comment": 292,
+    "Bytes": 81929,
+    "Complexity": 659
+  }
+}

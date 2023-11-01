@@ -1,0 +1,2259 @@
+{
+  "Name": "nspcc-dev/neo-go",
+  "Path": "./repositories/nspcc-dev__neo-go",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T20:46:26Z",
+    "benchmarkCount": 156,
+    "benchmarkSuiteCount": 18,
+    "successfulBenchmarkCount": 119,
+    "successfulBenchmarkSuitesCount": 18,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/core",
+        "succeded": false,
+        "duration": "475.799s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBlockchain_VerifyWitness-12",
+            "runs": 10605,
+            "nsPerOp": 101546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/MemPS_StartFromBlockN-1_Take100Blocks-12",
+            "runs": 294,
+            "nsPerOp": 4480197,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/MemPS_StartFromBlockN-1_Take1000Blocks-12",
+            "runs": 76,
+            "nsPerOp": 16177543,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/MemPS_StartFromBlockN-100_Take100Blocks-12",
+            "runs": 100,
+            "nsPerOp": 13069004,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/MemPS_StartFromBlockN-100_Take1000Blocks-12",
+            "runs": 66,
+            "nsPerOp": 42786820,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/MemPS_StartFromBlockN-1000_Take100Blocks-12",
+            "runs": 124,
+            "nsPerOp": 12440074,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/MemPS_StartFromBlockN-1000_Take1000Blocks-12",
+            "runs": 19,
+            "nsPerOp": 53664141,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/BoltPS_StartFromBlockN-1_Take100Blocks-12",
+            "runs": 498,
+            "nsPerOp": 3410698,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/BoltPS_StartFromBlockN-1_Take1000Blocks-12",
+            "runs": 36,
+            "nsPerOp": 28466794,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/BoltPS_StartFromBlockN-100_Take100Blocks-12",
+            "runs": 358,
+            "nsPerOp": 3924028,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/BoltPS_StartFromBlockN-100_Take1000Blocks-12",
+            "runs": 30,
+            "nsPerOp": 60297059,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/BoltPS_StartFromBlockN-1000_Take100Blocks-12",
+            "runs": 236,
+            "nsPerOp": 6178578,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/BoltPS_StartFromBlockN-1000_Take1000Blocks-12",
+            "runs": 38,
+            "nsPerOp": 65507574,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/LevelPS_StartFromBlockN-1_Take100Blocks-12",
+            "runs": 434,
+            "nsPerOp": 3351344,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/LevelPS_StartFromBlockN-1_Take1000Blocks-12",
+            "runs": 16,
+            "nsPerOp": 64227061,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/LevelPS_StartFromBlockN-100_Take100Blocks-12",
+            "runs": 369,
+            "nsPerOp": 5213744,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/LevelPS_StartFromBlockN-100_Take1000Blocks-12",
+            "runs": 64,
+            "nsPerOp": 44201622,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/LevelPS_StartFromBlockN-1000_Take100Blocks-12",
+            "runs": 777,
+            "nsPerOp": 1545874,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer/LevelPS_StartFromBlockN-1000_Take1000Blocks-12",
+            "runs": 63,
+            "nsPerOp": 28428656,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_10RewardRecords_1RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:55:57.072+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_10RewardRecords_10RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:55:57.147+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_10RewardRecords_100RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:55:57.212+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_10RewardRecords_1000RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:55:57.435+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_100RewardRecords_1RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:55:58.927+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_100RewardRecords_10RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:55:59.010+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_100RewardRecords_100RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:55:59.075+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_100RewardRecords_1000RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:55:59.307+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_1000RewardRecords_1RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:00.848+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_1000RewardRecords_10RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:00.918+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_1000RewardRecords_100RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:01.005+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/MemPS_1000RewardRecords_1000RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:01.167+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_10RewardRecords_1RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:02.545+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_10RewardRecords_10RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:02.642+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_10RewardRecords_100RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:02.796+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_10RewardRecords_1000RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:03.026+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_100RewardRecords_1RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:04.735+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_100RewardRecords_10RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:04.848+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_100RewardRecords_100RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:04.936+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_100RewardRecords_1000RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:05.131+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_1000RewardRecords_1RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:06.463+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_1000RewardRecords_10RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:06.514+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_1000RewardRecords_100RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:06.558+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/BoltPS_1000RewardRecords_1000RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:06.675+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_10RewardRecords_1RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:07.525+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_10RewardRecords_10RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:07.579+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_10RewardRecords_100RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:07.642+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_10RewardRecords_1000RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:07.753+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_100RewardRecords_1RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:08.553+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_100RewardRecords_10RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:08.594+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_100RewardRecords_100RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:08.634+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_100RewardRecords_1000RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:08.735+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_1000RewardRecords_1RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:09.489+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_1000RewardRecords_10RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:09.533+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_1000RewardRecords_100RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:09.587+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote/LevelPS_1000RewardRecords_1000RewardDistance",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "logger.go:130: 2023-10-25T22:56:09.710+0200\tINFO\tinitial gas supply is not set or wrong, setting default value\t{\"InitialGASSupply\": \"52000000\"}"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBlockchain_VerifyWitness",
+            "modificationCount": 4,
+            "createdOn": "2021-08-05",
+            "lastUpdateOn": "2022-03-11"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkBlockchain_ForEachNEP17Transfer",
+            "modificationCount": 1,
+            "createdOn": "2022-01-18",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkNEO_GetGASPerVote",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/core/dao",
+        "succeded": true,
+        "duration": "1.699s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStoreAsTransaction-12",
+            "runs": 704083,
+            "nsPerOp": 2364,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStoreAsTransaction",
+            "modificationCount": 20,
+            "createdOn": "2019-11-27",
+            "lastUpdateOn": "2023-09-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/core/fee",
+        "succeded": true,
+        "duration": "1.450s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOpcode1-12",
+            "runs": 747359187,
+            "nsPerOp": 1.703,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOpcode1",
+            "modificationCount": 1,
+            "createdOn": "2020-12-30",
+            "lastUpdateOn": "2020-12-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/core/interop/storage",
+        "succeded": true,
+        "duration": "634.908s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStorageFind/10Elements-12",
+            "runs": 256741,
+            "nsPerOp": 5051,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFind/100Elements-12",
+            "runs": 143575,
+            "nsPerOp": 17438,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFind/1000Elements-12",
+            "runs": 90924,
+            "nsPerOp": 30998,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFind/10000Elements-12",
+            "runs": 17175,
+            "nsPerOp": 119864,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/10Elements/Pick1-12",
+            "runs": 54523,
+            "nsPerOp": 23724,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/10Elements/PickHalf-12",
+            "runs": 27068,
+            "nsPerOp": 59377,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/10Elements/PickAll-12",
+            "runs": 18231,
+            "nsPerOp": 97403,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/100Elements/Pick1-12",
+            "runs": 21969,
+            "nsPerOp": 50931,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/100Elements/PickHalf-12",
+            "runs": 4072,
+            "nsPerOp": 447860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/100Elements/PickAll-12",
+            "runs": 1272,
+            "nsPerOp": 1027213,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/1000Elements/PickAll-12",
+            "runs": 72,
+            "nsPerOp": 19066876,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/1000Elements/Pick1-12",
+            "runs": 2521,
+            "nsPerOp": 410107,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/1000Elements/PickHalf-12",
+            "runs": 123,
+            "nsPerOp": 8232840,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/10000Elements/Pick1-12",
+            "runs": 100,
+            "nsPerOp": 11064264,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/10000Elements/PickHalf-12",
+            "runs": 16,
+            "nsPerOp": 75243754,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext/10000Elements/PickAll-12",
+            "runs": 13,
+            "nsPerOp": 117633466,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStorageFind",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFind",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFind",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFind",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkStorageFindIteratorNext",
+            "modificationCount": 1,
+            "createdOn": "2022-06-08",
+            "lastUpdateOn": "2022-06-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/core/mpt",
+        "succeded": true,
+        "duration": "7.022s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBytes/extension-12",
+            "runs": 1973290,
+            "nsPerOp": 758.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytes/leaf-12",
+            "runs": 2249818,
+            "nsPerOp": 550.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytes/hash-12",
+            "runs": 1687557,
+            "nsPerOp": 605.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytes/branch-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000773,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-08-06",
+            "lastUpdateOn": "2021-08-06"
+          },
+          {
+            "name": "BenchmarkBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-08-06",
+            "lastUpdateOn": "2021-08-06"
+          },
+          {
+            "name": "BenchmarkBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-08-06",
+            "lastUpdateOn": "2021-08-06"
+          },
+          {
+            "name": "BenchmarkBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-08-06",
+            "lastUpdateOn": "2021-08-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/core/state",
+        "succeded": true,
+        "duration": "12.641s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNEP17BalanceBytes/stackitem-12",
+            "runs": 1000000,
+            "nsPerOp": 1279,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNEP17BalanceBytes/bytes-12",
+            "runs": 6533841,
+            "nsPerOp": 171.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNEP17BalanceBytes/bytes,_prealloc-12",
+            "runs": 23448969,
+            "nsPerOp": 60.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNEP17BalanceFromBytes/stackitem-12",
+            "runs": 1000000,
+            "nsPerOp": 1335,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNEP17BalanceFromBytes/from_bytes-12",
+            "runs": 3116724,
+            "nsPerOp": 353.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppExecResult_EncodeBinary-12",
+            "runs": 1000000,
+            "nsPerOp": 1364,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTokenTransferLog_Append-12",
+            "runs": 15081,
+            "nsPerOp": 136771,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNEP17BalanceBytes",
+            "modificationCount": 2,
+            "createdOn": "2021-08-04",
+            "lastUpdateOn": "2021-08-04"
+          },
+          {
+            "name": "BenchmarkNEP17BalanceBytes",
+            "modificationCount": 2,
+            "createdOn": "2021-08-04",
+            "lastUpdateOn": "2021-08-04"
+          },
+          {
+            "name": "BenchmarkNEP17BalanceBytes",
+            "modificationCount": 2,
+            "createdOn": "2021-08-04",
+            "lastUpdateOn": "2021-08-04"
+          },
+          {
+            "name": "BenchmarkNEP17BalanceFromBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-08-04",
+            "lastUpdateOn": "2021-08-04"
+          },
+          {
+            "name": "BenchmarkNEP17BalanceFromBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-08-04",
+            "lastUpdateOn": "2021-08-04"
+          },
+          {
+            "name": "BenchmarkAppExecResult_EncodeBinary",
+            "modificationCount": 2,
+            "createdOn": "2021-08-06",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkTokenTransferLog_Append",
+            "modificationCount": 1,
+            "createdOn": "2021-11-16",
+            "lastUpdateOn": "2021-11-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/core/storage",
+        "succeded": true,
+        "duration": "227.459s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCachedSeek/MemPS_10TSItems_100PSItems-12",
+            "runs": 4849,
+            "nsPerOp": 344041,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/MemPS_100TSItems_100PSItems-12",
+            "runs": 5228,
+            "nsPerOp": 217123,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/MemPS_10TSItems_1000PSItems-12",
+            "runs": 252,
+            "nsPerOp": 5158572,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/MemPS_100TSItems_1000PSItems-12",
+            "runs": 270,
+            "nsPerOp": 4189957,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/MemPS_1000TSItems_1000PSItems-12",
+            "runs": 386,
+            "nsPerOp": 3210640,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/MemPS_10TSItems_10000PSItems-12",
+            "runs": 26,
+            "nsPerOp": 54521623,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/MemPS_100TSItems_10000PSItems-12",
+            "runs": 15,
+            "nsPerOp": 72554122,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/MemPS_1000TSItems_10000PSItems-12",
+            "runs": 36,
+            "nsPerOp": 59056333,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/MemPS_10000TSItems_10000PSItems-12",
+            "runs": 56,
+            "nsPerOp": 39908080,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/BoltPS_10TSItems_100PSItems-12",
+            "runs": 14402,
+            "nsPerOp": 108704,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/BoltPS_100TSItems_100PSItems-12",
+            "runs": 19404,
+            "nsPerOp": 69121,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/BoltPS_10TSItems_1000PSItems-12",
+            "runs": 2078,
+            "nsPerOp": 765622,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/BoltPS_100TSItems_1000PSItems-12",
+            "runs": 1780,
+            "nsPerOp": 635882,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/BoltPS_1000TSItems_1000PSItems-12",
+            "runs": 2499,
+            "nsPerOp": 464725,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/BoltPS_10TSItems_10000PSItems-12",
+            "runs": 164,
+            "nsPerOp": 7485496,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/BoltPS_100TSItems_10000PSItems-12",
+            "runs": 154,
+            "nsPerOp": 7255633,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/BoltPS_1000TSItems_10000PSItems-12",
+            "runs": 100,
+            "nsPerOp": 11103837,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/BoltPS_10000TSItems_10000PSItems-12",
+            "runs": 308,
+            "nsPerOp": 3422415,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/LevelPS_10TSItems_100PSItems-12",
+            "runs": 13819,
+            "nsPerOp": 83090,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/LevelPS_100TSItems_100PSItems-12",
+            "runs": 17354,
+            "nsPerOp": 76014,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/LevelPS_10TSItems_1000PSItems-12",
+            "runs": 1423,
+            "nsPerOp": 990451,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/LevelPS_100TSItems_1000PSItems-12",
+            "runs": 883,
+            "nsPerOp": 1197660,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/LevelPS_1000TSItems_1000PSItems-12",
+            "runs": 1365,
+            "nsPerOp": 819137,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/LevelPS_10TSItems_10000PSItems-12",
+            "runs": 100,
+            "nsPerOp": 12455193,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/LevelPS_100TSItems_10000PSItems-12",
+            "runs": 93,
+            "nsPerOp": 13112156,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/LevelPS_1000TSItems_10000PSItems-12",
+            "runs": 76,
+            "nsPerOp": 22040925,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCachedSeek/LevelPS_10000TSItems_10000PSItems-12",
+            "runs": 127,
+            "nsPerOp": 11104537,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemorySeek/10Elements-12",
+            "runs": 136572,
+            "nsPerOp": 9148,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemorySeek/100Elements-12",
+            "runs": 10000,
+            "nsPerOp": 118436,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemorySeek/1000Elements-12",
+            "runs": 874,
+            "nsPerOp": 2141973,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemorySeek/10000Elements-12",
+            "runs": 27,
+            "nsPerOp": 44859492,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkCachedSeek",
+            "modificationCount": 2,
+            "createdOn": "2019-10-16",
+            "lastUpdateOn": "2021-10-05"
+          },
+          {
+            "name": "BenchmarkMemorySeek",
+            "modificationCount": 5,
+            "createdOn": "2021-10-05",
+            "lastUpdateOn": "2022-02-16"
+          },
+          {
+            "name": "BenchmarkMemorySeek",
+            "modificationCount": 5,
+            "createdOn": "2021-10-05",
+            "lastUpdateOn": "2022-02-16"
+          },
+          {
+            "name": "BenchmarkMemorySeek",
+            "modificationCount": 5,
+            "createdOn": "2021-10-05",
+            "lastUpdateOn": "2022-02-16"
+          },
+          {
+            "name": "BenchmarkMemorySeek",
+            "modificationCount": 5,
+            "createdOn": "2021-10-05",
+            "lastUpdateOn": "2022-02-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/core/transaction",
+        "succeded": true,
+        "duration": "10.713s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecodeBinary-12",
+            "runs": 271944,
+            "nsPerOp": 10113,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeJSON-12",
+            "runs": 10000,
+            "nsPerOp": 110429,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeFromBytes-12",
+            "runs": 216490,
+            "nsPerOp": 6582,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTransaction_Bytes-12",
+            "runs": 503436,
+            "nsPerOp": 3122,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetVarSize-12",
+            "runs": 2531504,
+            "nsPerOp": 416.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTxHash-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5877,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecodeBinary",
+            "modificationCount": 1,
+            "createdOn": "2021-08-04",
+            "lastUpdateOn": "2021-08-04"
+          },
+          {
+            "name": "BenchmarkDecodeJSON",
+            "modificationCount": 1,
+            "createdOn": "2021-08-04",
+            "lastUpdateOn": "2021-08-04"
+          },
+          {
+            "name": "BenchmarkDecodeFromBytes",
+            "modificationCount": 2,
+            "createdOn": "2021-08-04",
+            "lastUpdateOn": "2021-08-06"
+          },
+          {
+            "name": "BenchmarkTransaction_Bytes",
+            "modificationCount": 2,
+            "createdOn": "2021-08-06",
+            "lastUpdateOn": "2021-08-06"
+          },
+          {
+            "name": "BenchmarkGetVarSize",
+            "modificationCount": 1,
+            "createdOn": "2021-08-06",
+            "lastUpdateOn": "2021-08-06"
+          },
+          {
+            "name": "BenchmarkTxHash",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/crypto/hash",
+        "succeded": true,
+        "duration": "3.721s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMerkle/NewMerkleTree-12",
+            "runs": 12,
+            "nsPerOp": 103959234,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMerkle/CalcMerkleRoot-12",
+            "runs": 34,
+            "nsPerOp": 36331056,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMerkle",
+            "modificationCount": 1,
+            "createdOn": "2020-09-15",
+            "lastUpdateOn": "2020-09-15"
+          },
+          {
+            "name": "BenchmarkMerkle",
+            "modificationCount": 1,
+            "createdOn": "2020-09-15",
+            "lastUpdateOn": "2020-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/crypto/keys",
+        "succeded": true,
+        "duration": "8.473s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPublicEqual-12",
+            "runs": 43860546,
+            "nsPerOp": 26.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPublicBytes-12",
+            "runs": 1235863,
+            "nsPerOp": 1295,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPublicUncompressedBytes-12",
+            "runs": 984836,
+            "nsPerOp": 2035,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPublicDecodeBytes-12",
+            "runs": 7299,
+            "nsPerOp": 253541,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPublicEqual",
+            "modificationCount": 2,
+            "createdOn": "2021-08-25",
+            "lastUpdateOn": "2021-08-25"
+          },
+          {
+            "name": "BenchmarkPublicBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-08-25",
+            "lastUpdateOn": "2021-08-25"
+          },
+          {
+            "name": "BenchmarkPublicUncompressedBytes",
+            "modificationCount": 2,
+            "createdOn": "2021-08-25",
+            "lastUpdateOn": "2021-08-25"
+          },
+          {
+            "name": "BenchmarkPublicDecodeBytes",
+            "modificationCount": 2,
+            "createdOn": "2021-08-25",
+            "lastUpdateOn": "2023-10-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/encoding/bigint",
+        "succeded": true,
+        "duration": "1.683s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkToPreallocatedBytes-12",
+            "runs": 7174680,
+            "nsPerOp": 179.2,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkToPreallocatedBytes",
+            "modificationCount": 2,
+            "createdOn": "2022-05-31",
+            "lastUpdateOn": "2023-01-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/network",
+        "succeded": true,
+        "duration": "3.749s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMessageBytes-12",
+            "runs": 319866,
+            "nsPerOp": 6017,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMessageBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-08-06",
+            "lastUpdateOn": "2021-08-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/services/rpcsrv",
+        "succeded": true,
+        "duration": "14.398s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHandleIn/no_extra_params-12",
+            "runs": 32391,
+            "nsPerOp": 34691,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandleIn/with_extra_params-12",
+            "runs": 14365,
+            "nsPerOp": 82631,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHandleIn",
+            "modificationCount": 11,
+            "createdOn": "2021-10-20",
+            "lastUpdateOn": "2023-04-13"
+          },
+          {
+            "name": "BenchmarkHandleIn",
+            "modificationCount": 11,
+            "createdOn": "2021-10-20",
+            "lastUpdateOn": "2023-04-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/services/rpcsrv/params",
+        "succeded": true,
+        "duration": "23.994s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUnmarshal/single/unmarshal-12",
+            "runs": 124483,
+            "nsPerOp": 13034,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/single/decode_data-12",
+            "runs": 52268,
+            "nsPerOp": 32204,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2021-10-20",
+            "lastUpdateOn": "2021-10-20"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2021-10-20",
+            "lastUpdateOn": "2021-10-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/util",
+        "succeded": true,
+        "duration": "5.128s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUint256MarshalJSON-12",
+            "runs": 4144557,
+            "nsPerOp": 306.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint256DecodeStringLE-12",
+            "runs": 4670022,
+            "nsPerOp": 265.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUint256MarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2022-06-01",
+            "lastUpdateOn": "2022-06-01"
+          },
+          {
+            "name": "BenchmarkUint256DecodeStringLE",
+            "modificationCount": 1,
+            "createdOn": "2021-08-17",
+            "lastUpdateOn": "2021-08-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/vm",
+        "succeded": false,
+        "duration": "660.016s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkScriptFibonacci-12",
+            "runs": 1333,
+            "nsPerOp": 950353,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScriptNestedRefCount-12",
+            "runs": 862,
+            "nsPerOp": 1293971,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScriptPushPop/4-12",
+            "runs": 256351,
+            "nsPerOp": 4926,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScriptPushPop/16-12",
+            "runs": 181672,
+            "nsPerOp": 7308,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScriptPushPop/128-12",
+            "runs": 36692,
+            "nsPerOp": 33914,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScriptPushPop/1024-12",
+            "runs": 3307,
+            "nsPerOp": 303258,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsSignatureContract-12",
+            "runs": 980602322,
+            "nsPerOp": 1.504,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/NOP-12",
+            "runs": 327206,
+            "nsPerOp": 3843,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/PUSHINT8/00-12",
+            "runs": 264954,
+            "nsPerOp": 5102,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/PUSHINT8/FF-12",
+            "runs": 293065,
+            "nsPerOp": 5723,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/PUSHINT16/0000-12",
+            "runs": 376318,
+            "nsPerOp": 3334,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/PUSHINT16/FFFF-12",
+            "runs": 437653,
+            "nsPerOp": 3401,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/PUSHINT32/0000...-12",
+            "runs": 403101,
+            "nsPerOp": 3163,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/PUSHINT32/FFFF...-12",
+            "runs": 389191,
+            "nsPerOp": 2959,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/PUSHINT64/0000...-12",
+            "runs": 423410,
+            "nsPerOp": 2678,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/PUSHINT64/FFFF...-12",
+            "runs": 378303,
+            "nsPerOp": 4852,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpcodes/PUSHINT128/0000...-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "SIGQUIT:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkScriptFibonacci",
+            "modificationCount": 1,
+            "createdOn": "2021-08-21",
+            "lastUpdateOn": "2021-08-21"
+          },
+          {
+            "name": "BenchmarkScriptNestedRefCount",
+            "modificationCount": 1,
+            "createdOn": "2021-08-21",
+            "lastUpdateOn": "2021-08-21"
+          },
+          {
+            "name": "BenchmarkScriptPushPop",
+            "modificationCount": 2,
+            "createdOn": "2021-08-21",
+            "lastUpdateOn": "2022-06-07"
+          },
+          {
+            "name": "BenchmarkScriptPushPop",
+            "modificationCount": 2,
+            "createdOn": "2021-08-21",
+            "lastUpdateOn": "2022-06-07"
+          },
+          {
+            "name": "BenchmarkScriptPushPop",
+            "modificationCount": 2,
+            "createdOn": "2021-08-21",
+            "lastUpdateOn": "2022-06-07"
+          },
+          {
+            "name": "BenchmarkScriptPushPop",
+            "modificationCount": 2,
+            "createdOn": "2021-08-21",
+            "lastUpdateOn": "2022-06-07"
+          },
+          {
+            "name": "BenchmarkIsSignatureContract",
+            "modificationCount": 1,
+            "createdOn": "2022-06-07",
+            "lastUpdateOn": "2022-06-07"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          },
+          {
+            "name": "BenchmarkOpcodes",
+            "modificationCount": 3,
+            "createdOn": "2020-10-15",
+            "lastUpdateOn": "2023-04-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/vm/opcode",
+        "succeded": true,
+        "duration": "1.394s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIsValid-12",
+            "runs": 572514079,
+            "nsPerOp": 1.932,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIsValid",
+            "modificationCount": 1,
+            "createdOn": "2021-08-02",
+            "lastUpdateOn": "2021-08-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nspcc-dev/neo-go/pkg/vm/stackitem",
+        "succeded": true,
+        "duration": "6.024s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkToJSON-12",
+            "runs": 2761,
+            "nsPerOp": 480203,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeBinary-12",
+            "runs": 4195,
+            "nsPerOp": 576424,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerializeSimple-12",
+            "runs": 541257,
+            "nsPerOp": 2034,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkToJSON",
+            "modificationCount": 2,
+            "createdOn": "2020-07-29",
+            "lastUpdateOn": "2021-07-09"
+          },
+          {
+            "name": "BenchmarkEncodeBinary",
+            "modificationCount": 2,
+            "createdOn": "2021-07-09",
+            "lastUpdateOn": "2021-08-20"
+          },
+          {
+            "name": "BenchmarkSerializeSimple",
+            "modificationCount": 1,
+            "createdOn": "2021-08-20",
+            "lastUpdateOn": "2021-08-20"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "nspcc-dev/neo-go",
+    "name": "neo-go",
+    "private": false,
+    "html_url": "https://github.com/nspcc-dev/neo-go",
+    "description": "Go Node and SDK for the NEO blockchain",
+    "fork": false,
+    "created_at": "2018-01-31T12:02:17Z",
+    "updated_at": "2023-10-18T14:19:29Z",
+    "pushed_at": "2023-10-20T19:49:46Z",
+    "ssh_url": "git@github.com:nspcc-dev/neo-go.git",
+    "stargazers_count": 115,
+    "watchers_count": 115,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 71,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 121,
+    "topics": [
+      "blockchain",
+      "go",
+      "golang",
+      "neo",
+      "smartcontracts"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 830,
+    "Lines": 158982,
+    "Blank": 15763,
+    "Code": 131354,
+    "Comment": 11865,
+    "Bytes": 4929642,
+    "Complexity": 16088
+  }
+}

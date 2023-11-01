@@ -1,0 +1,237 @@
+{
+  "Name": "aws/aws-xray-sdk-go",
+  "Path": "./repositories/aws__aws-xray-sdk-go",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T08:46:34Z",
+    "benchmarkCount": 11,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 9,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/aws/aws-xray-sdk-go/daemoncfg",
+        "succeded": true,
+        "duration": "4.152s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetDaemonEndpoints-12",
+            "runs": 2966196,
+            "nsPerOp": 410.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetDaemonEndpointsFromEnv_DoubleParse-12",
+            "runs": 521374,
+            "nsPerOp": 2770,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetDaemonEndpointsFromEnv_SingleParse-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000202,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetDaemonEndpointsFromString-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "2023-10-26T10:47:19+02:00"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetDaemonEndpoints",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          },
+          {
+            "name": "BenchmarkGetDaemonEndpointsFromEnv_DoubleParse",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          },
+          {
+            "name": "BenchmarkGetDaemonEndpointsFromEnv_SingleParse",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          },
+          {
+            "name": "BenchmarkGetDaemonEndpointsFromString",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aws/aws-xray-sdk-go/header",
+        "succeded": true,
+        "duration": "1.201s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromString-12",
+            "runs": 986978,
+            "nsPerOp": 1177,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromString",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aws/aws-xray-sdk-go/strategy/sampling",
+        "succeded": true,
+        "duration": "10.228s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCentralizedManifest_putRule-12",
+            "runs": 1116038,
+            "nsPerOp": 919.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCentralizedStrategy_ShouldTrace-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "2023-10-26T10:47:22+02:00"
+          },
+          {
+            "name": "BenchmarkNewCentralizedStrategy_refreshManifest-12",
+            "runs": 1718372,
+            "nsPerOp": 690.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCentralizedStrategy_refreshTargets-12",
+            "runs": 1817080,
+            "nsPerOp": 641.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCentralizedRule_Sample-12",
+            "runs": 5791981,
+            "nsPerOp": 524.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewLocalizedStrategyFromJSONBytes-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000147,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCentralizedManifest_putRule",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          },
+          {
+            "name": "BenchmarkCentralizedStrategy_ShouldTrace",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          },
+          {
+            "name": "BenchmarkNewCentralizedStrategy_refreshManifest",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          },
+          {
+            "name": "BenchmarkCentralizedStrategy_refreshTargets",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          },
+          {
+            "name": "BenchmarkCentralizedRule_Sample",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          },
+          {
+            "name": "BenchmarkNewLocalizedStrategyFromJSONBytes",
+            "modificationCount": 1,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-05"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "aws/aws-xray-sdk-go",
+    "name": "aws-xray-sdk-go",
+    "private": false,
+    "html_url": "https://github.com/aws/aws-xray-sdk-go",
+    "description": "AWS X-Ray SDK for the Go programming language.",
+    "fork": false,
+    "created_at": "2017-07-19T19:24:10Z",
+    "updated_at": "2023-10-22T17:16:50Z",
+    "pushed_at": "2023-10-19T22:21:16Z",
+    "ssh_url": "git@github.com:aws/aws-xray-sdk-go.git",
+    "stargazers_count": 269,
+    "watchers_count": 269,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 120,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 46,
+    "topics": [
+      "aws",
+      "aws-xray",
+      "go"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 84,
+    "Lines": 17053,
+    "Blank": 2507,
+    "Code": 12914,
+    "Comment": 1632,
+    "Bytes": 463305,
+    "Complexity": 1882
+  }
+}

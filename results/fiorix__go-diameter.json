@@ -1,0 +1,544 @@
+{
+  "Name": "fiorix/go-diameter",
+  "Path": "./repositories/fiorix__go-diameter",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T06:56:33Z",
+    "benchmarkCount": 35,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 35,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/fiorix/go-diameter/v4/diam",
+        "succeded": true,
+        "duration": "15.520s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecodeAVP-12",
+            "runs": 1733742,
+            "nsPerOp": 649.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAVP-12",
+            "runs": 4634930,
+            "nsPerOp": 243.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeHeader-12",
+            "runs": 160346322,
+            "nsPerOp": 7.221,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeHeader-12",
+            "runs": 16864029,
+            "nsPerOp": 152,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadMessage-12",
+            "runs": 199386,
+            "nsPerOp": 9578,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteMessage-12",
+            "runs": 460015,
+            "nsPerOp": 2894,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal-12",
+            "runs": 156342,
+            "nsPerOp": 14161,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint24to32-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5782,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint32to24-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7542,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecodeAVP",
+            "modificationCount": 5,
+            "createdOn": "2014-04-18",
+            "lastUpdateOn": "2014-09-02"
+          },
+          {
+            "name": "BenchmarkEncodeAVP",
+            "modificationCount": 7,
+            "createdOn": "2014-04-18",
+            "lastUpdateOn": "2015-02-11"
+          },
+          {
+            "name": "BenchmarkDecodeHeader",
+            "modificationCount": 2,
+            "createdOn": "2014-04-18",
+            "lastUpdateOn": "2014-08-22"
+          },
+          {
+            "name": "BenchmarkEncodeHeader",
+            "modificationCount": 3,
+            "createdOn": "2014-04-18",
+            "lastUpdateOn": "2015-02-11"
+          },
+          {
+            "name": "BenchmarkReadMessage",
+            "modificationCount": 4,
+            "createdOn": "2014-04-17",
+            "lastUpdateOn": "2014-08-22"
+          },
+          {
+            "name": "BenchmarkWriteMessage",
+            "modificationCount": 4,
+            "createdOn": "2014-04-17",
+            "lastUpdateOn": "2014-08-22"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 5,
+            "createdOn": "2014-05-11",
+            "lastUpdateOn": "2015-02-11"
+          },
+          {
+            "name": "BenchmarkUint24to32",
+            "modificationCount": 2,
+            "createdOn": "2014-08-22",
+            "lastUpdateOn": "2015-02-11"
+          },
+          {
+            "name": "BenchmarkUint32to24",
+            "modificationCount": 2,
+            "createdOn": "2014-08-22",
+            "lastUpdateOn": "2015-02-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/fiorix/go-diameter/v4/diam/datatype",
+        "succeded": true,
+        "duration": "29.383s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAddressIPv4-12",
+            "runs": 18407977,
+            "nsPerOp": 72.85,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeAddressIPv4-12",
+            "runs": 21566192,
+            "nsPerOp": 59.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddressIPv6-12",
+            "runs": 27308840,
+            "nsPerOp": 48.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeAddressIPv6-12",
+            "runs": 20328474,
+            "nsPerOp": 52.33,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFloat32-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6931,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeFloat32-12",
+            "runs": 918586761,
+            "nsPerOp": 1.273,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFloat64-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5794,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeFloat64-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5847,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInteger32-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5839,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeInteger32-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInteger64-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6118,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeInteger64-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.143,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOctetString-12",
+            "runs": 160799995,
+            "nsPerOp": 10.49,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeOctetString-12",
+            "runs": 93941673,
+            "nsPerOp": 13.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTime-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5811,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeTime-12",
+            "runs": 7017994,
+            "nsPerOp": 204.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnsigned32-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7184,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeUnsigned32-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6759,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnsigned64-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6903,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeUnsigned64-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.053,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUTF8String-12",
+            "runs": 100000000,
+            "nsPerOp": 11.45,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeUTF8String-12",
+            "runs": 100000000,
+            "nsPerOp": 13.57,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAddressIPv4",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkDecodeAddressIPv4",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkAddressIPv6",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkDecodeAddressIPv6",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkFloat32",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkDecodeFloat32",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkFloat64",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkDecodeFloat64",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkInteger32",
+            "modificationCount": 2,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-17"
+          },
+          {
+            "name": "BenchmarkDecodeInteger32",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkInteger64",
+            "modificationCount": 2,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-17"
+          },
+          {
+            "name": "BenchmarkDecodeInteger64",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkOctetString",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkDecodeOctetString",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkTime",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkDecodeTime",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkUnsigned32",
+            "modificationCount": 2,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-17"
+          },
+          {
+            "name": "BenchmarkDecodeUnsigned32",
+            "modificationCount": 1,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-16"
+          },
+          {
+            "name": "BenchmarkUnsigned64",
+            "modificationCount": 2,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-17"
+          },
+          {
+            "name": "BenchmarkDecodeUnsigned64",
+            "modificationCount": 2,
+            "createdOn": "2014-04-16",
+            "lastUpdateOn": "2014-04-17"
+          },
+          {
+            "name": "BenchmarkUTF8String",
+            "modificationCount": 1,
+            "createdOn": "2015-02-11",
+            "lastUpdateOn": "2015-02-11"
+          },
+          {
+            "name": "BenchmarkDecodeUTF8String",
+            "modificationCount": 1,
+            "createdOn": "2015-02-11",
+            "lastUpdateOn": "2015-02-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/fiorix/go-diameter/v4/diam/dict",
+        "succeded": true,
+        "duration": "10.069s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFindAVPName-12",
+            "runs": 17647582,
+            "nsPerOp": 60.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindAVPCode-12",
+            "runs": 24441160,
+            "nsPerOp": 47.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScanAVPName-12",
+            "runs": 136196,
+            "nsPerOp": 10205,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScanAVPCode-12",
+            "runs": 144280,
+            "nsPerOp": 10548,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFindAVPName",
+            "modificationCount": 1,
+            "createdOn": "2014-04-18",
+            "lastUpdateOn": "2014-04-18"
+          },
+          {
+            "name": "BenchmarkFindAVPCode",
+            "modificationCount": 1,
+            "createdOn": "2014-04-18",
+            "lastUpdateOn": "2014-04-18"
+          },
+          {
+            "name": "BenchmarkScanAVPName",
+            "modificationCount": 1,
+            "createdOn": "2014-04-18",
+            "lastUpdateOn": "2014-04-18"
+          },
+          {
+            "name": "BenchmarkScanAVPCode",
+            "modificationCount": 1,
+            "createdOn": "2014-04-18",
+            "lastUpdateOn": "2014-04-18"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "fiorix/go-diameter",
+    "name": "go-diameter",
+    "private": false,
+    "html_url": "https://github.com/fiorix/go-diameter",
+    "description": "Diameter stack and Base Protocol (RFC 6733) for the Go programming language",
+    "fork": false,
+    "created_at": "2013-08-18T07:08:41Z",
+    "updated_at": "2023-09-28T10:22:38Z",
+    "pushed_at": "2023-07-03T13:04:02Z",
+    "ssh_url": "git@github.com:fiorix/go-diameter.git",
+    "stargazers_count": 228,
+    "watchers_count": 228,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 128,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 32,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 138,
+    "Lines": 25336,
+    "Blank": 1633,
+    "Code": 21890,
+    "Comment": 1813,
+    "Bytes": 898363,
+    "Complexity": 2491
+  }
+}

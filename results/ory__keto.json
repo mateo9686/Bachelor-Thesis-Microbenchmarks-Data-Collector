@@ -1,0 +1,184 @@
+{
+  "Name": "ory/keto",
+  "Path": "./repositories/ory__keto",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T23:08:41Z",
+    "benchmarkCount": 7,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 4,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/ory/keto/internal/check",
+        "succeded": false,
+        "duration": "0.291s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCheckEngine",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "dsn_nosqlite.go:13: use `-tags sqlite` to enable sqlite"
+          },
+          {
+            "name": "BenchmarkComputedUsersets",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "dsn_nosqlite.go:13: use `-tags sqlite` to enable sqlite"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCheckEngine",
+            "modificationCount": 2,
+            "createdOn": "2022-08-19",
+            "lastUpdateOn": "2023-01-17"
+          },
+          {
+            "name": "BenchmarkComputedUsersets",
+            "modificationCount": 1,
+            "createdOn": "2023-01-17",
+            "lastUpdateOn": "2023-01-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ory/keto/internal/driver",
+        "succeded": true,
+        "duration": "9.791s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCertificateGeneration/P256-12",
+            "runs": 1641,
+            "nsPerOp": 1053268,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCertificateGeneration/P224-12",
+            "runs": 518,
+            "nsPerOp": 3656271,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCertificateGeneration/P384-12",
+            "runs": 238,
+            "nsPerOp": 9840428,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCertificateGeneration/P521-12",
+            "runs": 103,
+            "nsPerOp": 14739282,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCertificateGeneration",
+            "modificationCount": 1,
+            "createdOn": "2022-08-25",
+            "lastUpdateOn": "2022-08-25"
+          },
+          {
+            "name": "BenchmarkCertificateGeneration",
+            "modificationCount": 1,
+            "createdOn": "2022-08-25",
+            "lastUpdateOn": "2022-08-25"
+          },
+          {
+            "name": "BenchmarkCertificateGeneration",
+            "modificationCount": 1,
+            "createdOn": "2022-08-25",
+            "lastUpdateOn": "2022-08-25"
+          },
+          {
+            "name": "BenchmarkCertificateGeneration",
+            "modificationCount": 1,
+            "createdOn": "2022-08-25",
+            "lastUpdateOn": "2022-08-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ory/keto/internal/relationtuple",
+        "succeded": false,
+        "duration": "0.328s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadOnlyMapper",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "dsn_nosqlite.go:13: use `-tags sqlite` to enable sqlite"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadOnlyMapper",
+            "modificationCount": 1,
+            "createdOn": "2023-02-01",
+            "lastUpdateOn": "2023-02-01"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "ory/keto",
+    "name": "keto",
+    "private": false,
+    "html_url": "https://github.com/ory/keto",
+    "description": "Open Source (Go) implementation of \"Zanzibar: Google's Consistent, Global Authorization System\". Ships gRPC, REST APIs, newSQL, and an easy and granular permission language. Supports ACL, RBAC, and other access models.",
+    "fork": false,
+    "created_at": "2018-03-17T10:40:15Z",
+    "updated_at": "2023-10-23T07:35:20Z",
+    "pushed_at": "2023-10-23T16:33:48Z",
+    "ssh_url": "git@github.com:ory/keto.git",
+    "homepage": "https://www.ory.sh/?utm_source=github\u0026utm_medium=banner\u0026utm_campaign=keto",
+    "stargazers_count": 4277,
+    "watchers_count": 4277,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 311,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 54,
+    "topics": [
+      "hacktoberfest"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 196,
+    "Lines": 28984,
+    "Blank": 4279,
+    "Code": 22155,
+    "Comment": 2550,
+    "Bytes": 773383,
+    "Complexity": 3266
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "Name": "geektutu/high-performance-go",
+  "Path": "./repositories/geektutu__high-performance-go",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T21:50:00Z",
+    "benchmarkCount": 29,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 29,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "example/hpg-range",
+        "succeded": true,
+        "duration": "14.042s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkForIntSlice-12",
+            "runs": 896,
+            "nsPerOp": 1546784,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRangeIntSlice-12",
+            "runs": 272,
+            "nsPerOp": 3867640,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForStruct-12",
+            "runs": 424962,
+            "nsPerOp": 3121,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRangeIndexStruct-12",
+            "runs": 997346,
+            "nsPerOp": 1769,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRangeStruct-12",
+            "runs": 985,
+            "nsPerOp": 1201856,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForPointer-12",
+            "runs": 520005,
+            "nsPerOp": 3634,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRangePointer-12",
+            "runs": 476530,
+            "nsPerOp": 2102,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkForIntSlice",
+            "modificationCount": 1,
+            "createdOn": "2020-12-03",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkRangeIntSlice",
+            "modificationCount": 1,
+            "createdOn": "2020-12-03",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkForStruct",
+            "modificationCount": 2,
+            "createdOn": "2020-12-03",
+            "lastUpdateOn": "2020-12-15"
+          },
+          {
+            "name": "BenchmarkRangeIndexStruct",
+            "modificationCount": 2,
+            "createdOn": "2020-12-03",
+            "lastUpdateOn": "2020-12-15"
+          },
+          {
+            "name": "BenchmarkRangeStruct",
+            "modificationCount": 1,
+            "createdOn": "2020-12-03",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkForPointer",
+            "modificationCount": 2,
+            "createdOn": "2020-12-03",
+            "lastUpdateOn": "2020-12-15"
+          },
+          {
+            "name": "BenchmarkRangePointer",
+            "modificationCount": 2,
+            "createdOn": "2020-12-02",
+            "lastUpdateOn": "2020-12-03"
+          }
+        ]
+      },
+      {
+        "pkg": "example/hpg-reflect",
+        "succeded": true,
+        "duration": "10.938s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNew-12",
+            "runs": 6824367,
+            "nsPerOp": 213.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReflectNew-12",
+            "runs": 5847705,
+            "nsPerOp": 218.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSet-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6855,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReflect_FieldSet-12",
+            "runs": 35487391,
+            "nsPerOp": 42.68,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReflect_FieldByNameSet-12",
+            "runs": 1661215,
+            "nsPerOp": 864.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReflect_FieldByNameCacheSet-12",
+            "runs": 8007020,
+            "nsPerOp": 158.8,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNew",
+            "modificationCount": 1,
+            "createdOn": "2020-12-06",
+            "lastUpdateOn": "2020-12-06"
+          },
+          {
+            "name": "BenchmarkReflectNew",
+            "modificationCount": 1,
+            "createdOn": "2020-12-06",
+            "lastUpdateOn": "2020-12-06"
+          },
+          {
+            "name": "BenchmarkSet",
+            "modificationCount": 1,
+            "createdOn": "2020-12-06",
+            "lastUpdateOn": "2020-12-06"
+          },
+          {
+            "name": "BenchmarkReflect_FieldSet",
+            "modificationCount": 1,
+            "createdOn": "2020-12-06",
+            "lastUpdateOn": "2020-12-06"
+          },
+          {
+            "name": "BenchmarkReflect_FieldByNameSet",
+            "modificationCount": 1,
+            "createdOn": "2020-12-06",
+            "lastUpdateOn": "2020-12-06"
+          },
+          {
+            "name": "BenchmarkReflect_FieldByNameCacheSet",
+            "modificationCount": 1,
+            "createdOn": "2020-12-06",
+            "lastUpdateOn": "2020-12-06"
+          }
+        ]
+      },
+      {
+        "pkg": "example/hpg-string-concat",
+        "succeded": true,
+        "duration": "13.338s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPlusConcat-12",
+            "runs": 2,
+            "nsPerOp": 595861394,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSprintfConcat-12",
+            "runs": 2,
+            "nsPerOp": 1086100957,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuilderConcat-12",
+            "runs": 1978,
+            "nsPerOp": 954259,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBufferConcat-12",
+            "runs": 3444,
+            "nsPerOp": 576746,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkByteConcat-12",
+            "runs": 1380,
+            "nsPerOp": 727936,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPreByteConcat-12",
+            "runs": 3214,
+            "nsPerOp": 495359,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPlusConcat",
+            "modificationCount": 1,
+            "createdOn": "2020-11-24",
+            "lastUpdateOn": "2020-11-24"
+          },
+          {
+            "name": "BenchmarkSprintfConcat",
+            "modificationCount": 1,
+            "createdOn": "2020-11-24",
+            "lastUpdateOn": "2020-11-24"
+          },
+          {
+            "name": "BenchmarkBuilderConcat",
+            "modificationCount": 1,
+            "createdOn": "2020-11-24",
+            "lastUpdateOn": "2020-11-24"
+          },
+          {
+            "name": "BenchmarkBufferConcat",
+            "modificationCount": 1,
+            "createdOn": "2020-11-24",
+            "lastUpdateOn": "2020-11-24"
+          },
+          {
+            "name": "BenchmarkByteConcat",
+            "modificationCount": 1,
+            "createdOn": "2020-11-24",
+            "lastUpdateOn": "2020-11-24"
+          },
+          {
+            "name": "BenchmarkPreByteConcat",
+            "modificationCount": 1,
+            "createdOn": "2020-11-24",
+            "lastUpdateOn": "2020-11-24"
+          }
+        ]
+      },
+      {
+        "pkg": "example/hpg-mutex",
+        "succeded": true,
+        "duration": "9.449s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadMore-12",
+            "runs": 100,
+            "nsPerOp": 12052556,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadMoreRW-12",
+            "runs": 144,
+            "nsPerOp": 7628864,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteMore-12",
+            "runs": 100,
+            "nsPerOp": 12225663,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteMoreRW-12",
+            "runs": 100,
+            "nsPerOp": 10823668,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqual-12",
+            "runs": 100,
+            "nsPerOp": 15020499,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualRW-12",
+            "runs": 120,
+            "nsPerOp": 9909598,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadMore",
+            "modificationCount": 1,
+            "createdOn": "2020-12-10",
+            "lastUpdateOn": "2020-12-10"
+          },
+          {
+            "name": "BenchmarkReadMoreRW",
+            "modificationCount": 1,
+            "createdOn": "2020-12-10",
+            "lastUpdateOn": "2020-12-10"
+          },
+          {
+            "name": "BenchmarkWriteMore",
+            "modificationCount": 1,
+            "createdOn": "2020-12-10",
+            "lastUpdateOn": "2020-12-10"
+          },
+          {
+            "name": "BenchmarkWriteMoreRW",
+            "modificationCount": 1,
+            "createdOn": "2020-12-10",
+            "lastUpdateOn": "2020-12-10"
+          },
+          {
+            "name": "BenchmarkEqual",
+            "modificationCount": 1,
+            "createdOn": "2020-12-10",
+            "lastUpdateOn": "2020-12-10"
+          },
+          {
+            "name": "BenchmarkEqualRW",
+            "modificationCount": 1,
+            "createdOn": "2020-12-10",
+            "lastUpdateOn": "2020-12-10"
+          }
+        ]
+      },
+      {
+        "pkg": "example/hpg-sync-pool",
+        "succeded": true,
+        "duration": "8.861s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBufferWithPool-12",
+            "runs": 2677765,
+            "nsPerOp": 829.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuffer-12",
+            "runs": 91593,
+            "nsPerOp": 15038,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal-12",
+            "runs": 583,
+            "nsPerOp": 3228687,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalWithPool-12",
+            "runs": 726,
+            "nsPerOp": 1587754,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBufferWithPool",
+            "modificationCount": 1,
+            "createdOn": "2021-01-01",
+            "lastUpdateOn": "2021-01-01"
+          },
+          {
+            "name": "BenchmarkBuffer",
+            "modificationCount": 1,
+            "createdOn": "2020-11-24",
+            "lastUpdateOn": "2020-11-24"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2021-01-01",
+            "lastUpdateOn": "2021-01-01"
+          },
+          {
+            "name": "BenchmarkUnmarshalWithPool",
+            "modificationCount": 1,
+            "createdOn": "2021-01-01",
+            "lastUpdateOn": "2021-01-01"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "geektutu/high-performance-go",
+    "name": "high-performance-go",
+    "private": false,
+    "html_url": "https://github.com/geektutu/high-performance-go",
+    "description": "high performance coding with golang（Go 语言高性能编程，Go 语言陷阱，Gotchas，Traps）",
+    "fork": false,
+    "created_at": "2020-11-22T15:00:37Z",
+    "updated_at": "2023-10-23T14:17:43Z",
+    "pushed_at": "2022-11-03T07:29:09Z",
+    "ssh_url": "git@github.com:geektutu/high-performance-go.git",
+    "homepage": "https://geektutu.com/post/high-performance-go.html",
+    "stargazers_count": 3585,
+    "watchers_count": 3585,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 435,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 2,
+    "topics": [
+      "effective-golang",
+      "go",
+      "golang",
+      "high-performance"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 40,
+    "Lines": 1370,
+    "Blank": 200,
+    "Code": 1143,
+    "Comment": 27,
+    "Bytes": 22584,
+    "Complexity": 106
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "Name": "jackc/pgconn",
+  "Path": "./repositories/jackc__pgconn",
+  "GoVersion": "1.12",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T02:22:05Z",
+    "benchmarkCount": 23,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 17,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/jackc/pgconn",
+        "succeded": false,
+        "duration": "18.744s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkExec/background_context",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:58:"
+          },
+          {
+            "name": "BenchmarkExec/empty_context",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:58:"
+          },
+          {
+            "name": "BenchmarkExecPossibleToCancel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:102:"
+          },
+          {
+            "name": "BenchmarkExecPrepared/background_context",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:164:"
+          },
+          {
+            "name": "BenchmarkExecPrepared/empty_context",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:164:"
+          },
+          {
+            "name": "BenchmarkExecPreparedPossibleToCancel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:202:"
+          },
+          {
+            "name": "BenchmarkCommandTagRowsAffected/UPDATE_1-12",
+            "runs": 152760453,
+            "nsPerOp": 8.277,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagRowsAffected/UPDATE_123456789-12",
+            "runs": 43281603,
+            "nsPerOp": 34.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagRowsAffected/INSERT_0_1-12",
+            "runs": 152098693,
+            "nsPerOp": 8.337,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagRowsAffected/INSERT_0_123456789-12",
+            "runs": 28541336,
+            "nsPerOp": 36.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagTypeFromString-12",
+            "runs": 79772811,
+            "nsPerOp": 17.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagInsert/INSERT_1-12",
+            "runs": 395205360,
+            "nsPerOp": 3.249,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagInsert/INSERT_1234567890-12",
+            "runs": 337440860,
+            "nsPerOp": 3.053,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagInsert/UPDATE_1-12",
+            "runs": 741648105,
+            "nsPerOp": 1.729,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagInsert/UPDATE_1234567890-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.472,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagInsert/DELETE_1-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8509,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagInsert/DELETE_1234567890-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagInsert/SELECT_1-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6941,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagInsert/SELECT_1234567890-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCommandTagInsert/UNKNOWN_1234567890-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7066,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkExec",
+            "modificationCount": 8,
+            "createdOn": "2019-01-01",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkExec",
+            "modificationCount": 8,
+            "createdOn": "2019-01-01",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkExecPossibleToCancel",
+            "modificationCount": 5,
+            "createdOn": "2019-01-02",
+            "lastUpdateOn": "2019-06-22"
+          },
+          {
+            "name": "BenchmarkExecPrepared",
+            "modificationCount": 11,
+            "createdOn": "2019-01-01",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkExecPrepared",
+            "modificationCount": 11,
+            "createdOn": "2019-01-01",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkExecPreparedPossibleToCancel",
+            "modificationCount": 10,
+            "createdOn": "2019-01-01",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagRowsAffected",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagRowsAffected",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagRowsAffected",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagRowsAffected",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagTypeFromString",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagInsert",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagInsert",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagInsert",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagInsert",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagInsert",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagInsert",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagInsert",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagInsert",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          },
+          {
+            "name": "BenchmarkCommandTagInsert",
+            "modificationCount": 1,
+            "createdOn": "2020-01-11",
+            "lastUpdateOn": "2020-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/jackc/pgconn/internal/ctxwatch",
+        "succeded": true,
+        "duration": "3.710s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkContextWatcherUncancellable-12",
+            "runs": 34905548,
+            "nsPerOp": 33.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContextWatcherCancelled-12",
+            "runs": 517320,
+            "nsPerOp": 2339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContextWatcherCancellable-12",
+            "runs": 667945,
+            "nsPerOp": 1853,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkContextWatcherUncancellable",
+            "modificationCount": 1,
+            "createdOn": "2019-05-07",
+            "lastUpdateOn": "2019-05-07"
+          },
+          {
+            "name": "BenchmarkContextWatcherCancelled",
+            "modificationCount": 1,
+            "createdOn": "2019-05-07",
+            "lastUpdateOn": "2019-05-07"
+          },
+          {
+            "name": "BenchmarkContextWatcherCancellable",
+            "modificationCount": 1,
+            "createdOn": "2019-05-07",
+            "lastUpdateOn": "2019-05-07"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "jackc/pgconn",
+    "name": "pgconn",
+    "private": false,
+    "html_url": "https://github.com/jackc/pgconn",
+    "fork": false,
+    "created_at": "2019-03-30T15:26:30Z",
+    "updated_at": "2023-10-13T17:46:20Z",
+    "pushed_at": "2023-09-26T05:31:08Z",
+    "ssh_url": "git@github.com:jackc/pgconn.git",
+    "stargazers_count": 159,
+    "watchers_count": 159,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 86,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 19,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 21,
+    "Lines": 8310,
+    "Blank": 1254,
+    "Code": 6472,
+    "Comment": 584,
+    "Bytes": 240098,
+    "Complexity": 1099
+  }
+}

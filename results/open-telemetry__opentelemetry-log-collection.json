@@ -1,0 +1,404 @@
+{
+  "Name": "open-telemetry/opentelemetry-log-collection",
+  "Path": "./repositories/open-telemetry__opentelemetry-log-collection",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T16:29:29Z",
+    "benchmarkCount": 22,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 22,
+    "successfulBenchmarkSuitesCount": 6,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/open-telemetry/opentelemetry-log-collection/operator/input/file",
+        "succeded": true,
+        "duration": "43.383s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFileInput/Single-12",
+            "runs": 109720,
+            "nsPerOp": 9767,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileInput/Glob-12",
+            "runs": 114499,
+            "nsPerOp": 9606,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileInput/MultiGlob-12",
+            "runs": 112166,
+            "nsPerOp": 9393,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileInput/MaxConcurrent-12",
+            "runs": 26102,
+            "nsPerOp": 39546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileInput/FngrPrntLarge-12",
+            "runs": 111460,
+            "nsPerOp": 10229,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileInput/FngrPrntSmall-12",
+            "runs": 117199,
+            "nsPerOp": 9914,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 7,
+            "createdOn": "2021-06-01",
+            "lastUpdateOn": "2022-02-16"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 7,
+            "createdOn": "2021-06-01",
+            "lastUpdateOn": "2022-02-16"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 7,
+            "createdOn": "2021-06-01",
+            "lastUpdateOn": "2022-02-16"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 7,
+            "createdOn": "2021-06-01",
+            "lastUpdateOn": "2022-02-16"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 7,
+            "createdOn": "2021-06-01",
+            "lastUpdateOn": "2022-02-16"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 7,
+            "createdOn": "2021-06-01",
+            "lastUpdateOn": "2022-02-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/open-telemetry/opentelemetry-log-collection/operator/input/tcp",
+        "succeded": true,
+        "duration": "1.937s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTcpInput-12",
+            "runs": 120537,
+            "nsPerOp": 9167,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTcpInput",
+            "modificationCount": 6,
+            "createdOn": "2021-01-27",
+            "lastUpdateOn": "2022-02-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/open-telemetry/opentelemetry-log-collection/operator/input/udp",
+        "succeded": true,
+        "duration": "1.409s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUdpInput-12",
+            "runs": 74512,
+            "nsPerOp": 16581,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUdpInput",
+            "modificationCount": 4,
+            "createdOn": "2021-01-27",
+            "lastUpdateOn": "2022-02-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/open-telemetry/opentelemetry-log-collection/operator/parser/regex",
+        "succeded": true,
+        "duration": "13.117s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseNoCache-12",
+            "runs": 4960,
+            "nsPerOp": 278524,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCache-12",
+            "runs": 10000,
+            "nsPerOp": 103204,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullByOne-12",
+            "runs": 10000,
+            "nsPerOp": 120340,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullBy10-12",
+            "runs": 7042,
+            "nsPerOp": 158195,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullBy50-12",
+            "runs": 6086,
+            "nsPerOp": 213548,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullBy90-12",
+            "runs": 5486,
+            "nsPerOp": 293553,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullBy99-12",
+            "runs": 4918,
+            "nsPerOp": 296829,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseNoCacheOneFile-12",
+            "runs": 140522,
+            "nsPerOp": 7658,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheOneFile-12",
+            "runs": 63677229,
+            "nsPerOp": 17.69,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseNoCache",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCache",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullByOne",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullBy10",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullBy50",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullBy90",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheFullBy99",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkParseNoCacheOneFile",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkParseWithMemoryCacheOneFile",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/open-telemetry/opentelemetry-log-collection/operator/parser/uri",
+        "succeded": true,
+        "duration": "5.888s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkURIParserParse-12",
+            "runs": 369426,
+            "nsPerOp": 5860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkURLToMap-12",
+            "runs": 253842,
+            "nsPerOp": 4627,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryToMap-12",
+            "runs": 605577,
+            "nsPerOp": 1765,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryParamValuesToMap-12",
+            "runs": 4943460,
+            "nsPerOp": 224,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkURIParserParse",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkURLToMap",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkQueryToMap",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkQueryParamValuesToMap",
+            "modificationCount": 2,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-03-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/open-telemetry/opentelemetry-log-collection/operator/transformer/recombine",
+        "succeded": true,
+        "duration": "1.420s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRecombine-12",
+            "runs": 60096,
+            "nsPerOp": 19902,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRecombine",
+            "modificationCount": 3,
+            "createdOn": "2021-12-15",
+            "lastUpdateOn": "2022-02-16"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "open-telemetry/opentelemetry-log-collection",
+    "name": "opentelemetry-log-collection",
+    "private": false,
+    "html_url": "https://github.com/open-telemetry/opentelemetry-log-collection",
+    "description": "OpenTelemetry log collection library",
+    "fork": false,
+    "created_at": "2021-01-22T20:28:55Z",
+    "updated_at": "2023-07-25T14:42:47Z",
+    "pushed_at": "2022-05-24T19:10:31Z",
+    "ssh_url": "git@github.com:open-telemetry/opentelemetry-log-collection.git",
+    "homepage": "https://opentelemetry.io",
+    "stargazers_count": 91,
+    "watchers_count": 91,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 45,
+    "language": "Go",
+    "archived": true,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 190,
+    "Lines": 35719,
+    "Blank": 3744,
+    "Code": 28291,
+    "Comment": 3684,
+    "Bytes": 952462,
+    "Complexity": 2242
+  }
+}

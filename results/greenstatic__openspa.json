@@ -1,0 +1,441 @@
+{
+  "Name": "greenstatic/openspa",
+  "Path": "./repositories/greenstatic__openspa",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T14:07:53Z",
+    "benchmarkCount": 26,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 26,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/greenstatic/openspa/internal",
+        "succeded": true,
+        "duration": "11.447s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithoutRemove_10Rules-12",
+            "runs": 36921,
+            "nsPerOp": 33757,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithoutRemove_100Rules-12",
+            "runs": 3622,
+            "nsPerOp": 320394,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithoutRemove_1000Rules-12",
+            "runs": 384,
+            "nsPerOp": 3225423,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithoutRemove_10000Rules-12",
+            "runs": 34,
+            "nsPerOp": 32642380,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithRemove_10Rules-12",
+            "runs": 56413809,
+            "nsPerOp": 23.32,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithRemove_100Rules-12",
+            "runs": 55566709,
+            "nsPerOp": 20.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithRemove_1000Rules-12",
+            "runs": 56238265,
+            "nsPerOp": 20.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithRemove_10000Rules-12",
+            "runs": 1,
+            "nsPerOp": 1336636082,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithoutRemove_10Rules",
+            "modificationCount": 1,
+            "createdOn": "2022-08-21",
+            "lastUpdateOn": "2022-08-21"
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithoutRemove_100Rules",
+            "modificationCount": 1,
+            "createdOn": "2022-08-21",
+            "lastUpdateOn": "2022-08-21"
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithoutRemove_1000Rules",
+            "modificationCount": 1,
+            "createdOn": "2022-08-21",
+            "lastUpdateOn": "2022-08-21"
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithoutRemove_10000Rules",
+            "modificationCount": 1,
+            "createdOn": "2022-08-21",
+            "lastUpdateOn": "2022-08-21"
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithRemove_10Rules",
+            "modificationCount": 1,
+            "createdOn": "2022-08-21",
+            "lastUpdateOn": "2022-08-21"
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithRemove_100Rules",
+            "modificationCount": 1,
+            "createdOn": "2022-08-21",
+            "lastUpdateOn": "2022-08-21"
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithRemove_1000Rules",
+            "modificationCount": 1,
+            "createdOn": "2022-08-21",
+            "lastUpdateOn": "2022-08-21"
+          },
+          {
+            "name": "BenchmarkFirewallRuleManagerCleanupWithRemove_10000Rules",
+            "modificationCount": 1,
+            "createdOn": "2022-08-21",
+            "lastUpdateOn": "2022-08-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/greenstatic/openspa/internal/observability/metrics",
+        "succeded": true,
+        "duration": "20.018s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCounterUsage-12",
+            "runs": 1186204,
+            "nsPerOp": 1110,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSaveCounterUsage-12",
+            "runs": 189820142,
+            "nsPerOp": 6.564,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrometheusNativeCounter-12",
+            "runs": 200499962,
+            "nsPerOp": 6.092,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSaveCounterUsageWithTwoLabels-12",
+            "runs": 100000000,
+            "nsPerOp": 12.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrometheusNativeCounterWithTwoLabelValues-12",
+            "runs": 100000000,
+            "nsPerOp": 11.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterVecUsage-12",
+            "runs": 4899386,
+            "nsPerOp": 281,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSaveCounterVecUsage-12",
+            "runs": 6784622,
+            "nsPerOp": 188.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrometheusNativeCounterVecOneLabelValue-12",
+            "runs": 6572289,
+            "nsPerOp": 178.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrometheusNativeCounterVecTwoLabelValues-12",
+            "runs": 3467132,
+            "nsPerOp": 355.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCountNameKeyWithForLoop-12",
+            "runs": 3237890,
+            "nsPerOp": 403.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCountNameKeyWithBuilder-12",
+            "runs": 2909964,
+            "nsPerOp": 446.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCountNameKeyWithStringsJoin-12",
+            "runs": 1451241,
+            "nsPerOp": 941.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCounterUsage",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkSaveCounterUsage",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkPrometheusNativeCounter",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkSaveCounterUsageWithTwoLabels",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkPrometheusNativeCounterWithTwoLabelValues",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkCounterVecUsage",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkSaveCounterVecUsage",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkPrometheusNativeCounterVecOneLabelValue",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkPrometheusNativeCounterVecTwoLabelValues",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkCountNameKeyWithForLoop",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkCountNameKeyWithBuilder",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkCountNameKeyWithStringsJoin",
+            "modificationCount": 1,
+            "createdOn": "2022-10-02",
+            "lastUpdateOn": "2022-10-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/greenstatic/openspa/pkg/openspalib",
+        "succeded": true,
+        "duration": "8.717s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkADKGenerateProof-12",
+            "runs": 199682,
+            "nsPerOp": 6987,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkADKProver-12",
+            "runs": 378704,
+            "nsPerOp": 4227,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRequestUnmarshal_RSA_SHA256_AES_256_CBC_with2048Keypair-12",
+            "runs": 658,
+            "nsPerOp": 1720059,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRequestUnmarshal_RSA_SHA256_AES_256_CBC_with2048Keypair_withFakeData-12",
+            "runs": 662,
+            "nsPerOp": 1814858,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkADKGenerateProof",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkADKProver",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkRequestUnmarshal_RSA_SHA256_AES_256_CBC_with2048Keypair",
+            "modificationCount": 1,
+            "createdOn": "2022-10-18",
+            "lastUpdateOn": "2022-10-18"
+          },
+          {
+            "name": "BenchmarkRequestUnmarshal_RSA_SHA256_AES_256_CBC_with2048Keypair_withFakeData",
+            "modificationCount": 3,
+            "createdOn": "2022-10-18",
+            "lastUpdateOn": "2022-10-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/greenstatic/openspa/pkg/openspalib/crypto",
+        "succeded": true,
+        "duration": "4.795s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRSADecrypter_ActualCipher-12",
+            "runs": 699,
+            "nsPerOp": 2037792,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRSADecrypter_2Bytes-12",
+            "runs": 604,
+            "nsPerOp": 1837238,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRSADecrypter_ActualCipher",
+            "modificationCount": 1,
+            "createdOn": "2022-10-18",
+            "lastUpdateOn": "2022-10-18"
+          },
+          {
+            "name": "BenchmarkRSADecrypter_2Bytes",
+            "modificationCount": 1,
+            "createdOn": "2022-10-18",
+            "lastUpdateOn": "2022-10-18"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "greenstatic/openspa",
+    "name": "openspa",
+    "private": false,
+    "html_url": "https://github.com/greenstatic/openspa",
+    "description": "OpenSPA - An open and extensible Single Packet Authorization (SPA) protocol",
+    "fork": false,
+    "created_at": "2018-08-14T12:06:15Z",
+    "updated_at": "2023-09-21T00:32:40Z",
+    "pushed_at": "2023-01-25T07:01:09Z",
+    "ssh_url": "git@github.com:greenstatic/openspa.git",
+    "stargazers_count": 72,
+    "watchers_count": 72,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 20,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 3,
+    "topics": [
+      "port-knocking",
+      "single-packet-authorization",
+      "spa"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 90,
+    "Lines": 13796,
+    "Blank": 2812,
+    "Code": 10742,
+    "Comment": 242,
+    "Bytes": 321963,
+    "Complexity": 1272
+  }
+}

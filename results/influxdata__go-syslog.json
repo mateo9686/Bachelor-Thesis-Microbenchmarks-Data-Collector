@@ -1,0 +1,626 @@
+{
+  "Name": "influxdata/go-syslog",
+  "Path": "./repositories/influxdata__go-syslog",
+  "GoVersion": "1.13",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T13:00:30Z",
+    "benchmarkCount": 41,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 41,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/influxdata/go-syslog/v3/octetcounting",
+        "succeded": true,
+        "duration": "4.679s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse/Small_Message_Size________________________________-12",
+            "runs": 173623,
+            "nsPerOp": 6304,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/Default_Max_Message_Size__________________________-12",
+            "runs": 105475,
+            "nsPerOp": 13891,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/UDP_Max_Message_Size______________________________-12",
+            "runs": 257830,
+            "nsPerOp": 7218,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/influxdata/go-syslog/v3/rfc5424",
+        "succeded": true,
+        "duration": "68.235s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse/[no]_empty_input__________________________________-12",
+            "runs": 1000000,
+            "nsPerOp": 1447,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[no]_multiple_syslog_messages_on_multiple_lines___-12",
+            "runs": 536179,
+            "nsPerOp": 2213,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[no]_impossible_timestamp_________________________-12",
+            "runs": 410341,
+            "nsPerOp": 5245,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[no]_malformed_structured_data____________________-12",
+            "runs": 797965,
+            "nsPerOp": 2429,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[no]_with_duplicated_structured_data_id___________-12",
+            "runs": 462774,
+            "nsPerOp": 2529,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_minimal______________________________________-12",
+            "runs": 3628936,
+            "nsPerOp": 329.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_average_message______________________________-12",
+            "runs": 474427,
+            "nsPerOp": 3242,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_complicated_message__________________________-12",
+            "runs": 520698,
+            "nsPerOp": 3263,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_very_long_message____________________________-12",
+            "runs": 201886,
+            "nsPerOp": 6308,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_all_max_length_and_complete__________________-12",
+            "runs": 266534,
+            "nsPerOp": 4578,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_all_max_length_except_structured_data_and_mes-12",
+            "runs": 489013,
+            "nsPerOp": 2884,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_minimal_with_message_containing_newline______-12",
+            "runs": 3004005,
+            "nsPerOp": 423.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_w/o_procid,_w/o_structured_data,_with_message-12",
+            "runs": 997885,
+            "nsPerOp": 1169,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_minimal_with_UTF-8_message___________________-12",
+            "runs": 2282820,
+            "nsPerOp": 550,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_minimal_with_UTF-8_message_starting_with_BOM_-12",
+            "runs": 2247926,
+            "nsPerOp": 518.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_with_structured_data_id,_w/o_structured_data_-12",
+            "runs": 903951,
+            "nsPerOp": 2503,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_with_multiple_structured_data________________-12",
+            "runs": 209436,
+            "nsPerOp": 5249,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_with_escaped_backslash_within_structured_data-12",
+            "runs": 318183,
+            "nsPerOp": 3740,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/[ok]_with_UTF-8_structured_data_param_value,_with_-12",
+            "runs": 656815,
+            "nsPerOp": 1977,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[no]_empty_input__________________________________-12",
+            "runs": 2066280,
+            "nsPerOp": 615.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[no]_multiple_syslog_messages_on_multiple_lines___-12",
+            "runs": 1438675,
+            "nsPerOp": 841,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[no]_impossible_timestamp_________________________-12",
+            "runs": 775172,
+            "nsPerOp": 2604,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[no]_malformed_structured_data____________________-12",
+            "runs": 1239716,
+            "nsPerOp": 1077,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[no]_with_duplicated_structured_data_id___________-12",
+            "runs": 469141,
+            "nsPerOp": 2427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_minimal______________________________________-12",
+            "runs": 2802192,
+            "nsPerOp": 404.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_average_message______________________________-12",
+            "runs": 390051,
+            "nsPerOp": 3135,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_complicated_message__________________________-12",
+            "runs": 386256,
+            "nsPerOp": 2943,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_very_long_message____________________________-12",
+            "runs": 226206,
+            "nsPerOp": 4925,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_all_max_length_and_complete__________________-12",
+            "runs": 208594,
+            "nsPerOp": 5549,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_all_max_length_except_structured_data_and_mes-12",
+            "runs": 313441,
+            "nsPerOp": 3345,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_minimal_with_message_containing_newline______-12",
+            "runs": 2645796,
+            "nsPerOp": 416.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_w/o_procid,_w/o_structured_data,_with_message-12",
+            "runs": 867166,
+            "nsPerOp": 1273,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_minimal_with_UTF-8_message___________________-12",
+            "runs": 2187735,
+            "nsPerOp": 548,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_minimal_with_UTF-8_message_starting_with_BOM_-12",
+            "runs": 1768912,
+            "nsPerOp": 790.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_with_structured_data_id,_w/o_structured_data_-12",
+            "runs": 902688,
+            "nsPerOp": 1297,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_with_multiple_structured_data________________-12",
+            "runs": 403351,
+            "nsPerOp": 3357,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_with_escaped_backslash_within_structured_data-12",
+            "runs": 462088,
+            "nsPerOp": 4284,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage/[ok]_with_UTF-8_structured_data_param_value,_with_-12",
+            "runs": 364465,
+            "nsPerOp": 4952,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkParseCompliantMessage",
+            "modificationCount": 3,
+            "createdOn": "2020-04-29",
+            "lastUpdateOn": "2020-05-01"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "influxdata/go-syslog",
+    "name": "go-syslog",
+    "private": false,
+    "html_url": "https://github.com/influxdata/go-syslog",
+    "description": "Blazing fast syslog parser",
+    "fork": false,
+    "created_at": "2018-03-28T08:58:02Z",
+    "updated_at": "2023-10-18T12:29:48Z",
+    "pushed_at": "2023-09-11T20:08:37Z",
+    "ssh_url": "git@github.com:influxdata/go-syslog.git",
+    "stargazers_count": 453,
+    "watchers_count": 453,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 66,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 12,
+    "topics": [
+      "builder",
+      "logging",
+      "logs",
+      "parser",
+      "ragel",
+      "rfc3164",
+      "rfc5424",
+      "rfc5425",
+      "rfc5426",
+      "rfc6587",
+      "syslog"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 36,
+    "Lines": 34584,
+    "Blank": 998,
+    "Code": 32638,
+    "Comment": 948,
+    "Bytes": 626694,
+    "Complexity": 8688
+  }
+}

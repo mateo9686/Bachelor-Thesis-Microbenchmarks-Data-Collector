@@ -1,0 +1,2824 @@
+{
+  "Name": "freetsdb/freetsdb",
+  "Path": "./repositories/freetsdb__freetsdb",
+  "GoVersion": "1.15",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T07:21:28Z",
+    "benchmarkCount": 202,
+    "benchmarkSuiteCount": 15,
+    "successfulBenchmarkCount": 199,
+    "successfulBenchmarkSuitesCount": 15,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/freetsdb/freetsdb/client",
+        "succeded": true,
+        "duration": "5.278s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWrite-12",
+            "runs": 6886,
+            "nsPerOp": 174564,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalJSON2Tags-12",
+            "runs": 37728,
+            "nsPerOp": 49000,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalJSON10Tags-12",
+            "runs": 10000,
+            "nsPerOp": 108972,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWrite",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkUnmarshalJSON2Tags",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkUnmarshalJSON10Tags",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/cmd/freets_inspect/export",
+        "succeded": true,
+        "duration": "21.355s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkExportTSMFloats_100s_250vps-12",
+            "runs": 52,
+            "nsPerOp": 30229482,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExportTSMInts_100s_250vps-12",
+            "runs": 69,
+            "nsPerOp": 15723335,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExportTSMBools_100s_250vps-12",
+            "runs": 145,
+            "nsPerOp": 11877985,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExportTSMStrings_100s_250vps-12",
+            "runs": 43,
+            "nsPerOp": 27442861,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExportWALFloats_100s_250vps-12",
+            "runs": 97,
+            "nsPerOp": 30331986,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExportWALInts_100s_250vps-12",
+            "runs": 97,
+            "nsPerOp": 23235629,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExportWALBools_100s_250vps-12",
+            "runs": 100,
+            "nsPerOp": 19390291,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExportWALStrings_100s_250vps-12",
+            "runs": 32,
+            "nsPerOp": 36361787,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkExportTSMFloats_100s_250vps",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkExportTSMInts_100s_250vps",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkExportTSMBools_100s_250vps",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkExportTSMStrings_100s_250vps",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkExportWALFloats_100s_250vps",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkExportWALInts_100s_250vps",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkExportWALBools_100s_250vps",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkExportWALStrings_100s_250vps",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/models",
+        "succeded": true,
+        "duration": "59.746s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMarshal-12",
+            "runs": 1793118,
+            "nsPerOp": 767.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewPoint-12",
+            "runs": 126174,
+            "nsPerOp": 12653,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewPointFromBinary-12",
+            "runs": 1000000,
+            "nsPerOp": 1605,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointNoTags5000-12",
+            "runs": 127,
+            "nsPerOp": 10308605,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointNoTags-12",
+            "runs": 272053,
+            "nsPerOp": 7542,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointWithPrecisionN-12",
+            "runs": 1000000,
+            "nsPerOp": 1049,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointWithPrecisionU-12",
+            "runs": 652948,
+            "nsPerOp": 2080,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointsTagsSorted2-12",
+            "runs": 148002,
+            "nsPerOp": 9566,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointsTagsSorted5-12",
+            "runs": 142105,
+            "nsPerOp": 8962,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointsTagsSorted10-12",
+            "runs": 164768,
+            "nsPerOp": 9460,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointsTagsUnSorted2-12",
+            "runs": 95620,
+            "nsPerOp": 12928,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointsTagsUnSorted5-12",
+            "runs": 152086,
+            "nsPerOp": 12227,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParsePointsTagsUnSorted10-12",
+            "runs": 124819,
+            "nsPerOp": 8119,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseKey-12",
+            "runs": 608149,
+            "nsPerOp": 1647,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeStringField_Plain-12",
+            "runs": 8465295,
+            "nsPerOp": 184.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeString_Quotes-12",
+            "runs": 3188158,
+            "nsPerOp": 393.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeString_Backslashes-12",
+            "runs": 5143803,
+            "nsPerOp": 266.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeString_QuotesAndBackslashes-12",
+            "runs": 2961105,
+            "nsPerOp": 456.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseTags-12",
+            "runs": 3905960,
+            "nsPerOp": 402.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMeasurement/this_is_a_test-12",
+            "runs": 62502327,
+            "nsPerOp": 18.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMeasurement/this,is,a,test-12",
+            "runs": 7256616,
+            "nsPerOp": 157.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTags_HashKey/5_tags-no_esc-12",
+            "runs": 3064149,
+            "nsPerOp": 406.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTags_HashKey/25_tags-no_esc-12",
+            "runs": 572221,
+            "nsPerOp": 1960,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTags_HashKey/5_tags-esc-12",
+            "runs": 827596,
+            "nsPerOp": 1385,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTags_HashKey/25_tags-esc-12",
+            "runs": 153842,
+            "nsPerOp": 7068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMakeKey/this_is_a_test-12",
+            "runs": 15910477,
+            "nsPerOp": 133.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMakeKey/this,is,a,test-12",
+            "runs": 5317335,
+            "nsPerOp": 441,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMakeKey/this\\_is\\_a\\_test-12",
+            "runs": 1843281,
+            "nsPerOp": 635,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMakeKey/this_is_a_test#01-12",
+            "runs": 1000000,
+            "nsPerOp": 1158,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMakeKey/this,is,a,test#01-12",
+            "runs": 1319630,
+            "nsPerOp": 1400,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMakeKey/this_is_a_test#02-12",
+            "runs": 560110,
+            "nsPerOp": 2823,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMakeKey/this,is,a,test#02-12",
+            "runs": 461110,
+            "nsPerOp": 2944,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkNewPoint",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkNewPointFromBinary",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkParsePointNoTags5000",
+            "modificationCount": 2,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkParsePointNoTags",
+            "modificationCount": 2,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkParsePointWithPrecisionN",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkParsePointWithPrecisionU",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkParsePointsTagsSorted2",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkParsePointsTagsSorted5",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkParsePointsTagsSorted10",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkParsePointsTagsUnSorted2",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkParsePointsTagsUnSorted5",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkParsePointsTagsUnSorted10",
+            "modificationCount": 1,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2020-05-05"
+          },
+          {
+            "name": "BenchmarkParseKey",
+            "modificationCount": 2,
+            "createdOn": "2020-05-05",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEscapeStringField_Plain",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEscapeString_Quotes",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEscapeString_Backslashes",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEscapeString_QuotesAndBackslashes",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkParseTags",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEscapeMeasurement",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEscapeMeasurement",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkTags_HashKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkTags_HashKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkTags_HashKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkTags_HashKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMakeKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMakeKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMakeKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMakeKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMakeKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMakeKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMakeKey",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/pkg/bloom",
+        "succeded": true,
+        "duration": "62.494s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFilter_Insert/m=100_k=4_n=1000-12",
+            "runs": 22492,
+            "nsPerOp": 53678,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=1000_k=4_n=1000-12",
+            "runs": 22354,
+            "nsPerOp": 57522,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=10000_k=4_n=1000-12",
+            "runs": 23457,
+            "nsPerOp": 53537,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=100000_k=4_n=1000-12",
+            "runs": 25099,
+            "nsPerOp": 49034,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=100_k=8_n=1000-12",
+            "runs": 20221,
+            "nsPerOp": 59546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=1000_k=8_n=1000-12",
+            "runs": 20109,
+            "nsPerOp": 62815,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=10000_k=8_n=1000-12",
+            "runs": 19988,
+            "nsPerOp": 59936,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=100000_k=8_n=1000-12",
+            "runs": 19585,
+            "nsPerOp": 62761,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=100_k=20_n=1000-12",
+            "runs": 14290,
+            "nsPerOp": 82160,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=1000_k=20_n=1000-12",
+            "runs": 14070,
+            "nsPerOp": 80988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=10000_k=20_n=1000-12",
+            "runs": 15662,
+            "nsPerOp": 77099,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Insert/m=100000_k=20_n=1000-12",
+            "runs": 15098,
+            "nsPerOp": 78428,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=100_k=4_n=1000-12",
+            "runs": 15894,
+            "nsPerOp": 77800,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=1000_k=4_n=1000-12",
+            "runs": 15628,
+            "nsPerOp": 75456,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=10000_k=4_n=1000-12",
+            "runs": 16260,
+            "nsPerOp": 69238,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=100000_k=4_n=1000-12",
+            "runs": 16687,
+            "nsPerOp": 89979,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=100_k=8_n=1000-12",
+            "runs": 10000,
+            "nsPerOp": 145330,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=1000_k=8_n=1000-12",
+            "runs": 9865,
+            "nsPerOp": 104593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=10000_k=8_n=1000-12",
+            "runs": 13488,
+            "nsPerOp": 86500,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=100000_k=8_n=1000-12",
+            "runs": 10000,
+            "nsPerOp": 126456,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=100_k=20_n=1000-12",
+            "runs": 6034,
+            "nsPerOp": 205772,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=1000_k=20_n=1000-12",
+            "runs": 6728,
+            "nsPerOp": 166993,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=10000_k=20_n=1000-12",
+            "runs": 8161,
+            "nsPerOp": 138041,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Contains/m=100000_k=20_n=1000-12",
+            "runs": 9138,
+            "nsPerOp": 123454,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=100_k=4_n=1000-12",
+            "runs": 12690789,
+            "nsPerOp": 101.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=1000_k=4_n=1000-12",
+            "runs": 4438377,
+            "nsPerOp": 280.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=10000_k=4_n=1000-12",
+            "runs": 454270,
+            "nsPerOp": 2828,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=100000_k=4_n=1000-12",
+            "runs": 51855,
+            "nsPerOp": 30103,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=100_k=8_n=1000-12",
+            "runs": 12721447,
+            "nsPerOp": 102.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=1000_k=8_n=1000-12",
+            "runs": 3549036,
+            "nsPerOp": 297,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=10000_k=8_n=1000-12",
+            "runs": 493173,
+            "nsPerOp": 2558,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=100000_k=8_n=1000-12",
+            "runs": 56612,
+            "nsPerOp": 19734,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=100_k=20_n=1000-12",
+            "runs": 15069026,
+            "nsPerOp": 94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=1000_k=20_n=1000-12",
+            "runs": 4567780,
+            "nsPerOp": 356.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=10000_k=20_n=1000-12",
+            "runs": 334160,
+            "nsPerOp": 6165,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter_Merge/m=100000_k=20_n=1000-12",
+            "runs": 31519,
+            "nsPerOp": 39105,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkFilter_Merge",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/pkg/bytesutil",
+        "succeded": true,
+        "duration": "62.899s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSortDedup/sort-deduplicate-12",
+            "runs": 639487,
+            "nsPerOp": 1687,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContains_True-12",
+            "runs": 42204159,
+            "nsPerOp": 29.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContains_False-12",
+            "runs": 32390361,
+            "nsPerOp": 33.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearchBytes_Exists-12",
+            "runs": 41335579,
+            "nsPerOp": 24.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearchBytes_NotExits-12",
+            "runs": 42129288,
+            "nsPerOp": 28.97,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSortDedup",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkContains_True",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkContains_False",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkSearchBytes_Exists",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkSearchBytes_NotExits",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/pkg/encoding/simple8b",
+        "succeded": true,
+        "duration": "34.909s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncodeAll/1_bit-12",
+            "runs": 60363,
+            "nsPerOp": 19798,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/2_bits-12",
+            "runs": 59854,
+            "nsPerOp": 20411,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/3_bits-12",
+            "runs": 57560,
+            "nsPerOp": 28573,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/4_bits-12",
+            "runs": 29331,
+            "nsPerOp": 46401,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/5_bits-12",
+            "runs": 46358,
+            "nsPerOp": 32936,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/6_bits-12",
+            "runs": 47139,
+            "nsPerOp": 21579,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/7_bits-12",
+            "runs": 54693,
+            "nsPerOp": 23021,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/8_bits-12",
+            "runs": 50290,
+            "nsPerOp": 23201,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/10_bits-12",
+            "runs": 43464,
+            "nsPerOp": 26847,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/12_bits-12",
+            "runs": 36640,
+            "nsPerOp": 31295,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/15_bits-12",
+            "runs": 45784,
+            "nsPerOp": 28832,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/20_bits-12",
+            "runs": 32618,
+            "nsPerOp": 40588,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/30_bits-12",
+            "runs": 24739,
+            "nsPerOp": 43053,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/60_bits-12",
+            "runs": 18566,
+            "nsPerOp": 67831,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeAll/combination-12",
+            "runs": 2365,
+            "nsPerOp": 508388,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncode-12",
+            "runs": 468558,
+            "nsPerOp": 3157,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncoder-12",
+            "runs": 558523,
+            "nsPerOp": 2225,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode-12",
+            "runs": 2094874,
+            "nsPerOp": 552.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder-12",
+            "runs": 337884,
+            "nsPerOp": 3548,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncodeAll",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncode",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkEncoder",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/pkg/escape",
+        "succeded": true,
+        "duration": "19.158s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBytesEscapeNoEscapes-12",
+            "runs": 2740513,
+            "nsPerOp": 463.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnescapeNoEscapes-12",
+            "runs": 170265300,
+            "nsPerOp": 6.451,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesEscapeMany-12",
+            "runs": 722714,
+            "nsPerOp": 1854,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnescapeMany-12",
+            "runs": 2772520,
+            "nsPerOp": 424.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsEscaped-12",
+            "runs": 39816663,
+            "nsPerOp": 31.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendUnescaped-12",
+            "runs": 1770441,
+            "nsPerOp": 703.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringEscapeNoEscapes-12",
+            "runs": 84022651,
+            "nsPerOp": 16.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringUnescapeNoEscapes-12",
+            "runs": 135619045,
+            "nsPerOp": 8.051,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManyStringEscape-12",
+            "runs": 2203494,
+            "nsPerOp": 549.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManyStringUnescape-12",
+            "runs": 906548,
+            "nsPerOp": 1349,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBytesEscapeNoEscapes",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkUnescapeNoEscapes",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkBytesEscapeMany",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkUnescapeMany",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkIsEscaped",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkAppendUnescaped",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkStringEscapeNoEscapes",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkStringUnescapeNoEscapes",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkManyStringEscape",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkManyStringUnescape",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/pkg/estimator/hll",
+        "succeded": true,
+        "duration": "28.831s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPlus_Add_100-12",
+            "runs": 470862,
+            "nsPerOp": 2645,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPlus_Add_1000-12",
+            "runs": 50138,
+            "nsPerOp": 21357,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPlus_Add_10000-12",
+            "runs": 3267,
+            "nsPerOp": 348709,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPlus_Add_100000-12",
+            "runs": 236,
+            "nsPerOp": 4573522,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPlus_Add_1000000-12",
+            "runs": 27,
+            "nsPerOp": 60537121,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPlus_Add_10000000-12",
+            "runs": 2,
+            "nsPerOp": 679213622,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPlus_Add_100000000-12",
+            "runs": 1,
+            "nsPerOp": 4020925351,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPlus_Add_100",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkPlus_Add_1000",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkPlus_Add_10000",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkPlus_Add_100000",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkPlus_Add_1000000",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkPlus_Add_10000000",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkPlus_Add_100000000",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/pkg/radix",
+        "succeded": true,
+        "duration": "13.054s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSort_64-12",
+            "runs": 344244,
+            "nsPerOp": 3250,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSort_128-12",
+            "runs": 134864,
+            "nsPerOp": 12168,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSort_256-12",
+            "runs": 55400,
+            "nsPerOp": 27787,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSort_12K-12",
+            "runs": 1112,
+            "nsPerOp": 982167,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTree_Insert-12",
+            "runs": 663,
+            "nsPerOp": 2242992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTree_InsertNew-12",
+            "runs": 124,
+            "nsPerOp": 10486726,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSort_64",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkSort_128",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkSort_256",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkSort_12K",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkTree_Insert",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkTree_InsertNew",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/pkg/snowflake",
+        "succeded": true,
+        "duration": "6.124s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncode-12",
+            "runs": 100000000,
+            "nsPerOp": 10.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNext-12",
+            "runs": 283551,
+            "nsPerOp": 4246,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextParallel-12",
+            "runs": 1886216,
+            "nsPerOp": 781.2,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncode",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkNext",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          },
+          {
+            "name": "BenchmarkNextParallel",
+            "modificationCount": 1,
+            "createdOn": "2021-01-11",
+            "lastUpdateOn": "2021-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/query",
+        "succeded": false,
+        "duration": "31.831s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCountIterator_1K-12",
+            "runs": 19077,
+            "nsPerOp": 66741,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCountIterator_100K-12",
+            "runs": 219,
+            "nsPerOp": 6398563,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCountIterator_1M-12",
+            "runs": 19,
+            "nsPerOp": 55798291,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSampleIterator_1k-12",
+            "runs": 1000000,
+            "nsPerOp": 1133,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSampleIterator_100k-12",
+            "runs": 1067965,
+            "nsPerOp": 1106,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSampleIterator_1M-12",
+            "runs": 3269630,
+            "nsPerOp": 348.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistinctIterator_1K-12",
+            "runs": 15636,
+            "nsPerOp": 74241,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistinctIterator_100K-12",
+            "runs": 150,
+            "nsPerOp": 9176238,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistinctIterator_1M-12",
+            "runs": 19,
+            "nsPerOp": 55100551,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkModeIterator_1K-12",
+            "runs": 9160,
+            "nsPerOp": 291355,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkModeIterator_100K-12",
+            "runs": 25,
+            "nsPerOp": 70816860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkModeIterator_1M-12",
+            "runs": 1,
+            "nsPerOp": 1290144641,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect_Raw_1K-12",
+            "runs": 2688,
+            "nsPerOp": 584395,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect_Raw_100K-12",
+            "runs": 3,
+            "nsPerOp": 427210718,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect_Dedupe_1K-12",
+            "runs": 34,
+            "nsPerOp": 50287061,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect_Top_1K",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "select_test.go:4159: unexpected expr: (*influxql.VarRef)(0xc000196288)(sval::float)"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCountIterator_1K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkCountIterator_100K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkCountIterator_1M",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSampleIterator_1k",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSampleIterator_100k",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSampleIterator_1M",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkDistinctIterator_1K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkDistinctIterator_100K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkDistinctIterator_1M",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkModeIterator_1K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkModeIterator_100K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkModeIterator_1M",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSelect_Raw_1K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSelect_Raw_100K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSelect_Dedupe_1K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSelect_Top_1K",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/query/internal/gota",
+        "succeded": true,
+        "duration": "1.522s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkKAMA-12",
+            "runs": 1000000,
+            "nsPerOp": 1463,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkKAMA",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/tsdb",
+        "succeded": false,
+        "duration": "660.020s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEpochTracker/Writes_with_deletes/Serial/0-12",
+            "runs": 62181538,
+            "nsPerOp": 19.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEpochTracker/Writes_with_deletes/Serial/1-12",
+            "runs": 13000135,
+            "nsPerOp": 112.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEpochTracker/Writes_with_deletes/Serial/10-12",
+            "runs": 4051096,
+            "nsPerOp": 311.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEpochTracker/Writes_with_deletes/Serial/100-12",
+            "runs": 481338,
+            "nsPerOp": 3503,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEpochTracker/Writes_with_deletes/Parallel/0-12",
+            "runs": 25849436,
+            "nsPerOp": 47.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEpochTracker/Writes_with_deletes/Parallel/1-12",
+            "runs": 6021523,
+            "nsPerOp": 210.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEpochTracker/Writes_with_deletes/Parallel/10-12",
+            "runs": 2499823,
+            "nsPerOp": 556.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEpochTracker/Writes_with_deletes/Parallel/100-12",
+            "runs": 233152,
+            "nsPerOp": 5292,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGuard/Time_Filtered/1-12",
+            "runs": 128305214,
+            "nsPerOp": 8.419,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGuard/Time_Filtered/100-12",
+            "runs": 3064452,
+            "nsPerOp": 481.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGuard/Time_Filtered/10000-12",
+            "runs": 15423,
+            "nsPerOp": 68748,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGuard/Measurement_Filtered/1-12",
+            "runs": 35373672,
+            "nsPerOp": 33.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGuard/Measurement_Filtered/100-12",
+            "runs": 409756,
+            "nsPerOp": 3032,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGuard/Measurement_Filtered/10000-12",
+            "runs": 3397,
+            "nsPerOp": 376749,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGuard/Tag_Filtered/1-12",
+            "runs": 10016136,
+            "nsPerOp": 109.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGuard/Tag_Filtered/100-12",
+            "runs": 87096,
+            "nsPerOp": 18391,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGuard/Tag_Filtered/10000-12",
+            "runs": 526,
+            "nsPerOp": 2787740,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains/1-12",
+            "runs": 48177206,
+            "nsPerOp": 41.68,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains/2-12",
+            "runs": 55450851,
+            "nsPerOp": 35.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains/10-12",
+            "runs": 36101233,
+            "nsPerOp": 42.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains/100-12",
+            "runs": 31964097,
+            "nsPerOp": 52.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains/1000-12",
+            "runs": 31511707,
+            "nsPerOp": 52.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains/10000-12",
+            "runs": 71682394,
+            "nsPerOp": 15.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains/100000-12",
+            "runs": 68765851,
+            "nsPerOp": 17.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains/1000000-12",
+            "runs": 68907056,
+            "nsPerOp": 19.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains/10000000-12",
+            "runs": 78010376,
+            "nsPerOp": 14.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore/1-12",
+            "runs": 801394,
+            "nsPerOp": 1909,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore/2-12",
+            "runs": 834104,
+            "nsPerOp": 1674,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore/10-12",
+            "runs": 765529,
+            "nsPerOp": 1645,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore/100-12",
+            "runs": 914947,
+            "nsPerOp": 1505,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore/1000-12",
+            "runs": 984232,
+            "nsPerOp": 1527,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore/10000-12",
+            "runs": 887860,
+            "nsPerOp": 1537,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore/100000-12",
+            "runs": 925405,
+            "nsPerOp": 1244,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore/1000000-12",
+            "runs": 902934,
+            "nsPerOp": 1408,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore/10000000-12",
+            "runs": 701497,
+            "nsPerOp": 1673,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add/cardinality_1000000_add/same-12",
+            "runs": 30243012,
+            "nsPerOp": 41.59,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add/cardinality_1000000_add/random-12",
+            "runs": 252273,
+            "nsPerOp": 4309,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add/cardinality_1000000_add/same_no_lock-12",
+            "runs": 20482338,
+            "nsPerOp": 64.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add/cardinality_1000000_add/random_no_lock-12",
+            "runs": 386142,
+            "nsPerOp": 2605,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add/cardinality_1000000_check_add/same_no_lock-12",
+            "runs": 31003418,
+            "nsPerOp": 41.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add/cardinality_1000000_check_add/random_no_lock-12",
+            "runs": 532395,
+            "nsPerOp": 3191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add/cardinality_1000000_check_add/same_global_lock-12",
+            "runs": 15255607,
+            "nsPerOp": 68.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add/cardinality_1000000_check_add/random_global_lock-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "SIGQUIT:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEpochTracker",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEpochTracker",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEpochTracker",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEpochTracker",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEpochTracker",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEpochTracker",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEpochTracker",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkEpochTracker",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkGuard",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkGuard",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkGuard",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkGuard",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkGuard",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkGuard",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkGuard",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkGuard",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkGuard",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Contains",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_AddMore",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkSeriesIDSet_Add",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/tsdb/index/inmem",
+        "succeded": true,
+        "duration": "28.563s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMeasurement_SeriesIDForExp_EQRegex-12",
+            "runs": 3,
+            "nsPerOp": 369653873,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMeasurement_SeriesIDForExp_NERegex-12",
+            "runs": 24,
+            "nsPerOp": 60211593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMeasurement_TagSetsNoDimensions_1000-12",
+            "runs": 6481,
+            "nsPerOp": 190516,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMeasurement_TagSetsDimensions_1000-12",
+            "runs": 3330,
+            "nsPerOp": 388223,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMeasurement_TagSetsNoDimensions_100000-12",
+            "runs": 42,
+            "nsPerOp": 30620694,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMeasurement_TagSetsDimensions_100000-12",
+            "runs": 22,
+            "nsPerOp": 51226165,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShardIndex_CreateSeriesListIfNotExists_MaxValuesExceeded-12",
+            "runs": 522,
+            "nsPerOp": 2399122,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShardIndex_CreateSeriesListIfNotExists_MaxValuesNotExceeded-12",
+            "runs": 3007,
+            "nsPerOp": 550346,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShardIndex_CreateSeriesListIfNotExists_NoMaxValues-12",
+            "runs": 2163,
+            "nsPerOp": 701742,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShardIndex_CreateSeriesListIfNotExists_MaxSeriesExceeded-12",
+            "runs": 133,
+            "nsPerOp": 9593610,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMeasurement_SeriesIDForExp_EQRegex",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMeasurement_SeriesIDForExp_NERegex",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMeasurement_TagSetsNoDimensions_1000",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMeasurement_TagSetsDimensions_1000",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMeasurement_TagSetsNoDimensions_100000",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkMeasurement_TagSetsDimensions_100000",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkShardIndex_CreateSeriesListIfNotExists_MaxValuesExceeded",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkShardIndex_CreateSeriesListIfNotExists_MaxValuesNotExceeded",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkShardIndex_CreateSeriesListIfNotExists_NoMaxValues",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkShardIndex_CreateSeriesListIfNotExists_MaxSeriesExceeded",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/freetsdb/freetsdb/tsdb/index/tsi1",
+        "succeded": false,
+        "duration": "36.003s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIndexFile_TagValueSeries/M=1,K=2,V=3-12",
+            "runs": 2675336,
+            "nsPerOp": 510.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexFile_TagValueSeries/M=10,K=5,V=5-12",
+            "runs": 1650109,
+            "nsPerOp": 816.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexFile_TagValueSeries/M=10,K=7,V=5-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIndexFile_TagValueSeries",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkIndexFile_TagValueSeries",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          },
+          {
+            "name": "BenchmarkIndexFile_TagValueSeries",
+            "modificationCount": 1,
+            "createdOn": "2021-02-28",
+            "lastUpdateOn": "2021-02-28"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "freetsdb/freetsdb",
+    "name": "freetsdb",
+    "private": false,
+    "html_url": "https://github.com/freetsdb/freetsdb",
+    "description": "An Open-Source Distributed Time Series Database, and the BEST Open-Source replacement for InfluxDB Enterprise.",
+    "fork": false,
+    "created_at": "2020-05-05T15:04:07Z",
+    "updated_at": "2023-10-19T09:28:42Z",
+    "pushed_at": "2022-07-27T14:24:58Z",
+    "ssh_url": "git@github.com:freetsdb/freetsdb.git",
+    "stargazers_count": 236,
+    "watchers_count": 236,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 66,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 4,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 854,
+    "Lines": 300132,
+    "Blank": 38466,
+    "Code": 236889,
+    "Comment": 24777,
+    "Bytes": 7989248,
+    "Complexity": 56494
+  }
+}

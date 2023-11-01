@@ -1,0 +1,426 @@
+{
+  "Name": "paulmach/osm",
+  "Path": "./repositories/paulmach__osm",
+  "GoVersion": "1.13",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T10:01:18Z",
+    "benchmarkCount": 24,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 18,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/paulmach/osm",
+        "succeded": true,
+        "duration": "22.207s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkChange_MarshalXML-12",
+            "runs": 334,
+            "nsPerOp": 7178971,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChange_MarshalJSON-12",
+            "runs": 445,
+            "nsPerOp": 2705433,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChange_UnmarshalJSON-12",
+            "runs": 238,
+            "nsPerOp": 7115370,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChangeset_UnmarshalXML-12",
+            "runs": 102,
+            "nsPerOp": 14970046,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDiff_Marshal-12",
+            "runs": 10,
+            "nsPerOp": 115773105,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDiff_Unmarshal-12",
+            "runs": 6,
+            "nsPerOp": 208612874,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkElementID_Sort-12",
+            "runs": 1184,
+            "nsPerOp": 845041,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFeatureIDs_Sort-12",
+            "runs": 1383,
+            "nsPerOp": 1134155,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkChange_MarshalXML",
+            "modificationCount": 1,
+            "createdOn": "2022-08-19",
+            "lastUpdateOn": "2022-08-19"
+          },
+          {
+            "name": "BenchmarkChange_MarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2022-08-19",
+            "lastUpdateOn": "2022-08-19"
+          },
+          {
+            "name": "BenchmarkChange_UnmarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2022-08-19",
+            "lastUpdateOn": "2022-08-19"
+          },
+          {
+            "name": "BenchmarkChangeset_UnmarshalXML",
+            "modificationCount": 1,
+            "createdOn": "2022-08-19",
+            "lastUpdateOn": "2022-08-19"
+          },
+          {
+            "name": "BenchmarkDiff_Marshal",
+            "modificationCount": 1,
+            "createdOn": "2018-03-18",
+            "lastUpdateOn": "2018-03-18"
+          },
+          {
+            "name": "BenchmarkDiff_Unmarshal",
+            "modificationCount": 2,
+            "createdOn": "2017-01-15",
+            "lastUpdateOn": "2018-03-18"
+          },
+          {
+            "name": "BenchmarkElementID_Sort",
+            "modificationCount": 8,
+            "createdOn": "2016-12-09",
+            "lastUpdateOn": "2018-02-23"
+          },
+          {
+            "name": "BenchmarkFeatureIDs_Sort",
+            "modificationCount": 5,
+            "createdOn": "2017-05-02",
+            "lastUpdateOn": "2018-02-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/paulmach/osm/annotate",
+        "succeded": true,
+        "duration": "5.639s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRelations-12",
+            "runs": 1227,
+            "nsPerOp": 1341673,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWay-12",
+            "runs": 35367,
+            "nsPerOp": 30268,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWays-12",
+            "runs": 23682,
+            "nsPerOp": 43510,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRelations",
+            "modificationCount": 5,
+            "createdOn": "2016-09-25",
+            "lastUpdateOn": "2018-03-09"
+          },
+          {
+            "name": "BenchmarkWay",
+            "modificationCount": 4,
+            "createdOn": "2016-09-25",
+            "lastUpdateOn": "2018-03-09"
+          },
+          {
+            "name": "BenchmarkWays",
+            "modificationCount": 4,
+            "createdOn": "2016-09-25",
+            "lastUpdateOn": "2018-03-09"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/paulmach/osm/osmgeojson",
+        "succeded": true,
+        "duration": "10.692s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConvert-12",
+            "runs": 494,
+            "nsPerOp": 2345518,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConvertAnnotated-12",
+            "runs": 654,
+            "nsPerOp": 2213682,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConvert_NoID-12",
+            "runs": 538,
+            "nsPerOp": 2246650,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConvert_NoMeta-12",
+            "runs": 693,
+            "nsPerOp": 2107144,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConvert_NoRelationMembership-12",
+            "runs": 529,
+            "nsPerOp": 2468043,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConvert_NoIDsMetaMembership-12",
+            "runs": 775,
+            "nsPerOp": 1647013,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConvert",
+            "modificationCount": 1,
+            "createdOn": "2017-05-08",
+            "lastUpdateOn": "2017-05-08"
+          },
+          {
+            "name": "BenchmarkConvertAnnotated",
+            "modificationCount": 1,
+            "createdOn": "2017-06-17",
+            "lastUpdateOn": "2017-06-17"
+          },
+          {
+            "name": "BenchmarkConvert_NoID",
+            "modificationCount": 2,
+            "createdOn": "2017-05-08",
+            "lastUpdateOn": "2017-06-17"
+          },
+          {
+            "name": "BenchmarkConvert_NoMeta",
+            "modificationCount": 2,
+            "createdOn": "2017-05-08",
+            "lastUpdateOn": "2017-06-17"
+          },
+          {
+            "name": "BenchmarkConvert_NoRelationMembership",
+            "modificationCount": 2,
+            "createdOn": "2017-05-08",
+            "lastUpdateOn": "2017-06-17"
+          },
+          {
+            "name": "BenchmarkConvert_NoIDsMetaMembership",
+            "modificationCount": 2,
+            "createdOn": "2017-05-08",
+            "lastUpdateOn": "2017-06-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/paulmach/osm/osmpbf",
+        "succeded": false,
+        "duration": "0.009s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLondon",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "scanner_test.go:361: could not open file: open greater-london-140324.osm.pbf: no such file or directory"
+          },
+          {
+            "name": "BenchmarkLondon_withFiltersTrue",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "scanner_test.go:391: could not open file: open greater-london-140324.osm.pbf: no such file or directory"
+          },
+          {
+            "name": "BenchmarkLondon_withFiltersFalse",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "scanner_test.go:431: could not open file: open greater-london-140324.osm.pbf: no such file or directory"
+          },
+          {
+            "name": "BenchmarkLondon_nodes",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "scanner_test.go:493: could not open file: open greater-london-140324.osm.pbf: no such file or directory"
+          },
+          {
+            "name": "BenchmarkLondon_ways",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "scanner_test.go:526: could not open file: open greater-london-140324.osm.pbf: no such file or directory"
+          },
+          {
+            "name": "BenchmarkLondon_relations",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "scanner_test.go:559: could not open file: open greater-london-140324.osm.pbf: no such file or directory"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLondon",
+            "modificationCount": 3,
+            "createdOn": "2016-08-11",
+            "lastUpdateOn": "2016-08-18"
+          },
+          {
+            "name": "BenchmarkLondon_withFiltersTrue",
+            "modificationCount": 1,
+            "createdOn": "2022-02-07",
+            "lastUpdateOn": "2022-02-07"
+          },
+          {
+            "name": "BenchmarkLondon_withFiltersFalse",
+            "modificationCount": 1,
+            "createdOn": "2022-02-07",
+            "lastUpdateOn": "2022-02-07"
+          },
+          {
+            "name": "BenchmarkLondon_nodes",
+            "modificationCount": 1,
+            "createdOn": "2020-12-14",
+            "lastUpdateOn": "2020-12-14"
+          },
+          {
+            "name": "BenchmarkLondon_ways",
+            "modificationCount": 1,
+            "createdOn": "2020-12-14",
+            "lastUpdateOn": "2020-12-14"
+          },
+          {
+            "name": "BenchmarkLondon_relations",
+            "modificationCount": 1,
+            "createdOn": "2020-12-14",
+            "lastUpdateOn": "2020-12-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/paulmach/osm/osmxml",
+        "succeded": true,
+        "duration": "5.984s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAndorra-12",
+            "runs": 1,
+            "nsPerOp": 5978884127,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAndorra",
+            "modificationCount": 4,
+            "createdOn": "2016-08-11",
+            "lastUpdateOn": "2018-03-05"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "paulmach/osm",
+    "name": "osm",
+    "private": false,
+    "html_url": "https://github.com/paulmach/osm",
+    "description": "General purpose library for reading, writing and working with OpenStreetMap data",
+    "fork": false,
+    "created_at": "2016-02-02T00:59:03Z",
+    "updated_at": "2023-10-23T11:12:55Z",
+    "pushed_at": "2023-09-23T17:32:09Z",
+    "ssh_url": "git@github.com:paulmach/osm.git",
+    "stargazers_count": 306,
+    "watchers_count": 306,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 42,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 3,
+    "topics": [
+      "golang",
+      "openstreetmap",
+      "osm",
+      "osmpbf",
+      "xml"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 111,
+    "Lines": 22834,
+    "Blank": 3522,
+    "Code": 17875,
+    "Comment": 1437,
+    "Bytes": 569158,
+    "Complexity": 3766
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "Name": "dosco/graphjin",
+  "Path": "./repositories/dosco__graphjin",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T21:20:12Z",
+    "benchmarkCount": 13,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 10,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/dosco/graphjin/core/v3/internal/graph",
+        "succeded": true,
+        "duration": "5.574s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse-12",
+            "runs": 85572,
+            "nsPerOp": 15638,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseP-12",
+            "runs": 170362,
+            "nsPerOp": 8612,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseFragment-12",
+            "runs": 82699,
+            "nsPerOp": 28955,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 3,
+            "createdOn": "2020-07-30",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkParseP",
+            "modificationCount": 3,
+            "createdOn": "2020-07-30",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkParseFragment",
+            "modificationCount": 3,
+            "createdOn": "2020-07-30",
+            "lastUpdateOn": "2022-12-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/dosco/graphjin/core/v3/internal/jsn",
+        "succeded": true,
+        "duration": "6.263s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 10000,
+            "nsPerOp": 125343,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter-12",
+            "runs": 130197,
+            "nsPerOp": 7857,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStrip-12",
+            "runs": 152494,
+            "nsPerOp": 9353,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReplace-12",
+            "runs": 66163,
+            "nsPerOp": 15309,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTest-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "helloworld"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 2,
+            "createdOn": "2019-05-08",
+            "lastUpdateOn": "2020-05-29"
+          },
+          {
+            "name": "BenchmarkFilter",
+            "modificationCount": 2,
+            "createdOn": "2019-05-08",
+            "lastUpdateOn": "2020-05-29"
+          },
+          {
+            "name": "BenchmarkStrip",
+            "modificationCount": 3,
+            "createdOn": "2019-05-08",
+            "lastUpdateOn": "2020-05-29"
+          },
+          {
+            "name": "BenchmarkReplace",
+            "modificationCount": 3,
+            "createdOn": "2019-05-08",
+            "lastUpdateOn": "2023-01-25"
+          },
+          {
+            "name": "BenchmarkTest",
+            "modificationCount": 2,
+            "createdOn": "2020-07-10",
+            "lastUpdateOn": "2021-01-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/dosco/graphjin/core/v3/internal/psql",
+        "succeded": true,
+        "duration": "2.372s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCompile-12",
+            "runs": 7614,
+            "nsPerOp": 157952,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileParallel-12",
+            "runs": 10000,
+            "nsPerOp": 105962,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCompile",
+            "modificationCount": 10,
+            "createdOn": "2019-03-24",
+            "lastUpdateOn": "2022-04-10"
+          },
+          {
+            "name": "BenchmarkCompileParallel",
+            "modificationCount": 8,
+            "createdOn": "2019-06-02",
+            "lastUpdateOn": "2022-04-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/dosco/graphjin/core/v3/internal/qcode",
+        "succeded": false,
+        "duration": "1.456s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkQCompile",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "qcode_test.go:317: where: [Where] invalid operation: id"
+          },
+          {
+            "name": "BenchmarkQCompileP",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "qcode_test.go:332: where: [Where] invalid operation: id"
+          },
+          {
+            "name": "BenchmarkQCompileFragment-12",
+            "runs": 52760,
+            "nsPerOp": 22796,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkQCompile",
+            "modificationCount": 7,
+            "createdOn": "2019-05-14",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkQCompileP",
+            "modificationCount": 8,
+            "createdOn": "2019-05-14",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkQCompileFragment",
+            "modificationCount": 6,
+            "createdOn": "2020-05-07",
+            "lastUpdateOn": "2023-01-19"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "dosco/graphjin",
+    "name": "graphjin",
+    "private": false,
+    "html_url": "https://github.com/dosco/graphjin",
+    "description": "GraphJin - Build NodeJS / GO APIs in 5 minutes not weeks",
+    "fork": false,
+    "created_at": "2019-03-24T13:43:05Z",
+    "updated_at": "2023-10-23T09:35:31Z",
+    "pushed_at": "2023-10-18T17:33:10Z",
+    "ssh_url": "git@github.com:dosco/graphjin.git",
+    "homepage": "https://graphjin.com",
+    "stargazers_count": 2750,
+    "watchers_count": 2750,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 184,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 25,
+    "topics": [
+      "automatic-api",
+      "cloud-native",
+      "cockroachdb",
+      "database",
+      "database-query",
+      "docker",
+      "expressjs",
+      "go",
+      "golang",
+      "graph",
+      "graphql",
+      "graphql-server",
+      "mysql",
+      "nodejs",
+      "postgresql",
+      "sql",
+      "yugabyte"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 183,
+    "Lines": 35519,
+    "Blank": 5110,
+    "Code": 28075,
+    "Comment": 2334,
+    "Bytes": 771177,
+    "Complexity": 5737
+  }
+}

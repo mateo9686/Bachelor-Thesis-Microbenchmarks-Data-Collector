@@ -1,0 +1,370 @@
+{
+  "Name": "smallnest/rpcx",
+  "Path": "./repositories/smallnest__rpcx",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T01:56:34Z",
+    "benchmarkCount": 21,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 21,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/smallnest/rpcx/codec",
+        "succeded": true,
+        "duration": "13.731s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJSONCodec_Encode-12",
+            "runs": 1336530,
+            "nsPerOp": 863,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPBCodec_Encode-12",
+            "runs": 2930912,
+            "nsPerOp": 472.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMsgpackCodec_Encode-12",
+            "runs": 1000000,
+            "nsPerOp": 1069,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThriftCodec_Encode-12",
+            "runs": 1000000,
+            "nsPerOp": 1842,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSONCodec_Decode-12",
+            "runs": 225982,
+            "nsPerOp": 4556,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPBCodec_Decode-12",
+            "runs": 2810346,
+            "nsPerOp": 677.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMsgpackCodec_Decode-12",
+            "runs": 549847,
+            "nsPerOp": 3416,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThriftCodec_Decode-12",
+            "runs": 241564,
+            "nsPerOp": 5976,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJSONCodec_Encode",
+            "modificationCount": 3,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkPBCodec_Encode",
+            "modificationCount": 2,
+            "createdOn": "2020-11-24",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkMsgpackCodec_Encode",
+            "modificationCount": 2,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-11-24"
+          },
+          {
+            "name": "BenchmarkThriftCodec_Encode",
+            "modificationCount": 3,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkJSONCodec_Decode",
+            "modificationCount": 3,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkPBCodec_Decode",
+            "modificationCount": 2,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-11-24"
+          },
+          {
+            "name": "BenchmarkMsgpackCodec_Decode",
+            "modificationCount": 2,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-11-24"
+          },
+          {
+            "name": "BenchmarkThriftCodec_Decode",
+            "modificationCount": 3,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-12-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/smallnest/rpcx/protocol",
+        "succeded": true,
+        "duration": "17.658s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGzipCompressor_Zip-12",
+            "runs": 12105,
+            "nsPerOp": 95045,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawDataCompressor_Zip-12",
+            "runs": 980640800,
+            "nsPerOp": 1.163,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnappyCompressor_Zip-12",
+            "runs": 10000,
+            "nsPerOp": 182854,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipCompressor_Unzip-12",
+            "runs": 115915,
+            "nsPerOp": 12676,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawDataCompressor_Unzip-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.756,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnappyCompressor_Unzip-12",
+            "runs": 10000,
+            "nsPerOp": 187726,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChanValue-12",
+            "runs": 8440736,
+            "nsPerOp": 141,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChanPtr-12",
+            "runs": 4499172,
+            "nsPerOp": 313,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGzipCompressor_Zip",
+            "modificationCount": 1,
+            "createdOn": "2020-12-02",
+            "lastUpdateOn": "2020-12-02"
+          },
+          {
+            "name": "BenchmarkRawDataCompressor_Zip",
+            "modificationCount": 1,
+            "createdOn": "2020-12-02",
+            "lastUpdateOn": "2020-12-02"
+          },
+          {
+            "name": "BenchmarkSnappyCompressor_Zip",
+            "modificationCount": 1,
+            "createdOn": "2020-12-02",
+            "lastUpdateOn": "2020-12-02"
+          },
+          {
+            "name": "BenchmarkGzipCompressor_Unzip",
+            "modificationCount": 1,
+            "createdOn": "2020-12-02",
+            "lastUpdateOn": "2020-12-02"
+          },
+          {
+            "name": "BenchmarkRawDataCompressor_Unzip",
+            "modificationCount": 1,
+            "createdOn": "2020-12-02",
+            "lastUpdateOn": "2020-12-02"
+          },
+          {
+            "name": "BenchmarkSnappyCompressor_Unzip",
+            "modificationCount": 1,
+            "createdOn": "2020-12-02",
+            "lastUpdateOn": "2020-12-02"
+          },
+          {
+            "name": "BenchmarkChanValue",
+            "modificationCount": 1,
+            "createdOn": "2021-07-28",
+            "lastUpdateOn": "2021-07-28"
+          },
+          {
+            "name": "BenchmarkChanPtr",
+            "modificationCount": 1,
+            "createdOn": "2021-07-28",
+            "lastUpdateOn": "2021-07-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/smallnest/rpcx/util",
+        "succeded": true,
+        "duration": "9.666s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkZip-12",
+            "runs": 117058,
+            "nsPerOp": 10877,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnzip-12",
+            "runs": 432013,
+            "nsPerOp": 3807,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnzip_Old-12",
+            "runs": 610963,
+            "nsPerOp": 3113,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetFreePort_Old-12",
+            "runs": 26056,
+            "nsPerOp": 40186,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetFreePort_New-12",
+            "runs": 33411,
+            "nsPerOp": 40145,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkZip",
+            "modificationCount": 1,
+            "createdOn": "2020-05-03",
+            "lastUpdateOn": "2020-05-03"
+          },
+          {
+            "name": "BenchmarkUnzip",
+            "modificationCount": 3,
+            "createdOn": "2019-09-11",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkUnzip_Old",
+            "modificationCount": 1,
+            "createdOn": "2022-01-27",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkGetFreePort_Old",
+            "modificationCount": 2,
+            "createdOn": "2020-11-12",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkGetFreePort_New",
+            "modificationCount": 2,
+            "createdOn": "2020-11-12",
+            "lastUpdateOn": "2022-01-27"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "smallnest/rpcx",
+    "name": "rpcx",
+    "private": false,
+    "html_url": "https://github.com/smallnest/rpcx",
+    "description": "Best microservices framework in Go, like alibaba Dubbo, but with more features, Scale easily. Try it. Test it. If you feel it's better, use it! 𝐉𝐚𝐯𝐚有𝐝𝐮𝐛𝐛𝐨, 𝐆𝐨𝐥𝐚𝐧𝐠有𝐫𝐩𝐜𝐱! build for cloud!",
+    "fork": false,
+    "created_at": "2016-05-18T09:34:05Z",
+    "updated_at": "2023-10-23T13:28:16Z",
+    "pushed_at": "2023-10-19T06:17:46Z",
+    "ssh_url": "git@github.com:smallnest/rpcx.git",
+    "homepage": "https://rpcx.io",
+    "stargazers_count": 7758,
+    "watchers_count": 7758,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 1153,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 10,
+    "topics": [
+      "dubbo",
+      "grpc",
+      "microservice",
+      "microservices",
+      "rpc",
+      "service-discovery"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 105,
+    "Lines": 14556,
+    "Blank": 2241,
+    "Code": 11380,
+    "Comment": 935,
+    "Bytes": 351036,
+    "Complexity": 2688
+  }
+}

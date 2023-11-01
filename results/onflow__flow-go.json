@@ -1,0 +1,295 @@
+{
+  "Name": "onflow/flow-go",
+  "Path": "./repositories/onflow__flow-go",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T13:46:35Z",
+    "benchmarkCount": 16,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 16,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/onflow/flow-go/crypto",
+        "succeded": true,
+        "duration": "13.413s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkECDSAP256Sign-12",
+            "runs": 22951,
+            "nsPerOp": 56847,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkECDSAP256Verify-12",
+            "runs": 10000,
+            "nsPerOp": 165497,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkECDSASecp256k1Sign-12",
+            "runs": 8455,
+            "nsPerOp": 176393,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkECDSASecp256k1Verify-12",
+            "runs": 2743,
+            "nsPerOp": 402860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkECDSADecode/compressed_point_on_ECDSA_secp256k1-12",
+            "runs": 42990,
+            "nsPerOp": 29559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkECDSADecode/uncompressed_point_on_ECDSA_secp256k1-12",
+            "runs": 590857,
+            "nsPerOp": 3081,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkECDSADecode/compressed_point_on_ECDSA_P256-12",
+            "runs": 77852,
+            "nsPerOp": 16339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkECDSADecode/uncompressed_point_on_ECDSA_P256-12",
+            "runs": 429320,
+            "nsPerOp": 2754,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkECDSAP256Sign",
+            "modificationCount": 8,
+            "createdOn": "2019-10-30",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkECDSAP256Verify",
+            "modificationCount": 8,
+            "createdOn": "2019-10-30",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkECDSASecp256k1Sign",
+            "modificationCount": 8,
+            "createdOn": "2019-10-30",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkECDSASecp256k1Verify",
+            "modificationCount": 11,
+            "createdOn": "2019-10-30",
+            "lastUpdateOn": "2020-04-23"
+          },
+          {
+            "name": "BenchmarkECDSADecode",
+            "modificationCount": 4,
+            "createdOn": "2021-08-11",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkECDSADecode",
+            "modificationCount": 4,
+            "createdOn": "2021-08-11",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkECDSADecode",
+            "modificationCount": 4,
+            "createdOn": "2021-08-11",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkECDSADecode",
+            "modificationCount": 4,
+            "createdOn": "2021-08-11",
+            "lastUpdateOn": "2023-03-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/onflow/flow-go/crypto/hash",
+        "succeded": true,
+        "duration": "13.731s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkComputeHash/SHA2_256-12",
+            "runs": 2480680,
+            "nsPerOp": 468,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeHash/SHA2_256_light-12",
+            "runs": 11554138,
+            "nsPerOp": 119.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeHash/SHA2_384-12",
+            "runs": 838938,
+            "nsPerOp": 1552,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeHash/SHA3_256-12",
+            "runs": 1000000,
+            "nsPerOp": 1098,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeHash/SHA3_256_light-12",
+            "runs": 1310011,
+            "nsPerOp": 1024,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeHash/SHA3_384-12",
+            "runs": 1000000,
+            "nsPerOp": 1170,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeHash/Keccak_256-12",
+            "runs": 1198510,
+            "nsPerOp": 1043,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeHash/KMAC128_128-12",
+            "runs": 302077,
+            "nsPerOp": 4133,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkComputeHash",
+            "modificationCount": 14,
+            "createdOn": "2021-04-20",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkComputeHash",
+            "modificationCount": 14,
+            "createdOn": "2021-04-20",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkComputeHash",
+            "modificationCount": 14,
+            "createdOn": "2021-04-20",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkComputeHash",
+            "modificationCount": 14,
+            "createdOn": "2021-04-20",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkComputeHash",
+            "modificationCount": 14,
+            "createdOn": "2021-04-20",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkComputeHash",
+            "modificationCount": 14,
+            "createdOn": "2021-04-20",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkComputeHash",
+            "modificationCount": 14,
+            "createdOn": "2021-04-20",
+            "lastUpdateOn": "2023-03-29"
+          },
+          {
+            "name": "BenchmarkComputeHash",
+            "modificationCount": 14,
+            "createdOn": "2021-04-20",
+            "lastUpdateOn": "2023-03-29"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "onflow/flow-go",
+    "name": "flow-go",
+    "private": false,
+    "html_url": "https://github.com/onflow/flow-go",
+    "description": "A fast, secure, and developer-friendly blockchain built to support the next generation of games, apps, and the digital assets that power them.",
+    "fork": false,
+    "created_at": "2020-09-22T21:39:12Z",
+    "updated_at": "2023-10-16T16:50:26Z",
+    "pushed_at": "2023-10-23T18:29:21Z",
+    "ssh_url": "git@github.com:onflow/flow-go.git",
+    "stargazers_count": 507,
+    "watchers_count": 507,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 152,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 300,
+    "topics": [
+      "blockchain",
+      "flow",
+      "go",
+      "golang",
+      "onflow"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "spdx_id": "AGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTE=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 2748,
+    "Lines": 452120,
+    "Blank": 71367,
+    "Code": 321994,
+    "Comment": 58759,
+    "Bytes": 15018798,
+    "Complexity": 34920
+  }
+}

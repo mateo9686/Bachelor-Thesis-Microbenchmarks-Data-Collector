@@ -1,0 +1,641 @@
+{
+  "Name": "kelindar/binary",
+  "Path": "./repositories/kelindar__binary",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T04:15:57Z",
+    "benchmarkCount": 41,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 41,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/kelindar/binary",
+        "succeded": true,
+        "duration": "10.094s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBinary/marshal-12",
+            "runs": 2412097,
+            "nsPerOp": 572.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBinary/marshal-to-12",
+            "runs": 6402904,
+            "nsPerOp": 173.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBinary/unmarshal-12",
+            "runs": 2360324,
+            "nsPerOp": 640.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSON/marshal-12",
+            "runs": 2085854,
+            "nsPerOp": 516.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSON/unmarshal-12",
+            "runs": 538975,
+            "nsPerOp": 3914,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBinary",
+            "modificationCount": 6,
+            "createdOn": "2018-09-16",
+            "lastUpdateOn": "2021-12-05"
+          },
+          {
+            "name": "BenchmarkBinary",
+            "modificationCount": 6,
+            "createdOn": "2018-09-16",
+            "lastUpdateOn": "2021-12-05"
+          },
+          {
+            "name": "BenchmarkBinary",
+            "modificationCount": 6,
+            "createdOn": "2018-09-16",
+            "lastUpdateOn": "2021-12-05"
+          },
+          {
+            "name": "BenchmarkJSON",
+            "modificationCount": 6,
+            "createdOn": "2017-11-05",
+            "lastUpdateOn": "2021-12-05"
+          },
+          {
+            "name": "BenchmarkJSON",
+            "modificationCount": 6,
+            "createdOn": "2017-11-05",
+            "lastUpdateOn": "2021-12-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/kelindar/binary/nocopy",
+        "succeded": true,
+        "duration": "40.847s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkString_Safe/marshal-12",
+            "runs": 1000000,
+            "nsPerOp": 1030,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString_Safe/unmarshal-12",
+            "runs": 1685890,
+            "nsPerOp": 639.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDictionary_Unsafe/marshal-12",
+            "runs": 1672869,
+            "nsPerOp": 981.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDictionary_Unsafe/unmarshal-12",
+            "runs": 1000000,
+            "nsPerOp": 1512,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkByteMap_Unsafe/marshal-12",
+            "runs": 435393,
+            "nsPerOp": 3140,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkByteMap_Unsafe/unmarshal-12",
+            "runs": 1000000,
+            "nsPerOp": 1717,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashMap_Unsafe/marshal-12",
+            "runs": 387876,
+            "nsPerOp": 4604,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashMap_Unsafe/unmarshal-12",
+            "runs": 1000000,
+            "nsPerOp": 1356,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString_Unsafe/marshal-12",
+            "runs": 1284564,
+            "nsPerOp": 1283,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString_Unsafe/unmarshal-12",
+            "runs": 10921434,
+            "nsPerOp": 207.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytes_Safe/marshal-12",
+            "runs": 71977,
+            "nsPerOp": 15063,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytes_Safe/unmarshal-12",
+            "runs": 132333,
+            "nsPerOp": 8058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytes_Unsafe/marshal-12",
+            "runs": 114886,
+            "nsPerOp": 9351,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytes_Unsafe/unmarshal-12",
+            "runs": 11430638,
+            "nsPerOp": 123.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint64s_Safe/marshal-12",
+            "runs": 4209,
+            "nsPerOp": 444245,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint64s_Safe/unmarshal-12",
+            "runs": 6006,
+            "nsPerOp": 408640,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint64s_Unsafe/marshal-12",
+            "runs": 12594,
+            "nsPerOp": 81860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint64s_Unsafe/unmarshal-12",
+            "runs": 7449043,
+            "nsPerOp": 172.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnar_Unsafe/marshal-12",
+            "runs": 239060,
+            "nsPerOp": 5620,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnar_Unsafe/unmarshal-12",
+            "runs": 361470,
+            "nsPerOp": 4004,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStruct_Unsafe/marshal-12",
+            "runs": 1000000,
+            "nsPerOp": 1045,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStruct_Unsafe/unmarshal-12",
+            "runs": 5659155,
+            "nsPerOp": 352.2,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkString_Safe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkString_Safe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkDictionary_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkDictionary_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkByteMap_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkByteMap_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkHashMap_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkHashMap_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkString_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkString_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkBytes_Safe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkBytes_Safe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkBytes_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkBytes_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkUint64s_Safe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkUint64s_Safe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkUint64s_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkUint64s_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkColumnar_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkColumnar_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkStruct_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkStruct_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/kelindar/binary/sorted",
+        "succeded": true,
+        "duration": "21.501s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSortedSlice/encode-int-12",
+            "runs": 1000000,
+            "nsPerOp": 1629,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSortedSlice/decode-int-12",
+            "runs": 314073,
+            "nsPerOp": 3475,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSortedSlice/encode-uint-12",
+            "runs": 1494622,
+            "nsPerOp": 839.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSortedSlice/decode-uint-12",
+            "runs": 339951,
+            "nsPerOp": 5911,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimestamps/encode-12",
+            "runs": 4924,
+            "nsPerOp": 284530,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimestamps/decode-12",
+            "runs": 14229,
+            "nsPerOp": 162757,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimeCounters/encode-12",
+            "runs": 4994,
+            "nsPerOp": 226535,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimeCounters/decode-12",
+            "runs": 4453,
+            "nsPerOp": 713727,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimeSeries/encode-12",
+            "runs": 7012,
+            "nsPerOp": 385771,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimeSeries/decode-12",
+            "runs": 4149,
+            "nsPerOp": 335492,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSortedSlice",
+            "modificationCount": 3,
+            "createdOn": "2018-09-16",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkSortedSlice",
+            "modificationCount": 3,
+            "createdOn": "2018-09-16",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkSortedSlice",
+            "modificationCount": 3,
+            "createdOn": "2018-09-16",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkSortedSlice",
+            "modificationCount": 3,
+            "createdOn": "2018-09-16",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkTimestamps",
+            "modificationCount": 6,
+            "createdOn": "2018-09-16",
+            "lastUpdateOn": "2023-10-06"
+          },
+          {
+            "name": "BenchmarkTimestamps",
+            "modificationCount": 6,
+            "createdOn": "2018-09-16",
+            "lastUpdateOn": "2023-10-06"
+          },
+          {
+            "name": "BenchmarkTimeCounters",
+            "modificationCount": 1,
+            "createdOn": "2023-10-06",
+            "lastUpdateOn": "2023-10-06"
+          },
+          {
+            "name": "BenchmarkTimeCounters",
+            "modificationCount": 1,
+            "createdOn": "2023-10-06",
+            "lastUpdateOn": "2023-10-06"
+          },
+          {
+            "name": "BenchmarkTimeSeries",
+            "modificationCount": 1,
+            "createdOn": "2023-10-06",
+            "lastUpdateOn": "2023-10-06"
+          },
+          {
+            "name": "BenchmarkTimeSeries",
+            "modificationCount": 1,
+            "createdOn": "2023-10-06",
+            "lastUpdateOn": "2023-10-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/kelindar/binary/unsafe",
+        "succeded": true,
+        "duration": "7.502s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUint64s_Safe/marshal-12",
+            "runs": 198148,
+            "nsPerOp": 9716,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint64s_Safe/unmarshal-12",
+            "runs": 127659,
+            "nsPerOp": 8619,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint64s_Unsafe/marshal-12",
+            "runs": 622807,
+            "nsPerOp": 1849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint64s_Unsafe/unmarshal-12",
+            "runs": 797254,
+            "nsPerOp": 1633,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUint64s_Safe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkUint64s_Safe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkUint64s_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          },
+          {
+            "name": "BenchmarkUint64s_Unsafe",
+            "modificationCount": 10,
+            "createdOn": "2018-09-15",
+            "lastUpdateOn": "2021-06-17"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "kelindar/binary",
+    "name": "binary",
+    "private": false,
+    "html_url": "https://github.com/kelindar/binary",
+    "description": "Generic and fast binary serializer for Go",
+    "fork": false,
+    "created_at": "2017-11-05T09:35:11Z",
+    "updated_at": "2023-10-21T04:54:14Z",
+    "pushed_at": "2023-10-06T11:26:25Z",
+    "ssh_url": "git@github.com:kelindar/binary.git",
+    "homepage": "https://emitter.io",
+    "stargazers_count": 186,
+    "watchers_count": 186,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 23,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 1,
+    "topics": [
+      "binary",
+      "codec",
+      "decoding",
+      "encoding",
+      "generic",
+      "golang",
+      "serialization"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 31,
+    "Lines": 5061,
+    "Blank": 850,
+    "Code": 3736,
+    "Comment": 475,
+    "Bytes": 122170,
+    "Complexity": 442
+  }
+}

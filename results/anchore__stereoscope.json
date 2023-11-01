@@ -1,0 +1,154 @@
+{
+  "Name": "anchore/stereoscope",
+  "Path": "./repositories/anchore__stereoscope",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T11:16:35Z",
+    "benchmarkCount": 6,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 3,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/anchore/stereoscope/pkg/file",
+        "succeded": true,
+        "duration": "1.434s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTarIndex-12",
+            "runs": 1,
+            "nsPerOp": 1423038580,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTarIndex",
+            "modificationCount": 2,
+            "createdOn": "2021-03-17",
+            "lastUpdateOn": "2021-10-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/anchore/stereoscope/test/integration",
+        "succeded": false,
+        "duration": "5.553s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSimpleImage_GetImage/docker-archive-12",
+            "runs": 588,
+            "nsPerOp": 2156238,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimpleImage_GetImage/podman",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "fixture_image_simple_test.go:177: could not get fixture image: no host address"
+          },
+          {
+            "name": "BenchmarkSimpleImage_GetImage",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "image_fixtures.go:223: Build docker image: name=\"stereoscope-fixture-image-simple\" tag=\"04e16e44161c8888a1a963720fd0443cbf7eef8101434c431de8725cd98cc9f7\""
+          },
+          {
+            "name": "BenchmarkSimpleImage_FetchSquashedContents/docker-archive-12",
+            "runs": 35654,
+            "nsPerOp": 33205,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimpleImage_FetchSquashedContents",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "image_fixtures.go:68:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSimpleImage_GetImage",
+            "modificationCount": 7,
+            "createdOn": "2021-03-17",
+            "lastUpdateOn": "2022-08-02"
+          },
+          {
+            "name": "BenchmarkSimpleImage_GetImage",
+            "modificationCount": 7,
+            "createdOn": "2021-03-17",
+            "lastUpdateOn": "2022-08-02"
+          },
+          {
+            "name": "BenchmarkSimpleImage_FetchSquashedContents",
+            "modificationCount": 5,
+            "createdOn": "2021-03-17",
+            "lastUpdateOn": "2023-02-08"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "anchore/stereoscope",
+    "name": "stereoscope",
+    "private": false,
+    "html_url": "https://github.com/anchore/stereoscope",
+    "description": "go library for processing container images and simulating a squash filesystem",
+    "fork": false,
+    "created_at": "2020-05-05T18:39:19Z",
+    "updated_at": "2023-09-22T18:09:33Z",
+    "pushed_at": "2023-10-11T23:42:02Z",
+    "ssh_url": "git@github.com:anchore/stereoscope.git",
+    "stargazers_count": 61,
+    "watchers_count": 61,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 45,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 16,
+    "topics": [
+      "container",
+      "container-image",
+      "go",
+      "golang",
+      "hacktoberfest",
+      "squashfs"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 138,
+    "Lines": 23043,
+    "Blank": 2903,
+    "Code": 18805,
+    "Comment": 1335,
+    "Bytes": 594305,
+    "Complexity": 2921
+  }
+}

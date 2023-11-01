@@ -1,0 +1,263 @@
+{
+  "Name": "ydb-platform/ydb-go-sdk",
+  "Path": "./repositories/ydb-platform__ydb-go-sdk",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T19:40:22Z",
+    "benchmarkCount": 12,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 11,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/ydb-platform/ydb-go-sdk/v3/internal/table/scanner",
+        "succeded": false,
+        "duration": "24.596s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTestScanWithColumns-12",
+            "runs": 3260719,
+            "nsPerOp": 426,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestScan-12",
+            "runs": 4183855,
+            "nsPerOp": 397.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestScanNamed-12",
+            "runs": 3295662,
+            "nsPerOp": 342.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestSliceReduce-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "0"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTestScanWithColumns",
+            "modificationCount": 4,
+            "createdOn": "2021-08-24",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkTestScan",
+            "modificationCount": 4,
+            "createdOn": "2021-08-24",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkTestScanNamed",
+            "modificationCount": 2,
+            "createdOn": "2022-01-26",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkTestSliceReduce",
+            "modificationCount": 3,
+            "createdOn": "2021-08-24",
+            "lastUpdateOn": "2022-01-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ydb-platform/ydb-go-sdk/v3/internal/topic/topicreaderinternal",
+        "succeded": true,
+        "duration": "1.232s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConsumeContent-12",
+            "runs": 15953384,
+            "nsPerOp": 71.32,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConsumeContent",
+            "modificationCount": 1,
+            "createdOn": "2022-08-01",
+            "lastUpdateOn": "2022-08-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ydb-platform/ydb-go-sdk/v3/internal/value",
+        "succeded": true,
+        "duration": "1.416s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMemory-12",
+            "runs": 123752,
+            "nsPerOp": 10288,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMemory",
+            "modificationCount": 6,
+            "createdOn": "2022-07-14",
+            "lastUpdateOn": "2022-10-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ydb-platform/ydb-go-sdk/v3/internal/xstring",
+        "succeded": true,
+        "duration": "6.162s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBufferWithPool-12",
+            "runs": 37304474,
+            "nsPerOp": 29.32,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBufferWithoutPool-12",
+            "runs": 22588669,
+            "nsPerOp": 49.91,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_StdFromBytes-12",
+            "runs": 28985892,
+            "nsPerOp": 41.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_FromBytes-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.4599,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_StdToBytes-12",
+            "runs": 21764396,
+            "nsPerOp": 53.91,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_ToBytes-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7437,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBufferWithPool",
+            "modificationCount": 1,
+            "createdOn": "2023-10-24",
+            "lastUpdateOn": "2023-10-24"
+          },
+          {
+            "name": "BenchmarkBufferWithoutPool",
+            "modificationCount": 1,
+            "createdOn": "2023-10-24",
+            "lastUpdateOn": "2023-10-24"
+          },
+          {
+            "name": "Benchmark_StdFromBytes",
+            "modificationCount": 3,
+            "createdOn": "2023-08-28",
+            "lastUpdateOn": "2023-09-07"
+          },
+          {
+            "name": "Benchmark_FromBytes",
+            "modificationCount": 2,
+            "createdOn": "2023-08-28",
+            "lastUpdateOn": "2023-09-07"
+          },
+          {
+            "name": "Benchmark_StdToBytes",
+            "modificationCount": 3,
+            "createdOn": "2023-08-28",
+            "lastUpdateOn": "2023-09-07"
+          },
+          {
+            "name": "Benchmark_ToBytes",
+            "modificationCount": 2,
+            "createdOn": "2023-08-28",
+            "lastUpdateOn": "2023-09-07"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "ydb-platform/ydb-go-sdk",
+    "name": "ydb-go-sdk",
+    "private": false,
+    "html_url": "https://github.com/ydb-platform/ydb-go-sdk",
+    "description": "Pure Go native and database/sql driver for YDB",
+    "fork": false,
+    "created_at": "2021-08-03T09:40:19Z",
+    "updated_at": "2023-10-21T19:14:24Z",
+    "pushed_at": "2023-10-23T16:40:07Z",
+    "ssh_url": "git@github.com:ydb-platform/ydb-go-sdk.git",
+    "homepage": "https://ydb.tech",
+    "stargazers_count": 108,
+    "watchers_count": 108,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 34,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 108,
+    "topics": [
+      "database-sql",
+      "golang",
+      "ydb",
+      "ydb-go-sdk",
+      "ydb-platform",
+      "ydb-sdk"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 579,
+    "Lines": 95056,
+    "Blank": 10059,
+    "Code": 81973,
+    "Comment": 3024,
+    "Bytes": 2343093,
+    "Complexity": 11049
+  }
+}

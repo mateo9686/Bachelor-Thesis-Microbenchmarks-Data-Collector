@@ -1,0 +1,582 @@
+{
+  "Name": "minotar/imgd",
+  "Path": "./repositories/minotar__imgd",
+  "GoVersion": "1.16",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T04:34:35Z",
+    "benchmarkCount": 35,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 35,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/minotar/imgd/pkg/cache/util/expiry",
+        "succeded": true,
+        "duration": "2.052s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewExpiryRecord32-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8854,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewExpiryRecord64-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.9731,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewExpiryRecord32",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkNewExpiryRecord64",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minotar/imgd/pkg/cache/util/expiry/memory",
+        "succeded": true,
+        "duration": "4.689s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAddExpiry32-12",
+            "runs": 3961705,
+            "nsPerOp": 311.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddExpiry64-12",
+            "runs": 10391010,
+            "nsPerOp": 182.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAddExpiry32",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkAddExpiry64",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minotar/imgd/pkg/cache/util/expiry/store",
+        "succeded": true,
+        "duration": "30.297s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStoreEntryEncode32-12",
+            "runs": 25793865,
+            "nsPerOp": 54.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryEncode64-12",
+            "runs": 16487078,
+            "nsPerOp": 134.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryEncode256-12",
+            "runs": 2505794,
+            "nsPerOp": 405,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryEncode1024-12",
+            "runs": 2783796,
+            "nsPerOp": 408.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryDecode32-12",
+            "runs": 253274527,
+            "nsPerOp": 4.294,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryDecode64-12",
+            "runs": 273669440,
+            "nsPerOp": 4.28,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryDecode256-12",
+            "runs": 262626582,
+            "nsPerOp": 4.471,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryDecode1024-12",
+            "runs": 268604401,
+            "nsPerOp": 5.523,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode32-12",
+            "runs": 21471535,
+            "nsPerOp": 66.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode64-12",
+            "runs": 17026872,
+            "nsPerOp": 70.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode256-12",
+            "runs": 8529165,
+            "nsPerOp": 242.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode1024-12",
+            "runs": 615338,
+            "nsPerOp": 1832,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode2048-12",
+            "runs": 765464,
+            "nsPerOp": 4768,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode4096-12",
+            "runs": 236688,
+            "nsPerOp": 5195,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStoreEntryEncode32",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryEncode64",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryEncode256",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryEncode1024",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryDecode32",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryDecode64",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryDecode256",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryDecode1024",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode32",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode64",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode256",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode1024",
+            "modificationCount": 2,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode2048",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkStoreEntryEncodeDecode4096",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minotar/imgd/pkg/mcclient/mcuser",
+        "succeded": true,
+        "duration": "9.758s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewUser-12",
+            "runs": 207902,
+            "nsPerOp": 7735,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressUser-12",
+            "runs": 12868,
+            "nsPerOp": 108012,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeProtobuf-12",
+            "runs": 1000000,
+            "nsPerOp": 1066,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecompressUser-12",
+            "runs": 211418,
+            "nsPerOp": 9520,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeProtobuf-12",
+            "runs": 1000000,
+            "nsPerOp": 1507,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewUser",
+            "modificationCount": 1,
+            "createdOn": "2021-08-02",
+            "lastUpdateOn": "2021-08-02"
+          },
+          {
+            "name": "BenchmarkCompressUser",
+            "modificationCount": 1,
+            "createdOn": "2021-08-02",
+            "lastUpdateOn": "2021-08-02"
+          },
+          {
+            "name": "BenchmarkEncodeProtobuf",
+            "modificationCount": 1,
+            "createdOn": "2021-08-02",
+            "lastUpdateOn": "2021-08-02"
+          },
+          {
+            "name": "BenchmarkDecompressUser",
+            "modificationCount": 1,
+            "createdOn": "2021-08-02",
+            "lastUpdateOn": "2021-08-02"
+          },
+          {
+            "name": "BenchmarkDecodeProtobuf",
+            "modificationCount": 1,
+            "createdOn": "2021-08-02",
+            "lastUpdateOn": "2021-08-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minotar/imgd/pkg/storage/bolt_store",
+        "succeded": true,
+        "duration": "12.724s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 16600,
+            "nsPerOp": 219485,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertNoSync-12",
+            "runs": 10000,
+            "nsPerOp": 196971,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertParallel-12",
+            "runs": 10000,
+            "nsPerOp": 131371,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBatchInsertParallel-12",
+            "runs": 632,
+            "nsPerOp": 1837151,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBatchInsertParallelNoSync-12",
+            "runs": 2193,
+            "nsPerOp": 505848,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookup-12",
+            "runs": 79939,
+            "nsPerOp": 20146,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 2,
+            "createdOn": "2015-12-03",
+            "lastUpdateOn": "2018-06-28"
+          },
+          {
+            "name": "BenchmarkInsertNoSync",
+            "modificationCount": 3,
+            "createdOn": "2021-05-16",
+            "lastUpdateOn": "2021-10-24"
+          },
+          {
+            "name": "BenchmarkInsertParallel",
+            "modificationCount": 1,
+            "createdOn": "2021-10-24",
+            "lastUpdateOn": "2021-10-24"
+          },
+          {
+            "name": "BenchmarkBatchInsertParallel",
+            "modificationCount": 3,
+            "createdOn": "2021-05-16",
+            "lastUpdateOn": "2021-10-24"
+          },
+          {
+            "name": "BenchmarkBatchInsertParallelNoSync",
+            "modificationCount": 3,
+            "createdOn": "2021-05-16",
+            "lastUpdateOn": "2021-10-24"
+          },
+          {
+            "name": "BenchmarkLookup",
+            "modificationCount": 3,
+            "createdOn": "2015-12-03",
+            "lastUpdateOn": "2018-07-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minotar/imgd/pkg/storage/lru_store",
+        "succeded": true,
+        "duration": "7.229s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 689445,
+            "nsPerOp": 2341,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookup-12",
+            "runs": 1000000,
+            "nsPerOp": 2905,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 2,
+            "createdOn": "2015-12-03",
+            "lastUpdateOn": "2018-06-28"
+          },
+          {
+            "name": "BenchmarkLookup",
+            "modificationCount": 3,
+            "createdOn": "2015-12-03",
+            "lastUpdateOn": "2018-07-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/minotar/imgd/pkg/util/tinytime",
+        "succeded": true,
+        "duration": "5.322s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTinyTime-12",
+            "runs": 977603168,
+            "nsPerOp": 1.807,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTime-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.825,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTinyTimeFromTime-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5762,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimeFromTinyTime-12",
+            "runs": 393286962,
+            "nsPerOp": 2.945,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTinyTime",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkTime",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkTinyTimeFromTime",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          },
+          {
+            "name": "BenchmarkTimeFromTinyTime",
+            "modificationCount": 1,
+            "createdOn": "2021-08-01",
+            "lastUpdateOn": "2021-08-01"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "minotar/imgd",
+    "name": "imgd",
+    "private": false,
+    "html_url": "https://github.com/minotar/imgd",
+    "description": "Minotar is a global avatar service that pulls your head off of your Minecraft.net skin, and allows it for use on several thousand sites. ",
+    "fork": false,
+    "created_at": "2012-02-16T22:09:04Z",
+    "updated_at": "2023-10-22T16:51:34Z",
+    "pushed_at": "2023-03-07T01:28:31Z",
+    "ssh_url": "git@github.com:minotar/imgd.git",
+    "homepage": "https://minotar.net/",
+    "stargazers_count": 191,
+    "watchers_count": 191,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 61,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 20,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "unlicense",
+      "name": "The Unlicense",
+      "url": "https://api.github.com/licenses/unlicense",
+      "spdx_id": "Unlicense",
+      "node_id": "MDc6TGljZW5zZTE1",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 128,
+    "Lines": 16376,
+    "Blank": 2733,
+    "Code": 12061,
+    "Comment": 1582,
+    "Bytes": 478264,
+    "Complexity": 1742
+  }
+}

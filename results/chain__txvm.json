@@ -1,0 +1,542 @@
+{
+  "Name": "chain/txvm",
+  "Path": "./repositories/chain__txvm",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T02:51:12Z",
+    "benchmarkCount": 32,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 32,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/chain/txvm/crypto/ed25519",
+        "succeded": true,
+        "duration": "5.197s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkKeyGeneration-12",
+            "runs": 13603,
+            "nsPerOp": 81092,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning-12",
+            "runs": 10000,
+            "nsPerOp": 109946,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerification-12",
+            "runs": 4039,
+            "nsPerOp": 265219,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkKeyGeneration",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkVerification",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/chain/txvm/crypto/ed25519/chainkd",
+        "succeded": true,
+        "duration": "9.217s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkXPrvChildNonHardened-12",
+            "runs": 15994,
+            "nsPerOp": 64744,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkXPrvChildHardened-12",
+            "runs": 2505060,
+            "nsPerOp": 510.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkXPubChild-12",
+            "runs": 16237,
+            "nsPerOp": 63399,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkXPrvSign-12",
+            "runs": 11691,
+            "nsPerOp": 100932,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkXPubVerify-12",
+            "runs": 7558,
+            "nsPerOp": 161939,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkXPrvChildNonHardened",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkXPrvChildHardened",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkXPubChild",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkXPrvSign",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkXPubVerify",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/chain/txvm/crypto/sha3",
+        "succeded": true,
+        "duration": "28.556s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLeftEncode-12",
+            "runs": 45614664,
+            "nsPerOp": 28.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRightEncode-12",
+            "runs": 31534028,
+            "nsPerOp": 46.55,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeString-12",
+            "runs": 21993957,
+            "nsPerOp": 66.11,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInitCShake-12",
+            "runs": 2351802,
+            "nsPerOp": 481.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPermutationFunction-12",
+            "runs": 2877440,
+            "nsPerOp": 385.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSha3_512_MTU-12",
+            "runs": 122851,
+            "nsPerOp": 10963,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSha3_384_MTU-12",
+            "runs": 217347,
+            "nsPerOp": 7247,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSha3_256_MTU-12",
+            "runs": 199948,
+            "nsPerOp": 6435,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSha3_224_MTU-12",
+            "runs": 202537,
+            "nsPerOp": 7575,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShake128_MTU-12",
+            "runs": 346008,
+            "nsPerOp": 3878,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShake256_MTU-12",
+            "runs": 271849,
+            "nsPerOp": 5186,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShake256_16x-12",
+            "runs": 20611,
+            "nsPerOp": 58345,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShake256_1MiB-12",
+            "runs": 385,
+            "nsPerOp": 4379904,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSha3_512_1MiB-12",
+            "runs": 120,
+            "nsPerOp": 14979118,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLeftEncode",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkRightEncode",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkEncodeString",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkInitCShake",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkPermutationFunction",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkSha3_512_MTU",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkSha3_384_MTU",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkSha3_256_MTU",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkSha3_224_MTU",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkShake128_MTU",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkShake256_MTU",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkShake256_16x",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkShake256_1MiB",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkSha3_512_1MiB",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/chain/txvm/encoding/json",
+        "succeded": true,
+        "duration": "8.919s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUnmarshalJSONMap/null-12",
+            "runs": 223186639,
+            "nsPerOp": 4.848,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalJSONMap/empty_object-12",
+            "runs": 221155785,
+            "nsPerOp": 5.771,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalJSONMap/space_before_object-12",
+            "runs": 190428996,
+            "nsPerOp": 7.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalJSONMap/single-level_object-12",
+            "runs": 208742449,
+            "nsPerOp": 5.814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalJSONMap/multi-level_object-12",
+            "runs": 205172874,
+            "nsPerOp": 5.459,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUnmarshalJSONMap",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkUnmarshalJSONMap",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkUnmarshalJSONMap",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkUnmarshalJSONMap",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkUnmarshalJSONMap",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/chain/txvm/protocol/patricia",
+        "succeded": true,
+        "duration": "3.767s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSingleInsert-12",
+            "runs": 1000000,
+            "nsPerOp": 1253,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInserts-12",
+            "runs": 54,
+            "nsPerOp": 24607482,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertsRootHash-12",
+            "runs": 34,
+            "nsPerOp": 32739342,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSingleInsert",
+            "modificationCount": 1,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2018-10-04"
+          },
+          {
+            "name": "BenchmarkInserts",
+            "modificationCount": 1,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2018-10-04"
+          },
+          {
+            "name": "BenchmarkInsertsRootHash",
+            "modificationCount": 1,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2018-10-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/chain/txvm/protocol/txvm",
+        "succeded": true,
+        "duration": "1.692s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkExampleTx-12",
+            "runs": 1461,
+            "nsPerOp": 1096075,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkExampleTx",
+            "modificationCount": 1,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2018-10-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/chain/txvm/protocol/txvm/asm",
+        "succeded": true,
+        "duration": "1.979s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAssemble-12",
+            "runs": 4738,
+            "nsPerOp": 410991,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAssemble",
+            "modificationCount": 1,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2018-10-04"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "chain/txvm",
+    "name": "txvm",
+    "private": false,
+    "html_url": "https://github.com/chain/txvm",
+    "description": "TxVM is a virtual machine for blockchain transactions",
+    "fork": false,
+    "created_at": "2018-03-13T22:35:19Z",
+    "updated_at": "2023-03-09T08:57:07Z",
+    "pushed_at": "2019-04-22T18:11:07Z",
+    "ssh_url": "git@github.com:chain/txvm.git",
+    "homepage": "https://godoc.org/github.com/chain/txvm",
+    "stargazers_count": 165,
+    "watchers_count": 165,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 34,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 1,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 169,
+    "Lines": 27387,
+    "Blank": 2499,
+    "Code": 22455,
+    "Comment": 2433,
+    "Bytes": 787989,
+    "Complexity": 2850
+  }
+}

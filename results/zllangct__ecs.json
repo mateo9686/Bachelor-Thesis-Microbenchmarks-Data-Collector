@@ -1,0 +1,321 @@
+{
+  "Name": "zllangct/ecs",
+  "Path": "./repositories/zllangct__ecs",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T18:26:10Z",
+    "benchmarkCount": 18,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 18,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "test_ecs_m_d",
+        "succeded": true,
+        "duration": "7.396s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNormal-12",
+            "runs": 313,
+            "nsPerOp": 4574424,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNormalParallel-12",
+            "runs": 216,
+            "nsPerOp": 6355848,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEcs-12",
+            "runs": 4292,
+            "nsPerOp": 361022,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEcsSingleCore-12",
+            "runs": 7780,
+            "nsPerOp": 141009,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNormal",
+            "modificationCount": 1,
+            "createdOn": "2022-03-30",
+            "lastUpdateOn": "2022-03-30"
+          },
+          {
+            "name": "BenchmarkNormalParallel",
+            "modificationCount": 1,
+            "createdOn": "2022-09-10",
+            "lastUpdateOn": "2022-09-10"
+          },
+          {
+            "name": "BenchmarkEcs",
+            "modificationCount": 5,
+            "createdOn": "2022-03-30",
+            "lastUpdateOn": "2022-11-19"
+          },
+          {
+            "name": "BenchmarkEcsSingleCore",
+            "modificationCount": 4,
+            "createdOn": "2022-04-27",
+            "lastUpdateOn": "2022-11-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zllangct/ecs",
+        "succeded": false,
+        "duration": "24.783s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIntTypeAndReflectType/int_type-12",
+            "runs": 63773794,
+            "nsPerOp": 17.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntTypeAndReflectType/reflect_type-12",
+            "runs": 83720872,
+            "nsPerOp": 16.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComponentSet_Read/sequence-12",
+            "runs": 239503368,
+            "nsPerOp": 5.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComponentSet_Read/random-12",
+            "runs": 69466420,
+            "nsPerOp": 15.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompound_Add-12",
+            "runs": 1461513,
+            "nsPerOp": 813.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompound_Find-12",
+            "runs": 215353390,
+            "nsPerOp": 5.654,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompound_MapFind-12",
+            "runs": 70877167,
+            "nsPerOp": 18.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompound_BigMapFind-12",
+            "runs": 39993208,
+            "nsPerOp": 69.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEntityIDGenerator_New/map-12",
+            "runs": 48483597,
+            "nsPerOp": 39.34,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEntityIDGenerator_New/gen-12",
+            "runs": 656669658,
+            "nsPerOp": 1.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEntityIDGenerator_NewFreeRandom/map-12",
+            "runs": 5281045,
+            "nsPerOp": 250.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEntityIDGenerator_NewFreeRandom/gen-12",
+            "runs": 4841528,
+            "nsPerOp": 254.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoroutine-12",
+            "runs": 41898,
+            "nsPerOp": 27421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGpool-12",
+            "runs": 45775,
+            "nsPerOp": 25103,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIntTypeAndReflectType",
+            "modificationCount": 1,
+            "createdOn": "2023-06-26",
+            "lastUpdateOn": "2023-06-26"
+          },
+          {
+            "name": "BenchmarkIntTypeAndReflectType",
+            "modificationCount": 1,
+            "createdOn": "2023-06-26",
+            "lastUpdateOn": "2023-06-26"
+          },
+          {
+            "name": "BenchmarkComponentSet_Read",
+            "modificationCount": 7,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-11-19"
+          },
+          {
+            "name": "BenchmarkComponentSet_Read",
+            "modificationCount": 7,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-11-19"
+          },
+          {
+            "name": "BenchmarkCompound_Add",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkCompound_Find",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkCompound_MapFind",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkCompound_BigMapFind",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkEntityIDGenerator_New",
+            "modificationCount": 2,
+            "createdOn": "2022-08-24",
+            "lastUpdateOn": "2022-08-27"
+          },
+          {
+            "name": "BenchmarkEntityIDGenerator_New",
+            "modificationCount": 2,
+            "createdOn": "2022-08-24",
+            "lastUpdateOn": "2022-08-27"
+          },
+          {
+            "name": "BenchmarkEntityIDGenerator_NewFreeRandom",
+            "modificationCount": 2,
+            "createdOn": "2022-08-24",
+            "lastUpdateOn": "2022-08-27"
+          },
+          {
+            "name": "BenchmarkEntityIDGenerator_NewFreeRandom",
+            "modificationCount": 2,
+            "createdOn": "2022-08-24",
+            "lastUpdateOn": "2022-08-27"
+          },
+          {
+            "name": "BenchmarkGoroutine",
+            "modificationCount": 2,
+            "createdOn": "2019-10-25",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkGpool",
+            "modificationCount": 8,
+            "createdOn": "2019-10-25",
+            "lastUpdateOn": "2022-07-27"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "zllangct/ecs",
+    "name": "ecs",
+    "private": false,
+    "html_url": "https://github.com/zllangct/ecs",
+    "description": "A Go-implementation of the ECS (Entity-Component-System), focus on the development of game server.",
+    "fork": false,
+    "created_at": "2019-10-31T16:58:21Z",
+    "updated_at": "2023-09-25T09:05:52Z",
+    "pushed_at": "2023-09-09T11:53:10Z",
+    "ssh_url": "git@github.com:zllangct/ecs.git",
+    "stargazers_count": 99,
+    "watchers_count": 99,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 9,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 11,
+    "topics": [
+      "ecs",
+      "entity-component-system",
+      "game",
+      "game-development",
+      "game-server",
+      "parallel-processing",
+      "parallel-programming"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "",
+      "name": "",
+      "node_id": "",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 78,
+    "Lines": 9063,
+    "Blank": 1153,
+    "Code": 7693,
+    "Comment": 217,
+    "Bytes": 191238,
+    "Complexity": 1019
+  }
+}

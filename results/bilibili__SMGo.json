@@ -1,0 +1,548 @@
+{
+  "Name": "bilibili/SMGo",
+  "Path": "./repositories/bilibili__SMGo",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T02:12:43Z",
+    "benchmarkCount": 34,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 34,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/bilibili/smgo/sm2/internal",
+        "succeded": true,
+        "duration": "30.451s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkScalarNult-12",
+            "runs": 5254,
+            "nsPerOp": 197762,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScalarMixedMult_Unsafe-12",
+            "runs": 4862,
+            "nsPerOp": 212513,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSM2Point_ScalarMult_Unsafe_DaA-12",
+            "runs": 4764,
+            "nsPerOp": 345079,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScalarBaseMult-12",
+            "runs": 26842,
+            "nsPerOp": 42684,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_scalarBaseMult_SkipBitExtraction_6_3_14-12",
+            "runs": 28136,
+            "nsPerOp": 44218,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_scalarBaseMult_SkipBitExtraction_5_3_17-12",
+            "runs": 26018,
+            "nsPerOp": 64513,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_scalarBaseMult_SkipBitExtraction_4_2_32-12",
+            "runs": 10000,
+            "nsPerOp": 116451,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_scalarBaseMult_SkipBitExtraction_7_3_12-12",
+            "runs": 20600,
+            "nsPerOp": 52335,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSM2Point_Select-12",
+            "runs": 98509502,
+            "nsPerOp": 13.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSM2Point_Add-12",
+            "runs": 2283512,
+            "nsPerOp": 656.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSM2Point_Double-12",
+            "runs": 1989104,
+            "nsPerOp": 622.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSM2Point_GetAffineX-12",
+            "runs": 145670,
+            "nsPerOp": 8190,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSM2Point_GetAffineX_Unsafe-12",
+            "runs": 247648,
+            "nsPerOp": 6422,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSM2Point_Bytes-12",
+            "runs": 91626,
+            "nsPerOp": 11148,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSM2Point_Bytes_Unsafe-12",
+            "runs": 233005,
+            "nsPerOp": 6024,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkScalarNult",
+            "modificationCount": 4,
+            "createdOn": "2022-01-25",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkScalarMixedMult_Unsafe",
+            "modificationCount": 4,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkSM2Point_ScalarMult_Unsafe_DaA",
+            "modificationCount": 5,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkScalarBaseMult",
+            "modificationCount": 4,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "Benchmark_scalarBaseMult_SkipBitExtraction_6_3_14",
+            "modificationCount": 4,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "Benchmark_scalarBaseMult_SkipBitExtraction_5_3_17",
+            "modificationCount": 4,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "Benchmark_scalarBaseMult_SkipBitExtraction_4_2_32",
+            "modificationCount": 7,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "Benchmark_scalarBaseMult_SkipBitExtraction_7_3_12",
+            "modificationCount": 3,
+            "createdOn": "2022-01-10",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkSM2Point_Select",
+            "modificationCount": 6,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkSM2Point_Add",
+            "modificationCount": 5,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkSM2Point_Double",
+            "modificationCount": 5,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkSM2Point_GetAffineX",
+            "modificationCount": 2,
+            "createdOn": "2022-01-06",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkSM2Point_GetAffineX_Unsafe",
+            "modificationCount": 2,
+            "createdOn": "2022-01-06",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkSM2Point_Bytes",
+            "modificationCount": 2,
+            "createdOn": "2022-01-06",
+            "lastUpdateOn": "2022-08-16"
+          },
+          {
+            "name": "BenchmarkSM2Point_Bytes_Unsafe",
+            "modificationCount": 2,
+            "createdOn": "2022-01-06",
+            "lastUpdateOn": "2022-08-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bilibili/smgo/sm2/internal/fiat",
+        "succeded": true,
+        "duration": "19.141s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Unsafe_LibEEAInv-12",
+            "runs": 236278,
+            "nsPerOp": 7060,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Unsafe_LibEEAInv_Scalar-12",
+            "runs": 200250,
+            "nsPerOp": 6805,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_NaiveFermatInv-12",
+            "runs": 29580,
+            "nsPerOp": 39538,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_NaiveFermatInv_Scalar-12",
+            "runs": 28390,
+            "nsPerOp": 41438,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_FiatDivStepInv-12",
+            "runs": 29317,
+            "nsPerOp": 36498,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_FiatFermatInv-12",
+            "runs": 147493,
+            "nsPerOp": 8827,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_FiatFermatInv_Scalar-12",
+            "runs": 114446,
+            "nsPerOp": 12945,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_sm2ScalarMul-12",
+            "runs": 29859978,
+            "nsPerOp": 46.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_sm2Mul-12",
+            "runs": 27948960,
+            "nsPerOp": 46.18,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_sm2ScalarSquare-12",
+            "runs": 33254089,
+            "nsPerOp": 30.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_sm2Square-12",
+            "runs": 53475622,
+            "nsPerOp": 23.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSM2Element_Select-12",
+            "runs": 323537017,
+            "nsPerOp": 3.335,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Unsafe_LibEEAInv",
+            "modificationCount": 2,
+            "createdOn": "2021-12-28",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "Benchmark_Unsafe_LibEEAInv_Scalar",
+            "modificationCount": 1,
+            "createdOn": "2021-12-28",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "Benchmark_NaiveFermatInv",
+            "modificationCount": 2,
+            "createdOn": "2021-12-28",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "Benchmark_NaiveFermatInv_Scalar",
+            "modificationCount": 3,
+            "createdOn": "2021-12-28",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "Benchmark_FiatDivStepInv",
+            "modificationCount": 3,
+            "createdOn": "2021-12-28",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "Benchmark_FiatFermatInv",
+            "modificationCount": 1,
+            "createdOn": "2021-12-28",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "Benchmark_FiatFermatInv_Scalar",
+            "modificationCount": 1,
+            "createdOn": "2021-12-28",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "Benchmark_sm2ScalarMul",
+            "modificationCount": 2,
+            "createdOn": "2022-01-14",
+            "lastUpdateOn": "2022-01-19"
+          },
+          {
+            "name": "Benchmark_sm2Mul",
+            "modificationCount": 1,
+            "createdOn": "2022-01-19",
+            "lastUpdateOn": "2022-01-19"
+          },
+          {
+            "name": "Benchmark_sm2ScalarSquare",
+            "modificationCount": 1,
+            "createdOn": "2022-01-19",
+            "lastUpdateOn": "2022-01-19"
+          },
+          {
+            "name": "Benchmark_sm2Square",
+            "modificationCount": 1,
+            "createdOn": "2022-01-19",
+            "lastUpdateOn": "2022-01-19"
+          },
+          {
+            "name": "BenchmarkSM2Element_Select",
+            "modificationCount": 1,
+            "createdOn": "2022-01-07",
+            "lastUpdateOn": "2022-01-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bilibili/smgo/sm3",
+        "succeded": true,
+        "duration": "11.087s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSum_16-12",
+            "runs": 2398635,
+            "nsPerOp": 612.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSum_64-12",
+            "runs": 1000000,
+            "nsPerOp": 1244,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSum_256-12",
+            "runs": 749850,
+            "nsPerOp": 2212,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSum_1024-12",
+            "runs": 163885,
+            "nsPerOp": 6877,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSum_8192-12",
+            "runs": 22233,
+            "nsPerOp": 47854,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSum_16384-12",
+            "runs": 15343,
+            "nsPerOp": 99038,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSum_16",
+            "modificationCount": 3,
+            "createdOn": "2022-01-26",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkSum_64",
+            "modificationCount": 3,
+            "createdOn": "2022-01-26",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkSum_256",
+            "modificationCount": 1,
+            "createdOn": "2022-01-27",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkSum_1024",
+            "modificationCount": 1,
+            "createdOn": "2022-01-27",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkSum_8192",
+            "modificationCount": 1,
+            "createdOn": "2022-01-27",
+            "lastUpdateOn": "2022-01-27"
+          },
+          {
+            "name": "BenchmarkSum_16384",
+            "modificationCount": 1,
+            "createdOn": "2022-01-27",
+            "lastUpdateOn": "2022-01-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bilibili/smgo/utils",
+        "succeded": true,
+        "duration": "1.852s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecomposeNAF-12",
+            "runs": 2567623,
+            "nsPerOp": 471.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecomposeNAF",
+            "modificationCount": 3,
+            "createdOn": "2022-01-25",
+            "lastUpdateOn": "2022-02-24"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "bilibili/SMGo",
+    "name": "SMGo",
+    "private": false,
+    "html_url": "https://github.com/bilibili/SMGo",
+    "description": "Shang-Mi cipher library. Constant-time implementation of SM2 and SM4.",
+    "fork": false,
+    "created_at": "2022-10-17T03:44:34Z",
+    "updated_at": "2023-09-12T09:55:15Z",
+    "pushed_at": "2023-07-19T02:21:43Z",
+    "ssh_url": "git@github.com:bilibili/SMGo.git",
+    "stargazers_count": 38,
+    "watchers_count": 38,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 4,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "constant-time",
+      "elliptic-curve",
+      "gcm",
+      "gfni",
+      "neon",
+      "sm2",
+      "sm4"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 37,
+    "Lines": 11392,
+    "Blank": 1115,
+    "Code": 9197,
+    "Comment": 1080,
+    "Bytes": 441844,
+    "Complexity": 717
+  }
+}

@@ -1,0 +1,450 @@
+{
+  "Name": "stephen/cssc",
+  "Path": "./repositories/stephen__cssc",
+  "GoVersion": "1.14",
+  "BenchmarkData": {
+    "timestamp": "2023-10-23T20:26:54Z",
+    "benchmarkCount": 27,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 27,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/stephen/cssc/internal/lexer",
+        "succeded": true,
+        "duration": "2.378s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStringComparison/strings.ToLower-12",
+            "runs": 12454458,
+            "nsPerOp": 99.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringComparison/isURLString-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8139,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStringComparison",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          },
+          {
+            "name": "BenchmarkStringComparison",
+            "modificationCount": 1,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2020-08-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/stephen/cssc/internal/parser",
+        "succeded": true,
+        "duration": "1.824s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParser-12",
+            "runs": 99,
+            "nsPerOp": 17766161,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParser",
+            "modificationCount": 6,
+            "createdOn": "2020-08-12",
+            "lastUpdateOn": "2020-09-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/stephen/cssc/internal/printer",
+        "succeded": true,
+        "duration": "48.011s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPrinter/no_sourcemap-12",
+            "runs": 300,
+            "nsPerOp": 3969080,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrinter/with_sourcemap-12",
+            "runs": 295,
+            "nsPerOp": 9311474,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVLQEncode/short_encode-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.589,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVLQEncode/long_encode-12",
+            "runs": 21071528,
+            "nsPerOp": 90.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVLQEncode/short_decode-12",
+            "runs": 359357140,
+            "nsPerOp": 3.019,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVLQEncode/long_decode-12",
+            "runs": 512642206,
+            "nsPerOp": 2.005,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilding/strings.Builder-12",
+            "runs": 1219418,
+            "nsPerOp": 893.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilding/strings.Builder_with_cap-12",
+            "runs": 3360846,
+            "nsPerOp": 386.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilding/[]byte-12",
+            "runs": 1794945,
+            "nsPerOp": 934.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilding/[]byte_with_cap-12",
+            "runs": 4106755,
+            "nsPerOp": 268.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilding/bytes.Buffer-12",
+            "runs": 939627,
+            "nsPerOp": 1377,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilding/bytes.Buffer_with_cap-12",
+            "runs": 1591707,
+            "nsPerOp": 882.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString_Writes/strings.Builder-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.489,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString_Writes/[]byte-12",
+            "runs": 3911029,
+            "nsPerOp": 261.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString_Writes/[]byte_with_unsafe-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkString_Writes/bytes.Buffer-12",
+            "runs": 7544707,
+            "nsPerOp": 162.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning/0-12",
+            "runs": 1389969,
+            "nsPerOp": 890.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning/1-12",
+            "runs": 1225534,
+            "nsPerOp": 885.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning/10-12",
+            "runs": 1376565,
+            "nsPerOp": 900.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning/50-12",
+            "runs": 1233190,
+            "nsPerOp": 1549,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning/100-12",
+            "runs": 1168958,
+            "nsPerOp": 1140,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning/200-12",
+            "runs": 1000000,
+            "nsPerOp": 1699,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning/500-12",
+            "runs": 540712,
+            "nsPerOp": 2717,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPrinter",
+            "modificationCount": 6,
+            "createdOn": "2020-08-17",
+            "lastUpdateOn": "2020-09-12"
+          },
+          {
+            "name": "BenchmarkPrinter",
+            "modificationCount": 6,
+            "createdOn": "2020-08-17",
+            "lastUpdateOn": "2020-09-12"
+          },
+          {
+            "name": "BenchmarkVLQEncode",
+            "modificationCount": 1,
+            "createdOn": "2020-08-23",
+            "lastUpdateOn": "2020-08-23"
+          },
+          {
+            "name": "BenchmarkVLQEncode",
+            "modificationCount": 1,
+            "createdOn": "2020-08-23",
+            "lastUpdateOn": "2020-08-23"
+          },
+          {
+            "name": "BenchmarkVLQEncode",
+            "modificationCount": 1,
+            "createdOn": "2020-08-23",
+            "lastUpdateOn": "2020-08-23"
+          },
+          {
+            "name": "BenchmarkVLQEncode",
+            "modificationCount": 1,
+            "createdOn": "2020-08-23",
+            "lastUpdateOn": "2020-08-23"
+          },
+          {
+            "name": "BenchmarkStringBuilding",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilding",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilding",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilding",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilding",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilding",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkString_Writes",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkString_Writes",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkString_Writes",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkString_Writes",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          },
+          {
+            "name": "BenchmarkStringBuilder_CapacityPlanning",
+            "modificationCount": 1,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2020-08-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/stephen/cssc/internal/transformer",
+        "succeded": true,
+        "duration": "3.007s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTransformer-12",
+            "runs": 1438,
+            "nsPerOp": 786020,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTransformer",
+            "modificationCount": 5,
+            "createdOn": "2020-08-19",
+            "lastUpdateOn": "2020-09-13"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "stephen/cssc",
+    "name": "cssc",
+    "private": false,
+    "html_url": "https://github.com/stephen/cssc",
+    "description": "a fast, friendly css compiler in go",
+    "fork": false,
+    "created_at": "2020-08-11T05:18:20Z",
+    "updated_at": "2022-07-08T01:54:53Z",
+    "pushed_at": "2021-03-02T01:20:58Z",
+    "ssh_url": "git@github.com:stephen/cssc.git",
+    "stargazers_count": 27,
+    "watchers_count": 27,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 2,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 5,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 45,
+    "Lines": 5959,
+    "Blank": 1010,
+    "Code": 4543,
+    "Comment": 406,
+    "Bytes": 140971,
+    "Complexity": 699
+  }
+}

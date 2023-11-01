@@ -1,0 +1,394 @@
+{
+  "Name": "criyle/go-sandbox",
+  "Path": "./repositories/criyle__go-sandbox",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T23:26:52Z",
+    "benchmarkCount": 21,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 13,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/criyle/go-sandbox/container",
+        "succeded": true,
+        "duration": "1.974s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkContainer-12",
+            "runs": 3975,
+            "nsPerOp": 389088,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkContainer",
+            "modificationCount": 6,
+            "createdOn": "2020-03-02",
+            "lastUpdateOn": "2021-06-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/criyle/go-sandbox/pkg/cgroup",
+        "succeded": false,
+        "duration": "0.003s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCgroup",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_linux_test.go:17: mkdir /sys/fs/cgroup/cpu: permission denied"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCgroup",
+            "modificationCount": 4,
+            "createdOn": "2020-03-02",
+            "lastUpdateOn": "2021-12-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/criyle/go-sandbox/pkg/forkexec",
+        "succeded": false,
+        "duration": "7.384s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStdFork",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_linux_test.go:193: Exited: 1"
+          },
+          {
+            "name": "BenchmarkSimpleFork-12",
+            "runs": 2806,
+            "nsPerOp": 547305,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnsharePid",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_linux_test.go:159: clone: operation not permitted"
+          },
+          {
+            "name": "BenchmarkUnshareUser-12",
+            "runs": 2017,
+            "nsPerOp": 721012,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnshareUts",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_linux_test.go:159: clone: operation not permitted"
+          },
+          {
+            "name": "BenchmarkUnshareCgroup",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_linux_test.go:159: clone: operation not permitted"
+          },
+          {
+            "name": "BenchmarkUnshareIpc",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_linux_test.go:159: clone: operation not permitted"
+          },
+          {
+            "name": "BenchmarkUnshareMount",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_linux_test.go:159: clone: operation not permitted"
+          },
+          {
+            "name": "BenchmarkUnshareNet",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_linux_test.go:159: clone: operation not permitted"
+          },
+          {
+            "name": "BenchmarkFastUnshareMountPivot-12",
+            "runs": 1048,
+            "nsPerOp": 1208134,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnshareAll-12",
+            "runs": 840,
+            "nsPerOp": 1419174,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnshareMountPivot-12",
+            "runs": 684,
+            "nsPerOp": 1973961,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStdFork",
+            "modificationCount": 2,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2020-09-21"
+          },
+          {
+            "name": "BenchmarkSimpleFork",
+            "modificationCount": 1,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-07-22"
+          },
+          {
+            "name": "BenchmarkUnsharePid",
+            "modificationCount": 2,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-11-02"
+          },
+          {
+            "name": "BenchmarkUnshareUser",
+            "modificationCount": 2,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-11-02"
+          },
+          {
+            "name": "BenchmarkUnshareUts",
+            "modificationCount": 2,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-11-02"
+          },
+          {
+            "name": "BenchmarkUnshareCgroup",
+            "modificationCount": 2,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-11-02"
+          },
+          {
+            "name": "BenchmarkUnshareIpc",
+            "modificationCount": 2,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-11-02"
+          },
+          {
+            "name": "BenchmarkUnshareMount",
+            "modificationCount": 2,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-11-02"
+          },
+          {
+            "name": "BenchmarkUnshareNet",
+            "modificationCount": 2,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-11-02"
+          },
+          {
+            "name": "BenchmarkFastUnshareMountPivot",
+            "modificationCount": 3,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2021-02-24"
+          },
+          {
+            "name": "BenchmarkUnshareAll",
+            "modificationCount": 2,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-11-02"
+          },
+          {
+            "name": "BenchmarkUnshareMountPivot",
+            "modificationCount": 3,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2021-02-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/criyle/go-sandbox/pkg/seccomp/libseccomp",
+        "succeded": true,
+        "duration": "1.472s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBuildDefaultFilter-12",
+            "runs": 158319,
+            "nsPerOp": 8777,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBuildDefaultFilter",
+            "modificationCount": 2,
+            "createdOn": "2019-09-01",
+            "lastUpdateOn": "2020-12-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/criyle/go-sandbox/pkg/unixsocket",
+        "succeded": true,
+        "duration": "7.667s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBaseline-12",
+            "runs": 541978,
+            "nsPerOp": 2432,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoroutine-12",
+            "runs": 173532,
+            "nsPerOp": 7031,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChannel-12",
+            "runs": 386805,
+            "nsPerOp": 3285,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChannelBuffed-12",
+            "runs": 346839,
+            "nsPerOp": 3148,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChannelBuffed4-12",
+            "runs": 484320,
+            "nsPerOp": 2744,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmptyGoroutine-12",
+            "runs": 698944,
+            "nsPerOp": 1737,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBaseline",
+            "modificationCount": 2,
+            "createdOn": "2021-01-16",
+            "lastUpdateOn": "2021-03-27"
+          },
+          {
+            "name": "BenchmarkGoroutine",
+            "modificationCount": 2,
+            "createdOn": "2021-01-16",
+            "lastUpdateOn": "2021-03-27"
+          },
+          {
+            "name": "BenchmarkChannel",
+            "modificationCount": 1,
+            "createdOn": "2021-01-16",
+            "lastUpdateOn": "2021-01-16"
+          },
+          {
+            "name": "BenchmarkChannelBuffed",
+            "modificationCount": 1,
+            "createdOn": "2021-01-16",
+            "lastUpdateOn": "2021-01-16"
+          },
+          {
+            "name": "BenchmarkChannelBuffed4",
+            "modificationCount": 1,
+            "createdOn": "2021-01-16",
+            "lastUpdateOn": "2021-01-16"
+          },
+          {
+            "name": "BenchmarkEmptyGoroutine",
+            "modificationCount": 1,
+            "createdOn": "2021-01-16",
+            "lastUpdateOn": "2021-01-16"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "criyle/go-sandbox",
+    "name": "go-sandbox",
+    "private": false,
+    "html_url": "https://github.com/criyle/go-sandbox",
+    "description": "Sandbox implemented in GO with container / ptrace / seccomp",
+    "fork": false,
+    "created_at": "2019-03-27T00:50:48Z",
+    "updated_at": "2023-10-16T17:01:16Z",
+    "pushed_at": "2023-10-14T01:57:13Z",
+    "ssh_url": "git@github.com:criyle/go-sandbox.git",
+    "stargazers_count": 135,
+    "watchers_count": 135,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 23,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "cgroup",
+      "container",
+      "golang",
+      "libseccomp",
+      "linux",
+      "linux-namespace",
+      "memfd",
+      "ptrace",
+      "rlimit",
+      "sandbox",
+      "unix-socket",
+      "uoj"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 99,
+    "Lines": 8668,
+    "Blank": 1097,
+    "Code": 6659,
+    "Comment": 912,
+    "Bytes": 204607,
+    "Complexity": 1521
+  }
+}

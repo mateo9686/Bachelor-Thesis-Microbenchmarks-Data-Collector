@@ -1,0 +1,2929 @@
+{
+  "Name": "kubernetes/kube-openapi",
+  "Path": "./repositories/kubernetes__kube-openapi",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T08:37:43Z",
+    "benchmarkCount": 217,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 217,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "k8s.io/kube-openapi/pkg/aggregator",
+        "succeded": true,
+        "duration": "3.363s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMergeSpecsIgnorePathConflictsWithKubeSpec-12",
+            "runs": 3,
+            "nsPerOp": 407666607,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMergeSpecsIgnorePathConflictsWithKubeSpec",
+            "modificationCount": 6,
+            "createdOn": "2018-12-13",
+            "lastUpdateOn": "2023-07-07"
+          }
+        ]
+      },
+      {
+        "pkg": "k8s.io/kube-openapi/pkg/internal/third_party/go-json-experiment/json",
+        "succeded": true,
+        "duration": "306.802s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUnmarshal/Bool-12",
+            "runs": 8312504,
+            "nsPerOp": 163.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/String-12",
+            "runs": 3712377,
+            "nsPerOp": 272.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Int-12",
+            "runs": 4557868,
+            "nsPerOp": 240.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Uint-12",
+            "runs": 4701312,
+            "nsPerOp": 234.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Float-12",
+            "runs": 3640754,
+            "nsPerOp": 313.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Map/ManyEmpty-12",
+            "runs": 21675,
+            "nsPerOp": 46988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Map/OneLarge-12",
+            "runs": 71917,
+            "nsPerOp": 15077,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Map/ManySmall-12",
+            "runs": 24013,
+            "nsPerOp": 45361,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Struct/ManyEmpty-12",
+            "runs": 46977,
+            "nsPerOp": 28224,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Struct/OneLarge-12",
+            "runs": 187706,
+            "nsPerOp": 5612,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Struct/ManySmall-12",
+            "runs": 156322,
+            "nsPerOp": 10417,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Slice/ManyEmpty-12",
+            "runs": 71630,
+            "nsPerOp": 14461,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Slice/OneLarge-12",
+            "runs": 297072,
+            "nsPerOp": 5084,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Slice/ManySmall-12",
+            "runs": 72692,
+            "nsPerOp": 13781,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Array/OneLarge-12",
+            "runs": 476922,
+            "nsPerOp": 3333,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Array/ManySmall-12",
+            "runs": 168471,
+            "nsPerOp": 6408,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Bytes/Slice-12",
+            "runs": 2446640,
+            "nsPerOp": 618,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Bytes/Array-12",
+            "runs": 2750899,
+            "nsPerOp": 418.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/Pointer-12",
+            "runs": 985105,
+            "nsPerOp": 1706,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/TextArshal-12",
+            "runs": 3398175,
+            "nsPerOp": 332.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/JSONArshalV1-12",
+            "runs": 4347646,
+            "nsPerOp": 325,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/JSONArshalV2-12",
+            "runs": 3218779,
+            "nsPerOp": 323.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Bool-12",
+            "runs": 3734634,
+            "nsPerOp": 319.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/String-12",
+            "runs": 2547369,
+            "nsPerOp": 459.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Int-12",
+            "runs": 2540116,
+            "nsPerOp": 508.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Uint-12",
+            "runs": 3926682,
+            "nsPerOp": 493,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Float-12",
+            "runs": 1555994,
+            "nsPerOp": 767,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Map/ManyEmpty-12",
+            "runs": 194242,
+            "nsPerOp": 5229,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Map/OneLarge-12",
+            "runs": 147543,
+            "nsPerOp": 9936,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Map/ManySmall-12",
+            "runs": 26996,
+            "nsPerOp": 48268,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Struct/ManyEmpty-12",
+            "runs": 142930,
+            "nsPerOp": 8066,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Struct/OneLarge-12",
+            "runs": 475779,
+            "nsPerOp": 4122,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Struct/ManySmall-12",
+            "runs": 132584,
+            "nsPerOp": 8396,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Slice/ManyEmpty-12",
+            "runs": 229123,
+            "nsPerOp": 4751,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Slice/OneLarge-12",
+            "runs": 512119,
+            "nsPerOp": 2257,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Slice/ManySmall-12",
+            "runs": 312067,
+            "nsPerOp": 4020,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Array/OneLarge-12",
+            "runs": 662250,
+            "nsPerOp": 2535,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Array/ManySmall-12",
+            "runs": 314048,
+            "nsPerOp": 4191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Bytes/Slice-12",
+            "runs": 1265593,
+            "nsPerOp": 911,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Bytes/Array-12",
+            "runs": 1000000,
+            "nsPerOp": 1317,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/Pointer-12",
+            "runs": 1000000,
+            "nsPerOp": 1288,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/TextArshal-12",
+            "runs": 1359318,
+            "nsPerOp": 827.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/JSONArshalV1-12",
+            "runs": 2638638,
+            "nsPerOp": 399.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/JSONArshalV2-12",
+            "runs": 4197656,
+            "nsPerOp": 370.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Marshal/Concrete-12",
+            "runs": 312,
+            "nsPerOp": 3494135,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Marshal/Interface-12",
+            "runs": 331,
+            "nsPerOp": 3090219,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Unmarshal/Concrete-12",
+            "runs": 231,
+            "nsPerOp": 4717077,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Unmarshal/Interface-12",
+            "runs": 198,
+            "nsPerOp": 7531203,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Encode/Token/Streaming-12",
+            "runs": 465,
+            "nsPerOp": 2600877,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Encode/Token/Buffered-12",
+            "runs": 447,
+            "nsPerOp": 2995337,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Encode/Value/Streaming-12",
+            "runs": 1018,
+            "nsPerOp": 1201046,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Encode/Value/Buffered-12",
+            "runs": 1670,
+            "nsPerOp": 779229,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Decode/Token/Streaming-12",
+            "runs": 1483,
+            "nsPerOp": 985488,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Decode/Token/Buffered-12",
+            "runs": 1243,
+            "nsPerOp": 887565,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Decode/Value/Streaming-12",
+            "runs": 1267,
+            "nsPerOp": 1058191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CanadaGeometry/Decode/Value/Buffered-12",
+            "runs": 1674,
+            "nsPerOp": 637420,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Marshal/Concrete-12",
+            "runs": 411,
+            "nsPerOp": 3011805,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Marshal/Interface-12",
+            "runs": 234,
+            "nsPerOp": 5060858,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Unmarshal/Concrete-12",
+            "runs": 134,
+            "nsPerOp": 9071031,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Unmarshal/Interface-12",
+            "runs": 98,
+            "nsPerOp": 14358130,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Encode/Token/Streaming-12",
+            "runs": 261,
+            "nsPerOp": 4728806,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Encode/Token/Buffered-12",
+            "runs": 270,
+            "nsPerOp": 4159021,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Encode/Value/Streaming-12",
+            "runs": 231,
+            "nsPerOp": 5398516,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Encode/Value/Buffered-12",
+            "runs": 274,
+            "nsPerOp": 8685004,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Decode/Token/Streaming-12",
+            "runs": 140,
+            "nsPerOp": 8591102,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Decode/Token/Buffered-12",
+            "runs": 176,
+            "nsPerOp": 6829460,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Decode/Value/Streaming-12",
+            "runs": 122,
+            "nsPerOp": 14840744,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/CitmCatalog/Decode/Value/Buffered-12",
+            "runs": 204,
+            "nsPerOp": 10193416,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Marshal/Concrete-12",
+            "runs": 24,
+            "nsPerOp": 47196756,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Marshal/Interface-12",
+            "runs": 20,
+            "nsPerOp": 100599429,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Unmarshal/Concrete-12",
+            "runs": 21,
+            "nsPerOp": 84809512,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Unmarshal/Interface-12",
+            "runs": 30,
+            "nsPerOp": 99851369,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Encode/Token/Streaming-12",
+            "runs": 37,
+            "nsPerOp": 37295978,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Encode/Token/Buffered-12",
+            "runs": 36,
+            "nsPerOp": 30711912,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Encode/Value/Streaming-12",
+            "runs": 57,
+            "nsPerOp": 33437532,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Encode/Value/Buffered-12",
+            "runs": 98,
+            "nsPerOp": 13229554,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Decode/Token/Streaming-12",
+            "runs": 92,
+            "nsPerOp": 13908583,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Decode/Token/Buffered-12",
+            "runs": 100,
+            "nsPerOp": 30117972,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Decode/Value/Streaming-12",
+            "runs": 45,
+            "nsPerOp": 32321807,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/GolangSource/Decode/Value/Buffered-12",
+            "runs": 100,
+            "nsPerOp": 18900856,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Marshal/Concrete-12",
+            "runs": 7081,
+            "nsPerOp": 251215,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Marshal/Interface-12",
+            "runs": 6820,
+            "nsPerOp": 225171,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Unmarshal/Concrete-12",
+            "runs": 2218,
+            "nsPerOp": 452278,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Unmarshal/Interface-12",
+            "runs": 3056,
+            "nsPerOp": 452069,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Encode/Token/Streaming-12",
+            "runs": 14817,
+            "nsPerOp": 113542,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Encode/Token/Buffered-12",
+            "runs": 10000,
+            "nsPerOp": 106926,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Encode/Value/Streaming-12",
+            "runs": 1468,
+            "nsPerOp": 1252512,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Encode/Value/Buffered-12",
+            "runs": 1735,
+            "nsPerOp": 1029013,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Decode/Token/Streaming-12",
+            "runs": 4905,
+            "nsPerOp": 341338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Decode/Token/Buffered-12",
+            "runs": 3720,
+            "nsPerOp": 364636,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Decode/Value/Streaming-12",
+            "runs": 3517,
+            "nsPerOp": 334338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringEscaped/Decode/Value/Buffered-12",
+            "runs": 5354,
+            "nsPerOp": 251355,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Marshal/Concrete-12",
+            "runs": 10000,
+            "nsPerOp": 119221,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Marshal/Interface-12",
+            "runs": 8281,
+            "nsPerOp": 162516,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Unmarshal/Concrete-12",
+            "runs": 10000,
+            "nsPerOp": 212491,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Unmarshal/Interface-12",
+            "runs": 9619,
+            "nsPerOp": 253658,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Encode/Token/Streaming-12",
+            "runs": 10000,
+            "nsPerOp": 144108,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Encode/Token/Buffered-12",
+            "runs": 10000,
+            "nsPerOp": 151297,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Encode/Value/Streaming-12",
+            "runs": 4971,
+            "nsPerOp": 225917,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Encode/Value/Buffered-12",
+            "runs": 10000,
+            "nsPerOp": 111795,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Decode/Token/Streaming-12",
+            "runs": 10000,
+            "nsPerOp": 105241,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Decode/Token/Buffered-12",
+            "runs": 15207,
+            "nsPerOp": 72524,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Decode/Value/Streaming-12",
+            "runs": 9787,
+            "nsPerOp": 257198,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/StringUnicode/Decode/Value/Buffered-12",
+            "runs": 8509,
+            "nsPerOp": 157124,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Marshal/Concrete-12",
+            "runs": 27,
+            "nsPerOp": 38436592,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Marshal/Interface-12",
+            "runs": 57,
+            "nsPerOp": 19189834,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Unmarshal/Concrete-12",
+            "runs": 68,
+            "nsPerOp": 28519907,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Unmarshal/Interface-12",
+            "runs": 39,
+            "nsPerOp": 28499324,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Encode/Token/Streaming-12",
+            "runs": 100,
+            "nsPerOp": 10797590,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Encode/Token/Buffered-12",
+            "runs": 100,
+            "nsPerOp": 17038300,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Encode/Value/Streaming-12",
+            "runs": 49,
+            "nsPerOp": 23231928,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Encode/Value/Buffered-12",
+            "runs": 100,
+            "nsPerOp": 12904268,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Decode/Token/Streaming-12",
+            "runs": 100,
+            "nsPerOp": 11122608,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Decode/Token/Buffered-12",
+            "runs": 142,
+            "nsPerOp": 9097691,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Decode/Value/Streaming-12",
+            "runs": 54,
+            "nsPerOp": 19623275,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/SyntheaFhir/Decode/Value/Buffered-12",
+            "runs": 152,
+            "nsPerOp": 7201500,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Marshal/Concrete-12",
+            "runs": 334,
+            "nsPerOp": 3542752,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Marshal/Interface-12",
+            "runs": 282,
+            "nsPerOp": 3957020,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Unmarshal/Concrete-12",
+            "runs": 240,
+            "nsPerOp": 8457164,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Unmarshal/Interface-12",
+            "runs": 100,
+            "nsPerOp": 13583823,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Encode/Token/Streaming-12",
+            "runs": 268,
+            "nsPerOp": 4145193,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Encode/Token/Buffered-12",
+            "runs": 384,
+            "nsPerOp": 3198297,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Encode/Value/Streaming-12",
+            "runs": 247,
+            "nsPerOp": 4248010,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Encode/Value/Buffered-12",
+            "runs": 554,
+            "nsPerOp": 2432064,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Decode/Token/Streaming-12",
+            "runs": 532,
+            "nsPerOp": 2224375,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Decode/Token/Buffered-12",
+            "runs": 562,
+            "nsPerOp": 1896814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Decode/Value/Streaming-12",
+            "runs": 358,
+            "nsPerOp": 4255994,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestdata/TwitterStatus/Decode/Value/Buffered-12",
+            "runs": 512,
+            "nsPerOp": 2266315,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeString/Token-12",
+            "runs": 6547,
+            "nsPerOp": 204594,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeString/Value-12",
+            "runs": 3909,
+            "nsPerOp": 315862,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeNumber/Token-12",
+            "runs": 6585,
+            "nsPerOp": 248885,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeNumber/Value-12",
+            "runs": 5613,
+            "nsPerOp": 230624,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeWhitespace/Null/Token-12",
+            "runs": 3285,
+            "nsPerOp": 402277,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeWhitespace/Null/Value-12",
+            "runs": 8022,
+            "nsPerOp": 310074,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeWhitespace/Object/Token-12",
+            "runs": 590,
+            "nsPerOp": 2071094,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeWhitespace/Object/Value-12",
+            "runs": 412,
+            "nsPerOp": 3552524,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeWhitespace/Array/Token-12",
+            "runs": 794,
+            "nsPerOp": 1341622,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode/LargeWhitespace/Array/Value-12",
+            "runs": 1040,
+            "nsPerOp": 1285842,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawValue/IsValid-12",
+            "runs": 219,
+            "nsPerOp": 5808228,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawValue/Compact-12",
+            "runs": 225,
+            "nsPerOp": 4536131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawValue/Compact/Noop-12",
+            "runs": 427,
+            "nsPerOp": 2792961,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawValue/Indent-12",
+            "runs": 121,
+            "nsPerOp": 9761652,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawValue/Indent/Noop-12",
+            "runs": 168,
+            "nsPerOp": 8136696,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawValue/Canonicalize-12",
+            "runs": 100,
+            "nsPerOp": 13526290,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawValue/Canonicalize/Noop-12",
+            "runs": 122,
+            "nsPerOp": 11584931,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown/N1-12",
+            "runs": 1000000,
+            "nsPerOp": 1042,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown/N2-12",
+            "runs": 1000000,
+            "nsPerOp": 1087,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown/N5-12",
+            "runs": 1353835,
+            "nsPerOp": 1161,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown/N10-12",
+            "runs": 1000000,
+            "nsPerOp": 1145,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown/N20-12",
+            "runs": 1830103,
+            "nsPerOp": 611.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown/N50-12",
+            "runs": 2293894,
+            "nsPerOp": 499.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown/N100-12",
+            "runs": 2043861,
+            "nsPerOp": 684,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Best/Alloc-12",
+            "runs": 32078,
+            "nsPerOp": 44660,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Best/Cache-12",
+            "runs": 116564,
+            "nsPerOp": 11964,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Best/GoMap-12",
+            "runs": 118771,
+            "nsPerOp": 9170,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Repeat/Alloc-12",
+            "runs": 41775,
+            "nsPerOp": 39691,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Repeat/Cache-12",
+            "runs": 126885,
+            "nsPerOp": 9678,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Repeat/GoMap-12",
+            "runs": 51740,
+            "nsPerOp": 19648,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Synthea/Alloc-12",
+            "runs": 1089,
+            "nsPerOp": 1665791,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Synthea/Cache-12",
+            "runs": 958,
+            "nsPerOp": 1896369,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Synthea/GoMap-12",
+            "runs": 375,
+            "nsPerOp": 3287230,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Twitter/Alloc-12",
+            "runs": 2607,
+            "nsPerOp": 576460,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Twitter/Cache-12",
+            "runs": 4023,
+            "nsPerOp": 310772,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Twitter/GoMap-12",
+            "runs": 1675,
+            "nsPerOp": 968773,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Worst/Alloc-12",
+            "runs": 35427,
+            "nsPerOp": 49283,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Worst/Cache-12",
+            "runs": 17565,
+            "nsPerOp": 61511,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntern/Worst/GoMap-12",
+            "runs": 5679,
+            "nsPerOp": 218169,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkTestdata",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkSlowStreamingDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkRawValue",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkRawValue",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkRawValue",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkRawValue",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkRawValue",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkRawValue",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkRawValue",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkUnmarshalUnknown",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          },
+          {
+            "name": "BenchmarkIntern",
+            "modificationCount": 1,
+            "createdOn": "2022-10-05",
+            "lastUpdateOn": "2022-10-05"
+          }
+        ]
+      },
+      {
+        "pkg": "k8s.io/kube-openapi/pkg/schemaconv",
+        "succeded": true,
+        "duration": "37.564s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOpenAPIConversion/spec.Schema-\u003eschema.Schema-12",
+            "runs": 433,
+            "nsPerOp": 4281500,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIConversion/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 1,
+            "nsPerOp": 1487146486,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/accesscontextmanager_v1beta1_accesscontextmanagerserviceperimeter.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 2834,
+            "nsPerOp": 436510,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/accesscontextmanager_v1beta1_accesscontextmanagerserviceperimeter.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 48,
+            "nsPerOp": 33260225,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/container_v1beta1_containercluster.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 2622,
+            "nsPerOp": 408592,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/container_v1beta1_containercluster.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 60,
+            "nsPerOp": 19907018,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/dataproc_v1beta1_dataprocworkflowtemplate.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 4404,
+            "nsPerOp": 319608,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/dataproc_v1beta1_dataprocworkflowtemplate.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 57,
+            "nsPerOp": 21394451,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/dlp_v1beta1_dlpdeidentifytemplate.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 2368,
+            "nsPerOp": 592177,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/dlp_v1beta1_dlpdeidentifytemplate.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 36,
+            "nsPerOp": 29612788,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/monitoring_v1beta1_monitoringalertpolicy.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 12760,
+            "nsPerOp": 100435,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/monitoring_v1beta1_monitoringalertpolicy.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 91,
+            "nsPerOp": 16068554,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/monitoring_v1beta1_monitoringdashboard.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 2037,
+            "nsPerOp": 553952,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/monitoring_v1beta1_monitoringdashboard.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 30,
+            "nsPerOp": 34090692,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/privateca_v1beta1_privatecacertificate.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 8347,
+            "nsPerOp": 398906,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/privateca_v1beta1_privatecacertificate.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 57,
+            "nsPerOp": 18005755,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/privateca_v1beta1_privatecacertificateauthority.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 6034,
+            "nsPerOp": 211999,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/privateca_v1beta1_privatecacertificateauthority.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 61,
+            "nsPerOp": 47318507,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/storagetransfer_v1beta1_storagetransferjob.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 4131,
+            "nsPerOp": 341615,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/storagetransfer_v1beta1_storagetransferjob.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 25,
+            "nsPerOp": 49432860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/vpcaccess_v1beta1_vpcaccessconnector.json/spec.Schema-\u003eschema.Schema-12",
+            "runs": 9724,
+            "nsPerOp": 189478,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion/vpcaccess_v1beta1_vpcaccessconnector.json/spec.Schema-\u003ejson-\u003egnostic_v2-\u003eproto.Models-\u003eschema.Schema-12",
+            "runs": 62,
+            "nsPerOp": 28313414,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOpenAPIConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPIConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          },
+          {
+            "name": "BenchmarkOpenAPICRDConversion",
+            "modificationCount": 4,
+            "createdOn": "2022-12-14",
+            "lastUpdateOn": "2023-01-23"
+          }
+        ]
+      },
+      {
+        "pkg": "k8s.io/kube-openapi/pkg/spec3",
+        "succeded": true,
+        "duration": "33.568s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize/appsv1spec.json_jsonv1-12",
+            "runs": 7,
+            "nsPerOp": 151554794,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize/appsv1spec.json_jsonv2_via_jsonv1_schema_only-12",
+            "runs": 9,
+            "nsPerOp": 118668176,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize/appsv1spec.json_jsonv2_via_jsonv1_full_spec-12",
+            "runs": 57,
+            "nsPerOp": 24766027,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize/jsonv2-12",
+            "runs": 94,
+            "nsPerOp": 19549132,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize/authorizationv1spec.json_jsonv1-12",
+            "runs": 100,
+            "nsPerOp": 14286122,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize/authorizationv1spec.json_jsonv2_via_jsonv1_schema_only-12",
+            "runs": 100,
+            "nsPerOp": 17025161,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize/authorizationv1spec.json_jsonv2_via_jsonv1_full_spec-12",
+            "runs": 360,
+            "nsPerOp": 4405017,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize/jsonv2#01-12",
+            "runs": 406,
+            "nsPerOp": 3692410,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize/appsv1spec.json_jsonv1-12",
+            "runs": 12,
+            "nsPerOp": 196707048,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize/appsv1spec.json_jsonv2_via_jsonv1_full_spec-12",
+            "runs": 18,
+            "nsPerOp": 80185290,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize/jsonv2-12",
+            "runs": 27,
+            "nsPerOp": 45329529,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize/authorizationv1spec.json_jsonv1-12",
+            "runs": 100,
+            "nsPerOp": 18300903,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize/authorizationv1spec.json_jsonv2_via_jsonv1_full_spec-12",
+            "runs": 208,
+            "nsPerOp": 8791793,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize/jsonv2#01-12",
+            "runs": 273,
+            "nsPerOp": 4270251,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize",
+            "modificationCount": 5,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize",
+            "modificationCount": 5,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize",
+            "modificationCount": 5,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize",
+            "modificationCount": 5,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize",
+            "modificationCount": 5,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize",
+            "modificationCount": 5,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize",
+            "modificationCount": 5,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Deserialize",
+            "modificationCount": 5,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize",
+            "modificationCount": 1,
+            "createdOn": "2023-08-02",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize",
+            "modificationCount": 1,
+            "createdOn": "2023-08-02",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize",
+            "modificationCount": 1,
+            "createdOn": "2023-08-02",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize",
+            "modificationCount": 1,
+            "createdOn": "2023-08-02",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize",
+            "modificationCount": 1,
+            "createdOn": "2023-08-02",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkOpenAPIV3Serialize",
+            "modificationCount": 1,
+            "createdOn": "2023-08-02",
+            "lastUpdateOn": "2023-08-02"
+          }
+        ]
+      },
+      {
+        "pkg": "k8s.io/kube-openapi/pkg/validation/spec",
+        "succeded": true,
+        "duration": "36.752s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSchemaUnmarshal-12",
+            "runs": 5115,
+            "nsPerOp": 300221,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalUnmarshal/jsonv1-12",
+            "runs": 1,
+            "nsPerOp": 2863775158,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalUnmarshal/jsonv2_via_jsonv1-12",
+            "runs": 3,
+            "nsPerOp": 658061191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalUnmarshal/jsonv2-12",
+            "runs": 6,
+            "nsPerOp": 442597212,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalMarshal/jsonv1-12",
+            "runs": 1,
+            "nsPerOp": 1175247220,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalMarshal/jsonv2_via_jsonv1-12",
+            "runs": 3,
+            "nsPerOp": 512274295,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalMarshal/jsonv2-12",
+            "runs": 2,
+            "nsPerOp": 547592465,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGnosticConversion/json-\u003eswagger-12",
+            "runs": 2,
+            "nsPerOp": 537682859,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGnosticConversion/swagger-\u003ejson-12",
+            "runs": 3,
+            "nsPerOp": 408425533,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGnosticConversion/json-\u003egnostic-12",
+            "runs": 2,
+            "nsPerOp": 884493081,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGnosticConversion/gnostic-\u003epb-12",
+            "runs": 63,
+            "nsPerOp": 25257936,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGnosticConversion/pb-\u003egnostic-12",
+            "runs": 30,
+            "nsPerOp": 46840016,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGnosticConversion/gnostic-\u003ekube-12",
+            "runs": 22,
+            "nsPerOp": 52648294,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSchemaUnmarshal",
+            "modificationCount": 2,
+            "createdOn": "2018-02-13",
+            "lastUpdateOn": "2018-07-08"
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalUnmarshal",
+            "modificationCount": 2,
+            "createdOn": "2022-10-11",
+            "lastUpdateOn": "2022-10-27"
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalUnmarshal",
+            "modificationCount": 2,
+            "createdOn": "2022-10-11",
+            "lastUpdateOn": "2022-10-27"
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalUnmarshal",
+            "modificationCount": 2,
+            "createdOn": "2022-10-11",
+            "lastUpdateOn": "2022-10-27"
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalMarshal",
+            "modificationCount": 2,
+            "createdOn": "2022-10-11",
+            "lastUpdateOn": "2022-10-27"
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalMarshal",
+            "modificationCount": 2,
+            "createdOn": "2022-10-11",
+            "lastUpdateOn": "2022-10-27"
+          },
+          {
+            "name": "BenchmarkSwaggerSpec_ExperimentalMarshal",
+            "modificationCount": 2,
+            "createdOn": "2022-10-11",
+            "lastUpdateOn": "2022-10-27"
+          },
+          {
+            "name": "BenchmarkGnosticConversion",
+            "modificationCount": 1,
+            "createdOn": "2022-03-08",
+            "lastUpdateOn": "2022-03-08"
+          },
+          {
+            "name": "BenchmarkGnosticConversion",
+            "modificationCount": 1,
+            "createdOn": "2022-03-08",
+            "lastUpdateOn": "2022-03-08"
+          },
+          {
+            "name": "BenchmarkGnosticConversion",
+            "modificationCount": 1,
+            "createdOn": "2022-03-08",
+            "lastUpdateOn": "2022-03-08"
+          },
+          {
+            "name": "BenchmarkGnosticConversion",
+            "modificationCount": 1,
+            "createdOn": "2022-03-08",
+            "lastUpdateOn": "2022-03-08"
+          },
+          {
+            "name": "BenchmarkGnosticConversion",
+            "modificationCount": 1,
+            "createdOn": "2022-03-08",
+            "lastUpdateOn": "2022-03-08"
+          },
+          {
+            "name": "BenchmarkGnosticConversion",
+            "modificationCount": 1,
+            "createdOn": "2022-03-08",
+            "lastUpdateOn": "2022-03-08"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "kubernetes/kube-openapi",
+    "name": "kube-openapi",
+    "private": false,
+    "html_url": "https://github.com/kubernetes/kube-openapi",
+    "description": "Kubernetes OpenAPI spec generation \u0026 serving",
+    "fork": false,
+    "created_at": "2017-07-12T23:43:39Z",
+    "updated_at": "2023-10-19T01:04:43Z",
+    "pushed_at": "2023-10-23T03:56:28Z",
+    "ssh_url": "git@github.com:kubernetes/kube-openapi.git",
+    "stargazers_count": 264,
+    "watchers_count": 264,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 185,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 17,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 260,
+    "Lines": 69326,
+    "Blank": 5187,
+    "Code": 55963,
+    "Comment": 8176,
+    "Bytes": 2100470,
+    "Complexity": 7178
+  }
+}

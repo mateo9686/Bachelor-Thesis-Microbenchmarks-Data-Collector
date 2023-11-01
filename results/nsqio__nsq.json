@@ -1,0 +1,571 @@
+{
+  "Name": "nsqio/nsq",
+  "Path": "./repositories/nsqio__nsq",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T04:00:23Z",
+    "benchmarkCount": 35,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 34,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/nsqio/nsq/internal/protocol",
+        "succeded": true,
+        "duration": "4.096s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkByteToBase10Valid-12",
+            "runs": 100000000,
+            "nsPerOp": 18.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkByteToBase10Invalid-12",
+            "runs": 642618610,
+            "nsPerOp": 3.032,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkByteToBase10Valid",
+            "modificationCount": 1,
+            "createdOn": "2014-11-24",
+            "lastUpdateOn": "2014-11-24"
+          },
+          {
+            "name": "BenchmarkByteToBase10Invalid",
+            "modificationCount": 1,
+            "createdOn": "2014-11-24",
+            "lastUpdateOn": "2014-11-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nsqio/nsq/internal/stringy",
+        "succeded": true,
+        "duration": "1.864s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUniq-12",
+            "runs": 3220389,
+            "nsPerOp": 433.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUniq",
+            "modificationCount": 1,
+            "createdOn": "2020-10-18",
+            "lastUpdateOn": "2020-10-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nsqio/nsq/internal/util",
+        "succeded": true,
+        "duration": "6.475s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUniqRands5of5-12",
+            "runs": 3558796,
+            "nsPerOp": 312.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUniqRands20of20-12",
+            "runs": 1809562,
+            "nsPerOp": 988.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUniqRands20of50-12",
+            "runs": 1000000,
+            "nsPerOp": 1297,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUniqRands5of5",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkUniqRands20of20",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          },
+          {
+            "name": "BenchmarkUniqRands20of50",
+            "modificationCount": 1,
+            "createdOn": "2018-03-21",
+            "lastUpdateOn": "2018-03-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nsqio/nsq/nsqd",
+        "succeded": false,
+        "duration": "531.749s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGUIDCopy-12",
+            "runs": 900190460,
+            "nsPerOp": 2.049,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGUIDUnsafe-12",
+            "runs": 917348223,
+            "nsPerOp": 1.695,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGUID-12",
+            "runs": 316620,
+            "nsPerOp": 8595,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPpub-12",
+            "runs": 8599,
+            "nsPerOp": 129572,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtocolV2Exec-12",
+            "runs": 12343466,
+            "nsPerOp": 114.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic1-12",
+            "runs": 1000000,
+            "nsPerOp": 15613,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic2-12",
+            "runs": 1000000,
+            "nsPerOp": 6420,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic4-12",
+            "runs": 1000000,
+            "nsPerOp": 3975,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic8-12",
+            "runs": 1561204,
+            "nsPerOp": 979.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic16-12",
+            "runs": 1000000,
+            "nsPerOp": 1443,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic32-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGUIDCopy",
+            "modificationCount": 2,
+            "createdOn": "2013-04-10",
+            "lastUpdateOn": "2014-05-26"
+          },
+          {
+            "name": "BenchmarkGUIDUnsafe",
+            "modificationCount": 3,
+            "createdOn": "2013-04-10",
+            "lastUpdateOn": "2014-05-26"
+          },
+          {
+            "name": "BenchmarkGUID",
+            "modificationCount": 2,
+            "createdOn": "2013-04-10",
+            "lastUpdateOn": "2014-05-26"
+          },
+          {
+            "name": "BenchmarkHTTPpub",
+            "modificationCount": 3,
+            "createdOn": "2015-07-25",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkProtocolV2Exec",
+            "modificationCount": 17,
+            "createdOn": "2012-07-15",
+            "lastUpdateOn": "2020-11-26"
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic1",
+            "modificationCount": 1,
+            "createdOn": "2016-04-17",
+            "lastUpdateOn": "2016-04-17"
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic2",
+            "modificationCount": 1,
+            "createdOn": "2016-04-17",
+            "lastUpdateOn": "2016-04-17"
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic4",
+            "modificationCount": 1,
+            "createdOn": "2016-04-17",
+            "lastUpdateOn": "2016-04-17"
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic8",
+            "modificationCount": 1,
+            "createdOn": "2016-04-17",
+            "lastUpdateOn": "2016-04-17"
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic16",
+            "modificationCount": 1,
+            "createdOn": "2016-04-17",
+            "lastUpdateOn": "2016-04-17"
+          },
+          {
+            "name": "BenchmarkProtocolV2PubMultiTopic32",
+            "modificationCount": 1,
+            "createdOn": "2016-04-17",
+            "lastUpdateOn": "2016-04-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nsqio/nsq/nsqlookupd",
+        "succeded": true,
+        "duration": "50.609s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLookupRegistrations8x8-12",
+            "runs": 92539,
+            "nsPerOp": 17623,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookupRegistrations8x64-12",
+            "runs": 66817,
+            "nsPerOp": 15007,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookupRegistrations64x64-12",
+            "runs": 8571,
+            "nsPerOp": 150850,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookupRegistrations64x512-12",
+            "runs": 10000,
+            "nsPerOp": 117855,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookupRegistrations512x512-12",
+            "runs": 1323,
+            "nsPerOp": 877914,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookupRegistrations512x2048-12",
+            "runs": 1480,
+            "nsPerOp": 1084497,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegister8x8-12",
+            "runs": 18145,
+            "nsPerOp": 73708,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegister8x64-12",
+            "runs": 2343,
+            "nsPerOp": 630912,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegister64x64-12",
+            "runs": 195,
+            "nsPerOp": 5602340,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegister64x512-12",
+            "runs": 28,
+            "nsPerOp": 47256347,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegister512x512-12",
+            "runs": 4,
+            "nsPerOp": 290570896,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegister512x2048-12",
+            "runs": 1,
+            "nsPerOp": 1102418623,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDoLookup8x8-12",
+            "runs": 612093,
+            "nsPerOp": 2073,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDoLookup8x64-12",
+            "runs": 365107,
+            "nsPerOp": 4223,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDoLookup64x64-12",
+            "runs": 79534,
+            "nsPerOp": 25667,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDoLookup64x512-12",
+            "runs": 46039,
+            "nsPerOp": 28290,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDoLookup512x512-12",
+            "runs": 19561,
+            "nsPerOp": 88136,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDoLookup512x2048-12",
+            "runs": 6676,
+            "nsPerOp": 161683,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLookupRegistrations8x8",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkLookupRegistrations8x64",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkLookupRegistrations64x64",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkLookupRegistrations64x512",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkLookupRegistrations512x512",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkLookupRegistrations512x2048",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkRegister8x8",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkRegister8x64",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkRegister64x64",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkRegister64x512",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkRegister512x512",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkRegister512x2048",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkDoLookup8x8",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkDoLookup8x64",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkDoLookup64x64",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkDoLookup64x512",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkDoLookup512x512",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          },
+          {
+            "name": "BenchmarkDoLookup512x2048",
+            "modificationCount": 1,
+            "createdOn": "2018-06-02",
+            "lastUpdateOn": "2018-06-02"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "nsqio/nsq",
+    "name": "nsq",
+    "private": false,
+    "html_url": "https://github.com/nsqio/nsq",
+    "description": "A realtime distributed messaging platform",
+    "fork": false,
+    "created_at": "2012-05-12T14:37:08Z",
+    "updated_at": "2023-10-23T11:03:31Z",
+    "pushed_at": "2023-10-19T22:27:24Z",
+    "ssh_url": "git@github.com:nsqio/nsq.git",
+    "homepage": "https://nsq.io",
+    "stargazers_count": 23841,
+    "watchers_count": 23841,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 2896,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 67,
+    "topics": [
+      "distributed-systems",
+      "go",
+      "message-queue",
+      "messaging",
+      "nsq",
+      "queue"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 116,
+    "Lines": 22015,
+    "Blank": 3392,
+    "Code": 18019,
+    "Comment": 604,
+    "Bytes": 590449,
+    "Complexity": 3164
+  }
+}

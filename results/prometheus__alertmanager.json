@@ -1,0 +1,201 @@
+{
+  "Name": "prometheus/alertmanager",
+  "Path": "./repositories/prometheus__alertmanager",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T00:50:33Z",
+    "benchmarkCount": 7,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 7,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/prometheus/alertmanager/cluster",
+        "succeded": true,
+        "duration": "0.062s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWriteTo-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.006786,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWriteTo",
+            "modificationCount": 2,
+            "createdOn": "2021-08-09",
+            "lastUpdateOn": "2023-08-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/prometheus/alertmanager/matchers/parse",
+        "succeded": true,
+        "duration": "2.953s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseSimple-12",
+            "runs": 787785,
+            "nsPerOp": 1867,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseComplex-12",
+            "runs": 173575,
+            "nsPerOp": 7976,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseSimple",
+            "modificationCount": 1,
+            "createdOn": "2023-09-05",
+            "lastUpdateOn": "2023-09-05"
+          },
+          {
+            "name": "BenchmarkParseComplex",
+            "modificationCount": 1,
+            "createdOn": "2023-09-05",
+            "lastUpdateOn": "2023-09-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/prometheus/alertmanager/notify",
+        "succeded": true,
+        "duration": "1.612s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHashAlert-12",
+            "runs": 2538926,
+            "nsPerOp": 439.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHashAlert",
+            "modificationCount": 1,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-10-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/prometheus/alertmanager/silence",
+        "succeded": true,
+        "duration": "5.352s",
+        "benchmarks": [
+          {
+            "name": "Benchmark100SilencesQuery-12",
+            "runs": 19629,
+            "nsPerOp": 54515,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1000SilencesQuery-12",
+            "runs": 1582,
+            "nsPerOp": 688888,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark10000SilencesQuery-12",
+            "runs": 100,
+            "nsPerOp": 10235544,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark100SilencesQuery",
+            "modificationCount": 1,
+            "createdOn": "2019-02-26",
+            "lastUpdateOn": "2019-02-26"
+          },
+          {
+            "name": "Benchmark1000SilencesQuery",
+            "modificationCount": 1,
+            "createdOn": "2019-02-26",
+            "lastUpdateOn": "2019-02-26"
+          },
+          {
+            "name": "Benchmark10000SilencesQuery",
+            "modificationCount": 2,
+            "createdOn": "2019-02-26",
+            "lastUpdateOn": "2023-02-24"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "prometheus/alertmanager",
+    "name": "alertmanager",
+    "private": false,
+    "html_url": "https://github.com/prometheus/alertmanager",
+    "description": "Prometheus Alertmanager",
+    "fork": false,
+    "created_at": "2013-07-16T15:06:31Z",
+    "updated_at": "2023-10-23T11:05:09Z",
+    "pushed_at": "2023-10-20T19:54:21Z",
+    "ssh_url": "git@github.com:prometheus/alertmanager.git",
+    "homepage": "https://prometheus.io",
+    "stargazers_count": 5949,
+    "watchers_count": 5949,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 2058,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 514,
+    "topics": [
+      "alertmanager",
+      "deduplication",
+      "email",
+      "hacktoberfest",
+      "monitoring",
+      "notifications",
+      "opsgenie",
+      "pagerduty",
+      "slack"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 251,
+    "Lines": 62929,
+    "Blank": 7554,
+    "Code": 47763,
+    "Comment": 7612,
+    "Bytes": 4544454,
+    "Complexity": 7450
+  }
+}

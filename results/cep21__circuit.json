@@ -1,0 +1,580 @@
+{
+  "Name": "cep21/circuit",
+  "Path": "./repositories/cep21__circuit",
+  "GoVersion": "1.15",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T17:10:57Z",
+    "benchmarkCount": 38,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 38,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/kwasnick/circuit/v3/benchmarking",
+        "succeded": true,
+        "duration": "51.574s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/Hystrix/passing/1-12",
+            "runs": 114844,
+            "nsPerOp": 11540,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/Hystrix/passing/75-12",
+            "runs": 734979,
+            "nsPerOp": 1689,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/Hystrix/failing/1-12",
+            "runs": 436155,
+            "nsPerOp": 2617,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/Hystrix/failing/75-12",
+            "runs": 3290564,
+            "nsPerOp": 348.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/Minimal/passing/1-12",
+            "runs": 145616,
+            "nsPerOp": 7880,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/Minimal/passing/75-12",
+            "runs": 1000000,
+            "nsPerOp": 1110,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/Minimal/failing/1-12",
+            "runs": 431116,
+            "nsPerOp": 2692,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/Minimal/failing/75-12",
+            "runs": 3156157,
+            "nsPerOp": 355.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/UseGo/passing/1-12",
+            "runs": 78895,
+            "nsPerOp": 16030,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/UseGo/passing/75-12",
+            "runs": 267705,
+            "nsPerOp": 4820,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/UseGo/failing/1-12",
+            "runs": 77512,
+            "nsPerOp": 16989,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/cep21-circuit/UseGo/failing/75-12",
+            "runs": 235598,
+            "nsPerOp": 5119,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/GoHystrix/DefaultConfig/passing/1-12",
+            "runs": 17316,
+            "nsPerOp": 77739,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/GoHystrix/DefaultConfig/passing/75-12",
+            "runs": 36988,
+            "nsPerOp": 27230,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/GoHystrix/DefaultConfig/failing/1-12",
+            "runs": 49617,
+            "nsPerOp": 22592,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/GoHystrix/DefaultConfig/failing/75-12",
+            "runs": 197662,
+            "nsPerOp": 6904,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/rubyist/Threshold-10/passing/1-12",
+            "runs": 79692,
+            "nsPerOp": 18863,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/rubyist/Threshold-10/passing/75-12",
+            "runs": 250725,
+            "nsPerOp": 4671,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/rubyist/Threshold-10/failing/1-12",
+            "runs": 433392,
+            "nsPerOp": 2702,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/rubyist/Threshold-10/failing/75-12",
+            "runs": 2956468,
+            "nsPerOp": 413.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/gobreaker/Default/passing/1-12",
+            "runs": 205555,
+            "nsPerOp": 5552,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/gobreaker/Default/passing/75-12",
+            "runs": 166664,
+            "nsPerOp": 7222,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/gobreaker/Default/failing/1-12",
+            "runs": 389373,
+            "nsPerOp": 3338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/gobreaker/Default/failing/75-12",
+            "runs": 379581,
+            "nsPerOp": 3418,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/handy/Default/passing/1-12",
+            "runs": 199023,
+            "nsPerOp": 6609,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/handy/Default/passing/75-12",
+            "runs": 156812,
+            "nsPerOp": 8244,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/handy/Default/failing/1-12",
+            "runs": 576349,
+            "nsPerOp": 2511,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/handy/Default/failing/75-12",
+            "runs": 697140,
+            "nsPerOp": 1518,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/iand_circuit/Default/passing/1-12",
+            "runs": 20900898,
+            "nsPerOp": 60.34,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/iand_circuit/Default/passing/75-12",
+            "runs": 5691182,
+            "nsPerOp": 207.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/iand_circuit/Default/failing/1-12",
+            "runs": 100000000,
+            "nsPerOp": 17.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCiruits/iand_circuit/Default/failing/75-12",
+            "runs": 272132398,
+            "nsPerOp": 4.063,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkCiruits",
+            "modificationCount": 17,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cep21/circuit/v3/faststats",
+        "succeded": true,
+        "duration": "8.903s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRollingCounter/super-small-buckets/1-12",
+            "runs": 13573004,
+            "nsPerOp": 103.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingCounter/super-small-buckets/50-12",
+            "runs": 6752132,
+            "nsPerOp": 202.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingCounter/normal-rate/1-12",
+            "runs": 36338463,
+            "nsPerOp": 30.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingCounter/normal-rate/50-12",
+            "runs": 16558399,
+            "nsPerOp": 71.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingCounter/default/1-12",
+            "runs": 40255438,
+            "nsPerOp": 31.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingCounter/default/50-12",
+            "runs": 22852767,
+            "nsPerOp": 47.23,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRollingCounter",
+            "modificationCount": 2,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkRollingCounter",
+            "modificationCount": 2,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkRollingCounter",
+            "modificationCount": 2,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkRollingCounter",
+            "modificationCount": 2,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkRollingCounter",
+            "modificationCount": 2,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          },
+          {
+            "name": "BenchmarkRollingCounter",
+            "modificationCount": 2,
+            "createdOn": "2017-12-28",
+            "lastUpdateOn": "2019-03-26"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "cep21/circuit",
+    "name": "circuit",
+    "private": false,
+    "html_url": "https://github.com/cep21/circuit",
+    "description": "An efficient and feature complete Hystrix like Go implementation of the circuit breaker pattern.",
+    "fork": false,
+    "created_at": "2017-12-23T22:17:43Z",
+    "updated_at": "2023-10-20T02:54:38Z",
+    "pushed_at": "2023-10-10T20:03:15Z",
+    "ssh_url": "git@github.com:cep21/circuit.git",
+    "stargazers_count": 717,
+    "watchers_count": 717,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 44,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 4,
+    "topics": [
+      "circuit",
+      "circuit-breaker-pattern",
+      "hystrix",
+      "slo"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 68,
+    "Lines": 8093,
+    "Blank": 934,
+    "Code": 6258,
+    "Comment": 901,
+    "Bytes": 241497,
+    "Complexity": 981
+  }
+}

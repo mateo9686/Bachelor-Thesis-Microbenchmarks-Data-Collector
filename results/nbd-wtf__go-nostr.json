@@ -1,0 +1,252 @@
+{
+  "Name": "nbd-wtf/go-nostr",
+  "Path": "./repositories/nbd-wtf__go-nostr",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T08:49:34Z",
+    "benchmarkCount": 13,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 12,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/nbd-wtf/go-nostr/nip13",
+        "succeded": false,
+        "duration": "77.996s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCheck-12",
+            "runs": 77228097,
+            "nsPerOp": 15.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenerateOneIteration-12",
+            "runs": 167350,
+            "nsPerOp": 7530,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenerate/8bits-12",
+            "runs": 38811,
+            "nsPerOp": 239782,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenerate/16bits-12",
+            "runs": 19,
+            "nsPerOp": 216101767,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenerate/24bits",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "nip13_test.go:144: nip13: generating proof of work took too long"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCheck",
+            "modificationCount": 1,
+            "createdOn": "2022-12-26",
+            "lastUpdateOn": "2022-12-26"
+          },
+          {
+            "name": "BenchmarkGenerateOneIteration",
+            "modificationCount": 2,
+            "createdOn": "2022-12-26",
+            "lastUpdateOn": "2023-09-06"
+          },
+          {
+            "name": "BenchmarkGenerate",
+            "modificationCount": 2,
+            "createdOn": "2022-12-26",
+            "lastUpdateOn": "2023-09-06"
+          },
+          {
+            "name": "BenchmarkGenerate",
+            "modificationCount": 2,
+            "createdOn": "2022-12-26",
+            "lastUpdateOn": "2023-09-06"
+          },
+          {
+            "name": "BenchmarkGenerate",
+            "modificationCount": 2,
+            "createdOn": "2022-12-26",
+            "lastUpdateOn": "2023-09-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/nbd-wtf/go-nostr/nson",
+        "succeded": true,
+        "duration": "13.268s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNSONEncoding/json.Marshal-12",
+            "runs": 6180,
+            "nsPerOp": 206243,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNSONEncoding/nson.Marshal-12",
+            "runs": 4838,
+            "nsPerOp": 268049,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNSONEncoding/nson.Marshal_to_bytes-12",
+            "runs": 4778,
+            "nsPerOp": 260167,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNSONDecoding/json.Unmarshal-12",
+            "runs": 4288,
+            "nsPerOp": 291393,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNSONDecoding/nson.Unmarshal-12",
+            "runs": 65078,
+            "nsPerOp": 27240,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNSONDecoding/nson.Unmarshal_from_bytes-12",
+            "runs": 43910,
+            "nsPerOp": 45802,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNSONDecoding/json.Unmarshal_+_sig_verification-12",
+            "runs": 157,
+            "nsPerOp": 9073410,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNSONDecoding/nson.Unmarshal_+_sig_verification-12",
+            "runs": 100,
+            "nsPerOp": 12610996,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNSONEncoding",
+            "modificationCount": 2,
+            "createdOn": "2023-07-05",
+            "lastUpdateOn": "2023-07-30"
+          },
+          {
+            "name": "BenchmarkNSONEncoding",
+            "modificationCount": 2,
+            "createdOn": "2023-07-05",
+            "lastUpdateOn": "2023-07-30"
+          },
+          {
+            "name": "BenchmarkNSONEncoding",
+            "modificationCount": 2,
+            "createdOn": "2023-07-05",
+            "lastUpdateOn": "2023-07-30"
+          },
+          {
+            "name": "BenchmarkNSONDecoding",
+            "modificationCount": 2,
+            "createdOn": "2023-07-05",
+            "lastUpdateOn": "2023-07-30"
+          },
+          {
+            "name": "BenchmarkNSONDecoding",
+            "modificationCount": 2,
+            "createdOn": "2023-07-05",
+            "lastUpdateOn": "2023-07-30"
+          },
+          {
+            "name": "BenchmarkNSONDecoding",
+            "modificationCount": 2,
+            "createdOn": "2023-07-05",
+            "lastUpdateOn": "2023-07-30"
+          },
+          {
+            "name": "BenchmarkNSONDecoding",
+            "modificationCount": 2,
+            "createdOn": "2023-07-05",
+            "lastUpdateOn": "2023-07-30"
+          },
+          {
+            "name": "BenchmarkNSONDecoding",
+            "modificationCount": 2,
+            "createdOn": "2023-07-05",
+            "lastUpdateOn": "2023-07-30"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "nbd-wtf/go-nostr",
+    "name": "go-nostr",
+    "private": false,
+    "html_url": "https://github.com/nbd-wtf/go-nostr",
+    "description": "Nostr library for Golang",
+    "fork": false,
+    "created_at": "2021-01-20T02:41:14Z",
+    "updated_at": "2023-10-23T11:09:07Z",
+    "pushed_at": "2023-10-09T10:39:54Z",
+    "ssh_url": "git@github.com:nbd-wtf/go-nostr.git",
+    "stargazers_count": 270,
+    "watchers_count": 270,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 68,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 3,
+    "topics": [
+      "nostr"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 49,
+    "Lines": 6062,
+    "Blank": 785,
+    "Code": 4943,
+    "Comment": 334,
+    "Bytes": 179592,
+    "Complexity": 1247
+  }
+}

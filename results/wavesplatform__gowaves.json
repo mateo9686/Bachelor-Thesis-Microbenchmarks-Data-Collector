@@ -1,0 +1,1548 @@
+{
+  "Name": "wavesplatform/gowaves",
+  "Path": "./repositories/wavesplatform__gowaves",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T18:01:18Z",
+    "benchmarkCount": 108,
+    "benchmarkSuiteCount": 9,
+    "successfulBenchmarkCount": 106,
+    "successfulBenchmarkSuitesCount": 8,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/wavesplatform/gowaves/cmd/forkdetector/internal",
+        "succeded": true,
+        "duration": "22.096s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPathsSort1M-12",
+            "runs": 1,
+            "nsPerOp": 19620644944,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGraphPath2M-12",
+            "runs": 1,
+            "nsPerOp": 2385391465,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPathsSort1M",
+            "modificationCount": 1,
+            "createdOn": "2019-07-15",
+            "lastUpdateOn": "2019-07-15"
+          },
+          {
+            "name": "BenchmarkGraphPath2M",
+            "modificationCount": 1,
+            "createdOn": "2019-07-15",
+            "lastUpdateOn": "2019-07-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wavesplatform/gowaves/pkg/crypto",
+        "succeded": true,
+        "duration": "143.024s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBase58Decode/64B-12",
+            "runs": 10000,
+            "nsPerOp": 174127,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Decode/128B-12",
+            "runs": 51103,
+            "nsPerOp": 22682,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Decode/256B-12",
+            "runs": 10000,
+            "nsPerOp": 156016,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Decode/512B-12",
+            "runs": 5264,
+            "nsPerOp": 586645,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Decode/1024B-12",
+            "runs": 1783,
+            "nsPerOp": 865089,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Decode/2048B-12",
+            "runs": 531,
+            "nsPerOp": 2578153,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Encode/64B-12",
+            "runs": 203120,
+            "nsPerOp": 8785,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Encode/128B-12",
+            "runs": 47438,
+            "nsPerOp": 24360,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Encode/256B-12",
+            "runs": 10000,
+            "nsPerOp": 107165,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Encode/512B-12",
+            "runs": 2364,
+            "nsPerOp": 1175997,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Encode/1024B-12",
+            "runs": 423,
+            "nsPerOp": 6501236,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Encode/2048B-12",
+            "runs": 100,
+            "nsPerOp": 12390870,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSign/64B-12",
+            "runs": 14630,
+            "nsPerOp": 99126,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSign/128B-12",
+            "runs": 10000,
+            "nsPerOp": 168301,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSign/256B-12",
+            "runs": 10000,
+            "nsPerOp": 143281,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSign/512B-12",
+            "runs": 10000,
+            "nsPerOp": 154075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSign/1024B-12",
+            "runs": 14971,
+            "nsPerOp": 94583,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSign/2048B-12",
+            "runs": 10000,
+            "nsPerOp": 147876,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/64B-12",
+            "runs": 10000,
+            "nsPerOp": 200421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/128B-12",
+            "runs": 12234,
+            "nsPerOp": 102341,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/256B-12",
+            "runs": 12874,
+            "nsPerOp": 150925,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/512B-12",
+            "runs": 10000,
+            "nsPerOp": 107738,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/1024B-12",
+            "runs": 7310,
+            "nsPerOp": 286068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/2048B-12",
+            "runs": 10000,
+            "nsPerOp": 235126,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/4096B-12",
+            "runs": 10000,
+            "nsPerOp": 178025,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/8192B-12",
+            "runs": 10000,
+            "nsPerOp": 109284,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/16384B-12",
+            "runs": 9958,
+            "nsPerOp": 259833,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerify/32768B-12",
+            "runs": 6736,
+            "nsPerOp": 215133,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFastHash/64B-12",
+            "runs": 1581523,
+            "nsPerOp": 2378,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFastHash/128B-12",
+            "runs": 2775578,
+            "nsPerOp": 1196,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFastHash/256B-12",
+            "runs": 1000000,
+            "nsPerOp": 1316,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFastHash/512B-12",
+            "runs": 480678,
+            "nsPerOp": 2285,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFastHash/1024B-12",
+            "runs": 723211,
+            "nsPerOp": 2667,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFastHash/2048B-12",
+            "runs": 318294,
+            "nsPerOp": 4058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSecureHash/64B-12",
+            "runs": 332971,
+            "nsPerOp": 4050,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSecureHash/128B-12",
+            "runs": 609501,
+            "nsPerOp": 3582,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSecureHash/256B-12",
+            "runs": 661288,
+            "nsPerOp": 4712,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSecureHash/512B-12",
+            "runs": 488822,
+            "nsPerOp": 3506,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSecureHash/1024B-12",
+            "runs": 364758,
+            "nsPerOp": 5075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSecureHash/2048B-12",
+            "runs": 257082,
+            "nsPerOp": 8841,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkECDSARecoverPublicKey-12",
+            "runs": 2100,
+            "nsPerOp": 925223,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGroth16Verify0inputsBLS-12",
+            "runs": 68,
+            "nsPerOp": 34860015,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGroth16Verify1inputsBLS-12",
+            "runs": 100,
+            "nsPerOp": 24715392,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGroth16Verify15inputsBLS-12",
+            "runs": 86,
+            "nsPerOp": 12421966,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGroth16Verify16inputsBLS-12",
+            "runs": 100,
+            "nsPerOp": 17316716,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMerkleTreeEven-12",
+            "runs": 1,
+            "nsPerOp": 1119538075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMerkleTreeOdd-12",
+            "runs": 157,
+            "nsPerOp": 7819765,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMerkleTreeRootEven-12",
+            "runs": 231408776,
+            "nsPerOp": 5.126,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMerkleTreeRootOdd-12",
+            "runs": 191931,
+            "nsPerOp": 8602,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSignVRF/64B-12",
+            "runs": 1542,
+            "nsPerOp": 1097302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSignVRF/128B-12",
+            "runs": 1099,
+            "nsPerOp": 990856,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSignVRF/256B-12",
+            "runs": 1264,
+            "nsPerOp": 1373128,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSignVRF/512B-12",
+            "runs": 1330,
+            "nsPerOp": 1873861,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSignVRF/1024B-12",
+            "runs": 1344,
+            "nsPerOp": 1056488,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSignVRF/2048B-12",
+            "runs": 1350,
+            "nsPerOp": 1017643,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyVRF/64B-12",
+            "runs": 1371,
+            "nsPerOp": 1804719,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyVRF/128B-12",
+            "runs": 436,
+            "nsPerOp": 2524159,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyVRF/256B-12",
+            "runs": 1118,
+            "nsPerOp": 1834788,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyVRF/512B-12",
+            "runs": 1340,
+            "nsPerOp": 2049452,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyVRF/1024B-12",
+            "runs": 1197,
+            "nsPerOp": 1398746,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyVRF/2048B-12",
+            "runs": 1116,
+            "nsPerOp": 1304589,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeVRF/64B-12",
+            "runs": 2467,
+            "nsPerOp": 468687,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeVRF/128B-12",
+            "runs": 1892,
+            "nsPerOp": 913685,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeVRF/256B-12",
+            "runs": 2650,
+            "nsPerOp": 766200,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeVRF/512B-12",
+            "runs": 2270,
+            "nsPerOp": 637497,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeVRF/1024B-12",
+            "runs": 1945,
+            "nsPerOp": 1206326,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeVRF/2048B-12",
+            "runs": 2385,
+            "nsPerOp": 701335,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBase58Decode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Decode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Decode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Decode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Decode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Decode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Encode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Encode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Encode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Encode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Encode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkBase58Encode",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkVerify",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkFastHash",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkFastHash",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkFastHash",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkFastHash",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkFastHash",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkFastHash",
+            "modificationCount": 4,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSecureHash",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSecureHash",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSecureHash",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSecureHash",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSecureHash",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSecureHash",
+            "modificationCount": 5,
+            "createdOn": "2018-10-04",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkECDSARecoverPublicKey",
+            "modificationCount": 2,
+            "createdOn": "2020-05-22",
+            "lastUpdateOn": "2021-11-19"
+          },
+          {
+            "name": "BenchmarkGroth16Verify0inputsBLS",
+            "modificationCount": 3,
+            "createdOn": "2020-04-03",
+            "lastUpdateOn": "2023-03-30"
+          },
+          {
+            "name": "BenchmarkGroth16Verify1inputsBLS",
+            "modificationCount": 3,
+            "createdOn": "2020-04-03",
+            "lastUpdateOn": "2023-03-30"
+          },
+          {
+            "name": "BenchmarkGroth16Verify15inputsBLS",
+            "modificationCount": 3,
+            "createdOn": "2020-04-03",
+            "lastUpdateOn": "2023-03-30"
+          },
+          {
+            "name": "BenchmarkGroth16Verify16inputsBLS",
+            "modificationCount": 3,
+            "createdOn": "2020-04-03",
+            "lastUpdateOn": "2023-03-30"
+          },
+          {
+            "name": "BenchmarkMerkleTreeEven",
+            "modificationCount": 2,
+            "createdOn": "2020-03-17",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkMerkleTreeOdd",
+            "modificationCount": 2,
+            "createdOn": "2020-03-17",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkMerkleTreeRootEven",
+            "modificationCount": 2,
+            "createdOn": "2020-03-17",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkMerkleTreeRootOdd",
+            "modificationCount": 2,
+            "createdOn": "2020-03-17",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkSignVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSignVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSignVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSignVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSignVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkSignVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkVerifyVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkVerifyVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkVerifyVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkVerifyVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkVerifyVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkVerifyVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkComputeVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkComputeVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkComputeVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkComputeVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkComputeVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          },
+          {
+            "name": "BenchmarkComputeVRF",
+            "modificationCount": 1,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-01-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wavesplatform/gowaves/pkg/libs/serializer",
+        "succeded": true,
+        "duration": "30.356s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSerializer_Bytes-12",
+            "runs": 390787,
+            "nsPerOp": 11000,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSerializer_Bytes",
+            "modificationCount": 1,
+            "createdOn": "2019-10-22",
+            "lastUpdateOn": "2019-10-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wavesplatform/gowaves/pkg/miner/utxpool",
+        "succeded": false,
+        "duration": "1.256s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTransactionPool-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTransactionPool",
+            "modificationCount": 5,
+            "createdOn": "2019-06-10",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wavesplatform/gowaves/pkg/node/peers",
+        "succeded": true,
+        "duration": "5.627s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPush100-12",
+            "runs": 10000,
+            "nsPerOp": 246879,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect100-12",
+            "runs": 99206,
+            "nsPerOp": 10932,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPushSelect1000-12",
+            "runs": 1293,
+            "nsPerOp": 1122835,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPush100",
+            "modificationCount": 1,
+            "createdOn": "2023-08-17",
+            "lastUpdateOn": "2023-08-17"
+          },
+          {
+            "name": "BenchmarkSelect100",
+            "modificationCount": 1,
+            "createdOn": "2023-08-17",
+            "lastUpdateOn": "2023-08-17"
+          },
+          {
+            "name": "BenchmarkPushSelect1000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-17",
+            "lastUpdateOn": "2023-08-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wavesplatform/gowaves/pkg/proto",
+        "succeded": true,
+        "duration": "30.736s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewWavesAddressFromPublicKey-12",
+            "runs": 331140,
+            "nsPerOp": 16001,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPayment_MarshalBinary-12",
+            "runs": 10507426,
+            "nsPerOp": 1089,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTransferWithProofsBinary-12",
+            "runs": 2375397,
+            "nsPerOp": 805.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesToTransaction_WithReflection-12",
+            "runs": 167440,
+            "nsPerOp": 7996,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesToTransaction_WithoutReflection-12",
+            "runs": 352340,
+            "nsPerOp": 5712,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOrderV1SigningRoundTrip/serialize-12",
+            "runs": 1000000,
+            "nsPerOp": 1442,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOrderV1SigningRoundTrip/marshal-12",
+            "runs": 1316205,
+            "nsPerOp": 830.2,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewWavesAddressFromPublicKey",
+            "modificationCount": 5,
+            "createdOn": "2018-10-10",
+            "lastUpdateOn": "2023-01-17"
+          },
+          {
+            "name": "BenchmarkPayment_MarshalBinary",
+            "modificationCount": 3,
+            "createdOn": "2019-06-10",
+            "lastUpdateOn": "2023-01-17"
+          },
+          {
+            "name": "BenchmarkTransferWithProofsBinary",
+            "modificationCount": 7,
+            "createdOn": "2019-06-10",
+            "lastUpdateOn": "2023-07-07"
+          },
+          {
+            "name": "BenchmarkBytesToTransaction_WithReflection",
+            "modificationCount": 3,
+            "createdOn": "2019-02-19",
+            "lastUpdateOn": "2022-06-28"
+          },
+          {
+            "name": "BenchmarkBytesToTransaction_WithoutReflection",
+            "modificationCount": 3,
+            "createdOn": "2019-02-19",
+            "lastUpdateOn": "2022-06-28"
+          },
+          {
+            "name": "BenchmarkOrderV1SigningRoundTrip",
+            "modificationCount": 4,
+            "createdOn": "2019-10-22",
+            "lastUpdateOn": "2023-01-17"
+          },
+          {
+            "name": "BenchmarkOrderV1SigningRoundTrip",
+            "modificationCount": 4,
+            "createdOn": "2019-10-22",
+            "lastUpdateOn": "2023-01-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wavesplatform/gowaves/pkg/ride",
+        "succeded": false,
+        "duration": "39.492s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPowBigInt-12",
+            "runs": 3188,
+            "nsPerOp": 725442,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFractionBigInt-12",
+            "runs": 399138,
+            "nsPerOp": 4324,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFractionBigIntRounds-12",
+            "runs": 340538,
+            "nsPerOp": 5235,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBigIntToString-12",
+            "runs": 447123,
+            "nsPerOp": 8613,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFraction-12",
+            "runs": 472856,
+            "nsPerOp": 6906,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFractionIntRounds-12",
+            "runs": 369325,
+            "nsPerOp": 3448,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPow-12",
+            "runs": 8875,
+            "nsPerOp": 113801,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSplitString-12",
+            "runs": 10700,
+            "nsPerOp": 151783,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSplitStringV6-12",
+            "runs": 356570,
+            "nsPerOp": 5648,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSplitString4C-12",
+            "runs": 73224,
+            "nsPerOp": 23514,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMakeStringV6-12",
+            "runs": 307845,
+            "nsPerOp": 4731,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMakeString2C-12",
+            "runs": 10000,
+            "nsPerOp": 298191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCheckFunction-12",
+            "runs": 3031771,
+            "nsPerOp": 433.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCheckFunctionMap-12",
+            "runs": 16723495,
+            "nsPerOp": 65.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimplestScript-12",
+            "runs": 95060,
+            "nsPerOp": 14686,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPowBigInt",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkFractionBigInt",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkFractionBigIntRounds",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkBigIntToString",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkFraction",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkFractionIntRounds",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkSplitString",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkSplitStringV6",
+            "modificationCount": 3,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkSplitString4C",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkMakeStringV6",
+            "modificationCount": 3,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-07-08"
+          },
+          {
+            "name": "BenchmarkMakeString2C",
+            "modificationCount": 3,
+            "createdOn": "2020-10-12",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkCheckFunction",
+            "modificationCount": 1,
+            "createdOn": "2020-10-12",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkCheckFunctionMap",
+            "modificationCount": 1,
+            "createdOn": "2020-10-12",
+            "lastUpdateOn": "2020-10-12"
+          },
+          {
+            "name": "BenchmarkSimplestScript",
+            "modificationCount": 2,
+            "createdOn": "2020-10-12",
+            "lastUpdateOn": "2022-05-25"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 2,
+            "createdOn": "2020-10-12",
+            "lastUpdateOn": "2022-05-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wavesplatform/gowaves/pkg/ride/math",
+        "succeded": true,
+        "duration": "19.779s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPow/1-12",
+            "runs": 100,
+            "nsPerOp": 16423329,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPow/2-12",
+            "runs": 10000,
+            "nsPerOp": 142661,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPow/3-12",
+            "runs": 13370,
+            "nsPerOp": 89689,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPow/4-12",
+            "runs": 5798,
+            "nsPerOp": 207022,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPow/5-12",
+            "runs": 137048,
+            "nsPerOp": 18010,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPow/6-12",
+            "runs": 12128,
+            "nsPerOp": 145925,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPow/7-12",
+            "runs": 10000,
+            "nsPerOp": 114823,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPow/8-12",
+            "runs": 2726,
+            "nsPerOp": 525688,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPow/9-12",
+            "runs": 5205,
+            "nsPerOp": 238980,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          },
+          {
+            "name": "BenchmarkPow",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-04-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wavesplatform/gowaves/pkg/ride/serialization",
+        "succeded": true,
+        "duration": "6.963s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseScript-12",
+            "runs": 9217,
+            "nsPerOp": 181342,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseDApp-12",
+            "runs": 27367,
+            "nsPerOp": 40527,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseScript",
+            "modificationCount": 1,
+            "createdOn": "2022-05-25",
+            "lastUpdateOn": "2022-05-25"
+          },
+          {
+            "name": "BenchmarkParseDApp",
+            "modificationCount": 1,
+            "createdOn": "2022-05-25",
+            "lastUpdateOn": "2022-05-25"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "wavesplatform/gowaves",
+    "name": "gowaves",
+    "private": false,
+    "html_url": "https://github.com/wavesplatform/gowaves",
+    "description": "Go implementation of Waves node, libraries and tools for Waves blockchain",
+    "fork": false,
+    "created_at": "2018-10-01T09:53:59Z",
+    "updated_at": "2023-10-05T14:27:59Z",
+    "pushed_at": "2023-10-19T07:14:57Z",
+    "ssh_url": "git@github.com:wavesplatform/gowaves.git",
+    "stargazers_count": 78,
+    "watchers_count": 78,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 31,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 28,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 703,
+    "Lines": 229046,
+    "Blank": 20672,
+    "Code": 199097,
+    "Comment": 9277,
+    "Bytes": 8490954,
+    "Complexity": 31195
+  }
+}

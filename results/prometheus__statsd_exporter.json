@@ -1,0 +1,1021 @@
+{
+  "Name": "prometheus/statsd_exporter",
+  "Path": "./repositories/prometheus__statsd_exporter",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T18:21:13Z",
+    "benchmarkCount": 71,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 71,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/prometheus/statsd_exporter",
+        "succeded": true,
+        "duration": "28.612s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUDPListener1-12",
+            "runs": 58236,
+            "nsPerOp": 21130,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUDPListener5-12",
+            "runs": 2234,
+            "nsPerOp": 538126,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUDPListener50-12",
+            "runs": 21,
+            "nsPerOp": 52791791,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExporterListener-12",
+            "runs": 27,
+            "nsPerOp": 38554006,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineToEventsMixed1-12",
+            "runs": 89520,
+            "nsPerOp": 15291,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineToEventsMixed5-12",
+            "runs": 14264,
+            "nsPerOp": 83140,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineToEventsMixed50-12",
+            "runs": 1767,
+            "nsPerOp": 744927,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineFormats/invalidInfluxDb-12",
+            "runs": 949029,
+            "nsPerOp": 1508,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineFormats/statsd-12",
+            "runs": 1564830,
+            "nsPerOp": 769.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineFormats/invalidStatsd-12",
+            "runs": 1000000,
+            "nsPerOp": 1029,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineFormats/dogStatsd-12",
+            "runs": 995781,
+            "nsPerOp": 1302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineFormats/invalidDogStatsd-12",
+            "runs": 1000000,
+            "nsPerOp": 1457,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineFormats/signalFx-12",
+            "runs": 973210,
+            "nsPerOp": 1235,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineFormats/invalidSignalFx-12",
+            "runs": 1256042,
+            "nsPerOp": 866.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLineFormats/influxDb-12",
+            "runs": 911839,
+            "nsPerOp": 1415,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUDPListener1",
+            "modificationCount": 2,
+            "createdOn": "2016-07-22",
+            "lastUpdateOn": "2019-05-23"
+          },
+          {
+            "name": "BenchmarkUDPListener5",
+            "modificationCount": 2,
+            "createdOn": "2016-07-22",
+            "lastUpdateOn": "2019-05-23"
+          },
+          {
+            "name": "BenchmarkUDPListener50",
+            "modificationCount": 2,
+            "createdOn": "2016-07-22",
+            "lastUpdateOn": "2019-05-23"
+          },
+          {
+            "name": "BenchmarkExporterListener",
+            "modificationCount": 8,
+            "createdOn": "2016-07-22",
+            "lastUpdateOn": "2020-06-12"
+          },
+          {
+            "name": "BenchmarkLineToEventsMixed1",
+            "modificationCount": 2,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-07-08"
+          },
+          {
+            "name": "BenchmarkLineToEventsMixed5",
+            "modificationCount": 2,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-07-08"
+          },
+          {
+            "name": "BenchmarkLineToEventsMixed50",
+            "modificationCount": 2,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-07-08"
+          },
+          {
+            "name": "BenchmarkLineFormats",
+            "modificationCount": 5,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkLineFormats",
+            "modificationCount": 5,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkLineFormats",
+            "modificationCount": 5,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkLineFormats",
+            "modificationCount": 5,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkLineFormats",
+            "modificationCount": 5,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkLineFormats",
+            "modificationCount": 5,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkLineFormats",
+            "modificationCount": 5,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkLineFormats",
+            "modificationCount": 5,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-08-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/prometheus/statsd_exporter/pkg/exporter",
+        "succeded": true,
+        "duration": "13.644s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseDogStatsDTags/1_tag_w/o_hash-12",
+            "runs": 11256158,
+            "nsPerOp": 97.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseDogStatsDTags/2_tags,_mixed_hashes-12",
+            "runs": 7068724,
+            "nsPerOp": 143.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseDogStatsDTags/3_long_tags-12",
+            "runs": 3939309,
+            "nsPerOp": 280.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseDogStatsDTags/a-z_tags-12",
+            "runs": 230623,
+            "nsPerOp": 4992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseDogStatsDTags/1_tag_w/hash-12",
+            "runs": 19801262,
+            "nsPerOp": 57.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashNameAndLabels/no_labels-12",
+            "runs": 12233520,
+            "nsPerOp": 119.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashNameAndLabels/one_label-12",
+            "runs": 4072890,
+            "nsPerOp": 285.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashNameAndLabels/many_labels-12",
+            "runs": 794154,
+            "nsPerOp": 1673,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseDogStatsDTags",
+            "modificationCount": 49,
+            "createdOn": "2016-03-29",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkParseDogStatsDTags",
+            "modificationCount": 49,
+            "createdOn": "2016-03-29",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkParseDogStatsDTags",
+            "modificationCount": 49,
+            "createdOn": "2016-03-29",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkParseDogStatsDTags",
+            "modificationCount": 49,
+            "createdOn": "2016-03-29",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkParseDogStatsDTags",
+            "modificationCount": 49,
+            "createdOn": "2016-03-29",
+            "lastUpdateOn": "2020-08-10"
+          },
+          {
+            "name": "BenchmarkHashNameAndLabels",
+            "modificationCount": 49,
+            "createdOn": "2016-03-29",
+            "lastUpdateOn": "2020-11-20"
+          },
+          {
+            "name": "BenchmarkHashNameAndLabels",
+            "modificationCount": 49,
+            "createdOn": "2016-03-29",
+            "lastUpdateOn": "2020-11-20"
+          },
+          {
+            "name": "BenchmarkHashNameAndLabels",
+            "modificationCount": 49,
+            "createdOn": "2016-03-29",
+            "lastUpdateOn": "2020-11-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/prometheus/statsd_exporter/pkg/mapper",
+        "succeded": true,
+        "duration": "78.884s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEscapeMetricName/clean-12",
+            "runs": 100000000,
+            "nsPerOp": 14.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMetricName/0starts_with_digit-12",
+            "runs": 12270826,
+            "nsPerOp": 110.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMetricName/with_underscore-12",
+            "runs": 49815350,
+            "nsPerOp": 24.93,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMetricName/with--doubledash-12",
+            "runs": 14253157,
+            "nsPerOp": 101.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMetricName/with---multiple-dashes-12",
+            "runs": 7821639,
+            "nsPerOp": 136.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMetricName/with.dot-12",
+            "runs": 13790235,
+            "nsPerOp": 83.21,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMetricName/with😱emoji-12",
+            "runs": 7713540,
+            "nsPerOp": 134.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMetricName/with.*.multiple-12",
+            "runs": 8609192,
+            "nsPerOp": 151.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMetricName/test.web-server.foo.bar-12",
+            "runs": 6464606,
+            "nsPerOp": 157.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEscapeMetricName/#00-12",
+            "runs": 414019564,
+            "nsPerOp": 2.708,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob-12",
+            "runs": 88033,
+            "nsPerOp": 13174,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlobNoOrdering-12",
+            "runs": 84217,
+            "nsPerOp": 12263,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlobNoOrderingWithBacktracking-12",
+            "runs": 75344,
+            "nsPerOp": 14265,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex-12",
+            "runs": 62311,
+            "nsPerOp": 20076,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlobSingleMatch-12",
+            "runs": 629960,
+            "nsPerOp": 2266,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegexSingleMatch-12",
+            "runs": 464484,
+            "nsPerOp": 2528,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlobMultipleCaptures-12",
+            "runs": 446781,
+            "nsPerOp": 3002,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegexMultipleCaptures-12",
+            "runs": 413322,
+            "nsPerOp": 3247,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlobMultipleCapturesNoFormat-12",
+            "runs": 806202,
+            "nsPerOp": 1520,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegexMultipleCapturesNoFormat-12",
+            "runs": 544839,
+            "nsPerOp": 2060,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlobMultipleCapturesDifferentLabels-12",
+            "runs": 186804,
+            "nsPerOp": 5566,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegexMultipleCapturesDifferentLabels-12",
+            "runs": 207398,
+            "nsPerOp": 4978,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob10Rules-12",
+            "runs": 3333057,
+            "nsPerOp": 344.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob10RulesCached/lru-12",
+            "runs": 5049979,
+            "nsPerOp": 201.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob10RulesCached/random-12",
+            "runs": 9853482,
+            "nsPerOp": 144.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex10RulesAverage-12",
+            "runs": 770234,
+            "nsPerOp": 2008,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex10RulesAverageCached/lru-12",
+            "runs": 748683,
+            "nsPerOp": 2342,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex10RulesAverageCached/random-12",
+            "runs": 592698,
+            "nsPerOp": 1863,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100Rules-12",
+            "runs": 2871990,
+            "nsPerOp": 475,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached/lru-12",
+            "runs": 5923981,
+            "nsPerOp": 201.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached/random-12",
+            "runs": 9866587,
+            "nsPerOp": 168.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesNoMatch-12",
+            "runs": 2799812,
+            "nsPerOp": 432.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesNoOrderingNoMatch-12",
+            "runs": 2556693,
+            "nsPerOp": 450.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex100RulesAverage-12",
+            "runs": 144205,
+            "nsPerOp": 7059,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex100RulesWorst-12",
+            "runs": 138105,
+            "nsPerOp": 9414,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesMultipleCaptures-12",
+            "runs": 412564,
+            "nsPerOp": 3676,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesMultipleCapturesCached/lru-12",
+            "runs": 6472694,
+            "nsPerOp": 191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesMultipleCapturesCached/random-12",
+            "runs": 7477765,
+            "nsPerOp": 161.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex100RulesMultipleCapturesAverage-12",
+            "runs": 168729,
+            "nsPerOp": 10551,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex100RulesMultipleCapturesWorst-12",
+            "runs": 105642,
+            "nsPerOp": 11872,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex100RulesMultipleCapturesWorstCached/lru-12",
+            "runs": 5541900,
+            "nsPerOp": 222.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegex100RulesMultipleCapturesWorstCached/random-12",
+            "runs": 8134653,
+            "nsPerOp": 169.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100Metrics/lru-12",
+            "runs": 56319,
+            "nsPerOp": 22292,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100Metrics/random-12",
+            "runs": 84376,
+            "nsPerOp": 26138,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100MetricsSmallCache/lru-12",
+            "runs": 23271,
+            "nsPerOp": 52684,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100MetricsSmallCache/random-12",
+            "runs": 46911,
+            "nsPerOp": 29378,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100MetricsRandomSmallCache/lru-12",
+            "runs": 457,
+            "nsPerOp": 2398353,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100MetricsRandomSmallCache/random-12",
+            "runs": 721,
+            "nsPerOp": 1802020,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkEscapeMetricName",
+            "modificationCount": 2,
+            "createdOn": "2020-01-16",
+            "lastUpdateOn": "2021-10-23"
+          },
+          {
+            "name": "BenchmarkGlob",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlobNoOrdering",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlobNoOrderingWithBacktracking",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegex",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlobSingleMatch",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegexSingleMatch",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlobMultipleCaptures",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegexMultipleCaptures",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlobMultipleCapturesNoFormat",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegexMultipleCapturesNoFormat",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlobMultipleCapturesDifferentLabels",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegexMultipleCapturesDifferentLabels",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlob10Rules",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlob10RulesCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkGlob10RulesCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkRegex10RulesAverage",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegex10RulesAverageCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkRegex10RulesAverageCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkGlob100Rules",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkGlob100RulesNoMatch",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlob100RulesNoOrderingNoMatch",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegex100RulesAverage",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegex100RulesWorst",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlob100RulesMultipleCaptures",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkGlob100RulesMultipleCapturesCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkGlob100RulesMultipleCapturesCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkRegex100RulesMultipleCapturesAverage",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegex100RulesMultipleCapturesWorst",
+            "modificationCount": 1,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2018-09-28"
+          },
+          {
+            "name": "BenchmarkRegex100RulesMultipleCapturesWorstCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkRegex100RulesMultipleCapturesWorstCached",
+            "modificationCount": 2,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2019-04-03"
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100Metrics",
+            "modificationCount": 3,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2020-01-02"
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100Metrics",
+            "modificationCount": 3,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2020-01-02"
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100MetricsSmallCache",
+            "modificationCount": 3,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2020-01-02"
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100MetricsSmallCache",
+            "modificationCount": 3,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2020-01-02"
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100MetricsRandomSmallCache",
+            "modificationCount": 3,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2020-01-02"
+          },
+          {
+            "name": "BenchmarkGlob100RulesCached100MetricsRandomSmallCache",
+            "modificationCount": 3,
+            "createdOn": "2018-09-28",
+            "lastUpdateOn": "2020-01-02"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "prometheus/statsd_exporter",
+    "name": "statsd_exporter",
+    "private": false,
+    "html_url": "https://github.com/prometheus/statsd_exporter",
+    "description": "StatsD to Prometheus metrics exporter",
+    "fork": false,
+    "created_at": "2013-07-02T16:14:24Z",
+    "updated_at": "2023-10-23T11:05:05Z",
+    "pushed_at": "2023-10-23T16:30:05Z",
+    "ssh_url": "git@github.com:prometheus/statsd_exporter.git",
+    "stargazers_count": 856,
+    "watchers_count": 856,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 228,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 15,
+    "topics": [
+      "go",
+      "hacktoberfest",
+      "metrics",
+      "prometheus",
+      "prometheus-exporter",
+      "statsd",
+      "statsd-metrics"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 38,
+    "Lines": 11206,
+    "Blank": 864,
+    "Code": 9580,
+    "Comment": 762,
+    "Bytes": 305186,
+    "Complexity": 1167
+  }
+}

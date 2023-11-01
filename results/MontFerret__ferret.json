@@ -1,0 +1,924 @@
+{
+  "Name": "MontFerret/ferret",
+  "Path": "./repositories/MontFerret__ferret",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T00:17:27Z",
+    "benchmarkCount": 62,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 59,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/MontFerret/ferret/benchmarks/drivers",
+        "succeded": false,
+        "duration": "0.206s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Open_CDP",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "open_test.go:34: initialize driver: failed to initialize driver: could not resolve IP for 127.0.0.1: DOCUMENT(\"https://www.montferret.dev\") at 2:11"
+          },
+          {
+            "name": "Benchmark_Navigate_CDP",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "open_test.go:78: initialize driver: failed to initialize driver: Get \"http://127.0.0.1:9222/json/version\": dial tcp 127.0.0.1:9222: connect: connection refused: DOCUMENT('https://www.theverge.com/tech',{driver:\"cdp\",ignore:{resources:[{url:\"*\",type:\"image\"}]}}) at 2:10"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Open_CDP",
+            "modificationCount": 1,
+            "createdOn": "2021-10-16",
+            "lastUpdateOn": "2021-10-16"
+          },
+          {
+            "name": "Benchmark_Navigate_CDP",
+            "modificationCount": 1,
+            "createdOn": "2021-10-16",
+            "lastUpdateOn": "2021-10-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/MontFerret/ferret/pkg/compiler",
+        "succeded": true,
+        "duration": "103.711s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkArrayOperatorALL-12",
+            "runs": 184974,
+            "nsPerOp": 7022,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayOperatorALL2-12",
+            "runs": 269251,
+            "nsPerOp": 8777,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayOperatorANY-12",
+            "runs": 261427,
+            "nsPerOp": 5654,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayOperatorANY2-12",
+            "runs": 266209,
+            "nsPerOp": 7506,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayOperatorANY3-12",
+            "runs": 204228,
+            "nsPerOp": 6661,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayOperatorANY4-12",
+            "runs": 301111,
+            "nsPerOp": 3657,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayOperatorNONE-12",
+            "runs": 254259,
+            "nsPerOp": 4091,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayOperatorNONE2-12",
+            "runs": 373686,
+            "nsPerOp": 3994,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayOperatorNONE3-12",
+            "runs": 548815,
+            "nsPerOp": 5053,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayOperatorNONE4-12",
+            "runs": 284914,
+            "nsPerOp": 4969,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregate-12",
+            "runs": 21974,
+            "nsPerOp": 47735,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregate2-12",
+            "runs": 24592,
+            "nsPerOp": 46486,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregate3-12",
+            "runs": 7600,
+            "nsPerOp": 199733,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCollectCount-12",
+            "runs": 26898,
+            "nsPerOp": 46010,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCollectInto-12",
+            "runs": 6145,
+            "nsPerOp": 209689,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCollectInto2-12",
+            "runs": 9289,
+            "nsPerOp": 135974,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCollect-12",
+            "runs": 19966,
+            "nsPerOp": 50616,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCollect2-12",
+            "runs": 7184,
+            "nsPerOp": 144339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWithCount-12",
+            "runs": 14127,
+            "nsPerOp": 79303,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWithCount2-12",
+            "runs": 9625,
+            "nsPerOp": 163981,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter-12",
+            "runs": 33414,
+            "nsPerOp": 32991,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter2-12",
+            "runs": 23764,
+            "nsPerOp": 51807,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter3-12",
+            "runs": 37108,
+            "nsPerOp": 35769,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilter4-12",
+            "runs": 28663,
+            "nsPerOp": 45759,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForTernary-12",
+            "runs": 48939,
+            "nsPerOp": 28885,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForEmpty-12",
+            "runs": 198940,
+            "nsPerOp": 6100,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForArray-12",
+            "runs": 72162,
+            "nsPerOp": 15434,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForObject-12",
+            "runs": 75488,
+            "nsPerOp": 16275,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForNested-12",
+            "runs": 46110,
+            "nsPerOp": 30062,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForNested2-12",
+            "runs": 20875,
+            "nsPerOp": 51100,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForSub-12",
+            "runs": 28436,
+            "nsPerOp": 45799,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForSub2-12",
+            "runs": 22512,
+            "nsPerOp": 46947,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForDistinct-12",
+            "runs": 108445,
+            "nsPerOp": 10711,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForLimit-12",
+            "runs": 219886,
+            "nsPerOp": 6747,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForLimitOffset-12",
+            "runs": 108597,
+            "nsPerOp": 9227,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForSort-12",
+            "runs": 60156,
+            "nsPerOp": 45574,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForSort2-12",
+            "runs": 23408,
+            "nsPerOp": 59239,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForSortDesc-12",
+            "runs": 20281,
+            "nsPerOp": 57302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFunctionCallArg1-12",
+            "runs": 227539,
+            "nsPerOp": 6578,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFunctionCallArg2-12",
+            "runs": 32703,
+            "nsPerOp": 34347,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFunctionCallArg3-12",
+            "runs": 38244,
+            "nsPerOp": 38684,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFunctionEmpty-12",
+            "runs": 260298,
+            "nsPerOp": 4911,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInOperator-12",
+            "runs": 169088,
+            "nsPerOp": 6345,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInOperatorNot-12",
+            "runs": 209553,
+            "nsPerOp": 7000,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogicalOperatorsAnd-12",
+            "runs": 203463,
+            "nsPerOp": 5943,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogicalOperatorsOr-12",
+            "runs": 344292,
+            "nsPerOp": 5051,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemberArray-12",
+            "runs": 149838,
+            "nsPerOp": 8072,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemberObject-12",
+            "runs": 101662,
+            "nsPerOp": 13470,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemberObjectComputed-12",
+            "runs": 73914,
+            "nsPerOp": 14043,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRangeOperator-12",
+            "runs": 61845,
+            "nsPerOp": 19411,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringLiteral-12",
+            "runs": 236889,
+            "nsPerOp": 6192,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTernaryOperator-12",
+            "runs": 154842,
+            "nsPerOp": 8073,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTernaryOperatorDef-12",
+            "runs": 160359,
+            "nsPerOp": 7261,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnaryOperatorExcl-12",
+            "runs": 223346,
+            "nsPerOp": 6149,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnaryOperatorQ-12",
+            "runs": 465583,
+            "nsPerOp": 2285,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnaryOperatorN-12",
+            "runs": 586438,
+            "nsPerOp": 2571,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkArrayOperatorALL",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkArrayOperatorALL2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkArrayOperatorANY",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkArrayOperatorANY2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkArrayOperatorANY3",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkArrayOperatorANY4",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkArrayOperatorNONE",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkArrayOperatorNONE2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkArrayOperatorNONE3",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkArrayOperatorNONE4",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkAggregate",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkAggregate2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkAggregate3",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkCollectCount",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkCollectInto",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkCollectInto2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkCollect",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkCollect2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkWithCount",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkWithCount2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkFilter",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkFilter2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkFilter3",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkFilter4",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForTernary",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForEmpty",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForArray",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForObject",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForNested",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForNested2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForSub",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForSub2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForDistinct",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForLimit",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForLimitOffset",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForSort",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForSort2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkForSortDesc",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkFunctionCallArg1",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkFunctionCallArg2",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkFunctionCallArg3",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkFunctionEmpty",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkInOperator",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkInOperatorNot",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkLogicalOperatorsAnd",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkLogicalOperatorsOr",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkMemberArray",
+            "modificationCount": 2,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2019-09-07"
+          },
+          {
+            "name": "BenchmarkMemberObject",
+            "modificationCount": 2,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2019-09-07"
+          },
+          {
+            "name": "BenchmarkMemberObjectComputed",
+            "modificationCount": 2,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2021-09-08"
+          },
+          {
+            "name": "BenchmarkRangeOperator",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkStringLiteral",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkTernaryOperator",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkTernaryOperatorDef",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkUnaryOperatorExcl",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkUnaryOperatorQ",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          },
+          {
+            "name": "BenchmarkUnaryOperatorN",
+            "modificationCount": 1,
+            "createdOn": "2018-10-24",
+            "lastUpdateOn": "2018-10-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/MontFerret/ferret/pkg/drivers/cdp/events",
+        "succeded": false,
+        "duration": "3.242s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoop_AddListenerSync-12",
+            "runs": 2326354,
+            "nsPerOp": 447.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoop_AddListenerAsync-12",
+            "runs": 2977256,
+            "nsPerOp": 402.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoop_AddListenerAsync2-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "fatal"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoop_AddListenerSync",
+            "modificationCount": 1,
+            "createdOn": "2019-12-24",
+            "lastUpdateOn": "2019-12-24"
+          },
+          {
+            "name": "BenchmarkLoop_AddListenerAsync",
+            "modificationCount": 2,
+            "createdOn": "2019-12-24",
+            "lastUpdateOn": "2020-07-13"
+          },
+          {
+            "name": "BenchmarkLoop_AddListenerAsync2",
+            "modificationCount": 2,
+            "createdOn": "2019-12-24",
+            "lastUpdateOn": "2020-07-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/MontFerret/ferret/pkg/runtime/core",
+        "succeded": true,
+        "duration": "2.170s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkScope-12",
+            "runs": 122828326,
+            "nsPerOp": 9.563,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkScope",
+            "modificationCount": 2,
+            "createdOn": "2018-10-11",
+            "lastUpdateOn": "2018-10-28"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "MontFerret/ferret",
+    "name": "ferret",
+    "private": false,
+    "html_url": "https://github.com/MontFerret/ferret",
+    "description": "Declarative web scraping",
+    "fork": false,
+    "created_at": "2018-08-23T02:42:46Z",
+    "updated_at": "2023-10-23T03:11:17Z",
+    "pushed_at": "2023-10-13T22:16:50Z",
+    "ssh_url": "git@github.com:MontFerret/ferret.git",
+    "homepage": "https://www.montferret.dev/",
+    "stargazers_count": 5495,
+    "watchers_count": 5495,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 308,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 52,
+    "topics": [
+      "cdp",
+      "chrome",
+      "cli",
+      "crawler",
+      "crawling",
+      "data-mining",
+      "dsl",
+      "go",
+      "golang",
+      "hacktoberfest",
+      "hacktoberfest2021",
+      "library",
+      "query-language",
+      "scraper",
+      "scraping",
+      "scraping-websites",
+      "tool"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 661,
+    "Lines": 79106,
+    "Blank": 17043,
+    "Code": 59852,
+    "Comment": 2211,
+    "Bytes": 1863370,
+    "Complexity": 7077
+  }
+}

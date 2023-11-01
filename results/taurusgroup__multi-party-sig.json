@@ -1,0 +1,764 @@
+{
+  "Name": "taurusgroup/multi-party-sig",
+  "Path": "./repositories/taurusgroup__multi-party-sig",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T08:15:39Z",
+    "benchmarkCount": 48,
+    "benchmarkSuiteCount": 8,
+    "successfulBenchmarkCount": 48,
+    "successfulBenchmarkSuitesCount": 8,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/taurusgroup/multi-party-sig/internal/ot",
+        "succeded": true,
+        "duration": "12.909s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAdditiveOT-12",
+            "runs": 10,
+            "nsPerOp": 118530672,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorreOTSetup-12",
+            "runs": 19,
+            "nsPerOp": 55281052,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCorreOT-12",
+            "runs": 3840,
+            "nsPerOp": 550158,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExtendedOT-12",
+            "runs": 494,
+            "nsPerOp": 2699470,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiply-12",
+            "runs": 52,
+            "nsPerOp": 29170609,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandomOT-12",
+            "runs": 351,
+            "nsPerOp": 2911177,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAdditiveOT",
+            "modificationCount": 1,
+            "createdOn": "2021-08-31",
+            "lastUpdateOn": "2021-08-31"
+          },
+          {
+            "name": "BenchmarkCorreOTSetup",
+            "modificationCount": 4,
+            "createdOn": "2021-08-26",
+            "lastUpdateOn": "2021-08-27"
+          },
+          {
+            "name": "BenchmarkCorreOT",
+            "modificationCount": 4,
+            "createdOn": "2021-08-26",
+            "lastUpdateOn": "2021-08-27"
+          },
+          {
+            "name": "BenchmarkExtendedOT",
+            "modificationCount": 2,
+            "createdOn": "2021-08-30",
+            "lastUpdateOn": "2021-08-31"
+          },
+          {
+            "name": "BenchmarkMultiply",
+            "modificationCount": 1,
+            "createdOn": "2021-09-01",
+            "lastUpdateOn": "2021-09-01"
+          },
+          {
+            "name": "BenchmarkRandomOT",
+            "modificationCount": 1,
+            "createdOn": "2021-08-26",
+            "lastUpdateOn": "2021-08-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/taurusgroup/multi-party-sig/pkg/math/arith",
+        "succeded": true,
+        "duration": "66.004s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkExp/256slowSquaredNat-12",
+            "runs": 18,
+            "nsPerOp": 58883235,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/256slowSquaredInt-12",
+            "runs": 21,
+            "nsPerOp": 57842150,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/256fastNat-12",
+            "runs": 100,
+            "nsPerOp": 15385082,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/256fastInt-12",
+            "runs": 99,
+            "nsPerOp": 15055613,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/256slowNat-12",
+            "runs": 36,
+            "nsPerOp": 28378901,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/256slowInt-12",
+            "runs": 45,
+            "nsPerOp": 25098647,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/256fastSquaredNat-12",
+            "runs": 27,
+            "nsPerOp": 56575236,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/256fastSquaredInt-12",
+            "runs": 19,
+            "nsPerOp": 56380267,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/512slowSquaredNat-12",
+            "runs": 5,
+            "nsPerOp": 220179561,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/512slowSquaredInt-12",
+            "runs": 8,
+            "nsPerOp": 129216523,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/512fastNat-12",
+            "runs": 69,
+            "nsPerOp": 15839193,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/512fastInt-12",
+            "runs": 75,
+            "nsPerOp": 17405257,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/512slowNat-12",
+            "runs": 27,
+            "nsPerOp": 54658840,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/512slowInt-12",
+            "runs": 37,
+            "nsPerOp": 28504760,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/512fastSquaredNat-12",
+            "runs": 22,
+            "nsPerOp": 56157057,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/512fastSquaredInt-12",
+            "runs": 20,
+            "nsPerOp": 57130653,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/1024fastNat-12",
+            "runs": 39,
+            "nsPerOp": 27868405,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/1024fastInt-12",
+            "runs": 42,
+            "nsPerOp": 41447894,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/1024slowNat-12",
+            "runs": 19,
+            "nsPerOp": 61025402,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/1024slowInt-12",
+            "runs": 19,
+            "nsPerOp": 62488217,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/1024fastSquaredNat-12",
+            "runs": 9,
+            "nsPerOp": 112048106,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/1024fastSquaredInt-12",
+            "runs": 7,
+            "nsPerOp": 220714353,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/1024slowSquaredNat-12",
+            "runs": 4,
+            "nsPerOp": 344933456,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/1024slowSquaredInt-12",
+            "runs": 4,
+            "nsPerOp": 256085062,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/4096fastSquaredNat-12",
+            "runs": 3,
+            "nsPerOp": 433284650,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/4096fastSquaredInt-12",
+            "runs": 2,
+            "nsPerOp": 605513551,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/4096slowSquaredNat-12",
+            "runs": 2,
+            "nsPerOp": 1301887610,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/4096slowSquaredInt-12",
+            "runs": 1,
+            "nsPerOp": 1371050990,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/4096fastNat-12",
+            "runs": 8,
+            "nsPerOp": 176099072,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/4096fastInt-12",
+            "runs": 7,
+            "nsPerOp": 174310207,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/4096slowNat-12",
+            "runs": 3,
+            "nsPerOp": 460845225,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExp/4096slowInt-12",
+            "runs": 3,
+            "nsPerOp": 386764662,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkExp",
+            "modificationCount": 1,
+            "createdOn": "2021-08-12",
+            "lastUpdateOn": "2021-08-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/taurusgroup/multi-party-sig/pkg/math/sample",
+        "succeded": true,
+        "duration": "4.450s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPaillier-12",
+            "runs": 1,
+            "nsPerOp": 1735814503,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkModN-12",
+            "runs": 219009,
+            "nsPerOp": 9008,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPaillier",
+            "modificationCount": 5,
+            "createdOn": "2021-07-13",
+            "lastUpdateOn": "2021-08-04"
+          },
+          {
+            "name": "BenchmarkModN",
+            "modificationCount": 4,
+            "createdOn": "2021-07-14",
+            "lastUpdateOn": "2023-06-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/taurusgroup/multi-party-sig/pkg/paillier",
+        "succeded": true,
+        "duration": "5.036s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncryption-12",
+            "runs": 18,
+            "nsPerOp": 59530255,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddCiphertext-12",
+            "runs": 13633,
+            "nsPerOp": 83381,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMulCiphertext-12",
+            "runs": 67,
+            "nsPerOp": 19983045,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncryption",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkAddCiphertext",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkMulCiphertext",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/taurusgroup/multi-party-sig/pkg/pedersen",
+        "succeded": true,
+        "duration": "3.552s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPedersenCommit-12",
+            "runs": 224,
+            "nsPerOp": 4656183,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPedersenVerify-12",
+            "runs": 151,
+            "nsPerOp": 7244257,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPedersenCommit",
+            "modificationCount": 3,
+            "createdOn": "2021-07-20",
+            "lastUpdateOn": "2021-07-22"
+          },
+          {
+            "name": "BenchmarkPedersenVerify",
+            "modificationCount": 4,
+            "createdOn": "2021-07-20",
+            "lastUpdateOn": "2021-08-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/taurusgroup/multi-party-sig/pkg/zk/mod",
+        "succeded": true,
+        "duration": "4.166s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCRT-12",
+            "runs": 1,
+            "nsPerOp": 3182473618,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCRT",
+            "modificationCount": 3,
+            "createdOn": "2021-08-11",
+            "lastUpdateOn": "2021-08-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/taurusgroup/multi-party-sig/pkg/zk/prm",
+        "succeded": true,
+        "duration": "4.314s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCRT-12",
+            "runs": 1,
+            "nsPerOp": 1865445163,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCRT",
+            "modificationCount": 3,
+            "createdOn": "2021-08-11",
+            "lastUpdateOn": "2021-08-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/taurusgroup/multi-party-sig/protocols/doerner",
+        "succeded": true,
+        "duration": "1.543s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSign-12",
+            "runs": 21,
+            "nsPerOp": 60637135,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 2,
+            "createdOn": "2021-09-03",
+            "lastUpdateOn": "2021-09-06"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "taurusgroup/multi-party-sig",
+    "name": "multi-party-sig",
+    "private": false,
+    "html_url": "https://github.com/taurusgroup/multi-party-sig",
+    "description": "Implementation of protocols for threshold signatures",
+    "fork": false,
+    "created_at": "2021-02-16T13:54:00Z",
+    "updated_at": "2023-10-18T07:12:54Z",
+    "pushed_at": "2023-10-06T15:27:52Z",
+    "ssh_url": "git@github.com:taurusgroup/multi-party-sig.git",
+    "stargazers_count": 256,
+    "watchers_count": 256,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 94,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 14,
+    "topics": [
+      "cryptography",
+      "elliptic-curves",
+      "multi-party-computation",
+      "signature"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 167,
+    "Lines": 19488,
+    "Blank": 2731,
+    "Code": 14041,
+    "Comment": 2716,
+    "Bytes": 543205,
+    "Complexity": 2173
+  }
+}

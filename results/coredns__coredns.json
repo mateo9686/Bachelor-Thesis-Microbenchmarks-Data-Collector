@@ -1,0 +1,303 @@
+{
+  "Name": "coredns/coredns",
+  "Path": "./repositories/coredns__coredns",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T02:54:37Z",
+    "benchmarkCount": 13,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 13,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/coredns/coredns/core/dnsserver",
+        "succeded": true,
+        "duration": "1.822s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCoreServeDNS-12",
+            "runs": 3583987,
+            "nsPerOp": 398.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCoreServeDNS",
+            "modificationCount": 2,
+            "createdOn": "2017-10-21",
+            "lastUpdateOn": "2017-10-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coredns/coredns/plugin/errors",
+        "succeded": true,
+        "duration": "1.651s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkServeDNS-12",
+            "runs": 5304214,
+            "nsPerOp": 265.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkServeDNS",
+            "modificationCount": 1,
+            "createdOn": "2019-02-25",
+            "lastUpdateOn": "2019-02-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coredns/coredns/plugin/file",
+        "succeded": true,
+        "duration": "5.671s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFileLookupDNSSEC-12",
+            "runs": 120349,
+            "nsPerOp": 9077,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileParseInsert-12",
+            "runs": 8655,
+            "nsPerOp": 142859,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileLookup-12",
+            "runs": 297091,
+            "nsPerOp": 4304,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFileLookupDNSSEC",
+            "modificationCount": 8,
+            "createdOn": "2016-03-31",
+            "lastUpdateOn": "2017-09-21"
+          },
+          {
+            "name": "BenchmarkFileParseInsert",
+            "modificationCount": 4,
+            "createdOn": "2016-04-02",
+            "lastUpdateOn": "2017-06-18"
+          },
+          {
+            "name": "BenchmarkFileLookup",
+            "modificationCount": 8,
+            "createdOn": "2016-03-31",
+            "lastUpdateOn": "2017-09-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coredns/coredns/plugin/log",
+        "succeded": true,
+        "duration": "2.386s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLogged-12",
+            "runs": 164011,
+            "nsPerOp": 14033,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLogged",
+            "modificationCount": 4,
+            "createdOn": "2019-01-30",
+            "lastUpdateOn": "2021-10-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coredns/coredns/plugin/pkg/cache",
+        "succeded": true,
+        "duration": "5.969s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCache-12",
+            "runs": 26963504,
+            "nsPerOp": 68.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShard-12",
+            "runs": 14329596,
+            "nsPerOp": 101.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShardParallel-12",
+            "runs": 12134824,
+            "nsPerOp": 107.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCache",
+            "modificationCount": 4,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2018-10-29"
+          },
+          {
+            "name": "BenchmarkShard",
+            "modificationCount": 1,
+            "createdOn": "2019-07-19",
+            "lastUpdateOn": "2019-07-19"
+          },
+          {
+            "name": "BenchmarkShardParallel",
+            "modificationCount": 2,
+            "createdOn": "2017-06-13",
+            "lastUpdateOn": "2019-07-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coredns/coredns/plugin/pkg/dnsutil",
+        "succeded": true,
+        "duration": "1.575s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMinimalTTL-12",
+            "runs": 11768304,
+            "nsPerOp": 114.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMinimalTTL",
+            "modificationCount": 2,
+            "createdOn": "2018-05-08",
+            "lastUpdateOn": "2018-06-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coredns/coredns/plugin/pkg/replacer",
+        "succeded": true,
+        "duration": "7.265s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReplacer-12",
+            "runs": 1063603,
+            "nsPerOp": 1082,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReplacer_CommonLogFormat-12",
+            "runs": 133353,
+            "nsPerOp": 8338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseFormat-12",
+            "runs": 895108,
+            "nsPerOp": 2409,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReplacer",
+            "modificationCount": 7,
+            "createdOn": "2016-03-18",
+            "lastUpdateOn": "2019-02-12"
+          },
+          {
+            "name": "BenchmarkReplacer_CommonLogFormat",
+            "modificationCount": 2,
+            "createdOn": "2019-07-17",
+            "lastUpdateOn": "2022-07-10"
+          },
+          {
+            "name": "BenchmarkParseFormat",
+            "modificationCount": 1,
+            "createdOn": "2019-07-17",
+            "lastUpdateOn": "2019-07-17"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "coredns/coredns",
+    "name": "coredns",
+    "private": false,
+    "html_url": "https://github.com/coredns/coredns",
+    "description": "CoreDNS is a DNS server that chains plugins",
+    "fork": false,
+    "created_at": "2016-03-18T20:56:45Z",
+    "updated_at": "2023-10-23T16:09:02Z",
+    "pushed_at": "2023-10-23T13:22:50Z",
+    "ssh_url": "git@github.com:coredns/coredns.git",
+    "homepage": "https://coredns.io",
+    "stargazers_count": 11156,
+    "watchers_count": 11156,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 2018,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 114,
+    "topics": [
+      "cncf",
+      "coredns",
+      "dns-server",
+      "go",
+      "plugin",
+      "service-discovery"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 602,
+    "Lines": 64835,
+    "Blank": 7830,
+    "Code": 52728,
+    "Comment": 4277,
+    "Bytes": 1762340,
+    "Complexity": 10311
+  }
+}

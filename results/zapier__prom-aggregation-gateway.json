@@ -1,0 +1,358 @@
+{
+  "Name": "zapier/prom-aggregation-gateway",
+  "Path": "./repositories/zapier__prom-aggregation-gateway",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T12:20:40Z",
+    "benchmarkCount": 22,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 22,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/zapier/prom-aggregation-gateway/metrics",
+        "succeded": true,
+        "duration": "48.144s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAggregate/metric_type_simpleGauge-12",
+            "runs": 24298,
+            "nsPerOp": 49276,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregate/metric_type_fullMetrics-12",
+            "runs": 7844,
+            "nsPerOp": 214053,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregate/metric_type_multiLabel-12",
+            "runs": 45324,
+            "nsPerOp": 30299,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregate/metric_type_multiLabelIgnore-12",
+            "runs": 37489,
+            "nsPerOp": 30418,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregate/metric_type_labelFields-12",
+            "runs": 39242,
+            "nsPerOp": 41580,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregate/metric_type_reorderedLabels-12",
+            "runs": 35470,
+            "nsPerOp": 37015,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregate/metric_type_ignoredLabels-12",
+            "runs": 29412,
+            "nsPerOp": 61771,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate/metric_type_simpleGauge-12",
+            "runs": 2539,
+            "nsPerOp": 558870,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate/metric_type_fullMetrics-12",
+            "runs": 852,
+            "nsPerOp": 1808468,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate/metric_type_multiLabel-12",
+            "runs": 3373,
+            "nsPerOp": 427155,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate/metric_type_multiLabelIgnore-12",
+            "runs": 2421,
+            "nsPerOp": 429433,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate/metric_type_labelFields-12",
+            "runs": 3590,
+            "nsPerOp": 450022,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate/metric_type_reorderedLabels-12",
+            "runs": 5466,
+            "nsPerOp": 336449,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate/metric_type_ignoredLabels-12",
+            "runs": 3565,
+            "nsPerOp": 393587,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormatLabels/metric_type_no_labels-12",
+            "runs": 1000000,
+            "nsPerOp": 1299,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormatLabels/metric_type_no_labels_1_ignored_label-12",
+            "runs": 1000000,
+            "nsPerOp": 1355,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormatLabels/metric_type_no_ignored_labels-12",
+            "runs": 1000000,
+            "nsPerOp": 1985,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormatLabels/metric_type_no_ignored_labels_with_3_ignored_labels-12",
+            "runs": 1240747,
+            "nsPerOp": 2401,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormatLabels/metric_type_1_ignored_labels_with_1_ignores_set-12",
+            "runs": 1603630,
+            "nsPerOp": 1171,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormatLabels/metric_type_1_ignored_labels_with_3_ignores_set-12",
+            "runs": 1000000,
+            "nsPerOp": 1342,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormatLabels/metric_type_2_ignored_labels-12",
+            "runs": 1335058,
+            "nsPerOp": 1339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormatLabels/metric_type_2_ignored_labels_with_lots_of_labels_ignored_labels-12",
+            "runs": 2210440,
+            "nsPerOp": 544.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAggregate",
+            "modificationCount": 7,
+            "createdOn": "2022-12-01",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkAggregate",
+            "modificationCount": 7,
+            "createdOn": "2022-12-01",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkAggregate",
+            "modificationCount": 7,
+            "createdOn": "2022-12-01",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkAggregate",
+            "modificationCount": 7,
+            "createdOn": "2022-12-01",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkAggregate",
+            "modificationCount": 7,
+            "createdOn": "2022-12-01",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkAggregate",
+            "modificationCount": 7,
+            "createdOn": "2022-12-01",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkAggregate",
+            "modificationCount": 7,
+            "createdOn": "2022-12-01",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate",
+            "modificationCount": 6,
+            "createdOn": "2022-12-06",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate",
+            "modificationCount": 6,
+            "createdOn": "2022-12-06",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate",
+            "modificationCount": 6,
+            "createdOn": "2022-12-06",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate",
+            "modificationCount": 6,
+            "createdOn": "2022-12-06",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate",
+            "modificationCount": 6,
+            "createdOn": "2022-12-06",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate",
+            "modificationCount": 6,
+            "createdOn": "2022-12-06",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkConcurrentAggregate",
+            "modificationCount": 6,
+            "createdOn": "2022-12-06",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkFormatLabels",
+            "modificationCount": 5,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkFormatLabels",
+            "modificationCount": 5,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkFormatLabels",
+            "modificationCount": 5,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkFormatLabels",
+            "modificationCount": 5,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkFormatLabels",
+            "modificationCount": 5,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkFormatLabels",
+            "modificationCount": 5,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkFormatLabels",
+            "modificationCount": 5,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2023-01-04"
+          },
+          {
+            "name": "BenchmarkFormatLabels",
+            "modificationCount": 5,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2023-01-04"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "zapier/prom-aggregation-gateway",
+    "name": "prom-aggregation-gateway",
+    "private": false,
+    "html_url": "https://github.com/zapier/prom-aggregation-gateway",
+    "description": "An aggregating push gateway for Prometheus",
+    "fork": false,
+    "created_at": "2022-12-01T12:22:59Z",
+    "updated_at": "2023-10-20T10:10:21Z",
+    "pushed_at": "2023-10-22T21:59:43Z",
+    "ssh_url": "git@github.com:zapier/prom-aggregation-gateway.git",
+    "stargazers_count": 65,
+    "watchers_count": 65,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 21,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 15,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mpl-2.0",
+      "name": "Mozilla Public License 2.0",
+      "url": "https://api.github.com/licenses/mpl-2.0",
+      "spdx_id": "MPL-2.0",
+      "node_id": "MDc6TGljZW5zZTE0",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 17,
+    "Lines": 1549,
+    "Blank": 226,
+    "Code": 1297,
+    "Comment": 26,
+    "Bytes": 38456,
+    "Complexity": 136
+  }
+}

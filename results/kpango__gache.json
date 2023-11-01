@@ -1,0 +1,672 @@
+{
+  "Name": "kpango/gache",
+  "Path": "./repositories/kpango__gache",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T03:58:37Z",
+    "benchmarkCount": 85,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 85,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/kpango/gache/v2",
+        "succeded": true,
+        "duration": "221.329s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDefaultMapSetSmallDataNoTTL-12",
+            "runs": 1568962,
+            "nsPerOp": 741.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDefaultMapSetBigDataNoTTL-12",
+            "runs": 9,
+            "nsPerOp": 274649281,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSyncMapSetSmallDataNoTTL-12",
+            "runs": 1828846,
+            "nsPerOp": 637.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSyncMapSetBigDataNoTTL-12",
+            "runs": 5,
+            "nsPerOp": 204931814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGacheSetSmallDataNoTTL-12",
+            "runs": 3001928,
+            "nsPerOp": 445.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGacheSetSmallDataWithTTL-12",
+            "runs": 2488042,
+            "nsPerOp": 555.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGacheSetBigDataNoTTL-12",
+            "runs": 18,
+            "nsPerOp": 64278373,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGacheSetBigDataWithTTL-12",
+            "runs": 16,
+            "nsPerOp": 202033988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeavyMixedInt_gache-12",
+            "runs": 1,
+            "nsPerOp": 7610235312,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPutInt_gache-12",
+            "runs": 1000000,
+            "nsPerOp": 1232,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetInt_gache-12",
+            "runs": 61725752,
+            "nsPerOp": 25.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPut1K_gache-12",
+            "runs": 1000000,
+            "nsPerOp": 1266,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPut1M_gache-12",
+            "runs": 1316457,
+            "nsPerOp": 1764,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPutTinyObject_gache-12",
+            "runs": 1000000,
+            "nsPerOp": 4242,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChangeOutAllInt_gache-12",
+            "runs": 1032,
+            "nsPerOp": 1810319,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeavyReadInt_gache-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1757,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeavyWriteInt_gache-12",
+            "runs": 1,
+            "nsPerOp": 11352221631,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeavyWrite1K_gache-12",
+            "runs": 1,
+            "nsPerOp": 10846139510,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*gache_test.DeepCopyMap-12",
+            "runs": 66221391,
+            "nsPerOp": 20.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*gache_test.RWMutexMap-12",
+            "runs": 32489362,
+            "nsPerOp": 45.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 93764805,
+            "nsPerOp": 17.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*gache_test.DeepCopyMap-12",
+            "runs": 100000000,
+            "nsPerOp": 12.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*gache_test.RWMutexMap-12",
+            "runs": 28712630,
+            "nsPerOp": 41.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 85669033,
+            "nsPerOp": 12.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced/*gache_test.RWMutexMap-12",
+            "runs": 2542826,
+            "nsPerOp": 462.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 1838238,
+            "nsPerOp": 622,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*gache_test.RWMutexMap-12",
+            "runs": 1804965,
+            "nsPerOp": 918,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 1000000,
+            "nsPerOp": 1666,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*gache_test.DeepCopyMap-12",
+            "runs": 62479716,
+            "nsPerOp": 16.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*gache_test.RWMutexMap-12",
+            "runs": 13441256,
+            "nsPerOp": 94.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 192964526,
+            "nsPerOp": 7.814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteBalanced/*gache_test.RWMutexMap-12",
+            "runs": 17067157,
+            "nsPerOp": 64.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteBalanced/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 100000000,
+            "nsPerOp": 13.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteUnique/*gache_test.RWMutexMap-12",
+            "runs": 16193406,
+            "nsPerOp": 72.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteUnique/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 100000000,
+            "nsPerOp": 12.55,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision/*gache_test.DeepCopyMap-12",
+            "runs": 5411910,
+            "nsPerOp": 225.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision/*gache_test.RWMutexMap-12",
+            "runs": 19479333,
+            "nsPerOp": 69.27,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 222036384,
+            "nsPerOp": 7.272,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*gache_test.DeepCopyMap-12",
+            "runs": 465234,
+            "nsPerOp": 2647,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*gache_test.RWMutexMap-12",
+            "runs": 24669,
+            "nsPerOp": 62573,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 178633,
+            "nsPerOp": 7083,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*gache_test.DeepCopyMap-12",
+            "runs": 1000000,
+            "nsPerOp": 4849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*gache_test.RWMutexMap-12",
+            "runs": 8594302,
+            "nsPerOp": 121.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 2979441,
+            "nsPerOp": 441.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*gache_test.DeepCopyMap-12",
+            "runs": 4769646,
+            "nsPerOp": 234,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*gache_test.RWMutexMap-12",
+            "runs": 16824129,
+            "nsPerOp": 82.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 4383178,
+            "nsPerOp": 328.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*gache_test.DeepCopyMap-12",
+            "runs": 6334296,
+            "nsPerOp": 323.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*gache_test.RWMutexMap-12",
+            "runs": 26399016,
+            "nsPerOp": 43.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 288070459,
+            "nsPerOp": 3.765,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapCollision/*gache_test.DeepCopyMap-12",
+            "runs": 1349692,
+            "nsPerOp": 830,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapCollision/*gache_test.RWMutexMap-12",
+            "runs": 8965162,
+            "nsPerOp": 130.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapCollision/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 6198099,
+            "nsPerOp": 188.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits/*gache_test.DeepCopyMap-12",
+            "runs": 10000,
+            "nsPerOp": 110402,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits/*gache_test.RWMutexMap-12",
+            "runs": 5066043,
+            "nsPerOp": 250.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 28969029,
+            "nsPerOp": 98.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses/*gache_test.DeepCopyMap-12",
+            "runs": 789544,
+            "nsPerOp": 3037,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses/*gache_test.RWMutexMap-12",
+            "runs": 2950903,
+            "nsPerOp": 430.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 1000000,
+            "nsPerOp": 1204,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision/*gache_test.DeepCopyMap-12",
+            "runs": 156110606,
+            "nsPerOp": 8.514,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision/*gache_test.RWMutexMap-12",
+            "runs": 12876060,
+            "nsPerOp": 95.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 56519383,
+            "nsPerOp": 19.33,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey/*gache_test.DeepCopyMap-12",
+            "runs": 84643478,
+            "nsPerOp": 24.64,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey/*gache_test.RWMutexMap-12",
+            "runs": 16348832,
+            "nsPerOp": 97.47,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 38148631,
+            "nsPerOp": 35.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual/*gache_test.DeepCopyMap-12",
+            "runs": 128127604,
+            "nsPerOp": 10.17,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual/*gache_test.RWMutexMap-12",
+            "runs": 13079389,
+            "nsPerOp": 80.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 169009476,
+            "nsPerOp": 8.039,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyHits/*gache_test.RWMutexMap-12",
+            "runs": 3929514,
+            "nsPerOp": 298.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyHits/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 43765993,
+            "nsPerOp": 53.55,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses/*gache_test.DeepCopyMap-12",
+            "runs": 70667535,
+            "nsPerOp": 27.64,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses/*gache_test.RWMutexMap-12",
+            "runs": 8681780,
+            "nsPerOp": 131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 100000000,
+            "nsPerOp": 60.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision/*gache_test.DeepCopyMap-12",
+            "runs": 258872469,
+            "nsPerOp": 5.734,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision/*gache_test.RWMutexMap-12",
+            "runs": 17922657,
+            "nsPerOp": 78.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 79902795,
+            "nsPerOp": 14.43,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyHits/*gache_test.RWMutexMap-12",
+            "runs": 2423904,
+            "nsPerOp": 469.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyHits/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 16330398,
+            "nsPerOp": 75.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses/*gache_test.DeepCopyMap-12",
+            "runs": 98512194,
+            "nsPerOp": 21.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses/*gache_test.RWMutexMap-12",
+            "runs": 10959895,
+            "nsPerOp": 122.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses/*gache.Map[interface_{},interface_{}]-12",
+            "runs": 100000000,
+            "nsPerOp": 17.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeavyWriteIntGC_gache-1",
+            "runs": 1,
+            "nsPerOp": 1033251814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeavyWrite1KGC_gache-1",
+            "runs": 1,
+            "nsPerOp": 592667199,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeavyReadIntGC_gache-1",
+            "runs": 1,
+            "nsPerOp": 46795,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeavyMixedIntMem_gache-1",
+            "runs": 1,
+            "nsPerOp": 756937128,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": null
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "kpango/gache",
+    "name": "gache",
+    "private": false,
+    "html_url": "https://github.com/kpango/gache",
+    "description": "fastest lockfree cache library for go application",
+    "fork": false,
+    "created_at": "2017-05-22T10:33:47Z",
+    "updated_at": "2023-08-20T17:46:04Z",
+    "pushed_at": "2023-09-19T21:58:06Z",
+    "ssh_url": "git@github.com:kpango/gache.git",
+    "stargazers_count": 45,
+    "watchers_count": 45,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 7,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "cache",
+      "fast",
+      "gache",
+      "golang",
+      "kpango"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 8,
+    "Lines": 2448,
+    "Blank": 297,
+    "Code": 1947,
+    "Comment": 204,
+    "Bytes": 55345,
+    "Complexity": 348
+  }
+}

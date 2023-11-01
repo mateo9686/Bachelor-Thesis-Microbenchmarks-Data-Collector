@@ -1,0 +1,463 @@
+{
+  "Name": "emiago/sipgo",
+  "Path": "./repositories/emiago__sipgo",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T14:53:47Z",
+    "benchmarkCount": 28,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 25,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/emiago/sipgo/example/proxysip",
+        "succeded": true,
+        "duration": "2.161s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInviteCall-12",
+            "runs": 5,
+            "nsPerOp": 202482339,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInviteCall",
+            "modificationCount": 3,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2023-08-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emiago/sipgo/parser",
+        "succeded": true,
+        "duration": "27.706s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParserStream/NoChunks-12",
+            "runs": 72513,
+            "nsPerOp": 20369,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserStream/SingleRoutine-12",
+            "runs": 73130,
+            "nsPerOp": 15979,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserStream/Paralel-12",
+            "runs": 3514,
+            "nsPerOp": 455014,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserHeaders/ViaHeader-12",
+            "runs": 654739,
+            "nsPerOp": 2963,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserHeaders/ToHeader-12",
+            "runs": 1000000,
+            "nsPerOp": 1095,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserHeaders/FromHeader-12",
+            "runs": 1000000,
+            "nsPerOp": 1146,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserHeaders/ContactHeader-12",
+            "runs": 757887,
+            "nsPerOp": 2170,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserHeaders/CSEQ-12",
+            "runs": 4583928,
+            "nsPerOp": 254.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserHeaders/Route-12",
+            "runs": 476506,
+            "nsPerOp": 4966,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParser/SingleRoutine-12",
+            "runs": 49466,
+            "nsPerOp": 20868,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParser/Paralel-12",
+            "runs": 3384,
+            "nsPerOp": 323655,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseStartLine-12",
+            "runs": 1000000,
+            "nsPerOp": 1589,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserAddressValue-12",
+            "runs": 720624,
+            "nsPerOp": 2444,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParserNoData/New-12",
+            "runs": 82650,
+            "nsPerOp": 12543,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUriSipComparison/WithLower-12",
+            "runs": 15331218,
+            "nsPerOp": 66.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUriSipComparison/SwitchCompare-12",
+            "runs": 461889370,
+            "nsPerOp": 2.981,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParserStream",
+            "modificationCount": 2,
+            "createdOn": "2023-09-07",
+            "lastUpdateOn": "2023-10-11"
+          },
+          {
+            "name": "BenchmarkParserStream",
+            "modificationCount": 2,
+            "createdOn": "2023-09-07",
+            "lastUpdateOn": "2023-10-11"
+          },
+          {
+            "name": "BenchmarkParserStream",
+            "modificationCount": 2,
+            "createdOn": "2023-09-07",
+            "lastUpdateOn": "2023-10-11"
+          },
+          {
+            "name": "BenchmarkParserHeaders",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkParserHeaders",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkParserHeaders",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkParserHeaders",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkParserHeaders",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkParserHeaders",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkParser",
+            "modificationCount": 2,
+            "createdOn": "2023-09-07",
+            "lastUpdateOn": "2023-10-11"
+          },
+          {
+            "name": "BenchmarkParser",
+            "modificationCount": 2,
+            "createdOn": "2023-09-07",
+            "lastUpdateOn": "2023-10-11"
+          },
+          {
+            "name": "BenchmarkParseStartLine",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkParserAddressValue",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkParserNoData",
+            "modificationCount": 3,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2023-03-20"
+          },
+          {
+            "name": "BenchmarkUriSipComparison",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkUriSipComparison",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emiago/sipgo/sip",
+        "succeded": false,
+        "duration": "9.921s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHeaderParams/MAP-12",
+            "runs": 1468680,
+            "nsPerOp": 785.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringConcetationVsBuffer/Concat-12",
+            "runs": 16659367,
+            "nsPerOp": 184.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringConcetationVsBuffer/Buffer-12",
+            "runs": 24074078,
+            "nsPerOp": 68.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeadersPrepend/Append-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000062,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeadersPrepend/Assign-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000063,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenerateBranch",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "sip_test.go:10: wrong number of bytes"
+          },
+          {
+            "name": "BenchmarkGenerateBranch16",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "sip_test.go:20: wrong number of bytes"
+          },
+          {
+            "name": "BenchmarkGenerateBranchBufPool",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "sip_test.go:30: wrong number of bytes"
+          },
+          {
+            "name": "BenchmarkHeaderToLower-12",
+            "runs": 242597583,
+            "nsPerOp": 5.762,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHeaderParams",
+            "modificationCount": 2,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-09-28"
+          },
+          {
+            "name": "BenchmarkStringConcetationVsBuffer",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkStringConcetationVsBuffer",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          },
+          {
+            "name": "BenchmarkHeadersPrepend",
+            "modificationCount": 3,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2023-06-02"
+          },
+          {
+            "name": "BenchmarkHeadersPrepend",
+            "modificationCount": 3,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2023-06-02"
+          },
+          {
+            "name": "BenchmarkGenerateBranch",
+            "modificationCount": 1,
+            "createdOn": "2023-02-06",
+            "lastUpdateOn": "2023-02-06"
+          },
+          {
+            "name": "BenchmarkGenerateBranch16",
+            "modificationCount": 1,
+            "createdOn": "2023-02-06",
+            "lastUpdateOn": "2023-02-06"
+          },
+          {
+            "name": "BenchmarkGenerateBranchBufPool",
+            "modificationCount": 1,
+            "createdOn": "2023-02-06",
+            "lastUpdateOn": "2023-02-06"
+          },
+          {
+            "name": "BenchmarkHeaderToLower",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emiago/sipgo/transport",
+        "succeded": true,
+        "duration": "1.718s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConnectionPool-12",
+            "runs": 192633,
+            "nsPerOp": 6825,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSend-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.000001,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConnectionPool",
+            "modificationCount": 4,
+            "createdOn": "2022-06-16",
+            "lastUpdateOn": "2023-08-21"
+          },
+          {
+            "name": "BenchmarkSend",
+            "modificationCount": 1,
+            "createdOn": "2022-05-18",
+            "lastUpdateOn": "2022-05-18"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "emiago/sipgo",
+    "name": "sipgo",
+    "private": false,
+    "html_url": "https://github.com/emiago/sipgo",
+    "description": "SIP library for writing fast SIP servers in GO",
+    "fork": false,
+    "created_at": "2022-05-18T18:08:12Z",
+    "updated_at": "2023-10-23T14:19:34Z",
+    "pushed_at": "2023-10-22T17:35:38Z",
+    "ssh_url": "git@github.com:emiago/sipgo.git",
+    "stargazers_count": 75,
+    "watchers_count": 75,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 11,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 7,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "bsd-2-clause",
+      "name": "BSD 2-Clause \"Simplified\" License",
+      "url": "https://api.github.com/licenses/bsd-2-clause",
+      "spdx_id": "BSD-2-Clause",
+      "node_id": "MDc6TGljZW5zZTQ=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 64,
+    "Lines": 12427,
+    "Blank": 1962,
+    "Code": 9261,
+    "Comment": 1204,
+    "Bytes": 298502,
+    "Complexity": 1468
+  }
+}

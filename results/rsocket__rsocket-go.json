@@ -1,0 +1,278 @@
+{
+  "Name": "rsocket/rsocket-go",
+  "Path": "./repositories/rsocket__rsocket-go",
+  "GoVersion": "1.15",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T13:17:49Z",
+    "benchmarkCount": 12,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 12,
+    "successfulBenchmarkSuitesCount": 6,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/rsocket/rsocket-go/core",
+        "succeded": true,
+        "duration": "1.675s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkVersion_String-12",
+            "runs": 15980085,
+            "nsPerOp": 95.68,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkVersion_String",
+            "modificationCount": 1,
+            "createdOn": "2020-08-11",
+            "lastUpdateOn": "2020-08-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rsocket/rsocket-go/extension",
+        "succeded": true,
+        "duration": "2.954s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAuthentication_Bytes-12",
+            "runs": 28520918,
+            "nsPerOp": 48.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseAuthentication-12",
+            "runs": 19250606,
+            "nsPerOp": 75.49,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAuthentication_Bytes",
+            "modificationCount": 2,
+            "createdOn": "2020-02-15",
+            "lastUpdateOn": "2020-08-11"
+          },
+          {
+            "name": "BenchmarkParseAuthentication",
+            "modificationCount": 2,
+            "createdOn": "2020-02-15",
+            "lastUpdateOn": "2020-08-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rsocket/rsocket-go/internal/bytesconv",
+        "succeded": true,
+        "duration": "4.833s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBytesConvBytesToStrRaw-12",
+            "runs": 23799939,
+            "nsPerOp": 80.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesConvBytesToStr-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8876,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesConvStrToBytesRaw-12",
+            "runs": 5410171,
+            "nsPerOp": 191.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesConvStrToBytes-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.476,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBytesConvBytesToStrRaw",
+            "modificationCount": 1,
+            "createdOn": "2020-10-08",
+            "lastUpdateOn": "2020-10-08"
+          },
+          {
+            "name": "BenchmarkBytesConvBytesToStr",
+            "modificationCount": 1,
+            "createdOn": "2020-10-08",
+            "lastUpdateOn": "2020-10-08"
+          },
+          {
+            "name": "BenchmarkBytesConvStrToBytesRaw",
+            "modificationCount": 1,
+            "createdOn": "2020-10-08",
+            "lastUpdateOn": "2020-10-08"
+          },
+          {
+            "name": "BenchmarkBytesConvStrToBytes",
+            "modificationCount": 1,
+            "createdOn": "2020-10-08",
+            "lastUpdateOn": "2020-10-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rsocket/rsocket-go/internal/fragmentation",
+        "succeded": true,
+        "duration": "4.281s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkToFragments-12",
+            "runs": 771,
+            "nsPerOp": 1668225,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkToFragments",
+            "modificationCount": 5,
+            "createdOn": "2019-04-17",
+            "lastUpdateOn": "2020-08-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rsocket/rsocket-go/internal/u24",
+        "succeded": true,
+        "duration": "1.676s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewUint24-12",
+            "runs": 576885121,
+            "nsPerOp": 1.802,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUint24_AsInt-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3748,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewUint24",
+            "modificationCount": 3,
+            "createdOn": "2019-04-17",
+            "lastUpdateOn": "2020-10-24"
+          },
+          {
+            "name": "BenchmarkUint24_AsInt",
+            "modificationCount": 3,
+            "createdOn": "2019-04-17",
+            "lastUpdateOn": "2020-10-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/rsocket/rsocket-go/rx/mono",
+        "succeded": true,
+        "duration": "3.030s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDefaultProxy-12",
+            "runs": 27087970,
+            "nsPerOp": 64.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOneshotProxy-12",
+            "runs": 9518797,
+            "nsPerOp": 113.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDefaultProxy",
+            "modificationCount": 1,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2020-10-09"
+          },
+          {
+            "name": "BenchmarkOneshotProxy",
+            "modificationCount": 1,
+            "createdOn": "2020-10-09",
+            "lastUpdateOn": "2020-10-09"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "rsocket/rsocket-go",
+    "name": "rsocket-go",
+    "private": false,
+    "html_url": "https://github.com/rsocket/rsocket-go",
+    "description": "rsocket-go implementation",
+    "fork": false,
+    "created_at": "2017-02-14T11:53:52Z",
+    "updated_at": "2023-10-20T03:11:50Z",
+    "pushed_at": "2023-07-24T12:27:40Z",
+    "ssh_url": "git@github.com:rsocket/rsocket-go.git",
+    "stargazers_count": 475,
+    "watchers_count": 475,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 46,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 8,
+    "topics": [
+      "go",
+      "golang",
+      "reactive",
+      "rsocket"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 175,
+    "Lines": 18650,
+    "Blank": 2433,
+    "Code": 14928,
+    "Comment": 1289,
+    "Bytes": 459577,
+    "Complexity": 1892
+  }
+}

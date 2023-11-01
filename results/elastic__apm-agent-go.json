@@ -1,0 +1,599 @@
+{
+  "Name": "elastic/apm-agent-go",
+  "Path": "./repositories/elastic__apm-agent-go",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-11-01T17:07:07Z",
+    "benchmarkCount": 33,
+    "benchmarkSuiteCount": 11,
+    "successfulBenchmarkCount": 29,
+    "successfulBenchmarkSuitesCount": 10,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "go.elastic.co/apm/v2",
+        "succeded": true,
+        "duration": "2.956s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBodyCapturer-12",
+            "runs": 13596736,
+            "nsPerOp": 82.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTransaction-12",
+            "runs": 1324862,
+            "nsPerOp": 914.2,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBodyCapturer",
+            "modificationCount": 1,
+            "createdOn": "2019-07-08",
+            "lastUpdateOn": "2019-07-08"
+          },
+          {
+            "name": "BenchmarkTransaction",
+            "modificationCount": 2,
+            "createdOn": "2019-06-13",
+            "lastUpdateOn": "2022-02-24"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/v2/internal/apmlog",
+        "succeded": true,
+        "duration": "1.255s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDefaultLogger-12",
+            "runs": 290016,
+            "nsPerOp": 4128,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDefaultLogger",
+            "modificationCount": 3,
+            "createdOn": "2019-01-15",
+            "lastUpdateOn": "2022-02-02"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/v2/internal/ringbuffer",
+        "succeded": true,
+        "duration": "20.159s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWrite-12",
+            "runs": 9131000,
+            "nsPerOp": 133.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteBlockTo-12",
+            "runs": 24878702,
+            "nsPerOp": 49.02,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWrite",
+            "modificationCount": 2,
+            "createdOn": "2018-08-28",
+            "lastUpdateOn": "2018-08-29"
+          },
+          {
+            "name": "BenchmarkWriteBlockTo",
+            "modificationCount": 2,
+            "createdOn": "2018-08-28",
+            "lastUpdateOn": "2018-08-29"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/v2/internal/wildcard",
+        "succeded": true,
+        "duration": "4.175s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWildcardMatcher-12",
+            "runs": 1633588,
+            "nsPerOp": 650.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRegexpMatcher-12",
+            "runs": 92510,
+            "nsPerOp": 13027,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWildcardMatcher",
+            "modificationCount": 1,
+            "createdOn": "2018-10-16",
+            "lastUpdateOn": "2018-10-16"
+          },
+          {
+            "name": "BenchmarkRegexpMatcher",
+            "modificationCount": 1,
+            "createdOn": "2018-10-16",
+            "lastUpdateOn": "2018-10-16"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/v2/model",
+        "succeded": true,
+        "duration": "2.693s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMarshalTransactionFastJSON-12",
+            "runs": 501141,
+            "nsPerOp": 2397,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalTransactionStdlib-12",
+            "runs": 123650,
+            "nsPerOp": 10512,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMarshalTransactionFastJSON",
+            "modificationCount": 4,
+            "createdOn": "2017-11-24",
+            "lastUpdateOn": "2018-08-30"
+          },
+          {
+            "name": "BenchmarkMarshalTransactionStdlib",
+            "modificationCount": 1,
+            "createdOn": "2018-08-30",
+            "lastUpdateOn": "2018-08-30"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/v2/stacktrace",
+        "succeded": true,
+        "duration": "4.537s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAppendStacktraceUnlimited-12",
+            "runs": 450447,
+            "nsPerOp": 2825,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendStacktrace10-12",
+            "runs": 588745,
+            "nsPerOp": 2713,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendStacktrace50-12",
+            "runs": 531394,
+            "nsPerOp": 2872,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAppendStacktraceUnlimited",
+            "modificationCount": 1,
+            "createdOn": "2019-06-11",
+            "lastUpdateOn": "2019-06-11"
+          },
+          {
+            "name": "BenchmarkAppendStacktrace10",
+            "modificationCount": 1,
+            "createdOn": "2019-06-11",
+            "lastUpdateOn": "2019-06-11"
+          },
+          {
+            "name": "BenchmarkAppendStacktrace50",
+            "modificationCount": 1,
+            "createdOn": "2019-06-11",
+            "lastUpdateOn": "2019-06-11"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/module/apmgin/v2",
+        "succeded": true,
+        "duration": "6.408s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWithoutMiddleware//hello/world-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "[GIN-debug]"
+          },
+          {
+            "name": "BenchmarkWithoutMiddleware//sleep/1ms-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "[GIN-debug]"
+          },
+          {
+            "name": "BenchmarkWithMiddleware//hello/world-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "[GIN-debug]"
+          },
+          {
+            "name": "BenchmarkWithMiddleware//sleep/1ms-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "[GIN-debug]"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWithoutMiddleware",
+            "modificationCount": 1,
+            "createdOn": "2017-11-24",
+            "lastUpdateOn": "2017-11-24"
+          },
+          {
+            "name": "BenchmarkWithoutMiddleware",
+            "modificationCount": 1,
+            "createdOn": "2017-11-24",
+            "lastUpdateOn": "2017-11-24"
+          },
+          {
+            "name": "BenchmarkWithMiddleware",
+            "modificationCount": 2,
+            "createdOn": "2017-11-24",
+            "lastUpdateOn": "2018-05-08"
+          },
+          {
+            "name": "BenchmarkWithMiddleware",
+            "modificationCount": 2,
+            "createdOn": "2017-11-24",
+            "lastUpdateOn": "2018-05-08"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/module/apmhttp/v2",
+        "succeded": true,
+        "duration": "14.480s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkClient/baseline//hello/world-12",
+            "runs": 3037,
+            "nsPerOp": 399817,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/baseline//sleep/1ms-12",
+            "runs": 927,
+            "nsPerOp": 1362281,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/wrapped//hello/world-12",
+            "runs": 3205,
+            "nsPerOp": 359166,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/wrapped//sleep/1ms-12",
+            "runs": 876,
+            "nsPerOp": 1370760,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandlerWithoutMiddleware//hello/world-12",
+            "runs": 2396734,
+            "nsPerOp": 507.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandlerWithoutMiddleware//sleep/1ms-12",
+            "runs": 1087,
+            "nsPerOp": 1093992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandlerWithMiddleware//hello/world-12",
+            "runs": 149689,
+            "nsPerOp": 8971,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandlerWithMiddleware//sleep/1ms-12",
+            "runs": 1047,
+            "nsPerOp": 1142319,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraceHeaders/new-12",
+            "runs": 5700824,
+            "nsPerOp": 208.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-05-23",
+            "lastUpdateOn": "2018-05-23"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-05-23",
+            "lastUpdateOn": "2018-05-23"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-05-23",
+            "lastUpdateOn": "2018-05-23"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-05-23",
+            "lastUpdateOn": "2018-05-23"
+          },
+          {
+            "name": "BenchmarkHandlerWithoutMiddleware",
+            "modificationCount": 2,
+            "createdOn": "2018-03-15",
+            "lastUpdateOn": "2018-05-23"
+          },
+          {
+            "name": "BenchmarkHandlerWithoutMiddleware",
+            "modificationCount": 2,
+            "createdOn": "2018-03-15",
+            "lastUpdateOn": "2018-05-23"
+          },
+          {
+            "name": "BenchmarkHandlerWithMiddleware",
+            "modificationCount": 3,
+            "createdOn": "2018-03-15",
+            "lastUpdateOn": "2018-05-23"
+          },
+          {
+            "name": "BenchmarkHandlerWithMiddleware",
+            "modificationCount": 3,
+            "createdOn": "2018-03-15",
+            "lastUpdateOn": "2018-05-23"
+          },
+          {
+            "name": "BenchmarkTraceHeaders",
+            "modificationCount": 1,
+            "createdOn": "2023-10-26",
+            "lastUpdateOn": "2023-10-26"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/module/apmmongo/v2",
+        "succeded": true,
+        "duration": "1.436s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCommandMonitor-12",
+            "runs": 265069,
+            "nsPerOp": 5132,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCommandMonitor",
+            "modificationCount": 2,
+            "createdOn": "2019-02-14",
+            "lastUpdateOn": "2019-07-19"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/module/apmot/v2",
+        "succeded": true,
+        "duration": "2.641s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSpanSetSpanContext-12",
+            "runs": 139430,
+            "nsPerOp": 9444,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSpanSetTxContext-12",
+            "runs": 126646,
+            "nsPerOp": 8881,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSpanSetSpanContext",
+            "modificationCount": 1,
+            "createdOn": "2019-09-03",
+            "lastUpdateOn": "2019-09-03"
+          },
+          {
+            "name": "BenchmarkSpanSetTxContext",
+            "modificationCount": 1,
+            "createdOn": "2019-09-03",
+            "lastUpdateOn": "2019-09-03"
+          }
+        ]
+      },
+      {
+        "pkg": "go.elastic.co/apm/module/apmsql/v2",
+        "succeded": true,
+        "duration": "8.027s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStmtQueryContext/baseline-12",
+            "runs": 193346,
+            "nsPerOp": 7796,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStmtQueryContext/instrumented-12",
+            "runs": 95563,
+            "nsPerOp": 11533,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStmtExecContext/baseline-12",
+            "runs": 137655,
+            "nsPerOp": 8452,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStmtExecContext/instrumented-12",
+            "runs": 100954,
+            "nsPerOp": 12700,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQuerySignature-12",
+            "runs": 725149,
+            "nsPerOp": 2004,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStmtQueryContext",
+            "modificationCount": 6,
+            "createdOn": "2018-04-09",
+            "lastUpdateOn": "2022-01-20"
+          },
+          {
+            "name": "BenchmarkStmtQueryContext",
+            "modificationCount": 6,
+            "createdOn": "2018-04-09",
+            "lastUpdateOn": "2022-01-20"
+          },
+          {
+            "name": "BenchmarkStmtExecContext",
+            "modificationCount": 2,
+            "createdOn": "2020-01-09",
+            "lastUpdateOn": "2022-01-20"
+          },
+          {
+            "name": "BenchmarkStmtExecContext",
+            "modificationCount": 2,
+            "createdOn": "2020-01-09",
+            "lastUpdateOn": "2022-01-20"
+          },
+          {
+            "name": "BenchmarkQuerySignature",
+            "modificationCount": 4,
+            "createdOn": "2018-06-28",
+            "lastUpdateOn": "2019-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "elastic/apm-agent-go",
+    "name": "apm-agent-go",
+    "private": false,
+    "html_url": "https://github.com/elastic/apm-agent-go",
+    "description": "Official Go agent for Elastic APM",
+    "fork": false,
+    "created_at": "2018-02-16T03:39:33Z",
+    "updated_at": "2023-10-14T17:49:46Z",
+    "pushed_at": "2023-10-18T14:24:54Z",
+    "ssh_url": "git@github.com:elastic/apm-agent-go.git",
+    "homepage": "https://www.elastic.co/guide/en/apm/agent/go/current/index.html",
+    "stargazers_count": 401,
+    "watchers_count": 401,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 185,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 101,
+    "topics": [
+      "apm",
+      "distributed-tracing",
+      "go",
+      "golang",
+      "monitoring",
+      "tracing"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 399,
+    "Lines": 60671,
+    "Blank": 7012,
+    "Code": 42676,
+    "Comment": 10983,
+    "Bytes": 1804715,
+    "Complexity": 6153
+  }
+}

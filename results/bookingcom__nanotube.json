@@ -1,0 +1,250 @@
+{
+  "Name": "bookingcom/nanotube",
+  "Path": "./repositories/bookingcom__nanotube",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T09:45:31Z",
+    "benchmarkCount": 12,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 11,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/bookingcom/nanotube/cmd/nanotube",
+        "succeded": true,
+        "duration": "22.664s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkProcessREs-12",
+            "runs": 18745,
+            "nsPerOp": 62000,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessPrefix-12",
+            "runs": 2,
+            "nsPerOp": 561005164,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcWithoutConcurrentWorkers-12",
+            "runs": 2,
+            "nsPerOp": 740106078,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessFunc-12",
+            "runs": 5,
+            "nsPerOp": 325067048,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRealisticBytes/1-12",
+            "runs": 1,
+            "nsPerOp": 1687670151,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRealisticBytes/2-12",
+            "runs": 1,
+            "nsPerOp": 1740689176,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRealisticBytes/4-12",
+            "runs": 2,
+            "nsPerOp": 521744684,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRealisticBytes/8-12",
+            "runs": 3,
+            "nsPerOp": 370269008,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRealisticBytes/16-12",
+            "runs": 3,
+            "nsPerOp": 365280536,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRealisticBytes/32-12",
+            "runs": 3,
+            "nsPerOp": 577578472,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkProcessREs",
+            "modificationCount": 9,
+            "createdOn": "2019-12-19",
+            "lastUpdateOn": "2023-05-05"
+          },
+          {
+            "name": "BenchmarkProcessPrefix",
+            "modificationCount": 4,
+            "createdOn": "2022-02-10",
+            "lastUpdateOn": "2023-05-05"
+          },
+          {
+            "name": "BenchmarkProcWithoutConcurrentWorkers",
+            "modificationCount": 5,
+            "createdOn": "2022-02-10",
+            "lastUpdateOn": "2023-05-05"
+          },
+          {
+            "name": "BenchmarkProcessFunc",
+            "modificationCount": 5,
+            "createdOn": "2022-02-10",
+            "lastUpdateOn": "2023-05-05"
+          },
+          {
+            "name": "BenchmarkRealisticBytes",
+            "modificationCount": 4,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-23"
+          },
+          {
+            "name": "BenchmarkRealisticBytes",
+            "modificationCount": 4,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-23"
+          },
+          {
+            "name": "BenchmarkRealisticBytes",
+            "modificationCount": 4,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-23"
+          },
+          {
+            "name": "BenchmarkRealisticBytes",
+            "modificationCount": 4,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-23"
+          },
+          {
+            "name": "BenchmarkRealisticBytes",
+            "modificationCount": 4,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-23"
+          },
+          {
+            "name": "BenchmarkRealisticBytes",
+            "modificationCount": 4,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bookingcom/nanotube/pkg/rec",
+        "succeded": true,
+        "duration": "2.765s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSerialization-12",
+            "runs": 2495265,
+            "nsPerOp": 427.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSerialization",
+            "modificationCount": 2,
+            "createdOn": "2020-05-07",
+            "lastUpdateOn": "2022-05-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bookingcom/nanotube/pkg/rules",
+        "succeded": false,
+        "duration": "0.029s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTrie",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "trie_test.go:110: error while reading rules: error reading rules file: open ../testdata/rules.toml: no such file or directory"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTrie",
+            "modificationCount": 3,
+            "createdOn": "2022-05-13",
+            "lastUpdateOn": "2022-05-24"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "bookingcom/nanotube",
+    "name": "nanotube",
+    "private": false,
+    "html_url": "https://github.com/bookingcom/nanotube",
+    "description": "High-performance router for Graphite.",
+    "fork": false,
+    "created_at": "2019-12-19T11:16:01Z",
+    "updated_at": "2023-07-11T14:54:19Z",
+    "pushed_at": "2023-09-04T12:26:43Z",
+    "ssh_url": "git@github.com:bookingcom/nanotube.git",
+    "stargazers_count": 57,
+    "watchers_count": 57,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 13,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "go",
+      "graphite",
+      "monitoring"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 4119,
+    "Lines": 1265511,
+    "Blank": 98586,
+    "Code": 979190,
+    "Comment": 187735,
+    "Bytes": 43041443,
+    "Complexity": 122753
+  }
+}

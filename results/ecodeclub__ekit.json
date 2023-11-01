@@ -1,0 +1,941 @@
+{
+  "Name": "ecodeclub/ekit",
+  "Path": "./repositories/ecodeclub__ekit",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T05:29:10Z",
+    "benchmarkCount": 62,
+    "benchmarkSuiteCount": 8,
+    "successfulBenchmarkCount": 62,
+    "successfulBenchmarkSuitesCount": 8,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/ecodeclub/ekit/bean/copier",
+        "succeded": true,
+        "duration": "9.351s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReflectCopier_Copy_PureRunTime-12",
+            "runs": 885943,
+            "nsPerOp": 1515,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReflectCopier_CopyComplexStruct_WithPureRuntime-12",
+            "runs": 136297,
+            "nsPerOp": 8430,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReflectCopier_Copy/reused-12",
+            "runs": 1206392,
+            "nsPerOp": 1102,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReflectCopier_Copy/create-12",
+            "runs": 459906,
+            "nsPerOp": 3018,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReflectCopier_CopyComplexStruct/reused-12",
+            "runs": 243626,
+            "nsPerOp": 4210,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReflectCopier_CopyComplexStruct/create-12",
+            "runs": 83859,
+            "nsPerOp": 11929,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReflectCopier_Copy_PureRunTime",
+            "modificationCount": 2,
+            "createdOn": "2022-08-28",
+            "lastUpdateOn": "2023-02-21"
+          },
+          {
+            "name": "BenchmarkReflectCopier_CopyComplexStruct_WithPureRuntime",
+            "modificationCount": 2,
+            "createdOn": "2022-08-28",
+            "lastUpdateOn": "2023-02-21"
+          },
+          {
+            "name": "BenchmarkReflectCopier_Copy",
+            "modificationCount": 2,
+            "createdOn": "2022-08-28",
+            "lastUpdateOn": "2023-02-21"
+          },
+          {
+            "name": "BenchmarkReflectCopier_Copy",
+            "modificationCount": 2,
+            "createdOn": "2022-08-28",
+            "lastUpdateOn": "2023-02-21"
+          },
+          {
+            "name": "BenchmarkReflectCopier_CopyComplexStruct",
+            "modificationCount": 2,
+            "createdOn": "2022-08-28",
+            "lastUpdateOn": "2023-02-21"
+          },
+          {
+            "name": "BenchmarkReflectCopier_CopyComplexStruct",
+            "modificationCount": 2,
+            "createdOn": "2022-08-28",
+            "lastUpdateOn": "2023-02-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ecodeclub/ekit/list",
+        "succeded": true,
+        "duration": "257.802s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkArrayList_Cap/Cap-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.337,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArrayList_Cap/Runtime_cap-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3386,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_Add-12",
+            "runs": 163172,
+            "nsPerOp": 1167018,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLinkedList_Get-12",
+            "runs": 387379,
+            "nsPerOp": 171537,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkArrayList_Cap",
+            "modificationCount": 3,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2022-08-11"
+          },
+          {
+            "name": "BenchmarkArrayList_Cap",
+            "modificationCount": 3,
+            "createdOn": "2022-08-11",
+            "lastUpdateOn": "2022-08-11"
+          },
+          {
+            "name": "BenchmarkLinkedList_Add",
+            "modificationCount": 2,
+            "createdOn": "2022-08-15",
+            "lastUpdateOn": "2022-08-18"
+          },
+          {
+            "name": "BenchmarkLinkedList_Get",
+            "modificationCount": 2,
+            "createdOn": "2022-08-15",
+            "lastUpdateOn": "2022-08-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ecodeclub/ekit/mapx",
+        "succeded": true,
+        "duration": "26.226s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMyHashMap/hashmap_put-12",
+            "runs": 3764774,
+            "nsPerOp": 302.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMyHashMap/map_put-12",
+            "runs": 5230557,
+            "nsPerOp": 205.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMyHashMap/hashmap_get-12",
+            "runs": 2439544,
+            "nsPerOp": 438,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMyHashMap/map_get-12",
+            "runs": 5930230,
+            "nsPerOp": 246.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeMap/treeMap_put-12",
+            "runs": 2214643,
+            "nsPerOp": 595.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeMap/map_put-12",
+            "runs": 2434492,
+            "nsPerOp": 482.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeMap/hashMap_put-12",
+            "runs": 1000000,
+            "nsPerOp": 1083,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeMap/treeMap_get-12",
+            "runs": 5960191,
+            "nsPerOp": 168.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeMap/map_get-12",
+            "runs": 18030714,
+            "nsPerOp": 77.74,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeMap/hashMap_get-12",
+            "runs": 13435970,
+            "nsPerOp": 83.55,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMyHashMap",
+            "modificationCount": 2,
+            "createdOn": "2023-01-01",
+            "lastUpdateOn": "2023-05-21"
+          },
+          {
+            "name": "BenchmarkMyHashMap",
+            "modificationCount": 2,
+            "createdOn": "2023-01-01",
+            "lastUpdateOn": "2023-05-21"
+          },
+          {
+            "name": "BenchmarkMyHashMap",
+            "modificationCount": 2,
+            "createdOn": "2023-01-01",
+            "lastUpdateOn": "2023-05-21"
+          },
+          {
+            "name": "BenchmarkMyHashMap",
+            "modificationCount": 2,
+            "createdOn": "2023-01-01",
+            "lastUpdateOn": "2023-05-21"
+          },
+          {
+            "name": "BenchmarkTreeMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-17",
+            "lastUpdateOn": "2023-01-17"
+          },
+          {
+            "name": "BenchmarkTreeMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-17",
+            "lastUpdateOn": "2023-01-17"
+          },
+          {
+            "name": "BenchmarkTreeMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-17",
+            "lastUpdateOn": "2023-01-17"
+          },
+          {
+            "name": "BenchmarkTreeMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-17",
+            "lastUpdateOn": "2023-01-17"
+          },
+          {
+            "name": "BenchmarkTreeMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-17",
+            "lastUpdateOn": "2023-01-17"
+          },
+          {
+            "name": "BenchmarkTreeMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-17",
+            "lastUpdateOn": "2023-01-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ecodeclub/ekit/set",
+        "succeded": true,
+        "duration": "121.984s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSet/set_add-12",
+            "runs": 222670,
+            "nsPerOp": 5032,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSet/map_add-12",
+            "runs": 256068,
+            "nsPerOp": 4975,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSet/set_del-12",
+            "runs": 243751,
+            "nsPerOp": 5963,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSet/map_del-12",
+            "runs": 234303,
+            "nsPerOp": 5439,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSet/set_exist-12",
+            "runs": 288392,
+            "nsPerOp": 4142,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSet/map_exist-12",
+            "runs": 305077,
+            "nsPerOp": 4103,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeSet/treeSet_add-12",
+            "runs": 2960448,
+            "nsPerOp": 883.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeSet/set_add-12",
+            "runs": 1000000,
+            "nsPerOp": 1059,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeSet/map_add-12",
+            "runs": 3997141,
+            "nsPerOp": 327.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeSet/treeSet_exist-12",
+            "runs": 6805584,
+            "nsPerOp": 244.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeSet/set_exist-12",
+            "runs": 10696947,
+            "nsPerOp": 168.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeSet/map_exist-12",
+            "runs": 10535085,
+            "nsPerOp": 241.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeSet/treeSet_del-12",
+            "runs": 188259350,
+            "nsPerOp": 6.294,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeSet/set_del-12",
+            "runs": 439794438,
+            "nsPerOp": 3.015,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTreeSet/map_del-12",
+            "runs": 385556676,
+            "nsPerOp": 2.81,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSet",
+            "modificationCount": 1,
+            "createdOn": "2023-02-08",
+            "lastUpdateOn": "2023-02-08"
+          },
+          {
+            "name": "BenchmarkSet",
+            "modificationCount": 1,
+            "createdOn": "2023-02-08",
+            "lastUpdateOn": "2023-02-08"
+          },
+          {
+            "name": "BenchmarkSet",
+            "modificationCount": 1,
+            "createdOn": "2023-02-08",
+            "lastUpdateOn": "2023-02-08"
+          },
+          {
+            "name": "BenchmarkSet",
+            "modificationCount": 1,
+            "createdOn": "2023-02-08",
+            "lastUpdateOn": "2023-02-08"
+          },
+          {
+            "name": "BenchmarkSet",
+            "modificationCount": 1,
+            "createdOn": "2023-02-08",
+            "lastUpdateOn": "2023-02-08"
+          },
+          {
+            "name": "BenchmarkSet",
+            "modificationCount": 1,
+            "createdOn": "2023-02-08",
+            "lastUpdateOn": "2023-02-08"
+          },
+          {
+            "name": "BenchmarkTreeSet",
+            "modificationCount": 2,
+            "createdOn": "2023-02-23",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkTreeSet",
+            "modificationCount": 2,
+            "createdOn": "2023-02-23",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkTreeSet",
+            "modificationCount": 2,
+            "createdOn": "2023-02-23",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkTreeSet",
+            "modificationCount": 2,
+            "createdOn": "2023-02-23",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkTreeSet",
+            "modificationCount": 2,
+            "createdOn": "2023-02-23",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkTreeSet",
+            "modificationCount": 2,
+            "createdOn": "2023-02-23",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkTreeSet",
+            "modificationCount": 2,
+            "createdOn": "2023-02-23",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkTreeSet",
+            "modificationCount": 2,
+            "createdOn": "2023-02-23",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkTreeSet",
+            "modificationCount": 2,
+            "createdOn": "2023-02-23",
+            "lastUpdateOn": "2023-02-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ecodeclub/ekit/slice",
+        "succeded": true,
+        "duration": "3.533s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIndex/loop_directly-12",
+            "runs": 300044125,
+            "nsPerOp": 4.723,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndex/delegate_to_IndexFunc-12",
+            "runs": 198960532,
+            "nsPerOp": 5.131,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIndex",
+            "modificationCount": 1,
+            "createdOn": "2022-09-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkIndex",
+            "modificationCount": 1,
+            "createdOn": "2022-09-12",
+            "lastUpdateOn": "2022-09-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ecodeclub/ekit/stringx",
+        "succeded": true,
+        "duration": "3.861s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_UnsafeToBytes/safe_to_bytes-12",
+            "runs": 21384656,
+            "nsPerOp": 54.22,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_UnsafeToBytes/unsafe_to_bytes-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3934,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_UnsafeToString/safe_to_string-12",
+            "runs": 31672083,
+            "nsPerOp": 45.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_UnsafeToString/unsafe_to_string-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5869,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_UnsafeToBytes",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "Benchmark_UnsafeToBytes",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "Benchmark_UnsafeToString",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "Benchmark_UnsafeToString",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ecodeclub/ekit/syncx",
+        "succeded": true,
+        "duration": "20.369s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCond1-12",
+            "runs": 1000000,
+            "nsPerOp": 1124,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond2-12",
+            "runs": 731331,
+            "nsPerOp": 2431,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond4-12",
+            "runs": 285724,
+            "nsPerOp": 4435,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond8-12",
+            "runs": 155631,
+            "nsPerOp": 9029,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond16-12",
+            "runs": 52724,
+            "nsPerOp": 21905,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCond32-12",
+            "runs": 35800,
+            "nsPerOp": 36774,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChanList-12",
+            "runs": 1724376,
+            "nsPerOp": 743.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad/Map-12",
+            "runs": 27989676,
+            "nsPerOp": 64.97,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad/sync.Map-12",
+            "runs": 31211748,
+            "nsPerOp": 55.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPool_Get/Pool-12",
+            "runs": 11428038,
+            "nsPerOp": 111.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPool_Get/sync.Pool-12",
+            "runs": 10497393,
+            "nsPerOp": 112.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCond1",
+            "modificationCount": 1,
+            "createdOn": "2023-08-10",
+            "lastUpdateOn": "2023-08-10"
+          },
+          {
+            "name": "BenchmarkCond2",
+            "modificationCount": 1,
+            "createdOn": "2023-08-10",
+            "lastUpdateOn": "2023-08-10"
+          },
+          {
+            "name": "BenchmarkCond4",
+            "modificationCount": 1,
+            "createdOn": "2023-08-10",
+            "lastUpdateOn": "2023-08-10"
+          },
+          {
+            "name": "BenchmarkCond8",
+            "modificationCount": 1,
+            "createdOn": "2023-08-10",
+            "lastUpdateOn": "2023-08-10"
+          },
+          {
+            "name": "BenchmarkCond16",
+            "modificationCount": 1,
+            "createdOn": "2023-08-10",
+            "lastUpdateOn": "2023-08-10"
+          },
+          {
+            "name": "BenchmarkCond32",
+            "modificationCount": 1,
+            "createdOn": "2023-08-10",
+            "lastUpdateOn": "2023-08-10"
+          },
+          {
+            "name": "BenchmarkChanList",
+            "modificationCount": 1,
+            "createdOn": "2023-08-10",
+            "lastUpdateOn": "2023-08-10"
+          },
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 1,
+            "createdOn": "2022-09-08",
+            "lastUpdateOn": "2022-09-08"
+          },
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 1,
+            "createdOn": "2022-09-08",
+            "lastUpdateOn": "2022-09-08"
+          },
+          {
+            "name": "BenchmarkPool_Get",
+            "modificationCount": 2,
+            "createdOn": "2022-05-26",
+            "lastUpdateOn": "2022-09-08"
+          },
+          {
+            "name": "BenchmarkPool_Get",
+            "modificationCount": 2,
+            "createdOn": "2022-05-26",
+            "lastUpdateOn": "2022-09-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ecodeclub/ekit/syncx/atomicx",
+        "succeded": true,
+        "duration": "17.899s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkValue_Load/Value-12",
+            "runs": 414959216,
+            "nsPerOp": 3.546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue_Load/atomic_Value-12",
+            "runs": 890041934,
+            "nsPerOp": 1.627,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue_Store/Value-12",
+            "runs": 100000000,
+            "nsPerOp": 10.55,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue_Store/atomic_Value-12",
+            "runs": 156208430,
+            "nsPerOp": 7.316,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue_Swap/Value-12",
+            "runs": 34685629,
+            "nsPerOp": 33.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue_Swap/atomic_Value-12",
+            "runs": 139529132,
+            "nsPerOp": 8.231,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue_CompareAndSwap/Value/fail-12",
+            "runs": 142532824,
+            "nsPerOp": 9.365,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue_CompareAndSwap/Value/success-12",
+            "runs": 30709615,
+            "nsPerOp": 50.08,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue_CompareAndSwap/atomic_Value/fail-12",
+            "runs": 90586014,
+            "nsPerOp": 13.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue_CompareAndSwap/atomic_Value/success-12",
+            "runs": 13424659,
+            "nsPerOp": 91.12,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkValue_Load",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkValue_Load",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkValue_Store",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkValue_Store",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkValue_Swap",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkValue_Swap",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkValue_CompareAndSwap",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkValue_CompareAndSwap",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkValue_CompareAndSwap",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          },
+          {
+            "name": "BenchmarkValue_CompareAndSwap",
+            "modificationCount": 1,
+            "createdOn": "2022-10-01",
+            "lastUpdateOn": "2022-10-01"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "ecodeclub/ekit",
+    "name": "ekit",
+    "private": false,
+    "html_url": "https://github.com/ecodeclub/ekit",
+    "description": "支持泛型的工具库",
+    "fork": false,
+    "created_at": "2021-03-23T15:53:57Z",
+    "updated_at": "2023-10-20T01:08:42Z",
+    "pushed_at": "2023-10-21T03:37:27Z",
+    "ssh_url": "git@github.com:ecodeclub/ekit.git",
+    "stargazers_count": 205,
+    "watchers_count": 205,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 123,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 3,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 131,
+    "Lines": 26018,
+    "Blank": 2078,
+    "Code": 21032,
+    "Comment": 2908,
+    "Bytes": 612066,
+    "Complexity": 1902
+  }
+}

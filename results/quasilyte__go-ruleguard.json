@@ -1,0 +1,597 @@
+{
+  "Name": "quasilyte/go-ruleguard",
+  "Path": "./repositories/quasilyte__go-ruleguard",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T17:17:45Z",
+    "benchmarkCount": 38,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 36,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/quasilyte/go-ruleguard/ruleguard",
+        "succeded": false,
+        "duration": "13.976s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEngineRun-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkIssue412",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "perf_test.go:118: typecheck: testdata/bench_target1.go:24:2: could not import net/http (type-checking package \"net/http\" failed (/home/mateusz/.gvm/gos/go1.21/src/net/http/client.go:14:2: could not import crypto/tls (type-checking package \"crypto/tls\" failed (/home/mateusz/.gvm/gos/go1.21/src/crypto/tls/cache.go:8:2: could not import crypto/x509 (type-checking package \"crypto/x509\" failed (/home/mateusz/.gvm/gos/go1.21/src/crypto/x509/parser.go:20:2: could not import net (error processing cgo for package \"net\": go tool cgo: exit status 1)))))))"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEngineRun",
+            "modificationCount": 4,
+            "createdOn": "2021-10-11",
+            "lastUpdateOn": "2022-10-02"
+          },
+          {
+            "name": "BenchmarkIssue412",
+            "modificationCount": 2,
+            "createdOn": "2021-10-11",
+            "lastUpdateOn": "2022-10-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/quasilyte/go-ruleguard/ruleguard/quasigo",
+        "succeded": true,
+        "duration": "74.755s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEval/CallNativeVariadic0-12",
+            "runs": 6270202,
+            "nsPerOp": 218.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/CallNativeVariadic1-12",
+            "runs": 2925694,
+            "nsPerOp": 586.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/CallNativeVariadic2-12",
+            "runs": 2851225,
+            "nsPerOp": 364.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/ReturnFalse-12",
+            "runs": 47251744,
+            "nsPerOp": 24.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/ReturnInt-12",
+            "runs": 61244828,
+            "nsPerOp": 27.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/ParamInt-12",
+            "runs": 38008629,
+            "nsPerOp": 27.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/ParamString-12",
+            "runs": 49597526,
+            "nsPerOp": 22.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/LocalVars-12",
+            "runs": 40522890,
+            "nsPerOp": 31.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/IfStmt-12",
+            "runs": 24932746,
+            "nsPerOp": 94.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/CallNative-12",
+            "runs": 22174092,
+            "nsPerOp": 54.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/CounterLoop-12",
+            "runs": 3879,
+            "nsPerOp": 454085,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEval/CounterLoopNested-12",
+            "runs": 4258,
+            "nsPerOp": 325745,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkEval",
+            "modificationCount": 5,
+            "createdOn": "2021-01-08",
+            "lastUpdateOn": "2022-02-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/quasilyte/go-ruleguard/ruleguard/textmatch",
+        "succeded": true,
+        "duration": "40.936s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMatch/^\\p{Lu}_0_re-12",
+            "runs": 13765441,
+            "nsPerOp": 134.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^\\p{Lu}_0_opt-12",
+            "runs": 69718735,
+            "nsPerOp": 14.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^\\p{Lu}_1_re-12",
+            "runs": 7639530,
+            "nsPerOp": 139.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^\\p{Lu}_1_opt-12",
+            "runs": 164401053,
+            "nsPerOp": 7.004,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^\\p{Ll}_0_re-12",
+            "runs": 14731194,
+            "nsPerOp": 83.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^\\p{Ll}_0_opt-12",
+            "runs": 171388666,
+            "nsPerOp": 10.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^\\p{Ll}_1_re-12",
+            "runs": 10220744,
+            "nsPerOp": 130.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^\\p{Ll}_1_opt-12",
+            "runs": 100000000,
+            "nsPerOp": 10.59,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/foo$_0_re-12",
+            "runs": 7408890,
+            "nsPerOp": 204.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/foo$_0_opt-12",
+            "runs": 154775706,
+            "nsPerOp": 7.484,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/foo$_1_re-12",
+            "runs": 21913968,
+            "nsPerOp": 57.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/foo$_1_opt-12",
+            "runs": 175529810,
+            "nsPerOp": 5.953,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^foo_0_re-12",
+            "runs": 14695068,
+            "nsPerOp": 100.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^foo_0_opt-12",
+            "runs": 243278265,
+            "nsPerOp": 5.655,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^foo_1_re-12",
+            "runs": 19082632,
+            "nsPerOp": 77.85,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/^foo_1_opt-12",
+            "runs": 184134871,
+            "nsPerOp": 6.758,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/.*simpleIdent.*_0_re-12",
+            "runs": 977011,
+            "nsPerOp": 1044,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/.*simpleIdent.*_0_opt-12",
+            "runs": 100000000,
+            "nsPerOp": 10.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/.*simpleIdent.*_1_re-12",
+            "runs": 988039,
+            "nsPerOp": 1165,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/.*simpleIdent.*_1_opt-12",
+            "runs": 77345930,
+            "nsPerOp": 14.59,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/simpleIdent_0_re-12",
+            "runs": 5711350,
+            "nsPerOp": 249.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/simpleIdent_0_opt-12",
+            "runs": 75082045,
+            "nsPerOp": 14.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/simpleIdent_1_re-12",
+            "runs": 4596166,
+            "nsPerOp": 299.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/simpleIdent_1_opt-12",
+            "runs": 84936454,
+            "nsPerOp": 28.19,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 1,
+            "createdOn": "2021-10-15",
+            "lastUpdateOn": "2021-10-15"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "quasilyte/go-ruleguard",
+    "name": "go-ruleguard",
+    "private": false,
+    "html_url": "https://github.com/quasilyte/go-ruleguard",
+    "description": "Define and run pattern-based custom linting rules.",
+    "fork": false,
+    "created_at": "2019-12-11T21:42:32Z",
+    "updated_at": "2023-10-15T10:51:10Z",
+    "pushed_at": "2023-10-17T13:27:56Z",
+    "ssh_url": "git@github.com:quasilyte/go-ruleguard.git",
+    "homepage": "https://go-ruleguard.github.io/",
+    "stargazers_count": 730,
+    "watchers_count": 730,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 44,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 67,
+    "topics": [
+      "analysis",
+      "codeql",
+      "dynamic-rules",
+      "go",
+      "go-analysis",
+      "gogrep",
+      "golang",
+      "linter",
+      "ruleguard",
+      "semgrep",
+      "static-analysis"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "url": "https://api.github.com/licenses/bsd-3-clause",
+      "spdx_id": "BSD-3-Clause",
+      "node_id": "MDc6TGljZW5zZTU=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 191,
+    "Lines": 22174,
+    "Blank": 3200,
+    "Code": 17405,
+    "Comment": 1569,
+    "Bytes": 590201,
+    "Complexity": 2463
+  }
+}

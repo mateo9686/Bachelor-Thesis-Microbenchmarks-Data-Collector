@@ -1,0 +1,437 @@
+{
+  "Name": "gitpod-io/gitpod",
+  "Path": "./repositories/gitpod-io__gitpod",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T02:56:21Z",
+    "benchmarkCount": 23,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 23,
+    "successfulBenchmarkSuitesCount": 6,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/gitpod-io/gitpod/common-go/grpc",
+        "succeded": true,
+        "duration": "9.400s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetFieldValue-12",
+            "runs": 1973344,
+            "nsPerOp": 627.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFieldAccessKey_String-12",
+            "runs": 2475954,
+            "nsPerOp": 636.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFieldAccessKey_Enum-12",
+            "runs": 4461051,
+            "nsPerOp": 306.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFieldAccessKey_Bool-12",
+            "runs": 4845648,
+            "nsPerOp": 234.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFieldAccessKey_Composite-12",
+            "runs": 1560237,
+            "nsPerOp": 952,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetFieldValue",
+            "modificationCount": 2,
+            "createdOn": "2022-04-26",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkFieldAccessKey_String",
+            "modificationCount": 1,
+            "createdOn": "2023-03-28",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkFieldAccessKey_Enum",
+            "modificationCount": 1,
+            "createdOn": "2023-03-28",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkFieldAccessKey_Bool",
+            "modificationCount": 1,
+            "createdOn": "2023-03-28",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkFieldAccessKey_Composite",
+            "modificationCount": 1,
+            "createdOn": "2023-03-28",
+            "lastUpdateOn": "2023-03-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gitpod-io/gitpod/common-go/log",
+        "succeded": true,
+        "duration": "6.554s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSimpleScrubFormatter/json-12",
+            "runs": 79509,
+            "nsPerOp": 17763,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimpleScrubFormatter/scrub+json-12",
+            "runs": 59594,
+            "nsPerOp": 19636,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructScrubFormatter/json-12",
+            "runs": 55404,
+            "nsPerOp": 18461,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructScrubFormatter/scrub+json-12",
+            "runs": 62876,
+            "nsPerOp": 16918,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSimpleScrubFormatter",
+            "modificationCount": 1,
+            "createdOn": "2023-06-29",
+            "lastUpdateOn": "2023-06-29"
+          },
+          {
+            "name": "BenchmarkSimpleScrubFormatter",
+            "modificationCount": 1,
+            "createdOn": "2023-06-29",
+            "lastUpdateOn": "2023-06-29"
+          },
+          {
+            "name": "BenchmarkStructScrubFormatter",
+            "modificationCount": 1,
+            "createdOn": "2023-06-29",
+            "lastUpdateOn": "2023-06-29"
+          },
+          {
+            "name": "BenchmarkStructScrubFormatter",
+            "modificationCount": 1,
+            "createdOn": "2023-06-29",
+            "lastUpdateOn": "2023-06-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gitpod-io/gitpod/agent-smith/pkg/agent",
+        "succeded": true,
+        "duration": "2.519s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFindEnforcementRules-12",
+            "runs": 1202382,
+            "nsPerOp": 1083,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFindEnforcementRules",
+            "modificationCount": 2,
+            "createdOn": "2021-06-07",
+            "lastUpdateOn": "2021-10-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gitpod-io/gitpod/agent-smith/pkg/detector",
+        "succeded": true,
+        "duration": "20.293s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseGitpodEnvironP0-12",
+            "runs": 1000000,
+            "nsPerOp": 2048,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironP1-12",
+            "runs": 915098,
+            "nsPerOp": 2362,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironP2-12",
+            "runs": 652558,
+            "nsPerOp": 2564,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseGitPodEnvironP4-12",
+            "runs": 413077,
+            "nsPerOp": 2438,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironP8-12",
+            "runs": 673110,
+            "nsPerOp": 4742,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironN1-12",
+            "runs": 1002177,
+            "nsPerOp": 1366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironN2-12",
+            "runs": 674314,
+            "nsPerOp": 1775,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironN4-12",
+            "runs": 906678,
+            "nsPerOp": 1282,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironN8-12",
+            "runs": 1000000,
+            "nsPerOp": 1037,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseStat-12",
+            "runs": 2525166,
+            "nsPerOp": 458.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseGitpodEnvironP0",
+            "modificationCount": 2,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironP1",
+            "modificationCount": 2,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironP2",
+            "modificationCount": 2,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "BenchmarkParseGitPodEnvironP4",
+            "modificationCount": 2,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironP8",
+            "modificationCount": 2,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironN1",
+            "modificationCount": 2,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironN2",
+            "modificationCount": 2,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironN4",
+            "modificationCount": 2,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "BenchmarkParseGitpodEnvironN8",
+            "modificationCount": 2,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-12-28"
+          },
+          {
+            "name": "BenchmarkParseStat",
+            "modificationCount": 1,
+            "createdOn": "2021-10-19",
+            "lastUpdateOn": "2021-10-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gitpod-io/gitpod/components/scrubber",
+        "succeded": true,
+        "duration": "3.864s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkKeyValue-12",
+            "runs": 708044,
+            "nsPerOp": 1581,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue-12",
+            "runs": 269322,
+            "nsPerOp": 6420,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkKeyValue",
+            "modificationCount": 1,
+            "createdOn": "2023-05-22",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkValue",
+            "modificationCount": 1,
+            "createdOn": "2023-05-22",
+            "lastUpdateOn": "2023-05-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gitpod-io/gitpod/ws-manager/api/config",
+        "succeded": true,
+        "duration": "2.251s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRenderWorkspacePortURL-12",
+            "runs": 12897,
+            "nsPerOp": 90422,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRenderWorkspacePortURL",
+            "modificationCount": 3,
+            "createdOn": "2020-08-25",
+            "lastUpdateOn": "2022-05-10"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "gitpod-io/gitpod",
+    "name": "gitpod",
+    "private": false,
+    "html_url": "https://github.com/gitpod-io/gitpod",
+    "description": "The developer platform for on-demand cloud development environments to create software faster and more securely.",
+    "fork": false,
+    "created_at": "2018-04-24T15:56:54Z",
+    "updated_at": "2023-10-23T15:06:22Z",
+    "pushed_at": "2023-10-23T14:02:54Z",
+    "ssh_url": "git@github.com:gitpod-io/gitpod.git",
+    "homepage": "https://www.gitpod.io",
+    "stargazers_count": 11631,
+    "watchers_count": 11631,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1196,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 716,
+    "topics": [
+      "cde",
+      "cloud",
+      "cloud-development",
+      "cloud-development-environments",
+      "cloud-ide",
+      "code-review",
+      "dev-environment",
+      "developer-environment",
+      "developer-experience",
+      "disposable",
+      "editor",
+      "ephemeral",
+      "gitpod",
+      "ide",
+      "jetbrains",
+      "prebuilds",
+      "remote-development",
+      "remote-devtools",
+      "vscode"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "spdx_id": "AGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTE=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 1251,
+    "Lines": 228475,
+    "Blank": 29916,
+    "Code": 183883,
+    "Comment": 14676,
+    "Bytes": 7355189,
+    "Complexity": 30438
+  }
+}

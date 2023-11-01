@@ -1,0 +1,476 @@
+{
+  "Name": "slon/shad-go",
+  "Path": "./repositories/slon__shad-go",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T05:46:16Z",
+    "benchmarkCount": 24,
+    "benchmarkSuiteCount": 12,
+    "successfulBenchmarkCount": 20,
+    "successfulBenchmarkSuitesCount": 9,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "gitlab.com/slon/shad-go/consistenthash",
+        "succeded": false,
+        "duration": "0.009s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHashSpeed-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHashSpeed",
+            "modificationCount": 1,
+            "createdOn": "2023-04-18",
+            "lastUpdateOn": "2023-04-18"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/gzep",
+        "succeded": true,
+        "duration": "1.207s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncode-12",
+            "runs": 3786,
+            "nsPerOp": 306597,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncode",
+            "modificationCount": 3,
+            "createdOn": "2022-05-05",
+            "lastUpdateOn": "2022-05-06"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/keylock",
+        "succeded": false,
+        "duration": "1.331s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMutex_Baseline-12",
+            "runs": 46449018,
+            "nsPerOp": 27.55,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyLock_SingleKey-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMutex_Baseline",
+            "modificationCount": 2,
+            "createdOn": "2020-03-14",
+            "lastUpdateOn": "2020-03-14"
+          },
+          {
+            "name": "BenchmarkKeyLock_SingleKey",
+            "modificationCount": 1,
+            "createdOn": "2020-03-14",
+            "lastUpdateOn": "2020-03-14"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/shopfront",
+        "succeded": false,
+        "duration": "0.010s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkShopfront",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "redis_test.go:34: redis-server binary is not found; is redis installed?"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkShopfront",
+            "modificationCount": 2,
+            "createdOn": "2022-03-31",
+            "lastUpdateOn": "2022-04-13"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/structtags",
+        "succeded": true,
+        "duration": "4.823s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUnpacker/user-12",
+            "runs": 1000000,
+            "nsPerOp": 1119,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpacker/good-12",
+            "runs": 600798,
+            "nsPerOp": 2341,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpacker/order-12",
+            "runs": 873108,
+            "nsPerOp": 2549,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUnpacker",
+            "modificationCount": 4,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2021-04-01"
+          },
+          {
+            "name": "BenchmarkUnpacker",
+            "modificationCount": 4,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2021-04-01"
+          },
+          {
+            "name": "BenchmarkUnpacker",
+            "modificationCount": 4,
+            "createdOn": "2020-08-18",
+            "lastUpdateOn": "2021-04-01"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/testequal",
+        "succeded": false,
+        "duration": "0.010s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRequireEqualInt64-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRequireEqualInt64",
+            "modificationCount": 2,
+            "createdOn": "2020-03-21",
+            "lastUpdateOn": "2020-03-21"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/utf8/reverse",
+        "succeded": true,
+        "duration": "0.849s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReverse-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7732,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReverse",
+            "modificationCount": 1,
+            "createdOn": "2021-02-18",
+            "lastUpdateOn": "2021-02-18"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/utf8/spacecollapse",
+        "succeded": true,
+        "duration": "0.922s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCollapse-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8262,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCollapse",
+            "modificationCount": 1,
+            "createdOn": "2021-02-18",
+            "lastUpdateOn": "2021-02-18"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/varfmt",
+        "succeded": true,
+        "duration": "6.996s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFormat/small_int-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.2941,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormat/small_string-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3497,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFormat/big-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3185,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSprintf/small-12",
+            "runs": 9583497,
+            "nsPerOp": 110.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSprintf/small_string-12",
+            "runs": 8860533,
+            "nsPerOp": 159.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSprintf/big-12",
+            "runs": 10532,
+            "nsPerOp": 208972,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFormat",
+            "modificationCount": 1,
+            "createdOn": "2020-02-21",
+            "lastUpdateOn": "2020-02-21"
+          },
+          {
+            "name": "BenchmarkFormat",
+            "modificationCount": 1,
+            "createdOn": "2020-02-21",
+            "lastUpdateOn": "2020-02-21"
+          },
+          {
+            "name": "BenchmarkFormat",
+            "modificationCount": 1,
+            "createdOn": "2020-02-21",
+            "lastUpdateOn": "2020-02-21"
+          },
+          {
+            "name": "BenchmarkSprintf",
+            "modificationCount": 2,
+            "createdOn": "2020-02-21",
+            "lastUpdateOn": "2020-02-22"
+          },
+          {
+            "name": "BenchmarkSprintf",
+            "modificationCount": 2,
+            "createdOn": "2020-02-21",
+            "lastUpdateOn": "2020-02-22"
+          },
+          {
+            "name": "BenchmarkSprintf",
+            "modificationCount": 2,
+            "createdOn": "2020-02-21",
+            "lastUpdateOn": "2020-02-22"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/lectures/04-testing/word2",
+        "succeded": true,
+        "duration": "1.790s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIsPalindrome-12",
+            "runs": 1975702,
+            "nsPerOp": 592.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": []
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/badbenchmark",
+        "succeded": true,
+        "duration": "1.171s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSum/0-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSum/1-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3556,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSum/2-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3522,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSum",
+            "modificationCount": 1,
+            "createdOn": "2020-02-22",
+            "lastUpdateOn": "2020-02-22"
+          },
+          {
+            "name": "BenchmarkSum",
+            "modificationCount": 1,
+            "createdOn": "2020-02-22",
+            "lastUpdateOn": "2020-02-22"
+          },
+          {
+            "name": "BenchmarkSum",
+            "modificationCount": 1,
+            "createdOn": "2020-02-22",
+            "lastUpdateOn": "2020-02-22"
+          }
+        ]
+      },
+      {
+        "pkg": "gitlab.com/slon/shad-go/badbenchmark",
+        "succeded": true,
+        "duration": "3.168s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSum/0-12",
+            "runs": 100,
+            "nsPerOp": 10194813,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSum/1-12",
+            "runs": 100,
+            "nsPerOp": 10575510,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSum/2-12",
+            "runs": 100,
+            "nsPerOp": 10448993,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSum",
+            "modificationCount": 1,
+            "createdOn": "2020-02-22",
+            "lastUpdateOn": "2020-02-22"
+          },
+          {
+            "name": "BenchmarkSum",
+            "modificationCount": 1,
+            "createdOn": "2020-02-22",
+            "lastUpdateOn": "2020-02-22"
+          },
+          {
+            "name": "BenchmarkSum",
+            "modificationCount": 1,
+            "createdOn": "2020-02-22",
+            "lastUpdateOn": "2020-02-22"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "slon/shad-go",
+    "name": "shad-go",
+    "private": false,
+    "html_url": "https://github.com/slon/shad-go",
+    "description": "Golang programming course",
+    "fork": false,
+    "created_at": "2023-03-08T08:47:33Z",
+    "updated_at": "2023-10-17T08:16:30Z",
+    "pushed_at": "2023-10-03T16:54:57Z",
+    "ssh_url": "git@github.com:slon/shad-go.git",
+    "stargazers_count": 208,
+    "watchers_count": 208,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 6,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 444,
+    "Lines": 21441,
+    "Blank": 3866,
+    "Code": 16241,
+    "Comment": 1334,
+    "Bytes": 445980,
+    "Complexity": 1885
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "Name": "mediocregopher/radix",
+  "Path": "./repositories/mediocregopher__radix",
+  "GoVersion": "1.13",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T16:15:05Z",
+    "benchmarkCount": 30,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 30,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/mediocregopher/radix/v3",
+        "succeded": false,
+        "duration": "8.141s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCmdActionKeys-12",
+            "runs": 2055462,
+            "nsPerOp": 673,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFlatCmdActionKeys-12",
+            "runs": 2036203,
+            "nsPerOp": 544.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWithConnKeys-12",
+            "runs": 9144952,
+            "nsPerOp": 137.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClusterDo-12",
+            "runs": 100833,
+            "nsPerOp": 14620,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCmdActionKeys",
+            "modificationCount": 1,
+            "createdOn": "2018-08-16",
+            "lastUpdateOn": "2018-08-16"
+          },
+          {
+            "name": "BenchmarkFlatCmdActionKeys",
+            "modificationCount": 1,
+            "createdOn": "2018-08-16",
+            "lastUpdateOn": "2018-08-16"
+          },
+          {
+            "name": "BenchmarkWithConnKeys",
+            "modificationCount": 2,
+            "createdOn": "2018-08-16",
+            "lastUpdateOn": "2018-08-26"
+          },
+          {
+            "name": "BenchmarkClusterDo",
+            "modificationCount": 2,
+            "createdOn": "2018-10-07",
+            "lastUpdateOn": "2018-12-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mediocregopher/radix/v3/internal/bytesutil",
+        "succeded": true,
+        "duration": "31.382s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadFloat/1-12",
+            "runs": 12894283,
+            "nsPerOp": 92.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadFloat/1.23-12",
+            "runs": 15017016,
+            "nsPerOp": 98.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadFloat/-1-12",
+            "runs": 17267236,
+            "nsPerOp": 72.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadFloat/-1.23-12",
+            "runs": 14854147,
+            "nsPerOp": 87.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadFloat/+1-12",
+            "runs": 16134574,
+            "nsPerOp": 69.97,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadFloat/+1.23-12",
+            "runs": 14102617,
+            "nsPerOp": 85.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadInt/1-12",
+            "runs": 34372330,
+            "nsPerOp": 37.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadInt/123-12",
+            "runs": 32411930,
+            "nsPerOp": 75.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadInt/-1-12",
+            "runs": 16778377,
+            "nsPerOp": 71.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadInt/-123-12",
+            "runs": 15714319,
+            "nsPerOp": 63.93,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadInt/+1-12",
+            "runs": 21740072,
+            "nsPerOp": 95.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadInt/+123-12",
+            "runs": 26123823,
+            "nsPerOp": 48.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadUint/1-12",
+            "runs": 22192952,
+            "nsPerOp": 57.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadUint/123-12",
+            "runs": 15088572,
+            "nsPerOp": 69.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadNAppend/N=0-12",
+            "runs": 435213410,
+            "nsPerOp": 2.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadNAppend/N=64-12",
+            "runs": 135945238,
+            "nsPerOp": 9.304,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadNAppend/N=512-12",
+            "runs": 6477219,
+            "nsPerOp": 180.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadNAppend/N=4096-12",
+            "runs": 1000000,
+            "nsPerOp": 1148,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadFloat",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadFloat",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadFloat",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadFloat",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadFloat",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadFloat",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadInt",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadInt",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadInt",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadInt",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadInt",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadInt",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadUint",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadUint",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadNAppend",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadNAppend",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadNAppend",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          },
+          {
+            "name": "BenchmarkReadNAppend",
+            "modificationCount": 1,
+            "createdOn": "2018-12-08",
+            "lastUpdateOn": "2018-12-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mediocregopher/radix/v3/resp/resp2",
+        "succeded": true,
+        "duration": "11.796s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIntUnmarshalRESP/-1-12",
+            "runs": 21728708,
+            "nsPerOp": 62.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP/-123-12",
+            "runs": 17589735,
+            "nsPerOp": 60.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP/1-12",
+            "runs": 17048614,
+            "nsPerOp": 58.89,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP/123-12",
+            "runs": 16567088,
+            "nsPerOp": 62.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP/+1-12",
+            "runs": 21172521,
+            "nsPerOp": 58.43,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP/+123-12",
+            "runs": 19630135,
+            "nsPerOp": 62.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAnyUnmarshalRESP/Map-12",
+            "runs": 610867,
+            "nsPerOp": 2464,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAnyUnmarshalRESP/Struct-12",
+            "runs": 678103,
+            "nsPerOp": 1765,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIntUnmarshalRESP",
+            "modificationCount": 3,
+            "createdOn": "2018-03-23",
+            "lastUpdateOn": "2019-05-03"
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP",
+            "modificationCount": 3,
+            "createdOn": "2018-03-23",
+            "lastUpdateOn": "2019-05-03"
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP",
+            "modificationCount": 3,
+            "createdOn": "2018-03-23",
+            "lastUpdateOn": "2019-05-03"
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP",
+            "modificationCount": 3,
+            "createdOn": "2018-03-23",
+            "lastUpdateOn": "2019-05-03"
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP",
+            "modificationCount": 3,
+            "createdOn": "2018-03-23",
+            "lastUpdateOn": "2019-05-03"
+          },
+          {
+            "name": "BenchmarkIntUnmarshalRESP",
+            "modificationCount": 3,
+            "createdOn": "2018-03-23",
+            "lastUpdateOn": "2019-05-03"
+          },
+          {
+            "name": "BenchmarkAnyUnmarshalRESP",
+            "modificationCount": 3,
+            "createdOn": "2019-05-03",
+            "lastUpdateOn": "2019-06-14"
+          },
+          {
+            "name": "BenchmarkAnyUnmarshalRESP",
+            "modificationCount": 3,
+            "createdOn": "2019-05-03",
+            "lastUpdateOn": "2019-06-14"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "mediocregopher/radix",
+    "name": "radix",
+    "private": false,
+    "html_url": "https://github.com/mediocregopher/radix",
+    "description": "Redis client for Go",
+    "fork": false,
+    "created_at": "2017-07-08T17:38:26Z",
+    "updated_at": "2023-10-06T18:19:38Z",
+    "pushed_at": "2023-09-06T20:34:45Z",
+    "ssh_url": "git@github.com:mediocregopher/radix.git",
+    "stargazers_count": 612,
+    "watchers_count": 612,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 141,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 5,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 47,
+    "Lines": 13989,
+    "Blank": 1919,
+    "Code": 10337,
+    "Comment": 1733,
+    "Bytes": 359560,
+    "Complexity": 1927
+  }
+}

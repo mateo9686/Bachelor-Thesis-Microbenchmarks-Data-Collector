@@ -1,0 +1,1738 @@
+{
+  "Name": "ShiftLeftSecurity/traceleft",
+  "Path": "./repositories/ShiftLeftSecurity__traceleft",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T19:11:22Z",
+    "benchmarkCount": 124,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 123,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/hashicorp/golang-lru",
+        "succeded": true,
+        "duration": "38.217s",
+        "benchmarks": [
+          {
+            "name": "Benchmark2Q_Rand-12",
+            "runs": 83930,
+            "nsPerOp": 30475,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark2Q_Freq-12",
+            "runs": 932283,
+            "nsPerOp": 5062,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkARC_Rand-12",
+            "runs": 1000000,
+            "nsPerOp": 2162,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkARC_Freq-12",
+            "runs": 1000000,
+            "nsPerOp": 1962,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLRU_Rand-12",
+            "runs": 1259436,
+            "nsPerOp": 2784,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLRU_Freq-12",
+            "runs": 2168155,
+            "nsPerOp": 1649,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark2Q_Rand",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "Benchmark2Q_Freq",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkARC_Rand",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkARC_Freq",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkLRU_Rand",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkLRU_Freq",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mitchellh/mapstructure",
+        "succeded": false,
+        "duration": "6.130s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Decode-12",
+            "runs": 124941,
+            "nsPerOp": 15615,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_DecodeViaJSON-12",
+            "runs": 209215,
+            "nsPerOp": 6892,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_DecodeBasic-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Decode",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "Benchmark_DecodeViaJSON",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "Benchmark_DecodeBasic",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          }
+        ]
+      },
+      {
+        "pkg": "google.golang.org/grpc",
+        "succeded": true,
+        "duration": "103.728s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncode1B-12",
+            "runs": 1000000,
+            "nsPerOp": 1276,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncode1KiB-12",
+            "runs": 1000000,
+            "nsPerOp": 11298,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncode8KiB-12",
+            "runs": 64948,
+            "nsPerOp": 116987,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncode64KiB-12",
+            "runs": 10000,
+            "nsPerOp": 390948,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncode512KiB-12",
+            "runs": 4382,
+            "nsPerOp": 5083191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncode1MiB-12",
+            "runs": 277,
+            "nsPerOp": 9182050,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGZIPCompressor1B-12",
+            "runs": 44109,
+            "nsPerOp": 31525,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGZIPCompressor1KiB-12",
+            "runs": 36543,
+            "nsPerOp": 43319,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGZIPCompressor8KiB-12",
+            "runs": 10834,
+            "nsPerOp": 115887,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGZIPCompressor64KiB-12",
+            "runs": 2269,
+            "nsPerOp": 538288,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGZIPCompressor512KiB-12",
+            "runs": 166,
+            "nsPerOp": 6184741,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGZIPCompressor1MiB-12",
+            "runs": 106,
+            "nsPerOp": 10576480,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncode1B",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkEncode1KiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkEncode8KiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkEncode64KiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkEncode512KiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkEncode1MiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkGZIPCompressor1B",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkGZIPCompressor1KiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkGZIPCompressor8KiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkGZIPCompressor64KiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkGZIPCompressor512KiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkGZIPCompressor1MiB",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          }
+        ]
+      },
+      {
+        "pkg": "google.golang.org/grpc/benchmark",
+        "succeded": false,
+        "duration": "660.348s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_1-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 877,
+            "nsPerOp": 5574451,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_1-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 5364,
+            "nsPerOp": 1178211,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_1-reqSize_1B-respSize_1048576B-Compressor_false-12",
+            "runs": 69,
+            "nsPerOp": 163678955,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_1-reqSize_1B-respSize_1048576B-Compressor_false-12",
+            "runs": 4,
+            "nsPerOp": 432832267,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_1-reqSize_1048576B-respSize_1B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 225912056,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_1-reqSize_1048576B-respSize_1B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 17783356,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_1-reqSize_1048576B-respSize_1048576B-Compressor_false-12",
+            "runs": 15,
+            "nsPerOp": 173626215,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_1-reqSize_1048576B-respSize_1048576B-Compressor_false-12",
+            "runs": 1,
+            "nsPerOp": 2075178863,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_8-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 2550,
+            "nsPerOp": 599046,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_8-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 8528,
+            "nsPerOp": 140016,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_8-reqSize_1B-respSize_1048576B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 36199701,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_8-reqSize_1B-respSize_1048576B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 46380341,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_8-reqSize_1048576B-respSize_1B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 82170041,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_8-reqSize_1048576B-respSize_1B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 27641484,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_8-reqSize_1048576B-respSize_1048576B-Compressor_false-12",
+            "runs": 92,
+            "nsPerOp": 407432539,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_8-reqSize_1048576B-respSize_1048576B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 430564520,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_64-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 6123,
+            "nsPerOp": 312508,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_64-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 40130,
+            "nsPerOp": 71573,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_64-reqSize_1B-respSize_1048576B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 95130783,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_64-reqSize_1B-respSize_1048576B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 429071605,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_64-reqSize_1048576B-respSize_1B-Compressor_false-12",
+            "runs": 31,
+            "nsPerOp": 130716690,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_64-reqSize_1048576B-respSize_1B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 83962027,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_64-reqSize_1048576B-respSize_1048576B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 29781777,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_64-reqSize_1048576B-respSize_1048576B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 786914203,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_512-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 7500,
+            "nsPerOp": 152994,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_512-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 217206,
+            "nsPerOp": 22510,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_512-reqSize_1B-respSize_1048576B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 48882456,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_512-reqSize_1B-respSize_1048576B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 22559429,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_512-reqSize_1048576B-respSize_1B-Compressor_false-12",
+            "runs": 100,
+            "nsPerOp": 21611920,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_512-reqSize_1048576B-respSize_1B-Compressor_false-12",
+            "runs": 368,
+            "nsPerOp": 673621732,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_512-reqSize_1048576B-respSize_1048576B-Compressor_false-12",
+            "runs": 18,
+            "nsPerOp": 243263397,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_0-MTU_0-maxConcurrentCalls_512-reqSize_1048576B-respSize_1048576B-Compressor_false-12",
+            "runs": 88,
+            "nsPerOp": 108128834,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Unary-Trace-traceMode_true-latency_0s-kbps_10240-MTU_0-maxConcurrentCalls_1-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 1549,
+            "nsPerOp": 1447357,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClient/Stream-Trace-traceMode_true-latency_0s-kbps_10240-MTU_0-maxConcurrentCalls_1-reqSize_1B-respSize_1B-Compressor_false-12",
+            "runs": 3798,
+            "nsPerOp": 1002486,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkClient",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          }
+        ]
+      },
+      {
+        "pkg": "google.golang.org/grpc/benchmark/primitives",
+        "succeded": true,
+        "duration": "94.823s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCodeStringStringer-12",
+            "runs": 298930748,
+            "nsPerOp": 3.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodeStringMap-12",
+            "runs": 100000000,
+            "nsPerOp": 12.74,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodeStringSwitch-12",
+            "runs": 265183057,
+            "nsPerOp": 4.769,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodeStringStringerWithOverflow-12",
+            "runs": 181629493,
+            "nsPerOp": 10.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodeStringSwitchWithOverflow-12",
+            "runs": 135254192,
+            "nsPerOp": 9.712,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCancelContextErrNoErr-12",
+            "runs": 100000000,
+            "nsPerOp": 10.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCancelContextErrGotErr-12",
+            "runs": 123953151,
+            "nsPerOp": 9.793,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCancelContextChannelNoErr-12",
+            "runs": 131453978,
+            "nsPerOp": 8.527,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCancelContextChannelGotErr-12",
+            "runs": 82703739,
+            "nsPerOp": 13.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimerContextErrNoErr-12",
+            "runs": 90203582,
+            "nsPerOp": 11.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimerContextErrGotErr-12",
+            "runs": 100000000,
+            "nsPerOp": 10.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimerContextChannelNoErr-12",
+            "runs": 100000000,
+            "nsPerOp": 12.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimerContextChannelGotErr-12",
+            "runs": 63434281,
+            "nsPerOp": 18.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelectClosed-12",
+            "runs": 204690871,
+            "nsPerOp": 5.425,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelectOpen-12",
+            "runs": 252748322,
+            "nsPerOp": 5.208,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomicBool-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6679,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomicValueLoad-12",
+            "runs": 568950849,
+            "nsPerOp": 2.505,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomicValueStore-12",
+            "runs": 145227402,
+            "nsPerOp": 9.811,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutex-12",
+            "runs": 100000000,
+            "nsPerOp": 10.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutex-12",
+            "runs": 100000000,
+            "nsPerOp": 10.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRWMutexW-12",
+            "runs": 54820663,
+            "nsPerOp": 20.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutexWithDefer-12",
+            "runs": 68282907,
+            "nsPerOp": 18.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutexWithClosureDefer-12",
+            "runs": 62038699,
+            "nsPerOp": 17.22,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMutexWithoutDefer-12",
+            "runs": 121909990,
+            "nsPerOp": 10.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomicAddInt64-12",
+            "runs": 238307474,
+            "nsPerOp": 5.011,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomicTimeValueStore-12",
+            "runs": 13740853,
+            "nsPerOp": 108.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomic16BValueStore-12",
+            "runs": 30607675,
+            "nsPerOp": 51.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomic32BValueStore-12",
+            "runs": 6826708,
+            "nsPerOp": 238.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomicPointerStore-12",
+            "runs": 183778416,
+            "nsPerOp": 6.449,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomicTimePointerStore-12",
+            "runs": 207292268,
+            "nsPerOp": 6.302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreContentionWithAtomic-12",
+            "runs": 97541228,
+            "nsPerOp": 12.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreContentionWithMutex-12",
+            "runs": 46977171,
+            "nsPerOp": 27.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/CAS/100000000/100000-12",
+            "runs": 1,
+            "nsPerOp": 8807947324,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/CAS/100000000/10-12",
+            "runs": 130,
+            "nsPerOp": 8577725,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/CAS/10000/100000-12",
+            "runs": 1,
+            "nsPerOp": 3779737332,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/CAS/10000/10-12",
+            "runs": 1220522,
+            "nsPerOp": 1007,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/CAS/0/100000-12",
+            "runs": 1,
+            "nsPerOp": 3686847504,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/CAS/0/10-12",
+            "runs": 11418962,
+            "nsPerOp": 115.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/Mutex/100000000/100000-12",
+            "runs": 1,
+            "nsPerOp": 3686461487,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/Mutex/100000000/10-12",
+            "runs": 115,
+            "nsPerOp": 8796212,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/Mutex/10000/100000-12",
+            "runs": 1,
+            "nsPerOp": 2679463840,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/Mutex/10000/10-12",
+            "runs": 884049,
+            "nsPerOp": 1577,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/Mutex/0/100000-12",
+            "runs": 1,
+            "nsPerOp": 2928511830,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructStoreContention/Mutex/0/10-12",
+            "runs": 45887030,
+            "nsPerOp": 27.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInterfaceTypeAssertion-12",
+            "runs": 152651271,
+            "nsPerOp": 11.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStructTypeAssertion-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.9813,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCodeStringStringer",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkCodeStringMap",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkCodeStringSwitch",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkCodeStringStringerWithOverflow",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkCodeStringSwitchWithOverflow",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkCancelContextErrNoErr",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkCancelContextErrGotErr",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkCancelContextChannelNoErr",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkCancelContextChannelGotErr",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkTimerContextErrNoErr",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkTimerContextErrGotErr",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkTimerContextChannelNoErr",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkTimerContextChannelGotErr",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkSelectClosed",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkSelectOpen",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAtomicBool",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAtomicValueLoad",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAtomicValueStore",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkMutex",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkRWMutex",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkRWMutexW",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkMutexWithDefer",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkMutexWithClosureDefer",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkMutexWithoutDefer",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAtomicAddInt64",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAtomicTimeValueStore",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAtomic16BValueStore",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAtomic32BValueStore",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAtomicPointerStore",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAtomicTimePointerStore",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStoreContentionWithAtomic",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStoreContentionWithMutex",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructStoreContention",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkInterfaceTypeAssertion",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkStructTypeAssertion",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          }
+        ]
+      },
+      {
+        "pkg": "google.golang.org/grpc/encoding/proto",
+        "succeded": true,
+        "duration": "64.976s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:1/SetParallelism(1)-12",
+            "runs": 1000000,
+            "nsPerOp": 1069,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:1/SetParallelism(16)-12",
+            "runs": 1000000,
+            "nsPerOp": 1013,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:1/SetParallelism(256)-12",
+            "runs": 2095177,
+            "nsPerOp": 519.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:1/SetParallelism(4096)-12",
+            "runs": 1913203,
+            "nsPerOp": 821.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:1/SetParallelism(65536)-12",
+            "runs": 1,
+            "nsPerOp": 1448189372,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:16/SetParallelism(1)-12",
+            "runs": 1000000,
+            "nsPerOp": 2279,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:16/SetParallelism(16)-12",
+            "runs": 2572408,
+            "nsPerOp": 666.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:16/SetParallelism(256)-12",
+            "runs": 2671105,
+            "nsPerOp": 796.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:16/SetParallelism(4096)-12",
+            "runs": 1482706,
+            "nsPerOp": 1455,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:16/SetParallelism(65536)-12",
+            "runs": 1,
+            "nsPerOp": 2400253849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:256/SetParallelism(1)-12",
+            "runs": 1000000,
+            "nsPerOp": 6114,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:256/SetParallelism(16)-12",
+            "runs": 1306436,
+            "nsPerOp": 2120,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:256/SetParallelism(256)-12",
+            "runs": 881413,
+            "nsPerOp": 1804,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:256/SetParallelism(4096)-12",
+            "runs": 1094433,
+            "nsPerOp": 3171,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:256/SetParallelism(65536)-12",
+            "runs": 1,
+            "nsPerOp": 5056250120,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:4096/SetParallelism(1)-12",
+            "runs": 10000,
+            "nsPerOp": 169741,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:4096/SetParallelism(16)-12",
+            "runs": 34368,
+            "nsPerOp": 106936,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:4096/SetParallelism(256)-12",
+            "runs": 199189,
+            "nsPerOp": 35194,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:4096/SetParallelism(4096)-12",
+            "runs": 15386,
+            "nsPerOp": 69450,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoCodec/MinPayloadSize:4096/SetParallelism(65536)-12",
+            "runs": 1,
+            "nsPerOp": 2428509022,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkProtoCodec",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          }
+        ]
+      },
+      {
+        "pkg": "google.golang.org/grpc/metadata",
+        "succeded": true,
+        "duration": "8.926s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_AddingMetadata_ContextManipulationApproach-12",
+            "runs": 117470,
+            "nsPerOp": 30515,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendToOutgoingContext-12",
+            "runs": 131862,
+            "nsPerOp": 9593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFromOutgoingContext-12",
+            "runs": 422809,
+            "nsPerOp": 2769,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_AddingMetadata_ContextManipulationApproach",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkAppendToOutgoingContext",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          },
+          {
+            "name": "BenchmarkFromOutgoingContext",
+            "modificationCount": 1,
+            "createdOn": "2018-09-13",
+            "lastUpdateOn": "2018-09-13"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "ShiftLeftSecurity/traceleft",
+    "name": "traceleft",
+    "private": false,
+    "html_url": "https://github.com/ShiftLeftSecurity/traceleft",
+    "description": "eBPF based syscalls, files and network events tracing framework",
+    "fork": false,
+    "created_at": "2018-09-11T20:27:32Z",
+    "updated_at": "2023-09-16T04:48:06Z",
+    "pushed_at": "2020-07-24T17:19:33Z",
+    "ssh_url": "git@github.com:ShiftLeftSecurity/traceleft.git",
+    "stargazers_count": 79,
+    "watchers_count": 79,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 15,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 2,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 2657,
+    "Lines": 1495791,
+    "Blank": 94064,
+    "Code": 1260629,
+    "Comment": 141098,
+    "Bytes": 58159352,
+    "Complexity": 117386
+  }
+}

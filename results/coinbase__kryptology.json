@@ -1,0 +1,845 @@
+{
+  "Name": "coinbase/kryptology",
+  "Path": "./repositories/coinbase__kryptology",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T18:05:06Z",
+    "benchmarkCount": 54,
+    "benchmarkSuiteCount": 9,
+    "successfulBenchmarkCount": 54,
+    "successfulBenchmarkSuitesCount": 9,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/coinbase/kryptology/pkg/bulletproof",
+        "succeded": true,
+        "duration": "5.316s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIPPVerification-12",
+            "runs": 7,
+            "nsPerOp": 163030208,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIPPVerification",
+            "modificationCount": 1,
+            "createdOn": "2022-03-11",
+            "lastUpdateOn": "2022-03-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coinbase/kryptology/pkg/core",
+        "succeded": true,
+        "duration": "8.117s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_rand1024-12",
+            "runs": 375723,
+            "nsPerOp": 3366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRand1024-12",
+            "runs": 478251,
+            "nsPerOp": 3485,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_rand256-12",
+            "runs": 952486,
+            "nsPerOp": 1559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandStar256-12",
+            "runs": 776118,
+            "nsPerOp": 1673,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_rand1024",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          },
+          {
+            "name": "BenchmarkRand1024",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          },
+          {
+            "name": "Benchmark_rand256",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          },
+          {
+            "name": "BenchmarkRandStar256",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coinbase/kryptology/pkg/core/curves",
+        "succeded": true,
+        "duration": "57.913s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkK256/1000_point_add_-_btcec-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.01728,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkK256/1000_point_add_-_ct_k256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.002012,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkK256/1000_point_double_-_btcec-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0204,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkK256/1000_point_double_-_ct_k256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.001537,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkK256/1000_point_multiply_-_btcec-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1869,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkK256/1000_point_multiply_-_ct_k256-12",
+            "runs": 51,
+            "nsPerOp": 21703497,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkK256/1000_scalar_invert_-_btcec-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.004176,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkK256/1000_scalar_invert_-_ct_k256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.01492,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkK256/1000_scalar_sqrt_-_btcec-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.09175,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkK256/1000_scalar_sqrt_-_ct_k256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.01895,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_point_hash_-_p256-12",
+            "runs": 1,
+            "nsPerOp": 5374979689,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_point_hash_-_ct_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.05793,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_point_add_-_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.00649,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_point_add_-_ct_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.001553,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_point_double_-_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.005135,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_point_double_-_ct_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.001986,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_point_multiply_-_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.06531,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_point_multiply_-_ct_p256-12",
+            "runs": 8,
+            "nsPerOp": 135615901,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_scalar_invert_-_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.004427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_scalar_invert_-_ct_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.04199,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_scalar_sqrt_-_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.09564,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkP256/1000_scalar_sqrt_-_ct_p256-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.02282,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkK256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkP256",
+            "modificationCount": 1,
+            "createdOn": "2022-02-18",
+            "lastUpdateOn": "2022-02-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coinbase/kryptology/pkg/dkg/gennaro2p",
+        "succeded": true,
+        "duration": "2.137s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDkg-12",
+            "runs": 52,
+            "nsPerOp": 21469639,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDkg",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coinbase/kryptology/pkg/tecdsa/dkls/v0",
+        "succeded": true,
+        "duration": "2.912s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDKG-12",
+            "runs": 6,
+            "nsPerOp": 198765569,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSign-12",
+            "runs": 55,
+            "nsPerOp": 20179242,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDKG",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          },
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coinbase/kryptology/pkg/tecdsa/dkls/v1/dkg",
+        "succeded": true,
+        "duration": "1.929s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDkg-12",
+            "runs": 2,
+            "nsPerOp": 689435555,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDkg",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coinbase/kryptology/pkg/tecdsa/dkls/v1/sign",
+        "succeded": true,
+        "duration": "1.378s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSign-12",
+            "runs": 1,
+            "nsPerOp": 1288053045,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coinbase/kryptology/pkg/tecdsa/gg20/participant",
+        "succeded": false,
+        "duration": "660.020s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDealingProofParams-12",
+            "runs": 1,
+            "nsPerOp": 42679910984,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingShares/Secp256k1_-_2_of_2-12",
+            "runs": 415,
+            "nsPerOp": 3254627,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingShares/Secp256k1_-_2_of_3-12",
+            "runs": 421,
+            "nsPerOp": 3171563,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingShares/Secp256k1_-_3_of_5-12",
+            "runs": 384,
+            "nsPerOp": 3048701,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingShares/Secp256k1_-_4_of_7-12",
+            "runs": 380,
+            "nsPerOp": 3590148,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingShares/Secp256k1_-_5_of_9-12",
+            "runs": 334,
+            "nsPerOp": 3690546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingShares/Secp256k1_-_10_of_19-12",
+            "runs": 291,
+            "nsPerOp": 4029752,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingShares/Secp256k1_-_25_of_49-12",
+            "runs": 100,
+            "nsPerOp": 10499556,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingShares/Secp256k1_-_50_of_99-12",
+            "runs": 48,
+            "nsPerOp": 29510927,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingShares/Secp256k1_-_100_of_199-12",
+            "runs": 12,
+            "nsPerOp": 102968068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDealingPaillierKeys-12",
+            "runs": 1,
+            "nsPerOp": 71918737395,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning/Secp256k1_-_2_of_2-12",
+            "runs": 2,
+            "nsPerOp": 680932670,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning/Secp256k1_-_2_of_3-12",
+            "runs": 2,
+            "nsPerOp": 686695058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning/Secp256k1_-_3_of_5-12",
+            "runs": 1,
+            "nsPerOp": 1809659823,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning/Secp256k1_-_4_of_7-12",
+            "runs": 1,
+            "nsPerOp": 3842758970,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning/Secp256k1_-_5_of_9-12",
+            "runs": 1,
+            "nsPerOp": 6848634357,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning/Secp256k1_-_10_of_19-12",
+            "runs": 1,
+            "nsPerOp": 33967449333,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning/Secp256k1_-_25_of_49-12",
+            "runs": 1,
+            "nsPerOp": 207929289859,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDealingProofParams",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingShares",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingShares",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingShares",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingShares",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingShares",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingShares",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingShares",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingShares",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingShares",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkDealingPaillierKeys",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/coinbase/kryptology/pkg/ted25519/ted25519",
+        "succeded": true,
+        "duration": "6.749s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkKeyGeneration-12",
+            "runs": 10000,
+            "nsPerOp": 125999,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewKeyFromSeed-12",
+            "runs": 10000,
+            "nsPerOp": 126873,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning-12",
+            "runs": 11677,
+            "nsPerOp": 85868,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerification-12",
+            "runs": 13513,
+            "nsPerOp": 84218,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkKeyGeneration",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          },
+          {
+            "name": "BenchmarkNewKeyFromSeed",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 2,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2022-02-18"
+          },
+          {
+            "name": "BenchmarkVerification",
+            "modificationCount": 1,
+            "createdOn": "2021-12-02",
+            "lastUpdateOn": "2021-12-02"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "coinbase/kryptology",
+    "name": "kryptology",
+    "private": false,
+    "html_url": "https://github.com/coinbase/kryptology",
+    "fork": false,
+    "created_at": "2021-11-02T23:15:27Z",
+    "updated_at": "2023-10-23T11:10:21Z",
+    "pushed_at": "2022-09-08T15:31:24Z",
+    "ssh_url": "git@github.com:coinbase/kryptology.git",
+    "stargazers_count": 831,
+    "watchers_count": 831,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 117,
+    "language": "Go",
+    "archived": true,
+    "disabled": false,
+    "open_issues": 17,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 309,
+    "Lines": 82809,
+    "Blank": 8758,
+    "Code": 65601,
+    "Comment": 8450,
+    "Bytes": 2548186,
+    "Complexity": 8068
+  }
+}

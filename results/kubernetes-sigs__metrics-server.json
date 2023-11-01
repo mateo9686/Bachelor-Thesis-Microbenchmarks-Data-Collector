@@ -1,0 +1,526 @@
+{
+  "Name": "kubernetes-sigs/metrics-server",
+  "Path": "./repositories/kubernetes-sigs__metrics-server",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T23:56:31Z",
+    "benchmarkCount": 34,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 34,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "sigs.k8s.io/metrics-server/pkg/scraper/client/resource",
+        "succeded": true,
+        "duration": "1.244s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkKubeletClient_GetMetrics-12",
+            "runs": 1339,
+            "nsPerOp": 826355,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkKubeletClient_GetMetrics",
+            "modificationCount": 2,
+            "createdOn": "2021-10-03",
+            "lastUpdateOn": "2021-10-05"
+          }
+        ]
+      },
+      {
+        "pkg": "sigs.k8s.io/metrics-server/pkg/storage",
+        "succeded": true,
+        "duration": "132.022s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStorageWrite/Normal_1000-12",
+            "runs": 13,
+            "nsPerOp": 97964898,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Normal_100-12",
+            "runs": 100,
+            "nsPerOp": 24666700,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Normal_10-12",
+            "runs": 742,
+            "nsPerOp": 1532696,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Big_Namespace_1000-12",
+            "runs": 14,
+            "nsPerOp": 169629111,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Big_Namespace_100-12",
+            "runs": 66,
+            "nsPerOp": 32663392,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Big_Namespace_10-12",
+            "runs": 474,
+            "nsPerOp": 3574670,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Big_Deployment_1000-12",
+            "runs": 5,
+            "nsPerOp": 202464078,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Big_Deployment_100-12",
+            "runs": 33,
+            "nsPerOp": 42274626,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Big_Deployment_10-12",
+            "runs": 286,
+            "nsPerOp": 6564134,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Dense_Container_100-12",
+            "runs": 70,
+            "nsPerOp": 18024216,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageWrite/Dense_Container_10-12",
+            "runs": 858,
+            "nsPerOp": 2096329,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Normal_1000-12",
+            "runs": 7,
+            "nsPerOp": 330663913,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Normal_100-12",
+            "runs": 25,
+            "nsPerOp": 89056671,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Normal_10-12",
+            "runs": 100,
+            "nsPerOp": 10095027,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Big_Namespace_1000-12",
+            "runs": 7,
+            "nsPerOp": 169382838,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Big_Namespace_100-12",
+            "runs": 31,
+            "nsPerOp": 36190417,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Big_Namespace_10-12",
+            "runs": 301,
+            "nsPerOp": 3691286,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Big_Deployment_1000-12",
+            "runs": 7,
+            "nsPerOp": 168204592,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Big_Deployment_100-12",
+            "runs": 30,
+            "nsPerOp": 39004366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Big_Deployment_10-12",
+            "runs": 354,
+            "nsPerOp": 3721386,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Dense_Container_100-12",
+            "runs": 30,
+            "nsPerOp": 39107439,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadContainer/Dense_Container_10-12",
+            "runs": 349,
+            "nsPerOp": 3410179,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Normal_1000-12",
+            "runs": 322,
+            "nsPerOp": 3599191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Normal_100-12",
+            "runs": 3187,
+            "nsPerOp": 797245,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Normal_10-12",
+            "runs": 15396,
+            "nsPerOp": 103390,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Big_Namespace_1000-12",
+            "runs": 285,
+            "nsPerOp": 3721069,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Big_Namespace_100-12",
+            "runs": 3578,
+            "nsPerOp": 380894,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Big_Namespace_10-12",
+            "runs": 28786,
+            "nsPerOp": 40515,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Big_Deployment_1000-12",
+            "runs": 339,
+            "nsPerOp": 3495900,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Big_Deployment_100-12",
+            "runs": 3554,
+            "nsPerOp": 386539,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Big_Deployment_10-12",
+            "runs": 28029,
+            "nsPerOp": 38552,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Dense_Container_100-12",
+            "runs": 2988,
+            "nsPerOp": 389367,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorageReadNode/Dense_Container_10-12",
+            "runs": 29821,
+            "nsPerOp": 39903,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageWrite",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadContainer",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkStorageReadNode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-30",
+            "lastUpdateOn": "2021-04-30"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "kubernetes-sigs/metrics-server",
+    "name": "metrics-server",
+    "private": false,
+    "html_url": "https://github.com/kubernetes-sigs/metrics-server",
+    "description": "Scalable and efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines.",
+    "fork": false,
+    "created_at": "2017-05-23T05:15:43Z",
+    "updated_at": "2023-10-23T14:44:18Z",
+    "pushed_at": "2023-10-23T17:17:17Z",
+    "ssh_url": "git@github.com:kubernetes-sigs/metrics-server.git",
+    "homepage": "https://kubernetes.io/docs/tasks/debug-application-cluster/resource-metrics-pipeline/",
+    "stargazers_count": 5021,
+    "watchers_count": 5021,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 1750,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 50,
+    "topics": [
+      "k8s-sig-instrumentation"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 51,
+    "Lines": 9950,
+    "Blank": 739,
+    "Code": 8336,
+    "Comment": 875,
+    "Bytes": 407372,
+    "Complexity": 666
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "Name": "orcaman/concurrent-map",
+  "Path": "./repositories/orcaman__concurrent-map",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T22:22:05Z",
+    "benchmarkCount": 29,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 29,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/orcaman/concurrent-map/v2",
+        "succeded": true,
+        "duration": "49.895s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkItems-12",
+            "runs": 308,
+            "nsPerOp": 4033980,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkItemsInteger-12",
+            "runs": 315,
+            "nsPerOp": 3622646,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkItemsInt-12",
+            "runs": 375,
+            "nsPerOp": 3554315,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalJson-12",
+            "runs": 97,
+            "nsPerOp": 13848783,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStrconv-12",
+            "runs": 23254672,
+            "nsPerOp": 54.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleInsertAbsent-12",
+            "runs": 1959230,
+            "nsPerOp": 656.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleInsertAbsentSyncMap-12",
+            "runs": 1000000,
+            "nsPerOp": 1078,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleInsertPresent-12",
+            "runs": 27219428,
+            "nsPerOp": 38.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleInsertPresentSyncMap-12",
+            "runs": 7029133,
+            "nsPerOp": 196.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferentSyncMap-12",
+            "runs": 153271,
+            "nsPerOp": 8885,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferent_1_Shard-12",
+            "runs": 489763,
+            "nsPerOp": 4419,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferent_16_Shard-12",
+            "runs": 1000000,
+            "nsPerOp": 1820,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferent_32_Shard-12",
+            "runs": 1000000,
+            "nsPerOp": 1430,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferent_256_Shard-12",
+            "runs": 708075,
+            "nsPerOp": 2709,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiInsertSame-12",
+            "runs": 462865,
+            "nsPerOp": 2796,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiInsertSameSyncMap-12",
+            "runs": 245838,
+            "nsPerOp": 6157,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSame-12",
+            "runs": 1000000,
+            "nsPerOp": 1305,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSameSyncMap-12",
+            "runs": 858835,
+            "nsPerOp": 1166,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferentSyncMap-12",
+            "runs": 80232,
+            "nsPerOp": 13405,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferent_1_Shard-12",
+            "runs": 174493,
+            "nsPerOp": 8147,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferent_16_Shard-12",
+            "runs": 325402,
+            "nsPerOp": 3326,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferent_32_Shard-12",
+            "runs": 389106,
+            "nsPerOp": 3038,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferent_256_Shard-12",
+            "runs": 828555,
+            "nsPerOp": 3163,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlockSyncMap-12",
+            "runs": 390310,
+            "nsPerOp": 3367,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlock_1_Shard-12",
+            "runs": 159789,
+            "nsPerOp": 6267,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlock_16_Shard-12",
+            "runs": 318416,
+            "nsPerOp": 3185,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlock_32_Shard-12",
+            "runs": 582682,
+            "nsPerOp": 2969,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlock_256_Shard-12",
+            "runs": 386221,
+            "nsPerOp": 2733,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeys-12",
+            "runs": 804,
+            "nsPerOp": 1483766,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkItems",
+            "modificationCount": 2,
+            "createdOn": "2016-05-06",
+            "lastUpdateOn": "2022-01-15"
+          },
+          {
+            "name": "BenchmarkItemsInteger",
+            "modificationCount": 1,
+            "createdOn": "2022-08-17",
+            "lastUpdateOn": "2022-08-17"
+          },
+          {
+            "name": "BenchmarkItemsInt",
+            "modificationCount": 1,
+            "createdOn": "2022-08-17",
+            "lastUpdateOn": "2022-08-17"
+          },
+          {
+            "name": "BenchmarkMarshalJson",
+            "modificationCount": 3,
+            "createdOn": "2016-05-06",
+            "lastUpdateOn": "2022-01-15"
+          },
+          {
+            "name": "BenchmarkStrconv",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkSingleInsertAbsent",
+            "modificationCount": 2,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-01-15"
+          },
+          {
+            "name": "BenchmarkSingleInsertAbsentSyncMap",
+            "modificationCount": 1,
+            "createdOn": "2018-09-04",
+            "lastUpdateOn": "2018-09-04"
+          },
+          {
+            "name": "BenchmarkSingleInsertPresent",
+            "modificationCount": 2,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-01-15"
+          },
+          {
+            "name": "BenchmarkSingleInsertPresentSyncMap",
+            "modificationCount": 1,
+            "createdOn": "2018-09-04",
+            "lastUpdateOn": "2018-09-04"
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferentSyncMap",
+            "modificationCount": 6,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-08-17"
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferent_1_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferent_16_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferent_32_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiInsertDifferent_256_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiInsertSame",
+            "modificationCount": 3,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-01-15"
+          },
+          {
+            "name": "BenchmarkMultiInsertSameSyncMap",
+            "modificationCount": 5,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-08-17"
+          },
+          {
+            "name": "BenchmarkMultiGetSame",
+            "modificationCount": 3,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-01-15"
+          },
+          {
+            "name": "BenchmarkMultiGetSameSyncMap",
+            "modificationCount": 5,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-08-17"
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferentSyncMap",
+            "modificationCount": 5,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-08-17"
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferent_1_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferent_16_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferent_32_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiGetSetDifferent_256_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlockSyncMap",
+            "modificationCount": 5,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-08-17"
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlock_1_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlock_16_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlock_32_Shard",
+            "modificationCount": 1,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2016-02-03"
+          },
+          {
+            "name": "BenchmarkMultiGetSetBlock_256_Shard",
+            "modificationCount": 6,
+            "createdOn": "2016-02-03",
+            "lastUpdateOn": "2022-11-08"
+          },
+          {
+            "name": "BenchmarkKeys",
+            "modificationCount": 2,
+            "createdOn": "2016-05-06",
+            "lastUpdateOn": "2022-01-15"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "orcaman/concurrent-map",
+    "name": "concurrent-map",
+    "private": false,
+    "html_url": "https://github.com/orcaman/concurrent-map",
+    "description": "a thread-safe concurrent map for go",
+    "fork": false,
+    "created_at": "2014-10-05T15:22:51Z",
+    "updated_at": "2023-10-23T11:07:51Z",
+    "pushed_at": "2023-08-24T11:03:09Z",
+    "ssh_url": "git@github.com:orcaman/concurrent-map.git",
+    "stargazers_count": 3916,
+    "watchers_count": 3916,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 566,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 30,
+    "topics": [
+      "concurrency",
+      "concurrent-programming",
+      "go",
+      "golang",
+      "map",
+      "thread-safety"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 3,
+    "Lines": 1356,
+    "Blank": 206,
+    "Code": 1046,
+    "Comment": 104,
+    "Bytes": 28885,
+    "Complexity": 251
+  }
+}

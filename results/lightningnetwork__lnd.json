@@ -1,0 +1,587 @@
+{
+  "Name": "lightningnetwork/lnd",
+  "Path": "./repositories/lightningnetwork__lnd",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T01:37:56Z",
+    "benchmarkCount": 36,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 36,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/lightningnetwork/lnd/aezeed",
+        "succeded": true,
+        "duration": "4.125s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTomnemonic-12",
+            "runs": 9,
+            "nsPerOp": 128557988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToCipherSeed-12",
+            "runs": 6,
+            "nsPerOp": 317393189,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTomnemonic",
+            "modificationCount": 1,
+            "createdOn": "2018-02-22",
+            "lastUpdateOn": "2018-02-22"
+          },
+          {
+            "name": "BenchmarkToCipherSeed",
+            "modificationCount": 1,
+            "createdOn": "2018-02-22",
+            "lastUpdateOn": "2018-02-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lightningnetwork/lnd/brontide",
+        "succeded": true,
+        "duration": "2.339s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadHeaderAndBody-12",
+            "runs": 15344,
+            "nsPerOp": 91813,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadHeaderAndBody",
+            "modificationCount": 2,
+            "createdOn": "2021-08-11",
+            "lastUpdateOn": "2022-08-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lightningnetwork/lnd/internal/musig2v040",
+        "succeded": true,
+        "duration": "34.336s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPartialSign/num_signers=10/fast_sign=true/sort=true-12",
+            "runs": 392,
+            "nsPerOp": 3678073,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialSign/num_signers=10/fast_sign=true/sort=false-12",
+            "runs": 316,
+            "nsPerOp": 3506731,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialSign/num_signers=10/fast_sign=false/sort=true-12",
+            "runs": 150,
+            "nsPerOp": 8014484,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialSign/num_signers=10/fast_sign=false/sort=false-12",
+            "runs": 187,
+            "nsPerOp": 7816298,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialSign/num_signers=100/fast_sign=true/sort=true-12",
+            "runs": 45,
+            "nsPerOp": 41594175,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialSign/num_signers=100/fast_sign=true/sort=false-12",
+            "runs": 50,
+            "nsPerOp": 27542959,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialSign/num_signers=100/fast_sign=false/sort=true-12",
+            "runs": 21,
+            "nsPerOp": 69716654,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialSign/num_signers=100/fast_sign=false/sort=false-12",
+            "runs": 18,
+            "nsPerOp": 77724930,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialVerify/sort_keys=true/num_signers=10-12",
+            "runs": 272,
+            "nsPerOp": 4664939,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialVerify/sort_keys=false/num_signers=10-12",
+            "runs": 258,
+            "nsPerOp": 6608796,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialVerify/sort_keys=true/num_signers=100-12",
+            "runs": 24,
+            "nsPerOp": 51902323,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPartialVerify/sort_keys=false/num_signers=100-12",
+            "runs": 36,
+            "nsPerOp": 40337497,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCombineSigs/num_signers=10-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000395,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCombineSigs/num_signers=100-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.000086,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateNonces/num_signers=10-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0005261,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateNonces/num_signers=100-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.007093,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateKeys/num_signers=10/sort_keys=true-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.002019,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateKeys/num_signers=10/sort_keys=false-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.00221,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateKeys/num_signers=100/sort_keys=true-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.04173,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateKeys/num_signers=100/sort_keys=false-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.02525,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPartialSign",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialSign",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialSign",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialSign",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialSign",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialSign",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialSign",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialSign",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialVerify",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialVerify",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialVerify",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkPartialVerify",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkCombineSigs",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkCombineSigs",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkAggregateNonces",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkAggregateNonces",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkAggregateKeys",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkAggregateKeys",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkAggregateKeys",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          },
+          {
+            "name": "BenchmarkAggregateKeys",
+            "modificationCount": 1,
+            "createdOn": "2023-01-27",
+            "lastUpdateOn": "2023-01-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lightningnetwork/lnd/keychain",
+        "succeded": true,
+        "duration": "1.873s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDerivePrivKey-12",
+            "runs": 2607628,
+            "nsPerOp": 442,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDerivePrivKey",
+            "modificationCount": 3,
+            "createdOn": "2021-08-13",
+            "lastUpdateOn": "2022-08-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/lightningnetwork/lnd/lnutils",
+        "succeded": true,
+        "duration": "17.187s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadMutexMap-12",
+            "runs": 48041293,
+            "nsPerOp": 32.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadRWMutexMap-12",
+            "runs": 18387858,
+            "nsPerOp": 67.71,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadSyncMap-12",
+            "runs": 63653358,
+            "nsPerOp": 21.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadLndSyncMap-12",
+            "runs": 58732189,
+            "nsPerOp": 20.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteMutexMap-12",
+            "runs": 2431635,
+            "nsPerOp": 463.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteRWMutexMap-12",
+            "runs": 2662046,
+            "nsPerOp": 443.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteSyncMap-12",
+            "runs": 1000000,
+            "nsPerOp": 1307,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteLndSyncMap-12",
+            "runs": 1000000,
+            "nsPerOp": 1390,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteMutexMap-12",
+            "runs": 35283468,
+            "nsPerOp": 34.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteRWMutexMap-12",
+            "runs": 23629056,
+            "nsPerOp": 47.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteSyncMap-12",
+            "runs": 65399275,
+            "nsPerOp": 19.27,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteLndSyncMap-12",
+            "runs": 58302708,
+            "nsPerOp": 18.51,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadMutexMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkReadRWMutexMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkReadSyncMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkReadLndSyncMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkWriteMutexMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkWriteRWMutexMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkWriteSyncMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkWriteLndSyncMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkDeleteMutexMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkDeleteRWMutexMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkDeleteSyncMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          },
+          {
+            "name": "BenchmarkDeleteLndSyncMap",
+            "modificationCount": 1,
+            "createdOn": "2023-01-19",
+            "lastUpdateOn": "2023-01-19"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "lightningnetwork/lnd",
+    "name": "lnd",
+    "private": false,
+    "html_url": "https://github.com/lightningnetwork/lnd",
+    "description": "Lightning Network Daemon ⚡️",
+    "fork": false,
+    "created_at": "2016-01-16T08:19:33Z",
+    "updated_at": "2023-10-23T14:13:41Z",
+    "pushed_at": "2023-10-23T05:03:16Z",
+    "ssh_url": "git@github.com:lightningnetwork/lnd.git",
+    "stargazers_count": 7199,
+    "watchers_count": 7199,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 1991,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 643,
+    "topics": [
+      "bitcoin",
+      "blockchain",
+      "cryptocurrency",
+      "cryptography",
+      "lightning",
+      "lightning-network",
+      "micropayments",
+      "payments",
+      "peer-to-peer",
+      "protocol"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 1386,
+    "Lines": 563174,
+    "Blank": 82481,
+    "Code": 372173,
+    "Comment": 108520,
+    "Bytes": 17533547,
+    "Complexity": 58352
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "Name": "VinGarcia/ksql",
+  "Path": "./repositories/VinGarcia__ksql",
+  "GoVersion": "1.14",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T07:40:40Z",
+    "benchmarkCount": 22,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 0,
+    "successfulBenchmarkSuitesCount": 0,
+    "goos": "n/a",
+    "goarch": "n/a",
+    "suites": [
+      {
+        "pkg": "github.com/vingarcia/ksql/benchmarks",
+        "succeded": false,
+        "duration": "0.428s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsert/ksql/sql-adapter",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:53: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkInsert/ksql/pgx-adapter",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:74: error creating kpgx client: failed to connect to `host=localhost user=postgres database=ksql`: dial error (dial tcp 127.0.0.1:5432: connect: connection refused)"
+          },
+          {
+            "name": "BenchmarkInsert/sql",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:104: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkInsert/sql/prep-stmt",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:144: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkInsert/sqlx",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:186: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkInsert/sqlx/prep-stmt",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:226: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkInsert/pgxpool",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:268: error creating pgx client: failed to connect to `host=localhost user=postgres database=ksql`: dial error (dial tcp 127.0.0.1:5432: connect: connection refused)"
+          },
+          {
+            "name": "BenchmarkInsert/gorm",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:304: error creating gorm client: failed to connect to `host=localhost user=postgres database=ksql`: dial error (dial tcp 127.0.0.1:5432: connect: connection refused)"
+          },
+          {
+            "name": "BenchmarkInsert/sqlc",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:336: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkInsert/sqlc/prep-stmt",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:362: error preparing sqlc statements: error preparing query GetUser: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkInsert/sqlboiler",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:393: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkQuery/ksql/sql-adapter",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:436: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkQuery/ksql/pgx-adapter",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:473: error creating kpgx client: failed to connect to `host=localhost user=postgres database=ksql`: dial error (dial tcp 127.0.0.1:5432: connect: connection refused)"
+          },
+          {
+            "name": "BenchmarkQuery/sql",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:519: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkQuery/sql/prep-stmt",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:587: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkQuery/sqlx",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:665: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkQuery/sqlx/prep-stmt",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:733: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkQuery/pgxpool",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:811: error creating pgx client: failed to connect to `host=localhost user=postgres database=ksql`: dial error (dial tcp 127.0.0.1:5432: connect: connection refused)"
+          },
+          {
+            "name": "BenchmarkQuery/gorm",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:872: error creating gorm client: failed to connect to `host=localhost user=postgres database=ksql`: dial error (dial tcp 127.0.0.1:5432: connect: connection refused)"
+          },
+          {
+            "name": "BenchmarkQuery/sqlc",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:920: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkQuery/sqlc/prep-stmt",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:956: error preparing sqlc statements: error preparing query GetUser: dial tcp [::1]:5432: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkQuery/sqlboiler",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmarks_test.go:997: error creating table: failed to create new users table: dial tcp [::1]:5432: connect: connection refused"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 19,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 20,
+            "createdOn": "2021-01-22",
+            "lastUpdateOn": "2022-12-21"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "VinGarcia/ksql",
+    "name": "ksql",
+    "private": false,
+    "html_url": "https://github.com/VinGarcia/ksql",
+    "description": "A Simple and Powerful Golang SQL Library",
+    "fork": false,
+    "created_at": "2020-09-12T06:08:45Z",
+    "updated_at": "2023-10-23T17:08:18Z",
+    "pushed_at": "2023-10-22T14:22:32Z",
+    "ssh_url": "git@github.com:VinGarcia/ksql.git",
+    "stargazers_count": 242,
+    "watchers_count": 242,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 20,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 81,
+    "Lines": 15709,
+    "Blank": 2407,
+    "Code": 12114,
+    "Comment": 1188,
+    "Bytes": 426483,
+    "Complexity": 1732
+  }
+}

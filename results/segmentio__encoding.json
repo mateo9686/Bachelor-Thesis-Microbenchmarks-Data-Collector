@@ -1,0 +1,4137 @@
+{
+  "Name": "segmentio/encoding",
+  "Path": "./repositories/segmentio__encoding",
+  "GoVersion": "1.14",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T18:53:03Z",
+    "benchmarkCount": 309,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 308,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/segmentio/encoding/ascii",
+        "succeded": true,
+        "duration": "148.361s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkValid/#00-12",
+            "runs": 145690262,
+            "nsPerOp": 8.682,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/a-12",
+            "runs": 100000000,
+            "nsPerOp": 10.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/ab-12",
+            "runs": 100000000,
+            "nsPerOp": 11.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/abc-12",
+            "runs": 254568784,
+            "nsPerOp": 6.949,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/abcd-12",
+            "runs": 100000000,
+            "nsPerOp": 12.32,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/hello-12",
+            "runs": 100000000,
+            "nsPerOp": 10.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/Hello_World!-12",
+            "runs": 172971246,
+            "nsPerOp": 6.328,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/Hello\"World!-12",
+            "runs": 171694389,
+            "nsPerOp": 6.958,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/Hello\\World!-12",
+            "runs": 128648312,
+            "nsPerOp": 9.339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/Hello_World!#01-12",
+            "runs": 147207062,
+            "nsPerOp": 6.988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/Hello_World!#02-12",
+            "runs": 178355403,
+            "nsPerOp": 5.958,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/Hello_World!#03-12",
+            "runs": 155858738,
+            "nsPerOp": 8.368,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/Hello\\bWorld!-12",
+            "runs": 128450935,
+            "nsPerOp": 8.239,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/Hello_World!#04-12",
+            "runs": 141110556,
+            "nsPerOp": 15.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/H~llo_World!-12",
+            "runs": 121199252,
+            "nsPerOp": 8.381,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/H~llo-12",
+            "runs": 104719336,
+            "nsPerOp": 10.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/你好-12",
+            "runs": 178464897,
+            "nsPerOp": 8.548,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/~-12",
+            "runs": 124918000,
+            "nsPerOp": 9.146,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/�-12",
+            "runs": 228348483,
+            "nsPerOp": 6.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/\\x7f-12",
+            "runs": 212643494,
+            "nsPerOp": 5.649,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/�#01-12",
+            "runs": 222905754,
+            "nsPerOp": 5.663,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/\\x1fxxx-12",
+            "runs": 100000000,
+            "nsPerOp": 11.08,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/\\x1fxxxxxxxxxxxxxxxx...-12",
+            "runs": 8174834,
+            "nsPerOp": 140.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/a_string_of_16B.-12",
+            "runs": 9932631,
+            "nsPerOp": 150.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/an_invalid_string...-12",
+            "runs": 11803387,
+            "nsPerOp": 87.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/some_kind_of_long...-12",
+            "runs": 13758076,
+            "nsPerOp": 86.55,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/some_kind_of_long...#01-12",
+            "runs": 14352357,
+            "nsPerOp": 87.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValid/12345678901234567...-12",
+            "runs": 7749784,
+            "nsPerOp": 254.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/#00-12",
+            "runs": 100000000,
+            "nsPerOp": 11.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/a-12",
+            "runs": 98225611,
+            "nsPerOp": 16.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/ab-12",
+            "runs": 161685025,
+            "nsPerOp": 6.638,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/abc-12",
+            "runs": 204165171,
+            "nsPerOp": 6.279,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/abcd-12",
+            "runs": 184275336,
+            "nsPerOp": 5.504,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/hello-12",
+            "runs": 196620058,
+            "nsPerOp": 6.111,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/Hello_World!-12",
+            "runs": 161012149,
+            "nsPerOp": 10.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/Hello\"World!-12",
+            "runs": 100000000,
+            "nsPerOp": 11.12,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/Hello\\World!-12",
+            "runs": 100000000,
+            "nsPerOp": 13.71,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/Hello_World!#01-12",
+            "runs": 100000000,
+            "nsPerOp": 11.12,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/Hello_World!#02-12",
+            "runs": 211252550,
+            "nsPerOp": 4.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/Hello_World!#03-12",
+            "runs": 183725984,
+            "nsPerOp": 5.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/Hello\\bWorld!-12",
+            "runs": 249482608,
+            "nsPerOp": 4.309,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/Hello_World!#04-12",
+            "runs": 275964232,
+            "nsPerOp": 4.339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/H~llo_World!-12",
+            "runs": 208005697,
+            "nsPerOp": 6.331,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/H~llo-12",
+            "runs": 215043783,
+            "nsPerOp": 5.982,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/你好-12",
+            "runs": 230508747,
+            "nsPerOp": 7.045,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/~-12",
+            "runs": 176138811,
+            "nsPerOp": 6.118,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/�-12",
+            "runs": 138369463,
+            "nsPerOp": 9.647,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/\\x7f-12",
+            "runs": 197789288,
+            "nsPerOp": 6.562,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/�#01-12",
+            "runs": 190409437,
+            "nsPerOp": 9.094,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/\\x1fxxx-12",
+            "runs": 243031251,
+            "nsPerOp": 4.671,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/\\x1fxxxxxxxxxxxxxxxx...-12",
+            "runs": 7549816,
+            "nsPerOp": 157.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/a_string_of_16B.-12",
+            "runs": 7315474,
+            "nsPerOp": 161.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/an_invalid_string...-12",
+            "runs": 7550785,
+            "nsPerOp": 171.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/some_kind_of_long...-12",
+            "runs": 7327280,
+            "nsPerOp": 163.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/some_kind_of_long...#01-12",
+            "runs": 6838960,
+            "nsPerOp": 168.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidPrint/12345678901234567...-12",
+            "runs": 3231212,
+            "nsPerOp": 332.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/#00-12",
+            "runs": 203049186,
+            "nsPerOp": 7.255,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/a-12",
+            "runs": 180775074,
+            "nsPerOp": 6.74,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/ab-12",
+            "runs": 217504194,
+            "nsPerOp": 5.807,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/abc-12",
+            "runs": 221402126,
+            "nsPerOp": 5.472,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/abcd-12",
+            "runs": 193144144,
+            "nsPerOp": 6.559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/hello-12",
+            "runs": 136063243,
+            "nsPerOp": 9.681,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/Hello_World!-12",
+            "runs": 95775043,
+            "nsPerOp": 13.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/Hello\"World!-12",
+            "runs": 100000000,
+            "nsPerOp": 13.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/Hello\\World!-12",
+            "runs": 100000000,
+            "nsPerOp": 13.59,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/Hello_World!#01-12",
+            "runs": 68394374,
+            "nsPerOp": 18.34,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/Hello_World!#02-12",
+            "runs": 49880025,
+            "nsPerOp": 24.04,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/Hello_World!#03-12",
+            "runs": 83721732,
+            "nsPerOp": 19.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/Hello\\bWorld!-12",
+            "runs": 63417558,
+            "nsPerOp": 16.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/Hello_World!#04-12",
+            "runs": 93759031,
+            "nsPerOp": 14.18,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/H~llo_World!-12",
+            "runs": 90606519,
+            "nsPerOp": 13.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/H~llo-12",
+            "runs": 100000000,
+            "nsPerOp": 10.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/你好-12",
+            "runs": 100000000,
+            "nsPerOp": 11.96,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/~-12",
+            "runs": 187024269,
+            "nsPerOp": 7.276,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/\\x7f-12",
+            "runs": 237441975,
+            "nsPerOp": 6.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/\\x1fxxx-12",
+            "runs": 141368610,
+            "nsPerOp": 7.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/\\x1fxxxxxxxxxxxxxxxx...-12",
+            "runs": 3575190,
+            "nsPerOp": 338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/a_string_of_16B.-12",
+            "runs": 3780039,
+            "nsPerOp": 303.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/an_invalid_string...-12",
+            "runs": 4000040,
+            "nsPerOp": 315.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/some_kind_of_long...-12",
+            "runs": 2575968,
+            "nsPerOp": 459.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualFold/12345678901234567...-12",
+            "runs": 1000000,
+            "nsPerOp": 1017,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValid",
+            "modificationCount": 2,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkValidPrint",
+            "modificationCount": 1,
+            "createdOn": "2019-12-06",
+            "lastUpdateOn": "2019-12-06"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          },
+          {
+            "name": "BenchmarkEqualFold",
+            "modificationCount": 1,
+            "createdOn": "2021-03-22",
+            "lastUpdateOn": "2021-03-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/segmentio/encoding/iso8601",
+        "succeded": true,
+        "duration": "15.881s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse-12",
+            "runs": 45770428,
+            "nsPerOp": 32.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseMilliseconds-12",
+            "runs": 24015800,
+            "nsPerOp": 46.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseMicroseconds-12",
+            "runs": 34561632,
+            "nsPerOp": 41.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseNanoseconds-12",
+            "runs": 26010103,
+            "nsPerOp": 46.99,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseInvalid-12",
+            "runs": 43913796,
+            "nsPerOp": 28.64,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidate/success-12",
+            "runs": 27804705,
+            "nsPerOp": 40.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidate/failure-12",
+            "runs": 32839369,
+            "nsPerOp": 38.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimeParse/success-12",
+            "runs": 14502993,
+            "nsPerOp": 95.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimeParse/failure-12",
+            "runs": 1927977,
+            "nsPerOp": 819,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 1,
+            "createdOn": "2021-03-26",
+            "lastUpdateOn": "2021-03-26"
+          },
+          {
+            "name": "BenchmarkParseMilliseconds",
+            "modificationCount": 1,
+            "createdOn": "2021-03-26",
+            "lastUpdateOn": "2021-03-26"
+          },
+          {
+            "name": "BenchmarkParseMicroseconds",
+            "modificationCount": 1,
+            "createdOn": "2021-03-26",
+            "lastUpdateOn": "2021-03-26"
+          },
+          {
+            "name": "BenchmarkParseNanoseconds",
+            "modificationCount": 1,
+            "createdOn": "2021-03-26",
+            "lastUpdateOn": "2021-03-26"
+          },
+          {
+            "name": "BenchmarkParseInvalid",
+            "modificationCount": 2,
+            "createdOn": "2021-03-26",
+            "lastUpdateOn": "2021-10-19"
+          },
+          {
+            "name": "BenchmarkValidate",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkValidate",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTimeParse",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTimeParse",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/segmentio/encoding/json",
+        "succeded": false,
+        "duration": "660.079s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCodeEncoder-12",
+            "runs": 1266,
+            "nsPerOp": 879599,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodeMarshal-12",
+            "runs": 747,
+            "nsPerOp": 1517276,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalBytes/32-12",
+            "runs": 2664132,
+            "nsPerOp": 465.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalBytes/256-12",
+            "runs": 2536671,
+            "nsPerOp": 479.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalBytes/4096-12",
+            "runs": 361303,
+            "nsPerOp": 3235,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodeDecoder-12",
+            "runs": 424,
+            "nsPerOp": 2416407,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnicodeDecoder-12",
+            "runs": 2926231,
+            "nsPerOp": 451.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoderStream-12",
+            "runs": 4054675,
+            "nsPerOp": 339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodeUnmarshal-12",
+            "runs": 135,
+            "nsPerOp": 8230640,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodeUnmarshalReuse-12",
+            "runs": 308,
+            "nsPerOp": 3776953,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalString-12",
+            "runs": 48816716,
+            "nsPerOp": 23.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalFloat64-12",
+            "runs": 45234441,
+            "nsPerOp": 32.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalInt64-12",
+            "runs": 58678414,
+            "nsPerOp": 23.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIssue10335-12",
+            "runs": 50173141,
+            "nsPerOp": 24.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmapped-12",
+            "runs": 12739746,
+            "nsPerOp": 96.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/MissTypes1-12",
+            "runs": 85009,
+            "nsPerOp": 15775,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/MissTypes10-12",
+            "runs": 73388,
+            "nsPerOp": 14224,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/MissTypes100-12",
+            "runs": 85224,
+            "nsPerOp": 14131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/MissTypes1000-12",
+            "runs": 85890,
+            "nsPerOp": 14086,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/MissTypes10000-12",
+            "runs": 67874,
+            "nsPerOp": 18592,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/MissTypes100000-12",
+            "runs": 22375,
+            "nsPerOp": 64117,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/MissTypes1000000-12",
+            "runs": 7066,
+            "nsPerOp": 152941,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/HitTypes1-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/HitTypes10-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1506,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/HitTypes100-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1357,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/HitTypes1000-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1322,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/HitTypes10000-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1327,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/HitTypes100000-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1747,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache/HitTypes1000000-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.1398,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNumberIsValid-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7893,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNumberIsValidRegexp-12",
+            "runs": 1592336,
+            "nsPerOp": 675.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendIntStd1-12",
+            "runs": 236147235,
+            "nsPerOp": 6.173,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendInt1-12",
+            "runs": 266105186,
+            "nsPerOp": 4.48,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendIntStdMinI64-12",
+            "runs": 30400053,
+            "nsPerOp": 40.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendIntMinI64-12",
+            "runs": 32219491,
+            "nsPerOp": 35.33,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/\u003cnil\u003e-12",
+            "runs": 193170181,
+            "nsPerOp": 5.573,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/bool-12",
+            "runs": 79285044,
+            "nsPerOp": 17.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/bool#01-12",
+            "runs": 84069106,
+            "nsPerOp": 15.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int-12",
+            "runs": 55562620,
+            "nsPerOp": 21.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int#01-12",
+            "runs": 68671353,
+            "nsPerOp": 18.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int#02-12",
+            "runs": 62078781,
+            "nsPerOp": 33.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int#03-12",
+            "runs": 38103316,
+            "nsPerOp": 33.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int#04-12",
+            "runs": 50502856,
+            "nsPerOp": 29.47,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int8-12",
+            "runs": 51851365,
+            "nsPerOp": 25.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int8#01-12",
+            "runs": 51951705,
+            "nsPerOp": 32.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int16-12",
+            "runs": 48307089,
+            "nsPerOp": 33.07,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int16#01-12",
+            "runs": 45295934,
+            "nsPerOp": 26.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int32-12",
+            "runs": 36006739,
+            "nsPerOp": 32.74,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int32#01-12",
+            "runs": 43998812,
+            "nsPerOp": 31.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int64-12",
+            "runs": 28885465,
+            "nsPerOp": 39.21,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/int64#01-12",
+            "runs": 29922145,
+            "nsPerOp": 39.97,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uint-12",
+            "runs": 66608864,
+            "nsPerOp": 18.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uint#01-12",
+            "runs": 75592402,
+            "nsPerOp": 18.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uintptr-12",
+            "runs": 66636783,
+            "nsPerOp": 18.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uintptr#01-12",
+            "runs": 60752853,
+            "nsPerOp": 22.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uint8-12",
+            "runs": 47033770,
+            "nsPerOp": 26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uint16-12",
+            "runs": 45661804,
+            "nsPerOp": 28.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uint32-12",
+            "runs": 40907946,
+            "nsPerOp": 32.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/uint64-12",
+            "runs": 28117920,
+            "nsPerOp": 41.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/float32-12",
+            "runs": 21347052,
+            "nsPerOp": 48.91,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/float32#01-12",
+            "runs": 11370506,
+            "nsPerOp": 116.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/float32#02-12",
+            "runs": 9584990,
+            "nsPerOp": 107.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/float32#03-12",
+            "runs": 13168699,
+            "nsPerOp": 93.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/float64-12",
+            "runs": 23401671,
+            "nsPerOp": 46.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/float64#01-12",
+            "runs": 10453804,
+            "nsPerOp": 107.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/float64#02-12",
+            "runs": 9143397,
+            "nsPerOp": 113.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/float64#03-12",
+            "runs": 7991935,
+            "nsPerOp": 138.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.Number-12",
+            "runs": 53246964,
+            "nsPerOp": 26.55,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.Number#01-12",
+            "runs": 33581583,
+            "nsPerOp": 37.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.Number#02-12",
+            "runs": 45916845,
+            "nsPerOp": 27.97,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.Number#03-12",
+            "runs": 42676555,
+            "nsPerOp": 42.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string-12",
+            "runs": 70089883,
+            "nsPerOp": 19.17,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#01-12",
+            "runs": 39782775,
+            "nsPerOp": 34.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#02-12",
+            "runs": 24405333,
+            "nsPerOp": 57.45,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#03-12",
+            "runs": 19554837,
+            "nsPerOp": 58.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#04-12",
+            "runs": 21830382,
+            "nsPerOp": 58.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#05-12",
+            "runs": 17502871,
+            "nsPerOp": 58.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#06-12",
+            "runs": 22633368,
+            "nsPerOp": 48.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#07-12",
+            "runs": 21915835,
+            "nsPerOp": 59.04,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#08-12",
+            "runs": 23384090,
+            "nsPerOp": 63.33,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#09-12",
+            "runs": 28757906,
+            "nsPerOp": 43.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#10-12",
+            "runs": 58390849,
+            "nsPerOp": 23.11,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#11-12",
+            "runs": 43394295,
+            "nsPerOp": 25.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#12-12",
+            "runs": 54461677,
+            "nsPerOp": 26.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#13-12",
+            "runs": 40603714,
+            "nsPerOp": 35.08,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#14-12",
+            "runs": 29727844,
+            "nsPerOp": 37.59,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#15-12",
+            "runs": 31065094,
+            "nsPerOp": 43.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#16-12",
+            "runs": 40959730,
+            "nsPerOp": 35.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#17-12",
+            "runs": 13516290,
+            "nsPerOp": 76.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#18-12",
+            "runs": 19413913,
+            "nsPerOp": 67.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#19-12",
+            "runs": 42287086,
+            "nsPerOp": 33.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#20-12",
+            "runs": 10870854,
+            "nsPerOp": 112.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/string#21-12",
+            "runs": 3518236,
+            "nsPerOp": 306.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]uint8-12",
+            "runs": 44277482,
+            "nsPerOp": 28.21,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]uint8#01-12",
+            "runs": 20030035,
+            "nsPerOp": 57.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]uint8#02-12",
+            "runs": 7317584,
+            "nsPerOp": 208.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]uint8#03-12",
+            "runs": 4427413,
+            "nsPerOp": 251.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/time.Time-12",
+            "runs": 13839172,
+            "nsPerOp": 79.83,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/time.Time#01-12",
+            "runs": 13271209,
+            "nsPerOp": 93.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/time.Time#02-12",
+            "runs": 10524937,
+            "nsPerOp": 113.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/time.Time#03-12",
+            "runs": 16578097,
+            "nsPerOp": 75.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[0]int-12",
+            "runs": 42463604,
+            "nsPerOp": 24.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[10]int-12",
+            "runs": 15812484,
+            "nsPerOp": 95.25,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]int-12",
+            "runs": 50879269,
+            "nsPerOp": 29.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]int#01-12",
+            "runs": 12740275,
+            "nsPerOp": 106.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]int#02-12",
+            "runs": 399459,
+            "nsPerOp": 2842,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]int#03-12",
+            "runs": 104412,
+            "nsPerOp": 12483,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]string-12",
+            "runs": 21268518,
+            "nsPerOp": 60.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/[]interface_{}-12",
+            "runs": 4420407,
+            "nsPerOp": 227.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]bool-12",
+            "runs": 48649035,
+            "nsPerOp": 27.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]bool#01-12",
+            "runs": 2236692,
+            "nsPerOp": 556.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]bool#02-12",
+            "runs": 32176,
+            "nsPerOp": 34218,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]string-12",
+            "runs": 43906191,
+            "nsPerOp": 28.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]string#01-12",
+            "runs": 1665104,
+            "nsPerOp": 757.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]string#02-12",
+            "runs": 23823,
+            "nsPerOp": 47506,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string][]string-12",
+            "runs": 55254907,
+            "nsPerOp": 29.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string][]string#01-12",
+            "runs": 867934,
+            "nsPerOp": 1473,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string][]string#02-12",
+            "runs": 10000,
+            "nsPerOp": 102659,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]interface_{}-12",
+            "runs": 57023268,
+            "nsPerOp": 23.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]interface_{}#01-12",
+            "runs": 2186617,
+            "nsPerOp": 559.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]interface_{}#02-12",
+            "runs": 32997,
+            "nsPerOp": 36190,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[int]bool-12",
+            "runs": 2228677,
+            "nsPerOp": 515,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[json.textValue]bool-12",
+            "runs": 946452,
+            "nsPerOp": 1146,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]*json.point-12",
+            "runs": 1791410,
+            "nsPerOp": 712.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/map[string]json.RawMessage-12",
+            "runs": 6195632,
+            "nsPerOp": 187.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{}-12",
+            "runs": 50807203,
+            "nsPerOp": 22.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_A_int_}-12",
+            "runs": 35760153,
+            "nsPerOp": 33.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_A_int;_B_int;_C_int_}-12",
+            "runs": 22152829,
+            "nsPerOp": 59.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_A_int;_T_time.Time;_S_string_}-12",
+            "runs": 7523560,
+            "nsPerOp": 140.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_X_*int_}-12",
+            "runs": 26696329,
+            "nsPerOp": 41.08,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_X_*int_}#01-12",
+            "runs": 25127635,
+            "nsPerOp": 48.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_X_**int_}-12",
+            "runs": 32477168,
+            "nsPerOp": 43.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_X_*int;_Y_*int_}-12",
+            "runs": 19956031,
+            "nsPerOp": 50.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_X_*int;_Y_*int_}#01-12",
+            "runs": 17305600,
+            "nsPerOp": 59.18,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_A_string_\"json:\\\"name\\\"\";_B_string_\"json:\\\"-\\\"\";_C_string_\"json:\\\",omitempty\\\"\";_D_map[string]interface_{}_\"json:\\\",string\\\"\";_e_string_}-12",
+            "runs": 5009168,
+            "nsPerOp": 240.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/struct_{_json.point_}-12",
+            "runs": 26291012,
+            "nsPerOp": 47.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.tree-12",
+            "runs": 5993371,
+            "nsPerOp": 207,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*string-12",
+            "runs": 34828274,
+            "nsPerOp": 31.45,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*int-12",
+            "runs": 40201842,
+            "nsPerOp": 33.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.jsonValue-12",
+            "runs": 5384536,
+            "nsPerOp": 231.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.jsonValue#01-12",
+            "runs": 5165506,
+            "nsPerOp": 237.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.textValue-12",
+            "runs": 3746491,
+            "nsPerOp": 321.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.textValue#01-12",
+            "runs": 3970398,
+            "nsPerOp": 365.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/json.RawMessage-12",
+            "runs": 7634186,
+            "nsPerOp": 159.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/*json.codeResponse2-12",
+            "runs": 278,
+            "nsPerOp": 4183444,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/\u003cnil\u003e-12",
+            "runs": 22068376,
+            "nsPerOp": 58.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/bool-12",
+            "runs": 24486096,
+            "nsPerOp": 47.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/bool#01-12",
+            "runs": 28922517,
+            "nsPerOp": 42.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int-12",
+            "runs": 24808107,
+            "nsPerOp": 50.47,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int#01-12",
+            "runs": 25951213,
+            "nsPerOp": 55.93,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int#02-12",
+            "runs": 21937504,
+            "nsPerOp": 51.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int#03-12",
+            "runs": 23784645,
+            "nsPerOp": 57.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int#04-12",
+            "runs": 22754797,
+            "nsPerOp": 58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int8-12",
+            "runs": 23470200,
+            "nsPerOp": 52.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int8#01-12",
+            "runs": 22992226,
+            "nsPerOp": 56.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int16-12",
+            "runs": 23613716,
+            "nsPerOp": 53.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int16#01-12",
+            "runs": 23451915,
+            "nsPerOp": 59.93,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int32-12",
+            "runs": 19962267,
+            "nsPerOp": 58.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int32#01-12",
+            "runs": 14144420,
+            "nsPerOp": 77.12,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int64-12",
+            "runs": 5727856,
+            "nsPerOp": 229.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/int64#01-12",
+            "runs": 5931008,
+            "nsPerOp": 208.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/uint-12",
+            "runs": 21856902,
+            "nsPerOp": 47.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/uint#01-12",
+            "runs": 24709779,
+            "nsPerOp": 52.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/uintptr-12",
+            "runs": 25703601,
+            "nsPerOp": 50.18,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/uintptr#01-12",
+            "runs": 23316620,
+            "nsPerOp": 49.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/uint8-12",
+            "runs": 23299138,
+            "nsPerOp": 52.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/uint16-12",
+            "runs": 24016740,
+            "nsPerOp": 51.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/uint32-12",
+            "runs": 22766526,
+            "nsPerOp": 55.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/uint64-12",
+            "runs": 5483856,
+            "nsPerOp": 214.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/float32-12",
+            "runs": 16104928,
+            "nsPerOp": 93.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/float32#01-12",
+            "runs": 12344850,
+            "nsPerOp": 86.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/float32#02-12",
+            "runs": 1333003,
+            "nsPerOp": 1110,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/float32#03-12",
+            "runs": 8539557,
+            "nsPerOp": 133.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/float64-12",
+            "runs": 16611966,
+            "nsPerOp": 73.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/float64#01-12",
+            "runs": 12540373,
+            "nsPerOp": 87.89,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/float64#02-12",
+            "runs": 65676,
+            "nsPerOp": 19632,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/float64#03-12",
+            "runs": 3293127,
+            "nsPerOp": 315,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/json.Number-12",
+            "runs": 26291092,
+            "nsPerOp": 49.93,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/json.Number#01-12",
+            "runs": 19908956,
+            "nsPerOp": 56.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/json.Number#02-12",
+            "runs": 23199411,
+            "nsPerOp": 60.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/json.Number#03-12",
+            "runs": 21586988,
+            "nsPerOp": 52.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string-12",
+            "runs": 20892610,
+            "nsPerOp": 56.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#01-12",
+            "runs": 21773533,
+            "nsPerOp": 55.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#02-12",
+            "runs": 5871328,
+            "nsPerOp": 204,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#03-12",
+            "runs": 5679135,
+            "nsPerOp": 230.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#04-12",
+            "runs": 5339733,
+            "nsPerOp": 195.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#05-12",
+            "runs": 5418076,
+            "nsPerOp": 218.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#06-12",
+            "runs": 6355543,
+            "nsPerOp": 227.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#07-12",
+            "runs": 2529884,
+            "nsPerOp": 442.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#08-12",
+            "runs": 2762584,
+            "nsPerOp": 406.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#09-12",
+            "runs": 8192043,
+            "nsPerOp": 144.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#10-12",
+            "runs": 6822129,
+            "nsPerOp": 158.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#11-12",
+            "runs": 7547080,
+            "nsPerOp": 176.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#12-12",
+            "runs": 7112635,
+            "nsPerOp": 175.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#13-12",
+            "runs": 6680959,
+            "nsPerOp": 178.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#14-12",
+            "runs": 6130473,
+            "nsPerOp": 196.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/string#15-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "SIGQUIT:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCodeEncoder",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkCodeMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshalBytes",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshalBytes",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshalBytes",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkCodeDecoder",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnicodeDecoder",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkDecoderStream",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkCodeUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkCodeUnmarshalReuse",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshalString",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshalFloat64",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshalInt64",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkIssue10335",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmapped",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkTypeFieldsCache",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkNumberIsValid",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkNumberIsValidRegexp",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkAppendIntStd1",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkAppendInt1",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkAppendIntStdMinI64",
+            "modificationCount": 2,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkAppendIntMinI64",
+            "modificationCount": 2,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/segmentio/encoding/proto",
+        "succeded": true,
+        "duration": "25.689s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIsZeroBytes0-12",
+            "runs": 455705505,
+            "nsPerOp": 2.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsZeroBytes4-12",
+            "runs": 378267486,
+            "nsPerOp": 2.804,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsZeroBytes7-12",
+            "runs": 349995898,
+            "nsPerOp": 3.555,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsZeroBytes64K-12",
+            "runs": 218666,
+            "nsPerOp": 6356,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeTag-12",
+            "runs": 502080138,
+            "nsPerOp": 2.474,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeMessage-12",
+            "runs": 6861235,
+            "nsPerOp": 200.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeMap-12",
+            "runs": 1221634,
+            "nsPerOp": 1065,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeSlice-12",
+            "runs": 3444124,
+            "nsPerOp": 369.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeVarintShort-12",
+            "runs": 250143682,
+            "nsPerOp": 4.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeVarintLong-12",
+            "runs": 153106586,
+            "nsPerOp": 8.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeTag-12",
+            "runs": 269664444,
+            "nsPerOp": 4.453,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeMessage-12",
+            "runs": 7562773,
+            "nsPerOp": 156,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeMap-12",
+            "runs": 7800184,
+            "nsPerOp": 142.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeSlice-12",
+            "runs": 6228414,
+            "nsPerOp": 203.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScan-12",
+            "runs": 19147582,
+            "nsPerOp": 64.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRewrite-12",
+            "runs": 21610230,
+            "nsPerOp": 64.08,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIsZeroBytes0",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkIsZeroBytes4",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkIsZeroBytes7",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkIsZeroBytes64K",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkDecodeTag",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkDecodeMessage",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkDecodeMap",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkDecodeSlice",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkEncodeVarintShort",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkEncodeVarintLong",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkEncodeTag",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkEncodeMessage",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkEncodeMap",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkEncodeSlice",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkScan",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          },
+          {
+            "name": "BenchmarkRewrite",
+            "modificationCount": 1,
+            "createdOn": "2020-10-05",
+            "lastUpdateOn": "2020-10-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/segmentio/encoding/thrift",
+        "succeded": true,
+        "duration": "11.286s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMarshal/binary(default)-12",
+            "runs": 2223703,
+            "nsPerOp": 562.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/binary(non-strict)-12",
+            "runs": 2056279,
+            "nsPerOp": 562.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal/compact-12",
+            "runs": 2271678,
+            "nsPerOp": 505.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/binary(default)-12",
+            "runs": 1330762,
+            "nsPerOp": 838.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/binary(non-strict)-12",
+            "runs": 1419854,
+            "nsPerOp": 857.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal/compact-12",
+            "runs": 1903416,
+            "nsPerOp": 710.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 1,
+            "createdOn": "2019-12-03",
+            "lastUpdateOn": "2019-12-03"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "segmentio/encoding",
+    "name": "encoding",
+    "private": false,
+    "html_url": "https://github.com/segmentio/encoding",
+    "description": "Go package containing implementations of efficient encoding, decoding, and validation APIs.",
+    "fork": false,
+    "created_at": "2019-12-03T19:14:28Z",
+    "updated_at": "2023-10-22T00:21:50Z",
+    "pushed_at": "2023-04-07T11:57:03Z",
+    "ssh_url": "git@github.com:segmentio/encoding.git",
+    "stargazers_count": 929,
+    "watchers_count": 929,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 53,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 13,
+    "topics": [
+      "ascii",
+      "decoding",
+      "encoding",
+      "go",
+      "golang",
+      "hacktoberfest",
+      "iso8601",
+      "json",
+      "performance",
+      "protobuf",
+      "validation"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 88,
+    "Lines": 23024,
+    "Blank": 2906,
+    "Code": 19001,
+    "Comment": 1117,
+    "Bytes": 527559,
+    "Complexity": 3277
+  }
+}

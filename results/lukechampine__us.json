@@ -1,0 +1,1110 @@
+{
+  "Name": "lukechampine/us",
+  "Path": "./repositories/lukechampine__us",
+  "GoVersion": "1.16",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T07:44:06Z",
+    "benchmarkCount": 74,
+    "benchmarkSuiteCount": 9,
+    "successfulBenchmarkCount": 74,
+    "successfulBenchmarkSuitesCount": 9,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "lukechampine.com/us/ed25519hash",
+        "succeded": true,
+        "duration": "18.844s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkVerifyBatch/1-12",
+            "runs": 11458,
+            "nsPerOp": 103648,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyBatch/8-12",
+            "runs": 23962,
+            "nsPerOp": 46916,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyBatch/64-12",
+            "runs": 29733,
+            "nsPerOp": 41965,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyBatch/1024-12",
+            "runs": 27228,
+            "nsPerOp": 45732,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifySingleKeyBatch/1-12",
+            "runs": 11137,
+            "nsPerOp": 112974,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifySingleKeyBatch/8-12",
+            "runs": 43083,
+            "nsPerOp": 26900,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifySingleKeyBatch/64-12",
+            "runs": 62888,
+            "nsPerOp": 20232,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifySingleKeyBatch/1024-12",
+            "runs": 56983,
+            "nsPerOp": 21945,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashSigning-12",
+            "runs": 43954,
+            "nsPerOp": 33181,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashVerification-12",
+            "runs": 10000,
+            "nsPerOp": 114003,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkVerifyBatch",
+            "modificationCount": 1,
+            "createdOn": "2020-12-19",
+            "lastUpdateOn": "2020-12-19"
+          },
+          {
+            "name": "BenchmarkVerifyBatch",
+            "modificationCount": 1,
+            "createdOn": "2020-12-19",
+            "lastUpdateOn": "2020-12-19"
+          },
+          {
+            "name": "BenchmarkVerifyBatch",
+            "modificationCount": 1,
+            "createdOn": "2020-12-19",
+            "lastUpdateOn": "2020-12-19"
+          },
+          {
+            "name": "BenchmarkVerifyBatch",
+            "modificationCount": 1,
+            "createdOn": "2020-12-19",
+            "lastUpdateOn": "2020-12-19"
+          },
+          {
+            "name": "BenchmarkVerifySingleKeyBatch",
+            "modificationCount": 1,
+            "createdOn": "2020-12-19",
+            "lastUpdateOn": "2020-12-19"
+          },
+          {
+            "name": "BenchmarkVerifySingleKeyBatch",
+            "modificationCount": 1,
+            "createdOn": "2020-12-19",
+            "lastUpdateOn": "2020-12-19"
+          },
+          {
+            "name": "BenchmarkVerifySingleKeyBatch",
+            "modificationCount": 1,
+            "createdOn": "2020-12-19",
+            "lastUpdateOn": "2020-12-19"
+          },
+          {
+            "name": "BenchmarkVerifySingleKeyBatch",
+            "modificationCount": 1,
+            "createdOn": "2020-12-19",
+            "lastUpdateOn": "2020-12-19"
+          },
+          {
+            "name": "BenchmarkHashSigning",
+            "modificationCount": 2,
+            "createdOn": "2018-11-23",
+            "lastUpdateOn": "2020-04-20"
+          },
+          {
+            "name": "BenchmarkHashVerification",
+            "modificationCount": 2,
+            "createdOn": "2018-11-23",
+            "lastUpdateOn": "2020-04-20"
+          }
+        ]
+      },
+      {
+        "pkg": "lukechampine.com/us/merkle",
+        "succeded": true,
+        "duration": "22.961s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSectorRoot-12",
+            "runs": 93,
+            "nsPerOp": 12815717,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetaRoot1TB-12",
+            "runs": 38,
+            "nsPerOp": 30105557,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildProof/single-12",
+            "runs": 91,
+            "nsPerOp": 12578287,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildProof/half-12",
+            "runs": 176,
+            "nsPerOp": 6654363,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildProof/mid-12",
+            "runs": 98,
+            "nsPerOp": 13054855,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildProof/full-12",
+            "runs": 2292994,
+            "nsPerOp": 500.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildProofPrecalc/single-12",
+            "runs": 1456,
+            "nsPerOp": 816645,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildProofPrecalc/sixteenth-12",
+            "runs": 5881204,
+            "nsPerOp": 215.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyProof/single-12",
+            "runs": 295981,
+            "nsPerOp": 4156,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyProof/half-12",
+            "runs": 183,
+            "nsPerOp": 6253254,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyProof/mid-12",
+            "runs": 287583,
+            "nsPerOp": 4211,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyProof/full-12",
+            "runs": 99,
+            "nsPerOp": 13427078,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildDiffProof-12",
+            "runs": 305502,
+            "nsPerOp": 3313,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyDiffProof-12",
+            "runs": 48,
+            "nsPerOp": 27072546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifyPrecomputedDiffProof-12",
+            "runs": 236557,
+            "nsPerOp": 8101,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderRoot-12",
+            "runs": 72,
+            "nsPerOp": 16662248,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSectorRoot",
+            "modificationCount": 4,
+            "createdOn": "2018-06-05",
+            "lastUpdateOn": "2020-03-02"
+          },
+          {
+            "name": "BenchmarkMetaRoot1TB",
+            "modificationCount": 5,
+            "createdOn": "2018-06-05",
+            "lastUpdateOn": "2020-03-02"
+          },
+          {
+            "name": "BenchmarkBuildProof",
+            "modificationCount": 5,
+            "createdOn": "2018-06-16",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkBuildProof",
+            "modificationCount": 5,
+            "createdOn": "2018-06-16",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkBuildProof",
+            "modificationCount": 5,
+            "createdOn": "2018-06-16",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkBuildProof",
+            "modificationCount": 5,
+            "createdOn": "2018-06-16",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkBuildProofPrecalc",
+            "modificationCount": 8,
+            "createdOn": "2018-06-18",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkBuildProofPrecalc",
+            "modificationCount": 8,
+            "createdOn": "2018-06-18",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkVerifyProof",
+            "modificationCount": 8,
+            "createdOn": "2018-06-16",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkVerifyProof",
+            "modificationCount": 8,
+            "createdOn": "2018-06-16",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkVerifyProof",
+            "modificationCount": 8,
+            "createdOn": "2018-06-16",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkVerifyProof",
+            "modificationCount": 8,
+            "createdOn": "2018-06-16",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkBuildDiffProof",
+            "modificationCount": 3,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2020-09-04"
+          },
+          {
+            "name": "BenchmarkVerifyDiffProof",
+            "modificationCount": 4,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2020-09-04"
+          },
+          {
+            "name": "BenchmarkVerifyPrecomputedDiffProof",
+            "modificationCount": 4,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2020-09-04"
+          },
+          {
+            "name": "BenchmarkReaderRoot",
+            "modificationCount": 2,
+            "createdOn": "2020-02-09",
+            "lastUpdateOn": "2020-03-02"
+          }
+        ]
+      },
+      {
+        "pkg": "lukechampine.com/us/merkle/blake2b",
+        "succeded": true,
+        "duration": "6.028s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBLAKE2b/SumLeaves-12",
+            "runs": 2895513,
+            "nsPerOp": 527.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBLAKE2b/SumNodes-12",
+            "runs": 2096389,
+            "nsPerOp": 769.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBLAKE2b/hashBlocksGeneric-12",
+            "runs": 1000000,
+            "nsPerOp": 1771,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBLAKE2b",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkBLAKE2b",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkBLAKE2b",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          }
+        ]
+      },
+      {
+        "pkg": "lukechampine.com/us/renter",
+        "succeded": true,
+        "duration": "26.457s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIdealDownload-12",
+            "runs": 8,
+            "nsPerOp": 164802011,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncryption-12",
+            "runs": 307,
+            "nsPerOp": 3442993,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteMetaFile-12",
+            "runs": 2,
+            "nsPerOp": 634249886,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReedSolomon/encode-10-of-40-12",
+            "runs": 236,
+            "nsPerOp": 5092216,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReedSolomon/encode-20-of-10-12",
+            "runs": 369,
+            "nsPerOp": 3201757,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReedSolomon/encode-30-of-10-12",
+            "runs": 301,
+            "nsPerOp": 7767246,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReedSolomon/encode-10-of-10-12",
+            "runs": 1261,
+            "nsPerOp": 835857,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReedSolomon/recover-1-of-10-of-40-12",
+            "runs": 1129,
+            "nsPerOp": 1048480,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReedSolomon/recover-10-of-10-of-40-12",
+            "runs": 607,
+            "nsPerOp": 1931254,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReedSolomon/recover-0-of-10-of-10-12",
+            "runs": 2977,
+            "nsPerOp": 377273,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReedSolomon/reconstruct-1-of-10-of-40-12",
+            "runs": 978,
+            "nsPerOp": 1138477,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReedSolomon/reconstruct-10-of-10-of-40-12",
+            "runs": 558,
+            "nsPerOp": 2008959,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIdealUpload-12",
+            "runs": 5,
+            "nsPerOp": 207264122,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIdealDownload",
+            "modificationCount": 8,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-12-28"
+          },
+          {
+            "name": "BenchmarkEncryption",
+            "modificationCount": 7,
+            "createdOn": "2018-06-24",
+            "lastUpdateOn": "2019-12-13"
+          },
+          {
+            "name": "BenchmarkWriteMetaFile",
+            "modificationCount": 3,
+            "createdOn": "2019-12-13",
+            "lastUpdateOn": "2020-09-04"
+          },
+          {
+            "name": "BenchmarkReedSolomon",
+            "modificationCount": 5,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkReedSolomon",
+            "modificationCount": 5,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkReedSolomon",
+            "modificationCount": 5,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkReedSolomon",
+            "modificationCount": 5,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkReedSolomon",
+            "modificationCount": 5,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkReedSolomon",
+            "modificationCount": 5,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkReedSolomon",
+            "modificationCount": 5,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkReedSolomon",
+            "modificationCount": 5,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkReedSolomon",
+            "modificationCount": 5,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkIdealUpload",
+            "modificationCount": 6,
+            "createdOn": "2018-10-18",
+            "lastUpdateOn": "2019-11-30"
+          }
+        ]
+      },
+      {
+        "pkg": "lukechampine.com/us/renter/proto",
+        "succeded": true,
+        "duration": "5.549s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTaxAdjustedPayout-12",
+            "runs": 1559548,
+            "nsPerOp": 759.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite-12",
+            "runs": 44,
+            "nsPerOp": 44745709,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead-12",
+            "runs": 22,
+            "nsPerOp": 59399757,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTaxAdjustedPayout",
+            "modificationCount": 3,
+            "createdOn": "2018-09-05",
+            "lastUpdateOn": "2019-07-06"
+          },
+          {
+            "name": "BenchmarkWrite",
+            "modificationCount": 3,
+            "createdOn": "2019-12-13",
+            "lastUpdateOn": "2020-09-04"
+          },
+          {
+            "name": "BenchmarkRead",
+            "modificationCount": 2,
+            "createdOn": "2020-02-09",
+            "lastUpdateOn": "2020-03-02"
+          }
+        ]
+      },
+      {
+        "pkg": "lukechampine.com/us/renter/renterutil",
+        "succeded": true,
+        "duration": "6.840s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFileSystemWrite-12",
+            "runs": 5,
+            "nsPerOp": 226355568,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileSystemRead-12",
+            "runs": 49,
+            "nsPerOp": 29205903,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileSystemReadAtP-12",
+            "runs": 42,
+            "nsPerOp": 24498859,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFileSystemWrite",
+            "modificationCount": 1,
+            "createdOn": "2019-11-30",
+            "lastUpdateOn": "2019-11-30"
+          },
+          {
+            "name": "BenchmarkFileSystemRead",
+            "modificationCount": 2,
+            "createdOn": "2019-11-30",
+            "lastUpdateOn": "2019-12-28"
+          },
+          {
+            "name": "BenchmarkFileSystemReadAtP",
+            "modificationCount": 1,
+            "createdOn": "2019-12-28",
+            "lastUpdateOn": "2019-12-28"
+          }
+        ]
+      },
+      {
+        "pkg": "lukechampine.com/us/renterhost",
+        "succeded": true,
+        "duration": "6.254s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncodeTransaction/MarshalBuffer-12",
+            "runs": 765318,
+            "nsPerOp": 1496,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeTransaction/MarshalSia-12",
+            "runs": 232177,
+            "nsPerOp": 4977,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteMessage-12",
+            "runs": 382964,
+            "nsPerOp": 2809,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadMessage/ID-12",
+            "runs": 409940,
+            "nsPerOp": 3030,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadMessage/ReadResponse-12",
+            "runs": 295,
+            "nsPerOp": 3529146,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncodeTransaction",
+            "modificationCount": 1,
+            "createdOn": "2019-03-13",
+            "lastUpdateOn": "2019-03-13"
+          },
+          {
+            "name": "BenchmarkEncodeTransaction",
+            "modificationCount": 1,
+            "createdOn": "2019-03-13",
+            "lastUpdateOn": "2019-03-13"
+          },
+          {
+            "name": "BenchmarkWriteMessage",
+            "modificationCount": 1,
+            "createdOn": "2019-03-13",
+            "lastUpdateOn": "2019-03-13"
+          },
+          {
+            "name": "BenchmarkReadMessage",
+            "modificationCount": 3,
+            "createdOn": "2019-03-13",
+            "lastUpdateOn": "2020-09-04"
+          },
+          {
+            "name": "BenchmarkReadMessage",
+            "modificationCount": 3,
+            "createdOn": "2019-03-13",
+            "lastUpdateOn": "2020-09-04"
+          }
+        ]
+      },
+      {
+        "pkg": "lukechampine.com/us/renterhost/mux",
+        "succeded": true,
+        "duration": "28.803s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMux/1-12",
+            "runs": 26484,
+            "nsPerOp": 49440,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMux/2-12",
+            "runs": 12464,
+            "nsPerOp": 104369,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMux/10-12",
+            "runs": 2617,
+            "nsPerOp": 525141,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMux/100-12",
+            "runs": 255,
+            "nsPerOp": 5210163,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMux/500-12",
+            "runs": 30,
+            "nsPerOp": 44535024,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMux/1000-12",
+            "runs": 14,
+            "nsPerOp": 74447814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConn-12",
+            "runs": 36884,
+            "nsPerOp": 36635,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSiaMux/1-12",
+            "runs": 5871,
+            "nsPerOp": 280367,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSiaMux/2-12",
+            "runs": 2431,
+            "nsPerOp": 586421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSiaMux/10-12",
+            "runs": 494,
+            "nsPerOp": 2688072,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSiaMux/100-12",
+            "runs": 61,
+            "nsPerOp": 19878888,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSiaMux/500-12",
+            "runs": 13,
+            "nsPerOp": 84659111,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSiaMux/1000-12",
+            "runs": 6,
+            "nsPerOp": 179917649,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRHP2-12",
+            "runs": 27594,
+            "nsPerOp": 50519,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-29"
+          },
+          {
+            "name": "BenchmarkMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-29"
+          },
+          {
+            "name": "BenchmarkMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-29"
+          },
+          {
+            "name": "BenchmarkMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-29"
+          },
+          {
+            "name": "BenchmarkMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-29"
+          },
+          {
+            "name": "BenchmarkMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-29"
+          },
+          {
+            "name": "BenchmarkConn",
+            "modificationCount": 1,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-23"
+          },
+          {
+            "name": "BenchmarkSiaMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-26"
+          },
+          {
+            "name": "BenchmarkSiaMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-26"
+          },
+          {
+            "name": "BenchmarkSiaMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-26"
+          },
+          {
+            "name": "BenchmarkSiaMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-26"
+          },
+          {
+            "name": "BenchmarkSiaMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-26"
+          },
+          {
+            "name": "BenchmarkSiaMux",
+            "modificationCount": 4,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-26"
+          },
+          {
+            "name": "BenchmarkRHP2",
+            "modificationCount": 1,
+            "createdOn": "2020-10-23",
+            "lastUpdateOn": "2020-10-23"
+          }
+        ]
+      },
+      {
+        "pkg": "lukechampine.com/us/wallet",
+        "succeded": true,
+        "duration": "11.722s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBIP39/encode-12",
+            "runs": 2585550,
+            "nsPerOp": 410.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBIP39/decode-12",
+            "runs": 1000000,
+            "nsPerOp": 1113,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSumOutputs-12",
+            "runs": 47566,
+            "nsPerOp": 27427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeedPublicKey-12",
+            "runs": 40184,
+            "nsPerOp": 32483,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSeedPhrase-12",
+            "runs": 3011952,
+            "nsPerOp": 397.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewSeed-12",
+            "runs": 4600428,
+            "nsPerOp": 438,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStandardAddress-12",
+            "runs": 1666776,
+            "nsPerOp": 701.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBIP39",
+            "modificationCount": 2,
+            "createdOn": "2019-07-23",
+            "lastUpdateOn": "2020-09-04"
+          },
+          {
+            "name": "BenchmarkBIP39",
+            "modificationCount": 2,
+            "createdOn": "2019-07-23",
+            "lastUpdateOn": "2020-09-04"
+          },
+          {
+            "name": "BenchmarkSumOutputs",
+            "modificationCount": 2,
+            "createdOn": "2018-11-23",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkSeedPublicKey",
+            "modificationCount": 1,
+            "createdOn": "2018-11-23",
+            "lastUpdateOn": "2018-11-23"
+          },
+          {
+            "name": "BenchmarkSeedPhrase",
+            "modificationCount": 1,
+            "createdOn": "2018-11-23",
+            "lastUpdateOn": "2018-11-23"
+          },
+          {
+            "name": "BenchmarkNewSeed",
+            "modificationCount": 1,
+            "createdOn": "2018-11-23",
+            "lastUpdateOn": "2018-11-23"
+          },
+          {
+            "name": "BenchmarkStandardAddress",
+            "modificationCount": 1,
+            "createdOn": "2018-11-23",
+            "lastUpdateOn": "2018-11-23"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "lukechampine/us",
+    "name": "us",
+    "private": false,
+    "html_url": "https://github.com/lukechampine/us",
+    "description": "An alternative interface to Sia",
+    "fork": false,
+    "created_at": "2018-10-18T16:46:54Z",
+    "updated_at": "2023-07-29T03:24:04Z",
+    "pushed_at": "2023-03-07T02:26:58Z",
+    "ssh_url": "git@github.com:lukechampine/us.git",
+    "stargazers_count": 53,
+    "watchers_count": 53,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 6,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 10,
+    "topics": [
+      "blockchain",
+      "hacktoberfest",
+      "sia"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 76,
+    "Lines": 21830,
+    "Blank": 2028,
+    "Code": 17523,
+    "Comment": 2279,
+    "Bytes": 1083219,
+    "Complexity": 4522
+  }
+}

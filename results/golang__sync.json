@@ -1,0 +1,961 @@
+{
+  "Name": "golang/sync",
+  "Path": "./repositories/golang__sync",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T17:58:43Z",
+    "benchmarkCount": 67,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 67,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "golang.org/x/sync/errgroup",
+        "succeded": true,
+        "duration": "1.989s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGo-12",
+            "runs": 1663626,
+            "nsPerOp": 749.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGo",
+            "modificationCount": 1,
+            "createdOn": "2022-05-07",
+            "lastUpdateOn": "2022-05-07"
+          }
+        ]
+      },
+      {
+        "pkg": "golang.org/x/sync/semaphore",
+        "succeded": true,
+        "duration": "66.652s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewSeq/Weighted-1-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3748,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewSeq/semChan-1-12",
+            "runs": 19335699,
+            "nsPerOp": 67.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewSeq/Weighted-128-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3624,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewSeq/semChan-128-12",
+            "runs": 20121661,
+            "nsPerOp": 71.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-1-1-1-12",
+            "runs": 45117327,
+            "nsPerOp": 25.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-1-1-1-12",
+            "runs": 49568337,
+            "nsPerOp": 23.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-1-1-1-12",
+            "runs": 27635731,
+            "nsPerOp": 45.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-1-1-1-12",
+            "runs": 20811429,
+            "nsPerOp": 57.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-2-1-1-12",
+            "runs": 45561068,
+            "nsPerOp": 32.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-2-1-1-12",
+            "runs": 49161994,
+            "nsPerOp": 27.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-2-1-1-12",
+            "runs": 22259307,
+            "nsPerOp": 61.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-2-1-1-12",
+            "runs": 16471485,
+            "nsPerOp": 73.47,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-16-1-1-12",
+            "runs": 34452000,
+            "nsPerOp": 29.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-16-1-1-12",
+            "runs": 50626064,
+            "nsPerOp": 26.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-16-1-1-12",
+            "runs": 23039575,
+            "nsPerOp": 52.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-16-1-1-12",
+            "runs": 23921544,
+            "nsPerOp": 52.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-128-1-1-12",
+            "runs": 23682394,
+            "nsPerOp": 43.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-128-1-1-12",
+            "runs": 52501933,
+            "nsPerOp": 30.28,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-128-1-1-12",
+            "runs": 16679019,
+            "nsPerOp": 62.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-128-1-1-12",
+            "runs": 17432307,
+            "nsPerOp": 62.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-2-2-1-12",
+            "runs": 36029166,
+            "nsPerOp": 30.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-2-2-1-12",
+            "runs": 35593430,
+            "nsPerOp": 37.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-2-2-1-12",
+            "runs": 9291146,
+            "nsPerOp": 111.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-2-2-1-12",
+            "runs": 11927980,
+            "nsPerOp": 86.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-16-2-8-12",
+            "runs": 6369774,
+            "nsPerOp": 197.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-16-2-8-12",
+            "runs": 6463092,
+            "nsPerOp": 177.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-16-2-8-12",
+            "runs": 2142942,
+            "nsPerOp": 536.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-16-2-8-12",
+            "runs": 1891588,
+            "nsPerOp": 649.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-128-2-64-12",
+            "runs": 673970,
+            "nsPerOp": 1523,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-128-2-64-12",
+            "runs": 803029,
+            "nsPerOp": 1451,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-128-2-64-12",
+            "runs": 249126,
+            "nsPerOp": 5546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-128-2-64-12",
+            "runs": 177896,
+            "nsPerOp": 6958,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-2-1-2-12",
+            "runs": 17393442,
+            "nsPerOp": 70.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-2-1-2-12",
+            "runs": 18157212,
+            "nsPerOp": 61.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-2-1-2-12",
+            "runs": 11388870,
+            "nsPerOp": 110.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-2-1-2-12",
+            "runs": 10450957,
+            "nsPerOp": 148.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-16-8-2-12",
+            "runs": 17218266,
+            "nsPerOp": 65.04,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-16-8-2-12",
+            "runs": 23554477,
+            "nsPerOp": 57.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-16-8-2-12",
+            "runs": 1464044,
+            "nsPerOp": 948.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-16-8-2-12",
+            "runs": 1260237,
+            "nsPerOp": 1016,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-128-64-2-12",
+            "runs": 20331961,
+            "nsPerOp": 61.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-128-64-2-12",
+            "runs": 22429974,
+            "nsPerOp": 64.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-128-64-2-12",
+            "runs": 206574,
+            "nsPerOp": 5857,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-128-64-2-12",
+            "runs": 306372,
+            "nsPerOp": 4804,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkNewSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkNewSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkNewSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 2,
+            "createdOn": "2017-03-17",
+            "lastUpdateOn": "2017-11-01"
+          }
+        ]
+      },
+      {
+        "pkg": "golang.org/x/sync/syncmap",
+        "succeded": true,
+        "duration": "47.818s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoadMostlyHits/*syncmap_test.DeepCopyMap-12",
+            "runs": 84109854,
+            "nsPerOp": 16.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*syncmap_test.RWMutexMap-12",
+            "runs": 27804411,
+            "nsPerOp": 37.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*sync.Map-12",
+            "runs": 100000000,
+            "nsPerOp": 10.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*syncmap_test.DeepCopyMap-12",
+            "runs": 120202099,
+            "nsPerOp": 9.963,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*syncmap_test.RWMutexMap-12",
+            "runs": 33046290,
+            "nsPerOp": 37.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*sync.Map-12",
+            "runs": 33129380,
+            "nsPerOp": 40.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced/*syncmap_test.RWMutexMap-12",
+            "runs": 1805559,
+            "nsPerOp": 1053,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced/*sync.Map-12",
+            "runs": 1360666,
+            "nsPerOp": 1196,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*syncmap_test.RWMutexMap-12",
+            "runs": 1000000,
+            "nsPerOp": 2252,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*sync.Map-12",
+            "runs": 1000000,
+            "nsPerOp": 2410,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*syncmap_test.DeepCopyMap-12",
+            "runs": 152526656,
+            "nsPerOp": 8.672,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*syncmap_test.RWMutexMap-12",
+            "runs": 18871180,
+            "nsPerOp": 74.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*sync.Map-12",
+            "runs": 161327559,
+            "nsPerOp": 6.718,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*syncmap_test.DeepCopyMap-12",
+            "runs": 470578,
+            "nsPerOp": 2508,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*syncmap_test.RWMutexMap-12",
+            "runs": 23498,
+            "nsPerOp": 51250,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*sync.Map-12",
+            "runs": 463840,
+            "nsPerOp": 2920,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*syncmap_test.DeepCopyMap-12",
+            "runs": 1000000,
+            "nsPerOp": 1460,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*syncmap_test.RWMutexMap-12",
+            "runs": 17161533,
+            "nsPerOp": 69.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*sync.Map-12",
+            "runs": 3440413,
+            "nsPerOp": 501.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*syncmap_test.DeepCopyMap-12",
+            "runs": 1576084,
+            "nsPerOp": 912.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*syncmap_test.RWMutexMap-12",
+            "runs": 6699165,
+            "nsPerOp": 228.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*sync.Map-12",
+            "runs": 3424290,
+            "nsPerOp": 456.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2016-12-02"
+          },
+          {
+            "name": "BenchmarkRange",
+            "modificationCount": 2,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2017-02-16"
+          },
+          {
+            "name": "BenchmarkRange",
+            "modificationCount": 2,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2017-02-16"
+          },
+          {
+            "name": "BenchmarkRange",
+            "modificationCount": 2,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2017-02-16"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 2,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2017-02-16"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 2,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2017-02-16"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 2,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2017-02-16"
+          },
+          {
+            "name": "BenchmarkAdversarialDelete",
+            "modificationCount": 3,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2017-05-09"
+          },
+          {
+            "name": "BenchmarkAdversarialDelete",
+            "modificationCount": 3,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2017-05-09"
+          },
+          {
+            "name": "BenchmarkAdversarialDelete",
+            "modificationCount": 3,
+            "createdOn": "2016-12-02",
+            "lastUpdateOn": "2017-05-09"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "golang/sync",
+    "name": "sync",
+    "private": false,
+    "html_url": "https://github.com/golang/sync",
+    "description": "[mirror] concurrency primitives",
+    "fork": false,
+    "created_at": "2015-10-30T03:22:24Z",
+    "updated_at": "2023-10-18T10:27:51Z",
+    "pushed_at": "2023-10-11T14:04:23Z",
+    "ssh_url": "git@github.com:golang/sync.git",
+    "stargazers_count": 816,
+    "watchers_count": 816,
+    "has_issues": false,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 153,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 9,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "url": "https://api.github.com/licenses/bsd-3-clause",
+      "spdx_id": "BSD-3-Clause",
+      "node_id": "MDc6TGljZW5zZTU=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 16,
+    "Lines": 2320,
+    "Blank": 313,
+    "Code": 1744,
+    "Comment": 263,
+    "Bytes": 53722,
+    "Complexity": 338
+  }
+}

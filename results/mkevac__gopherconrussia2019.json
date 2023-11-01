@@ -1,0 +1,254 @@
+{
+  "Name": "mkevac/gopherconrussia2019",
+  "Path": "./repositories/mkevac__gopherconrussia2019",
+  "GoVersion": "1.12",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T07:03:26Z",
+    "benchmarkCount": 12,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 12,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/mkevac/gopherconrussia2019/biggerbatch",
+        "succeded": true,
+        "duration": "9.264s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBiggerBatchBitmapIndex-12",
+            "runs": 237550,
+            "nsPerOp": 5957,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBiggerBatchBitmapIndexInlined-12",
+            "runs": 456270,
+            "nsPerOp": 4681,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBiggerBatchBitmapIndexNoBoundsCheck-12",
+            "runs": 385608,
+            "nsPerOp": 5021,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBiggerBatchBitmapIndexInlinedAndNoBoundsCheck-12",
+            "runs": 263182,
+            "nsPerOp": 3967,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBiggerBatchBitmapIndex",
+            "modificationCount": 1,
+            "createdOn": "2019-03-30",
+            "lastUpdateOn": "2019-03-30"
+          },
+          {
+            "name": "BenchmarkBiggerBatchBitmapIndexInlined",
+            "modificationCount": 1,
+            "createdOn": "2019-03-30",
+            "lastUpdateOn": "2019-03-30"
+          },
+          {
+            "name": "BenchmarkBiggerBatchBitmapIndexNoBoundsCheck",
+            "modificationCount": 1,
+            "createdOn": "2019-03-30",
+            "lastUpdateOn": "2019-03-30"
+          },
+          {
+            "name": "BenchmarkBiggerBatchBitmapIndexInlinedAndNoBoundsCheck",
+            "modificationCount": 1,
+            "createdOn": "2019-03-30",
+            "lastUpdateOn": "2019-03-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mkevac/gopherconrussia2019/roar",
+        "succeded": true,
+        "duration": "4.338s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRoaringBitmapIndex-12",
+            "runs": 19700,
+            "nsPerOp": 57433,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCRoaringBitmapIndex-12",
+            "runs": 43706,
+            "nsPerOp": 37966,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRoaringBitmapIndex",
+            "modificationCount": 1,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2019-03-17"
+          },
+          {
+            "name": "BenchmarkCRoaringBitmapIndex",
+            "modificationCount": 1,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2019-03-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mkevac/gopherconrussia2019/simple",
+        "succeded": true,
+        "duration": "5.025s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSimpleBitmapIndex-12",
+            "runs": 10000,
+            "nsPerOp": 101006,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimpleBitmapIndexInlined-12",
+            "runs": 28244,
+            "nsPerOp": 61777,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimpleBitmapIndexInlinedAndNoBoundsCheck-12",
+            "runs": 58393,
+            "nsPerOp": 21611,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSimpleBitmapIndex",
+            "modificationCount": 3,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2019-03-17"
+          },
+          {
+            "name": "BenchmarkSimpleBitmapIndexInlined",
+            "modificationCount": 3,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2019-03-17"
+          },
+          {
+            "name": "BenchmarkSimpleBitmapIndexInlinedAndNoBoundsCheck",
+            "modificationCount": 1,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2019-03-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mkevac/gopherconrussia2019/simplesimd",
+        "succeded": true,
+        "duration": "9.509s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSimpleSIMDBitmapIndex-12",
+            "runs": 1090088,
+            "nsPerOp": 1056,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimpleScalarFasterBitmapIndex-12",
+            "runs": 324408,
+            "nsPerOp": 7800,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimpleScalarBitmapIndex-12",
+            "runs": 284079,
+            "nsPerOp": 13042,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSimpleSIMDBitmapIndex",
+            "modificationCount": 3,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2019-03-17"
+          },
+          {
+            "name": "BenchmarkSimpleScalarFasterBitmapIndex",
+            "modificationCount": 1,
+            "createdOn": "2019-03-30",
+            "lastUpdateOn": "2019-03-30"
+          },
+          {
+            "name": "BenchmarkSimpleScalarBitmapIndex",
+            "modificationCount": 1,
+            "createdOn": "2019-03-17",
+            "lastUpdateOn": "2019-03-17"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "mkevac/gopherconrussia2019",
+    "name": "gopherconrussia2019",
+    "private": false,
+    "html_url": "https://github.com/mkevac/gopherconrussia2019",
+    "description": "Accompanying code for Gophercon Russia 2019 talk about Bitmap Indexes",
+    "fork": false,
+    "created_at": "2019-03-17T13:35:12Z",
+    "updated_at": "2023-10-10T17:04:50Z",
+    "pushed_at": "2019-04-11T17:30:05Z",
+    "ssh_url": "git@github.com:mkevac/gopherconrussia2019.git",
+    "homepage": "https://www.gophercon-russia.ru/",
+    "stargazers_count": 51,
+    "watchers_count": 51,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 13,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "",
+      "name": "",
+      "node_id": "",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 11,
+    "Lines": 1080,
+    "Blank": 245,
+    "Code": 823,
+    "Comment": 12,
+    "Bytes": 22771,
+    "Complexity": 124
+  }
+}

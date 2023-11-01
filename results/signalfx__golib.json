@@ -1,0 +1,953 @@
+{
+  "Name": "signalfx/golib",
+  "Path": "./repositories/signalfx__golib",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T12:56:52Z",
+    "benchmarkCount": 65,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 64,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/signalfx/golib/v3/eventcounter",
+        "succeded": true,
+        "duration": "6.689s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEventCounterSameBucket-12",
+            "runs": 129420453,
+            "nsPerOp": 9.701,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventCounterDifferentBuckets-12",
+            "runs": 55132348,
+            "nsPerOp": 23.48,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventCounterDifferentBuckets20-12",
+            "runs": 10639028,
+            "nsPerOp": 115.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEventCounterSameBucket",
+            "modificationCount": 1,
+            "createdOn": "2015-12-22",
+            "lastUpdateOn": "2015-12-22"
+          },
+          {
+            "name": "BenchmarkEventCounterDifferentBuckets",
+            "modificationCount": 1,
+            "createdOn": "2015-12-22",
+            "lastUpdateOn": "2015-12-22"
+          },
+          {
+            "name": "BenchmarkEventCounterDifferentBuckets20",
+            "modificationCount": 1,
+            "createdOn": "2015-12-22",
+            "lastUpdateOn": "2015-12-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/signalfx/golib/v3/log",
+        "succeded": true,
+        "duration": "62.734s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCounter-12",
+            "runs": 216472034,
+            "nsPerOp": 6.593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCounterContext-12",
+            "runs": 9162256,
+            "nsPerOp": 143.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueBindingTimestamp-12",
+            "runs": 69112636,
+            "nsPerOp": 17.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueBindingTimestampCount-12",
+            "runs": 371454,
+            "nsPerOp": 3256,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueBindingCaller-12",
+            "runs": 54464754,
+            "nsPerOp": 20.22,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueBindingCallerCount-12",
+            "runs": 435373,
+            "nsPerOp": 3705,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilterDisabled-12",
+            "runs": 90037351,
+            "nsPerOp": 14.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilterEnabled-12",
+            "runs": 877899,
+            "nsPerOp": 1310,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilterEnabled30-12",
+            "runs": 82639,
+            "nsPerOp": 16068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewHierarchy-12",
+            "runs": 15980830,
+            "nsPerOp": 75.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewHierarchyContext-12",
+            "runs": 5783892,
+            "nsPerOp": 195.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewHierarchyDisabled-12",
+            "runs": 20593555,
+            "nsPerOp": 49.32,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmptyLogDisabled-12",
+            "runs": 61114782,
+            "nsPerOp": 18.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmptyLogNotDisabled-12",
+            "runs": 66720052,
+            "nsPerOp": 21.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContextWithLog-12",
+            "runs": 2783072,
+            "nsPerOp": 516,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContextWithOnly-12",
+            "runs": 15163818,
+            "nsPerOp": 96.43,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContextWithWithLog-12",
+            "runs": 1659015,
+            "nsPerOp": 682.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDiscard-12",
+            "runs": 23027641,
+            "nsPerOp": 60.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOneWith-12",
+            "runs": 53129866,
+            "nsPerOp": 23.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTwoWith-12",
+            "runs": 62040590,
+            "nsPerOp": 23.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTenWith-12",
+            "runs": 59355648,
+            "nsPerOp": 20.34,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIfErr-12",
+            "runs": 913346,
+            "nsPerOp": 1368,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIfErrAndReturn-12",
+            "runs": 873130,
+            "nsPerOp": 1324,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIfErrWithKeys-12",
+            "runs": 573327,
+            "nsPerOp": 2061,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIfErrWithKeysAndReturn-12",
+            "runs": 583802,
+            "nsPerOp": 1897,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRateLimitedWithContext-12",
+            "runs": 33982,
+            "nsPerOp": 36746,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRateLimitedWithOutContext-12",
+            "runs": 1000000,
+            "nsPerOp": 1089,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSONLoggerSimple-12",
+            "runs": 13410741,
+            "nsPerOp": 127.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSONLoggerContextual-12",
+            "runs": 9514666,
+            "nsPerOp": 150.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDiscard-12",
+            "runs": 18271860,
+            "nsPerOp": 65.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOneWith-12",
+            "runs": 55053397,
+            "nsPerOp": 22.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTwoWith-12",
+            "runs": 52653462,
+            "nsPerOp": 19.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTenWith-12",
+            "runs": 68467360,
+            "nsPerOp": 16.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogfmtLoggerSimple-12",
+            "runs": 11940955,
+            "nsPerOp": 111.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogfmtLoggerContextual-12",
+            "runs": 9832791,
+            "nsPerOp": 141.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueBindingTimestamp-12",
+            "runs": 78343438,
+            "nsPerOp": 12.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueBindingCaller-12",
+            "runs": 100000000,
+            "nsPerOp": 14.55,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCounter",
+            "modificationCount": 1,
+            "createdOn": "2015-12-22",
+            "lastUpdateOn": "2015-12-22"
+          },
+          {
+            "name": "BenchmarkCounterContext",
+            "modificationCount": 1,
+            "createdOn": "2015-12-22",
+            "lastUpdateOn": "2015-12-22"
+          },
+          {
+            "name": "BenchmarkValueBindingTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkValueBindingTimestampCount",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkValueBindingCaller",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkValueBindingCallerCount",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkFilterDisabled",
+            "modificationCount": 2,
+            "createdOn": "2016-02-26",
+            "lastUpdateOn": "2016-02-29"
+          },
+          {
+            "name": "BenchmarkFilterEnabled",
+            "modificationCount": 2,
+            "createdOn": "2016-02-26",
+            "lastUpdateOn": "2016-02-29"
+          },
+          {
+            "name": "BenchmarkFilterEnabled30",
+            "modificationCount": 2,
+            "createdOn": "2016-02-26",
+            "lastUpdateOn": "2016-02-29"
+          },
+          {
+            "name": "BenchmarkNewHierarchy",
+            "modificationCount": 1,
+            "createdOn": "2015-12-22",
+            "lastUpdateOn": "2015-12-22"
+          },
+          {
+            "name": "BenchmarkNewHierarchyContext",
+            "modificationCount": 1,
+            "createdOn": "2015-12-22",
+            "lastUpdateOn": "2015-12-22"
+          },
+          {
+            "name": "BenchmarkNewHierarchyDisabled",
+            "modificationCount": 1,
+            "createdOn": "2015-12-22",
+            "lastUpdateOn": "2015-12-22"
+          },
+          {
+            "name": "BenchmarkEmptyLogDisabled",
+            "modificationCount": 2,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-21"
+          },
+          {
+            "name": "BenchmarkEmptyLogNotDisabled",
+            "modificationCount": 2,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-21"
+          },
+          {
+            "name": "BenchmarkContextWithLog",
+            "modificationCount": 3,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-23"
+          },
+          {
+            "name": "BenchmarkContextWithOnly",
+            "modificationCount": 2,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-21"
+          },
+          {
+            "name": "BenchmarkContextWithWithLog",
+            "modificationCount": 3,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2020-12-13"
+          },
+          {
+            "name": "BenchmarkDiscard",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkOneWith",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkTwoWith",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkTenWith",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkIfErr",
+            "modificationCount": 1,
+            "createdOn": "2019-03-18",
+            "lastUpdateOn": "2019-03-18"
+          },
+          {
+            "name": "BenchmarkIfErrAndReturn",
+            "modificationCount": 1,
+            "createdOn": "2019-03-18",
+            "lastUpdateOn": "2019-03-18"
+          },
+          {
+            "name": "BenchmarkIfErrWithKeys",
+            "modificationCount": 1,
+            "createdOn": "2019-03-18",
+            "lastUpdateOn": "2019-03-18"
+          },
+          {
+            "name": "BenchmarkIfErrWithKeysAndReturn",
+            "modificationCount": 1,
+            "createdOn": "2019-03-18",
+            "lastUpdateOn": "2019-03-18"
+          },
+          {
+            "name": "BenchmarkRateLimitedWithContext",
+            "modificationCount": 2,
+            "createdOn": "2019-11-12",
+            "lastUpdateOn": "2019-11-12"
+          },
+          {
+            "name": "BenchmarkRateLimitedWithOutContext",
+            "modificationCount": 2,
+            "createdOn": "2019-11-12",
+            "lastUpdateOn": "2019-11-12"
+          },
+          {
+            "name": "BenchmarkJSONLoggerSimple",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkJSONLoggerContextual",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkDiscard",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkOneWith",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkTwoWith",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkTenWith",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkLogfmtLoggerSimple",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkLogfmtLoggerContextual",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkValueBindingTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkValueBindingCaller",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/signalfx/golib/v3/sfxclient",
+        "succeded": true,
+        "duration": "53.256s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCumulativeBucket-12",
+            "runs": 55839212,
+            "nsPerOp": 20.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCumulativeBucket10-12",
+            "runs": 24075384,
+            "nsPerOp": 52.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCumulativeBucket100-12",
+            "runs": 23901296,
+            "nsPerOp": 52.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPSinkCreate-12",
+            "runs": 6791559,
+            "nsPerOp": 199.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPSinkAddIndividualDatapoints-12",
+            "runs": 1,
+            "nsPerOp": 4594073047,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPSinkAddSeveralDatapoints-12",
+            "runs": 8,
+            "nsPerOp": 140355576,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPSinkAddIndividualEvents-12",
+            "runs": 1,
+            "nsPerOp": 4544592925,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPSinkAddSeveralEvents-12",
+            "runs": 8,
+            "nsPerOp": 164698881,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPSink_AddSpans-12",
+            "runs": 8701,
+            "nsPerOp": 154120,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkCreate-12",
+            "runs": 10000,
+            "nsPerOp": 302982,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkAddIndividualDatapoints-12",
+            "runs": 37909,
+            "nsPerOp": 31330,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkAddSeveralDatapoints-12",
+            "runs": 3015247,
+            "nsPerOp": 442.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkAddIndividualEvents-12",
+            "runs": 106569,
+            "nsPerOp": 9998,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkAddSeveralEvents-12",
+            "runs": 3822256,
+            "nsPerOp": 284,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkWithBufferAddIndividualDatapoints-12",
+            "runs": 138674,
+            "nsPerOp": 12075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkWithBufferAddSeveralDatapoints-12",
+            "runs": 4949011,
+            "nsPerOp": 324.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkWithBufferAddIndividualEvents-12",
+            "runs": 120991,
+            "nsPerOp": 13236,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkWithBufferAddSeveralEvents-12",
+            "runs": 3478180,
+            "nsPerOp": 314.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingBucket-12",
+            "runs": 4882513,
+            "nsPerOp": 248.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingBucket10-12",
+            "runs": 2806159,
+            "nsPerOp": 429.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingBucket100-12",
+            "runs": 2199318,
+            "nsPerOp": 501.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScheduler_ReportOnce-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.000001,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScheduler_ReportOnce_With_Debug-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000015,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCumulativeBucket",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkCumulativeBucket10",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkCumulativeBucket100",
+            "modificationCount": 2,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2016-01-27"
+          },
+          {
+            "name": "BenchmarkHTTPSinkCreate",
+            "modificationCount": 2,
+            "createdOn": "2016-01-27",
+            "lastUpdateOn": "2017-01-18"
+          },
+          {
+            "name": "BenchmarkHTTPSinkAddIndividualDatapoints",
+            "modificationCount": 4,
+            "createdOn": "2016-01-27",
+            "lastUpdateOn": "2020-12-13"
+          },
+          {
+            "name": "BenchmarkHTTPSinkAddSeveralDatapoints",
+            "modificationCount": 3,
+            "createdOn": "2016-01-27",
+            "lastUpdateOn": "2017-01-18"
+          },
+          {
+            "name": "BenchmarkHTTPSinkAddIndividualEvents",
+            "modificationCount": 2,
+            "createdOn": "2017-01-18",
+            "lastUpdateOn": "2020-12-13"
+          },
+          {
+            "name": "BenchmarkHTTPSinkAddSeveralEvents",
+            "modificationCount": 1,
+            "createdOn": "2017-01-18",
+            "lastUpdateOn": "2017-01-18"
+          },
+          {
+            "name": "BenchmarkHTTPSink_AddSpans",
+            "modificationCount": 2,
+            "createdOn": "2018-06-28",
+            "lastUpdateOn": "2018-08-24"
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkCreate",
+            "modificationCount": 4,
+            "createdOn": "2017-10-04",
+            "lastUpdateOn": "2018-08-24"
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkAddIndividualDatapoints",
+            "modificationCount": 5,
+            "createdOn": "2017-10-04",
+            "lastUpdateOn": "2020-12-13"
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkAddSeveralDatapoints",
+            "modificationCount": 4,
+            "createdOn": "2017-10-04",
+            "lastUpdateOn": "2018-08-24"
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkAddIndividualEvents",
+            "modificationCount": 5,
+            "createdOn": "2017-10-04",
+            "lastUpdateOn": "2020-12-13"
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkAddSeveralEvents",
+            "modificationCount": 4,
+            "createdOn": "2017-10-04",
+            "lastUpdateOn": "2018-08-24"
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkWithBufferAddIndividualDatapoints",
+            "modificationCount": 5,
+            "createdOn": "2017-10-04",
+            "lastUpdateOn": "2020-12-13"
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkWithBufferAddSeveralDatapoints",
+            "modificationCount": 4,
+            "createdOn": "2017-10-04",
+            "lastUpdateOn": "2018-08-24"
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkWithBufferAddIndividualEvents",
+            "modificationCount": 5,
+            "createdOn": "2017-10-04",
+            "lastUpdateOn": "2020-12-13"
+          },
+          {
+            "name": "BenchmarkAsyncMultiTokenSinkWithBufferAddSeveralEvents",
+            "modificationCount": 4,
+            "createdOn": "2017-10-04",
+            "lastUpdateOn": "2018-08-24"
+          },
+          {
+            "name": "BenchmarkRollingBucket",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkRollingBucket10",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkRollingBucket100",
+            "modificationCount": 1,
+            "createdOn": "2015-12-14",
+            "lastUpdateOn": "2015-12-14"
+          },
+          {
+            "name": "BenchmarkScheduler_ReportOnce",
+            "modificationCount": 1,
+            "createdOn": "2019-06-11",
+            "lastUpdateOn": "2019-06-11"
+          },
+          {
+            "name": "BenchmarkScheduler_ReportOnce_With_Debug",
+            "modificationCount": 1,
+            "createdOn": "2019-06-11",
+            "lastUpdateOn": "2019-06-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/signalfx/golib/v3/trace/translator",
+        "succeded": true,
+        "duration": "1.285s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSFXTagsToJaegerTags-12",
+            "runs": 1000000,
+            "nsPerOp": 1267,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSFXTagsToJaegerTags",
+            "modificationCount": 1,
+            "createdOn": "2020-06-16",
+            "lastUpdateOn": "2020-06-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/signalfx/golib/v3/web",
+        "succeded": false,
+        "duration": "0.012s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSendWithContext-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSendWithContext",
+            "modificationCount": 3,
+            "createdOn": "2015-04-17",
+            "lastUpdateOn": "2020-12-13"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "signalfx/golib",
+    "name": "golib",
+    "private": false,
+    "html_url": "https://github.com/signalfx/golib",
+    "description": "Golib contains various useful golang libraries",
+    "fork": false,
+    "created_at": "2015-04-11T02:12:37Z",
+    "updated_at": "2023-10-16T00:00:05Z",
+    "pushed_at": "2023-10-11T23:27:42Z",
+    "ssh_url": "git@github.com:signalfx/golib.git",
+    "stargazers_count": 67,
+    "watchers_count": 67,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 18,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 3,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 209,
+    "Lines": 25301,
+    "Blank": 2718,
+    "Code": 21031,
+    "Comment": 1552,
+    "Bytes": 916257,
+    "Complexity": 2593
+  }
+}

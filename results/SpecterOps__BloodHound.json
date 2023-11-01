@@ -1,0 +1,1062 @@
+{
+  "Name": "SpecterOps/BloodHound",
+  "Path": "./repositories/SpecterOps__BloodHound",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T11:14:20Z",
+    "benchmarkCount": 74,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 74,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/specterops/bloodhound/src/database/types/null",
+        "succeded": true,
+        "duration": "7.606s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIntUnmarshalJSON-12",
+            "runs": 1000000,
+            "nsPerOp": 1415,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntStringUnmarshalJSON-12",
+            "runs": 794714,
+            "nsPerOp": 2072,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNullIntUnmarshalJSON-12",
+            "runs": 70412766,
+            "nsPerOp": 18.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringUnmarshalJSON-12",
+            "runs": 1000000,
+            "nsPerOp": 1542,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNullStringUnmarshalJSON-12",
+            "runs": 100000000,
+            "nsPerOp": 10.45,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIntUnmarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkIntStringUnmarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkNullIntUnmarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkStringUnmarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkNullStringUnmarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/specterops/bloodhound/cache",
+        "succeded": true,
+        "duration": "7.330s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOUCacheEmptyLRUCache-12",
+            "runs": 7600,
+            "nsPerOp": 155969,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOUCacheFillLRUCache-12",
+            "runs": 2058,
+            "nsPerOp": 683216,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOUCache90PercentLRUCache-12",
+            "runs": 894,
+            "nsPerOp": 1343501,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOUCache100PercentLRUCache-12",
+            "runs": 963,
+            "nsPerOp": 1315077,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOUCacheEmptyLRUCache",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkOUCacheFillLRUCache",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkOUCache90PercentLRUCache",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkOUCache100PercentLRUCache",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/specterops/bloodhound/dawgs/cardinality",
+        "succeded": true,
+        "duration": "40.094s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAddUint32_ValuePool_1000-12",
+            "runs": 949,
+            "nsPerOp": 1277820,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_1000-12",
+            "runs": 2130,
+            "nsPerOp": 645366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_1000-12",
+            "runs": 2157,
+            "nsPerOp": 671271,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_1000-12",
+            "runs": 2379,
+            "nsPerOp": 713823,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_ValuePool_10000-12",
+            "runs": 4706,
+            "nsPerOp": 247713,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_10000-12",
+            "runs": 4912,
+            "nsPerOp": 257944,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_10000-12",
+            "runs": 5204,
+            "nsPerOp": 227984,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_10000-12",
+            "runs": 3903,
+            "nsPerOp": 274554,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_ValuePool_100000-12",
+            "runs": 426,
+            "nsPerOp": 2662602,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_100000-12",
+            "runs": 450,
+            "nsPerOp": 3670159,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_100000-12",
+            "runs": 362,
+            "nsPerOp": 5391918,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_100000-12",
+            "runs": 235,
+            "nsPerOp": 5544367,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_ValuePool_1000000-12",
+            "runs": 26,
+            "nsPerOp": 61832879,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_1000000-12",
+            "runs": 31,
+            "nsPerOp": 38353462,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_1000000-12",
+            "runs": 26,
+            "nsPerOp": 44123978,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_1000000-12",
+            "runs": 34,
+            "nsPerOp": 34649960,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_ValuePool_10000000-12",
+            "runs": 3,
+            "nsPerOp": 392465663,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_10000000-12",
+            "runs": 3,
+            "nsPerOp": 384257968,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_10000000-12",
+            "runs": 5,
+            "nsPerOp": 224324801,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_10000000-12",
+            "runs": 6,
+            "nsPerOp": 220067298,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAddUint32_ValuePool_1000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_1000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_1000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_1000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_ValuePool_10000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_10000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_10000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_10000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_ValuePool_100000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_100000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_100000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_100000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_ValuePool_1000000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_1000000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_1000000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_1000000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_ValuePool_10000000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_PointerPool_10000000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_ConvertAndStore_10000000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkAddUint32_NoPool_10000000",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/specterops/bloodhound/slices",
+        "succeded": true,
+        "duration": "88.072s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFoldl/lazy_10-12",
+            "runs": 63748836,
+            "nsPerOp": 17.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldl/eager_10-12",
+            "runs": 47803910,
+            "nsPerOp": 21.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldl/lazy_100-12",
+            "runs": 11870646,
+            "nsPerOp": 114.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldl/eager_100-12",
+            "runs": 4406026,
+            "nsPerOp": 255.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldl/lazy_1000-12",
+            "runs": 1102225,
+            "nsPerOp": 1189,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldl/eager_1000-12",
+            "runs": 519963,
+            "nsPerOp": 2917,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldl/lazy_10000-12",
+            "runs": 58556,
+            "nsPerOp": 22021,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldl/eager_10000-12",
+            "runs": 20720,
+            "nsPerOp": 57994,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldl/lazy_100000-12",
+            "runs": 8283,
+            "nsPerOp": 161094,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldl/eager_100000-12",
+            "runs": 9,
+            "nsPerOp": 118677204,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/lazy_10-12",
+            "runs": 72623721,
+            "nsPerOp": 18.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/eager_10-12",
+            "runs": 115184709,
+            "nsPerOp": 13.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/lazy_100-12",
+            "runs": 6317997,
+            "nsPerOp": 188.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/eager_100-12",
+            "runs": 5596020,
+            "nsPerOp": 200.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/lazy_1000-12",
+            "runs": 515266,
+            "nsPerOp": 3121,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/eager_1000-12",
+            "runs": 486487,
+            "nsPerOp": 3099,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/lazy_10000-12",
+            "runs": 25134,
+            "nsPerOp": 47332,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/eager_10000-12",
+            "runs": 21392,
+            "nsPerOp": 50878,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/lazy_100000-12",
+            "runs": 244,
+            "nsPerOp": 5895109,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFoldr/eager_100000-12",
+            "runs": 171,
+            "nsPerOp": 6569516,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverse/reverse_10-12",
+            "runs": 96017874,
+            "nsPerOp": 27.93,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverse/reverse_100-12",
+            "runs": 7780558,
+            "nsPerOp": 262.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverse/reverse_1000-12",
+            "runs": 2290288,
+            "nsPerOp": 566.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverse/reverse_10000-12",
+            "runs": 258946,
+            "nsPerOp": 5148,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverse/reverse_100000-12",
+            "runs": 40411,
+            "nsPerOp": 31330,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/head_10-12",
+            "runs": 627070,
+            "nsPerOp": 2413,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/[0]_10-12",
+            "runs": 651724,
+            "nsPerOp": 2562,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/head_100-12",
+            "runs": 473703,
+            "nsPerOp": 2164,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/[0]_100-12",
+            "runs": 606822,
+            "nsPerOp": 2047,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/head_1000-12",
+            "runs": 663741,
+            "nsPerOp": 2268,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/[0]_1000-12",
+            "runs": 672439,
+            "nsPerOp": 2400,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/head_10000-12",
+            "runs": 530385,
+            "nsPerOp": 2414,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/[0]_10000-12",
+            "runs": 562951,
+            "nsPerOp": 2887,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/head_100000-12",
+            "runs": 506784,
+            "nsPerOp": 2397,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHead/[0]_100000-12",
+            "runs": 531704,
+            "nsPerOp": 2427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/tail_10-12",
+            "runs": 555988,
+            "nsPerOp": 2334,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/[1:]_10-12",
+            "runs": 655734,
+            "nsPerOp": 2165,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/tail_100-12",
+            "runs": 654921,
+            "nsPerOp": 1901,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/[1:]_100-12",
+            "runs": 711147,
+            "nsPerOp": 1744,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/tail_1000-12",
+            "runs": 705752,
+            "nsPerOp": 2405,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/[1:]_1000-12",
+            "runs": 700952,
+            "nsPerOp": 2359,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/tail_10000-12",
+            "runs": 567836,
+            "nsPerOp": 2378,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/[1:]_10000-12",
+            "runs": 529554,
+            "nsPerOp": 2541,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/tail_100000-12",
+            "runs": 573454,
+            "nsPerOp": 2480,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTail/[1:]_100000-12",
+            "runs": 511759,
+            "nsPerOp": 2368,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldl",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkFoldr",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkReverse",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkReverse",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkReverse",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkReverse",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkReverse",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkHead",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          },
+          {
+            "name": "BenchmarkTail",
+            "modificationCount": 1,
+            "createdOn": "2023-08-03",
+            "lastUpdateOn": "2023-08-03"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "SpecterOps/BloodHound",
+    "name": "BloodHound",
+    "private": false,
+    "html_url": "https://github.com/SpecterOps/BloodHound",
+    "description": "Six Degrees of Domain Admin",
+    "fork": false,
+    "created_at": "2023-08-03T19:20:06Z",
+    "updated_at": "2023-10-23T12:51:18Z",
+    "pushed_at": "2023-10-23T18:35:15Z",
+    "ssh_url": "git@github.com:SpecterOps/BloodHound.git",
+    "homepage": "https://bloodhoundenterprise.io/",
+    "stargazers_count": 358,
+    "watchers_count": 358,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 30,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 33,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 561,
+    "Lines": 135430,
+    "Blank": 20519,
+    "Code": 101194,
+    "Comment": 13717,
+    "Bytes": 4577405,
+    "Complexity": 16017
+  }
+}

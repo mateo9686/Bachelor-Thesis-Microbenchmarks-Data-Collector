@@ -1,0 +1,508 @@
+{
+  "Name": "gofiber/storage",
+  "Path": "./repositories/gofiber__storage",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T06:25:35Z",
+    "benchmarkCount": 27,
+    "benchmarkSuiteCount": 10,
+    "successfulBenchmarkCount": 20,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/gofiber/storage/badger/v2",
+        "succeded": true,
+        "duration": "5.627s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Badger_Set-12",
+            "runs": 24464,
+            "nsPerOp": 41453,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Badger_Get-12",
+            "runs": 499472,
+            "nsPerOp": 3669,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Badger_SetAndDelete-12",
+            "runs": 19810,
+            "nsPerOp": 59257,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Badger_Set",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Badger_Get",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Badger_SetAndDelete",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gofiber/storage/bbolt/v2",
+        "succeded": true,
+        "duration": "4.773s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Bbolt_Set-12",
+            "runs": 336,
+            "nsPerOp": 3561430,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Bbolt_Get-12",
+            "runs": 361995,
+            "nsPerOp": 3683,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Bbolt_SetAndDelete-12",
+            "runs": 105,
+            "nsPerOp": 10052659,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Bbolt_Set",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Bbolt_Get",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Bbolt_SetAndDelete",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gofiber/storage/coherence",
+        "succeded": false,
+        "duration": "0.012s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Coherence_Set-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Coherence_Set",
+            "modificationCount": 4,
+            "createdOn": "2023-08-09",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gofiber/storage/couchbase/v2",
+        "succeded": false,
+        "duration": "13.015s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Couchbase_Set",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "couchbase_test.go:113:"
+          },
+          {
+            "name": "Benchmark_Couchbase_Get",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "couchbase_test.go:120:"
+          },
+          {
+            "name": "Benchmark_Couchbase_SetAndDelete",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "couchbase_test.go:144:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Couchbase_Set",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Couchbase_Get",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Couchbase_SetAndDelete",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gofiber/storage/memory/v2",
+        "succeded": true,
+        "duration": "5.378s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Memory_Set-12",
+            "runs": 26363604,
+            "nsPerOp": 59.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Memory_Get-12",
+            "runs": 100000000,
+            "nsPerOp": 11.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Memory_SetAndDelete-12",
+            "runs": 12749102,
+            "nsPerOp": 112.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Memory_Set",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Memory_Get",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Memory_SetAndDelete",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gofiber/storage/memory/v2/internal",
+        "succeded": true,
+        "duration": "1.701s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_CalculateTimestamp/fiber-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.448,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_CalculateTimestamp/default-12",
+            "runs": 437094,
+            "nsPerOp": 2630,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_CalculateTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2022-10-19",
+            "lastUpdateOn": "2022-10-19"
+          },
+          {
+            "name": "Benchmark_CalculateTimestamp",
+            "modificationCount": 1,
+            "createdOn": "2022-10-19",
+            "lastUpdateOn": "2022-10-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gofiber/storage/pebble/v2",
+        "succeded": true,
+        "duration": "7.293s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Pebble_Set-12",
+            "runs": 1203,
+            "nsPerOp": 1163380,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Pebble_Get-12",
+            "runs": 268228,
+            "nsPerOp": 5609,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Pebble_SetAndDelete-12",
+            "runs": 565,
+            "nsPerOp": 2584877,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Pebble_Set",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Pebble_Get",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Pebble_SetAndDelete",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gofiber/storage/ristretto/v2",
+        "succeded": true,
+        "duration": "6.323s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Ristretto_Set-12",
+            "runs": 2309204,
+            "nsPerOp": 486,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ristretto_Get-12",
+            "runs": 7758310,
+            "nsPerOp": 138.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Ristretto_SetAndDelete-12",
+            "runs": 1213171,
+            "nsPerOp": 1037,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Ristretto_Set",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Ristretto_Get",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_Ristretto_SetAndDelete",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gofiber/storage/s3/v2",
+        "succeded": false,
+        "duration": "18.028s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_S3_Set",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "s3_test.go:107:"
+          },
+          {
+            "name": "Benchmark_S3_Get",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "s3_test.go:112:"
+          },
+          {
+            "name": "Benchmark_S3_SetAndDelete",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "s3_test.go:134:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_S3_Set",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_S3_Get",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_S3_SetAndDelete",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/gofiber/storage/sqlite3/v2",
+        "succeded": true,
+        "duration": "5.545s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_SQLite3_Set-12",
+            "runs": 361,
+            "nsPerOp": 3730531,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_SQLite3_Get-12",
+            "runs": 37651,
+            "nsPerOp": 33653,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_SQLite3_SetAndDelete-12",
+            "runs": 133,
+            "nsPerOp": 9902379,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_SQLite3_Set",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_SQLite3_Get",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "Benchmark_SQLite3_SetAndDelete",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "gofiber/storage",
+    "name": "storage",
+    "private": false,
+    "html_url": "https://github.com/gofiber/storage",
+    "description": "📦 Premade storage drivers for 🚀 Fiber",
+    "fork": false,
+    "created_at": "2020-10-28T00:15:12Z",
+    "updated_at": "2023-10-23T17:34:45Z",
+    "pushed_at": "2023-10-23T08:07:35Z",
+    "ssh_url": "git@github.com:gofiber/storage.git",
+    "homepage": "https://docs.gofiber.io/storage/",
+    "stargazers_count": 219,
+    "watchers_count": 219,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 54,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 4,
+    "topics": [
+      "fiber",
+      "storage"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 70,
+    "Lines": 9653,
+    "Blank": 1861,
+    "Code": 6754,
+    "Comment": 1038,
+    "Bytes": 201199,
+    "Complexity": 870
+  }
+}

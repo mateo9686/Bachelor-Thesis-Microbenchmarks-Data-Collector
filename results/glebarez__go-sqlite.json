@@ -1,0 +1,1275 @@
+{
+  "Name": "glebarez/go-sqlite",
+  "Path": "./repositories/glebarez__go-sqlite",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T11:43:42Z",
+    "benchmarkCount": 92,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 38,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/glebarez/go-sqlite",
+        "succeded": false,
+        "duration": "378.875s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsertMemory/1e1-12",
+            "runs": 12525,
+            "nsPerOp": 84310,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertMemory/1e2-12",
+            "runs": 1633,
+            "nsPerOp": 749065,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertMemory/1e3-12",
+            "runs": 148,
+            "nsPerOp": 7200399,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertMemory/1e4-12",
+            "runs": 14,
+            "nsPerOp": 79522602,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertMemory/1e5-12",
+            "runs": 2,
+            "nsPerOp": 986990762,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertMemory/1e6-12",
+            "runs": 1,
+            "nsPerOp": 8024034551,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextMemory/1e1-12",
+            "runs": 117002,
+            "nsPerOp": 11547,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextMemory/1e2-12",
+            "runs": 20010,
+            "nsPerOp": 67353,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextMemory/1e3-12",
+            "runs": 1652,
+            "nsPerOp": 732767,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextMemory/1e4-12",
+            "runs": 169,
+            "nsPerOp": 7564055,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextMemory/1e5-12",
+            "runs": 13,
+            "nsPerOp": 91434723,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextMemory/1e6-12",
+            "runs": 1,
+            "nsPerOp": 1578112110,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_1_writers_0_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1000628816,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_10_writers_0_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1002327794,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_0_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1005029494,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_0_sqlite#01-12",
+            "runs": 1,
+            "nsPerOp": 1005378004,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_1_writers_1_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1001470134,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_10_writers_1_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1027954374,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_1_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1012999098,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_1_sqlite#01-12",
+            "runs": 1,
+            "nsPerOp": 1010801378,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_1_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2953: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_10_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_10_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_1_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_10_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_1_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_10_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_100_sqlite#02",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_reads_readers_100_writers_100_sqlite#03",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_0_writers_1_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_1_writers_1_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_10_writers_1_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_100_writers_1_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_100_writers_1_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_0_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_1_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_10_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_100_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_100_writers_10_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_0_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_1_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_10_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_100_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_100_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_0_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_1_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_10_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_100_writers_100_sqlite#02",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/sql_writes_readers_100_writers_100_sqlite#03",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_1_writers_0_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_10_writers_0_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_0_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_0_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_1_writers_1_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_10_writers_1_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_1_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1019462141,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_1_sqlite#01-12",
+            "runs": 1,
+            "nsPerOp": 1008362286,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_1_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2953: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_10_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2953: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_10_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2953: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_10_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_1_writers_100_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1279083849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_10_writers_100_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1268890055,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_100_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1286430323,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_100_sqlite#01-12",
+            "runs": 1,
+            "nsPerOp": 1112117311,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_1_writers_100_sqlite#01-12",
+            "runs": 1,
+            "nsPerOp": 1201103189,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_10_writers_100_sqlite#01-12",
+            "runs": 1,
+            "nsPerOp": 1127252220,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_100_sqlite#02",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2953: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_reads_readers_100_writers_100_sqlite#03",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_0_writers_1_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_1_writers_1_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1000495139,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_10_writers_1_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1003311240,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_100_writers_1_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1005233014,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_100_writers_1_sqlite#01-12",
+            "runs": 1,
+            "nsPerOp": 1004560365,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_0_writers_10_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1167844550,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_1_writers_10_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1036989140,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_10_writers_10_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1025655313,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_100_writers_10_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1071481327,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_100_writers_10_sqlite#01-12",
+            "runs": 1,
+            "nsPerOp": 1123622180,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_0_writers_100_sqlite-12",
+            "runs": 1,
+            "nsPerOp": 1144406401,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_1_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2953: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_10_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2953: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_100_writers_100_sqlite",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2953: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_100_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_0_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_1_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_10_writers_100_sqlite#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_100_writers_100_sqlite#02",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          },
+          {
+            "name": "BenchmarkConcurrent/drv_writes_readers_100_writers_100_sqlite#03",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "all_test.go:2909: PRAGMA journal_mode=WAL: database or disk is full (13)"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsertMemory",
+            "modificationCount": 3,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkInsertMemory",
+            "modificationCount": 3,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkInsertMemory",
+            "modificationCount": 3,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkInsertMemory",
+            "modificationCount": 3,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkInsertMemory",
+            "modificationCount": 3,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkInsertMemory",
+            "modificationCount": 3,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkNextMemory",
+            "modificationCount": 6,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkNextMemory",
+            "modificationCount": 6,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkNextMemory",
+            "modificationCount": 6,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkNextMemory",
+            "modificationCount": 6,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkNextMemory",
+            "modificationCount": 6,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkNextMemory",
+            "modificationCount": 6,
+            "createdOn": "2017-04-24",
+            "lastUpdateOn": "2021-01-07"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          },
+          {
+            "name": "BenchmarkConcurrent",
+            "modificationCount": 1,
+            "createdOn": "2023-01-28",
+            "lastUpdateOn": "2023-01-28"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "glebarez/go-sqlite",
+    "name": "go-sqlite",
+    "private": false,
+    "html_url": "https://github.com/glebarez/go-sqlite",
+    "description": "pure-Go SQLite driver for Go (SQLite embedded)",
+    "fork": false,
+    "created_at": "2021-12-11T12:57:28Z",
+    "updated_at": "2023-10-22T15:55:43Z",
+    "pushed_at": "2023-10-19T11:29:21Z",
+    "ssh_url": "git@github.com:glebarez/go-sqlite.git",
+    "stargazers_count": 382,
+    "watchers_count": 382,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 17,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 13,
+    "topics": [
+      "database",
+      "driver",
+      "go",
+      "golang",
+      "sqlite",
+      "sqlite3"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "url": "https://api.github.com/licenses/bsd-3-clause",
+      "spdx_id": "BSD-3-Clause",
+      "node_id": "MDc6TGljZW5zZTU=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 17,
+    "Lines": 6330,
+    "Blank": 949,
+    "Code": 4774,
+    "Comment": 607,
+    "Bytes": 151950,
+    "Complexity": 1461
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "Name": "domino14/liwords",
+  "Path": "./repositories/domino14__liwords",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T11:19:39Z",
+    "benchmarkCount": 6,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 3,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/domino14/liwords/pkg/cwgame",
+        "succeded": true,
+        "duration": "2.403s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoadDocumentJSON-12",
+            "runs": 10000,
+            "nsPerOp": 116733,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadDocumentProto-12",
+            "runs": 100208,
+            "nsPerOp": 10284,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoadDocumentJSON",
+            "modificationCount": 2,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-14"
+          },
+          {
+            "name": "BenchmarkLoadDocumentProto",
+            "modificationCount": 3,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2022-12-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/domino14/liwords/pkg/cwgame/tiles",
+        "succeded": false,
+        "duration": "0.014s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRemoveTiles-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRemoveTiles",
+            "modificationCount": 3,
+            "createdOn": "2022-12-08",
+            "lastUpdateOn": "2023-03-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/domino14/liwords/pkg/memento",
+        "succeded": true,
+        "duration": "9.014s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRenderAGif-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "{\"level\":\"debug\",\"h\":{\"events\":[{\"nickname\":\"doug\",\"rack\":\"DINNVWY\",\"cumulative\":32,\"row\":7,\"column\":3,\"position\":\"8D\",\"played_tiles\":\"WINDY\",\"score\":32,\"words_formed\":[\"WINDY\"]},{\"nickname\":\"emely\",\"rack\":\"ADEEGIL\",\"cumulative\":16,\"row\":6,\"column\":2,\"position\":\"7C\",\"played_tiles\":\"GALE\",\"score\":16,\"words_formed\":[\"GALE\",\"AW\",\"LI\",\"EN\"]},{\"nickname\":\"doug\",\"rack\":\"AEJNOSV\",\"cumulative\":66,\"row\":2,\"column\":4,\"direction\":1,\"position\":\"E3\",\"played_tiles\":\"JAVE..N\",\"score\":34,\"words_formed\":[\"JAVELIN\"]},{\"nickname\":\"emely\",\"rack\":\"DEILOVX\",\"cumulative\":55,\"row\":1,\"column\":5,\"direction\":1,\"position\":\"F2\",\"played_tiles\":\"VOX\",\"score\":39,\"words_formed\":[\"VOX\",\"JO\",\"AX\"]},{\"nickname\":\"doug\",\"rack\":\"ADENOST\",\"cumulative\":148,\"row\":9,\"column\":1,\"position\":\"10B\",\"played_tiles\":\"DONATES\",\"score\":82,\"is_bingo\":true,\"words_formed\":[\"DONATES\",\"JAVELINA\"]},{\"nickname\":\"emely\",\"rack\":\"DEIILTZ\",\"cumulative\":79,\"row\":3,\"column\":1,\"position\":\"4B\",\"played_tiles\":\"TIL..\",\"score\":24,\"words_formed\":[\"TILAX\"]},{\"nickname\":\"emely\",\"rack\":\"DEIILTZ\",\"type\":1,\"cumulative\":55,\"played_tiles\":\"TIL..\",\"lost_score\":24},{\"nickname\":\"doug\",\"rack\":\"AAEINRU\",\"cumulative\":164,\"row\":8,\"column\":6,\"position\":\"9G\",\"played_tiles\":\"EAU\",\"score\":16,\"words_formed\":[\"EAU\",\"DEE\",\"YAS\"]},{\"nickname\":\"emely\",\"rack\":\"DEIILTZ\",\"cumulative\":93,\"row\":3,\"column\":3,\"position\":\"4D\",\"played_tiles\":\"Z..\",\"score\":38,\"words_formed\":[\"ZAX\"]},{\"nickname\":\"doug\",\"rack\":\"AILNORT\",\"cumulative\":191,\"row\":4,\"direction\":1,\"position\":\"A5\",\"played_tiles\":\"LATINO\",\"score\":27,\"words_formed\":[\"LATINO\",\"ODONATES\"]},{\"nickname\":\"emely\",\"rack\":\"DEEIILT\",\"cumulative\":122,\"row\":1,\"column\":1,\"direction\":1,\"position\":\"B2\",\"played_tiles\":\"TEIID\",\"score\":29,\"words_formed\":[\"TEIID\",\"LI\",\"AD\"]},{\"nickname\":\"doug\",\"rack\":\"?BDERUW\",\"cumulative\":221,\"direction\":1,\"position\":\"A1\",\"played_tiles\":\"WEB\",\"score\":30,\"words_formed\":[\"WEB\",\"ET\",\"BE\"]},{\"nickname\":\"emely\",\"rack\":\"AELLNST\",\"cumulative\":173,\"row\":10,\"column\":4,\"position\":\"11E\",\"played_tiles\":\"SAT\",\"score\":51,\"words_formed\":[\"SAT\",\"JAVELINAS\",\"TA\",\"DEET\"]},{\"nickname\":\"doug\",\"rack\":\"?DINRRU\",\"cumulative\":243,\"row\":5,\"column\":3,\"position\":\"6D\",\"played_tiles\":\"R.D\",\"score\":22,\"words_formed\":[\"RED\",\"RAW\",\"DEN\"]},{\"nickname\":\"emely\",\"rack\":\"ACELLMN\",\"cumulative\":196,\"column\":2,\"direction\":1,\"position\":\"C1\",\"played_tiles\":\"CAN\",\"score\":23,\"words_formed\":[\"CAN\",\"ETA\",\"BEN\"]},{\"nickname\":\"doug\",\"rack\":\"?EFINRU\",\"cumulative\":257,\"row\":7,\"column\":1,\"direction\":1,\"position\":\"B8\",\"played_tiles\":\"FU.\",\"score\":14,\"words_formed\":[\"FUD\",\"IF\",\"NU\"]},{\"nickname\":\"emely\",\"rack\":\"EILLMRR\",\"cumulative\":208,\"row\":6,\"column\":7,\"position\":\"7H\",\"played_tiles\":\"RILL\",\"score\":12,\"words_formed\":[\"RILL\",\"RYAS\"]},{\"nickname\":\"doug\",\"rack\":\"?EIINOR\",\"cumulative\":335,\"row\":4,\"column\":10,\"direction\":1,\"position\":\"K5\",\"played_tiles\":\"RE.IgION\",\"score\":78,\"is_bingo\":true,\"words_formed\":[\"RELIGION\"]},{\"nickname\":\"emely\",\"rack\":\"EKMORRU\",\"cumulative\":236,\"row\":10,\"column\":11,\"direction\":1,\"position\":\"L11\",\"played_tiles\":\"MURK\",\"score\":28,\"words_formed\":[\"MURK\",\"OM\",\"NU\"]},{\"nickname\":\"doug\",\"rack\":\"AEIOORS\",\"cumulative\":368,\"row\":14,\"column\":7,\"position\":\"15H\",\"played_tiles\":\"ARIOSE\",\"score\":33,\"words_formed\":[\"ARIOSE\",\"MURKS\"]},{\"nickname\":\"emely\",\"rack\":\"?CEORUY\",\"cumulative\":255,\"row\":13,\"column\":5,\"position\":\"14F\",\"played_tiles\":\"COY\",\"score\":19,\"words_formed\":[\"COY\",\"YA\"]},{\"nickname\":\"doug\",\"rack\":\"EGHMOPT\",\"cumulative\":380,\"row\":3,\"column\":11,\"direction\":1,\"position\":\"L4\",\"played_tiles\":\"GET\",\"score\":12,\"words_formed\":[\"GET\",\"RE\",\"ET\"]},{\"nickname\":\"emely\",\"rack\":\"?BERSTU\",\"cumulative\":264,\"row\":1,\"column\":5,\"position\":\"2F\",\"played_tiles\":\".ERB\",\"score\":9,\"words_formed\":[\"VERB\"]},{\"nickname\":\"doug\",\"rack\":\"AEHIMOP\",\"cumulative\":409,\"column\":6,\"position\":\"1G\",\"played_tiles\":\"PEA\",\"score\":29,\"words_formed\":[\"PEA\",\"PE\",\"ER\",\"AB\"]},{\"nickname\":\"emely\",\"rack\":\"?HOQSTU\",\"cumulative\":310,\"row\":1,\"column\":12,\"direction\":1,\"position\":\"M2\",\"played_tiles\":\"QUOTH\",\"score\":46,\"words_formed\":[\"QUOTH\",\"GO\",\"RET\",\"ETH\"]},{\"nickname\":\"doug\",\"rack\":\"EGHIMOP\",\"cumulative\":451,\"column\":13,\"direction\":1,\"position\":\"N1\",\"played_tiles\":\"HIM\",\"score\":42,\"words_formed\":[\"HIM\",\"QI\",\"UM\"]},{\"nickname\":\"emely\",\"rack\":\"?FS\",\"cumulative\":331,\"row\":13,\"column\":11,\"position\":\"14L\",\"played_tiles\":\".aFS\",\"score\":21,\"words_formed\":[\"KAFS\",\"AE\"]},{\"nickname\":\"emely\",\"rack\":\"OPEG\",\"type\":5,\"cumulative\":345,\"end_rack_points\":14}],\"players\":[{\"nickname\":\"doug\",\"real_name\":\"doug\"},{\"nickname\":\"emely\",\"real_name\":\"emely\"}],\"version\":1,\"original_gcg\":\"#player1"
+          },
+          {
+            "name": "BenchmarkRenderBigAGif-12",
+            "runs": 1,
+            "nsPerOp": 1974510794,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRenderPNG-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "{\"level\":\"debug\",\"h\":{\"events\":[{\"nickname\":\"doug\",\"rack\":\"DINNVWY\",\"cumulative\":32,\"row\":7,\"column\":3,\"position\":\"8D\",\"played_tiles\":\"WINDY\",\"score\":32,\"words_formed\":[\"WINDY\"]},{\"nickname\":\"emely\",\"rack\":\"ADEEGIL\",\"cumulative\":16,\"row\":6,\"column\":2,\"position\":\"7C\",\"played_tiles\":\"GALE\",\"score\":16,\"words_formed\":[\"GALE\",\"AW\",\"LI\",\"EN\"]},{\"nickname\":\"doug\",\"rack\":\"AEJNOSV\",\"cumulative\":66,\"row\":2,\"column\":4,\"direction\":1,\"position\":\"E3\",\"played_tiles\":\"JAVE..N\",\"score\":34,\"words_formed\":[\"JAVELIN\"]},{\"nickname\":\"emely\",\"rack\":\"DEILOVX\",\"cumulative\":55,\"row\":1,\"column\":5,\"direction\":1,\"position\":\"F2\",\"played_tiles\":\"VOX\",\"score\":39,\"words_formed\":[\"VOX\",\"JO\",\"AX\"]},{\"nickname\":\"doug\",\"rack\":\"ADENOST\",\"cumulative\":148,\"row\":9,\"column\":1,\"position\":\"10B\",\"played_tiles\":\"DONATES\",\"score\":82,\"is_bingo\":true,\"words_formed\":[\"DONATES\",\"JAVELINA\"]},{\"nickname\":\"emely\",\"rack\":\"DEIILTZ\",\"cumulative\":79,\"row\":3,\"column\":1,\"position\":\"4B\",\"played_tiles\":\"TIL..\",\"score\":24,\"words_formed\":[\"TILAX\"]},{\"nickname\":\"emely\",\"rack\":\"DEIILTZ\",\"type\":1,\"cumulative\":55,\"played_tiles\":\"TIL..\",\"lost_score\":24},{\"nickname\":\"doug\",\"rack\":\"AAEINRU\",\"cumulative\":164,\"row\":8,\"column\":6,\"position\":\"9G\",\"played_tiles\":\"EAU\",\"score\":16,\"words_formed\":[\"EAU\",\"DEE\",\"YAS\"]},{\"nickname\":\"emely\",\"rack\":\"DEIILTZ\",\"cumulative\":93,\"row\":3,\"column\":3,\"position\":\"4D\",\"played_tiles\":\"Z..\",\"score\":38,\"words_formed\":[\"ZAX\"]},{\"nickname\":\"doug\",\"rack\":\"AILNORT\",\"cumulative\":191,\"row\":4,\"direction\":1,\"position\":\"A5\",\"played_tiles\":\"LATINO\",\"score\":27,\"words_formed\":[\"LATINO\",\"ODONATES\"]},{\"nickname\":\"emely\",\"rack\":\"DEEIILT\",\"cumulative\":122,\"row\":1,\"column\":1,\"direction\":1,\"position\":\"B2\",\"played_tiles\":\"TEIID\",\"score\":29,\"words_formed\":[\"TEIID\",\"LI\",\"AD\"]},{\"nickname\":\"doug\",\"rack\":\"?BDERUW\",\"cumulative\":221,\"direction\":1,\"position\":\"A1\",\"played_tiles\":\"WEB\",\"score\":30,\"words_formed\":[\"WEB\",\"ET\",\"BE\"]},{\"nickname\":\"emely\",\"rack\":\"AELLNST\",\"cumulative\":173,\"row\":10,\"column\":4,\"position\":\"11E\",\"played_tiles\":\"SAT\",\"score\":51,\"words_formed\":[\"SAT\",\"JAVELINAS\",\"TA\",\"DEET\"]},{\"nickname\":\"doug\",\"rack\":\"?DINRRU\",\"cumulative\":243,\"row\":5,\"column\":3,\"position\":\"6D\",\"played_tiles\":\"R.D\",\"score\":22,\"words_formed\":[\"RED\",\"RAW\",\"DEN\"]},{\"nickname\":\"emely\",\"rack\":\"ACELLMN\",\"cumulative\":196,\"column\":2,\"direction\":1,\"position\":\"C1\",\"played_tiles\":\"CAN\",\"score\":23,\"words_formed\":[\"CAN\",\"ETA\",\"BEN\"]},{\"nickname\":\"doug\",\"rack\":\"?EFINRU\",\"cumulative\":257,\"row\":7,\"column\":1,\"direction\":1,\"position\":\"B8\",\"played_tiles\":\"FU.\",\"score\":14,\"words_formed\":[\"FUD\",\"IF\",\"NU\"]},{\"nickname\":\"emely\",\"rack\":\"EILLMRR\",\"cumulative\":208,\"row\":6,\"column\":7,\"position\":\"7H\",\"played_tiles\":\"RILL\",\"score\":12,\"words_formed\":[\"RILL\",\"RYAS\"]},{\"nickname\":\"doug\",\"rack\":\"?EIINOR\",\"cumulative\":335,\"row\":4,\"column\":10,\"direction\":1,\"position\":\"K5\",\"played_tiles\":\"RE.IgION\",\"score\":78,\"is_bingo\":true,\"words_formed\":[\"RELIGION\"]},{\"nickname\":\"emely\",\"rack\":\"EKMORRU\",\"cumulative\":236,\"row\":10,\"column\":11,\"direction\":1,\"position\":\"L11\",\"played_tiles\":\"MURK\",\"score\":28,\"words_formed\":[\"MURK\",\"OM\",\"NU\"]},{\"nickname\":\"doug\",\"rack\":\"AEIOORS\",\"cumulative\":368,\"row\":14,\"column\":7,\"position\":\"15H\",\"played_tiles\":\"ARIOSE\",\"score\":33,\"words_formed\":[\"ARIOSE\",\"MURKS\"]},{\"nickname\":\"emely\",\"rack\":\"?CEORUY\",\"cumulative\":255,\"row\":13,\"column\":5,\"position\":\"14F\",\"played_tiles\":\"COY\",\"score\":19,\"words_formed\":[\"COY\",\"YA\"]},{\"nickname\":\"doug\",\"rack\":\"EGHMOPT\",\"cumulative\":380,\"row\":3,\"column\":11,\"direction\":1,\"position\":\"L4\",\"played_tiles\":\"GET\",\"score\":12,\"words_formed\":[\"GET\",\"RE\",\"ET\"]},{\"nickname\":\"emely\",\"rack\":\"?BERSTU\",\"cumulative\":264,\"row\":1,\"column\":5,\"position\":\"2F\",\"played_tiles\":\".ERB\",\"score\":9,\"words_formed\":[\"VERB\"]},{\"nickname\":\"doug\",\"rack\":\"AEHIMOP\",\"cumulative\":409,\"column\":6,\"position\":\"1G\",\"played_tiles\":\"PEA\",\"score\":29,\"words_formed\":[\"PEA\",\"PE\",\"ER\",\"AB\"]},{\"nickname\":\"emely\",\"rack\":\"?HOQSTU\",\"cumulative\":310,\"row\":1,\"column\":12,\"direction\":1,\"position\":\"M2\",\"played_tiles\":\"QUOTH\",\"score\":46,\"words_formed\":[\"QUOTH\",\"GO\",\"RET\",\"ETH\"]},{\"nickname\":\"doug\",\"rack\":\"EGHIMOP\",\"cumulative\":451,\"column\":13,\"direction\":1,\"position\":\"N1\",\"played_tiles\":\"HIM\",\"score\":42,\"words_formed\":[\"HIM\",\"QI\",\"UM\"]},{\"nickname\":\"emely\",\"rack\":\"?FS\",\"cumulative\":331,\"row\":13,\"column\":11,\"position\":\"14L\",\"played_tiles\":\".aFS\",\"score\":21,\"words_formed\":[\"KAFS\",\"AE\"]},{\"nickname\":\"emely\",\"rack\":\"OPEG\",\"type\":5,\"cumulative\":345,\"end_rack_points\":14}],\"players\":[{\"nickname\":\"doug\",\"real_name\":\"doug\"},{\"nickname\":\"emely\",\"real_name\":\"emely\"}],\"version\":1,\"original_gcg\":\"#player1"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRenderAGif",
+            "modificationCount": 4,
+            "createdOn": "2022-02-05",
+            "lastUpdateOn": "2022-07-30"
+          },
+          {
+            "name": "BenchmarkRenderBigAGif",
+            "modificationCount": 1,
+            "createdOn": "2022-07-30",
+            "lastUpdateOn": "2022-07-30"
+          },
+          {
+            "name": "BenchmarkRenderPNG",
+            "modificationCount": 4,
+            "createdOn": "2022-02-05",
+            "lastUpdateOn": "2022-07-30"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "domino14/liwords",
+    "name": "liwords",
+    "private": false,
+    "html_url": "https://github.com/domino14/liwords",
+    "description": "A site that allows people to play a crossword board game against each other",
+    "fork": false,
+    "created_at": "2020-05-07T03:08:08Z",
+    "updated_at": "2023-09-20T11:33:05Z",
+    "pushed_at": "2023-10-23T02:54:57Z",
+    "ssh_url": "git@github.com:domino14/liwords.git",
+    "homepage": "https://woogles.io",
+    "stargazers_count": 61,
+    "watchers_count": 61,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 11,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 124,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "spdx_id": "AGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTE=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 187,
+    "Lines": 114478,
+    "Blank": 13267,
+    "Code": 95089,
+    "Comment": 6122,
+    "Bytes": 3897750,
+    "Complexity": 20072
+  }
+}

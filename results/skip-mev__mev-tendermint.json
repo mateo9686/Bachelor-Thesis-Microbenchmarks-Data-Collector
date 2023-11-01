@@ -1,0 +1,1228 @@
+{
+  "Name": "skip-mev/mev-tendermint",
+  "Path": "./repositories/skip-mev__mev-tendermint",
+  "GoVersion": "1.16",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T13:36:16Z",
+    "benchmarkCount": 78,
+    "benchmarkSuiteCount": 17,
+    "successfulBenchmarkCount": 65,
+    "successfulBenchmarkSuitesCount": 16,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/tendermint/tendermint/consensus",
+        "succeded": false,
+        "duration": "29.202s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWalDecode512B",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "wal_test.go:248: to proto: wal message not recognized: []uint8"
+          },
+          {
+            "name": "BenchmarkWalDecode10KB",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "wal_test.go:248: to proto: wal message not recognized: []uint8"
+          },
+          {
+            "name": "BenchmarkWalDecode100KB",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "wal_test.go:248: to proto: wal message not recognized: []uint8"
+          },
+          {
+            "name": "BenchmarkWalDecode1MB",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "wal_test.go:248: to proto: wal message not recognized: []uint8"
+          },
+          {
+            "name": "BenchmarkWalDecode10MB",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "wal_test.go:248: to proto: wal message not recognized: []uint8"
+          },
+          {
+            "name": "BenchmarkWalDecode100MB",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "wal_test.go:248: to proto: wal message not recognized: []uint8"
+          },
+          {
+            "name": "BenchmarkWalDecode1GB",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "wal_test.go:248: to proto: wal message not recognized: []uint8"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWalDecode512B",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          },
+          {
+            "name": "BenchmarkWalDecode10KB",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          },
+          {
+            "name": "BenchmarkWalDecode100KB",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          },
+          {
+            "name": "BenchmarkWalDecode1MB",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          },
+          {
+            "name": "BenchmarkWalDecode10MB",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          },
+          {
+            "name": "BenchmarkWalDecode100MB",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          },
+          {
+            "name": "BenchmarkWalDecode1GB",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/crypto/ed25519",
+        "succeded": true,
+        "duration": "7.682s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkKeyGeneration-12",
+            "runs": 26570,
+            "nsPerOp": 48965,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning-12",
+            "runs": 21745,
+            "nsPerOp": 67112,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerification-12",
+            "runs": 10000,
+            "nsPerOp": 151173,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkKeyGeneration",
+            "modificationCount": 1,
+            "createdOn": "2018-07-25",
+            "lastUpdateOn": "2018-07-25"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 1,
+            "createdOn": "2018-07-25",
+            "lastUpdateOn": "2018-07-25"
+          },
+          {
+            "name": "BenchmarkVerification",
+            "modificationCount": 1,
+            "createdOn": "2018-07-25",
+            "lastUpdateOn": "2018-07-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/crypto/merkle",
+        "succeded": true,
+        "duration": "2.932s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHashAlternatives/recursive-12",
+            "runs": 6643,
+            "nsPerOp": 212988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashAlternatives/iterative-12",
+            "runs": 10000,
+            "nsPerOp": 119200,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHashAlternatives",
+            "modificationCount": 4,
+            "createdOn": "2019-04-18",
+            "lastUpdateOn": "2020-06-10"
+          },
+          {
+            "name": "BenchmarkHashAlternatives",
+            "modificationCount": 4,
+            "createdOn": "2019-04-18",
+            "lastUpdateOn": "2020-06-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/crypto/sr25519",
+        "succeded": true,
+        "duration": "4.513s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkKeyGeneration-12",
+            "runs": 638134,
+            "nsPerOp": 1834,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSigning-12",
+            "runs": 10000,
+            "nsPerOp": 175065,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerification-12",
+            "runs": 4572,
+            "nsPerOp": 292637,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkKeyGeneration",
+            "modificationCount": 1,
+            "createdOn": "2018-07-25",
+            "lastUpdateOn": "2018-07-25"
+          },
+          {
+            "name": "BenchmarkSigning",
+            "modificationCount": 1,
+            "createdOn": "2018-07-25",
+            "lastUpdateOn": "2018-07-25"
+          },
+          {
+            "name": "BenchmarkVerification",
+            "modificationCount": 1,
+            "createdOn": "2018-07-25",
+            "lastUpdateOn": "2018-07-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/libs/clist",
+        "succeded": true,
+        "duration": "224.670s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDetaching-12",
+            "runs": 12539374,
+            "nsPerOp": 2982,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemoved-12",
+            "runs": 34807831,
+            "nsPerOp": 365.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPushBack-12",
+            "runs": 1000000,
+            "nsPerOp": 1141,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDetaching",
+            "modificationCount": 1,
+            "createdOn": "2018-08-14",
+            "lastUpdateOn": "2018-08-14"
+          },
+          {
+            "name": "BenchmarkRemoved",
+            "modificationCount": 1,
+            "createdOn": "2018-08-14",
+            "lastUpdateOn": "2018-08-14"
+          },
+          {
+            "name": "BenchmarkPushBack",
+            "modificationCount": 1,
+            "createdOn": "2018-08-14",
+            "lastUpdateOn": "2018-08-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/libs/cmap",
+        "succeded": true,
+        "duration": "1.447s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCMapHas-12",
+            "runs": 33060069,
+            "nsPerOp": 41.47,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCMapHas",
+            "modificationCount": 2,
+            "createdOn": "2018-08-14",
+            "lastUpdateOn": "2020-08-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/libs/log",
+        "succeded": true,
+        "duration": "7.844s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTMLoggerSimple-12",
+            "runs": 214520,
+            "nsPerOp": 12913,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTMLoggerContextual-12",
+            "runs": 158313,
+            "nsPerOp": 13063,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTMFmtLoggerSimple-12",
+            "runs": 245226,
+            "nsPerOp": 5573,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTMFmtLoggerContextual-12",
+            "runs": 227712,
+            "nsPerOp": 5619,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTMLoggerSimple",
+            "modificationCount": 2,
+            "createdOn": "2017-04-27",
+            "lastUpdateOn": "2017-05-02"
+          },
+          {
+            "name": "BenchmarkTMLoggerContextual",
+            "modificationCount": 2,
+            "createdOn": "2017-04-27",
+            "lastUpdateOn": "2017-05-02"
+          },
+          {
+            "name": "BenchmarkTMFmtLoggerSimple",
+            "modificationCount": 2,
+            "createdOn": "2017-04-27",
+            "lastUpdateOn": "2017-05-02"
+          },
+          {
+            "name": "BenchmarkTMFmtLoggerContextual",
+            "modificationCount": 2,
+            "createdOn": "2017-04-27",
+            "lastUpdateOn": "2017-05-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/libs/pubsub",
+        "succeded": false,
+        "duration": "15.315s",
+        "benchmarks": [
+          {
+            "name": "Benchmark10Clients-12",
+            "runs": 76653,
+            "nsPerOp": 16495,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark100Clients-12",
+            "runs": 99602,
+            "nsPerOp": 12881,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1000Clients-12",
+            "runs": 85683,
+            "nsPerOp": 14773,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark10ClientsOneQuery",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "pubsub_test.go:468: already subscribed"
+          },
+          {
+            "name": "Benchmark100ClientsOneQuery",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "pubsub_test.go:468: already subscribed"
+          },
+          {
+            "name": "Benchmark1000ClientsOneQuery",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "pubsub_test.go:468: already subscribed"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark10Clients",
+            "modificationCount": 1,
+            "createdOn": "2018-05-16",
+            "lastUpdateOn": "2018-05-16"
+          },
+          {
+            "name": "Benchmark100Clients",
+            "modificationCount": 1,
+            "createdOn": "2018-05-16",
+            "lastUpdateOn": "2018-05-16"
+          },
+          {
+            "name": "Benchmark1000Clients",
+            "modificationCount": 1,
+            "createdOn": "2018-05-16",
+            "lastUpdateOn": "2018-05-16"
+          },
+          {
+            "name": "Benchmark10ClientsOneQuery",
+            "modificationCount": 1,
+            "createdOn": "2018-05-16",
+            "lastUpdateOn": "2018-05-16"
+          },
+          {
+            "name": "Benchmark100ClientsOneQuery",
+            "modificationCount": 1,
+            "createdOn": "2018-05-16",
+            "lastUpdateOn": "2018-05-16"
+          },
+          {
+            "name": "Benchmark1000ClientsOneQuery",
+            "modificationCount": 1,
+            "createdOn": "2018-05-16",
+            "lastUpdateOn": "2018-05-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/libs/rand",
+        "succeded": true,
+        "duration": "9.222s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRandBytes10B-12",
+            "runs": 6372087,
+            "nsPerOp": 213,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandBytes100B-12",
+            "runs": 709260,
+            "nsPerOp": 1969,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandBytes1KiB-12",
+            "runs": 55263,
+            "nsPerOp": 20746,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandBytes10KiB-12",
+            "runs": 6933,
+            "nsPerOp": 238339,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandBytes100KiB-12",
+            "runs": 777,
+            "nsPerOp": 1432400,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandBytes1MiB-12",
+            "runs": 96,
+            "nsPerOp": 16530639,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRandBytes10B",
+            "modificationCount": 1,
+            "createdOn": "2017-12-15",
+            "lastUpdateOn": "2017-12-15"
+          },
+          {
+            "name": "BenchmarkRandBytes100B",
+            "modificationCount": 1,
+            "createdOn": "2017-12-15",
+            "lastUpdateOn": "2017-12-15"
+          },
+          {
+            "name": "BenchmarkRandBytes1KiB",
+            "modificationCount": 1,
+            "createdOn": "2017-12-15",
+            "lastUpdateOn": "2017-12-15"
+          },
+          {
+            "name": "BenchmarkRandBytes10KiB",
+            "modificationCount": 1,
+            "createdOn": "2017-12-15",
+            "lastUpdateOn": "2017-12-15"
+          },
+          {
+            "name": "BenchmarkRandBytes100KiB",
+            "modificationCount": 1,
+            "createdOn": "2017-12-15",
+            "lastUpdateOn": "2017-12-15"
+          },
+          {
+            "name": "BenchmarkRandBytes1MiB",
+            "modificationCount": 1,
+            "createdOn": "2017-12-15",
+            "lastUpdateOn": "2017-12-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/light",
+        "succeded": true,
+        "duration": "45.087s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSequence-12",
+            "runs": 1,
+            "nsPerOp": 20575588213,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBisection-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "REAPING"
+          },
+          {
+            "name": "BenchmarkBackwards-12",
+            "runs": 1,
+            "nsPerOp": 11998569655,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSequence",
+            "modificationCount": 6,
+            "createdOn": "2020-03-12",
+            "lastUpdateOn": "2020-09-23"
+          },
+          {
+            "name": "BenchmarkBisection",
+            "modificationCount": 6,
+            "createdOn": "2020-03-12",
+            "lastUpdateOn": "2020-09-23"
+          },
+          {
+            "name": "BenchmarkBackwards",
+            "modificationCount": 6,
+            "createdOn": "2020-03-12",
+            "lastUpdateOn": "2020-09-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/mempool",
+        "succeded": false,
+        "duration": "7.950s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReap",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_test.go:22: mempool is full: number of txs 5000 (max: 5000), total txs bytes 40000 (max: 1073741824)"
+          },
+          {
+            "name": "BenchmarkCheckTx-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkCacheInsertTime-12",
+            "runs": 2518024,
+            "nsPerOp": 674.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCacheRemoveTime-12",
+            "runs": 3041157,
+            "nsPerOp": 346.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReap",
+            "modificationCount": 6,
+            "createdOn": "2018-09-30",
+            "lastUpdateOn": "2022-08-29"
+          },
+          {
+            "name": "BenchmarkCheckTx",
+            "modificationCount": 5,
+            "createdOn": "2019-03-26",
+            "lastUpdateOn": "2022-08-29"
+          },
+          {
+            "name": "BenchmarkCacheInsertTime",
+            "modificationCount": 1,
+            "createdOn": "2018-09-30",
+            "lastUpdateOn": "2018-09-30"
+          },
+          {
+            "name": "BenchmarkCacheRemoveTime",
+            "modificationCount": 1,
+            "createdOn": "2018-09-30",
+            "lastUpdateOn": "2018-09-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/p2p",
+        "succeded": true,
+        "duration": "6.521s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSwitchBroadcast-12",
+            "runs": 44714,
+            "nsPerOp": 45379,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSwitchBroadcast",
+            "modificationCount": 17,
+            "createdOn": "2015-10-25",
+            "lastUpdateOn": "2020-07-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/p2p/conn",
+        "succeded": true,
+        "duration": "3.321s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWriteSecretConnection-12",
+            "runs": 115117,
+            "nsPerOp": 10171,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadSecretConnection-12",
+            "runs": 227666,
+            "nsPerOp": 6033,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWriteSecretConnection",
+            "modificationCount": 9,
+            "createdOn": "2015-10-25",
+            "lastUpdateOn": "2020-10-13"
+          },
+          {
+            "name": "BenchmarkReadSecretConnection",
+            "modificationCount": 5,
+            "createdOn": "2019-07-22",
+            "lastUpdateOn": "2019-12-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/proxy",
+        "succeded": true,
+        "duration": "1.442s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEcho-12",
+            "runs": 201634,
+            "nsPerOp": 5193,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEcho",
+            "modificationCount": 23,
+            "createdOn": "2015-10-19",
+            "lastUpdateOn": "2020-10-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/state",
+        "succeded": true,
+        "duration": "21.202s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoadValidators/height=10-12",
+            "runs": 4602,
+            "nsPerOp": 310544,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadValidators/height=100-12",
+            "runs": 2320,
+            "nsPerOp": 701452,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadValidators/height=1000-12",
+            "runs": 594,
+            "nsPerOp": 2984592,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadValidators/height=10000-12",
+            "runs": 37,
+            "nsPerOp": 33054768,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadValidators/height=100000-12",
+            "runs": 13334,
+            "nsPerOp": 90985,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadValidators/height=1000000-12",
+            "runs": 14550,
+            "nsPerOp": 92860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadValidators/height=10000000-12",
+            "runs": 10000,
+            "nsPerOp": 193830,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadValidators/height=100000000-12",
+            "runs": 14265,
+            "nsPerOp": 120865,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadValidators/height=1000000000-12",
+            "runs": 10000,
+            "nsPerOp": 101252,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoadValidators",
+            "modificationCount": 8,
+            "createdOn": "2019-04-12",
+            "lastUpdateOn": "2020-09-15"
+          },
+          {
+            "name": "BenchmarkLoadValidators",
+            "modificationCount": 8,
+            "createdOn": "2019-04-12",
+            "lastUpdateOn": "2020-09-15"
+          },
+          {
+            "name": "BenchmarkLoadValidators",
+            "modificationCount": 8,
+            "createdOn": "2019-04-12",
+            "lastUpdateOn": "2020-09-15"
+          },
+          {
+            "name": "BenchmarkLoadValidators",
+            "modificationCount": 8,
+            "createdOn": "2019-04-12",
+            "lastUpdateOn": "2020-09-15"
+          },
+          {
+            "name": "BenchmarkLoadValidators",
+            "modificationCount": 8,
+            "createdOn": "2019-04-12",
+            "lastUpdateOn": "2020-09-15"
+          },
+          {
+            "name": "BenchmarkLoadValidators",
+            "modificationCount": 8,
+            "createdOn": "2019-04-12",
+            "lastUpdateOn": "2020-09-15"
+          },
+          {
+            "name": "BenchmarkLoadValidators",
+            "modificationCount": 8,
+            "createdOn": "2019-04-12",
+            "lastUpdateOn": "2020-09-15"
+          },
+          {
+            "name": "BenchmarkLoadValidators",
+            "modificationCount": 8,
+            "createdOn": "2019-04-12",
+            "lastUpdateOn": "2020-09-15"
+          },
+          {
+            "name": "BenchmarkLoadValidators",
+            "modificationCount": 8,
+            "createdOn": "2019-04-12",
+            "lastUpdateOn": "2020-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/state/txindex/kv",
+        "succeded": true,
+        "duration": "13.421s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTxSearch-12",
+            "runs": 31,
+            "nsPerOp": 39329061,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTxIndex1-12",
+            "runs": 115687,
+            "nsPerOp": 10864,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTxIndex500-12",
+            "runs": 368,
+            "nsPerOp": 2832342,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTxIndex1000-12",
+            "runs": 207,
+            "nsPerOp": 6497086,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTxIndex2000-12",
+            "runs": 124,
+            "nsPerOp": 9826978,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTxIndex10000-12",
+            "runs": 30,
+            "nsPerOp": 52473783,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTxSearch",
+            "modificationCount": 7,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2020-06-23"
+          },
+          {
+            "name": "BenchmarkTxIndex1",
+            "modificationCount": 2,
+            "createdOn": "2017-01-19",
+            "lastUpdateOn": "2017-04-18"
+          },
+          {
+            "name": "BenchmarkTxIndex500",
+            "modificationCount": 2,
+            "createdOn": "2017-01-19",
+            "lastUpdateOn": "2017-04-18"
+          },
+          {
+            "name": "BenchmarkTxIndex1000",
+            "modificationCount": 2,
+            "createdOn": "2017-01-19",
+            "lastUpdateOn": "2017-04-18"
+          },
+          {
+            "name": "BenchmarkTxIndex2000",
+            "modificationCount": 2,
+            "createdOn": "2017-01-19",
+            "lastUpdateOn": "2017-04-18"
+          },
+          {
+            "name": "BenchmarkTxIndex10000",
+            "modificationCount": 2,
+            "createdOn": "2017-01-19",
+            "lastUpdateOn": "2017-04-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tendermint/tendermint/types",
+        "succeded": true,
+        "duration": "39.929s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEventBus/10Clients1Query1Event-12",
+            "runs": 278378,
+            "nsPerOp": 3613,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/100Clients-12",
+            "runs": 683508,
+            "nsPerOp": 3063,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/1000Clients-12",
+            "runs": 260912,
+            "nsPerOp": 4446,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/10ClientsRandQueries1Event-12",
+            "runs": 36696,
+            "nsPerOp": 34140,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/100Clients#01-12",
+            "runs": 13500,
+            "nsPerOp": 95853,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/1000Clients#01-12",
+            "runs": 13347,
+            "nsPerOp": 79652,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/10ClientsRandQueriesRandEvents-12",
+            "runs": 79272,
+            "nsPerOp": 19375,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/100Clients#02-12",
+            "runs": 23887,
+            "nsPerOp": 47559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/1000Clients#02-12",
+            "runs": 15786,
+            "nsPerOp": 65541,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/10Clients1QueryRandEvents-12",
+            "runs": 85885,
+            "nsPerOp": 18899,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/100Clients#03-12",
+            "runs": 384871,
+            "nsPerOp": 4214,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventBus/1000Clients#03-12",
+            "runs": 422368,
+            "nsPerOp": 4903,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProposalWriteSignBytes-12",
+            "runs": 550000,
+            "nsPerOp": 4287,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProposalSign-12",
+            "runs": 6102,
+            "nsPerOp": 171395,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProposalVerifySignature-12",
+            "runs": 396880,
+            "nsPerOp": 4289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidatorSetCopy-12",
+            "runs": 6188,
+            "nsPerOp": 271659,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdates-12",
+            "runs": 248,
+            "nsPerOp": 7230133,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkEventBus",
+            "modificationCount": 2,
+            "createdOn": "2017-06-26",
+            "lastUpdateOn": "2019-09-11"
+          },
+          {
+            "name": "BenchmarkProposalWriteSignBytes",
+            "modificationCount": 3,
+            "createdOn": "2016-12-17",
+            "lastUpdateOn": "2020-06-11"
+          },
+          {
+            "name": "BenchmarkProposalSign",
+            "modificationCount": 7,
+            "createdOn": "2016-12-17",
+            "lastUpdateOn": "2020-06-11"
+          },
+          {
+            "name": "BenchmarkProposalVerifySignature",
+            "modificationCount": 11,
+            "createdOn": "2016-12-17",
+            "lastUpdateOn": "2020-08-13"
+          },
+          {
+            "name": "BenchmarkValidatorSetCopy",
+            "modificationCount": 4,
+            "createdOn": "2018-03-02",
+            "lastUpdateOn": "2019-02-08"
+          },
+          {
+            "name": "BenchmarkUpdates",
+            "modificationCount": 1,
+            "createdOn": "2019-02-08",
+            "lastUpdateOn": "2019-02-08"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "skip-mev/mev-tendermint",
+    "name": "mev-tendermint",
+    "private": false,
+    "html_url": "https://github.com/skip-mev/mev-tendermint",
+    "fork": false,
+    "created_at": "2022-08-29T22:44:28Z",
+    "updated_at": "2023-10-02T20:29:54Z",
+    "pushed_at": "2023-10-22T00:10:03Z",
+    "ssh_url": "git@github.com:skip-mev/mev-tendermint.git",
+    "stargazers_count": 70,
+    "watchers_count": 70,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 7,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 6,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 618,
+    "Lines": 183562,
+    "Blank": 20778,
+    "Code": 146652,
+    "Comment": 16132,
+    "Bytes": 5054573,
+    "Complexity": 27961
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "Name": "BBVA/qed",
+  "Path": "./repositories/BBVA__qed",
+  "GoVersion": "1.13",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T14:59:54Z",
+    "benchmarkCount": 15,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 13,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/bbva/qed/crypto/hashing",
+        "succeded": true,
+        "duration": "104.061s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSha256HasherRandomBytes-12",
+            "runs": 1000000,
+            "nsPerOp": 2461,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlake2bHasherRandomBytes-12",
+            "runs": 1000000,
+            "nsPerOp": 2441,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSha256HasherFixedBytes-12",
+            "runs": 100000000,
+            "nsPerOp": 274.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlake2bHasherFixedBytes-12",
+            "runs": 100000000,
+            "nsPerOp": 423.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlake2bFixedBytesNoWrite-12",
+            "runs": 100000000,
+            "nsPerOp": 179.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSha256FixedBytesNoWrite-12",
+            "runs": 100000000,
+            "nsPerOp": 103.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSha256HasherRandomBytes",
+            "modificationCount": 1,
+            "createdOn": "2019-05-21",
+            "lastUpdateOn": "2019-05-21"
+          },
+          {
+            "name": "BenchmarkBlake2bHasherRandomBytes",
+            "modificationCount": 1,
+            "createdOn": "2019-05-21",
+            "lastUpdateOn": "2019-05-21"
+          },
+          {
+            "name": "BenchmarkSha256HasherFixedBytes",
+            "modificationCount": 1,
+            "createdOn": "2019-05-21",
+            "lastUpdateOn": "2019-05-21"
+          },
+          {
+            "name": "BenchmarkBlake2bHasherFixedBytes",
+            "modificationCount": 1,
+            "createdOn": "2019-05-21",
+            "lastUpdateOn": "2019-05-21"
+          },
+          {
+            "name": "BenchmarkBlake2bFixedBytesNoWrite",
+            "modificationCount": 1,
+            "createdOn": "2019-05-21",
+            "lastUpdateOn": "2019-05-21"
+          },
+          {
+            "name": "BenchmarkSha256FixedBytesNoWrite",
+            "modificationCount": 1,
+            "createdOn": "2019-05-21",
+            "lastUpdateOn": "2019-05-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bbva/qed/crypto/sign",
+        "succeded": false,
+        "duration": "720.654s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEd/routines-10-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "SIGQUIT:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEd",
+            "modificationCount": 3,
+            "createdOn": "2018-06-05",
+            "lastUpdateOn": "2018-09-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bbva/qed/log",
+        "succeded": true,
+        "duration": "15.157s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLogger/sequential_info_with_error_level-12",
+            "runs": 553955116,
+            "nsPerOp": 2.253,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogger/sequential_info_with_info_level-12",
+            "runs": 54535,
+            "nsPerOp": 32611,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggerParallel-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.4326,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHcLogger/sequential_info_with_error_level-12",
+            "runs": 249180874,
+            "nsPerOp": 4.591,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHcLogger/sequential_info_with_info_level-12",
+            "runs": 102400,
+            "nsPerOp": 41078,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHcLoggerParallel-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.212,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLogger",
+            "modificationCount": 1,
+            "createdOn": "2019-08-05",
+            "lastUpdateOn": "2019-08-05"
+          },
+          {
+            "name": "BenchmarkLogger",
+            "modificationCount": 1,
+            "createdOn": "2019-08-05",
+            "lastUpdateOn": "2019-08-05"
+          },
+          {
+            "name": "BenchmarkLoggerParallel",
+            "modificationCount": 1,
+            "createdOn": "2019-08-05",
+            "lastUpdateOn": "2019-08-05"
+          },
+          {
+            "name": "BenchmarkHcLogger",
+            "modificationCount": 1,
+            "createdOn": "2019-08-05",
+            "lastUpdateOn": "2019-08-05"
+          },
+          {
+            "name": "BenchmarkHcLogger",
+            "modificationCount": 1,
+            "createdOn": "2019-08-05",
+            "lastUpdateOn": "2019-08-05"
+          },
+          {
+            "name": "BenchmarkHcLoggerParallel",
+            "modificationCount": 1,
+            "createdOn": "2019-08-05",
+            "lastUpdateOn": "2019-08-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bbva/qed/storage/bplus",
+        "succeded": false,
+        "duration": "660.044s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMutate-12",
+            "runs": 10000,
+            "nsPerOp": 143318,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "SIGQUIT:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMutate",
+            "modificationCount": 8,
+            "createdOn": "2018-08-30",
+            "lastUpdateOn": "2019-07-10"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 8,
+            "createdOn": "2018-08-30",
+            "lastUpdateOn": "2019-07-10"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "BBVA/qed",
+    "name": "qed",
+    "private": false,
+    "html_url": "https://github.com/BBVA/qed",
+    "description": "The scalable, auditable and high-performance tamper-evident log project",
+    "fork": false,
+    "created_at": "2018-05-09T14:41:41Z",
+    "updated_at": "2023-10-18T03:48:12Z",
+    "pushed_at": "2020-02-27T14:18:05Z",
+    "ssh_url": "git@github.com:BBVA/qed.git",
+    "homepage": "https://qed.readthedocs.io/",
+    "stargazers_count": 88,
+    "watchers_count": 88,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 17,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 15,
+    "topics": [
+      "auditable",
+      "byzantine-failures",
+      "cryptography",
+      "forensics",
+      "history-tree",
+      "latin",
+      "lsm-tree",
+      "merkle-tree",
+      "quod-erat-demonstrandum",
+      "scalability",
+      "sparse-merkle-tree",
+      "tamper-evident",
+      "verifiable-data-structures",
+      "verify"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 243,
+    "Lines": 41726,
+    "Blank": 5547,
+    "Code": 29359,
+    "Comment": 6820,
+    "Bytes": 1177897,
+    "Complexity": 3455
+  }
+}

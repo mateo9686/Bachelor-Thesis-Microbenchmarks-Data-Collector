@@ -1,0 +1,485 @@
+{
+  "Name": "open-telemetry/opentelemetry-collector",
+  "Path": "./repositories/open-telemetry__opentelemetry-collector",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T21:39:34Z",
+    "benchmarkCount": 27,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 26,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "n/a",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "go.opentelemetry.io/collector/config/configgrpc",
+        "succeded": true,
+        "duration": "54.130s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCompressors/sm_log_request/raw_bytes_160/compressed_bytes_162/compressor_gzip-12",
+            "runs": 50664,
+            "nsPerOp": 27469,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCompressors",
+            "modificationCount": 1,
+            "createdOn": "2022-01-05",
+            "lastUpdateOn": "2022-01-05"
+          }
+        ]
+      },
+      {
+        "pkg": "go.opentelemetry.io/collector/config/confighttp",
+        "succeded": true,
+        "duration": "9.187s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHttpRequest/HTTP/2.0,_shared_client_(like_load_balancer)-12",
+            "runs": 5271,
+            "nsPerOp": 229736,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHttpRequest/HTTP/1.1,_shared_client_(like_load_balancer)-12",
+            "runs": 2052,
+            "nsPerOp": 492422,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHttpRequest/HTTP/2.0,_client_per_thread_(like_single_app)-12",
+            "runs": 5196,
+            "nsPerOp": 248227,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHttpRequest/HTTP/1.1,_client_per_thread_(like_single_app)-12",
+            "runs": 2475,
+            "nsPerOp": 508478,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHttpRequest",
+            "modificationCount": 4,
+            "createdOn": "2022-04-02",
+            "lastUpdateOn": "2022-08-09"
+          },
+          {
+            "name": "BenchmarkHttpRequest",
+            "modificationCount": 4,
+            "createdOn": "2022-04-02",
+            "lastUpdateOn": "2022-08-09"
+          },
+          {
+            "name": "BenchmarkHttpRequest",
+            "modificationCount": 4,
+            "createdOn": "2022-04-02",
+            "lastUpdateOn": "2022-08-09"
+          },
+          {
+            "name": "BenchmarkHttpRequest",
+            "modificationCount": 4,
+            "createdOn": "2022-04-02",
+            "lastUpdateOn": "2022-08-09"
+          }
+        ]
+      },
+      {
+        "pkg": "go.opentelemetry.io/collector/exporter/exporterhelper/internal",
+        "succeded": true,
+        "duration": "6.543s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPersistentStorage_TraceSpans/#traces:_1_#spansPerTrace:_1-12",
+            "runs": 79785,
+            "nsPerOp": 19247,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPersistentStorage_TraceSpans/#traces:_1_#spansPerTrace:_10-12",
+            "runs": 38562,
+            "nsPerOp": 31799,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPersistentStorage_TraceSpans/#traces:_10_#spansPerTrace:_10-12",
+            "runs": 10000,
+            "nsPerOp": 166353,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPersistentStorage_TraceSpans",
+            "modificationCount": 5,
+            "createdOn": "2021-09-10",
+            "lastUpdateOn": "2023-09-07"
+          },
+          {
+            "name": "BenchmarkPersistentStorage_TraceSpans",
+            "modificationCount": 5,
+            "createdOn": "2021-09-10",
+            "lastUpdateOn": "2023-09-07"
+          },
+          {
+            "name": "BenchmarkPersistentStorage_TraceSpans",
+            "modificationCount": 5,
+            "createdOn": "2021-09-10",
+            "lastUpdateOn": "2023-09-07"
+          }
+        ]
+      },
+      {
+        "pkg": "go.opentelemetry.io/collector/pdata/plog",
+        "succeded": true,
+        "duration": "5.292s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJSONUnmarshal-12",
+            "runs": 848770,
+            "nsPerOp": 1279,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogsUsage-12",
+            "runs": 1903,
+            "nsPerOp": 709421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogsToProto-12",
+            "runs": 112083,
+            "nsPerOp": 11644,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogsFromProto-12",
+            "runs": 44188,
+            "nsPerOp": 23977,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJSONUnmarshal",
+            "modificationCount": 5,
+            "createdOn": "2022-04-11",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkLogsUsage",
+            "modificationCount": 1,
+            "createdOn": "2023-10-06",
+            "lastUpdateOn": "2023-10-06"
+          },
+          {
+            "name": "BenchmarkLogsToProto",
+            "modificationCount": 2,
+            "createdOn": "2022-04-11",
+            "lastUpdateOn": "2022-10-18"
+          },
+          {
+            "name": "BenchmarkLogsFromProto",
+            "modificationCount": 2,
+            "createdOn": "2022-04-11",
+            "lastUpdateOn": "2022-10-18"
+          }
+        ]
+      },
+      {
+        "pkg": "go.opentelemetry.io/collector/pdata/pmetric",
+        "succeded": true,
+        "duration": "10.557s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOtlpToFromInternal_PassThrough-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3366,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOtlpToFromInternal_Gauge_MutateOneLabel-12",
+            "runs": 12355675,
+            "nsPerOp": 114.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOtlpToFromInternal_Sum_MutateOneLabel-12",
+            "runs": 15494259,
+            "nsPerOp": 91.91,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOtlpToFromInternal_HistogramPoints_MutateOneLabel-12",
+            "runs": 11596518,
+            "nsPerOp": 94.11,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricsUsage-12",
+            "runs": 169,
+            "nsPerOp": 6687954,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricsToProto-12",
+            "runs": 55500,
+            "nsPerOp": 22180,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricsFromProto-12",
+            "runs": 16276,
+            "nsPerOp": 67763,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOtlpToFromInternal_PassThrough",
+            "modificationCount": 10,
+            "createdOn": "2020-09-03",
+            "lastUpdateOn": "2022-08-24"
+          },
+          {
+            "name": "BenchmarkOtlpToFromInternal_Gauge_MutateOneLabel",
+            "modificationCount": 13,
+            "createdOn": "2020-09-03",
+            "lastUpdateOn": "2022-10-03"
+          },
+          {
+            "name": "BenchmarkOtlpToFromInternal_Sum_MutateOneLabel",
+            "modificationCount": 12,
+            "createdOn": "2020-09-03",
+            "lastUpdateOn": "2022-10-03"
+          },
+          {
+            "name": "BenchmarkOtlpToFromInternal_HistogramPoints_MutateOneLabel",
+            "modificationCount": 13,
+            "createdOn": "2020-09-03",
+            "lastUpdateOn": "2022-10-03"
+          },
+          {
+            "name": "BenchmarkMetricsUsage",
+            "modificationCount": 1,
+            "createdOn": "2023-10-06",
+            "lastUpdateOn": "2023-10-06"
+          },
+          {
+            "name": "BenchmarkMetricsToProto",
+            "modificationCount": 2,
+            "createdOn": "2022-04-11",
+            "lastUpdateOn": "2022-10-18"
+          },
+          {
+            "name": "BenchmarkMetricsFromProto",
+            "modificationCount": 2,
+            "createdOn": "2022-04-11",
+            "lastUpdateOn": "2022-10-18"
+          }
+        ]
+      },
+      {
+        "pkg": "go.opentelemetry.io/collector/pdata/ptrace",
+        "succeded": true,
+        "duration": "5.936s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJSONUnmarshal-12",
+            "runs": 249478,
+            "nsPerOp": 5464,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTracesToProto-12",
+            "runs": 96300,
+            "nsPerOp": 14627,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTracesFromProto-12",
+            "runs": 24471,
+            "nsPerOp": 48785,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTracesUsage-12",
+            "runs": 628,
+            "nsPerOp": 1707704,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJSONUnmarshal",
+            "modificationCount": 5,
+            "createdOn": "2022-04-11",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkTracesToProto",
+            "modificationCount": 2,
+            "createdOn": "2022-04-11",
+            "lastUpdateOn": "2022-10-18"
+          },
+          {
+            "name": "BenchmarkTracesFromProto",
+            "modificationCount": 2,
+            "createdOn": "2022-04-11",
+            "lastUpdateOn": "2022-10-18"
+          },
+          {
+            "name": "BenchmarkTracesUsage",
+            "modificationCount": 1,
+            "createdOn": "2023-10-06",
+            "lastUpdateOn": "2023-10-06"
+          }
+        ]
+      },
+      {
+        "pkg": "go.opentelemetry.io/collector/processor/batchprocessor",
+        "succeded": true,
+        "duration": "6.343s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTraceSizeBytes-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "1142836"
+          },
+          {
+            "name": "BenchmarkTraceSizeSpanCount-12",
+            "runs": 303536804,
+            "nsPerOp": 3.846,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBatchMetricProcessor-12",
+            "runs": 2358,
+            "nsPerOp": 460716,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiBatchMetricProcessor-12",
+            "runs": 2420,
+            "nsPerOp": 604336,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTraceSizeBytes",
+            "modificationCount": 8,
+            "createdOn": "2020-07-22",
+            "lastUpdateOn": "2022-10-18"
+          },
+          {
+            "name": "BenchmarkTraceSizeSpanCount",
+            "modificationCount": 4,
+            "createdOn": "2020-07-22",
+            "lastUpdateOn": "2022-06-27"
+          },
+          {
+            "name": "BenchmarkBatchMetricProcessor",
+            "modificationCount": 6,
+            "createdOn": "2021-06-02",
+            "lastUpdateOn": "2023-05-23"
+          },
+          {
+            "name": "BenchmarkMultiBatchMetricProcessor",
+            "modificationCount": 1,
+            "createdOn": "2023-05-23",
+            "lastUpdateOn": "2023-05-23"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "open-telemetry/opentelemetry-collector",
+    "name": "opentelemetry-collector",
+    "private": false,
+    "html_url": "https://github.com/open-telemetry/opentelemetry-collector",
+    "description": "OpenTelemetry Collector",
+    "fork": false,
+    "created_at": "2019-05-09T19:42:55Z",
+    "updated_at": "2023-10-23T14:51:09Z",
+    "pushed_at": "2023-10-23T18:02:20Z",
+    "ssh_url": "git@github.com:open-telemetry/opentelemetry-collector.git",
+    "homepage": "https://opentelemetry.io",
+    "stargazers_count": 3360,
+    "watchers_count": 3360,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 1187,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 445,
+    "topics": [
+      "metrics",
+      "monitoring",
+      "observability",
+      "open-telemetry",
+      "opentelemetry",
+      "telemetry"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 728,
+    "Lines": 139459,
+    "Blank": 13732,
+    "Code": 92927,
+    "Comment": 32800,
+    "Bytes": 4364300,
+    "Complexity": 8613
+  }
+}

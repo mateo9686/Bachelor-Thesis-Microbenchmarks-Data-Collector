@@ -1,0 +1,849 @@
+{
+  "Name": "pion/mediadevices",
+  "Path": "./repositories/pion__mediadevices",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T13:20:06Z",
+    "benchmarkCount": 57,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 57,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/pion/mediadevices/pkg/frame",
+        "succeded": true,
+        "duration": "2.980s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecodeYUY2/640x480-12",
+            "runs": 1663,
+            "nsPerOp": 795074,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeYUY2/1920x1080-12",
+            "runs": 280,
+            "nsPerOp": 4067323,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecodeYUY2",
+            "modificationCount": 2,
+            "createdOn": "2020-03-04",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkDecodeYUY2",
+            "modificationCount": 2,
+            "createdOn": "2020-03-04",
+            "lastUpdateOn": "2020-10-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/pion/mediadevices/pkg/io/video",
+        "succeded": true,
+        "duration": "88.366s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRGBToYCbCr/Go-12",
+            "runs": 277501842,
+            "nsPerOp": 4.865,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRGBToYCbCr/CGO-12",
+            "runs": 370232294,
+            "nsPerOp": 2.895,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkYCbCrToRGB/Go-12",
+            "runs": 316770508,
+            "nsPerOp": 4.966,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkYCbCrToRGB/CGO-12",
+            "runs": 174162415,
+            "nsPerOp": 9.009,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToI420/480p/I444-12",
+            "runs": 2658,
+            "nsPerOp": 440301,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToI420/480p/I422-12",
+            "runs": 6717,
+            "nsPerOp": 237918,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToI420/480p/I420-12",
+            "runs": 60234849,
+            "nsPerOp": 24.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToI420/480p/RGBA-12",
+            "runs": 822,
+            "nsPerOp": 1227455,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToI420/1080p/I444-12",
+            "runs": 814,
+            "nsPerOp": 1466085,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToI420/1080p/I422-12",
+            "runs": 1264,
+            "nsPerOp": 866767,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToI420/1080p/I420-12",
+            "runs": 81785346,
+            "nsPerOp": 16.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToI420/1080p/RGBA-12",
+            "runs": 142,
+            "nsPerOp": 7630274,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToRGBA/480p/RGBA-12",
+            "runs": 100000000,
+            "nsPerOp": 11.28,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToRGBA/480p/I444-12",
+            "runs": 619,
+            "nsPerOp": 1724601,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToRGBA/480p/I422-12",
+            "runs": 94,
+            "nsPerOp": 12249827,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToRGBA/480p/I420-12",
+            "runs": 100,
+            "nsPerOp": 13783297,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToRGBA/1080p/I444-12",
+            "runs": 67,
+            "nsPerOp": 19851376,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToRGBA/1080p/I422-12",
+            "runs": 6,
+            "nsPerOp": 205765655,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToRGBA/1080p/I420-12",
+            "runs": 7,
+            "nsPerOp": 181224134,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkToRGBA/1080p/RGBA-12",
+            "runs": 92673795,
+            "nsPerOp": 15.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDetectChanges/WithoutDetectChanges-12",
+            "runs": 250,
+            "nsPerOp": 4476767,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDetectChanges/WithDetectChanges1-12",
+            "runs": 238,
+            "nsPerOp": 5058887,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDetectChanges/WithDetectChanges8-12",
+            "runs": 780,
+            "nsPerOp": 1561441,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDetectChanges/WithDetectChanges64-12",
+            "runs": 564,
+            "nsPerOp": 2436405,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDetectChanges/WithDetectChanges256-12",
+            "runs": 316,
+            "nsPerOp": 6519397,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFrameBufferCopyOptimized-12",
+            "runs": 2186,
+            "nsPerOp": 526740,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFrameBufferCopyNaive-12",
+            "runs": 637,
+            "nsPerOp": 1602126,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/NearestNeighbor/1080p/RGBA-12",
+            "runs": 433,
+            "nsPerOp": 3845608,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/NearestNeighbor/1080p/I444-12",
+            "runs": 57,
+            "nsPerOp": 30661625,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/NearestNeighbor/480p/RGBA-12",
+            "runs": 303,
+            "nsPerOp": 4183799,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/NearestNeighbor/480p/I444-12",
+            "runs": 38,
+            "nsPerOp": 40183512,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/ApproxBiLinear/480p/RGBA-12",
+            "runs": 46,
+            "nsPerOp": 23633331,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/ApproxBiLinear/480p/I444-12",
+            "runs": 15,
+            "nsPerOp": 96389248,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/ApproxBiLinear/1080p/RGBA-12",
+            "runs": 166,
+            "nsPerOp": 10564957,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/ApproxBiLinear/1080p/I444-12",
+            "runs": 19,
+            "nsPerOp": 77353336,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/BiLinear/480p/RGBA-12",
+            "runs": 30,
+            "nsPerOp": 57657834,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/BiLinear/480p/I444-12",
+            "runs": 16,
+            "nsPerOp": 86989249,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/BiLinear/1080p/RGBA-12",
+            "runs": 12,
+            "nsPerOp": 92133725,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/BiLinear/1080p/I444-12",
+            "runs": 7,
+            "nsPerOp": 180087495,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/FastNearestNeighbor/1080p/RGBA-12",
+            "runs": 830,
+            "nsPerOp": 1916252,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/FastNearestNeighbor/1080p/I444-12",
+            "runs": 192,
+            "nsPerOp": 6745979,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/FastNearestNeighbor/480p/RGBA-12",
+            "runs": 854,
+            "nsPerOp": 1340197,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/FastNearestNeighbor/480p/I444-12",
+            "runs": 297,
+            "nsPerOp": 3927844,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/FastBoxSampling/480p/RGBA-12",
+            "runs": 164,
+            "nsPerOp": 12672256,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/FastBoxSampling/480p/I444-12",
+            "runs": 152,
+            "nsPerOp": 6981034,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/FastBoxSampling/1080p/I444-12",
+            "runs": 61,
+            "nsPerOp": 16681268,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScale/FastBoxSampling/1080p/RGBA-12",
+            "runs": 98,
+            "nsPerOp": 11713855,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRGBToYCbCr",
+            "modificationCount": 1,
+            "createdOn": "2020-02-18",
+            "lastUpdateOn": "2020-02-18"
+          },
+          {
+            "name": "BenchmarkRGBToYCbCr",
+            "modificationCount": 1,
+            "createdOn": "2020-02-18",
+            "lastUpdateOn": "2020-02-18"
+          },
+          {
+            "name": "BenchmarkYCbCrToRGB",
+            "modificationCount": 1,
+            "createdOn": "2020-02-18",
+            "lastUpdateOn": "2020-02-18"
+          },
+          {
+            "name": "BenchmarkYCbCrToRGB",
+            "modificationCount": 1,
+            "createdOn": "2020-02-18",
+            "lastUpdateOn": "2020-02-18"
+          },
+          {
+            "name": "BenchmarkToI420",
+            "modificationCount": 7,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkToI420",
+            "modificationCount": 7,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkToI420",
+            "modificationCount": 7,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkToI420",
+            "modificationCount": 7,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkToI420",
+            "modificationCount": 7,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkToI420",
+            "modificationCount": 7,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkToI420",
+            "modificationCount": 7,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkToI420",
+            "modificationCount": 7,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2023-03-07"
+          },
+          {
+            "name": "BenchmarkToRGBA",
+            "modificationCount": 3,
+            "createdOn": "2020-02-17",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkToRGBA",
+            "modificationCount": 3,
+            "createdOn": "2020-02-17",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkToRGBA",
+            "modificationCount": 3,
+            "createdOn": "2020-02-17",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkToRGBA",
+            "modificationCount": 3,
+            "createdOn": "2020-02-17",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkToRGBA",
+            "modificationCount": 3,
+            "createdOn": "2020-02-17",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkToRGBA",
+            "modificationCount": 3,
+            "createdOn": "2020-02-17",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkToRGBA",
+            "modificationCount": 3,
+            "createdOn": "2020-02-17",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkToRGBA",
+            "modificationCount": 3,
+            "createdOn": "2020-02-17",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkDetectChanges",
+            "modificationCount": 3,
+            "createdOn": "2020-07-04",
+            "lastUpdateOn": "2020-12-12"
+          },
+          {
+            "name": "BenchmarkDetectChanges",
+            "modificationCount": 3,
+            "createdOn": "2020-07-04",
+            "lastUpdateOn": "2020-12-12"
+          },
+          {
+            "name": "BenchmarkDetectChanges",
+            "modificationCount": 3,
+            "createdOn": "2020-07-04",
+            "lastUpdateOn": "2020-12-12"
+          },
+          {
+            "name": "BenchmarkDetectChanges",
+            "modificationCount": 3,
+            "createdOn": "2020-07-04",
+            "lastUpdateOn": "2020-12-12"
+          },
+          {
+            "name": "BenchmarkDetectChanges",
+            "modificationCount": 3,
+            "createdOn": "2020-07-04",
+            "lastUpdateOn": "2020-12-12"
+          },
+          {
+            "name": "BenchmarkFrameBufferCopyOptimized",
+            "modificationCount": 1,
+            "createdOn": "2020-09-02",
+            "lastUpdateOn": "2020-09-02"
+          },
+          {
+            "name": "BenchmarkFrameBufferCopyNaive",
+            "modificationCount": 1,
+            "createdOn": "2020-09-02",
+            "lastUpdateOn": "2020-09-02"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          },
+          {
+            "name": "BenchmarkScale",
+            "modificationCount": 4,
+            "createdOn": "2020-02-16",
+            "lastUpdateOn": "2020-10-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/pion/mediadevices/pkg/wave",
+        "succeded": true,
+        "duration": "21.272s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecoder/Int16InterleavedHostEndian-12",
+            "runs": 1974211,
+            "nsPerOp": 665.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/Int16InterleavedNonHostEndian-12",
+            "runs": 340077,
+            "nsPerOp": 3186,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/Int16NonInterleavedHostEndian-12",
+            "runs": 1391587,
+            "nsPerOp": 3648,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/Int16NonInterleavedNonHostEndian-12",
+            "runs": 90813,
+            "nsPerOp": 14727,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/Float32InterleavedHostEndian-12",
+            "runs": 875277,
+            "nsPerOp": 4191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/Float32InterleavedNonHostEndian-12",
+            "runs": 206073,
+            "nsPerOp": 8848,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/Float32NonInterleavedHostEndian-12",
+            "runs": 395799,
+            "nsPerOp": 3351,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/Float32NonInterleavedNonHostEndian-12",
+            "runs": 247006,
+            "nsPerOp": 5548,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 2,
+            "createdOn": "2020-06-07",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 2,
+            "createdOn": "2020-06-07",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 2,
+            "createdOn": "2020-06-07",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 2,
+            "createdOn": "2020-06-07",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 2,
+            "createdOn": "2020-06-07",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 2,
+            "createdOn": "2020-06-07",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 2,
+            "createdOn": "2020-06-07",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 2,
+            "createdOn": "2020-06-07",
+            "lastUpdateOn": "2020-06-09"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "pion/mediadevices",
+    "name": "mediadevices",
+    "private": false,
+    "html_url": "https://github.com/pion/mediadevices",
+    "description": "Go implementation of the MediaDevices API.",
+    "fork": false,
+    "created_at": "2019-11-20T05:04:31Z",
+    "updated_at": "2023-10-20T12:00:02Z",
+    "pushed_at": "2023-10-23T01:30:41Z",
+    "ssh_url": "git@github.com:pion/mediadevices.git",
+    "homepage": "https://pion.ly/",
+    "stargazers_count": 477,
+    "watchers_count": 477,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 103,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 60,
+    "topics": [
+      "audio-call",
+      "codec",
+      "driver",
+      "face-recognition",
+      "go",
+      "golang",
+      "livestream",
+      "machine-learning",
+      "mediadevices",
+      "mediadevices-api",
+      "p2p",
+      "rtp",
+      "streaming",
+      "video-call",
+      "voip",
+      "webrtc"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 160,
+    "Lines": 18354,
+    "Blank": 2317,
+    "Code": 14695,
+    "Comment": 1342,
+    "Bytes": 605924,
+    "Complexity": 2289
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "Name": "PaddlePaddle/PaddleFlow",
+  "Path": "./repositories/PaddlePaddle__PaddleFlow",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T16:31:22Z",
+    "benchmarkCount": 14,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 10,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/PaddlePaddle/PaddleFlow/pkg/common/resources",
+        "succeded": true,
+        "duration": "18.266s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkResource_MarshalJSON/resource_with_10_milli_cpu-12",
+            "runs": 522901,
+            "nsPerOp": 4051,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResource_MarshalJSON/resource_with_1_cpu-12",
+            "runs": 291871,
+            "nsPerOp": 4138,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResource_MarshalJSON/resource_with_1k_cpu-12",
+            "runs": 282139,
+            "nsPerOp": 3895,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON/resource_with_null_string-12",
+            "runs": 319303,
+            "nsPerOp": 3544,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON/resource_with_zero_string-12",
+            "runs": 283450,
+            "nsPerOp": 4240,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON/resource_with_10_milli_cpu-12",
+            "runs": 292808,
+            "nsPerOp": 4291,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON/resource_with_1_cpu-12",
+            "runs": 296134,
+            "nsPerOp": 4508,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON/resource_with_1k_cpu-12",
+            "runs": 291948,
+            "nsPerOp": 4301,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON/resource_with_1G_mem-12",
+            "runs": 258733,
+            "nsPerOp": 4317,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON/test_compatible_with_old_mem-12",
+            "runs": 286442,
+            "nsPerOp": 4009,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkResource_MarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-07-01"
+          },
+          {
+            "name": "BenchmarkResource_MarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-07-01"
+          },
+          {
+            "name": "BenchmarkResource_MarshalJSON",
+            "modificationCount": 1,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-07-01"
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON",
+            "modificationCount": 2,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON",
+            "modificationCount": 2,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON",
+            "modificationCount": 2,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON",
+            "modificationCount": 2,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON",
+            "modificationCount": 2,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON",
+            "modificationCount": 2,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkResource_UnmarshalJSON",
+            "modificationCount": 2,
+            "createdOn": "2022-07-01",
+            "lastUpdateOn": "2022-11-09"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/PaddlePaddle/PaddleFlow/pkg/fs/client/fs",
+        "succeded": false,
+        "duration": "295.044s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_PathWithOutCache-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "badger"
+          },
+          {
+            "name": "Benchmark_PathWithcache-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "badger"
+          },
+          {
+            "name": "BenchmarkMemCachedRead",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "pfs_client_test.go:405: create client fail operation not supported"
+          },
+          {
+            "name": "BenchmarkUnCachedRead",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "pfs_client_test.go:453: create client fail operation not supported"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_PathWithOutCache",
+            "modificationCount": 1,
+            "createdOn": "2022-10-08",
+            "lastUpdateOn": "2022-10-08"
+          },
+          {
+            "name": "Benchmark_PathWithcache",
+            "modificationCount": 1,
+            "createdOn": "2022-10-08",
+            "lastUpdateOn": "2022-10-08"
+          },
+          {
+            "name": "BenchmarkMemCachedRead",
+            "modificationCount": 6,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-10-11"
+          },
+          {
+            "name": "BenchmarkUnCachedRead",
+            "modificationCount": 6,
+            "createdOn": "2021-12-30",
+            "lastUpdateOn": "2022-10-11"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "PaddlePaddle/PaddleFlow",
+    "name": "PaddleFlow",
+    "private": false,
+    "html_url": "https://github.com/PaddlePaddle/PaddleFlow",
+    "fork": false,
+    "created_at": "2021-12-10T08:24:19Z",
+    "updated_at": "2023-09-21T01:32:40Z",
+    "pushed_at": "2023-10-16T06:53:44Z",
+    "ssh_url": "git@github.com:PaddlePaddle/PaddleFlow.git",
+    "stargazers_count": 91,
+    "watchers_count": 91,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 31,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 7,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 488,
+    "Lines": 116341,
+    "Blank": 11548,
+    "Code": 92737,
+    "Comment": 12056,
+    "Bytes": 3479300,
+    "Complexity": 14211
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "Name": "ktr0731/go-fuzzyfinder",
+  "Path": "./repositories/ktr0731__go-fuzzyfinder",
+  "GoVersion": "1.13",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T12:00:11Z",
+    "benchmarkCount": 5,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 3,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/ktr0731/go-fuzzyfinder",
+        "succeded": false,
+        "duration": "1.065s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFind/normal",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "fuzzyfinder_test.go:591: should not return an error, but got 'abort'"
+          },
+          {
+            "name": "BenchmarkFind/hotreload",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "fuzzyfinder_test.go:618: should not return an error, but got 'abort'"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFind",
+            "modificationCount": 12,
+            "createdOn": "2019-02-07",
+            "lastUpdateOn": "2021-03-17"
+          },
+          {
+            "name": "BenchmarkFind",
+            "modificationCount": 12,
+            "createdOn": "2019-02-07",
+            "lastUpdateOn": "2021-03-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ktr0731/go-fuzzyfinder/matching",
+        "succeded": true,
+        "duration": "8.240s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMatch/case_insensitive-12",
+            "runs": 3835,
+            "nsPerOp": 462327,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatch/case_sensitive-12",
+            "runs": 6000,
+            "nsPerOp": 269189,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 5,
+            "createdOn": "2019-01-24",
+            "lastUpdateOn": "2019-02-08"
+          },
+          {
+            "name": "BenchmarkMatch",
+            "modificationCount": 5,
+            "createdOn": "2019-01-24",
+            "lastUpdateOn": "2019-02-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ktr0731/go-fuzzyfinder/scoring",
+        "succeded": true,
+        "duration": "4.206s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_smithWaterman-12",
+            "runs": 239832,
+            "nsPerOp": 6177,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_smithWaterman",
+            "modificationCount": 2,
+            "createdOn": "2019-01-27",
+            "lastUpdateOn": "2019-02-01"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "ktr0731/go-fuzzyfinder",
+    "name": "go-fuzzyfinder",
+    "private": false,
+    "html_url": "https://github.com/ktr0731/go-fuzzyfinder",
+    "description": "fzf-like fuzzy-finder as a Go library",
+    "fork": false,
+    "created_at": "2019-01-24T08:04:06Z",
+    "updated_at": "2023-10-13T05:16:56Z",
+    "pushed_at": "2023-10-16T02:50:38Z",
+    "ssh_url": "git@github.com:ktr0731/go-fuzzyfinder.git",
+    "stargazers_count": 395,
+    "watchers_count": 395,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 41,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 4,
+    "topics": [
+      "fuzzyfinder",
+      "golang"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 20,
+    "Lines": 3324,
+    "Blank": 360,
+    "Code": 2723,
+    "Comment": 241,
+    "Bytes": 86028,
+    "Complexity": 463
+  }
+}

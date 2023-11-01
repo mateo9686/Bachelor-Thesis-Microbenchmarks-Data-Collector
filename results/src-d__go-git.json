@@ -1,0 +1,834 @@
+{
+  "Name": "src-d/go-git",
+  "Path": "./repositories/src-d__go-git",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T23:52:43Z",
+    "benchmarkCount": 56,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 55,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "gopkg.in/src-d/go-git.v4/plumbing/format/idxfile",
+        "succeded": true,
+        "duration": "8.853s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecode-12",
+            "runs": 20233,
+            "nsPerOp": 55159,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindOffset-12",
+            "runs": 1226298,
+            "nsPerOp": 868.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindCRC32-12",
+            "runs": 1902690,
+            "nsPerOp": 768.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContains-12",
+            "runs": 4038640,
+            "nsPerOp": 353.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEntries-12",
+            "runs": 715789,
+            "nsPerOp": 2140,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2018-07-19",
+            "lastUpdateOn": "2018-07-19"
+          },
+          {
+            "name": "BenchmarkFindOffset",
+            "modificationCount": 2,
+            "createdOn": "2018-07-19",
+            "lastUpdateOn": "2018-07-27"
+          },
+          {
+            "name": "BenchmarkFindCRC32",
+            "modificationCount": 2,
+            "createdOn": "2018-07-19",
+            "lastUpdateOn": "2018-07-27"
+          },
+          {
+            "name": "BenchmarkContains",
+            "modificationCount": 2,
+            "createdOn": "2018-07-19",
+            "lastUpdateOn": "2018-07-27"
+          },
+          {
+            "name": "BenchmarkEntries",
+            "modificationCount": 2,
+            "createdOn": "2018-07-19",
+            "lastUpdateOn": "2018-07-27"
+          }
+        ]
+      },
+      {
+        "pkg": "gopkg.in/src-d/go-git.v4/plumbing/format/packfile",
+        "succeded": false,
+        "duration": "34.852s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse/https://github.com/git-fixtures/root-references.git-12",
+            "runs": 279,
+            "nsPerOp": 5686784,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/git-fixtures/basic.git-12",
+            "runs": 206,
+            "nsPerOp": 5254737,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/git-fixtures/basic.git#01",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "parser_test.go:215: reference delta not found"
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/git-fixtures/basic.git#02-12",
+            "runs": 301,
+            "nsPerOp": 3855753,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/src-d/go-git.git-12",
+            "runs": 2,
+            "nsPerOp": 571003312,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/git-fixtures/tags.git-12",
+            "runs": 7546,
+            "nsPerOp": 176220,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/spinnaker/spinnaker.git-12",
+            "runs": 6,
+            "nsPerOp": 188550309,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/jamesob/desk.git-12",
+            "runs": 66,
+            "nsPerOp": 32518068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/cpcs499/Final_Pres_P.git-12",
+            "runs": 20488,
+            "nsPerOp": 68891,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/github/gem-builder.git-12",
+            "runs": 498,
+            "nsPerOp": 2591129,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/githubtraining/example-branches.git-12",
+            "runs": 2018,
+            "nsPerOp": 662074,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/rumpkernel/rumprun-xen.git-12",
+            "runs": 6,
+            "nsPerOp": 228647474,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/mcuadros/skeetr.git-12",
+            "runs": 115,
+            "nsPerOp": 11567184,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/dezfowler/LiteMock.git-12",
+            "runs": 74,
+            "nsPerOp": 23585804,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/tyba/storable.git-12",
+            "runs": 31,
+            "nsPerOp": 66516589,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/https://github.com/toqueteos/ts3.git-12",
+            "runs": 273,
+            "nsPerOp": 3813070,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse/#00-12",
+            "runs": 1351,
+            "nsPerOp": 912806,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseBasic-12",
+            "runs": 212,
+            "nsPerOp": 4775054,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          },
+          {
+            "name": "BenchmarkParseBasic",
+            "modificationCount": 1,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-08-09"
+          }
+        ]
+      },
+      {
+        "pkg": "gopkg.in/src-d/go-git.v4/storage/filesystem",
+        "succeded": true,
+        "duration": "52.145s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/root-references.git-12",
+            "runs": 615,
+            "nsPerOp": 2253237,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/basic.git-12",
+            "runs": 708,
+            "nsPerOp": 1472230,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/basic.git#01-12",
+            "runs": 667,
+            "nsPerOp": 1611286,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/basic.git#02-12",
+            "runs": 940,
+            "nsPerOp": 1396063,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/basic.git#03-12",
+            "runs": 790,
+            "nsPerOp": 1592520,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/basic.git#04-12",
+            "runs": 754,
+            "nsPerOp": 1418447,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/basic.git#05-12",
+            "runs": 903,
+            "nsPerOp": 1485070,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/basic.git#06-12",
+            "runs": 1035,
+            "nsPerOp": 1422807,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/basic.git#07-12",
+            "runs": 624,
+            "nsPerOp": 1764947,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/src-d/go-git.git-12",
+            "runs": 9,
+            "nsPerOp": 119412035,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/tags.git-12",
+            "runs": 1420,
+            "nsPerOp": 732385,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIter/https://github.com/git-fixtures/empty.git-12",
+            "runs": 27573,
+            "nsPerOp": 42036,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/root-references.git-12",
+            "runs": 217,
+            "nsPerOp": 5409429,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/basic.git-12",
+            "runs": 280,
+            "nsPerOp": 4514464,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/basic.git#01-12",
+            "runs": 278,
+            "nsPerOp": 4235540,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/basic.git#02-12",
+            "runs": 268,
+            "nsPerOp": 4406165,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/basic.git#03-12",
+            "runs": 286,
+            "nsPerOp": 4138394,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/basic.git#04-12",
+            "runs": 300,
+            "nsPerOp": 4110049,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/basic.git#05-12",
+            "runs": 289,
+            "nsPerOp": 3794518,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/basic.git#06-12",
+            "runs": 343,
+            "nsPerOp": 5637955,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/basic.git#07-12",
+            "runs": 170,
+            "nsPerOp": 6785429,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/src-d/go-git.git-12",
+            "runs": 2,
+            "nsPerOp": 622035468,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/tags.git-12",
+            "runs": 2018,
+            "nsPerOp": 609355,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent/https://github.com/git-fixtures/empty.git-12",
+            "runs": 25605,
+            "nsPerOp": 45946,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile/https://github.com/git-fixtures/basic.git-12",
+            "runs": 58852,
+            "nsPerOp": 18435,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile/https://github.com/git-fixtures/basic.git#01-12",
+            "runs": 61898,
+            "nsPerOp": 16213,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile/https://github.com/git-fixtures/basic.git#02-12",
+            "runs": 86554,
+            "nsPerOp": 17307,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile/https://github.com/git-fixtures/basic.git#03-12",
+            "runs": 67656,
+            "nsPerOp": 20152,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile/https://github.com/git-fixtures/basic.git#04-12",
+            "runs": 67444,
+            "nsPerOp": 17527,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile/https://github.com/git-fixtures/basic.git#05-12",
+            "runs": 63076,
+            "nsPerOp": 17853,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile/https://github.com/git-fixtures/basic.git#06-12",
+            "runs": 77097,
+            "nsPerOp": 17234,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile/https://github.com/git-fixtures/basic.git#07-12",
+            "runs": 62485,
+            "nsPerOp": 16417,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIter",
+            "modificationCount": 4,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkPackfileIterReadContent",
+            "modificationCount": 3,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-20"
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-07"
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-07"
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-07"
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-07"
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-07"
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-07"
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-07"
+          },
+          {
+            "name": "BenchmarkGetObjectFromPackfile",
+            "modificationCount": 2,
+            "createdOn": "2018-08-09",
+            "lastUpdateOn": "2018-09-07"
+          }
+        ]
+      },
+      {
+        "pkg": "gopkg.in/src-d/go-git.v4/storage/filesystem/dotgit",
+        "succeded": true,
+        "duration": "1.730s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRefMultipleTimes-12",
+            "runs": 46525,
+            "nsPerOp": 21574,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRefMultipleTimes",
+            "modificationCount": 2,
+            "createdOn": "2017-08-24",
+            "lastUpdateOn": "2018-04-16"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "src-d/go-git",
+    "name": "go-git",
+    "private": false,
+    "html_url": "https://github.com/src-d/go-git",
+    "description": "Project has been moved to: https://github.com/go-git/go-git",
+    "fork": false,
+    "created_at": "2015-10-22T10:43:33Z",
+    "updated_at": "2023-10-23T11:11:34Z",
+    "pushed_at": "2022-04-10T11:14:17Z",
+    "ssh_url": "git@github.com:src-d/go-git.git",
+    "homepage": "https://github.com/go-git/go-git",
+    "stargazers_count": 4930,
+    "watchers_count": 4930,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 594,
+    "language": "Go",
+    "archived": true,
+    "disabled": false,
+    "open_issues": 228,
+    "topics": [
+      "git",
+      "git-client",
+      "git-server",
+      "go-git",
+      "golang"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 371,
+    "Lines": 70818,
+    "Blank": 11617,
+    "Code": 51952,
+    "Comment": 7249,
+    "Bytes": 1876542,
+    "Complexity": 7267
+  }
+}

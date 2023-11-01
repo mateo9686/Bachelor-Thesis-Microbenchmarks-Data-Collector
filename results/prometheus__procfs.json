@@ -1,0 +1,119 @@
+{
+  "Name": "prometheus/procfs",
+  "Path": "./repositories/prometheus__procfs",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T16:58:48Z",
+    "benchmarkCount": 3,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 2,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/prometheus/procfs",
+        "succeded": false,
+        "duration": "3.401s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseAddress-12",
+            "runs": 12579160,
+            "nsPerOp": 93.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseDevice-12",
+            "runs": 40236974,
+            "nsPerOp": 26.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcSMapsRollup",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "proc_smaps_test.go:26: Creating pseudo fs from getProcFixtures failed at fixtures/proc with error: could not read \"testdata/fixtures/proc\": stat testdata/fixtures/proc: no such file or directory"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseAddress",
+            "modificationCount": 1,
+            "createdOn": "2023-09-22",
+            "lastUpdateOn": "2023-09-22"
+          },
+          {
+            "name": "BenchmarkParseDevice",
+            "modificationCount": 1,
+            "createdOn": "2023-09-22",
+            "lastUpdateOn": "2023-09-22"
+          },
+          {
+            "name": "BenchmarkProcSMapsRollup",
+            "modificationCount": 2,
+            "createdOn": "2020-05-01",
+            "lastUpdateOn": "2020-05-02"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "prometheus/procfs",
+    "name": "procfs",
+    "private": false,
+    "html_url": "https://github.com/prometheus/procfs",
+    "description": "procfs provides functions to retrieve system, kernel and process metrics from the pseudo-filesystem proc.",
+    "fork": false,
+    "created_at": "2014-12-22T18:16:52Z",
+    "updated_at": "2023-10-23T09:16:35Z",
+    "pushed_at": "2023-10-13T16:02:28Z",
+    "ssh_url": "git@github.com:prometheus/procfs.git",
+    "stargazers_count": 694,
+    "watchers_count": 694,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 304,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 42,
+    "topics": [
+      "go",
+      "kernel",
+      "process",
+      "process-metrics",
+      "procfs",
+      "prometheus",
+      "pseudo-filesystem-proc"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 191,
+    "Lines": 29301,
+    "Blank": 2753,
+    "Code": 22174,
+    "Comment": 4374,
+    "Bytes": 864493,
+    "Complexity": 3838
+  }
+}

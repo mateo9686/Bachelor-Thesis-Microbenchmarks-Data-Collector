@@ -1,0 +1,772 @@
+{
+  "Name": "letsencrypt/boulder",
+  "Path": "./repositories/letsencrypt__boulder",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T23:42:38Z",
+    "benchmarkCount": 51,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 51,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/letsencrypt/boulder/cmd/cert-checker",
+        "succeded": true,
+        "duration": "1.559s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCheckCert-12",
+            "runs": 957,
+            "nsPerOp": 1389506,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCheckCert",
+            "modificationCount": 17,
+            "createdOn": "2015-08-20",
+            "lastUpdateOn": "2023-07-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/letsencrypt/boulder/goodkey",
+        "succeded": true,
+        "duration": "8.240s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFermat1-12",
+            "runs": 16138,
+            "nsPerOp": 82106,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFermat10-12",
+            "runs": 4300,
+            "nsPerOp": 296616,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFermat100-12",
+            "runs": 470,
+            "nsPerOp": 2659359,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFermat1000-12",
+            "runs": 44,
+            "nsPerOp": 24052616,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFermat10000-12",
+            "runs": 4,
+            "nsPerOp": 285009356,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFermat1",
+            "modificationCount": 1,
+            "createdOn": "2021-12-22",
+            "lastUpdateOn": "2021-12-22"
+          },
+          {
+            "name": "BenchmarkFermat10",
+            "modificationCount": 1,
+            "createdOn": "2021-12-22",
+            "lastUpdateOn": "2021-12-22"
+          },
+          {
+            "name": "BenchmarkFermat100",
+            "modificationCount": 1,
+            "createdOn": "2021-12-22",
+            "lastUpdateOn": "2021-12-22"
+          },
+          {
+            "name": "BenchmarkFermat1000",
+            "modificationCount": 1,
+            "createdOn": "2021-12-22",
+            "lastUpdateOn": "2021-12-22"
+          },
+          {
+            "name": "BenchmarkFermat10000",
+            "modificationCount": 1,
+            "createdOn": "2021-12-22",
+            "lastUpdateOn": "2021-12-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/letsencrypt/boulder/nonce",
+        "succeded": true,
+        "duration": "2.200s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNonces-12",
+            "runs": 103950,
+            "nsPerOp": 10870,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNonces",
+            "modificationCount": 4,
+            "createdOn": "2018-03-12",
+            "lastUpdateOn": "2019-12-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/letsencrypt/boulder/semaphore",
+        "succeded": true,
+        "duration": "75.634s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewSeq/Weighted-1-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.2889,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewSeq/semChan-1-12",
+            "runs": 16091826,
+            "nsPerOp": 72.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewSeq/Weighted-128-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.263,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewSeq/semChan-128-12",
+            "runs": 17311728,
+            "nsPerOp": 76.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-1-1-1-12",
+            "runs": 51600279,
+            "nsPerOp": 21.85,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-1-1-1-12",
+            "runs": 59610702,
+            "nsPerOp": 20.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-1-1-1-12",
+            "runs": 36170502,
+            "nsPerOp": 34.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-1-1-1-12",
+            "runs": 32474659,
+            "nsPerOp": 36.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-2-1-1-12",
+            "runs": 57469940,
+            "nsPerOp": 21.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-2-1-1-12",
+            "runs": 60014718,
+            "nsPerOp": 20.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-2-1-1-12",
+            "runs": 32939136,
+            "nsPerOp": 34.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-2-1-1-12",
+            "runs": 32742937,
+            "nsPerOp": 36.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-16-1-1-12",
+            "runs": 56782579,
+            "nsPerOp": 21.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-16-1-1-12",
+            "runs": 53708498,
+            "nsPerOp": 20.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-16-1-1-12",
+            "runs": 35101203,
+            "nsPerOp": 35.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-16-1-1-12",
+            "runs": 32022073,
+            "nsPerOp": 35.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-128-1-1-12",
+            "runs": 51262744,
+            "nsPerOp": 21.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-128-1-1-12",
+            "runs": 56796656,
+            "nsPerOp": 20.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-128-1-1-12",
+            "runs": 30123627,
+            "nsPerOp": 37.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-128-1-1-12",
+            "runs": 23563765,
+            "nsPerOp": 42.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-2-2-1-12",
+            "runs": 55924515,
+            "nsPerOp": 22.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-2-2-1-12",
+            "runs": 53820198,
+            "nsPerOp": 29.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-2-2-1-12",
+            "runs": 8285020,
+            "nsPerOp": 150.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-2-2-1-12",
+            "runs": 9050328,
+            "nsPerOp": 165.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-16-2-8-12",
+            "runs": 5754451,
+            "nsPerOp": 287.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-16-2-8-12",
+            "runs": 4406634,
+            "nsPerOp": 292.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-16-2-8-12",
+            "runs": 1000000,
+            "nsPerOp": 1182,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-16-2-8-12",
+            "runs": 1000000,
+            "nsPerOp": 1178,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-128-2-64-12",
+            "runs": 788262,
+            "nsPerOp": 2441,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-128-2-64-12",
+            "runs": 464578,
+            "nsPerOp": 2604,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-128-2-64-12",
+            "runs": 180405,
+            "nsPerOp": 10026,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-128-2-64-12",
+            "runs": 168822,
+            "nsPerOp": 8575,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-2-1-2-12",
+            "runs": 24704683,
+            "nsPerOp": 65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-2-1-2-12",
+            "runs": 23428269,
+            "nsPerOp": 55.11,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-2-1-2-12",
+            "runs": 10307790,
+            "nsPerOp": 151.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-2-1-2-12",
+            "runs": 10616163,
+            "nsPerOp": 171.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-16-8-2-12",
+            "runs": 14335329,
+            "nsPerOp": 100.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-16-8-2-12",
+            "runs": 20690241,
+            "nsPerOp": 60.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-16-8-2-12",
+            "runs": 1000000,
+            "nsPerOp": 1138,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-16-8-2-12",
+            "runs": 1000000,
+            "nsPerOp": 1158,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-acquire-128-64-2-12",
+            "runs": 18521145,
+            "nsPerOp": 65.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/Weighted-tryAcquire-128-64-2-12",
+            "runs": 19884055,
+            "nsPerOp": 53.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-acquire-128-64-2-12",
+            "runs": 341488,
+            "nsPerOp": 3535,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAcquireSeq/semChan-tryAcquire-128-64-2-12",
+            "runs": 304476,
+            "nsPerOp": 3337,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkNewSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkNewSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkNewSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          },
+          {
+            "name": "BenchmarkAcquireSeq",
+            "modificationCount": 1,
+            "createdOn": "2022-12-12",
+            "lastUpdateOn": "2022-12-12"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "letsencrypt/boulder",
+    "name": "boulder",
+    "private": false,
+    "html_url": "https://github.com/letsencrypt/boulder",
+    "description": "An ACME-based certificate authority, written in Go. ",
+    "fork": false,
+    "created_at": "2014-12-21T00:29:54Z",
+    "updated_at": "2023-10-23T11:08:28Z",
+    "pushed_at": "2023-10-19T15:53:00Z",
+    "ssh_url": "git@github.com:letsencrypt/boulder.git",
+    "stargazers_count": 4794,
+    "watchers_count": 4794,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 624,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 198,
+    "topics": [
+      "acme",
+      "boulder",
+      "ca",
+      "certificate-authority",
+      "go",
+      "lets-encrypt",
+      "pki",
+      "rfc8555",
+      "tls"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mpl-2.0",
+      "name": "Mozilla Public License 2.0",
+      "url": "https://api.github.com/licenses/mpl-2.0",
+      "spdx_id": "MPL-2.0",
+      "node_id": "MDc6TGljZW5zZTE0",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 2929,
+    "Lines": 920108,
+    "Blank": 87290,
+    "Code": 706878,
+    "Comment": 125940,
+    "Bytes": 32145083,
+    "Complexity": 107057
+  }
+}

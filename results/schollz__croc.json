@@ -1,0 +1,303 @@
+{
+  "Name": "schollz/croc",
+  "Path": "./repositories/schollz__croc",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T04:05:00Z",
+    "benchmarkCount": 15,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 14,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/schollz/croc/v9/src/compress",
+        "succeded": true,
+        "duration": "6.233s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCompressLevelMinusTwo-12",
+            "runs": 1404,
+            "nsPerOp": 793075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressLevelNine-12",
+            "runs": 818,
+            "nsPerOp": 1398531,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressLevelMinusTwoBinary-12",
+            "runs": 157,
+            "nsPerOp": 6609280,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressLevelNineBinary-12",
+            "runs": 31,
+            "nsPerOp": 36194559,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCompressLevelMinusTwo",
+            "modificationCount": 1,
+            "createdOn": "2018-10-23",
+            "lastUpdateOn": "2018-10-23"
+          },
+          {
+            "name": "BenchmarkCompressLevelNine",
+            "modificationCount": 1,
+            "createdOn": "2018-10-23",
+            "lastUpdateOn": "2018-10-23"
+          },
+          {
+            "name": "BenchmarkCompressLevelMinusTwoBinary",
+            "modificationCount": 2,
+            "createdOn": "2018-10-23",
+            "lastUpdateOn": "2020-08-22"
+          },
+          {
+            "name": "BenchmarkCompressLevelNineBinary",
+            "modificationCount": 2,
+            "createdOn": "2018-10-23",
+            "lastUpdateOn": "2020-08-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/schollz/croc/v9/src/crypt",
+        "succeded": true,
+        "duration": "5.685s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncrypt-12",
+            "runs": 379940,
+            "nsPerOp": 2966,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecrypt-12",
+            "runs": 842764,
+            "nsPerOp": 1201,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncryptChaCha-12",
+            "runs": 1136887,
+            "nsPerOp": 1090,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecryptChaCha-12",
+            "runs": 4077994,
+            "nsPerOp": 288.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncrypt",
+            "modificationCount": 3,
+            "createdOn": "2018-09-24",
+            "lastUpdateOn": "2019-11-18"
+          },
+          {
+            "name": "BenchmarkDecrypt",
+            "modificationCount": 3,
+            "createdOn": "2018-09-24",
+            "lastUpdateOn": "2019-11-18"
+          },
+          {
+            "name": "BenchmarkEncryptChaCha",
+            "modificationCount": 1,
+            "createdOn": "2021-04-21",
+            "lastUpdateOn": "2021-04-21"
+          },
+          {
+            "name": "BenchmarkDecryptChaCha",
+            "modificationCount": 1,
+            "createdOn": "2021-04-21",
+            "lastUpdateOn": "2021-04-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/schollz/croc/v9/src/tcp",
+        "succeded": true,
+        "duration": "2.294s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConnection-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "\u001b[0;36m[debug]"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConnection",
+            "modificationCount": 3,
+            "createdOn": "2020-05-06",
+            "lastUpdateOn": "2023-03-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/schollz/croc/v9/src/utils",
+        "succeded": true,
+        "duration": "12.070s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMD5-12",
+            "runs": 10,
+            "nsPerOp": 108903640,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkXXHash-12",
+            "runs": 61,
+            "nsPerOp": 17835707,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkImoHash-12",
+            "runs": 43785,
+            "nsPerOp": 56737,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkImoHashFull-12",
+            "runs": 22,
+            "nsPerOp": 59651896,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSha256-12",
+            "runs": 1815104,
+            "nsPerOp": 784,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMissingChunks-12",
+            "runs": 10,
+            "nsPerOp": 124114446,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMD5",
+            "modificationCount": 3,
+            "createdOn": "2019-04-29",
+            "lastUpdateOn": "2019-05-12"
+          },
+          {
+            "name": "BenchmarkXXHash",
+            "modificationCount": 4,
+            "createdOn": "2019-04-29",
+            "lastUpdateOn": "2021-04-21"
+          },
+          {
+            "name": "BenchmarkImoHash",
+            "modificationCount": 3,
+            "createdOn": "2019-04-29",
+            "lastUpdateOn": "2019-05-12"
+          },
+          {
+            "name": "BenchmarkImoHashFull",
+            "modificationCount": 1,
+            "createdOn": "2021-04-21",
+            "lastUpdateOn": "2021-04-21"
+          },
+          {
+            "name": "BenchmarkSha256",
+            "modificationCount": 1,
+            "createdOn": "2020-09-16",
+            "lastUpdateOn": "2020-09-16"
+          },
+          {
+            "name": "BenchmarkMissingChunks",
+            "modificationCount": 2,
+            "createdOn": "2021-04-17",
+            "lastUpdateOn": "2022-02-03"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "schollz/croc",
+    "name": "croc",
+    "private": false,
+    "html_url": "https://github.com/schollz/croc",
+    "description": "Easily and securely send things from one computer to another :crocodile: :package:",
+    "fork": false,
+    "created_at": "2017-10-17T15:20:18Z",
+    "updated_at": "2023-10-23T16:14:07Z",
+    "pushed_at": "2023-10-11T08:16:04Z",
+    "ssh_url": "git@github.com:schollz/croc.git",
+    "homepage": "https://schollz.com/software/croc6",
+    "stargazers_count": 24841,
+    "watchers_count": 24841,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1014,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 137,
+    "topics": [
+      "data-transfer",
+      "file-sharing",
+      "golang",
+      "pake",
+      "peer-to-peer",
+      "tcp",
+      "transfer"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 18,
+    "Lines": 5278,
+    "Blank": 421,
+    "Code": 4609,
+    "Comment": 248,
+    "Bytes": 139063,
+    "Complexity": 1290
+  }
+}

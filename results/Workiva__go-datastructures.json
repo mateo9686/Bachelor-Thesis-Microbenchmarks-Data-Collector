@@ -1,0 +1,2137 @@
+{
+  "Name": "Workiva/go-datastructures",
+  "Path": "./repositories/Workiva__go-datastructures",
+  "GoVersion": "1.15",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T01:36:20Z",
+    "benchmarkCount": 145,
+    "benchmarkSuiteCount": 21,
+    "successfulBenchmarkCount": 144,
+    "successfulBenchmarkSuitesCount": 21,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/Workiva/go-datastructures/augmentedtree",
+        "succeded": true,
+        "duration": "19.168s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAddItems-12",
+            "runs": 1674,
+            "nsPerOp": 686992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryItems-12",
+            "runs": 10000,
+            "nsPerOp": 104691,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteItems-12",
+            "runs": 2918,
+            "nsPerOp": 464746,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddItemsMultiDimensions-12",
+            "runs": 2436163,
+            "nsPerOp": 753.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryItemsMultiDimensions-12",
+            "runs": 25093,
+            "nsPerOp": 41229,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteItemsMultiDimensions-12",
+            "runs": 5354,
+            "nsPerOp": 259957,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAddItems",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkQueryItems",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkDeleteItems",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkAddItemsMultiDimensions",
+            "modificationCount": 4,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2015-02-20"
+          },
+          {
+            "name": "BenchmarkQueryItemsMultiDimensions",
+            "modificationCount": 3,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-24"
+          },
+          {
+            "name": "BenchmarkDeleteItemsMultiDimensions",
+            "modificationCount": 4,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/bitarray",
+        "succeded": true,
+        "duration": "48.503s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetBit-12",
+            "runs": 10000,
+            "nsPerOp": 129589,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetSetBits-12",
+            "runs": 10000,
+            "nsPerOp": 121122,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEquality-12",
+            "runs": 6607041,
+            "nsPerOp": 249.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntersects-12",
+            "runs": 238000,
+            "nsPerOp": 6430,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComplement-12",
+            "runs": 387105,
+            "nsPerOp": 5601,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDenseIntersectsCompressed-12",
+            "runs": 236172,
+            "nsPerOp": 5418,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitArrayToNums-12",
+            "runs": 41692,
+            "nsPerOp": 30809,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmap32_PopCount-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6725,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmap64_PopCount-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7587,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlockToNums-12",
+            "runs": 240631,
+            "nsPerOp": 5891,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNandSparseWithSparse-12",
+            "runs": 297220,
+            "nsPerOp": 5187,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNandSparseWithDense-12",
+            "runs": 19941,
+            "nsPerOp": 63587,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNandDenseWithSparse-12",
+            "runs": 42118,
+            "nsPerOp": 28243,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNandDenseWithDense-12",
+            "runs": 31530,
+            "nsPerOp": 35579,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOrSparseWithSparse-12",
+            "runs": 10276,
+            "nsPerOp": 181320,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOrSparseWithDense-12",
+            "runs": 519,
+            "nsPerOp": 2216479,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOrDenseWithDense-12",
+            "runs": 30532,
+            "nsPerOp": 41970,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetCompressedBit-12",
+            "runs": 30769399,
+            "nsPerOp": 76.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSetCompressedBit-12",
+            "runs": 26625,
+            "nsPerOp": 50807,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetSetCompressedBits-12",
+            "runs": 10000,
+            "nsPerOp": 259867,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClearCompressedBit-12",
+            "runs": 100000000,
+            "nsPerOp": 15.68,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedIntersects-12",
+            "runs": 2824857,
+            "nsPerOp": 483.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedEquals-12",
+            "runs": 3400975,
+            "nsPerOp": 392.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSparseBitArrayToNums-12",
+            "runs": 23234,
+            "nsPerOp": 48821,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetBit",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkGetSetBits",
+            "modificationCount": 1,
+            "createdOn": "2023-05-12",
+            "lastUpdateOn": "2023-05-12"
+          },
+          {
+            "name": "BenchmarkEquality",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkIntersects",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkComplement",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkDenseIntersectsCompressed",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkBitArrayToNums",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkBitmap32_PopCount",
+            "modificationCount": 1,
+            "createdOn": "2016-04-04",
+            "lastUpdateOn": "2016-04-04"
+          },
+          {
+            "name": "BenchmarkBitmap64_PopCount",
+            "modificationCount": 1,
+            "createdOn": "2016-04-04",
+            "lastUpdateOn": "2016-04-04"
+          },
+          {
+            "name": "BenchmarkBlockToNums",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkNandSparseWithSparse",
+            "modificationCount": 1,
+            "createdOn": "2015-08-05",
+            "lastUpdateOn": "2015-08-05"
+          },
+          {
+            "name": "BenchmarkNandSparseWithDense",
+            "modificationCount": 1,
+            "createdOn": "2015-08-05",
+            "lastUpdateOn": "2015-08-05"
+          },
+          {
+            "name": "BenchmarkNandDenseWithSparse",
+            "modificationCount": 1,
+            "createdOn": "2015-08-05",
+            "lastUpdateOn": "2015-08-05"
+          },
+          {
+            "name": "BenchmarkNandDenseWithDense",
+            "modificationCount": 1,
+            "createdOn": "2015-08-05",
+            "lastUpdateOn": "2015-08-05"
+          },
+          {
+            "name": "BenchmarkOrSparseWithSparse",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkOrSparseWithDense",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkOrDenseWithDense",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkGetCompressedBit",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkSetCompressedBit",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkGetSetCompressedBits",
+            "modificationCount": 1,
+            "createdOn": "2023-05-12",
+            "lastUpdateOn": "2023-05-12"
+          },
+          {
+            "name": "BenchmarkClearCompressedBit",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkCompressedIntersects",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkCompressedEquals",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkSparseBitArrayToNums",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/btree/immutable",
+        "succeded": true,
+        "duration": "9.218s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetitems-12",
+            "runs": 7,
+            "nsPerOp": 154095610,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkAdd-12",
+            "runs": 1,
+            "nsPerOp": 4920306524,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetitems",
+            "modificationCount": 1,
+            "createdOn": "2016-06-10",
+            "lastUpdateOn": "2016-06-10"
+          },
+          {
+            "name": "BenchmarkBulkAdd",
+            "modificationCount": 4,
+            "createdOn": "2015-02-02",
+            "lastUpdateOn": "2015-02-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/btree/palm",
+        "succeded": true,
+        "duration": "285.355s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadAndWrites-12",
+            "runs": 1524,
+            "nsPerOp": 735452,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimultaneousReadsAndWrites-12",
+            "runs": 139,
+            "nsPerOp": 7889177,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkAdd-12",
+            "runs": 346,
+            "nsPerOp": 2909354,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdd-12",
+            "runs": 585408,
+            "nsPerOp": 3111,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkAddToExisting-12",
+            "runs": 50,
+            "nsPerOp": 24423169,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 3064203,
+            "nsPerOp": 334.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkGet-12",
+            "runs": 10000,
+            "nsPerOp": 1053989,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDelete-12",
+            "runs": 755887,
+            "nsPerOp": 1858,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkDelete-12",
+            "runs": 691,
+            "nsPerOp": 1995813,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFindQuery-12",
+            "runs": 1771294,
+            "nsPerOp": 1193,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecuteQuery-12",
+            "runs": 10000,
+            "nsPerOp": 971474,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadAndWrites",
+            "modificationCount": 7,
+            "createdOn": "2015-02-05",
+            "lastUpdateOn": "2015-04-16"
+          },
+          {
+            "name": "BenchmarkSimultaneousReadsAndWrites",
+            "modificationCount": 7,
+            "createdOn": "2015-02-05",
+            "lastUpdateOn": "2015-04-16"
+          },
+          {
+            "name": "BenchmarkBulkAdd",
+            "modificationCount": 4,
+            "createdOn": "2015-02-02",
+            "lastUpdateOn": "2015-02-04"
+          },
+          {
+            "name": "BenchmarkAdd",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkBulkAddToExisting",
+            "modificationCount": 10,
+            "createdOn": "2015-02-04",
+            "lastUpdateOn": "2015-02-16"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkBulkGet",
+            "modificationCount": 5,
+            "createdOn": "2015-02-05",
+            "lastUpdateOn": "2015-02-16"
+          },
+          {
+            "name": "BenchmarkDelete",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkBulkDelete",
+            "modificationCount": 2,
+            "createdOn": "2015-02-16",
+            "lastUpdateOn": "2015-02-16"
+          },
+          {
+            "name": "BenchmarkFindQuery",
+            "modificationCount": 1,
+            "createdOn": "2015-02-16",
+            "lastUpdateOn": "2015-02-16"
+          },
+          {
+            "name": "BenchmarkExecuteQuery",
+            "modificationCount": 1,
+            "createdOn": "2015-02-16",
+            "lastUpdateOn": "2015-02-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/btree/plus",
+        "succeded": true,
+        "duration": "16.332s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIteration-12",
+            "runs": 10000,
+            "nsPerOp": 119697,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 1866147,
+            "nsPerOp": 549.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkAdd-12",
+            "runs": 130,
+            "nsPerOp": 11258240,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 2310428,
+            "nsPerOp": 887.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkAddToExisting-12",
+            "runs": 4,
+            "nsPerOp": 301884430,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadAndWrites-12",
+            "runs": 433,
+            "nsPerOp": 6755348,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimultaneousReadsAndWrites-12",
+            "runs": 97,
+            "nsPerOp": 17489355,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIteration",
+            "modificationCount": 3,
+            "createdOn": "2014-11-26",
+            "lastUpdateOn": "2015-01-30"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 2,
+            "createdOn": "2014-11-26",
+            "lastUpdateOn": "2015-01-30"
+          },
+          {
+            "name": "BenchmarkBulkAdd",
+            "modificationCount": 4,
+            "createdOn": "2015-02-02",
+            "lastUpdateOn": "2015-02-04"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkBulkAddToExisting",
+            "modificationCount": 10,
+            "createdOn": "2015-02-04",
+            "lastUpdateOn": "2015-02-16"
+          },
+          {
+            "name": "BenchmarkReadAndWrites",
+            "modificationCount": 7,
+            "createdOn": "2015-02-05",
+            "lastUpdateOn": "2015-04-16"
+          },
+          {
+            "name": "BenchmarkSimultaneousReadsAndWrites",
+            "modificationCount": 7,
+            "createdOn": "2015-02-05",
+            "lastUpdateOn": "2015-04-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/fibheap",
+        "succeded": true,
+        "duration": "55.594s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFibHeap_Enqueue-12",
+            "runs": 2518389,
+            "nsPerOp": 586.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFibHeap_DequeueMin-12",
+            "runs": 43,
+            "nsPerOp": 34586547,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFibHeap_DecreaseKey-12",
+            "runs": 3962028,
+            "nsPerOp": 3583,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFibHeap_Delete-12",
+            "runs": 80,
+            "nsPerOp": 26520026,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFibHeap_Merge-12",
+            "runs": 1298451,
+            "nsPerOp": 877.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFibHeap_Enqueue",
+            "modificationCount": 2,
+            "createdOn": "2017-02-16",
+            "lastUpdateOn": "2017-03-01"
+          },
+          {
+            "name": "BenchmarkFibHeap_DequeueMin",
+            "modificationCount": 2,
+            "createdOn": "2017-02-16",
+            "lastUpdateOn": "2017-03-01"
+          },
+          {
+            "name": "BenchmarkFibHeap_DecreaseKey",
+            "modificationCount": 2,
+            "createdOn": "2017-02-16",
+            "lastUpdateOn": "2017-03-01"
+          },
+          {
+            "name": "BenchmarkFibHeap_Delete",
+            "modificationCount": 2,
+            "createdOn": "2017-02-16",
+            "lastUpdateOn": "2017-03-01"
+          },
+          {
+            "name": "BenchmarkFibHeap_Merge",
+            "modificationCount": 2,
+            "createdOn": "2017-02-16",
+            "lastUpdateOn": "2017-02-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/futures",
+        "succeded": true,
+        "duration": "5.435s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFuture-12",
+            "runs": 67777,
+            "nsPerOp": 22176,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelectable-12",
+            "runs": 246318,
+            "nsPerOp": 10438,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFuture",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkSelectable",
+            "modificationCount": 1,
+            "createdOn": "2016-04-25",
+            "lastUpdateOn": "2016-04-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/hashmap/fastinteger",
+        "succeded": true,
+        "duration": "37.769s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHash-12",
+            "runs": 1383930,
+            "nsPerOp": 1315,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFnvHash-12",
+            "runs": 10000,
+            "nsPerOp": 184199,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 21688,
+            "nsPerOp": 197310,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoMapInsert-12",
+            "runs": 4200,
+            "nsPerOp": 265354,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExists-12",
+            "runs": 97578,
+            "nsPerOp": 10314,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoMapExists-12",
+            "runs": 45199,
+            "nsPerOp": 35854,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDelete-12",
+            "runs": 19093,
+            "nsPerOp": 74775,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoDelete-12",
+            "runs": 15627,
+            "nsPerOp": 101020,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertWithExpand-12",
+            "runs": 11924,
+            "nsPerOp": 101299,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoInsertWithExpand-12",
+            "runs": 10000,
+            "nsPerOp": 138752,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHash",
+            "modificationCount": 1,
+            "createdOn": "2015-01-08",
+            "lastUpdateOn": "2015-01-08"
+          },
+          {
+            "name": "BenchmarkFnvHash",
+            "modificationCount": 1,
+            "createdOn": "2015-01-08",
+            "lastUpdateOn": "2015-01-08"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 2,
+            "createdOn": "2014-11-26",
+            "lastUpdateOn": "2015-01-30"
+          },
+          {
+            "name": "BenchmarkGoMapInsert",
+            "modificationCount": 2,
+            "createdOn": "2015-01-08",
+            "lastUpdateOn": "2015-01-08"
+          },
+          {
+            "name": "BenchmarkExists",
+            "modificationCount": 2,
+            "createdOn": "2015-01-08",
+            "lastUpdateOn": "2015-01-08"
+          },
+          {
+            "name": "BenchmarkGoMapExists",
+            "modificationCount": 3,
+            "createdOn": "2015-01-08",
+            "lastUpdateOn": "2015-01-08"
+          },
+          {
+            "name": "BenchmarkDelete",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkGoDelete",
+            "modificationCount": 2,
+            "createdOn": "2015-01-08",
+            "lastUpdateOn": "2015-01-08"
+          },
+          {
+            "name": "BenchmarkInsertWithExpand",
+            "modificationCount": 2,
+            "createdOn": "2015-01-08",
+            "lastUpdateOn": "2015-01-08"
+          },
+          {
+            "name": "BenchmarkGoInsertWithExpand",
+            "modificationCount": 3,
+            "createdOn": "2015-01-08",
+            "lastUpdateOn": "2015-01-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/numerics/hilbert",
+        "succeded": true,
+        "duration": "3.609s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncode-12",
+            "runs": 8377396,
+            "nsPerOp": 213,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode-12",
+            "runs": 6540195,
+            "nsPerOp": 188.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncode",
+            "modificationCount": 1,
+            "createdOn": "2015-02-17",
+            "lastUpdateOn": "2015-02-17"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2015-02-17",
+            "lastUpdateOn": "2015-02-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/queue",
+        "succeded": true,
+        "duration": "49.410s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPriorityQueue-12",
+            "runs": 1000000,
+            "nsPerOp": 1346,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueue-12",
+            "runs": 8710179,
+            "nsPerOp": 263.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChannel-12",
+            "runs": 2111386,
+            "nsPerOp": 608.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueuePut-12",
+            "runs": 15662,
+            "nsPerOp": 79230,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueueGet-12",
+            "runs": 19407,
+            "nsPerOp": 55117,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueuePoll-12",
+            "runs": 19486,
+            "nsPerOp": 58159,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecuteInParallel-12",
+            "runs": 37677,
+            "nsPerOp": 30494,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRBLifeCycle-12",
+            "runs": 22330802,
+            "nsPerOp": 55.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRBLifeCycleContention-12",
+            "runs": 1277640,
+            "nsPerOp": 1153,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRBPut-12",
+            "runs": 39785691,
+            "nsPerOp": 30.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRBGet-12",
+            "runs": 108809425,
+            "nsPerOp": 10.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRBAllocation-12",
+            "runs": 104230,
+            "nsPerOp": 11624,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPriorityQueue",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2015-07-17"
+          },
+          {
+            "name": "BenchmarkQueue",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkChannel",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkQueuePut",
+            "modificationCount": 1,
+            "createdOn": "2015-01-09",
+            "lastUpdateOn": "2015-01-09"
+          },
+          {
+            "name": "BenchmarkQueueGet",
+            "modificationCount": 2,
+            "createdOn": "2015-01-09",
+            "lastUpdateOn": "2015-01-09"
+          },
+          {
+            "name": "BenchmarkQueuePoll",
+            "modificationCount": 2,
+            "createdOn": "2015-06-19",
+            "lastUpdateOn": "2015-06-25"
+          },
+          {
+            "name": "BenchmarkExecuteInParallel",
+            "modificationCount": 1,
+            "createdOn": "2015-01-09",
+            "lastUpdateOn": "2015-01-09"
+          },
+          {
+            "name": "BenchmarkRBLifeCycle",
+            "modificationCount": 1,
+            "createdOn": "2015-02-10",
+            "lastUpdateOn": "2015-02-10"
+          },
+          {
+            "name": "BenchmarkRBLifeCycleContention",
+            "modificationCount": 1,
+            "createdOn": "2017-07-18",
+            "lastUpdateOn": "2017-07-18"
+          },
+          {
+            "name": "BenchmarkRBPut",
+            "modificationCount": 2,
+            "createdOn": "2015-02-10",
+            "lastUpdateOn": "2016-04-25"
+          },
+          {
+            "name": "BenchmarkRBGet",
+            "modificationCount": 3,
+            "createdOn": "2015-02-10",
+            "lastUpdateOn": "2019-08-29"
+          },
+          {
+            "name": "BenchmarkRBAllocation",
+            "modificationCount": 1,
+            "createdOn": "2019-08-29",
+            "lastUpdateOn": "2019-08-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/rangetree",
+        "succeded": true,
+        "duration": "437.469s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkImmutableMultiDimensionInserts-12",
+            "runs": 235,
+            "nsPerOp": 5066988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkImmutableMultiDimensionBulkInsert-12",
+            "runs": 20,
+            "nsPerOp": 71531722,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiDimensionBulkInsert-12",
+            "runs": 33,
+            "nsPerOp": 39949593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkImmutableInsertFirstDimension-12",
+            "runs": 57,
+            "nsPerOp": 24562777,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkImmutableInsertSecondDimension-12",
+            "runs": 30,
+            "nsPerOp": 38825067,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrepend-12",
+            "runs": 66777,
+            "nsPerOp": 18556,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOTAddItemsMultiDimensions-12",
+            "runs": 1000000,
+            "nsPerOp": 393678,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOTQueryItemsMultiDimensions-12",
+            "runs": 6874,
+            "nsPerOp": 263867,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOTDeleteItemsMultiDimensions-12",
+            "runs": 1634,
+            "nsPerOp": 3065817,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkApply-12",
+            "runs": 25762,
+            "nsPerOp": 49504,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertFirstDimension-12",
+            "runs": 100,
+            "nsPerOp": 17593131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertSecondDimension-12",
+            "runs": 58,
+            "nsPerOp": 18337839,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteFirstDimension-12",
+            "runs": 51,
+            "nsPerOp": 28052706,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteSecondDimension-12",
+            "runs": 78,
+            "nsPerOp": 13151762,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetMultiDimensions-12",
+            "runs": 3362349,
+            "nsPerOp": 332.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkImmutableMultiDimensionInserts",
+            "modificationCount": 2,
+            "createdOn": "2014-11-19",
+            "lastUpdateOn": "2014-11-19"
+          },
+          {
+            "name": "BenchmarkImmutableMultiDimensionBulkInsert",
+            "modificationCount": 1,
+            "createdOn": "2014-11-19",
+            "lastUpdateOn": "2014-11-19"
+          },
+          {
+            "name": "BenchmarkMultiDimensionBulkInsert",
+            "modificationCount": 1,
+            "createdOn": "2014-11-19",
+            "lastUpdateOn": "2014-11-19"
+          },
+          {
+            "name": "BenchmarkImmutableInsertFirstDimension",
+            "modificationCount": 1,
+            "createdOn": "2014-11-19",
+            "lastUpdateOn": "2014-11-19"
+          },
+          {
+            "name": "BenchmarkImmutableInsertSecondDimension",
+            "modificationCount": 1,
+            "createdOn": "2014-11-19",
+            "lastUpdateOn": "2014-11-19"
+          },
+          {
+            "name": "BenchmarkPrepend",
+            "modificationCount": 1,
+            "createdOn": "2015-01-20",
+            "lastUpdateOn": "2015-01-20"
+          },
+          {
+            "name": "BenchmarkOTAddItemsMultiDimensions",
+            "modificationCount": 3,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2015-01-27"
+          },
+          {
+            "name": "BenchmarkOTQueryItemsMultiDimensions",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkOTDeleteItemsMultiDimensions",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkApply",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkInsertFirstDimension",
+            "modificationCount": 1,
+            "createdOn": "2014-11-14",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkInsertSecondDimension",
+            "modificationCount": 1,
+            "createdOn": "2014-11-14",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkDeleteFirstDimension",
+            "modificationCount": 1,
+            "createdOn": "2014-11-14",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkDeleteSecondDimension",
+            "modificationCount": 2,
+            "createdOn": "2014-11-14",
+            "lastUpdateOn": "2015-08-04"
+          },
+          {
+            "name": "BenchmarkGetMultiDimensions",
+            "modificationCount": 1,
+            "createdOn": "2015-08-04",
+            "lastUpdateOn": "2015-08-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/rangetree/skiplist",
+        "succeded": true,
+        "duration": "241.118s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMultiDimensionInsert-12",
+            "runs": 275630,
+            "nsPerOp": 4353,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiDimensionInsertReverse-12",
+            "runs": 317604,
+            "nsPerOp": 3680,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiDimensionRandomInsert-12",
+            "runs": 221329,
+            "nsPerOp": 9981,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiDimensionalGet-12",
+            "runs": 438140,
+            "nsPerOp": 21804,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiDimensionDelete-12",
+            "runs": 463854,
+            "nsPerOp": 11420,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiDimensionQuery-12",
+            "runs": 10000,
+            "nsPerOp": 7363518,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiDimensionInsertAtZeroDimension-12",
+            "runs": 10000,
+            "nsPerOp": 5424803,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiDimensionInsertNegativeAtZeroDimension-12",
+            "runs": 10000,
+            "nsPerOp": 6981681,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMultiDimensionInsert",
+            "modificationCount": 2,
+            "createdOn": "2015-01-27",
+            "lastUpdateOn": "2015-01-27"
+          },
+          {
+            "name": "BenchmarkMultiDimensionInsertReverse",
+            "modificationCount": 1,
+            "createdOn": "2015-01-27",
+            "lastUpdateOn": "2015-01-27"
+          },
+          {
+            "name": "BenchmarkMultiDimensionRandomInsert",
+            "modificationCount": 1,
+            "createdOn": "2015-01-27",
+            "lastUpdateOn": "2015-01-27"
+          },
+          {
+            "name": "BenchmarkMultiDimensionalGet",
+            "modificationCount": 1,
+            "createdOn": "2015-01-27",
+            "lastUpdateOn": "2015-01-27"
+          },
+          {
+            "name": "BenchmarkMultiDimensionDelete",
+            "modificationCount": 1,
+            "createdOn": "2015-01-27",
+            "lastUpdateOn": "2015-01-27"
+          },
+          {
+            "name": "BenchmarkMultiDimensionQuery",
+            "modificationCount": 1,
+            "createdOn": "2015-01-27",
+            "lastUpdateOn": "2015-01-27"
+          },
+          {
+            "name": "BenchmarkMultiDimensionInsertAtZeroDimension",
+            "modificationCount": 1,
+            "createdOn": "2015-01-27",
+            "lastUpdateOn": "2015-01-27"
+          },
+          {
+            "name": "BenchmarkMultiDimensionInsertNegativeAtZeroDimension",
+            "modificationCount": 1,
+            "createdOn": "2015-01-27",
+            "lastUpdateOn": "2015-01-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/rtree/hilbert",
+        "succeded": true,
+        "duration": "108.846s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBulkAddPoints-12",
+            "runs": 1102,
+            "nsPerOp": 1506651,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBulkUpdatePoints-12",
+            "runs": 1597,
+            "nsPerOp": 727549,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointInsertion-12",
+            "runs": 103723,
+            "nsPerOp": 10830,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryPoints-12",
+            "runs": 278857,
+            "nsPerOp": 4237,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryBulkPoints-12",
+            "runs": 10000,
+            "nsPerOp": 980721,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDelete-12",
+            "runs": 196846,
+            "nsPerOp": 10543,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBulkAddPoints",
+            "modificationCount": 1,
+            "createdOn": "2015-02-20",
+            "lastUpdateOn": "2015-02-20"
+          },
+          {
+            "name": "BenchmarkBulkUpdatePoints",
+            "modificationCount": 1,
+            "createdOn": "2015-02-20",
+            "lastUpdateOn": "2015-02-20"
+          },
+          {
+            "name": "BenchmarkPointInsertion",
+            "modificationCount": 2,
+            "createdOn": "2015-02-18",
+            "lastUpdateOn": "2015-02-20"
+          },
+          {
+            "name": "BenchmarkQueryPoints",
+            "modificationCount": 3,
+            "createdOn": "2015-02-18",
+            "lastUpdateOn": "2015-02-23"
+          },
+          {
+            "name": "BenchmarkQueryBulkPoints",
+            "modificationCount": 2,
+            "createdOn": "2015-02-23",
+            "lastUpdateOn": "2015-02-23"
+          },
+          {
+            "name": "BenchmarkDelete",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/set",
+        "succeded": true,
+        "duration": "7.224s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFlatten-12",
+            "runs": 43980476,
+            "nsPerOp": 39.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLen-12",
+            "runs": 100000000,
+            "nsPerOp": 14.22,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExists-12",
+            "runs": 31435431,
+            "nsPerOp": 38.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkClear-12",
+            "runs": 5749753,
+            "nsPerOp": 251.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFlatten",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2015-02-11"
+          },
+          {
+            "name": "BenchmarkLen",
+            "modificationCount": 1,
+            "createdOn": "2015-02-11",
+            "lastUpdateOn": "2015-02-11"
+          },
+          {
+            "name": "BenchmarkExists",
+            "modificationCount": 2,
+            "createdOn": "2015-01-08",
+            "lastUpdateOn": "2015-01-08"
+          },
+          {
+            "name": "BenchmarkClear",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/slice/skip",
+        "succeded": true,
+        "duration": "27.063s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 1000000,
+            "nsPerOp": 1556,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 1000000,
+            "nsPerOp": 1530,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDelete-12",
+            "runs": 1523694,
+            "nsPerOp": 1503,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrepend-12",
+            "runs": 676119,
+            "nsPerOp": 3780,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkByPosition-12",
+            "runs": 7771579,
+            "nsPerOp": 138.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsertAtPosition-12",
+            "runs": 3628191,
+            "nsPerOp": 393.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 2,
+            "createdOn": "2014-11-26",
+            "lastUpdateOn": "2015-01-30"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkDelete",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkPrepend",
+            "modificationCount": 1,
+            "createdOn": "2015-01-20",
+            "lastUpdateOn": "2015-01-20"
+          },
+          {
+            "name": "BenchmarkByPosition",
+            "modificationCount": 2,
+            "createdOn": "2015-02-06",
+            "lastUpdateOn": "2015-02-09"
+          },
+          {
+            "name": "BenchmarkInsertAtPosition",
+            "modificationCount": 1,
+            "createdOn": "2015-02-09",
+            "lastUpdateOn": "2015-02-09"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/sort",
+        "succeded": true,
+        "duration": "1.930s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMultiThreadedSort-12",
+            "runs": 616,
+            "nsPerOp": 2726351,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMultiThreadedSort",
+            "modificationCount": 1,
+            "createdOn": "2014-12-18",
+            "lastUpdateOn": "2014-12-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/tree/avl",
+        "succeded": true,
+        "duration": "282.536s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkImmutableInsert-12",
+            "runs": 1000000,
+            "nsPerOp": 1482,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkImmutableGet-12",
+            "runs": 5409432,
+            "nsPerOp": 463.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkImmutableBulkInsert-12",
+            "runs": 10000,
+            "nsPerOp": 14846091,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkImmutableDelete-12",
+            "runs": 1000000,
+            "nsPerOp": 2640,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkImmutableBulkDelete-12",
+            "runs": 10000,
+            "nsPerOp": 11463183,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkImmutableInsert",
+            "modificationCount": 1,
+            "createdOn": "2014-11-19",
+            "lastUpdateOn": "2014-11-19"
+          },
+          {
+            "name": "BenchmarkImmutableGet",
+            "modificationCount": 1,
+            "createdOn": "2015-01-22",
+            "lastUpdateOn": "2015-01-22"
+          },
+          {
+            "name": "BenchmarkImmutableBulkInsert",
+            "modificationCount": 2,
+            "createdOn": "2015-01-22",
+            "lastUpdateOn": "2015-01-22"
+          },
+          {
+            "name": "BenchmarkImmutableDelete",
+            "modificationCount": 1,
+            "createdOn": "2015-01-22",
+            "lastUpdateOn": "2015-01-22"
+          },
+          {
+            "name": "BenchmarkImmutableBulkDelete",
+            "modificationCount": 1,
+            "createdOn": "2015-01-22",
+            "lastUpdateOn": "2015-01-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/trie/ctrie",
+        "succeded": true,
+        "duration": "8.314s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 2900826,
+            "nsPerOp": 371.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookup-12",
+            "runs": 9219745,
+            "nsPerOp": 127.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemove-12",
+            "runs": 9759501,
+            "nsPerOp": 125.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnapshot-12",
+            "runs": 3556525,
+            "nsPerOp": 341.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadOnlySnapshot-12",
+            "runs": 3547527,
+            "nsPerOp": 307.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 2,
+            "createdOn": "2014-11-26",
+            "lastUpdateOn": "2015-01-30"
+          },
+          {
+            "name": "BenchmarkLookup",
+            "modificationCount": 3,
+            "createdOn": "2015-05-04",
+            "lastUpdateOn": "2015-05-05"
+          },
+          {
+            "name": "BenchmarkRemove",
+            "modificationCount": 3,
+            "createdOn": "2015-05-05",
+            "lastUpdateOn": "2015-05-08"
+          },
+          {
+            "name": "BenchmarkSnapshot",
+            "modificationCount": 1,
+            "createdOn": "2015-05-08",
+            "lastUpdateOn": "2015-05-08"
+          },
+          {
+            "name": "BenchmarkReadOnlySnapshot",
+            "modificationCount": 1,
+            "createdOn": "2015-05-08",
+            "lastUpdateOn": "2015-05-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/trie/dtrie",
+        "succeded": true,
+        "duration": "41.666s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 1808828,
+            "nsPerOp": 2034,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 17933661,
+            "nsPerOp": 322.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRemove-12",
+            "runs": 12139510,
+            "nsPerOp": 307.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdate-12",
+            "runs": 4905985,
+            "nsPerOp": 467.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 2,
+            "createdOn": "2014-11-26",
+            "lastUpdateOn": "2015-01-30"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkRemove",
+            "modificationCount": 3,
+            "createdOn": "2015-05-05",
+            "lastUpdateOn": "2015-05-08"
+          },
+          {
+            "name": "BenchmarkUpdate",
+            "modificationCount": 4,
+            "createdOn": "2016-03-27",
+            "lastUpdateOn": "2016-04-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/trie/xfast",
+        "succeded": false,
+        "duration": "660.125s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSuccessor-12",
+            "runs": 16749,
+            "nsPerOp": 83504,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDelete-12",
+            "runs": 11416,
+            "nsPerOp": 145970,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 2371,
+            "nsPerOp": 582297,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkListInsert-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "SIGQUIT:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSuccessor",
+            "modificationCount": 3,
+            "createdOn": "2015-01-12",
+            "lastUpdateOn": "2015-01-13"
+          },
+          {
+            "name": "BenchmarkDelete",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 2,
+            "createdOn": "2014-11-26",
+            "lastUpdateOn": "2015-01-30"
+          },
+          {
+            "name": "BenchmarkListInsert",
+            "modificationCount": 1,
+            "createdOn": "2015-01-12",
+            "lastUpdateOn": "2015-01-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Workiva/go-datastructures/trie/yfast",
+        "succeded": true,
+        "duration": "17.213s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 2788806,
+            "nsPerOp": 773.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 10818114,
+            "nsPerOp": 158.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDelete-12",
+            "runs": 3645925,
+            "nsPerOp": 368.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSuccessor-12",
+            "runs": 26310128,
+            "nsPerOp": 80.68,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPredecessor-12",
+            "runs": 24706519,
+            "nsPerOp": 53.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIterator-12",
+            "runs": 213225,
+            "nsPerOp": 6519,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 2,
+            "createdOn": "2014-11-26",
+            "lastUpdateOn": "2015-01-30"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 1,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-03"
+          },
+          {
+            "name": "BenchmarkDelete",
+            "modificationCount": 2,
+            "createdOn": "2014-11-03",
+            "lastUpdateOn": "2014-11-14"
+          },
+          {
+            "name": "BenchmarkSuccessor",
+            "modificationCount": 3,
+            "createdOn": "2015-01-12",
+            "lastUpdateOn": "2015-01-13"
+          },
+          {
+            "name": "BenchmarkPredecessor",
+            "modificationCount": 2,
+            "createdOn": "2015-01-15",
+            "lastUpdateOn": "2015-01-15"
+          },
+          {
+            "name": "BenchmarkIterator",
+            "modificationCount": 1,
+            "createdOn": "2015-01-15",
+            "lastUpdateOn": "2015-01-15"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "Workiva/go-datastructures",
+    "name": "go-datastructures",
+    "private": false,
+    "html_url": "https://github.com/Workiva/go-datastructures",
+    "description": "A collection of useful, performant, and threadsafe Go datastructures.",
+    "fork": false,
+    "created_at": "2014-10-29T13:55:17Z",
+    "updated_at": "2023-10-23T11:08:02Z",
+    "pushed_at": "2023-09-13T13:06:22Z",
+    "ssh_url": "git@github.com:Workiva/go-datastructures.git",
+    "stargazers_count": 7184,
+    "watchers_count": 7184,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 860,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 29,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 163,
+    "Lines": 32928,
+    "Blank": 5574,
+    "Code": 22612,
+    "Comment": 4742,
+    "Bytes": 791888,
+    "Complexity": 3453
+  }
+}

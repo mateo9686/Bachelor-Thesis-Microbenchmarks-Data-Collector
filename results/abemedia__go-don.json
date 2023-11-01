@@ -1,0 +1,448 @@
+{
+  "Name": "abemedia/go-don",
+  "Path": "./repositories/abemedia__go-don",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-23T23:16:11Z",
+    "benchmarkCount": 23,
+    "benchmarkSuiteCount": 9,
+    "successfulBenchmarkCount": 23,
+    "successfulBenchmarkSuitesCount": 9,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "benchmarks",
+        "succeded": true,
+        "duration": "12.900s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDon_BindRequest-12",
+            "runs": 1408713,
+            "nsPerOp": 997.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGin_BindRequest-12",
+            "runs": 170190,
+            "nsPerOp": 9614,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/Gorilla-12",
+            "runs": 27798,
+            "nsPerOp": 57423,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/DonCached-12",
+            "runs": 363352,
+            "nsPerOp": 3628,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoder/Don-12",
+            "runs": 469729,
+            "nsPerOp": 2512,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDon_HTTP-12",
+            "runs": 10000,
+            "nsPerOp": 101369,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGin_HTTP-12",
+            "runs": 9922,
+            "nsPerOp": 174347,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDon_BindRequest",
+            "modificationCount": 3,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2023-03-18"
+          },
+          {
+            "name": "BenchmarkGin_BindRequest",
+            "modificationCount": 2,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2023-03-18"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 7,
+            "createdOn": "2022-03-09",
+            "lastUpdateOn": "2023-05-08"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 7,
+            "createdOn": "2022-03-09",
+            "lastUpdateOn": "2023-05-08"
+          },
+          {
+            "name": "BenchmarkDecoder",
+            "modificationCount": 7,
+            "createdOn": "2022-03-09",
+            "lastUpdateOn": "2023-05-08"
+          },
+          {
+            "name": "BenchmarkDon_HTTP",
+            "modificationCount": 4,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2023-05-14"
+          },
+          {
+            "name": "BenchmarkGin_HTTP",
+            "modificationCount": 3,
+            "createdOn": "2022-03-23",
+            "lastUpdateOn": "2023-01-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/abemedia/go-don",
+        "succeded": true,
+        "duration": "3.463s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHandler/Request-12",
+            "runs": 1589731,
+            "nsPerOp": 832.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandler/RequestPointer-12",
+            "runs": 1000000,
+            "nsPerOp": 1225,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHandler",
+            "modificationCount": 2,
+            "createdOn": "2023-05-06",
+            "lastUpdateOn": "2023-05-14"
+          },
+          {
+            "name": "BenchmarkHandler",
+            "modificationCount": 2,
+            "createdOn": "2023-05-06",
+            "lastUpdateOn": "2023-05-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/abemedia/go-don/encoding/json",
+        "succeded": true,
+        "duration": "3.455s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJSON/Decode-12",
+            "runs": 3664711,
+            "nsPerOp": 345.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSON/Encode-12",
+            "runs": 2143990,
+            "nsPerOp": 477,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJSON",
+            "modificationCount": 3,
+            "createdOn": "2023-05-04",
+            "lastUpdateOn": "2023-05-10"
+          },
+          {
+            "name": "BenchmarkJSON",
+            "modificationCount": 3,
+            "createdOn": "2023-05-04",
+            "lastUpdateOn": "2023-05-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/abemedia/go-don/encoding/msgpack",
+        "succeded": true,
+        "duration": "3.758s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMsgpack/Decode-12",
+            "runs": 1000000,
+            "nsPerOp": 1409,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMsgpack/Encode-12",
+            "runs": 1000000,
+            "nsPerOp": 2124,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMsgpack",
+            "modificationCount": 3,
+            "createdOn": "2023-05-04",
+            "lastUpdateOn": "2023-05-10"
+          },
+          {
+            "name": "BenchmarkMsgpack",
+            "modificationCount": 3,
+            "createdOn": "2023-05-04",
+            "lastUpdateOn": "2023-05-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/abemedia/go-don/encoding/protobuf",
+        "succeded": true,
+        "duration": "4.417s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkProtobuf/Decode-12",
+            "runs": 1208143,
+            "nsPerOp": 1215,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtobuf/Encode-12",
+            "runs": 3373167,
+            "nsPerOp": 388.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkProtobuf",
+            "modificationCount": 1,
+            "createdOn": "2023-05-11",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkProtobuf",
+            "modificationCount": 1,
+            "createdOn": "2023-05-11",
+            "lastUpdateOn": "2023-05-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/abemedia/go-don/encoding/text",
+        "succeded": true,
+        "duration": "3.881s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkText/Decode-12",
+            "runs": 33436552,
+            "nsPerOp": 42.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkText/Encode-12",
+            "runs": 6303175,
+            "nsPerOp": 286.8,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkText",
+            "modificationCount": 1,
+            "createdOn": "2023-05-10",
+            "lastUpdateOn": "2023-05-10"
+          },
+          {
+            "name": "BenchmarkText",
+            "modificationCount": 1,
+            "createdOn": "2023-05-10",
+            "lastUpdateOn": "2023-05-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/abemedia/go-don/encoding/toml",
+        "succeded": true,
+        "duration": "3.788s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTOML/Decode-12",
+            "runs": 27333,
+            "nsPerOp": 46629,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTOML/Encode-12",
+            "runs": 195568,
+            "nsPerOp": 8513,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTOML",
+            "modificationCount": 1,
+            "createdOn": "2023-05-10",
+            "lastUpdateOn": "2023-05-10"
+          },
+          {
+            "name": "BenchmarkTOML",
+            "modificationCount": 1,
+            "createdOn": "2023-05-10",
+            "lastUpdateOn": "2023-05-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/abemedia/go-don/encoding/xml",
+        "succeded": true,
+        "duration": "2.790s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkXML/Decode-12",
+            "runs": 135069,
+            "nsPerOp": 9672,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkXML/Encode-12",
+            "runs": 133936,
+            "nsPerOp": 8813,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkXML",
+            "modificationCount": 3,
+            "createdOn": "2023-05-04",
+            "lastUpdateOn": "2023-05-10"
+          },
+          {
+            "name": "BenchmarkXML",
+            "modificationCount": 3,
+            "createdOn": "2023-05-04",
+            "lastUpdateOn": "2023-05-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/abemedia/go-don/encoding/yaml",
+        "succeded": true,
+        "duration": "5.132s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkYAML/Decode-12",
+            "runs": 74031,
+            "nsPerOp": 17343,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkYAML/Encode-12",
+            "runs": 112372,
+            "nsPerOp": 14292,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkYAML",
+            "modificationCount": 3,
+            "createdOn": "2023-05-04",
+            "lastUpdateOn": "2023-05-10"
+          },
+          {
+            "name": "BenchmarkYAML",
+            "modificationCount": 3,
+            "createdOn": "2023-05-04",
+            "lastUpdateOn": "2023-05-10"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "abemedia/go-don",
+    "name": "go-don",
+    "private": false,
+    "html_url": "https://github.com/abemedia/go-don",
+    "description": "API framework written in Golang.",
+    "fork": false,
+    "created_at": "2022-02-28T21:29:55Z",
+    "updated_at": "2023-10-14T21:45:21Z",
+    "pushed_at": "2023-10-13T20:29:30Z",
+    "ssh_url": "git@github.com:abemedia/go-don.git",
+    "homepage": "https://pkg.go.dev/github.com/abemedia/go-don",
+    "stargazers_count": 32,
+    "watchers_count": 32,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 4,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 8,
+    "topics": [
+      "go",
+      "golang",
+      "http"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 54,
+    "Lines": 3818,
+    "Blank": 597,
+    "Code": 3167,
+    "Comment": 54,
+    "Bytes": 86251,
+    "Complexity": 433
+  }
+}

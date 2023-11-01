@@ -1,0 +1,170 @@
+{
+  "Name": "Shopify/toxiproxy",
+  "Path": "./repositories/Shopify__toxiproxy",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T02:44:34Z",
+    "benchmarkCount": 6,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 2,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/Shopify/toxiproxy/v2/test/e2e",
+        "succeded": false,
+        "duration": "0.072s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDirect",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:39: Get \"http://localhost:20002/test1\": dial tcp [::1]:20002: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkProxy",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:56: Get \"http://localhost:20000/test1\": dial tcp [::1]:20000: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkDirectSmall",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:73: Get \"http://localhost:20002/test2\": dial tcp [::1]:20002: connect: connection refused"
+          },
+          {
+            "name": "BenchmarkProxySmall",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "benchmark_test.go:90: Get \"http://localhost:20000/test2\": dial tcp [::1]:20000: connect: connection refused"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDirect",
+            "modificationCount": 4,
+            "createdOn": "2014-10-07",
+            "lastUpdateOn": "2021-09-17"
+          },
+          {
+            "name": "BenchmarkProxy",
+            "modificationCount": 4,
+            "createdOn": "2014-10-07",
+            "lastUpdateOn": "2021-09-17"
+          },
+          {
+            "name": "BenchmarkDirectSmall",
+            "modificationCount": 4,
+            "createdOn": "2014-10-07",
+            "lastUpdateOn": "2021-09-17"
+          },
+          {
+            "name": "BenchmarkProxySmall",
+            "modificationCount": 2,
+            "createdOn": "2014-10-07",
+            "lastUpdateOn": "2021-09-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/Shopify/toxiproxy/v2/toxics",
+        "succeded": true,
+        "duration": "3.197s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBandwidthToxic100MB-12",
+            "runs": 10000,
+            "nsPerOp": 145547,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProxyBandwidth-12",
+            "runs": 29908,
+            "nsPerOp": 42472,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBandwidthToxic100MB",
+            "modificationCount": 4,
+            "createdOn": "2015-08-04",
+            "lastUpdateOn": "2021-09-17"
+          },
+          {
+            "name": "BenchmarkProxyBandwidth",
+            "modificationCount": 2,
+            "createdOn": "2015-08-04",
+            "lastUpdateOn": "2022-08-29"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "Shopify/toxiproxy",
+    "name": "toxiproxy",
+    "private": false,
+    "html_url": "https://github.com/Shopify/toxiproxy",
+    "description": ":alarm_clock: :fire: A TCP proxy to simulate network and system conditions for chaos and resiliency testing",
+    "fork": false,
+    "created_at": "2014-09-04T13:56:38Z",
+    "updated_at": "2023-10-23T15:44:12Z",
+    "pushed_at": "2023-10-19T18:04:32Z",
+    "ssh_url": "git@github.com:Shopify/toxiproxy.git",
+    "homepage": "https://github.com/shopify/toxiproxy",
+    "stargazers_count": 9808,
+    "watchers_count": 9808,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 437,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 82,
+    "topics": [
+      "chaos",
+      "down",
+      "go",
+      "is",
+      "omg",
+      "proxy",
+      "resiliency",
+      "tcp-proxy",
+      "testing"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 56,
+    "Lines": 8105,
+    "Blank": 1210,
+    "Code": 6634,
+    "Comment": 261,
+    "Bytes": 193776,
+    "Complexity": 1563
+  }
+}

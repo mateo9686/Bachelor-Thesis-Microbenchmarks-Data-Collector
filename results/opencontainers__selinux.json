@@ -1,0 +1,1306 @@
+{
+  "Name": "opencontainers/selinux",
+  "Path": "./repositories/opencontainers__selinux",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T00:51:19Z",
+    "benchmarkCount": 93,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 93,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/opencontainers/selinux/go-selinux",
+        "succeded": true,
+        "duration": "9.700s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkContextGet-12",
+            "runs": 5972772,
+            "nsPerOp": 185.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChcon-12",
+            "runs": 13213,
+            "nsPerOp": 86509,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCurrentLabel-12",
+            "runs": 86782,
+            "nsPerOp": 13455,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadConfig-12",
+            "runs": 98212,
+            "nsPerOp": 14439,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadLabels-12",
+            "runs": 55144,
+            "nsPerOp": 21540,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkContextGet",
+            "modificationCount": 1,
+            "createdOn": "2021-09-08",
+            "lastUpdateOn": "2021-09-08"
+          },
+          {
+            "name": "BenchmarkChcon",
+            "modificationCount": 3,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2021-09-07"
+          },
+          {
+            "name": "BenchmarkCurrentLabel",
+            "modificationCount": 2,
+            "createdOn": "2021-09-07",
+            "lastUpdateOn": "2021-09-07"
+          },
+          {
+            "name": "BenchmarkReadConfig",
+            "modificationCount": 1,
+            "createdOn": "2021-09-07",
+            "lastUpdateOn": "2021-09-07"
+          },
+          {
+            "name": "BenchmarkLoadLabels",
+            "modificationCount": 1,
+            "createdOn": "2021-09-07",
+            "lastUpdateOn": "2021-09-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/opencontainers/selinux/pkg/pwalk",
+        "succeded": true,
+        "duration": "143.048s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWalk/Empty/filepath.Walk-12",
+            "runs": 15,
+            "nsPerOp": 71703019,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk-12",
+            "runs": 10,
+            "nsPerOp": 158231992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk1-12",
+            "runs": 13,
+            "nsPerOp": 98344226,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk2-12",
+            "runs": 12,
+            "nsPerOp": 150725268,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk4-12",
+            "runs": 7,
+            "nsPerOp": 350821767,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk8-12",
+            "runs": 14,
+            "nsPerOp": 75866077,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk16-12",
+            "runs": 16,
+            "nsPerOp": 71101575,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk32-12",
+            "runs": 16,
+            "nsPerOp": 74451376,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk64-12",
+            "runs": 15,
+            "nsPerOp": 111214466,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk128-12",
+            "runs": 6,
+            "nsPerOp": 241632930,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalk.Walk256-12",
+            "runs": 7,
+            "nsPerOp": 149730412,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/filepath.Walk-12",
+            "runs": 6,
+            "nsPerOp": 179686273,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk-12",
+            "runs": 9,
+            "nsPerOp": 170312941,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk1-12",
+            "runs": 7,
+            "nsPerOp": 169427983,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk2-12",
+            "runs": 9,
+            "nsPerOp": 264975001,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk4-12",
+            "runs": 10,
+            "nsPerOp": 120237292,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk8-12",
+            "runs": 12,
+            "nsPerOp": 86161951,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk16-12",
+            "runs": 14,
+            "nsPerOp": 86390938,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk32-12",
+            "runs": 12,
+            "nsPerOp": 148737390,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk64-12",
+            "runs": 6,
+            "nsPerOp": 212478980,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk128-12",
+            "runs": 6,
+            "nsPerOp": 311356809,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalk.Walk256-12",
+            "runs": 12,
+            "nsPerOp": 96822227,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/filepath.Walk-12",
+            "runs": 5,
+            "nsPerOp": 211546333,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk-12",
+            "runs": 13,
+            "nsPerOp": 104149574,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk1-12",
+            "runs": 6,
+            "nsPerOp": 235716742,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk2-12",
+            "runs": 9,
+            "nsPerOp": 129845731,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk4-12",
+            "runs": 12,
+            "nsPerOp": 151689402,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk8-12",
+            "runs": 9,
+            "nsPerOp": 131460455,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk16-12",
+            "runs": 12,
+            "nsPerOp": 104525480,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk32-12",
+            "runs": 12,
+            "nsPerOp": 96992275,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk64-12",
+            "runs": 14,
+            "nsPerOp": 85271560,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk128-12",
+            "runs": 13,
+            "nsPerOp": 95341116,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalk.Walk256-12",
+            "runs": 13,
+            "nsPerOp": 92254508,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/filepath.Walk-12",
+            "runs": 1,
+            "nsPerOp": 10828081942,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk-12",
+            "runs": 6,
+            "nsPerOp": 196510118,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk1-12",
+            "runs": 1,
+            "nsPerOp": 10502189999,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk2-12",
+            "runs": 1,
+            "nsPerOp": 5141546419,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk4-12",
+            "runs": 1,
+            "nsPerOp": 2355673314,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk8-12",
+            "runs": 1,
+            "nsPerOp": 1010367753,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk16-12",
+            "runs": 3,
+            "nsPerOp": 391103283,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk32-12",
+            "runs": 9,
+            "nsPerOp": 122849029,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk64-12",
+            "runs": 12,
+            "nsPerOp": 85832983,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk128-12",
+            "runs": 12,
+            "nsPerOp": 86184865,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalk.Walk256-12",
+            "runs": 15,
+            "nsPerOp": 85458803,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/opencontainers/selinux/pkg/pwalkdir",
+        "succeded": true,
+        "duration": "141.268s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWalk/Empty/filepath.WalkDir-12",
+            "runs": 52,
+            "nsPerOp": 31540257,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk-12",
+            "runs": 32,
+            "nsPerOp": 36244737,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk1-12",
+            "runs": 28,
+            "nsPerOp": 39069597,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk2-12",
+            "runs": 33,
+            "nsPerOp": 64981566,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk4-12",
+            "runs": 21,
+            "nsPerOp": 62757714,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk8-12",
+            "runs": 25,
+            "nsPerOp": 77054049,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk16-12",
+            "runs": 21,
+            "nsPerOp": 138108580,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk32-12",
+            "runs": 18,
+            "nsPerOp": 89253771,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk64-12",
+            "runs": 20,
+            "nsPerOp": 75651532,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk128-12",
+            "runs": 13,
+            "nsPerOp": 107409003,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/Empty/pwalkdir.Walk256-12",
+            "runs": 13,
+            "nsPerOp": 82882495,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/filepath.WalkDir-12",
+            "runs": 6,
+            "nsPerOp": 270880131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk-12",
+            "runs": 7,
+            "nsPerOp": 165436682,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk1-12",
+            "runs": 3,
+            "nsPerOp": 426694791,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk2-12",
+            "runs": 5,
+            "nsPerOp": 289132950,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk4-12",
+            "runs": 6,
+            "nsPerOp": 200919046,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk8-12",
+            "runs": 6,
+            "nsPerOp": 168608121,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk16-12",
+            "runs": 7,
+            "nsPerOp": 176740700,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk32-12",
+            "runs": 6,
+            "nsPerOp": 199594946,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk64-12",
+            "runs": 8,
+            "nsPerOp": 151124356,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk128-12",
+            "runs": 19,
+            "nsPerOp": 60432526,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ReadFile/pwalkdir.Walk256-12",
+            "runs": 25,
+            "nsPerOp": 64840582,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/filepath.WalkDir-12",
+            "runs": 5,
+            "nsPerOp": 244459364,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk-12",
+            "runs": 21,
+            "nsPerOp": 66299801,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk1-12",
+            "runs": 6,
+            "nsPerOp": 222039955,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk2-12",
+            "runs": 9,
+            "nsPerOp": 119194049,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk4-12",
+            "runs": 14,
+            "nsPerOp": 92117798,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk8-12",
+            "runs": 18,
+            "nsPerOp": 85136849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk16-12",
+            "runs": 21,
+            "nsPerOp": 58724375,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk32-12",
+            "runs": 24,
+            "nsPerOp": 51315764,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk64-12",
+            "runs": 21,
+            "nsPerOp": 58477653,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk128-12",
+            "runs": 22,
+            "nsPerOp": 52977960,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/ChownChmod/pwalkdir.Walk256-12",
+            "runs": 24,
+            "nsPerOp": 68300452,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/filepath.WalkDir-12",
+            "runs": 1,
+            "nsPerOp": 10843230255,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk-12",
+            "runs": 4,
+            "nsPerOp": 300164470,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk1-12",
+            "runs": 1,
+            "nsPerOp": 10409093471,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk2-12",
+            "runs": 1,
+            "nsPerOp": 5231465765,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk4-12",
+            "runs": 1,
+            "nsPerOp": 2786640668,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk8-12",
+            "runs": 1,
+            "nsPerOp": 1273882544,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk16-12",
+            "runs": 2,
+            "nsPerOp": 514037573,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk32-12",
+            "runs": 7,
+            "nsPerOp": 152727872,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk64-12",
+            "runs": 13,
+            "nsPerOp": 112956086,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk128-12",
+            "runs": 16,
+            "nsPerOp": 73841201,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWalk/RandomSleep/pwalkdir.Walk256-12",
+            "runs": 27,
+            "nsPerOp": 75243865,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          },
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 5,
+            "createdOn": "2020-03-10",
+            "lastUpdateOn": "2023-08-25"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "opencontainers/selinux",
+    "name": "selinux",
+    "private": false,
+    "html_url": "https://github.com/opencontainers/selinux",
+    "description": "common selinux implementation",
+    "fork": false,
+    "created_at": "2017-02-17T22:26:25Z",
+    "updated_at": "2023-10-16T11:27:45Z",
+    "pushed_at": "2023-09-08T17:35:22Z",
+    "ssh_url": "git@github.com:opencontainers/selinux.git",
+    "homepage": "https://www.opencontainers.org/",
+    "stargazers_count": 147,
+    "watchers_count": 147,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 74,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 1,
+    "topics": [
+      "containers",
+      "docker",
+      "oci",
+      "rkt",
+      "selinux"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 17,
+    "Lines": 3998,
+    "Blank": 510,
+    "Code": 3026,
+    "Comment": 462,
+    "Bytes": 101865,
+    "Complexity": 871
+  }
+}

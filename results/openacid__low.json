@@ -1,0 +1,621 @@
+{
+  "Name": "openacid/low",
+  "Path": "./repositories/openacid__low",
+  "GoVersion": "1.14",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T18:36:34Z",
+    "benchmarkCount": 39,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 39,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/openacid/low/bitmap",
+        "succeded": true,
+        "duration": "28.042s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFromStr32-12",
+            "runs": 155137629,
+            "nsPerOp": 7.828,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringToBytes-12",
+            "runs": 184908654,
+            "nsPerOp": 6.415,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextOne/FoundInCurrentWord-12",
+            "runs": 244928167,
+            "nsPerOp": 4.562,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextOne/EnumerateAllBits-12",
+            "runs": 182205828,
+            "nsPerOp": 7.758,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrevOne/FoundInCurrentWord-12",
+            "runs": 227903080,
+            "nsPerOp": 7.22,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrevOne/EnumerateAllBits-12",
+            "runs": 134579972,
+            "nsPerOp": 8.178,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRank64_5_bits-12",
+            "runs": 652193872,
+            "nsPerOp": 1.819,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRank128_5_bits-12",
+            "runs": 397400115,
+            "nsPerOp": 3.464,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRank64_64k_bits-12",
+            "runs": 568428955,
+            "nsPerOp": 1.825,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRank128_64k_bits-12",
+            "runs": 376174209,
+            "nsPerOp": 3.071,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect-12",
+            "runs": 61807462,
+            "nsPerOp": 19.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect32-12",
+            "runs": 100000000,
+            "nsPerOp": 10.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect32R64-12",
+            "runs": 100000000,
+            "nsPerOp": 11.11,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelectU64Indexed-12",
+            "runs": 226779022,
+            "nsPerOp": 5.771,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFromStr32",
+            "modificationCount": 1,
+            "createdOn": "2019-06-17",
+            "lastUpdateOn": "2019-06-17"
+          },
+          {
+            "name": "BenchmarkStringToBytes",
+            "modificationCount": 1,
+            "createdOn": "2019-06-17",
+            "lastUpdateOn": "2019-06-17"
+          },
+          {
+            "name": "BenchmarkNextOne",
+            "modificationCount": 2,
+            "createdOn": "2020-12-11",
+            "lastUpdateOn": "2021-03-04"
+          },
+          {
+            "name": "BenchmarkNextOne",
+            "modificationCount": 2,
+            "createdOn": "2020-12-11",
+            "lastUpdateOn": "2021-03-04"
+          },
+          {
+            "name": "BenchmarkPrevOne",
+            "modificationCount": 2,
+            "createdOn": "2020-12-11",
+            "lastUpdateOn": "2021-03-04"
+          },
+          {
+            "name": "BenchmarkPrevOne",
+            "modificationCount": 2,
+            "createdOn": "2020-12-11",
+            "lastUpdateOn": "2021-03-04"
+          },
+          {
+            "name": "BenchmarkRank64_5_bits",
+            "modificationCount": 1,
+            "createdOn": "2019-06-21",
+            "lastUpdateOn": "2019-06-21"
+          },
+          {
+            "name": "BenchmarkRank128_5_bits",
+            "modificationCount": 1,
+            "createdOn": "2019-06-21",
+            "lastUpdateOn": "2019-06-21"
+          },
+          {
+            "name": "BenchmarkRank64_64k_bits",
+            "modificationCount": 1,
+            "createdOn": "2019-06-21",
+            "lastUpdateOn": "2019-06-21"
+          },
+          {
+            "name": "BenchmarkRank128_64k_bits",
+            "modificationCount": 1,
+            "createdOn": "2019-06-21",
+            "lastUpdateOn": "2019-06-21"
+          },
+          {
+            "name": "BenchmarkSelect",
+            "modificationCount": 1,
+            "createdOn": "2019-06-17",
+            "lastUpdateOn": "2019-06-17"
+          },
+          {
+            "name": "BenchmarkSelect32",
+            "modificationCount": 2,
+            "createdOn": "2019-06-17",
+            "lastUpdateOn": "2020-12-15"
+          },
+          {
+            "name": "BenchmarkSelect32R64",
+            "modificationCount": 1,
+            "createdOn": "2020-12-15",
+            "lastUpdateOn": "2020-12-15"
+          },
+          {
+            "name": "BenchmarkSelectU64Indexed",
+            "modificationCount": 1,
+            "createdOn": "2019-06-17",
+            "lastUpdateOn": "2019-06-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/openacid/low/bitstr",
+        "succeded": true,
+        "duration": "7.309s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCmpUpto/3_22-12",
+            "runs": 137681074,
+            "nsPerOp": 8.576,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCmpUpto/9_60-12",
+            "runs": 86287753,
+            "nsPerOp": 13.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCmpUpto/17_161-12",
+            "runs": 119316298,
+            "nsPerOp": 10.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCmpUpto/5_60-12",
+            "runs": 100000000,
+            "nsPerOp": 10.08,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCmpUpto",
+            "modificationCount": 1,
+            "createdOn": "2021-01-26",
+            "lastUpdateOn": "2021-01-26"
+          },
+          {
+            "name": "BenchmarkCmpUpto",
+            "modificationCount": 1,
+            "createdOn": "2021-01-26",
+            "lastUpdateOn": "2021-01-26"
+          },
+          {
+            "name": "BenchmarkCmpUpto",
+            "modificationCount": 1,
+            "createdOn": "2021-01-26",
+            "lastUpdateOn": "2021-01-26"
+          },
+          {
+            "name": "BenchmarkCmpUpto",
+            "modificationCount": 1,
+            "createdOn": "2021-01-26",
+            "lastUpdateOn": "2021-01-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/openacid/low/bmtree",
+        "succeded": true,
+        "duration": "32.479s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIndexOf-12",
+            "runs": 157905112,
+            "nsPerOp": 6.946,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=1-12",
+            "runs": 200023886,
+            "nsPerOp": 6.302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=2-12",
+            "runs": 175697834,
+            "nsPerOp": 5.941,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=3-12",
+            "runs": 214080668,
+            "nsPerOp": 5.48,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=4-12",
+            "runs": 186473740,
+            "nsPerOp": 5.773,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=5-12",
+            "runs": 245616807,
+            "nsPerOp": 6.345,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=6-12",
+            "runs": 203500974,
+            "nsPerOp": 7.021,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=7-12",
+            "runs": 238131818,
+            "nsPerOp": 5.559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=8-12",
+            "runs": 239916165,
+            "nsPerOp": 5.681,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=9-12",
+            "runs": 215622362,
+            "nsPerOp": 5.981,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=10-12",
+            "runs": 222023394,
+            "nsPerOp": 5.588,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=11-12",
+            "runs": 196494243,
+            "nsPerOp": 5.417,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=12-12",
+            "runs": 243259532,
+            "nsPerOp": 6.361,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=13-12",
+            "runs": 200323072,
+            "nsPerOp": 5.485,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=14-12",
+            "runs": 213214344,
+            "nsPerOp": 5.329,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathOf/treeHeight=15-12",
+            "runs": 225917500,
+            "nsPerOp": 5.679,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMult-12",
+            "runs": 100000000,
+            "nsPerOp": 11.15,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIndexOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkPathOf",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          },
+          {
+            "name": "BenchmarkMult",
+            "modificationCount": 1,
+            "createdOn": "2019-07-12",
+            "lastUpdateOn": "2019-07-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/openacid/low/mathext/zipf",
+        "succeded": true,
+        "duration": "4.378s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkZipf-12",
+            "runs": 30475873,
+            "nsPerOp": 42.91,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOfficialZipf-12",
+            "runs": 19679576,
+            "nsPerOp": 54.24,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkZipf",
+            "modificationCount": 3,
+            "createdOn": "2021-01-20",
+            "lastUpdateOn": "2021-01-20"
+          },
+          {
+            "name": "BenchmarkOfficialZipf",
+            "modificationCount": 1,
+            "createdOn": "2021-01-20",
+            "lastUpdateOn": "2021-01-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/openacid/low/sigbits",
+        "succeded": true,
+        "duration": "5.843s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGet64Bits_9-12",
+            "runs": 271878464,
+            "nsPerOp": 4.338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet64Bits_7-12",
+            "runs": 181951843,
+            "nsPerOp": 6.546,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGet64Bits_9",
+            "modificationCount": 1,
+            "createdOn": "2019-06-11",
+            "lastUpdateOn": "2019-06-11"
+          },
+          {
+            "name": "BenchmarkGet64Bits_7",
+            "modificationCount": 1,
+            "createdOn": "2019-06-11",
+            "lastUpdateOn": "2019-06-11"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "openacid/low",
+    "name": "low",
+    "private": false,
+    "html_url": "https://github.com/openacid/low",
+    "description": "low level data type and utils in Golang.",
+    "fork": false,
+    "created_at": "2019-05-20T08:14:29Z",
+    "updated_at": "2023-06-08T17:46:21Z",
+    "pushed_at": "2023-05-19T22:57:24Z",
+    "ssh_url": "git@github.com:openacid/low.git",
+    "stargazers_count": 79,
+    "watchers_count": 79,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 9,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 14,
+    "topics": [
+      "datastructure",
+      "go",
+      "golang",
+      "lowlevel",
+      "util"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 103,
+    "Lines": 9971,
+    "Blank": 1560,
+    "Code": 7140,
+    "Comment": 1271,
+    "Bytes": 213967,
+    "Complexity": 589
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "Name": "DNAProject/DNA",
+  "Path": "./repositories/DNAProject__DNA",
+  "GoVersion": "1.12",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T10:47:41Z",
+    "benchmarkCount": 26,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 26,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/DNAProject/DNA/common",
+        "succeded": true,
+        "duration": "9.869s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkComputeMerkleRoot-12",
+            "runs": 43,
+            "nsPerOp": 27878817,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkComputeMerkleRootOld-12",
+            "runs": 10,
+            "nsPerOp": 100659194,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerialize-12",
+            "runs": 2569,
+            "nsPerOp": 751553,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkZeroCopySink-12",
+            "runs": 10000,
+            "nsPerOp": 154306,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkZeroCopySource-12",
+            "runs": 553964,
+            "nsPerOp": 2021,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDerserialize-12",
+            "runs": 35808,
+            "nsPerOp": 37412,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkComputeMerkleRoot",
+            "modificationCount": 1,
+            "createdOn": "2018-07-31",
+            "lastUpdateOn": "2018-07-31"
+          },
+          {
+            "name": "BenchmarkComputeMerkleRootOld",
+            "modificationCount": 1,
+            "createdOn": "2018-07-31",
+            "lastUpdateOn": "2018-07-31"
+          },
+          {
+            "name": "BenchmarkSerialize",
+            "modificationCount": 3,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2018-04-13"
+          },
+          {
+            "name": "BenchmarkZeroCopySink",
+            "modificationCount": 1,
+            "createdOn": "2018-08-14",
+            "lastUpdateOn": "2018-08-14"
+          },
+          {
+            "name": "BenchmarkZeroCopySource",
+            "modificationCount": 1,
+            "createdOn": "2018-08-14",
+            "lastUpdateOn": "2018-08-14"
+          },
+          {
+            "name": "BenchmarkDerserialize",
+            "modificationCount": 2,
+            "createdOn": "2018-08-14",
+            "lastUpdateOn": "2019-04-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/DNAProject/DNA/common/serialization",
+        "succeded": true,
+        "duration": "12.159s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWriteVarUint-12",
+            "runs": 31943180,
+            "nsPerOp": 55.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteVarBytes-12",
+            "runs": 15279404,
+            "nsPerOp": 83.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteVarString-12",
+            "runs": 10801722,
+            "nsPerOp": 102.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadVarUint-12",
+            "runs": 9218799,
+            "nsPerOp": 156.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadVarBytes-12",
+            "runs": 4783467,
+            "nsPerOp": 236.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadVarString-12",
+            "runs": 5166111,
+            "nsPerOp": 239,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSerialize-12",
+            "runs": 820899,
+            "nsPerOp": 1349,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesXReader-12",
+            "runs": 169509,
+            "nsPerOp": 7020,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWriteVarUint",
+            "modificationCount": 1,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2017-01-16"
+          },
+          {
+            "name": "BenchmarkWriteVarBytes",
+            "modificationCount": 1,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2017-01-16"
+          },
+          {
+            "name": "BenchmarkWriteVarString",
+            "modificationCount": 2,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2018-04-13"
+          },
+          {
+            "name": "BenchmarkReadVarUint",
+            "modificationCount": 2,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2017-06-28"
+          },
+          {
+            "name": "BenchmarkReadVarBytes",
+            "modificationCount": 2,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2017-06-28"
+          },
+          {
+            "name": "BenchmarkReadVarString",
+            "modificationCount": 3,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2018-04-13"
+          },
+          {
+            "name": "BenchmarkSerialize",
+            "modificationCount": 3,
+            "createdOn": "2017-01-16",
+            "lastUpdateOn": "2018-04-13"
+          },
+          {
+            "name": "BenchmarkBytesXReader",
+            "modificationCount": 1,
+            "createdOn": "2018-07-31",
+            "lastUpdateOn": "2018-07-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/DNAProject/DNA/core/store/overlaydb",
+        "succeded": true,
+        "duration": "13.354s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPut-12",
+            "runs": 1000000,
+            "nsPerOp": 1088,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPutRandom-12",
+            "runs": 1000000,
+            "nsPerOp": 2287,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 1000000,
+            "nsPerOp": 1213,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetRandom-12",
+            "runs": 1000000,
+            "nsPerOp": 2897,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlayDBSerialPut-12",
+            "runs": 21,
+            "nsPerOp": 49371749,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlayDBRandomPut-12",
+            "runs": 27,
+            "nsPerOp": 37428801,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPut",
+            "modificationCount": 2,
+            "createdOn": "2018-10-11",
+            "lastUpdateOn": "2018-12-04"
+          },
+          {
+            "name": "BenchmarkPutRandom",
+            "modificationCount": 2,
+            "createdOn": "2018-10-11",
+            "lastUpdateOn": "2018-12-04"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 2,
+            "createdOn": "2018-10-11",
+            "lastUpdateOn": "2018-12-04"
+          },
+          {
+            "name": "BenchmarkGetRandom",
+            "modificationCount": 2,
+            "createdOn": "2018-10-11",
+            "lastUpdateOn": "2018-12-04"
+          },
+          {
+            "name": "BenchmarkOverlayDBSerialPut",
+            "modificationCount": 1,
+            "createdOn": "2018-10-11",
+            "lastUpdateOn": "2018-10-11"
+          },
+          {
+            "name": "BenchmarkOverlayDBRandomPut",
+            "modificationCount": 1,
+            "createdOn": "2018-10-11",
+            "lastUpdateOn": "2018-10-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/DNAProject/DNA/merkle",
+        "succeded": false,
+        "duration": "1.482s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMerkleInsert-12",
+            "runs": 1459,
+            "nsPerOp": 864933,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMerkleInsert",
+            "modificationCount": 3,
+            "createdOn": "2017-11-03",
+            "lastUpdateOn": "2017-12-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/DNAProject/DNA/p2pserver/dht/kbucket",
+        "succeded": true,
+        "duration": "399.009s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUpdates-12",
+            "runs": 5740220,
+            "nsPerOp": 248.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFinds-12",
+            "runs": 359110,
+            "nsPerOp": 3113,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUpdates",
+            "modificationCount": 1,
+            "createdOn": "2020-06-10",
+            "lastUpdateOn": "2020-06-10"
+          },
+          {
+            "name": "BenchmarkFinds",
+            "modificationCount": 1,
+            "createdOn": "2020-06-10",
+            "lastUpdateOn": "2020-06-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/DNAProject/DNA/smartcontract/test",
+        "succeded": true,
+        "duration": "2.414s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkExecuteAdd-12",
+            "runs": 276,
+            "nsPerOp": 4094962,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkExecuteAdd",
+            "modificationCount": 2,
+            "createdOn": "2018-10-23",
+            "lastUpdateOn": "2019-06-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/DNAProject/DNA/vm/neovm",
+        "succeded": true,
+        "duration": "4.033s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewExecutor-12",
+            "runs": 270,
+            "nsPerOp": 4550112,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNative-12",
+            "runs": 62200,
+            "nsPerOp": 17957,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewExecutor",
+            "modificationCount": 2,
+            "createdOn": "2018-10-23",
+            "lastUpdateOn": "2019-09-27"
+          },
+          {
+            "name": "BenchmarkNative",
+            "modificationCount": 1,
+            "createdOn": "2018-10-23",
+            "lastUpdateOn": "2018-10-23"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "DNAProject/DNA",
+    "name": "DNA",
+    "private": false,
+    "html_url": "https://github.com/DNAProject/DNA",
+    "description": "Distributed Networks Architecture Blockchain",
+    "fork": false,
+    "created_at": "2016-11-25T14:37:13Z",
+    "updated_at": "2023-07-06T05:11:00Z",
+    "pushed_at": "2020-06-10T10:47:11Z",
+    "ssh_url": "git@github.com:DNAProject/DNA.git",
+    "stargazers_count": 342,
+    "watchers_count": 342,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 151,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 23,
+    "topics": [
+      "blockchain"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "lgpl-3.0",
+      "name": "GNU Lesser General Public License v3.0",
+      "url": "https://api.github.com/licenses/lgpl-3.0",
+      "spdx_id": "LGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTEy",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 474,
+    "Lines": 81834,
+    "Blank": 8947,
+    "Code": 60538,
+    "Comment": 12349,
+    "Bytes": 2336997,
+    "Complexity": 12911
+  }
+}

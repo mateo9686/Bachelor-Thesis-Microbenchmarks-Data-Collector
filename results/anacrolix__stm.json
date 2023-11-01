@@ -1,0 +1,263 @@
+{
+  "Name": "anacrolix/stm",
+  "Path": "./repositories/anacrolix__stm",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T12:56:20Z",
+    "benchmarkCount": 14,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 14,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/anacrolix/stm",
+        "succeded": false,
+        "duration": "20.582s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAtomicGet-12",
+            "runs": 70895858,
+            "nsPerOp": 20.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomicSet-12",
+            "runs": 1512378,
+            "nsPerOp": 865.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIncrementSTM-12",
+            "runs": 141,
+            "nsPerOp": 11083710,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIncrementMutex-12",
+            "runs": 955,
+            "nsPerOp": 1142759,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIncrementChannel-12",
+            "runs": 974,
+            "nsPerOp": 1183037,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadVarSTM-12",
+            "runs": 1730,
+            "nsPerOp": 865778,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadVarMutex-12",
+            "runs": 1615,
+            "nsPerOp": 689567,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadVarChannel-12",
+            "runs": 1573,
+            "nsPerOp": 683659,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPingPong4-12",
+            "runs": 37708,
+            "nsPerOp": 34715,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPingPong-12",
+            "runs": 83439,
+            "nsPerOp": 14010,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThunderingHerdCondVar-12",
+            "runs": 609,
+            "nsPerOp": 2007795,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkThunderingHerd-12",
+            "runs": 60,
+            "nsPerOp": 30013039,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAtomicGet",
+            "modificationCount": 1,
+            "createdOn": "2019-10-23",
+            "lastUpdateOn": "2019-10-23"
+          },
+          {
+            "name": "BenchmarkAtomicSet",
+            "modificationCount": 1,
+            "createdOn": "2019-10-23",
+            "lastUpdateOn": "2019-10-23"
+          },
+          {
+            "name": "BenchmarkIncrementSTM",
+            "modificationCount": 4,
+            "createdOn": "2019-10-23",
+            "lastUpdateOn": "2022-06-08"
+          },
+          {
+            "name": "BenchmarkIncrementMutex",
+            "modificationCount": 1,
+            "createdOn": "2019-10-23",
+            "lastUpdateOn": "2019-10-23"
+          },
+          {
+            "name": "BenchmarkIncrementChannel",
+            "modificationCount": 1,
+            "createdOn": "2019-10-23",
+            "lastUpdateOn": "2019-10-23"
+          },
+          {
+            "name": "BenchmarkReadVarSTM",
+            "modificationCount": 1,
+            "createdOn": "2019-10-23",
+            "lastUpdateOn": "2019-10-23"
+          },
+          {
+            "name": "BenchmarkReadVarMutex",
+            "modificationCount": 1,
+            "createdOn": "2019-10-23",
+            "lastUpdateOn": "2019-10-23"
+          },
+          {
+            "name": "BenchmarkReadVarChannel",
+            "modificationCount": 2,
+            "createdOn": "2019-10-23",
+            "lastUpdateOn": "2019-10-23"
+          },
+          {
+            "name": "BenchmarkPingPong4",
+            "modificationCount": 1,
+            "createdOn": "2019-11-04",
+            "lastUpdateOn": "2019-11-04"
+          },
+          {
+            "name": "BenchmarkPingPong",
+            "modificationCount": 1,
+            "createdOn": "2019-11-04",
+            "lastUpdateOn": "2019-11-04"
+          },
+          {
+            "name": "BenchmarkThunderingHerdCondVar",
+            "modificationCount": 1,
+            "createdOn": "2020-09-10",
+            "lastUpdateOn": "2020-09-10"
+          },
+          {
+            "name": "BenchmarkThunderingHerd",
+            "modificationCount": 1,
+            "createdOn": "2020-09-10",
+            "lastUpdateOn": "2020-09-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/anacrolix/stm/rate",
+        "succeded": true,
+        "duration": "4.580s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAllowN-12",
+            "runs": 525177,
+            "nsPerOp": 2643,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWaitNNoDelay-12",
+            "runs": 139867,
+            "nsPerOp": 15035,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAllowN",
+            "modificationCount": 1,
+            "createdOn": "2019-11-02",
+            "lastUpdateOn": "2019-11-02"
+          },
+          {
+            "name": "BenchmarkWaitNNoDelay",
+            "modificationCount": 1,
+            "createdOn": "2019-11-02",
+            "lastUpdateOn": "2019-11-02"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "anacrolix/stm",
+    "name": "stm",
+    "private": false,
+    "html_url": "https://github.com/anacrolix/stm",
+    "description": "Software Transactional Memory in Go",
+    "fork": false,
+    "created_at": "2019-10-22T06:10:41Z",
+    "updated_at": "2023-10-13T20:05:09Z",
+    "pushed_at": "2022-12-21T01:01:27Z",
+    "ssh_url": "git@github.com:anacrolix/stm.git",
+    "stargazers_count": 67,
+    "watchers_count": 67,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 3,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 17,
+    "Lines": 2323,
+    "Blank": 241,
+    "Code": 1630,
+    "Comment": 452,
+    "Bytes": 52426,
+    "Complexity": 230
+  }
+}

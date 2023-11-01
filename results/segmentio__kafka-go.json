@@ -1,0 +1,482 @@
+{
+  "Name": "segmentio/kafka-go",
+  "Path": "./repositories/segmentio__kafka-go",
+  "GoVersion": "1.15",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T01:07:55Z",
+    "benchmarkCount": 28,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 28,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/segmentio/kafka-go/compress",
+        "succeded": true,
+        "duration": "14.783s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCompression/none/compress-12",
+            "runs": 6495,
+            "nsPerOp": 182520,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/none/decompress-12",
+            "runs": 6517675,
+            "nsPerOp": 192.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/compress-12",
+            "runs": 182,
+            "nsPerOp": 6531269,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/gzip/decompress-12",
+            "runs": 607,
+            "nsPerOp": 2038140,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/compress-12",
+            "runs": 460,
+            "nsPerOp": 2193792,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/snappy/decompress-12",
+            "runs": 1699,
+            "nsPerOp": 663519,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/compress-12",
+            "runs": 386,
+            "nsPerOp": 2828216,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/lz4/decompress-12",
+            "runs": 1382,
+            "nsPerOp": 760078,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/compress-12",
+            "runs": 220,
+            "nsPerOp": 4749155,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/zstd/decompress-12",
+            "runs": 1099,
+            "nsPerOp": 1153830,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 9,
+            "createdOn": "2018-07-12",
+            "lastUpdateOn": "2022-09-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/segmentio/kafka-go/compress/snappy/go-xerial-snappy",
+        "succeded": true,
+        "duration": "12.196s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSnappyDecode-12",
+            "runs": 2755702,
+            "nsPerOp": 457.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnappyDecodeInto-12",
+            "runs": 6946047,
+            "nsPerOp": 191.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnappyStreamDecode-12",
+            "runs": 440702,
+            "nsPerOp": 4481,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnappyStreamDecodeInto-12",
+            "runs": 367368,
+            "nsPerOp": 2964,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnappyStreamDecodeMassive-12",
+            "runs": 19,
+            "nsPerOp": 77348068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSnappyStreamDecodeIntoMassive-12",
+            "runs": 115,
+            "nsPerOp": 13948140,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSnappyDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-15"
+          },
+          {
+            "name": "BenchmarkSnappyDecodeInto",
+            "modificationCount": 1,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-15"
+          },
+          {
+            "name": "BenchmarkSnappyStreamDecode",
+            "modificationCount": 1,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-15"
+          },
+          {
+            "name": "BenchmarkSnappyStreamDecodeInto",
+            "modificationCount": 2,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-05-15"
+          },
+          {
+            "name": "BenchmarkSnappyStreamDecodeMassive",
+            "modificationCount": 1,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-02-15"
+          },
+          {
+            "name": "BenchmarkSnappyStreamDecodeIntoMassive",
+            "modificationCount": 2,
+            "createdOn": "2022-02-15",
+            "lastUpdateOn": "2022-05-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/segmentio/kafka-go/protocol/fetch",
+        "succeded": true,
+        "duration": "5.777s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFetchResponse/v0/read-12",
+            "runs": 115023,
+            "nsPerOp": 11289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFetchResponse/v0/write-12",
+            "runs": 110920,
+            "nsPerOp": 10581,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFetchResponse/v11/read-12",
+            "runs": 112591,
+            "nsPerOp": 9241,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFetchResponse/v11/write-12",
+            "runs": 203548,
+            "nsPerOp": 8696,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFetchResponse",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          },
+          {
+            "name": "BenchmarkFetchResponse",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          },
+          {
+            "name": "BenchmarkFetchResponse",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          },
+          {
+            "name": "BenchmarkFetchResponse",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/segmentio/kafka-go/protocol/metadata",
+        "succeded": true,
+        "duration": "9.578s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMetadataRequest/v8/read-12",
+            "runs": 1000000,
+            "nsPerOp": 1853,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetadataRequest/v8/write-12",
+            "runs": 1651208,
+            "nsPerOp": 661.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetadataResponse/v8/read-12",
+            "runs": 203989,
+            "nsPerOp": 9101,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetadataResponse/v8/write-12",
+            "runs": 608485,
+            "nsPerOp": 3237,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMetadataRequest",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          },
+          {
+            "name": "BenchmarkMetadataRequest",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          },
+          {
+            "name": "BenchmarkMetadataResponse",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          },
+          {
+            "name": "BenchmarkMetadataResponse",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/segmentio/kafka-go/protocol/produce",
+        "succeded": true,
+        "duration": "8.250s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkProduceRequest/v3/read-12",
+            "runs": 72897,
+            "nsPerOp": 18371,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProduceRequest/v3/write-12",
+            "runs": 54787,
+            "nsPerOp": 22748,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProduceRequest/v5/read-12",
+            "runs": 82584,
+            "nsPerOp": 18260,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProduceRequest/v5/write-12",
+            "runs": 116688,
+            "nsPerOp": 11276,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkProduceRequest",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          },
+          {
+            "name": "BenchmarkProduceRequest",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          },
+          {
+            "name": "BenchmarkProduceRequest",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          },
+          {
+            "name": "BenchmarkProduceRequest",
+            "modificationCount": 1,
+            "createdOn": "2020-12-04",
+            "lastUpdateOn": "2020-12-04"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "segmentio/kafka-go",
+    "name": "kafka-go",
+    "private": false,
+    "html_url": "https://github.com/segmentio/kafka-go",
+    "description": "Kafka library in Go",
+    "fork": false,
+    "created_at": "2017-05-09T22:50:27Z",
+    "updated_at": "2023-10-23T14:25:25Z",
+    "pushed_at": "2023-10-20T00:33:41Z",
+    "ssh_url": "git@github.com:segmentio/kafka-go.git",
+    "stargazers_count": 6627,
+    "watchers_count": 6627,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 759,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 139,
+    "topics": [
+      "consumer",
+      "go",
+      "golang",
+      "golang-library",
+      "golang-native",
+      "kafka",
+      "kafka-client",
+      "producer",
+      "segment"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 263,
+    "Lines": 47561,
+    "Blank": 6691,
+    "Code": 36506,
+    "Comment": 4364,
+    "Bytes": 1222050,
+    "Complexity": 6011
+  }
+}

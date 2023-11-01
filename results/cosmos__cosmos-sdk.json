@@ -1,0 +1,930 @@
+{
+  "Name": "cosmos/cosmos-sdk",
+  "Path": "./repositories/cosmos__cosmos-sdk",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T00:17:12Z",
+    "benchmarkCount": 57,
+    "benchmarkSuiteCount": 13,
+    "successfulBenchmarkCount": 57,
+    "successfulBenchmarkSuitesCount": 13,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "cosmossdk.io/client/v2/internal/strcase",
+        "succeded": true,
+        "duration": "1.266s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkToKebab-12",
+            "runs": 10000,
+            "nsPerOp": 116859,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkToKebab",
+            "modificationCount": 1,
+            "createdOn": "2022-12-15",
+            "lastUpdateOn": "2022-12-15"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/log",
+        "succeded": true,
+        "duration": "26.953s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoggers/zerolog/empty_key_vals-12",
+            "runs": 9797330,
+            "nsPerOp": 129,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog/single_string-12",
+            "runs": 7261707,
+            "nsPerOp": 161.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog/single_small_int-12",
+            "runs": 6533720,
+            "nsPerOp": 180.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog/single_largeish_int-12",
+            "runs": 6561301,
+            "nsPerOp": 192.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog/single_float-12",
+            "runs": 3875974,
+            "nsPerOp": 321,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog/single_byte_slice-12",
+            "runs": 4679872,
+            "nsPerOp": 254.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog/single_duration-12",
+            "runs": 3649002,
+            "nsPerOp": 299.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog/two_values-12",
+            "runs": 4577650,
+            "nsPerOp": 286.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog/four_values-12",
+            "runs": 4811467,
+            "nsPerOp": 237.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog/eight_values-12",
+            "runs": 2254600,
+            "nsPerOp": 538.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/specialized_nop_logger/empty_key_vals-12",
+            "runs": 516417330,
+            "nsPerOp": 2.422,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/specialized_nop_logger/single_string-12",
+            "runs": 510035984,
+            "nsPerOp": 2.435,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog_nop_logger/empty_key_vals-12",
+            "runs": 100000000,
+            "nsPerOp": 12.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers/zerolog_nop_logger/single_string-12",
+            "runs": 148516621,
+            "nsPerOp": 8.626,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers_StructuredVsFields/logger_structured-12",
+            "runs": 2005977,
+            "nsPerOp": 622.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggers_StructuredVsFields/logger-12",
+            "runs": 1357096,
+            "nsPerOp": 920.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers",
+            "modificationCount": 3,
+            "createdOn": "2023-02-24",
+            "lastUpdateOn": "2023-03-03"
+          },
+          {
+            "name": "BenchmarkLoggers_StructuredVsFields",
+            "modificationCount": 4,
+            "createdOn": "2023-02-27",
+            "lastUpdateOn": "2023-04-02"
+          },
+          {
+            "name": "BenchmarkLoggers_StructuredVsFields",
+            "modificationCount": 4,
+            "createdOn": "2023-02-27",
+            "lastUpdateOn": "2023-04-02"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/math",
+        "succeded": true,
+        "duration": "17.388s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMarshalTo-12",
+            "runs": 3587263,
+            "nsPerOp": 394.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLegacyQuoMut-12",
+            "runs": 22431348,
+            "nsPerOp": 48.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLegacyQuoTruncateMut-12",
+            "runs": 29862943,
+            "nsPerOp": 76.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLegacySqrtOnMersennePrime-12",
+            "runs": 7162,
+            "nsPerOp": 140333,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLegacyQuoRoundupMut-12",
+            "runs": 2740104,
+            "nsPerOp": 411.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntSize-12",
+            "runs": 25708,
+            "nsPerOp": 80853,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMarshalTo",
+            "modificationCount": 3,
+            "createdOn": "2022-07-20",
+            "lastUpdateOn": "2023-03-31"
+          },
+          {
+            "name": "BenchmarkLegacyQuoMut",
+            "modificationCount": 2,
+            "createdOn": "2022-08-02",
+            "lastUpdateOn": "2022-08-12"
+          },
+          {
+            "name": "BenchmarkLegacyQuoTruncateMut",
+            "modificationCount": 2,
+            "createdOn": "2022-08-02",
+            "lastUpdateOn": "2022-08-12"
+          },
+          {
+            "name": "BenchmarkLegacySqrtOnMersennePrime",
+            "modificationCount": 1,
+            "createdOn": "2023-05-15",
+            "lastUpdateOn": "2023-05-15"
+          },
+          {
+            "name": "BenchmarkLegacyQuoRoundupMut",
+            "modificationCount": 3,
+            "createdOn": "2022-08-02",
+            "lastUpdateOn": "2022-10-19"
+          },
+          {
+            "name": "BenchmarkIntSize",
+            "modificationCount": 3,
+            "createdOn": "2023-06-08",
+            "lastUpdateOn": "2023-09-14"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/orm/model/ormtable",
+        "succeded": true,
+        "duration": "64.649s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMemory/insert-12",
+            "runs": 58948,
+            "nsPerOp": 17023,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemory/update-12",
+            "runs": 156204,
+            "nsPerOp": 7425,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemory/get-12",
+            "runs": 170692,
+            "nsPerOp": 6288,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemory/delete-12",
+            "runs": 139018,
+            "nsPerOp": 8085,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLevelDB/insert-12",
+            "runs": 67964,
+            "nsPerOp": 19347,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLevelDB/update-12",
+            "runs": 82172,
+            "nsPerOp": 17612,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLevelDB/get-12",
+            "runs": 151911,
+            "nsPerOp": 9295,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLevelDB/delete-12",
+            "runs": 52752,
+            "nsPerOp": 22304,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManualInsertMemory/insert-12",
+            "runs": 318943,
+            "nsPerOp": 4433,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManualInsertMemory/update-12",
+            "runs": 490430,
+            "nsPerOp": 2194,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManualInsertMemory/get-12",
+            "runs": 276549,
+            "nsPerOp": 4177,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManualInsertMemory/delete-12",
+            "runs": 461071,
+            "nsPerOp": 3140,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManualInsertLevelDB/insert-12",
+            "runs": 79688,
+            "nsPerOp": 14640,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManualInsertLevelDB/update-12",
+            "runs": 171534,
+            "nsPerOp": 23835,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManualInsertLevelDB/get-12",
+            "runs": 54566,
+            "nsPerOp": 35296,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkManualInsertLevelDB/delete-12",
+            "runs": 42579,
+            "nsPerOp": 39573,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMemory",
+            "modificationCount": 2,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkMemory",
+            "modificationCount": 2,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkMemory",
+            "modificationCount": 2,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkMemory",
+            "modificationCount": 2,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2023-07-03"
+          },
+          {
+            "name": "BenchmarkLevelDB",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkLevelDB",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkLevelDB",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkLevelDB",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkManualInsertMemory",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkManualInsertMemory",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkManualInsertMemory",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkManualInsertMemory",
+            "modificationCount": 1,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-04-08"
+          },
+          {
+            "name": "BenchmarkManualInsertLevelDB",
+            "modificationCount": 2,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-12-29"
+          },
+          {
+            "name": "BenchmarkManualInsertLevelDB",
+            "modificationCount": 2,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-12-29"
+          },
+          {
+            "name": "BenchmarkManualInsertLevelDB",
+            "modificationCount": 2,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-12-29"
+          },
+          {
+            "name": "BenchmarkManualInsertLevelDB",
+            "modificationCount": 2,
+            "createdOn": "2022-04-08",
+            "lastUpdateOn": "2022-12-29"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/store/v2/internal/maps",
+        "succeded": true,
+        "duration": "2.069s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkKVPairBytes-12",
+            "runs": 2434,
+            "nsPerOp": 429396,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkKVPairBytes",
+            "modificationCount": 1,
+            "createdOn": "2020-07-11",
+            "lastUpdateOn": "2020-07-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cosmos/cosmos-sdk/tests/integration/bank",
+        "succeded": true,
+        "duration": "5.948s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOneBankSendTxPerBlock-12",
+            "runs": 570,
+            "nsPerOp": 2091436,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOneBankMultiSendTxPerBlock-12",
+            "runs": 552,
+            "nsPerOp": 2055533,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOneBankSendTxPerBlock",
+            "modificationCount": 33,
+            "createdOn": "2018-06-27",
+            "lastUpdateOn": "2023-05-31"
+          },
+          {
+            "name": "BenchmarkOneBankMultiSendTxPerBlock",
+            "modificationCount": 29,
+            "createdOn": "2019-02-04",
+            "lastUpdateOn": "2023-05-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/cosmos/cosmos-sdk/tests/integration/staking/keeper",
+        "succeded": true,
+        "duration": "76.246s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetValidator-12",
+            "runs": 165,
+            "nsPerOp": 6840965,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetValidatorDelegations-12",
+            "runs": 4,
+            "nsPerOp": 587204866,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetValidatorDelegationsLegacy-12",
+            "runs": 1,
+            "nsPerOp": 1009113941,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetValidator",
+            "modificationCount": 7,
+            "createdOn": "2021-02-12",
+            "lastUpdateOn": "2023-07-12"
+          },
+          {
+            "name": "BenchmarkGetValidatorDelegations",
+            "modificationCount": 7,
+            "createdOn": "2023-04-24",
+            "lastUpdateOn": "2023-07-19"
+          },
+          {
+            "name": "BenchmarkGetValidatorDelegationsLegacy",
+            "modificationCount": 7,
+            "createdOn": "2023-04-24",
+            "lastUpdateOn": "2023-07-19"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/tools/cosmovisor",
+        "succeded": true,
+        "duration": "1.868s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDetailString-12",
+            "runs": 124764,
+            "nsPerOp": 13857,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDetailString",
+            "modificationCount": 2,
+            "createdOn": "2022-09-09",
+            "lastUpdateOn": "2022-09-24"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/x/nft/internal/conv",
+        "succeded": true,
+        "duration": "1.560s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUnsafeStrToBytes-12",
+            "runs": 9056718,
+            "nsPerOp": 134.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUnsafeStrToBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-04-19",
+            "lastUpdateOn": "2021-04-19"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/x/staking",
+        "succeded": true,
+        "duration": "4.780s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkValidateGenesis10Validators-12",
+            "runs": 472249,
+            "nsPerOp": 2624,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidateGenesis100Validators-12",
+            "runs": 79862,
+            "nsPerOp": 17307,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidateGenesis400Validators-12",
+            "runs": 19897,
+            "nsPerOp": 60994,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkValidateGenesis10Validators",
+            "modificationCount": 1,
+            "createdOn": "2021-03-02",
+            "lastUpdateOn": "2021-03-02"
+          },
+          {
+            "name": "BenchmarkValidateGenesis100Validators",
+            "modificationCount": 1,
+            "createdOn": "2021-03-02",
+            "lastUpdateOn": "2021-03-02"
+          },
+          {
+            "name": "BenchmarkValidateGenesis400Validators",
+            "modificationCount": 1,
+            "createdOn": "2021-03-02",
+            "lastUpdateOn": "2021-03-02"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/x/tx/signing/aminojson",
+        "succeded": true,
+        "duration": "2.884s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAminoJSONNaiveSort-12",
+            "runs": 8874,
+            "nsPerOp": 185169,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAminoJSONDefaultSort-12",
+            "runs": 10000,
+            "nsPerOp": 116290,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAminoJSONNaiveSort",
+            "modificationCount": 1,
+            "createdOn": "2023-05-31",
+            "lastUpdateOn": "2023-05-31"
+          },
+          {
+            "name": "BenchmarkAminoJSONDefaultSort",
+            "modificationCount": 1,
+            "createdOn": "2023-05-31",
+            "lastUpdateOn": "2023-05-31"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/x/tx/signing/textual",
+        "succeded": true,
+        "duration": "6.759s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIntValueRendererFormat-12",
+            "runs": 355592,
+            "nsPerOp": 3325,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecimalValueRendererFormat-12",
+            "runs": 185764,
+            "nsPerOp": 5603,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBytesValueRendererFormat-12",
+            "runs": 558,
+            "nsPerOp": 2180466,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMessageValueRenderer_parseRepeated-12",
+            "runs": 15751,
+            "nsPerOp": 72748,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIntValueRendererFormat",
+            "modificationCount": 3,
+            "createdOn": "2022-08-05",
+            "lastUpdateOn": "2023-04-13"
+          },
+          {
+            "name": "BenchmarkDecimalValueRendererFormat",
+            "modificationCount": 5,
+            "createdOn": "2022-08-04",
+            "lastUpdateOn": "2023-04-13"
+          },
+          {
+            "name": "BenchmarkBytesValueRendererFormat",
+            "modificationCount": 3,
+            "createdOn": "2022-08-04",
+            "lastUpdateOn": "2023-04-13"
+          },
+          {
+            "name": "BenchmarkMessageValueRenderer_parseRepeated",
+            "modificationCount": 1,
+            "createdOn": "2023-04-13",
+            "lastUpdateOn": "2023-04-13"
+          }
+        ]
+      },
+      {
+        "pkg": "cosmossdk.io/x/upgrade/internal/conv",
+        "succeded": true,
+        "duration": "1.321s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUnsafeStrToBytes-12",
+            "runs": 19042857,
+            "nsPerOp": 64.12,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUnsafeStrToBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-04-19",
+            "lastUpdateOn": "2021-04-19"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "cosmos/cosmos-sdk",
+    "name": "cosmos-sdk",
+    "private": false,
+    "html_url": "https://github.com/cosmos/cosmos-sdk",
+    "description": ":chains: A Framework for Building High Value Public Blockchains :sparkles:",
+    "fork": false,
+    "created_at": "2016-02-06T07:15:53Z",
+    "updated_at": "2023-10-23T11:12:59Z",
+    "pushed_at": "2023-10-23T18:26:57Z",
+    "ssh_url": "git@github.com:cosmos/cosmos-sdk.git",
+    "homepage": "https://cosmos.network/",
+    "stargazers_count": 5475,
+    "watchers_count": 5475,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": true,
+    "has_discussions": true,
+    "forks": 3032,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 427,
+    "topics": [
+      "blockchain",
+      "cometbft",
+      "cosmos-sdk",
+      "cryptocurrency",
+      "go",
+      "golang",
+      "tendermint"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 2254,
+    "Lines": 1141710,
+    "Blank": 95996,
+    "Code": 927618,
+    "Comment": 118096,
+    "Bytes": 39180073,
+    "Complexity": 174469
+  }
+}

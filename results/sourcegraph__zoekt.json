@@ -1,0 +1,582 @@
+{
+  "Name": "sourcegraph/zoekt",
+  "Path": "./repositories/sourcegraph__zoekt",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T09:47:58Z",
+    "benchmarkCount": 37,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 37,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/sourcegraph/zoekt",
+        "succeded": true,
+        "duration": "43.212s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGobRoundtrip/count=1-12",
+            "runs": 3592,
+            "nsPerOp": 407940,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGobRoundtrip/count=100-12",
+            "runs": 100,
+            "nsPerOp": 13063947,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGobRoundtrip/count=1000-12",
+            "runs": 10,
+            "nsPerOp": 102737768,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGobRoundtrip/count=10000-12",
+            "runs": 1,
+            "nsPerOp": 1156663883,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoRoundtrip/count=1-12",
+            "runs": 17656,
+            "nsPerOp": 74590,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoRoundtrip/count=100-12",
+            "runs": 177,
+            "nsPerOp": 7533003,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoRoundtrip/count=1000-12",
+            "runs": 16,
+            "nsPerOp": 66349616,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProtoRoundtrip/count=10000-12",
+            "runs": 2,
+            "nsPerOp": 639510666,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMinimalRepoListEncodings/slice-12",
+            "runs": 362,
+            "nsPerOp": 2851255,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMinimalRepoListEncodings/map-12",
+            "runs": 100,
+            "nsPerOp": 11467041,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalDocSections/10-12",
+            "runs": 3773526,
+            "nsPerOp": 347.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalDocSections/100-12",
+            "runs": 665420,
+            "nsPerOp": 2288,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalDocSections/1000-12",
+            "runs": 80242,
+            "nsPerOp": 20365,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalDocSections/10000-12",
+            "runs": 6067,
+            "nsPerOp": 240897,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator/100_50-12",
+            "runs": 1000000,
+            "nsPerOp": 1475,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator/10000_100-12",
+            "runs": 14007,
+            "nsPerOp": 89686,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator/10000_1000-12",
+            "runs": 12820,
+            "nsPerOp": 89819,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator/10000_10000-12",
+            "runs": 10000,
+            "nsPerOp": 124419,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator/100000_100-12",
+            "runs": 1030,
+            "nsPerOp": 1319222,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator/100000_1000-12",
+            "runs": 1022,
+            "nsPerOp": 1184619,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator/100000_10000-12",
+            "runs": 1029,
+            "nsPerOp": 1091289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator/100000_100000-12",
+            "runs": 1024,
+            "nsPerOp": 1100871,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMinFrequencyNgramOffsets-12",
+            "runs": 5341358,
+            "nsPerOp": 226.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRepoList_Encode-12",
+            "runs": 7515,
+            "nsPerOp": 255309,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRepoList_Decode-12",
+            "runs": 1456,
+            "nsPerOp": 887693,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGobRoundtrip",
+            "modificationCount": 1,
+            "createdOn": "2023-06-05",
+            "lastUpdateOn": "2023-06-05"
+          },
+          {
+            "name": "BenchmarkGobRoundtrip",
+            "modificationCount": 1,
+            "createdOn": "2023-06-05",
+            "lastUpdateOn": "2023-06-05"
+          },
+          {
+            "name": "BenchmarkGobRoundtrip",
+            "modificationCount": 1,
+            "createdOn": "2023-06-05",
+            "lastUpdateOn": "2023-06-05"
+          },
+          {
+            "name": "BenchmarkGobRoundtrip",
+            "modificationCount": 1,
+            "createdOn": "2023-06-05",
+            "lastUpdateOn": "2023-06-05"
+          },
+          {
+            "name": "BenchmarkProtoRoundtrip",
+            "modificationCount": 3,
+            "createdOn": "2023-06-05",
+            "lastUpdateOn": "2023-09-13"
+          },
+          {
+            "name": "BenchmarkProtoRoundtrip",
+            "modificationCount": 3,
+            "createdOn": "2023-06-05",
+            "lastUpdateOn": "2023-09-13"
+          },
+          {
+            "name": "BenchmarkProtoRoundtrip",
+            "modificationCount": 3,
+            "createdOn": "2023-06-05",
+            "lastUpdateOn": "2023-09-13"
+          },
+          {
+            "name": "BenchmarkProtoRoundtrip",
+            "modificationCount": 3,
+            "createdOn": "2023-06-05",
+            "lastUpdateOn": "2023-09-13"
+          },
+          {
+            "name": "BenchmarkMinimalRepoListEncodings",
+            "modificationCount": 2,
+            "createdOn": "2021-06-23",
+            "lastUpdateOn": "2021-06-25"
+          },
+          {
+            "name": "BenchmarkMinimalRepoListEncodings",
+            "modificationCount": 2,
+            "createdOn": "2021-06-23",
+            "lastUpdateOn": "2021-06-25"
+          },
+          {
+            "name": "BenchmarkUnmarshalDocSections",
+            "modificationCount": 1,
+            "createdOn": "2022-06-27",
+            "lastUpdateOn": "2022-06-27"
+          },
+          {
+            "name": "BenchmarkUnmarshalDocSections",
+            "modificationCount": 1,
+            "createdOn": "2022-06-27",
+            "lastUpdateOn": "2022-06-27"
+          },
+          {
+            "name": "BenchmarkUnmarshalDocSections",
+            "modificationCount": 1,
+            "createdOn": "2022-06-27",
+            "lastUpdateOn": "2022-06-27"
+          },
+          {
+            "name": "BenchmarkUnmarshalDocSections",
+            "modificationCount": 1,
+            "createdOn": "2022-06-27",
+            "lastUpdateOn": "2022-06-27"
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator",
+            "modificationCount": 1,
+            "createdOn": "2019-07-09",
+            "lastUpdateOn": "2019-07-09"
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator",
+            "modificationCount": 1,
+            "createdOn": "2019-07-09",
+            "lastUpdateOn": "2019-07-09"
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator",
+            "modificationCount": 1,
+            "createdOn": "2019-07-09",
+            "lastUpdateOn": "2019-07-09"
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator",
+            "modificationCount": 1,
+            "createdOn": "2019-07-09",
+            "lastUpdateOn": "2019-07-09"
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator",
+            "modificationCount": 1,
+            "createdOn": "2019-07-09",
+            "lastUpdateOn": "2019-07-09"
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator",
+            "modificationCount": 1,
+            "createdOn": "2019-07-09",
+            "lastUpdateOn": "2019-07-09"
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator",
+            "modificationCount": 1,
+            "createdOn": "2019-07-09",
+            "lastUpdateOn": "2019-07-09"
+          },
+          {
+            "name": "BenchmarkCompressedPostingIterator",
+            "modificationCount": 1,
+            "createdOn": "2019-07-09",
+            "lastUpdateOn": "2019-07-09"
+          },
+          {
+            "name": "BenchmarkMinFrequencyNgramOffsets",
+            "modificationCount": 1,
+            "createdOn": "2023-07-17",
+            "lastUpdateOn": "2023-07-17"
+          },
+          {
+            "name": "BenchmarkRepoList_Encode",
+            "modificationCount": 1,
+            "createdOn": "2022-12-15",
+            "lastUpdateOn": "2022-12-15"
+          },
+          {
+            "name": "BenchmarkRepoList_Decode",
+            "modificationCount": 1,
+            "createdOn": "2022-12-15",
+            "lastUpdateOn": "2022-12-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/sourcegraph/zoekt/grpc/messagesize",
+        "succeded": true,
+        "duration": "5.963s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkObserverBinary-12",
+            "runs": 19564332,
+            "nsPerOp": 64.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkObserverKeyValue-12",
+            "runs": 859117,
+            "nsPerOp": 1390,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkObserverArticle-12",
+            "runs": 360774,
+            "nsPerOp": 3661,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkObserverBinary",
+            "modificationCount": 1,
+            "createdOn": "2023-09-18",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkObserverKeyValue",
+            "modificationCount": 1,
+            "createdOn": "2023-09-18",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkObserverArticle",
+            "modificationCount": 1,
+            "createdOn": "2023-09-18",
+            "lastUpdateOn": "2023-09-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/sourcegraph/zoekt/query",
+        "succeded": true,
+        "duration": "70.781s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRepoBranches_Encode-12",
+            "runs": 1,
+            "nsPerOp": 2669968790,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBranchesRepos_Encode-12",
+            "runs": 7316,
+            "nsPerOp": 176920,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBranchesRepos_Decode-12",
+            "runs": 3057,
+            "nsPerOp": 1038039,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileNameSet_Encode-12",
+            "runs": 10000,
+            "nsPerOp": 113798,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileNameSet_Decode-12",
+            "runs": 10000,
+            "nsPerOp": 244430,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRepoBranches_Encode",
+            "modificationCount": 2,
+            "createdOn": "2020-07-29",
+            "lastUpdateOn": "2021-09-29"
+          },
+          {
+            "name": "BenchmarkBranchesRepos_Encode",
+            "modificationCount": 2,
+            "createdOn": "2020-07-29",
+            "lastUpdateOn": "2021-09-29"
+          },
+          {
+            "name": "BenchmarkBranchesRepos_Decode",
+            "modificationCount": 2,
+            "createdOn": "2020-07-29",
+            "lastUpdateOn": "2021-09-29"
+          },
+          {
+            "name": "BenchmarkFileNameSet_Encode",
+            "modificationCount": 1,
+            "createdOn": "2022-11-21",
+            "lastUpdateOn": "2022-11-21"
+          },
+          {
+            "name": "BenchmarkFileNameSet_Decode",
+            "modificationCount": 1,
+            "createdOn": "2022-11-21",
+            "lastUpdateOn": "2022-11-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/sourcegraph/zoekt/shards",
+        "succeded": false,
+        "duration": "660.286s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkYield/timer-12",
+            "runs": 182713806,
+            "nsPerOp": 5.636,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkYield/now-12",
+            "runs": 419253,
+            "nsPerOp": 2550,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkYield/deadlineTimer-12",
+            "runs": 236775190,
+            "nsPerOp": 5.506,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkYield/yield-12",
+            "runs": 171713492,
+            "nsPerOp": 7.376,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkYield",
+            "modificationCount": 2,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-12-15"
+          },
+          {
+            "name": "BenchmarkYield",
+            "modificationCount": 2,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-12-15"
+          },
+          {
+            "name": "BenchmarkYield",
+            "modificationCount": 2,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-12-15"
+          },
+          {
+            "name": "BenchmarkYield",
+            "modificationCount": 2,
+            "createdOn": "2021-04-08",
+            "lastUpdateOn": "2021-12-15"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "sourcegraph/zoekt",
+    "name": "zoekt",
+    "private": false,
+    "html_url": "https://github.com/sourcegraph/zoekt",
+    "description": "Fast trigram based code search  ",
+    "fork": false,
+    "created_at": "2018-10-01T20:58:06Z",
+    "updated_at": "2023-10-23T14:17:12Z",
+    "pushed_at": "2023-10-23T14:28:13Z",
+    "ssh_url": "git@github.com:sourcegraph/zoekt.git",
+    "stargazers_count": 300,
+    "watchers_count": 300,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": false,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 51,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 29,
+    "topics": [
+      "repo-type-backend"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 180,
+    "Lines": 59449,
+    "Blank": 7965,
+    "Code": 46471,
+    "Comment": 5013,
+    "Bytes": 1641847,
+    "Complexity": 9201
+  }
+}

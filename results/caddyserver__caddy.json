@@ -1,0 +1,641 @@
+{
+  "Name": "caddyserver/caddy",
+  "Path": "./repositories/caddyserver__caddy",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T04:24:38Z",
+    "benchmarkCount": 41,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 39,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/caddyserver/caddy/v2",
+        "succeded": true,
+        "duration": "10.946s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoad-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "{\"level\":\"info\",\"ts\":1698380691.2796357,\"logger\":\"admin\",\"msg\":\"admin"
+          },
+          {
+            "name": "BenchmarkReplacer/no_placeholder-12",
+            "runs": 145448409,
+            "nsPerOp": 7.916,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReplacer/string_replacement-12",
+            "runs": 10372372,
+            "nsPerOp": 126.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReplacer/int_replacement-12",
+            "runs": 8868147,
+            "nsPerOp": 138.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReplacer/placeholder-12",
+            "runs": 10280712,
+            "nsPerOp": 118.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReplacer/escaped_placeholder-12",
+            "runs": 5419371,
+            "nsPerOp": 224,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 4,
+            "createdOn": "2019-03-26",
+            "lastUpdateOn": "2021-08-16"
+          },
+          {
+            "name": "BenchmarkReplacer",
+            "modificationCount": 3,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2020-03-30"
+          },
+          {
+            "name": "BenchmarkReplacer",
+            "modificationCount": 3,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2020-03-30"
+          },
+          {
+            "name": "BenchmarkReplacer",
+            "modificationCount": 3,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2020-03-30"
+          },
+          {
+            "name": "BenchmarkReplacer",
+            "modificationCount": 3,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2020-03-30"
+          },
+          {
+            "name": "BenchmarkReplacer",
+            "modificationCount": 3,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2020-03-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/caddyserver/caddy/v2/modules/caddyhttp",
+        "succeded": true,
+        "duration": "64.911s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMatchExpressionMatch/boolean_matches_succeed_for_placeholder_http.request.tls.client.subject-12",
+            "runs": 790329,
+            "nsPerOp": 2234,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/header_matches_(MatchHeader)-12",
+            "runs": 3553221,
+            "nsPerOp": 290.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/header_regexp_matches_(MatchHeaderRE)-12",
+            "runs": 1279838,
+            "nsPerOp": 971.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/header_regexp_matches_with_name_(MatchHeaderRE)-12",
+            "runs": 1756814,
+            "nsPerOp": 738.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/header_regexp_does_not_match_(MatchHeaderRE)-12",
+            "runs": 6287218,
+            "nsPerOp": 217.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/host_matches_localhost_(MatchHost)-12",
+            "runs": 4371832,
+            "nsPerOp": 306.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/host_matches_(MatchHost)-12",
+            "runs": 1000000,
+            "nsPerOp": 1359,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/host_does_not_match_(MatchHost)-12",
+            "runs": 1000000,
+            "nsPerOp": 1787,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/method_does_not_match_(MatchMethod)-12",
+            "runs": 3149770,
+            "nsPerOp": 334.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/method_matches_(MatchMethod)-12",
+            "runs": 4634838,
+            "nsPerOp": 284.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/path_matches_substring_(MatchPath)-12",
+            "runs": 1545838,
+            "nsPerOp": 1129,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/path_does_not_match_(MatchPath)-12",
+            "runs": 1000000,
+            "nsPerOp": 1301,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/path_matches_end_url_fragment_(MatchPath)-12",
+            "runs": 1766311,
+            "nsPerOp": 1081,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/path_matches_end_fragment_with_substring_prefix_(MatchPath)-12",
+            "runs": 1000000,
+            "nsPerOp": 1014,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/path_matches_one_of_multiple_(MatchPath)-12",
+            "runs": 1804742,
+            "nsPerOp": 872.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/path_regexp_with_empty_regex_matches_empty_path_(MatchPathRE)-12",
+            "runs": 1000000,
+            "nsPerOp": 1636,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/path_regexp_with_slash_regex_matches_empty_path_(MatchPathRE)-12",
+            "runs": 1000000,
+            "nsPerOp": 1643,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/path_regexp_matches_end_url_fragment_(MatchPathRE)-12",
+            "runs": 1000000,
+            "nsPerOp": 1565,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/path_regexp_does_not_match_fragment_at_end_(MatchPathRE)-12",
+            "runs": 2271090,
+            "nsPerOp": 708.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/protocol_matches_(MatchProtocol)-12",
+            "runs": 8525523,
+            "nsPerOp": 147.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/protocol_does_not_match_(MatchProtocol)-12",
+            "runs": 4082282,
+            "nsPerOp": 265.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/query_does_not_match_against_a_specific_value_(MatchQuery)-12",
+            "runs": 5605777,
+            "nsPerOp": 237.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/query_matches_against_a_specific_value_(MatchQuery)-12",
+            "runs": 2995128,
+            "nsPerOp": 432.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/query_matches_against_multiple_values_(MatchQuery)-12",
+            "runs": 294850,
+            "nsPerOp": 4758,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/query_matches_against_a_wildcard_(MatchQuery)-12",
+            "runs": 2512560,
+            "nsPerOp": 482.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/query_matches_against_a_placeholder_value_(MatchQuery)-12",
+            "runs": 354042,
+            "nsPerOp": 3849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/remote_ip_single_IP_match_(MatchRemoteIP)-12",
+            "runs": 5026963,
+            "nsPerOp": 223.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch/remote_ip_forwarded_(MatchRemoteIP)-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "2023-10-27T06:25:53.817+0200"
+          },
+          {
+            "name": "BenchmarkHeaderREMatcher-12",
+            "runs": 1718058,
+            "nsPerOp": 848.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLargeHostMatcher-12",
+            "runs": 2565378,
+            "nsPerOp": 596,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHostMatcherWithoutPlaceholder-12",
+            "runs": 7861032,
+            "nsPerOp": 140.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHostMatcherWithPlaceholder-12",
+            "runs": 2768920,
+            "nsPerOp": 846.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkServer_LogRequest-12",
+            "runs": 196232,
+            "nsPerOp": 9110,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkServer_LogRequest_WithTraceID-12",
+            "runs": 222069,
+            "nsPerOp": 5972,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkMatchExpressionMatch",
+            "modificationCount": 3,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2022-06-22"
+          },
+          {
+            "name": "BenchmarkHeaderREMatcher",
+            "modificationCount": 1,
+            "createdOn": "2021-05-03",
+            "lastUpdateOn": "2021-05-03"
+          },
+          {
+            "name": "BenchmarkLargeHostMatcher",
+            "modificationCount": 2,
+            "createdOn": "2020-04-01",
+            "lastUpdateOn": "2020-12-02"
+          },
+          {
+            "name": "BenchmarkHostMatcherWithoutPlaceholder",
+            "modificationCount": 1,
+            "createdOn": "2019-10-14",
+            "lastUpdateOn": "2019-10-14"
+          },
+          {
+            "name": "BenchmarkHostMatcherWithPlaceholder",
+            "modificationCount": 1,
+            "createdOn": "2019-10-14",
+            "lastUpdateOn": "2019-10-14"
+          },
+          {
+            "name": "BenchmarkServer_LogRequest",
+            "modificationCount": 1,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-04-26"
+          },
+          {
+            "name": "BenchmarkServer_LogRequest_WithTraceID",
+            "modificationCount": 1,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-04-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/caddyserver/caddy/v2/modules/caddyhttp/encode",
+        "succeded": true,
+        "duration": "1.231s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOpenResponseWriter-12",
+            "runs": 11343052,
+            "nsPerOp": 91.13,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOpenResponseWriter",
+            "modificationCount": 2,
+            "createdOn": "2019-08-08",
+            "lastUpdateOn": "2021-03-30"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "caddyserver/caddy",
+    "name": "caddy",
+    "private": false,
+    "html_url": "https://github.com/caddyserver/caddy",
+    "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+    "fork": false,
+    "created_at": "2015-01-13T19:45:03Z",
+    "updated_at": "2023-10-23T18:04:47Z",
+    "pushed_at": "2023-10-22T21:47:17Z",
+    "ssh_url": "git@github.com:caddyserver/caddy.git",
+    "homepage": "https://caddyserver.com",
+    "stargazers_count": 50228,
+    "watchers_count": 50228,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 3840,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 128,
+    "topics": [
+      "acme",
+      "automatic-https",
+      "caddy",
+      "caddyfile",
+      "go",
+      "golang",
+      "hacktoberfest",
+      "http",
+      "http-server",
+      "http3",
+      "https",
+      "privacy",
+      "reverse-proxy",
+      "security",
+      "tls",
+      "web-server"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 243,
+    "Lines": 67333,
+    "Blank": 6922,
+    "Code": 47328,
+    "Comment": 13083,
+    "Bytes": 1979769,
+    "Complexity": 10447
+  }
+}

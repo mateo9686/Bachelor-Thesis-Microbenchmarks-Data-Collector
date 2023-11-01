@@ -1,0 +1,818 @@
+{
+  "Name": "go-kit/log",
+  "Path": "./repositories/go-kit__log",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T02:40:34Z",
+    "benchmarkCount": 56,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 56,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/go-kit/log",
+        "succeded": true,
+        "duration": "40.551s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJSONLoggerSimple-12",
+            "runs": 169660,
+            "nsPerOp": 5988,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSONLoggerContextual-12",
+            "runs": 152486,
+            "nsPerOp": 9003,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDiscard-12",
+            "runs": 281191161,
+            "nsPerOp": 4.208,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOneWith-12",
+            "runs": 2055945,
+            "nsPerOp": 912.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTwoWith-12",
+            "runs": 1000000,
+            "nsPerOp": 1050,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTenWith-12",
+            "runs": 872389,
+            "nsPerOp": 1927,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOneWithPrefix-12",
+            "runs": 2537782,
+            "nsPerOp": 528,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTenWithPrefix-12",
+            "runs": 1000000,
+            "nsPerOp": 2572,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOneWithSuffix-12",
+            "runs": 1000000,
+            "nsPerOp": 1253,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTenWithSuffix-12",
+            "runs": 976749,
+            "nsPerOp": 1519,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOneWithPrefixSuffix-12",
+            "runs": 1302798,
+            "nsPerOp": 773.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTenWithPrefixSuffix-12",
+            "runs": 317442,
+            "nsPerOp": 4053,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogfmtLoggerSimple-12",
+            "runs": 633448,
+            "nsPerOp": 2713,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogfmtLoggerContextual-12",
+            "runs": 826345,
+            "nsPerOp": 3613,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNopLoggerSimple-12",
+            "runs": 2008670,
+            "nsPerOp": 627.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNopLoggerContextual-12",
+            "runs": 1000000,
+            "nsPerOp": 2247,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueBindingTimestamp-12",
+            "runs": 224166,
+            "nsPerOp": 5584,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueBindingCaller-12",
+            "runs": 358939,
+            "nsPerOp": 4920,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJSONLoggerSimple",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "BenchmarkJSONLoggerContextual",
+            "modificationCount": 3,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-15"
+          },
+          {
+            "name": "BenchmarkDiscard",
+            "modificationCount": 3,
+            "createdOn": "2015-04-17",
+            "lastUpdateOn": "2015-08-23"
+          },
+          {
+            "name": "BenchmarkOneWith",
+            "modificationCount": 6,
+            "createdOn": "2015-04-17",
+            "lastUpdateOn": "2017-03-05"
+          },
+          {
+            "name": "BenchmarkTwoWith",
+            "modificationCount": 6,
+            "createdOn": "2015-04-17",
+            "lastUpdateOn": "2017-03-05"
+          },
+          {
+            "name": "BenchmarkTenWith",
+            "modificationCount": 7,
+            "createdOn": "2015-04-17",
+            "lastUpdateOn": "2020-06-12"
+          },
+          {
+            "name": "BenchmarkOneWithPrefix",
+            "modificationCount": 1,
+            "createdOn": "2020-06-12",
+            "lastUpdateOn": "2020-06-12"
+          },
+          {
+            "name": "BenchmarkTenWithPrefix",
+            "modificationCount": 1,
+            "createdOn": "2020-06-12",
+            "lastUpdateOn": "2020-06-12"
+          },
+          {
+            "name": "BenchmarkOneWithSuffix",
+            "modificationCount": 1,
+            "createdOn": "2020-06-12",
+            "lastUpdateOn": "2020-06-12"
+          },
+          {
+            "name": "BenchmarkTenWithSuffix",
+            "modificationCount": 1,
+            "createdOn": "2020-06-12",
+            "lastUpdateOn": "2020-06-12"
+          },
+          {
+            "name": "BenchmarkOneWithPrefixSuffix",
+            "modificationCount": 1,
+            "createdOn": "2020-06-12",
+            "lastUpdateOn": "2020-06-12"
+          },
+          {
+            "name": "BenchmarkTenWithPrefixSuffix",
+            "modificationCount": 1,
+            "createdOn": "2020-06-12",
+            "lastUpdateOn": "2020-06-12"
+          },
+          {
+            "name": "BenchmarkLogfmtLoggerSimple",
+            "modificationCount": 3,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-05-25"
+          },
+          {
+            "name": "BenchmarkLogfmtLoggerContextual",
+            "modificationCount": 4,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-05-25"
+          },
+          {
+            "name": "BenchmarkNopLoggerSimple",
+            "modificationCount": 1,
+            "createdOn": "2016-09-06",
+            "lastUpdateOn": "2016-09-06"
+          },
+          {
+            "name": "BenchmarkNopLoggerContextual",
+            "modificationCount": 1,
+            "createdOn": "2016-09-06",
+            "lastUpdateOn": "2016-09-06"
+          },
+          {
+            "name": "BenchmarkValueBindingTimestamp",
+            "modificationCount": 8,
+            "createdOn": "2015-04-18",
+            "lastUpdateOn": "2017-03-05"
+          },
+          {
+            "name": "BenchmarkValueBindingCaller",
+            "modificationCount": 7,
+            "createdOn": "2015-04-18",
+            "lastUpdateOn": "2017-03-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-kit/log/level",
+        "succeded": true,
+        "duration": "60.771s",
+        "benchmarks": [
+          {
+            "name": "Benchmark/NoContext/Baseline/Nop-12",
+            "runs": 1000000,
+            "nsPerOp": 1726,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/NoContext/Baseline/Logfmt-12",
+            "runs": 446274,
+            "nsPerOp": 2902,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/NoContext/Baseline/JSON-12",
+            "runs": 166560,
+            "nsPerOp": 8224,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/NoContext/DisallowedLevel/Nop-12",
+            "runs": 567576,
+            "nsPerOp": 1995,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/NoContext/DisallowedLevel/Logfmt-12",
+            "runs": 1000000,
+            "nsPerOp": 1502,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/NoContext/DisallowedLevel/JSON-12",
+            "runs": 982238,
+            "nsPerOp": 1078,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/NoContext/AllowedLevel/Nop-12",
+            "runs": 1000000,
+            "nsPerOp": 1396,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/NoContext/AllowedLevel/Logfmt-12",
+            "runs": 588234,
+            "nsPerOp": 2146,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/NoContext/AllowedLevel/JSON-12",
+            "runs": 453620,
+            "nsPerOp": 2955,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeContext/Baseline/Nop-12",
+            "runs": 329022,
+            "nsPerOp": 3551,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeContext/Baseline/Logfmt-12",
+            "runs": 279289,
+            "nsPerOp": 4866,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeContext/Baseline/JSON-12",
+            "runs": 178612,
+            "nsPerOp": 6513,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeContext/DisallowedLevel/Nop-12",
+            "runs": 346929,
+            "nsPerOp": 3804,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeContext/DisallowedLevel/Logfmt-12",
+            "runs": 345457,
+            "nsPerOp": 3465,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeContext/DisallowedLevel/JSON-12",
+            "runs": 338870,
+            "nsPerOp": 3915,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeContext/AllowedLevel/Nop-12",
+            "runs": 328015,
+            "nsPerOp": 3613,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeContext/AllowedLevel/Logfmt-12",
+            "runs": 250446,
+            "nsPerOp": 5248,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeContext/AllowedLevel/JSON-12",
+            "runs": 191894,
+            "nsPerOp": 7275,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/CallerContext/Baseline/Nop-12",
+            "runs": 428991,
+            "nsPerOp": 2916,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/CallerContext/Baseline/Logfmt-12",
+            "runs": 312561,
+            "nsPerOp": 3293,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/CallerContext/Baseline/JSON-12",
+            "runs": 217381,
+            "nsPerOp": 6297,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/CallerContext/DisallowedLevel/Nop-12",
+            "runs": 429146,
+            "nsPerOp": 2588,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/CallerContext/DisallowedLevel/Logfmt-12",
+            "runs": 445120,
+            "nsPerOp": 2456,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/CallerContext/DisallowedLevel/JSON-12",
+            "runs": 584931,
+            "nsPerOp": 2542,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/CallerContext/AllowedLevel/Nop-12",
+            "runs": 579180,
+            "nsPerOp": 4334,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/CallerContext/AllowedLevel/Logfmt-12",
+            "runs": 158727,
+            "nsPerOp": 6838,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/CallerContext/AllowedLevel/JSON-12",
+            "runs": 87436,
+            "nsPerOp": 18544,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeCallerReqIDContext/Baseline/Nop-12",
+            "runs": 82756,
+            "nsPerOp": 15633,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeCallerReqIDContext/Baseline/Logfmt-12",
+            "runs": 75777,
+            "nsPerOp": 14635,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeCallerReqIDContext/Baseline/JSON-12",
+            "runs": 64695,
+            "nsPerOp": 28666,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeCallerReqIDContext/DisallowedLevel/Nop-12",
+            "runs": 114747,
+            "nsPerOp": 14658,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeCallerReqIDContext/DisallowedLevel/Logfmt-12",
+            "runs": 100968,
+            "nsPerOp": 11656,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeCallerReqIDContext/DisallowedLevel/JSON-12",
+            "runs": 138493,
+            "nsPerOp": 11205,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeCallerReqIDContext/AllowedLevel/Nop-12",
+            "runs": 167245,
+            "nsPerOp": 7227,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeCallerReqIDContext/AllowedLevel/Logfmt-12",
+            "runs": 113839,
+            "nsPerOp": 16685,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/TimeCallerReqIDContext/AllowedLevel/JSON-12",
+            "runs": 63640,
+            "nsPerOp": 20811,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 2,
+            "createdOn": "2015-03-30",
+            "lastUpdateOn": "2015-04-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-kit/log/term",
+        "succeded": true,
+        "duration": "2.719s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkColorLoggerSimple-12",
+            "runs": 755590,
+            "nsPerOp": 1376,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColorLoggerContextual-12",
+            "runs": 612591,
+            "nsPerOp": 2480,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkColorLoggerSimple",
+            "modificationCount": 2,
+            "createdOn": "2015-08-25",
+            "lastUpdateOn": "2015-08-30"
+          },
+          {
+            "name": "BenchmarkColorLoggerContextual",
+            "modificationCount": 2,
+            "createdOn": "2015-08-25",
+            "lastUpdateOn": "2015-08-30"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "go-kit/log",
+    "name": "log",
+    "private": false,
+    "html_url": "https://github.com/go-kit/log",
+    "description": "A minimal and extensible structured logger",
+    "fork": false,
+    "created_at": "2021-04-03T03:37:55Z",
+    "updated_at": "2023-10-18T19:51:49Z",
+    "pushed_at": "2023-06-06T17:45:04Z",
+    "ssh_url": "git@github.com:go-kit/log.git",
+    "stargazers_count": 163,
+    "watchers_count": 163,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 17,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 2,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 40,
+    "Lines": 4219,
+    "Blank": 509,
+    "Code": 3175,
+    "Comment": 535,
+    "Bytes": 111626,
+    "Complexity": 431
+  }
+}

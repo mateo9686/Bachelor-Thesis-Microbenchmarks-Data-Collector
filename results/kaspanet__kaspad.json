@@ -1,0 +1,300 @@
+{
+  "Name": "kaspanet/kaspad",
+  "Path": "./repositories/kaspanet__kaspad",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T10:00:28Z",
+    "benchmarkCount": 13,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 11,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/kaspanet/kaspad/cmd/kaspawallet/libkaspawallet/bip32/base58",
+        "succeded": true,
+        "duration": "3.766s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBase58Encode-12",
+            "runs": 69,
+            "nsPerOp": 19775928,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBase58Decode-12",
+            "runs": 168,
+            "nsPerOp": 6110335,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBase58Encode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-28",
+            "lastUpdateOn": "2021-04-28"
+          },
+          {
+            "name": "BenchmarkBase58Decode",
+            "modificationCount": 1,
+            "createdOn": "2021-04-28",
+            "lastUpdateOn": "2021-04-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/kaspanet/kaspad/domain/consensus/processes/blockprocessor",
+        "succeded": false,
+        "duration": "0.036s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetPruningPointUTXOs",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "validate_and_insert_imported_pruning_point_test.go:675: Error building block: ErrInvalidTransactionsInNewBlock: [(7d82e79fdf4b4408b24d8f3f661be0ac07118c5a50dc4c709f0a579180f9c905: ErrMissingTxOut: missing the following outpoint: [(7b1c433b47900414dc34c95ee1c573a5a5b65365d07e44a2938bd7cad8612676: 0)])]"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetPruningPointUTXOs",
+            "modificationCount": 5,
+            "createdOn": "2021-01-25",
+            "lastUpdateOn": "2022-06-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/kaspanet/kaspad/domain/consensus/processes/reachabilitymanager",
+        "succeded": true,
+        "duration": "13.009s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReindexInterval-12",
+            "runs": 6,
+            "nsPerOp": 225686097,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReindexInterval",
+            "modificationCount": 3,
+            "createdOn": "2020-11-15",
+            "lastUpdateOn": "2021-03-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/kaspanet/kaspad/domain/consensus/utils/consensushashing",
+        "succeded": false,
+        "duration": "0.046s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCalculateSignatureHashSchnorr",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "calculate_signature_hash_test.go:496: Error from DecodeAddress: publicKey must be 32 bytes"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCalculateSignatureHashSchnorr",
+            "modificationCount": 2,
+            "createdOn": "2021-03-17",
+            "lastUpdateOn": "2021-04-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/kaspanet/kaspad/domain/consensus/utils/hashes",
+        "succeded": true,
+        "duration": "6.601s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewBlockHashWriterSmall-12",
+            "runs": 1219581,
+            "nsPerOp": 985.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewBlockHashWriterBig-12",
+            "runs": 601928,
+            "nsPerOp": 1998,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewHeavyHashWriterSmall-12",
+            "runs": 304087,
+            "nsPerOp": 4570,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewHeavyHashWriterBig-12",
+            "runs": 113150,
+            "nsPerOp": 13978,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewBlockHashWriterSmall",
+            "modificationCount": 1,
+            "createdOn": "2021-11-07",
+            "lastUpdateOn": "2021-11-07"
+          },
+          {
+            "name": "BenchmarkNewBlockHashWriterBig",
+            "modificationCount": 1,
+            "createdOn": "2021-11-07",
+            "lastUpdateOn": "2021-11-07"
+          },
+          {
+            "name": "BenchmarkNewHeavyHashWriterSmall",
+            "modificationCount": 1,
+            "createdOn": "2021-11-07",
+            "lastUpdateOn": "2021-11-07"
+          },
+          {
+            "name": "BenchmarkNewHeavyHashWriterBig",
+            "modificationCount": 1,
+            "createdOn": "2021-11-07",
+            "lastUpdateOn": "2021-11-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/kaspanet/kaspad/domain/consensus/utils/pow",
+        "succeded": true,
+        "duration": "5.700s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMatrix_HeavyHash-12",
+            "runs": 82291,
+            "nsPerOp": 13345,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatrix_Generate-12",
+            "runs": 5210,
+            "nsPerOp": 366545,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMatrix_Rank-12",
+            "runs": 4996,
+            "nsPerOp": 283036,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMatrix_HeavyHash",
+            "modificationCount": 1,
+            "createdOn": "2021-11-07",
+            "lastUpdateOn": "2021-11-07"
+          },
+          {
+            "name": "BenchmarkMatrix_Generate",
+            "modificationCount": 1,
+            "createdOn": "2021-11-13",
+            "lastUpdateOn": "2021-11-13"
+          },
+          {
+            "name": "BenchmarkMatrix_Rank",
+            "modificationCount": 1,
+            "createdOn": "2021-11-13",
+            "lastUpdateOn": "2021-11-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/kaspanet/kaspad/domain/consensus/utils/utxo",
+        "succeded": true,
+        "duration": "2.104s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_serializeUTXO-12",
+            "runs": 439011,
+            "nsPerOp": 2453,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_serializeUTXO",
+            "modificationCount": 5,
+            "createdOn": "2020-11-30",
+            "lastUpdateOn": "2021-01-05"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "kaspanet/kaspad",
+    "name": "kaspad",
+    "private": false,
+    "html_url": "https://github.com/kaspanet/kaspad",
+    "description": "Kaspad is the reference full node Kaspa implementation written in Go (golang).",
+    "fork": false,
+    "created_at": "2018-06-04T06:13:52Z",
+    "updated_at": "2023-10-23T09:00:13Z",
+    "pushed_at": "2023-09-26T18:33:01Z",
+    "ssh_url": "git@github.com:kaspanet/kaspad.git",
+    "stargazers_count": 305,
+    "watchers_count": 305,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 114,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 195,
+    "topics": [
+      "core",
+      "cryptocurrency",
+      "golang",
+      "hacktoberfest"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "isc",
+      "name": "ISC License",
+      "url": "https://api.github.com/licenses/isc",
+      "spdx_id": "ISC",
+      "node_id": "MDc6TGljZW5zZTEw",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 1062,
+    "Lines": 136403,
+    "Blank": 17594,
+    "Code": 108636,
+    "Comment": 10173,
+    "Bytes": 4588081,
+    "Complexity": 20167
+  }
+}

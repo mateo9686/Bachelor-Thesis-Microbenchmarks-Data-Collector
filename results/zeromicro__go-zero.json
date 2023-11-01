@@ -1,0 +1,701 @@
+{
+  "Name": "zeromicro/go-zero",
+  "Path": "./repositories/zeromicro__go-zero",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T04:05:53Z",
+    "benchmarkCount": 37,
+    "benchmarkSuiteCount": 15,
+    "successfulBenchmarkCount": 36,
+    "successfulBenchmarkSuitesCount": 14,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/breaker",
+        "succeded": true,
+        "duration": "3.337s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGoogleBreaker-12",
+            "runs": 164246,
+            "nsPerOp": 6155,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoogleBreakerAllow-12",
+            "runs": 234943,
+            "nsPerOp": 5274,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGoogleBreaker",
+            "modificationCount": 2,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-09-16"
+          },
+          {
+            "name": "BenchmarkGoogleBreakerAllow",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/collection",
+        "succeded": true,
+        "duration": "24.553s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCache-12",
+            "runs": 1,
+            "nsPerOp": 5534156285,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingAdd-12",
+            "runs": 10000,
+            "nsPerOp": 810144,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawSet-12",
+            "runs": 1000000,
+            "nsPerOp": 1422,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmanagedSet-12",
+            "runs": 2316456,
+            "nsPerOp": 595.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSet-12",
+            "runs": 1000000,
+            "nsPerOp": 1671,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimingWheel-12",
+            "runs": 92565,
+            "nsPerOp": 15887,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCache",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          },
+          {
+            "name": "BenchmarkRingAdd",
+            "modificationCount": 1,
+            "createdOn": "2021-02-05",
+            "lastUpdateOn": "2021-02-05"
+          },
+          {
+            "name": "BenchmarkRawSet",
+            "modificationCount": 2,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2023-01-24"
+          },
+          {
+            "name": "BenchmarkUnmanagedSet",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          },
+          {
+            "name": "BenchmarkSet",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          },
+          {
+            "name": "BenchmarkTimingWheel",
+            "modificationCount": 2,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2023-01-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/errorx",
+        "succeded": true,
+        "duration": "4.268s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAtomicError/Load-12",
+            "runs": 139077381,
+            "nsPerOp": 9.177,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAtomicError/Set-12",
+            "runs": 129783937,
+            "nsPerOp": 9.048,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAtomicError",
+            "modificationCount": 1,
+            "createdOn": "2020-09-18",
+            "lastUpdateOn": "2020-09-18"
+          },
+          {
+            "name": "BenchmarkAtomicError",
+            "modificationCount": 1,
+            "createdOn": "2020-09-18",
+            "lastUpdateOn": "2020-09-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/executors",
+        "succeded": true,
+        "duration": "8.994s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBulkExecutor-12",
+            "runs": 577,
+            "nsPerOp": 2088071,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChunkExecutor-12",
+            "runs": 573,
+            "nsPerOp": 2084553,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLessExecutor-12",
+            "runs": 469617,
+            "nsPerOp": 2531,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutor-12",
+            "runs": 100,
+            "nsPerOp": 40046977,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBulkExecutor",
+            "modificationCount": 2,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2023-01-24"
+          },
+          {
+            "name": "BenchmarkChunkExecutor",
+            "modificationCount": 2,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2023-01-24"
+          },
+          {
+            "name": "BenchmarkLessExecutor",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          },
+          {
+            "name": "BenchmarkExecutor",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/fx",
+        "succeded": true,
+        "duration": "2.535s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParallelMapReduce-12",
+            "runs": 614913,
+            "nsPerOp": 1813,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapReduce-12",
+            "runs": 411351,
+            "nsPerOp": 3297,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParallelMapReduce",
+            "modificationCount": 3,
+            "createdOn": "2021-06-10",
+            "lastUpdateOn": "2023-01-24"
+          },
+          {
+            "name": "BenchmarkMapReduce",
+            "modificationCount": 4,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2023-01-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/hash",
+        "succeded": true,
+        "duration": "5.615s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConsistentHashGet-12",
+            "runs": 2598088,
+            "nsPerOp": 447,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashFnv-12",
+            "runs": 7484748,
+            "nsPerOp": 154.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashMd5-12",
+            "runs": 3427707,
+            "nsPerOp": 332.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMurmur3-12",
+            "runs": 16438038,
+            "nsPerOp": 64.81,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConsistentHashGet",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          },
+          {
+            "name": "BenchmarkHashFnv",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          },
+          {
+            "name": "BenchmarkHashMd5",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          },
+          {
+            "name": "BenchmarkMurmur3",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/load",
+        "succeded": true,
+        "duration": "57.851s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAdaptiveShedder_Allow/high_load-12",
+            "runs": 60390,
+            "nsPerOp": 18873,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdaptiveShedder_Allow/low_load-12",
+            "runs": 110442,
+            "nsPerOp": 16153,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAdaptiveShedder_Allow",
+            "modificationCount": 2,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2021-04-15"
+          },
+          {
+            "name": "BenchmarkAdaptiveShedder_Allow",
+            "modificationCount": 2,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2021-04-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/mapping",
+        "succeded": true,
+        "duration": "8.983s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDefaultValue-12",
+            "runs": 176712,
+            "nsPerOp": 10231,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalString-12",
+            "runs": 1000000,
+            "nsPerOp": 1897,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalStruct-12",
+            "runs": 229304,
+            "nsPerOp": 7609,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapToStruct-12",
+            "runs": 24476419,
+            "nsPerOp": 50.34,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshal-12",
+            "runs": 196978,
+            "nsPerOp": 5430,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDefaultValue",
+            "modificationCount": 2,
+            "createdOn": "2021-12-29",
+            "lastUpdateOn": "2022-11-18"
+          },
+          {
+            "name": "BenchmarkUnmarshalString",
+            "modificationCount": 2,
+            "createdOn": "2022-11-18",
+            "lastUpdateOn": "2023-01-24"
+          },
+          {
+            "name": "BenchmarkUnmarshalStruct",
+            "modificationCount": 2,
+            "createdOn": "2022-11-18",
+            "lastUpdateOn": "2023-01-24"
+          },
+          {
+            "name": "BenchmarkMapToStruct",
+            "modificationCount": 2,
+            "createdOn": "2022-11-18",
+            "lastUpdateOn": "2023-01-24"
+          },
+          {
+            "name": "BenchmarkUnmarshal",
+            "modificationCount": 2,
+            "createdOn": "2022-11-18",
+            "lastUpdateOn": "2023-01-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/stringx",
+        "succeded": true,
+        "duration": "3.571s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNodeFind-12",
+            "runs": 482046,
+            "nsPerOp": 3935,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandString-12",
+            "runs": 4094322,
+            "nsPerOp": 306.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNodeFind",
+            "modificationCount": 1,
+            "createdOn": "2022-01-23",
+            "lastUpdateOn": "2022-01-23"
+          },
+          {
+            "name": "BenchmarkRandString",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/syncx",
+        "succeded": true,
+        "duration": "1.206s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOnce-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.075,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOnce",
+            "modificationCount": 2,
+            "createdOn": "2020-08-09",
+            "lastUpdateOn": "2020-08-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/threading",
+        "succeded": true,
+        "duration": "1.273s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRoutinePool-12",
+            "runs": 501392,
+            "nsPerOp": 2008,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRoutinePool",
+            "modificationCount": 1,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-07-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/core/timex",
+        "succeded": true,
+        "duration": "4.767s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTimeSince-12",
+            "runs": 206004,
+            "nsPerOp": 6716,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTimexSince-12",
+            "runs": 140221,
+            "nsPerOp": 8957,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTimeSince",
+            "modificationCount": 3,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2022-05-03"
+          },
+          {
+            "name": "BenchmarkTimexSince",
+            "modificationCount": 3,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2022-05-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/rest/handler",
+        "succeded": true,
+        "duration": "2.107s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLogHandler-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "{\"@timestamp\":\"2023-10-27T06:08:26.119+02:00\",\"caller\":\"handler/loghandler.go:147\",\"content\":\"[HTTP]"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLogHandler",
+            "modificationCount": 3,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2023-07-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/rest/httpx",
+        "succeded": true,
+        "duration": "3.767s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseRaw-12",
+            "runs": 9898148,
+            "nsPerOp": 123.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseAuto-12",
+            "runs": 134000,
+            "nsPerOp": 11234,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseRaw",
+            "modificationCount": 2,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2022-10-17"
+          },
+          {
+            "name": "BenchmarkParseAuto",
+            "modificationCount": 3,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2023-02-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/zeromicro/go-zero/rest/router",
+        "succeded": true,
+        "duration": "2.444s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPatRouter-12",
+            "runs": 517903,
+            "nsPerOp": 4477,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPatRouter",
+            "modificationCount": 2,
+            "createdOn": "2020-07-26",
+            "lastUpdateOn": "2020-10-20"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "zeromicro/go-zero",
+    "name": "go-zero",
+    "private": false,
+    "html_url": "https://github.com/zeromicro/go-zero",
+    "description": "A cloud-native Go microservices framework with cli tool for productivity.",
+    "fork": false,
+    "created_at": "2020-08-07T15:37:57Z",
+    "updated_at": "2023-10-23T17:03:51Z",
+    "pushed_at": "2023-10-23T17:15:01Z",
+    "ssh_url": "git@github.com:zeromicro/go-zero.git",
+    "homepage": "https://go-zero.dev",
+    "stargazers_count": 26094,
+    "watchers_count": 26094,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 3672,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 394,
+    "topics": [
+      "cloud-native",
+      "code-generation",
+      "framework",
+      "gateway",
+      "go",
+      "go-zero",
+      "goctl",
+      "golang",
+      "gozero",
+      "grpc-gateway",
+      "microservice",
+      "microservice-framework",
+      "microservices",
+      "microservices-architecture",
+      "rest-api",
+      "restful",
+      "restful-api",
+      "rpc",
+      "rpc-framework",
+      "web-framework"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 934,
+    "Lines": 128778,
+    "Blank": 17413,
+    "Code": 106971,
+    "Comment": 4394,
+    "Bytes": 3084851,
+    "Complexity": 11578
+  }
+}

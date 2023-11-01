@@ -1,0 +1,1082 @@
+{
+  "Name": "go-text/typesetting",
+  "Path": "./repositories/go-text__typesetting",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T12:02:31Z",
+    "benchmarkCount": 74,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 68,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/go-text/typesetting/fontscan",
+        "succeded": true,
+        "duration": "10.744s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkResolveFont-12",
+            "runs": 40171,
+            "nsPerOp": 30036,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSetQuery-12",
+            "runs": 17500008,
+            "nsPerOp": 73.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewFamilyCrible-12",
+            "runs": 44758,
+            "nsPerOp": 26911,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScriptSet/naive-12",
+            "runs": 7,
+            "nsPerOp": 171676167,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScriptSet/from_rune_pages-12",
+            "runs": 232,
+            "nsPerOp": 4728194,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScriptSet/from_rune_ranges-12",
+            "runs": 495,
+            "nsPerOp": 2276942,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScanFonts-12",
+            "runs": 31,
+            "nsPerOp": 49701154,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkResolveFont",
+            "modificationCount": 5,
+            "createdOn": "2022-01-22",
+            "lastUpdateOn": "2023-06-21"
+          },
+          {
+            "name": "BenchmarkSetQuery",
+            "modificationCount": 4,
+            "createdOn": "2022-01-22",
+            "lastUpdateOn": "2023-06-21"
+          },
+          {
+            "name": "BenchmarkNewFamilyCrible",
+            "modificationCount": 2,
+            "createdOn": "2022-01-22",
+            "lastUpdateOn": "2022-01-22"
+          },
+          {
+            "name": "BenchmarkScriptSet",
+            "modificationCount": 2,
+            "createdOn": "2023-07-07",
+            "lastUpdateOn": "2023-07-08"
+          },
+          {
+            "name": "BenchmarkScriptSet",
+            "modificationCount": 2,
+            "createdOn": "2023-07-07",
+            "lastUpdateOn": "2023-07-08"
+          },
+          {
+            "name": "BenchmarkScriptSet",
+            "modificationCount": 2,
+            "createdOn": "2023-07-07",
+            "lastUpdateOn": "2023-07-08"
+          },
+          {
+            "name": "BenchmarkScanFonts",
+            "modificationCount": 9,
+            "createdOn": "2022-01-16",
+            "lastUpdateOn": "2023-06-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-text/typesetting/harfbuzz",
+        "succeded": false,
+        "duration": "0.094s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkShaping/fa-thelittleprince.txt_-_Amiri",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "shaper_perf_test.go:82: open erf_reference/texts/fa-thelittleprince.txt: no such file or directory"
+          },
+          {
+            "name": "BenchmarkShaping/fa-thelittleprince.txt_-_NotoNastaliqUrdu",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "shaper_perf_test.go:82: open perf_reference/texts/fa-thelittleprince.txt: no such file or directory"
+          },
+          {
+            "name": "BenchmarkShaping/fa-monologue.txt_-_Amiri",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "shaper_perf_test.go:82: open perf_reference/texts/fa-monologue.txt: no such file or directory"
+          },
+          {
+            "name": "BenchmarkShaping/fa-monologue.txt_-_NotoNastaliqUrdu",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "shaper_perf_test.go:82: open perf_reference/texts/fa-monologue.txt: no such file or directory"
+          },
+          {
+            "name": "BenchmarkShaping/en-thelittleprince.txt_-_Roboto",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "shaper_perf_test.go:82: open perf_reference/texts/en-thelittleprince.txt: no such file or directory"
+          },
+          {
+            "name": "BenchmarkShaping/en-words.txt_-_Roboto",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "shaper_perf_test.go:82: open perf_reference/texts/en-words.txt: no such file or directory"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-text/typesetting/language",
+        "succeded": true,
+        "duration": "6.278s",
+        "benchmarks": [
+          {
+            "name": "Benchmark-12",
+            "runs": 3179485,
+            "nsPerOp": 349.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookupScript/naive-12",
+            "runs": 121,
+            "nsPerOp": 14663869,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLookupScript/optimized-12",
+            "runs": 7245,
+            "nsPerOp": 159275,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark",
+            "modificationCount": 5,
+            "createdOn": "2022-01-22",
+            "lastUpdateOn": "2023-06-21"
+          },
+          {
+            "name": "BenchmarkLookupScript",
+            "modificationCount": 2,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-03-01"
+          },
+          {
+            "name": "BenchmarkLookupScript",
+            "modificationCount": 2,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-03-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-text/typesetting/opentype/api/font",
+        "succeded": true,
+        "duration": "5.973s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoad-12",
+            "runs": 9,
+            "nsPerOp": 123852800,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildSegments-12",
+            "runs": 280938,
+            "nsPerOp": 6304,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 2,
+            "createdOn": "2023-02-12",
+            "lastUpdateOn": "2023-05-30"
+          },
+          {
+            "name": "BenchmarkBuildSegments",
+            "modificationCount": 1,
+            "createdOn": "2023-05-04",
+            "lastUpdateOn": "2023-05-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-text/typesetting/segmenter",
+        "succeded": true,
+        "duration": "2.470s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSegmentUnicodeReference-12",
+            "runs": 3,
+            "nsPerOp": 369663071,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSegmentUnicodeReference",
+            "modificationCount": 1,
+            "createdOn": "2022-09-20",
+            "lastUpdateOn": "2022-09-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-text/typesetting/shaping",
+        "succeded": true,
+        "duration": "119.345s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkShaping/10runes-arabic-0fontCache-12",
+            "runs": 1314,
+            "nsPerOp": 763918,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/10runes-arabic-5fontCache-12",
+            "runs": 10106,
+            "nsPerOp": 104084,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/100runes-arabic-0fontCache-12",
+            "runs": 1533,
+            "nsPerOp": 742787,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/100runes-arabic-5fontCache-12",
+            "runs": 2110,
+            "nsPerOp": 567057,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/1000runes-arabic-0fontCache-12",
+            "runs": 133,
+            "nsPerOp": 12354126,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/1000runes-arabic-5fontCache-12",
+            "runs": 98,
+            "nsPerOp": 13963267,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/10runes-latin-0fontCache-12",
+            "runs": 96043,
+            "nsPerOp": 14231,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/10runes-latin-5fontCache-12",
+            "runs": 120098,
+            "nsPerOp": 13342,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/100runes-latin-0fontCache-12",
+            "runs": 22009,
+            "nsPerOp": 46779,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/100runes-latin-5fontCache-12",
+            "runs": 25772,
+            "nsPerOp": 55824,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/1000runes-latin-0fontCache-12",
+            "runs": 2215,
+            "nsPerOp": 485050,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShaping/1000runes-latin-5fontCache-12",
+            "runs": 2666,
+            "nsPerOp": 518081,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontLoad/arabic:amiri_regular-12",
+            "runs": 100,
+            "nsPerOp": 11946608,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontLoad/latin:go_regular-12",
+            "runs": 969,
+            "nsPerOp": 1969634,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontLoad/latin:go_mono-12",
+            "runs": 613,
+            "nsPerOp": 1870148,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontLoad/latin:roboto_regular-12",
+            "runs": 565,
+            "nsPerOp": 1952196,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontMetadata/arabic:amiri_regular-12",
+            "runs": 6031,
+            "nsPerOp": 195068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontMetadata/latin:go_regular-12",
+            "runs": 34749,
+            "nsPerOp": 77425,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontMetadata/latin:go_mono-12",
+            "runs": 10000,
+            "nsPerOp": 105893,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontMetadata/latin:roboto_regular-12",
+            "runs": 10000,
+            "nsPerOp": 134234,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontMetadataAndParse/arabic:amiri_regular-12",
+            "runs": 33,
+            "nsPerOp": 49092629,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontMetadataAndParse/latin:go_regular-12",
+            "runs": 240,
+            "nsPerOp": 5525294,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontMetadataAndParse/latin:go_mono-12",
+            "runs": 291,
+            "nsPerOp": 4828107,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFontMetadataAndParse/latin:roboto_regular-12",
+            "runs": 400,
+            "nsPerOp": 5375081,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction/10runes-arabic-12",
+            "runs": 6190,
+            "nsPerOp": 215945,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction/100runes-arabic-12",
+            "runs": 830,
+            "nsPerOp": 1704429,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction/1000runes-arabic-12",
+            "runs": 126,
+            "nsPerOp": 12136761,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction/10runes-latin-12",
+            "runs": 46484,
+            "nsPerOp": 24671,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction/100runes-latin-12",
+            "runs": 4213,
+            "nsPerOp": 519944,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction/1000runes-latin-12",
+            "runs": 406,
+            "nsPerOp": 4131249,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapping/10runes-arabic-v3-12",
+            "runs": 15144028,
+            "nsPerOp": 75.27,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapping/100runes-arabic-v3-12",
+            "runs": 1653782,
+            "nsPerOp": 626.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapping/1000runes-arabic-v3-12",
+            "runs": 232336,
+            "nsPerOp": 5967,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapping/10runes-latin-v3-12",
+            "runs": 25070064,
+            "nsPerOp": 52.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapping/100runes-latin-v3-12",
+            "runs": 2896459,
+            "nsPerOp": 473.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapping/1000runes-latin-v3-12",
+            "runs": 279124,
+            "nsPerOp": 4782,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/10runes-arabic-1parts-12",
+            "runs": 11103794,
+            "nsPerOp": 98.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/10runes-arabic-10parts-12",
+            "runs": 132540,
+            "nsPerOp": 21629,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/100runes-arabic-1parts-12",
+            "runs": 15423,
+            "nsPerOp": 81455,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/100runes-arabic-10parts-12",
+            "runs": 29204,
+            "nsPerOp": 61584,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/100runes-arabic-100parts-12",
+            "runs": 22138,
+            "nsPerOp": 82862,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/1000runes-arabic-1parts-12",
+            "runs": 3375,
+            "nsPerOp": 342890,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/1000runes-arabic-10parts-12",
+            "runs": 3360,
+            "nsPerOp": 388182,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/1000runes-arabic-100parts-12",
+            "runs": 2778,
+            "nsPerOp": 413727,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/1000runes-arabic-1000parts-12",
+            "runs": 2515,
+            "nsPerOp": 673579,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/10runes-latin-1parts-12",
+            "runs": 13838116,
+            "nsPerOp": 137.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/10runes-latin-10parts-12",
+            "runs": 176979,
+            "nsPerOp": 8641,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/100runes-latin-1parts-12",
+            "runs": 32366,
+            "nsPerOp": 49363,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/100runes-latin-10parts-12",
+            "runs": 32199,
+            "nsPerOp": 41364,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/100runes-latin-100parts-12",
+            "runs": 10000,
+            "nsPerOp": 111154,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/1000runes-latin-1parts-12",
+            "runs": 2596,
+            "nsPerOp": 442158,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/1000runes-latin-10parts-12",
+            "runs": 3145,
+            "nsPerOp": 475045,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/1000runes-latin-100parts-12",
+            "runs": 3229,
+            "nsPerOp": 702524,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrapping/1000runes-latin-1000parts-12",
+            "runs": 2210,
+            "nsPerOp": 775858,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrappingHappyPath-12",
+            "runs": 9528046,
+            "nsPerOp": 132.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkShaping",
+            "modificationCount": 1,
+            "createdOn": "2023-02-18",
+            "lastUpdateOn": "2023-02-18"
+          },
+          {
+            "name": "BenchmarkFontLoad",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkFontLoad",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkFontLoad",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkFontLoad",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkFontMetadata",
+            "modificationCount": 2,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkFontMetadata",
+            "modificationCount": 2,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkFontMetadata",
+            "modificationCount": 2,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkFontMetadata",
+            "modificationCount": 2,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkFontMetadataAndParse",
+            "modificationCount": 2,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-12"
+          },
+          {
+            "name": "BenchmarkFontMetadataAndParse",
+            "modificationCount": 2,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-12"
+          },
+          {
+            "name": "BenchmarkFontMetadataAndParse",
+            "modificationCount": 2,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-12"
+          },
+          {
+            "name": "BenchmarkFontMetadataAndParse",
+            "modificationCount": 2,
+            "createdOn": "2023-04-11",
+            "lastUpdateOn": "2023-04-12"
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkShapingGlyphInfoExtraction",
+            "modificationCount": 2,
+            "createdOn": "2023-04-10",
+            "lastUpdateOn": "2023-04-11"
+          },
+          {
+            "name": "BenchmarkMapping",
+            "modificationCount": 12,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2022-10-12"
+          },
+          {
+            "name": "BenchmarkMapping",
+            "modificationCount": 12,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2022-10-12"
+          },
+          {
+            "name": "BenchmarkMapping",
+            "modificationCount": 12,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2022-10-12"
+          },
+          {
+            "name": "BenchmarkMapping",
+            "modificationCount": 12,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2022-10-12"
+          },
+          {
+            "name": "BenchmarkMapping",
+            "modificationCount": 12,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2022-10-12"
+          },
+          {
+            "name": "BenchmarkMapping",
+            "modificationCount": 12,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2022-10-12"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrapping",
+            "modificationCount": 18,
+            "createdOn": "2022-10-03",
+            "lastUpdateOn": "2023-05-22"
+          },
+          {
+            "name": "BenchmarkWrappingHappyPath",
+            "modificationCount": 13,
+            "createdOn": "2022-10-06",
+            "lastUpdateOn": "2023-05-31"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "go-text/typesetting",
+    "name": "typesetting",
+    "private": false,
+    "html_url": "https://github.com/go-text/typesetting",
+    "description": "High quality text shaping in pure Go.",
+    "fork": false,
+    "created_at": "2021-12-08T17:02:17Z",
+    "updated_at": "2023-10-04T12:21:16Z",
+    "pushed_at": "2023-10-16T11:06:42Z",
+    "ssh_url": "git@github.com:go-text/typesetting.git",
+    "stargazers_count": 64,
+    "watchers_count": 64,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 6,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 7,
+    "topics": [
+      "go",
+      "harfbuzz",
+      "text-shaping"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 212,
+    "Lines": 83600,
+    "Blank": 7398,
+    "Code": 69132,
+    "Comment": 7070,
+    "Bytes": 2654744,
+    "Complexity": 8945
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "Name": "evanoberholster/imagemeta",
+  "Path": "./repositories/evanoberholster__imagemeta",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T19:08:11Z",
+    "benchmarkCount": 49,
+    "benchmarkSuiteCount": 8,
+    "successfulBenchmarkCount": 48,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/evanoberholster/imagemeta/imagehash",
+        "succeded": true,
+        "duration": "24.823s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMarshalMsgPHash256-12",
+            "runs": 18146793,
+            "nsPerOp": 131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendMsgPHash256-12",
+            "runs": 49852371,
+            "nsPerOp": 27.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalPHash256-12",
+            "runs": 48527562,
+            "nsPerOp": 22.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodePHash256-12",
+            "runs": 52435105,
+            "nsPerOp": 24.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodePHash256-12",
+            "runs": 21502717,
+            "nsPerOp": 53.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPHash64/Fast-12",
+            "runs": 17698,
+            "nsPerOp": 72074,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPHash64/FastAlt-12",
+            "runs": 89443,
+            "nsPerOp": 12505,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPHash64/Fast-Parallel-12",
+            "runs": 643881,
+            "nsPerOp": 2016,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPHash256/Fast-12",
+            "runs": 831,
+            "nsPerOp": 1525809,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPHash256/FastAlt-12",
+            "runs": 4807,
+            "nsPerOp": 211591,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPHash256/Fast-Parallel-12",
+            "runs": 35710,
+            "nsPerOp": 33243,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlurHash100/BlurHash-12",
+            "runs": 4520,
+            "nsPerOp": 308369,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMarshalMsgPHash256",
+            "modificationCount": 1,
+            "createdOn": "2022-07-26",
+            "lastUpdateOn": "2022-07-26"
+          },
+          {
+            "name": "BenchmarkAppendMsgPHash256",
+            "modificationCount": 1,
+            "createdOn": "2022-07-26",
+            "lastUpdateOn": "2022-07-26"
+          },
+          {
+            "name": "BenchmarkUnmarshalPHash256",
+            "modificationCount": 1,
+            "createdOn": "2022-07-26",
+            "lastUpdateOn": "2022-07-26"
+          },
+          {
+            "name": "BenchmarkEncodePHash256",
+            "modificationCount": 1,
+            "createdOn": "2022-07-26",
+            "lastUpdateOn": "2022-07-26"
+          },
+          {
+            "name": "BenchmarkDecodePHash256",
+            "modificationCount": 1,
+            "createdOn": "2022-07-26",
+            "lastUpdateOn": "2022-07-26"
+          },
+          {
+            "name": "BenchmarkPHash64",
+            "modificationCount": 4,
+            "createdOn": "2022-05-10",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkPHash64",
+            "modificationCount": 4,
+            "createdOn": "2022-05-10",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkPHash64",
+            "modificationCount": 4,
+            "createdOn": "2022-05-10",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkPHash256",
+            "modificationCount": 4,
+            "createdOn": "2022-05-10",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkPHash256",
+            "modificationCount": 4,
+            "createdOn": "2022-05-10",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkPHash256",
+            "modificationCount": 4,
+            "createdOn": "2022-05-10",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkBlurHash100",
+            "modificationCount": 2,
+            "createdOn": "2022-05-10",
+            "lastUpdateOn": "2022-07-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/evanoberholster/imagemeta/imagehash/transforms",
+        "succeded": true,
+        "duration": "5.075s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkForwardDCT64/forward-12",
+            "runs": 234134,
+            "nsPerOp": 6916,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkForwardDCT64/forwardStatic-12",
+            "runs": 1338525,
+            "nsPerOp": 1846,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkForwardDCT64",
+            "modificationCount": 3,
+            "createdOn": "2022-05-12",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkForwardDCT64",
+            "modificationCount": 3,
+            "createdOn": "2022-05-12",
+            "lastUpdateOn": "2023-02-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/evanoberholster/imagemeta/imagehash/transforms32",
+        "succeded": true,
+        "duration": "8.708s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDCT2DHash64/ASM-12",
+            "runs": 54324,
+            "nsPerOp": 34726,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDCT2DHash64/FN-12",
+            "runs": 80851,
+            "nsPerOp": 16414,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreyPixels/FN-12",
+            "runs": 22102,
+            "nsPerOp": 48143,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreyPixels/ASM-12",
+            "runs": 469711,
+            "nsPerOp": 2667,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDCT2DHash64",
+            "modificationCount": 1,
+            "createdOn": "2023-03-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkDCT2DHash64",
+            "modificationCount": 1,
+            "createdOn": "2023-03-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkGreyPixels",
+            "modificationCount": 1,
+            "createdOn": "2023-03-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkGreyPixels",
+            "modificationCount": 1,
+            "createdOn": "2023-03-14",
+            "lastUpdateOn": "2023-03-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/evanoberholster/imagemeta/isobmff",
+        "succeded": false,
+        "duration": "0.005s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCR3",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bmff_test.go:24: open ../../test/img//CanonR6_1.CR3: no such file or directory"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCR3",
+            "modificationCount": 6,
+            "createdOn": "2020-07-16",
+            "lastUpdateOn": "2023-03-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/evanoberholster/imagemeta/jpeg",
+        "succeded": true,
+        "duration": "8.407s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkScanJPEG100/a1.jpg-12",
+            "runs": 2576157,
+            "nsPerOp": 511.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScanJPEG100/a2.jpg-12",
+            "runs": 7924849,
+            "nsPerOp": 195.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScanJPEG100/JPEG.jpg-12",
+            "runs": 1215182,
+            "nsPerOp": 1121,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScanJPEG100/NoExif.jpg-12",
+            "runs": 4478959,
+            "nsPerOp": 278,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkScanJPEG100",
+            "modificationCount": 4,
+            "createdOn": "2022-02-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkScanJPEG100",
+            "modificationCount": 4,
+            "createdOn": "2022-02-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkScanJPEG100",
+            "modificationCount": 4,
+            "createdOn": "2022-02-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkScanJPEG100",
+            "modificationCount": 4,
+            "createdOn": "2022-02-14",
+            "lastUpdateOn": "2023-03-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/evanoberholster/imagemeta/meta",
+        "succeded": true,
+        "duration": "36.278s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkExposureTime/1-12",
+            "runs": 6863371,
+            "nsPerOp": 152.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureTime/2-12",
+            "runs": 30651762,
+            "nsPerOp": 41.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureTime/3-12",
+            "runs": 29000815,
+            "nsPerOp": 55.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureTime/4-12",
+            "runs": 30121885,
+            "nsPerOp": 40.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureTime/5-12",
+            "runs": 24704623,
+            "nsPerOp": 54.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureTime/6-12",
+            "runs": 8000839,
+            "nsPerOp": 147.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureTime/7-12",
+            "runs": 7483216,
+            "nsPerOp": 165.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureTime/8-12",
+            "runs": 6683098,
+            "nsPerOp": 192.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureTime/8#01-12",
+            "runs": 6116109,
+            "nsPerOp": 189.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureTime/9-12",
+            "runs": 439069305,
+            "nsPerOp": 2.465,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureBias/test0-12",
+            "runs": 43979882,
+            "nsPerOp": 40.52,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureBias/test1-12",
+            "runs": 27625695,
+            "nsPerOp": 36.65,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureBias/test2-12",
+            "runs": 30245604,
+            "nsPerOp": 42.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureBias/test3-12",
+            "runs": 26475378,
+            "nsPerOp": 40.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExposureBias/test4-12",
+            "runs": 33064596,
+            "nsPerOp": 45.21,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalMsgDimensions-12",
+            "runs": 18521302,
+            "nsPerOp": 56.73,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendMsgDimensions-12",
+            "runs": 139175810,
+            "nsPerOp": 8.148,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalDimensions-12",
+            "runs": 41000380,
+            "nsPerOp": 25.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeDimensions-12",
+            "runs": 58262925,
+            "nsPerOp": 22.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeDimensions-12",
+            "runs": 11752976,
+            "nsPerOp": 110,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureTime",
+            "modificationCount": 3,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-02-26"
+          },
+          {
+            "name": "BenchmarkExposureBias",
+            "modificationCount": 4,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkExposureBias",
+            "modificationCount": 4,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkExposureBias",
+            "modificationCount": 4,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkExposureBias",
+            "modificationCount": 4,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkExposureBias",
+            "modificationCount": 4,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2023-03-14"
+          },
+          {
+            "name": "BenchmarkMarshalMsgDimensions",
+            "modificationCount": 1,
+            "createdOn": "2022-05-01",
+            "lastUpdateOn": "2022-05-01"
+          },
+          {
+            "name": "BenchmarkAppendMsgDimensions",
+            "modificationCount": 1,
+            "createdOn": "2022-05-01",
+            "lastUpdateOn": "2022-05-01"
+          },
+          {
+            "name": "BenchmarkUnmarshalDimensions",
+            "modificationCount": 1,
+            "createdOn": "2022-05-01",
+            "lastUpdateOn": "2022-05-01"
+          },
+          {
+            "name": "BenchmarkEncodeDimensions",
+            "modificationCount": 1,
+            "createdOn": "2022-05-01",
+            "lastUpdateOn": "2022-05-01"
+          },
+          {
+            "name": "BenchmarkDecodeDimensions",
+            "modificationCount": 1,
+            "createdOn": "2022-05-01",
+            "lastUpdateOn": "2022-05-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/evanoberholster/imagemeta/meta/canon",
+        "succeded": true,
+        "duration": "11.800s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMarshalMsgFocusDistance-12",
+            "runs": 29507031,
+            "nsPerOp": 49.04,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppendMsgFocusDistance-12",
+            "runs": 114189380,
+            "nsPerOp": 16.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnmarshalFocusDistance-12",
+            "runs": 43012978,
+            "nsPerOp": 26.28,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeFocusDistance-12",
+            "runs": 45424695,
+            "nsPerOp": 31.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeFocusDistance-12",
+            "runs": 17562910,
+            "nsPerOp": 82.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMarshalMsgFocusDistance",
+            "modificationCount": 1,
+            "createdOn": "2022-02-08",
+            "lastUpdateOn": "2022-02-08"
+          },
+          {
+            "name": "BenchmarkAppendMsgFocusDistance",
+            "modificationCount": 1,
+            "createdOn": "2022-02-08",
+            "lastUpdateOn": "2022-02-08"
+          },
+          {
+            "name": "BenchmarkUnmarshalFocusDistance",
+            "modificationCount": 1,
+            "createdOn": "2022-02-08",
+            "lastUpdateOn": "2022-02-08"
+          },
+          {
+            "name": "BenchmarkEncodeFocusDistance",
+            "modificationCount": 1,
+            "createdOn": "2022-02-08",
+            "lastUpdateOn": "2022-02-08"
+          },
+          {
+            "name": "BenchmarkDecodeFocusDistance",
+            "modificationCount": 1,
+            "createdOn": "2022-02-08",
+            "lastUpdateOn": "2022-02-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/evanoberholster/imagemeta/xmp",
+        "succeded": true,
+        "duration": "4.606s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkXMPRead-12",
+            "runs": 27963,
+            "nsPerOp": 37785,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkXMPRead",
+            "modificationCount": 5,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2023-03-14"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "evanoberholster/imagemeta",
+    "name": "imagemeta",
+    "private": false,
+    "html_url": "https://github.com/evanoberholster/imagemeta",
+    "description": "Image Metadata (Exif and XMP) extraction for JPEG, HEIC, AVIF, TIFF and Camera Raw in golang. Focus is on providing features and improved performance.",
+    "fork": false,
+    "created_at": "2018-10-25T15:59:14Z",
+    "updated_at": "2023-09-03T09:00:54Z",
+    "pushed_at": "2023-05-04T02:38:46Z",
+    "ssh_url": "git@github.com:evanoberholster/imagemeta.git",
+    "stargazers_count": 104,
+    "watchers_count": 104,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 9,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 6,
+    "topics": [
+      "cr3",
+      "exif",
+      "exiftool",
+      "go",
+      "golang",
+      "heic",
+      "image",
+      "imagetype",
+      "metadata",
+      "xmp"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 129,
+    "Lines": 18464,
+    "Blank": 1855,
+    "Code": 14414,
+    "Comment": 2195,
+    "Bytes": 500083,
+    "Complexity": 2323
+  }
+}

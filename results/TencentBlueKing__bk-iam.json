@@ -1,0 +1,323 @@
+{
+  "Name": "TencentBlueKing/bk-iam",
+  "Path": "./repositories/TencentBlueKing__bk-iam",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T12:56:41Z",
+    "benchmarkCount": 17,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 17,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "iam/pkg/abac/pdp/evalctx",
+        "succeded": true,
+        "duration": "3.633s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGenEnvsInReal-12",
+            "runs": 80533,
+            "nsPerOp": 15661,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenEnvsFromSyncMap-12",
+            "runs": 398718,
+            "nsPerOp": 2881,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGenEnvsInReal",
+            "modificationCount": 2,
+            "createdOn": "2021-12-03",
+            "lastUpdateOn": "2022-03-17"
+          },
+          {
+            "name": "BenchmarkGenEnvsFromSyncMap",
+            "modificationCount": 1,
+            "createdOn": "2021-12-03",
+            "lastUpdateOn": "2021-12-03"
+          }
+        ]
+      },
+      {
+        "pkg": "iam/pkg/abac/pdp/translate",
+        "succeded": true,
+        "duration": "3.559s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMergeContentFieldNotMerge-12",
+            "runs": 2366420,
+            "nsPerOp": 799.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMergeContentFieldMerge-12",
+            "runs": 574210,
+            "nsPerOp": 1883,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMergeContentFieldNotMerge",
+            "modificationCount": 1,
+            "createdOn": "2021-09-02",
+            "lastUpdateOn": "2021-09-02"
+          },
+          {
+            "name": "BenchmarkMergeContentFieldMerge",
+            "modificationCount": 1,
+            "createdOn": "2021-09-02",
+            "lastUpdateOn": "2021-09-02"
+          }
+        ]
+      },
+      {
+        "pkg": "iam/pkg/database",
+        "succeded": true,
+        "duration": "4.581s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTruncateInterface-12",
+            "runs": 347372,
+            "nsPerOp": 3991,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTruncateInterfaceViaJson-12",
+            "runs": 1937852,
+            "nsPerOp": 603.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTruncateInterfaceViaJsonToBytes-12",
+            "runs": 1000000,
+            "nsPerOp": 1312,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTruncateInterface",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkTruncateInterfaceViaJson",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkTruncateInterfaceViaJsonToBytes",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          }
+        ]
+      },
+      {
+        "pkg": "iam/pkg/util",
+        "succeded": true,
+        "duration": "16.910s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInt64ToStringFormat-12",
+            "runs": 3556465,
+            "nsPerOp": 309.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInt64ToStringFormatWithCache-12",
+            "runs": 5510773,
+            "nsPerOp": 222.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSuccessJSONResponseWithDebugNilInterface-12",
+            "runs": 462629240,
+            "nsPerOp": 2.732,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringSprintf-12",
+            "runs": 7905284,
+            "nsPerOp": 155.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringConcat-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.4248,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntStringSprintfD-12",
+            "runs": 9646868,
+            "nsPerOp": 132.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntToStringItoa-12",
+            "runs": 29716362,
+            "nsPerOp": 70.96,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntToStringFormatInt-12",
+            "runs": 25002204,
+            "nsPerOp": 41.97,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringAddIntSprintf-12",
+            "runs": 6097072,
+            "nsPerOp": 227.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringAddIntFormatInt-12",
+            "runs": 13486924,
+            "nsPerOp": 78.67,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInt64ToStringFormat",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkInt64ToStringFormatWithCache",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkSuccessJSONResponseWithDebugNilInterface",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkStringSprintf",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkStringConcat",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkIntStringSprintfD",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkIntToStringItoa",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkIntToStringFormatInt",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkStringAddIntSprintf",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          },
+          {
+            "name": "BenchmarkStringAddIntFormatInt",
+            "modificationCount": 1,
+            "createdOn": "2021-07-19",
+            "lastUpdateOn": "2021-07-19"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "TencentBlueKing/bk-iam",
+    "name": "bk-iam",
+    "private": false,
+    "html_url": "https://github.com/TencentBlueKing/bk-iam",
+    "description": "BK-IAM is a centralized permission management service provided by The Tencent BlueKing; based on ABAC",
+    "fork": false,
+    "created_at": "2021-07-12T09:09:09Z",
+    "updated_at": "2023-10-17T10:56:02Z",
+    "pushed_at": "2023-10-23T02:15:35Z",
+    "ssh_url": "git@github.com:TencentBlueKing/bk-iam.git",
+    "stargazers_count": 67,
+    "watchers_count": 67,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 40,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 6,
+    "topics": [
+      "abac",
+      "bk-iam",
+      "iam"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "node_id": "MDc6TGljZW5zZTA=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 2428,
+    "Lines": 851454,
+    "Blank": 69138,
+    "Code": 697246,
+    "Comment": 85070,
+    "Bytes": 101602531,
+    "Complexity": 77397
+  }
+}

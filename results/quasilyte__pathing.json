@@ -1,0 +1,925 @@
+{
+  "Name": "quasilyte/pathing",
+  "Path": "./repositories/quasilyte__pathing",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T06:56:35Z",
+    "benchmarkCount": 64,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 64,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/quasilyte/pathing/_bench",
+        "succeded": true,
+        "duration": "52.458s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkQuasilytePathingBFS/no_walls-12",
+            "runs": 238402,
+            "nsPerOp": 6203,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQuasilytePathingBFS/simple_wall-12",
+            "runs": 180901,
+            "nsPerOp": 12629,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQuasilytePathingBFS/pocket_wall-12",
+            "runs": 43399,
+            "nsPerOp": 28636,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQuasilytePathingBFS/multi_wall-12",
+            "runs": 65143,
+            "nsPerOp": 18200,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQuasilytePathingAStar/no_walls-12",
+            "runs": 61454,
+            "nsPerOp": 19105,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQuasilytePathingAStar/simple_wall-12",
+            "runs": 34051,
+            "nsPerOp": 36800,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQuasilytePathingAStar/pocket_wall-12",
+            "runs": 20685,
+            "nsPerOp": 57901,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQuasilytePathingAStar/multi_wall-12",
+            "runs": 29737,
+            "nsPerOp": 45559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKelindarTile/no_walls-12",
+            "runs": 8113,
+            "nsPerOp": 148464,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKelindarTile/simple_wall-12",
+            "runs": 6943,
+            "nsPerOp": 193426,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKelindarTile/pocket_wall-12",
+            "runs": 4473,
+            "nsPerOp": 339430,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKelindarTile/multi_wall-12",
+            "runs": 7875,
+            "nsPerOp": 217029,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFzippAstar/no_walls-12",
+            "runs": 1069,
+            "nsPerOp": 1202438,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFzippAstar/simple_wall-12",
+            "runs": 511,
+            "nsPerOp": 2473563,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFzippAstar/pocket_wall-12",
+            "runs": 354,
+            "nsPerOp": 5587916,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFzippAstar/multi_wall-12",
+            "runs": 504,
+            "nsPerOp": 2337340,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkS0rgGrid/no_walls-12",
+            "runs": 459,
+            "nsPerOp": 3398038,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkS0rgGrid/simple_wall-12",
+            "runs": 600,
+            "nsPerOp": 2410686,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkS0rgGrid/pocket_wall-12",
+            "runs": 278,
+            "nsPerOp": 4753055,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkS0rgGrid/multi_wall-12",
+            "runs": 460,
+            "nsPerOp": 2726556,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBeefsackAstar/no_walls-12",
+            "runs": 2666,
+            "nsPerOp": 798527,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBeefsackAstar/simple_wall-12",
+            "runs": 1068,
+            "nsPerOp": 1104397,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBeefsackAstar/pocket_wall-12",
+            "runs": 678,
+            "nsPerOp": 1585342,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBeefsackAstar/multi_wall-12",
+            "runs": 682,
+            "nsPerOp": 2388807,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSolarLunePaths/no_walls-12",
+            "runs": 96,
+            "nsPerOp": 20035336,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSolarLunePaths/simple_wall-12",
+            "runs": 170,
+            "nsPerOp": 7273733,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSolarLunePaths/pocket_wall-12",
+            "runs": 90,
+            "nsPerOp": 12000859,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSolarLunePaths/multi_wall-12",
+            "runs": 156,
+            "nsPerOp": 8025014,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkQuasilytePathingBFS",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkQuasilytePathingBFS",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkQuasilytePathingBFS",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkQuasilytePathingBFS",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkQuasilytePathingAStar",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-10-12"
+          },
+          {
+            "name": "BenchmarkQuasilytePathingAStar",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-10-12"
+          },
+          {
+            "name": "BenchmarkQuasilytePathingAStar",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-10-12"
+          },
+          {
+            "name": "BenchmarkQuasilytePathingAStar",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-10-12"
+          },
+          {
+            "name": "BenchmarkKelindarTile",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-10-12"
+          },
+          {
+            "name": "BenchmarkKelindarTile",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-10-12"
+          },
+          {
+            "name": "BenchmarkKelindarTile",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-10-12"
+          },
+          {
+            "name": "BenchmarkKelindarTile",
+            "modificationCount": 2,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-10-12"
+          },
+          {
+            "name": "BenchmarkFzippAstar",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkFzippAstar",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkFzippAstar",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkFzippAstar",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkS0rgGrid",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkS0rgGrid",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkS0rgGrid",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkS0rgGrid",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkBeefsackAstar",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkBeefsackAstar",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkBeefsackAstar",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkBeefsackAstar",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkSolarLunePaths",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkSolarLunePaths",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkSolarLunePaths",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          },
+          {
+            "name": "BenchmarkSolarLunePaths",
+            "modificationCount": 1,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/quasilyte/pathing",
+        "succeded": true,
+        "duration": "57.044s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCoordMapReset/size32-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.333,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCoordMapReset/size96-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.472,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCoordMapSet-12",
+            "runs": 100000000,
+            "nsPerOp": 12.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCoordMapGet-12",
+            "runs": 116267344,
+            "nsPerOp": 11.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/trivial_short_10x3-12",
+            "runs": 3333156,
+            "nsPerOp": 330.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/trivial_short2_10x6-12",
+            "runs": 3777862,
+            "nsPerOp": 352.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/trivial_12x7-12",
+            "runs": 1145701,
+            "nsPerOp": 1047,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/trivial_long_32x4-12",
+            "runs": 489226,
+            "nsPerOp": 2239,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/simple_wall1_8x5-12",
+            "runs": 2392690,
+            "nsPerOp": 523.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/simple_wall2_8x5-12",
+            "runs": 1000875,
+            "nsPerOp": 1210,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/simple_wall3_32x12-12",
+            "runs": 469782,
+            "nsPerOp": 2682,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/simple_wall4_32x24-12",
+            "runs": 352536,
+            "nsPerOp": 3054,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/zigzag1_8x7-12",
+            "runs": 2021296,
+            "nsPerOp": 546.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/zigzag2_8x7-12",
+            "runs": 1444045,
+            "nsPerOp": 720.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/zigzag3_16x6-12",
+            "runs": 795578,
+            "nsPerOp": 1614,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/zigzag4_16x6-12",
+            "runs": 384537,
+            "nsPerOp": 2730,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/zigzag5_9x9-12",
+            "runs": 797409,
+            "nsPerOp": 1477,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/double_corner1_10x7-12",
+            "runs": 591613,
+            "nsPerOp": 1888,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/labyrinth1_15x12-12",
+            "runs": 378312,
+            "nsPerOp": 3480,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/labyrinth2_29x12-12",
+            "runs": 300548,
+            "nsPerOp": 4250,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/labyrinth3_32x15-12",
+            "runs": 193674,
+            "nsPerOp": 5702,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/depth1_24x13-12",
+            "runs": 238977,
+            "nsPerOp": 5275,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/depth2_24x10-12",
+            "runs": 319326,
+            "nsPerOp": 5005,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/nopath1_8x2-12",
+            "runs": 1981630,
+            "nsPerOp": 605.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/nopath2_8x2-12",
+            "runs": 1985758,
+            "nsPerOp": 619.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/nopath3_8x7-12",
+            "runs": 2023760,
+            "nsPerOp": 619.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/nopath4_14x7-12",
+            "runs": 663396,
+            "nsPerOp": 1717,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/nopath5_14x7-12",
+            "runs": 605631,
+            "nsPerOp": 1719,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/tricky1_16x9-12",
+            "runs": 929398,
+            "nsPerOp": 1290,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/tricky2_15x15-12",
+            "runs": 177838,
+            "nsPerOp": 6112,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/tricky3_15x15-12",
+            "runs": 684541,
+            "nsPerOp": 1824,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/tricky4_15x15-12",
+            "runs": 213588,
+            "nsPerOp": 4736,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/distlimit1_68x1-12",
+            "runs": 530102,
+            "nsPerOp": 2475,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGreedyBFS/distlimit2_63x4-12",
+            "runs": 230226,
+            "nsPerOp": 4989,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathgridGetCellCost-12",
+            "runs": 252271189,
+            "nsPerOp": 5.009,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathgridSetCellTile-12",
+            "runs": 341681431,
+            "nsPerOp": 3.446,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCoordMapReset",
+            "modificationCount": 2,
+            "createdOn": "2023-09-18",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkCoordMapReset",
+            "modificationCount": 2,
+            "createdOn": "2023-09-18",
+            "lastUpdateOn": "2023-09-18"
+          },
+          {
+            "name": "BenchmarkCoordMapSet",
+            "modificationCount": 2,
+            "createdOn": "2023-09-18",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkCoordMapGet",
+            "modificationCount": 2,
+            "createdOn": "2023-09-18",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkGreedyBFS",
+            "modificationCount": 3,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkPathgridGetCellCost",
+            "modificationCount": 4,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-21"
+          },
+          {
+            "name": "BenchmarkPathgridSetCellTile",
+            "modificationCount": 4,
+            "createdOn": "2023-09-15",
+            "lastUpdateOn": "2023-09-20"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "quasilyte/pathing",
+    "name": "pathing",
+    "private": false,
+    "html_url": "https://github.com/quasilyte/pathing",
+    "description": "A very fast \u0026 zero-allocation, grid-based, pathfinding library for Go.",
+    "fork": false,
+    "created_at": "2023-09-15T06:30:06Z",
+    "updated_at": "2023-10-22T11:42:53Z",
+    "pushed_at": "2023-10-12T08:17:43Z",
+    "ssh_url": "git@github.com:quasilyte/pathing.git",
+    "stargazers_count": 51,
+    "watchers_count": 51,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 2,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "a-star",
+      "ebiten",
+      "ebitengine",
+      "game-development",
+      "gamedev",
+      "go",
+      "golang",
+      "greedy-bfs",
+      "library",
+      "pathfinding",
+      "performance"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 31,
+    "Lines": 4513,
+    "Blank": 446,
+    "Code": 3790,
+    "Comment": 277,
+    "Bytes": 106573,
+    "Complexity": 360
+  }
+}

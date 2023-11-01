@@ -1,0 +1,420 @@
+{
+  "Name": "honeycombio/refinery",
+  "Path": "./repositories/honeycombio__refinery",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T06:26:40Z",
+    "benchmarkCount": 24,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 24,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/hashicorp/golang-lru",
+        "succeded": true,
+        "duration": "10.543s",
+        "benchmarks": [
+          {
+            "name": "Benchmark2Q_Rand-12",
+            "runs": 1042264,
+            "nsPerOp": 1289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark2Q_Freq-12",
+            "runs": 845532,
+            "nsPerOp": 1246,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkARC_Rand-12",
+            "runs": 1000000,
+            "nsPerOp": 1489,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkARC_Freq-12",
+            "runs": 1000000,
+            "nsPerOp": 1094,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLRU_Rand-12",
+            "runs": 2887308,
+            "nsPerOp": 653.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLRU_Freq-12",
+            "runs": 1481215,
+            "nsPerOp": 773.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark2Q_Rand",
+            "modificationCount": 1,
+            "createdOn": "2023-03-21",
+            "lastUpdateOn": "2023-03-21"
+          },
+          {
+            "name": "Benchmark2Q_Freq",
+            "modificationCount": 1,
+            "createdOn": "2023-03-21",
+            "lastUpdateOn": "2023-03-21"
+          },
+          {
+            "name": "BenchmarkARC_Rand",
+            "modificationCount": 1,
+            "createdOn": "2023-03-21",
+            "lastUpdateOn": "2023-03-21"
+          },
+          {
+            "name": "BenchmarkARC_Freq",
+            "modificationCount": 1,
+            "createdOn": "2023-03-21",
+            "lastUpdateOn": "2023-03-21"
+          },
+          {
+            "name": "BenchmarkLRU_Rand",
+            "modificationCount": 1,
+            "createdOn": "2023-03-21",
+            "lastUpdateOn": "2023-03-21"
+          },
+          {
+            "name": "BenchmarkLRU_Freq",
+            "modificationCount": 1,
+            "createdOn": "2023-03-21",
+            "lastUpdateOn": "2023-03-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/honeycombio/refinery/app",
+        "succeded": true,
+        "duration": "10.213s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTraces/single-12",
+            "runs": 4461,
+            "nsPerOp": 245594,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraces/batch-12",
+            "runs": 37366,
+            "nsPerOp": 28996,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraces/multi-12",
+            "runs": 49377,
+            "nsPerOp": 27400,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistributedTraces/single-12",
+            "runs": 3134,
+            "nsPerOp": 361962,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDistributedTraces/batch-12",
+            "runs": 29720,
+            "nsPerOp": 44488,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTraces",
+            "modificationCount": 6,
+            "createdOn": "2020-09-11",
+            "lastUpdateOn": "2022-09-15"
+          },
+          {
+            "name": "BenchmarkTraces",
+            "modificationCount": 6,
+            "createdOn": "2020-09-11",
+            "lastUpdateOn": "2022-09-15"
+          },
+          {
+            "name": "BenchmarkTraces",
+            "modificationCount": 6,
+            "createdOn": "2020-09-11",
+            "lastUpdateOn": "2022-09-15"
+          },
+          {
+            "name": "BenchmarkDistributedTraces",
+            "modificationCount": 5,
+            "createdOn": "2020-09-14",
+            "lastUpdateOn": "2022-09-15"
+          },
+          {
+            "name": "BenchmarkDistributedTraces",
+            "modificationCount": 5,
+            "createdOn": "2020-09-14",
+            "lastUpdateOn": "2022-09-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/honeycombio/refinery/collect/cache",
+        "succeded": true,
+        "duration": "135.868s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCuckooTraceChecker_Add-12",
+            "runs": 192893911,
+            "nsPerOp": 8.655,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCuckooTraceChecker_AddParallel-12",
+            "runs": 4291413,
+            "nsPerOp": 277.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCuckooTraceChecker_Check-12",
+            "runs": 40943119,
+            "nsPerOp": 27.77,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCuckooTraceChecker_CheckParallel-12",
+            "runs": 3570187,
+            "nsPerOp": 303.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCuckooTraceChecker_CheckAddParallel-12",
+            "runs": 319862,
+            "nsPerOp": 8693,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCuckooTraceChecker_Add",
+            "modificationCount": 1,
+            "createdOn": "2023-07-06",
+            "lastUpdateOn": "2023-07-06"
+          },
+          {
+            "name": "BenchmarkCuckooTraceChecker_AddParallel",
+            "modificationCount": 1,
+            "createdOn": "2023-07-06",
+            "lastUpdateOn": "2023-07-06"
+          },
+          {
+            "name": "BenchmarkCuckooTraceChecker_Check",
+            "modificationCount": 1,
+            "createdOn": "2023-07-06",
+            "lastUpdateOn": "2023-07-06"
+          },
+          {
+            "name": "BenchmarkCuckooTraceChecker_CheckParallel",
+            "modificationCount": 1,
+            "createdOn": "2023-07-06",
+            "lastUpdateOn": "2023-07-06"
+          },
+          {
+            "name": "BenchmarkCuckooTraceChecker_CheckAddParallel",
+            "modificationCount": 1,
+            "createdOn": "2023-07-06",
+            "lastUpdateOn": "2023-07-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/honeycombio/refinery/sharder",
+        "succeded": true,
+        "duration": "9.116s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkShardBulk-12",
+            "runs": 2860960,
+            "nsPerOp": 425.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeterministicShard/benchmark_deterministic_4-12",
+            "runs": 5533020,
+            "nsPerOp": 234,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeterministicShard/benchmark_deterministic_14-12",
+            "runs": 3280324,
+            "nsPerOp": 307.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeterministicShard/benchmark_deterministic_24-12",
+            "runs": 3650539,
+            "nsPerOp": 318.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeterministicShard/benchmark_deterministic_34-12",
+            "runs": 3595750,
+            "nsPerOp": 299.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeterministicShard/benchmark_deterministic_44-12",
+            "runs": 2739639,
+            "nsPerOp": 406.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkShardBulk",
+            "modificationCount": 3,
+            "createdOn": "2022-11-28",
+            "lastUpdateOn": "2023-05-26"
+          },
+          {
+            "name": "BenchmarkDeterministicShard",
+            "modificationCount": 3,
+            "createdOn": "2022-11-28",
+            "lastUpdateOn": "2023-05-26"
+          },
+          {
+            "name": "BenchmarkDeterministicShard",
+            "modificationCount": 3,
+            "createdOn": "2022-11-28",
+            "lastUpdateOn": "2023-05-26"
+          },
+          {
+            "name": "BenchmarkDeterministicShard",
+            "modificationCount": 3,
+            "createdOn": "2022-11-28",
+            "lastUpdateOn": "2023-05-26"
+          },
+          {
+            "name": "BenchmarkDeterministicShard",
+            "modificationCount": 3,
+            "createdOn": "2022-11-28",
+            "lastUpdateOn": "2023-05-26"
+          },
+          {
+            "name": "BenchmarkDeterministicShard",
+            "modificationCount": 3,
+            "createdOn": "2022-11-28",
+            "lastUpdateOn": "2023-05-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/honeycombio/refinery/types",
+        "succeded": true,
+        "duration": "3.798s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSpan_CalculateSizeSmall-12",
+            "runs": 4222845,
+            "nsPerOp": 258.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSpan_CalculateSizeLarge-12",
+            "runs": 83089,
+            "nsPerOp": 14875,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSpan_CalculateSizeSmall",
+            "modificationCount": 1,
+            "createdOn": "2022-11-09",
+            "lastUpdateOn": "2022-11-09"
+          },
+          {
+            "name": "BenchmarkSpan_CalculateSizeLarge",
+            "modificationCount": 1,
+            "createdOn": "2022-11-09",
+            "lastUpdateOn": "2022-11-09"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "honeycombio/refinery",
+    "name": "refinery",
+    "private": false,
+    "html_url": "https://github.com/honeycombio/refinery",
+    "description": "Refinery is a trace-aware tail-based sampling proxy. It examines whole traces and intelligently applies sampling decisions (whether to keep or discard) to each trace.",
+    "fork": false,
+    "created_at": "2018-10-15T05:33:30Z",
+    "updated_at": "2023-10-12T03:24:18Z",
+    "pushed_at": "2023-10-16T18:56:48Z",
+    "ssh_url": "git@github.com:honeycombio/refinery.git",
+    "stargazers_count": 219,
+    "watchers_count": 219,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 77,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 59,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 108,
+    "Lines": 23448,
+    "Blank": 2792,
+    "Code": 19095,
+    "Comment": 1561,
+    "Bytes": 641309,
+    "Complexity": 3003
+  }
+}

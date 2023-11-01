@@ -1,0 +1,295 @@
+{
+  "Name": "OJ/gobuster",
+  "Path": "./repositories/OJ__gobuster",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T02:17:38Z",
+    "benchmarkCount": 16,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 14,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/OJ/gobuster/v3/cli/cmd",
+        "succeded": false,
+        "duration": "2.066s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDirMode",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "dir_test.go:83: error on running gobuster: the server returns a status code that matches the provided options for non existing urls. http://127.0.0.1:39671/b864a502-032b-4fec-9d81-799490537adc =\u003e 200 (Length: 4)"
+          },
+          {
+            "name": "BenchmarkVhostMode-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "==============================================================="
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDirMode",
+            "modificationCount": 8,
+            "createdOn": "2019-04-13",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkVhostMode",
+            "modificationCount": 6,
+            "createdOn": "2019-04-13",
+            "lastUpdateOn": "2023-08-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/OJ/gobuster/v3/libgobuster",
+        "succeded": true,
+        "duration": "27.619s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseExtensions/Valid_extensions-12",
+            "runs": 1000000,
+            "nsPerOp": 1574,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseExtensions/Spaces-12",
+            "runs": 1000000,
+            "nsPerOp": 1627,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseExtensions/Double_extensions-12",
+            "runs": 632736,
+            "nsPerOp": 2253,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseExtensions/Leading_dot-12",
+            "runs": 1000000,
+            "nsPerOp": 2095,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseExtensions/Empty_string-12",
+            "runs": 6237465,
+            "nsPerOp": 394.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt/Valid_codes-12",
+            "runs": 722007,
+            "nsPerOp": 1620,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt/Spaces-12",
+            "runs": 1000000,
+            "nsPerOp": 1903,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt/Double_codes-12",
+            "runs": 1000000,
+            "nsPerOp": 1756,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt/Invalid_code-12",
+            "runs": 434319,
+            "nsPerOp": 2763,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt/Invalid_integer-12",
+            "runs": 437743,
+            "nsPerOp": 3057,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt/Empty_string-12",
+            "runs": 4700869,
+            "nsPerOp": 309.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRequestWithoutBody-12",
+            "runs": 1970,
+            "nsPerOp": 605931,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRequestWitBody-12",
+            "runs": 1612,
+            "nsPerOp": 683272,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewHTTPClient-12",
+            "runs": 924558,
+            "nsPerOp": 3353,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseExtensions",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseExtensions",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseExtensions",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseExtensions",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseExtensions",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkParseCommaSeparatedInt",
+            "modificationCount": 1,
+            "createdOn": "2023-08-14",
+            "lastUpdateOn": "2023-08-14"
+          },
+          {
+            "name": "BenchmarkRequestWithoutBody",
+            "modificationCount": 6,
+            "createdOn": "2018-07-09",
+            "lastUpdateOn": "2021-02-25"
+          },
+          {
+            "name": "BenchmarkRequestWitBody",
+            "modificationCount": 5,
+            "createdOn": "2019-04-13",
+            "lastUpdateOn": "2021-02-25"
+          },
+          {
+            "name": "BenchmarkNewHTTPClient",
+            "modificationCount": 4,
+            "createdOn": "2019-04-13",
+            "lastUpdateOn": "2021-02-25"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "OJ/gobuster",
+    "name": "gobuster",
+    "private": false,
+    "html_url": "https://github.com/OJ/gobuster",
+    "description": "Directory/File, DNS and VHost busting tool written in Go",
+    "fork": false,
+    "created_at": "2014-11-14T13:18:35Z",
+    "updated_at": "2023-10-23T16:10:03Z",
+    "pushed_at": "2023-10-18T18:51:59Z",
+    "ssh_url": "git@github.com:OJ/gobuster.git",
+    "stargazers_count": 8284,
+    "watchers_count": 8284,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1133,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 42,
+    "topics": [
+      "dns",
+      "go",
+      "pentesting",
+      "tool",
+      "web"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 53,
+    "Lines": 10084,
+    "Blank": 788,
+    "Code": 8986,
+    "Comment": 310,
+    "Bytes": 585630,
+    "Complexity": 1259
+  }
+}

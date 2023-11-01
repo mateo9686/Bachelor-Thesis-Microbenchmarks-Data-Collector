@@ -1,0 +1,2511 @@
+{
+  "Name": "grafana/k6",
+  "Path": "./repositories/grafana__k6",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T03:55:55Z",
+    "benchmarkCount": 180,
+    "benchmarkSuiteCount": 11,
+    "successfulBenchmarkCount": 179,
+    "successfulBenchmarkSuitesCount": 11,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "go.k6.io/k6/js/modules/k6/http",
+        "succeded": true,
+        "duration": "4.924s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHandlingOfResponseBodies/text-12",
+            "runs": 70,
+            "nsPerOp": 19302129,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandlingOfResponseBodies/binary-12",
+            "runs": 46,
+            "nsPerOp": 33006355,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHandlingOfResponseBodies/none-12",
+            "runs": 46,
+            "nsPerOp": 22309519,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHandlingOfResponseBodies",
+            "modificationCount": 6,
+            "createdOn": "2019-06-13",
+            "lastUpdateOn": "2023-03-15"
+          },
+          {
+            "name": "BenchmarkHandlingOfResponseBodies",
+            "modificationCount": 6,
+            "createdOn": "2019-06-13",
+            "lastUpdateOn": "2023-03-15"
+          },
+          {
+            "name": "BenchmarkHandlingOfResponseBodies",
+            "modificationCount": 6,
+            "createdOn": "2019-06-13",
+            "lastUpdateOn": "2023-03-15"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/js/modules/k6/ws",
+        "succeded": true,
+        "duration": "5.866s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCompression/compression-enabled-12",
+            "runs": 2036,
+            "nsPerOp": 782679,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompression/compression-disabled-12",
+            "runs": 1846,
+            "nsPerOp": 1699777,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 4,
+            "createdOn": "2021-10-21",
+            "lastUpdateOn": "2022-07-14"
+          },
+          {
+            "name": "BenchmarkCompression",
+            "modificationCount": 4,
+            "createdOn": "2021-10-21",
+            "lastUpdateOn": "2022-07-14"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/lib",
+        "succeded": true,
+        "duration": "140.095s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetStripedOffsets/length10,seed777-12",
+            "runs": 24711,
+            "nsPerOp": 50003,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetStripedOffsets/length100,seed777-12",
+            "runs": 382,
+            "nsPerOp": 5677822,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetStripedOffsetsEven/length10-12",
+            "runs": 124512,
+            "nsPerOp": 9392,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetStripedOffsetsEven/length100-12",
+            "runs": 16393,
+            "nsPerOp": 63913,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetStripedOffsetsEven/length1000-12",
+            "runs": 398,
+            "nsPerOp": 3032631,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/segment.Scale(5)-12",
+            "runs": 401599362,
+            "nsPerOp": 2.572,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/et.Scale(5)-12",
+            "runs": 596863,
+            "nsPerOp": 2959,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/et.Scale(5)_prefilled-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.9586,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/segment.Scale(5523)-12",
+            "runs": 401567262,
+            "nsPerOp": 2.895,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/et.Scale(5523)-12",
+            "runs": 472467,
+            "nsPerOp": 2348,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/et.Scale(5523)_prefilled-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.178,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/segment.Scale(5000000)-12",
+            "runs": 441717000,
+            "nsPerOp": 2.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/et.Scale(5000000)-12",
+            "runs": 408751,
+            "nsPerOp": 2896,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/et.Scale(5000000)_prefilled-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7695,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/segment.Scale(67280421310721)-12",
+            "runs": 470669487,
+            "nsPerOp": 2.654,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/et.Scale(67280421310721)-12",
+            "runs": 407504,
+            "nsPerOp": 3105,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:/et.Scale(67280421310721)_prefilled-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7687,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/segment.Scale(5)-12",
+            "runs": 661125,
+            "nsPerOp": 1737,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/et.Scale(5)-12",
+            "runs": 444086,
+            "nsPerOp": 2777,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/et.Scale(5)_prefilled-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.583,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/segment.Scale(5523)-12",
+            "runs": 341539,
+            "nsPerOp": 2981,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/et.Scale(5523)-12",
+            "runs": 504300,
+            "nsPerOp": 2587,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/et.Scale(5523)_prefilled-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8271,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/segment.Scale(5000000)-12",
+            "runs": 902637,
+            "nsPerOp": 1644,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/et.Scale(5000000)-12",
+            "runs": 402546,
+            "nsPerOp": 3171,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/et.Scale(5000000)_prefilled-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6782,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/segment.Scale(67280421310721)-12",
+            "runs": 710434,
+            "nsPerOp": 1849,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/et.Scale(67280421310721)-12",
+            "runs": 578932,
+            "nsPerOp": 2911,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:0:1/et.Scale(67280421310721)_prefilled-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6721,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/segment.Scale(5)-12",
+            "runs": 1000000,
+            "nsPerOp": 2058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/et.Scale(5)-12",
+            "runs": 362388,
+            "nsPerOp": 3860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/et.Scale(5)_prefilled-12",
+            "runs": 98039347,
+            "nsPerOp": 11.47,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/segment.Scale(5523)-12",
+            "runs": 664257,
+            "nsPerOp": 1522,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/et.Scale(5523)-12",
+            "runs": 403882,
+            "nsPerOp": 3173,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/et.Scale(5523)_prefilled-12",
+            "runs": 100000000,
+            "nsPerOp": 10.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/segment.Scale(5000000)-12",
+            "runs": 873196,
+            "nsPerOp": 1694,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/et.Scale(5000000)-12",
+            "runs": 372295,
+            "nsPerOp": 7872,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/et.Scale(5000000)_prefilled-12",
+            "runs": 173229993,
+            "nsPerOp": 7.026,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/segment.Scale(67280421310721)-12",
+            "runs": 970050,
+            "nsPerOp": 1294,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/et.Scale(67280421310721)-12",
+            "runs": 473924,
+            "nsPerOp": 2861,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/et.Scale(67280421310721)_prefilled-12",
+            "runs": 63952005,
+            "nsPerOp": 18.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/segment.Scale(5)-12",
+            "runs": 741930,
+            "nsPerOp": 1538,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/et.Scale(5)-12",
+            "runs": 395438,
+            "nsPerOp": 4051,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/et.Scale(5)_prefilled-12",
+            "runs": 135116610,
+            "nsPerOp": 7.552,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/segment.Scale(5523)-12",
+            "runs": 712284,
+            "nsPerOp": 1470,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/et.Scale(5523)-12",
+            "runs": 422137,
+            "nsPerOp": 3644,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/et.Scale(5523)_prefilled-12",
+            "runs": 107026191,
+            "nsPerOp": 9.773,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/segment.Scale(5000000)-12",
+            "runs": 1000000,
+            "nsPerOp": 1547,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/et.Scale(5000000)-12",
+            "runs": 326768,
+            "nsPerOp": 8281,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/et.Scale(5000000)_prefilled-12",
+            "runs": 137815531,
+            "nsPerOp": 8.317,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/segment.Scale(67280421310721)-12",
+            "runs": 327344,
+            "nsPerOp": 4691,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/et.Scale(67280421310721)-12",
+            "runs": 130593,
+            "nsPerOp": 11002,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/et.Scale(67280421310721)_prefilled-12",
+            "runs": 31219495,
+            "nsPerOp": 43.99,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/segment.Scale(5)-12",
+            "runs": 284215,
+            "nsPerOp": 6273,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/et.Scale(5)-12",
+            "runs": 80440,
+            "nsPerOp": 12599,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/et.Scale(5)_prefilled-12",
+            "runs": 100000000,
+            "nsPerOp": 10.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/segment.Scale(5523)-12",
+            "runs": 258134,
+            "nsPerOp": 7038,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/et.Scale(5523)-12",
+            "runs": 56502,
+            "nsPerOp": 19159,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/et.Scale(5523)_prefilled-12",
+            "runs": 53185335,
+            "nsPerOp": 58.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/segment.Scale(5000000)-12",
+            "runs": 175119,
+            "nsPerOp": 9243,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/et.Scale(5000000)-12",
+            "runs": 86354,
+            "nsPerOp": 21076,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/et.Scale(5000000)_prefilled-12",
+            "runs": 122695412,
+            "nsPerOp": 12.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/segment.Scale(67280421310721)-12",
+            "runs": 287944,
+            "nsPerOp": 5265,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/et.Scale(67280421310721)-12",
+            "runs": 82118,
+            "nsPerOp": 13533,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2/5:4/5/et.Scale(67280421310721)_prefilled-12",
+            "runs": 79695853,
+            "nsPerOp": 35.05,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/segment.Scale(5)-12",
+            "runs": 111819,
+            "nsPerOp": 11575,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/et.Scale(5)-12",
+            "runs": 885,
+            "nsPerOp": 1626742,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/et.Scale(5)_prefilled-12",
+            "runs": 84294334,
+            "nsPerOp": 22.47,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/segment.Scale(5523)-12",
+            "runs": 218068,
+            "nsPerOp": 5483,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/et.Scale(5523)-12",
+            "runs": 1506,
+            "nsPerOp": 909488,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/et.Scale(5523)_prefilled-12",
+            "runs": 110025,
+            "nsPerOp": 12150,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/segment.Scale(5000000)-12",
+            "runs": 292405,
+            "nsPerOp": 3852,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/et.Scale(5000000)-12",
+            "runs": 1629,
+            "nsPerOp": 761461,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/et.Scale(5000000)_prefilled-12",
+            "runs": 21458,
+            "nsPerOp": 49762,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/segment.Scale(67280421310721)-12",
+            "runs": 470917,
+            "nsPerOp": 2819,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/et.Scale(67280421310721)-12",
+            "runs": 1730,
+            "nsPerOp": 607812,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale/seq:;segment:2235/5213:4/5/et.Scale(67280421310721)_prefilled-12",
+            "runs": 25120,
+            "nsPerOp": 41867,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetStripedOffsets",
+            "modificationCount": 6,
+            "createdOn": "2020-02-03",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkGetStripedOffsets",
+            "modificationCount": 6,
+            "createdOn": "2020-02-03",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkGetStripedOffsetsEven",
+            "modificationCount": 6,
+            "createdOn": "2020-02-03",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkGetStripedOffsetsEven",
+            "modificationCount": 6,
+            "createdOn": "2020-02-03",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkGetStripedOffsetsEven",
+            "modificationCount": 6,
+            "createdOn": "2020-02-03",
+            "lastUpdateOn": "2020-05-12"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkExecutionSegmentScale",
+            "modificationCount": 4,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2021-02-26"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/lib/executor",
+        "succeded": true,
+        "duration": "56.478s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRampingArrivalRateRun/VUs10-12",
+            "runs": 1,
+            "nsPerOp": 278270,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingArrivalRateRun/VUs100-12",
+            "runs": 1,
+            "nsPerOp": 472847,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingArrivalRateRun/VUs1000-12",
+            "runs": 1,
+            "nsPerOp": 414249,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingArrivalRateRun/VUs10000-12",
+            "runs": 1,
+            "nsPerOp": 432345,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCal/1s-12",
+            "runs": 766413,
+            "nsPerOp": 2219,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCal/1m0s-12",
+            "runs": 10000,
+            "nsPerOp": 107046,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCalRat/1s-12",
+            "runs": 122,
+            "nsPerOp": 9283767,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCalRat/1m0s-12",
+            "runs": 1,
+            "nsPerOp": 8765433377,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:;segment:/normal-12",
+            "runs": 4268,
+            "nsPerOp": 281891,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:;segment:/rollercoaster-12",
+            "runs": 423,
+            "nsPerOp": 3554592,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:;segment:0:1/normal-12",
+            "runs": 4986,
+            "nsPerOp": 354957,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:;segment:0:1/rollercoaster-12",
+            "runs": 354,
+            "nsPerOp": 3062459,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/normal-12",
+            "runs": 10000,
+            "nsPerOp": 103022,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:0,0.3,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.3/rollercoaster-12",
+            "runs": 608,
+            "nsPerOp": 2049388,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/normal-12",
+            "runs": 19430,
+            "nsPerOp": 69860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1;segment:0:0.1/rollercoaster-12",
+            "runs": 2304,
+            "nsPerOp": 547850,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:;segment:2/5:4/5/normal-12",
+            "runs": 5676,
+            "nsPerOp": 243936,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:;segment:2/5:4/5/rollercoaster-12",
+            "runs": 488,
+            "nsPerOp": 3307198,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:;segment:2235/5213:4/5/normal-12",
+            "runs": 4596,
+            "nsPerOp": 272295,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps/seq:;segment:2235/5213:4/5/rollercoaster-12",
+            "runs": 535,
+            "nsPerOp": 2926046,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVUHandleIterations-12",
+            "runs": 1,
+            "nsPerOp": 1004033822,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRampingArrivalRateRun",
+            "modificationCount": 6,
+            "createdOn": "2021-05-21",
+            "lastUpdateOn": "2022-08-01"
+          },
+          {
+            "name": "BenchmarkRampingArrivalRateRun",
+            "modificationCount": 6,
+            "createdOn": "2021-05-21",
+            "lastUpdateOn": "2022-08-01"
+          },
+          {
+            "name": "BenchmarkRampingArrivalRateRun",
+            "modificationCount": 6,
+            "createdOn": "2021-05-21",
+            "lastUpdateOn": "2022-08-01"
+          },
+          {
+            "name": "BenchmarkRampingArrivalRateRun",
+            "modificationCount": 6,
+            "createdOn": "2021-05-21",
+            "lastUpdateOn": "2022-08-01"
+          },
+          {
+            "name": "BenchmarkCal",
+            "modificationCount": 3,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkCal",
+            "modificationCount": 3,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkCalRat",
+            "modificationCount": 3,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkCalRat",
+            "modificationCount": 3,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2020-06-09"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkRampingVUsGetRawExecutionSteps",
+            "modificationCount": 10,
+            "createdOn": "2020-04-14",
+            "lastUpdateOn": "2021-02-26"
+          },
+          {
+            "name": "BenchmarkVUHandleIterations",
+            "modificationCount": 11,
+            "createdOn": "2020-06-09",
+            "lastUpdateOn": "2023-03-31"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/lib/netext",
+        "succeded": true,
+        "duration": "1.337s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDialerHosts-12",
+            "runs": 908474,
+            "nsPerOp": 1161,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDialerHosts",
+            "modificationCount": 3,
+            "createdOn": "2022-11-28",
+            "lastUpdateOn": "2022-12-04"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/lib/netext/httpext",
+        "succeded": true,
+        "duration": "5.164s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWrapDecompressionError-12",
+            "runs": 5781235,
+            "nsPerOp": 195,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMeasureAndEmitMetrics/no_responseCallback-12",
+            "runs": 91419,
+            "nsPerOp": 12011,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMeasureAndEmitMetrics/responseCallback-12",
+            "runs": 106681,
+            "nsPerOp": 9824,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWrapDecompressionError",
+            "modificationCount": 2,
+            "createdOn": "2019-11-04",
+            "lastUpdateOn": "2021-03-15"
+          },
+          {
+            "name": "BenchmarkMeasureAndEmitMetrics",
+            "modificationCount": 6,
+            "createdOn": "2021-02-26",
+            "lastUpdateOn": "2023-02-21"
+          },
+          {
+            "name": "BenchmarkMeasureAndEmitMetrics",
+            "modificationCount": 6,
+            "createdOn": "2021-02-26",
+            "lastUpdateOn": "2023-02-21"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/lib/types",
+        "succeded": true,
+        "duration": "3.446s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTrieInsert-12",
+            "runs": 28339,
+            "nsPerOp": 48324,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTrieContains-12",
+            "runs": 48780,
+            "nsPerOp": 21517,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTrieInsert",
+            "modificationCount": 1,
+            "createdOn": "2022-11-28",
+            "lastUpdateOn": "2022-11-28"
+          },
+          {
+            "name": "BenchmarkTrieContains",
+            "modificationCount": 1,
+            "createdOn": "2022-11-28",
+            "lastUpdateOn": "2022-11-28"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/metrics",
+        "succeded": true,
+        "duration": "8.470s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseThresholdExpression-12",
+            "runs": 1000000,
+            "nsPerOp": 2304,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseThresholdAggregationMethod-12",
+            "runs": 8470311,
+            "nsPerOp": 179.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScanThresholdExpression-12",
+            "runs": 4189748,
+            "nsPerOp": 343.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRunNoTaint-12",
+            "runs": 100000000,
+            "nsPerOp": 22.94,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseThresholdExpression",
+            "modificationCount": 2,
+            "createdOn": "2022-02-25",
+            "lastUpdateOn": "2023-07-07"
+          },
+          {
+            "name": "BenchmarkParseThresholdAggregationMethod",
+            "modificationCount": 2,
+            "createdOn": "2022-02-25",
+            "lastUpdateOn": "2023-07-07"
+          },
+          {
+            "name": "BenchmarkScanThresholdExpression",
+            "modificationCount": 2,
+            "createdOn": "2022-02-25",
+            "lastUpdateOn": "2023-07-07"
+          },
+          {
+            "name": "BenchmarkRunNoTaint",
+            "modificationCount": 9,
+            "createdOn": "2016-12-14",
+            "lastUpdateOn": "2023-07-07"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/output/cloud/v1",
+        "succeded": true,
+        "duration": "248.001s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAggregateHTTP/tags:1-12",
+            "runs": 1,
+            "nsPerOp": 2316660633,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateHTTP/tags:5-12",
+            "runs": 2,
+            "nsPerOp": 1108213870,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateHTTP/tags:35-12",
+            "runs": 1,
+            "nsPerOp": 2064226089,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateHTTP/tags:315-12",
+            "runs": 1,
+            "nsPerOp": 1463527653,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAggregateHTTP/tags:3645-12",
+            "runs": 1,
+            "nsPerOp": 1012699332,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshal/10000-12",
+            "runs": 54,
+            "nsPerOp": 19869797,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshal/100000-12",
+            "runs": 7,
+            "nsPerOp": 158488842,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshal/500000-12",
+            "runs": 2,
+            "nsPerOp": 703388859,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalWriter/10000-12",
+            "runs": 44,
+            "nsPerOp": 25160808,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalWriter/100000-12",
+            "runs": 7,
+            "nsPerOp": 146138385,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalWriter/500000-12",
+            "runs": 2,
+            "nsPerOp": 762515870,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip/10000_bestcompression-12",
+            "runs": 7,
+            "nsPerOp": 145435156,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip/10000_default-12",
+            "runs": 20,
+            "nsPerOp": 68431109,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip/10000_bestspeed-12",
+            "runs": 64,
+            "nsPerOp": 20687089,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip/100000_bestcompression-12",
+            "runs": 1,
+            "nsPerOp": 1574557775,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip/100000_default-12",
+            "runs": 2,
+            "nsPerOp": 641577992,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip/100000_bestspeed-12",
+            "runs": 7,
+            "nsPerOp": 166453019,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip/500000_bestcompression-12",
+            "runs": 1,
+            "nsPerOp": 7508376942,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip/500000_default-12",
+            "runs": 1,
+            "nsPerOp": 2989588585,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip/500000_bestspeed-12",
+            "runs": 2,
+            "nsPerOp": 1124751976,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAll/10000_bestspeed-12",
+            "runs": 16,
+            "nsPerOp": 64918068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAll/100000_bestspeed-12",
+            "runs": 4,
+            "nsPerOp": 311608051,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAll/500000_bestspeed-12",
+            "runs": 1,
+            "nsPerOp": 1596946756,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAllWriter/10000_bestspeed-12",
+            "runs": 22,
+            "nsPerOp": 56335171,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAllWriter/100000_bestspeed-12",
+            "runs": 4,
+            "nsPerOp": 308455416,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAllWriter/500000_bestspeed-12",
+            "runs": 1,
+            "nsPerOp": 1445888907,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPPush/count:1000-12",
+            "runs": 156,
+            "nsPerOp": 6433173,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPPush/count:5000-12",
+            "runs": 42,
+            "nsPerOp": 27404623,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPPush/count:50000-12",
+            "runs": 7,
+            "nsPerOp": 157383153,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPPush/count:100000-12",
+            "runs": 4,
+            "nsPerOp": 296809519,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHTTPPush/count:250000-12",
+            "runs": 2,
+            "nsPerOp": 750578783,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewSampleFromTrail/no_failed-12",
+            "runs": 728528,
+            "nsPerOp": 1394,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewSampleFromTrail/failed-12",
+            "runs": 628339,
+            "nsPerOp": 1668,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-100-elements-12",
+            "runs": 108426,
+            "nsPerOp": 9726,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-100-elements-12",
+            "runs": 153634,
+            "nsPerOp": 9348,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-100-elements-12",
+            "runs": 251043,
+            "nsPerOp": 4222,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-600-elements-12",
+            "runs": 16593,
+            "nsPerOp": 68457,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-600-elements-12",
+            "runs": 17833,
+            "nsPerOp": 63660,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-600-elements-12",
+            "runs": 99492,
+            "nsPerOp": 12059,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-1100-elements-12",
+            "runs": 10000,
+            "nsPerOp": 122780,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-1100-elements-12",
+            "runs": 8510,
+            "nsPerOp": 120491,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-1100-elements-12",
+            "runs": 57949,
+            "nsPerOp": 22256,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-1600-elements-12",
+            "runs": 8246,
+            "nsPerOp": 188891,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-1600-elements-12",
+            "runs": 9126,
+            "nsPerOp": 223200,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-1600-elements-12",
+            "runs": 32218,
+            "nsPerOp": 35519,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-2100-elements-12",
+            "runs": 5989,
+            "nsPerOp": 262208,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-2100-elements-12",
+            "runs": 4542,
+            "nsPerOp": 252082,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-2100-elements-12",
+            "runs": 25699,
+            "nsPerOp": 45219,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-2600-elements-12",
+            "runs": 4988,
+            "nsPerOp": 332477,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-2600-elements-12",
+            "runs": 3117,
+            "nsPerOp": 393941,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-2600-elements-12",
+            "runs": 20815,
+            "nsPerOp": 60802,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-3100-elements-12",
+            "runs": 2847,
+            "nsPerOp": 612409,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-3100-elements-12",
+            "runs": 2352,
+            "nsPerOp": 490485,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-3100-elements-12",
+            "runs": 17571,
+            "nsPerOp": 67279,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-3600-elements-12",
+            "runs": 3122,
+            "nsPerOp": 489474,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-3600-elements-12",
+            "runs": 3204,
+            "nsPerOp": 428118,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-3600-elements-12",
+            "runs": 16179,
+            "nsPerOp": 78216,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-4100-elements-12",
+            "runs": 2059,
+            "nsPerOp": 619820,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-4100-elements-12",
+            "runs": 2743,
+            "nsPerOp": 738563,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-4100-elements-12",
+            "runs": 8017,
+            "nsPerOp": 125673,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-no-interp-4600-elements-12",
+            "runs": 2086,
+            "nsPerOp": 660128,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Sort-with-interp-4600-elements-12",
+            "runs": 1837,
+            "nsPerOp": 719989,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDurationBounds/Select-4600-elements-12",
+            "runs": 12589,
+            "nsPerOp": 94220,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAggregateHTTP",
+            "modificationCount": 13,
+            "createdOn": "2019-11-04",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkAggregateHTTP",
+            "modificationCount": 13,
+            "createdOn": "2019-11-04",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkAggregateHTTP",
+            "modificationCount": 13,
+            "createdOn": "2019-11-04",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkAggregateHTTP",
+            "modificationCount": 13,
+            "createdOn": "2019-11-04",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkAggregateHTTP",
+            "modificationCount": 13,
+            "createdOn": "2019-11-04",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshal",
+            "modificationCount": 3,
+            "createdOn": "2020-07-23",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshal",
+            "modificationCount": 3,
+            "createdOn": "2020-07-23",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshal",
+            "modificationCount": 3,
+            "createdOn": "2020-07-23",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalWriter",
+            "modificationCount": 3,
+            "createdOn": "2020-07-24",
+            "lastUpdateOn": "2023-04-10"
+          },
+          {
+            "name": "BenchmarkMetricMarshalWriter",
+            "modificationCount": 3,
+            "createdOn": "2020-07-24",
+            "lastUpdateOn": "2023-04-10"
+          },
+          {
+            "name": "BenchmarkMetricMarshalWriter",
+            "modificationCount": 3,
+            "createdOn": "2020-07-24",
+            "lastUpdateOn": "2023-04-10"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzip",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAll",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAll",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAll",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAllWriter",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAllWriter",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkMetricMarshalGzipAllWriter",
+            "modificationCount": 2,
+            "createdOn": "2020-07-27",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkHTTPPush",
+            "modificationCount": 13,
+            "createdOn": "2020-08-17",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkHTTPPush",
+            "modificationCount": 13,
+            "createdOn": "2020-08-17",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkHTTPPush",
+            "modificationCount": 13,
+            "createdOn": "2020-08-17",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkHTTPPush",
+            "modificationCount": 13,
+            "createdOn": "2020-08-17",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkHTTPPush",
+            "modificationCount": 13,
+            "createdOn": "2020-08-17",
+            "lastUpdateOn": "2023-05-16"
+          },
+          {
+            "name": "BenchmarkNewSampleFromTrail",
+            "modificationCount": 2,
+            "createdOn": "2021-02-26",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkNewSampleFromTrail",
+            "modificationCount": 2,
+            "createdOn": "2021-02-26",
+            "lastUpdateOn": "2022-09-16"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          },
+          {
+            "name": "BenchmarkDurationBounds",
+            "modificationCount": 5,
+            "createdOn": "2018-05-03",
+            "lastUpdateOn": "2023-05-11"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/output/influxdb",
+        "succeded": true,
+        "duration": "13.061s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInfluxdb1Second-12",
+            "runs": 1,
+            "nsPerOp": 2004577219,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInfluxdb2Second-12",
+            "runs": 1,
+            "nsPerOp": 4002920896,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInfluxdb100Milliseconds-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "time=\"2023-10-27T06:05:22+02:00\""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInfluxdb1Second",
+            "modificationCount": 1,
+            "createdOn": "2019-08-12",
+            "lastUpdateOn": "2019-08-12"
+          },
+          {
+            "name": "BenchmarkInfluxdb2Second",
+            "modificationCount": 1,
+            "createdOn": "2019-08-12",
+            "lastUpdateOn": "2019-08-12"
+          },
+          {
+            "name": "BenchmarkInfluxdb100Milliseconds",
+            "modificationCount": 1,
+            "createdOn": "2019-08-12",
+            "lastUpdateOn": "2019-08-12"
+          }
+        ]
+      },
+      {
+        "pkg": "go.k6.io/k6/output/json",
+        "succeded": true,
+        "duration": "1.998s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFlushMetrics-12",
+            "runs": 90,
+            "nsPerOp": 12277584,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFlushMetrics",
+            "modificationCount": 3,
+            "createdOn": "2022-03-10",
+            "lastUpdateOn": "2023-04-19"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "grafana/k6",
+    "name": "k6",
+    "private": false,
+    "html_url": "https://github.com/grafana/k6",
+    "description": "A modern load testing tool, using Go and JavaScript - https://k6.io",
+    "fork": false,
+    "created_at": "2016-03-21T15:30:24Z",
+    "updated_at": "2023-10-23T16:41:13Z",
+    "pushed_at": "2023-10-23T18:25:50Z",
+    "ssh_url": "git@github.com:grafana/k6.git",
+    "stargazers_count": 21788,
+    "watchers_count": 21788,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 1142,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 441,
+    "topics": [
+      "es6",
+      "go",
+      "golang",
+      "hacktoberfest",
+      "javascript",
+      "load-generator",
+      "load-testing",
+      "performance"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "spdx_id": "AGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTE=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 2335,
+    "Lines": 1335309,
+    "Blank": 84902,
+    "Code": 1133500,
+    "Comment": 116907,
+    "Bytes": 40883216,
+    "Complexity": 111361
+  }
+}

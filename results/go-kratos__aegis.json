@@ -1,0 +1,455 @@
+{
+  "Name": "go-kratos/aegis",
+  "Path": "./repositories/go-kratos__aegis",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T00:38:12Z",
+    "benchmarkCount": 26,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 26,
+    "successfulBenchmarkSuitesCount": 6,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/go-kratos/aegis/circuitbreaker/sre",
+        "succeded": true,
+        "duration": "1.222s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSreBreakerAllow-12",
+            "runs": 371966,
+            "nsPerOp": 3174,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSreBreakerAllow",
+            "modificationCount": 3,
+            "createdOn": "2021-08-28",
+            "lastUpdateOn": "2021-09-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-kratos/aegis/hotkey",
+        "succeded": true,
+        "duration": "9.591s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHotkeyAutoCacheWrite1_100-12",
+            "runs": 474566,
+            "nsPerOp": 3612,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHotkeyAutoCacheWrite10_100-12",
+            "runs": 317402,
+            "nsPerOp": 3660,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHotkeyAutoCacheWrite50_100-12",
+            "runs": 295912,
+            "nsPerOp": 4197,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHotkeyFading-12",
+            "runs": 54780,
+            "nsPerOp": 25301,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHotkeyAutoCacheWrite100_100-12",
+            "runs": 242739,
+            "nsPerOp": 4880,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHotkeyWhilelist1Write10_100-12",
+            "runs": 304593,
+            "nsPerOp": 4008,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHotkeyWhilelist5Write10_100-12",
+            "runs": 312750,
+            "nsPerOp": 3763,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHotkeyAutoCacheWrite1_100",
+            "modificationCount": 1,
+            "createdOn": "2023-03-18",
+            "lastUpdateOn": "2023-03-18"
+          },
+          {
+            "name": "BenchmarkHotkeyAutoCacheWrite10_100",
+            "modificationCount": 1,
+            "createdOn": "2023-03-18",
+            "lastUpdateOn": "2023-03-18"
+          },
+          {
+            "name": "BenchmarkHotkeyAutoCacheWrite50_100",
+            "modificationCount": 1,
+            "createdOn": "2023-03-18",
+            "lastUpdateOn": "2023-03-18"
+          },
+          {
+            "name": "BenchmarkHotkeyFading",
+            "modificationCount": 1,
+            "createdOn": "2023-03-18",
+            "lastUpdateOn": "2023-03-18"
+          },
+          {
+            "name": "BenchmarkHotkeyAutoCacheWrite100_100",
+            "modificationCount": 1,
+            "createdOn": "2023-03-18",
+            "lastUpdateOn": "2023-03-18"
+          },
+          {
+            "name": "BenchmarkHotkeyWhilelist1Write10_100",
+            "modificationCount": 1,
+            "createdOn": "2023-03-18",
+            "lastUpdateOn": "2023-03-18"
+          },
+          {
+            "name": "BenchmarkHotkeyWhilelist5Write10_100",
+            "modificationCount": 1,
+            "createdOn": "2023-03-18",
+            "lastUpdateOn": "2023-03-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-kratos/aegis/internal/consistent",
+        "succeded": true,
+        "duration": "18.557s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAllocations-12",
+            "runs": 101148,
+            "nsPerOp": 19488,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMalloc-12",
+            "runs": 51732,
+            "nsPerOp": 22716,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCycle-12",
+            "runs": 51564,
+            "nsPerOp": 28664,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCycleLarge-12",
+            "runs": 13930,
+            "nsPerOp": 91806,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGet-12",
+            "runs": 3647780,
+            "nsPerOp": 339.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetLarge-12",
+            "runs": 3666021,
+            "nsPerOp": 329.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetN-12",
+            "runs": 3073378,
+            "nsPerOp": 479.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetNLarge-12",
+            "runs": 1721487,
+            "nsPerOp": 786.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetTwo-12",
+            "runs": 4033282,
+            "nsPerOp": 411,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetTwoLarge-12",
+            "runs": 3432489,
+            "nsPerOp": 428.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAllocations",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkMalloc",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkCycle",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkCycleLarge",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkGet",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkGetLarge",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkGetN",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkGetNLarge",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkGetTwo",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkGetTwoLarge",
+            "modificationCount": 1,
+            "createdOn": "2023-01-11",
+            "lastUpdateOn": "2023-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-kratos/aegis/internal/window",
+        "succeded": true,
+        "duration": "31.636s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRollingCounterIncr-12",
+            "runs": 774906,
+            "nsPerOp": 2264,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollingCounterReduce-12",
+            "runs": 868538,
+            "nsPerOp": 1418,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRollingCounterIncr",
+            "modificationCount": 1,
+            "createdOn": "2021-08-05",
+            "lastUpdateOn": "2021-08-05"
+          },
+          {
+            "name": "BenchmarkRollingCounterReduce",
+            "modificationCount": 1,
+            "createdOn": "2021-08-05",
+            "lastUpdateOn": "2021-08-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-kratos/aegis/ratelimit/bbr",
+        "succeded": true,
+        "duration": "170.108s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBBRAllowUnderLowLoad-12",
+            "runs": 114903,
+            "nsPerOp": 9664,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBBRAllowUnderHighLoad-12",
+            "runs": 179299,
+            "nsPerOp": 9439,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderLowLoad-12",
+            "runs": 460574,
+            "nsPerOp": 2666,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderHighLoad-12",
+            "runs": 222986,
+            "nsPerOp": 5578,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderUnstableLoad-12",
+            "runs": 347775,
+            "nsPerOp": 2928,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBBRAllowUnderLowLoad",
+            "modificationCount": 3,
+            "createdOn": "2021-08-05",
+            "lastUpdateOn": "2021-09-03"
+          },
+          {
+            "name": "BenchmarkBBRAllowUnderHighLoad",
+            "modificationCount": 3,
+            "createdOn": "2021-08-05",
+            "lastUpdateOn": "2021-09-03"
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderLowLoad",
+            "modificationCount": 2,
+            "createdOn": "2021-08-05",
+            "lastUpdateOn": "2021-08-05"
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderHighLoad",
+            "modificationCount": 2,
+            "createdOn": "2021-08-05",
+            "lastUpdateOn": "2021-08-05"
+          },
+          {
+            "name": "BenchmarkBBRShouldDropUnderUnstableLoad",
+            "modificationCount": 3,
+            "createdOn": "2021-08-05",
+            "lastUpdateOn": "2021-09-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/go-kratos/aegis/topk",
+        "succeded": true,
+        "duration": "1.303s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAdd-12",
+            "runs": 5159176,
+            "nsPerOp": 199.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAdd",
+            "modificationCount": 3,
+            "createdOn": "2022-10-10",
+            "lastUpdateOn": "2023-06-16"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "go-kratos/aegis",
+    "name": "aegis",
+    "private": false,
+    "html_url": "https://github.com/go-kratos/aegis",
+    "description": "Service Reliability Algorithm",
+    "fork": false,
+    "created_at": "2021-08-05T02:49:57Z",
+    "updated_at": "2023-10-15T03:17:16Z",
+    "pushed_at": "2023-09-20T07:59:53Z",
+    "ssh_url": "git@github.com:go-kratos/aegis.git",
+    "stargazers_count": 146,
+    "watchers_count": 146,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 33,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 5,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 32,
+    "Lines": 4411,
+    "Blank": 457,
+    "Code": 3682,
+    "Comment": 272,
+    "Bytes": 96968,
+    "Complexity": 792
+  }
+}

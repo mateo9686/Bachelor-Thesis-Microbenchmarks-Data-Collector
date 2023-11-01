@@ -1,0 +1,718 @@
+{
+  "Name": "peterbourgon/trc",
+  "Path": "./repositories/peterbourgon__trc",
+  "GoVersion": "1.21",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T17:58:33Z",
+    "benchmarkCount": 49,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 49,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/peterbourgon/trc",
+        "succeded": true,
+        "duration": "170.788s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewCoreEvent/with_callstacks-12",
+            "runs": 215535,
+            "nsPerOp": 5629,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewCoreEvent/no_callstacks-12",
+            "runs": 225812,
+            "nsPerOp": 6282,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraceEvents/baseline-12",
+            "runs": 184704,
+            "nsPerOp": 6488,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraceEvents/normal_const_string-12",
+            "runs": 94646,
+            "nsPerOp": 11562,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraceEvents/lazy_const_string-12",
+            "runs": 71587,
+            "nsPerOp": 23172,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraceEvents/normal_single_int-12",
+            "runs": 79058,
+            "nsPerOp": 15482,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraceEvents/lazy_single_int-12",
+            "runs": 77238,
+            "nsPerOp": 22632,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraceEvents/normal_five_args-12",
+            "runs": 57428,
+            "nsPerOp": 21306,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTraceEvents/lazy_five_args-12",
+            "runs": 63834,
+            "nsPerOp": 16135,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCollector/baseline-12",
+            "runs": 98431,
+            "nsPerOp": 12546,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCollector/publish_no_subscribers-12",
+            "runs": 98919,
+            "nsPerOp": 28012,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCollector/publish_one_skip_subscriber-12",
+            "runs": 51648,
+            "nsPerOp": 21178,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCollector/publish_one_drop_subscriber-12",
+            "runs": 61912,
+            "nsPerOp": 54254,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrokerPublish/no_subscribers-12",
+            "runs": 58681399,
+            "nsPerOp": 25.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrokerPublish/1_skip_subscriber-12",
+            "runs": 215916,
+            "nsPerOp": 4733,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrokerPublish/10_skip_subscribers-12",
+            "runs": 365584,
+            "nsPerOp": 5737,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrokerPublish/1_send_subscriber-12",
+            "runs": 1000000,
+            "nsPerOp": 4346,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrokerPublish/10_send_subscribers-12",
+            "runs": 18238600,
+            "nsPerOp": 7191,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrokerPublish/9_skip,_1_send-12",
+            "runs": 212578,
+            "nsPerOp": 4913,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrokerPublish/1_skip,_9_send-12",
+            "runs": 197386,
+            "nsPerOp": 8028,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewCoreEvent",
+            "modificationCount": 1,
+            "createdOn": "2023-06-16",
+            "lastUpdateOn": "2023-06-16"
+          },
+          {
+            "name": "BenchmarkNewCoreEvent",
+            "modificationCount": 1,
+            "createdOn": "2023-06-16",
+            "lastUpdateOn": "2023-06-16"
+          },
+          {
+            "name": "BenchmarkTraceEvents",
+            "modificationCount": 5,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkTraceEvents",
+            "modificationCount": 5,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkTraceEvents",
+            "modificationCount": 5,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkTraceEvents",
+            "modificationCount": 5,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkTraceEvents",
+            "modificationCount": 5,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkTraceEvents",
+            "modificationCount": 5,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkTraceEvents",
+            "modificationCount": 5,
+            "createdOn": "2023-04-26",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkCollector",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkCollector",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkCollector",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkCollector",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkBrokerPublish",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkBrokerPublish",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkBrokerPublish",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkBrokerPublish",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkBrokerPublish",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkBrokerPublish",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          },
+          {
+            "name": "BenchmarkBrokerPublish",
+            "modificationCount": 1,
+            "createdOn": "2023-09-17",
+            "lastUpdateOn": "2023-09-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/peterbourgon/trc/internal/trcringbuf",
+        "succeded": true,
+        "duration": "59.857s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRingBuffer/100/Add-12",
+            "runs": 39601119,
+            "nsPerOp": 39.17,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/100/Walk-12",
+            "runs": 1686042,
+            "nsPerOp": 640,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/100/Walk+Read-12",
+            "runs": 2715007,
+            "nsPerOp": 668.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/100/Add+Walk-12",
+            "runs": 1000000,
+            "nsPerOp": 1043,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/100/Add+Walk+Read-12",
+            "runs": 1554651,
+            "nsPerOp": 692.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/1000/Add-12",
+            "runs": 32593477,
+            "nsPerOp": 71.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/1000/Walk-12",
+            "runs": 271629,
+            "nsPerOp": 6103,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/1000/Walk+Read-12",
+            "runs": 279309,
+            "nsPerOp": 4964,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/1000/Add+Walk-12",
+            "runs": 124437,
+            "nsPerOp": 8526,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/1000/Add+Walk+Read-12",
+            "runs": 186678,
+            "nsPerOp": 5600,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/10000/Add-12",
+            "runs": 62351871,
+            "nsPerOp": 35.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/10000/Walk-12",
+            "runs": 29150,
+            "nsPerOp": 48809,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/10000/Walk+Read-12",
+            "runs": 31065,
+            "nsPerOp": 88000,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/10000/Add+Walk-12",
+            "runs": 28263,
+            "nsPerOp": 37453,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/10000/Add+Walk+Read-12",
+            "runs": 25389,
+            "nsPerOp": 53353,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/100000/Add-12",
+            "runs": 57193326,
+            "nsPerOp": 28.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/100000/Walk-12",
+            "runs": 2154,
+            "nsPerOp": 532649,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/100000/Walk+Read-12",
+            "runs": 2276,
+            "nsPerOp": 497127,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/100000/Add+Walk-12",
+            "runs": 3631,
+            "nsPerOp": 383766,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBuffer/100000/Add+Walk+Read-12",
+            "runs": 3399,
+            "nsPerOp": 371808,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBufferParallel/cap=100/par=10-12",
+            "runs": 2305441,
+            "nsPerOp": 525.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBufferParallel/cap=100/par=100-12",
+            "runs": 1351291,
+            "nsPerOp": 808.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBufferParallel/cap=100/par=1000-12",
+            "runs": 617353,
+            "nsPerOp": 1905,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBufferParallel/cap=1000/par=10-12",
+            "runs": 269379,
+            "nsPerOp": 5053,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBufferParallel/cap=1000/par=100-12",
+            "runs": 255367,
+            "nsPerOp": 4941,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBufferParallel/cap=1000/par=1000-12",
+            "runs": 350299,
+            "nsPerOp": 4532,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBufferParallel/cap=10000/par=10-12",
+            "runs": 73684,
+            "nsPerOp": 39002,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBufferParallel/cap=10000/par=100-12",
+            "runs": 50150,
+            "nsPerOp": 40075,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRingBufferParallel/cap=10000/par=1000-12",
+            "runs": 67116,
+            "nsPerOp": 40062,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBufferParallel",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBufferParallel",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBufferParallel",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBufferParallel",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBufferParallel",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBufferParallel",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBufferParallel",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBufferParallel",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          },
+          {
+            "name": "BenchmarkRingBufferParallel",
+            "modificationCount": 4,
+            "createdOn": "2022-10-15",
+            "lastUpdateOn": "2023-05-17"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "peterbourgon/trc",
+    "name": "trc",
+    "private": false,
+    "html_url": "https://github.com/peterbourgon/trc",
+    "description": "In-process request tracing",
+    "fork": false,
+    "created_at": "2022-06-05T15:11:21Z",
+    "updated_at": "2023-10-06T07:31:22Z",
+    "pushed_at": "2023-10-01T19:56:37Z",
+    "ssh_url": "git@github.com:peterbourgon/trc.git",
+    "stargazers_count": 78,
+    "watchers_count": 78,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 1,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 47,
+    "Lines": 6303,
+    "Blank": 1002,
+    "Code": 4697,
+    "Comment": 604,
+    "Bytes": 160884,
+    "Complexity": 706
+  }
+}

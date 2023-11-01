@@ -1,0 +1,1166 @@
+{
+  "Name": "restic/restic",
+  "Path": "./repositories/restic__restic",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T03:54:50Z",
+    "benchmarkCount": 75,
+    "benchmarkSuiteCount": 14,
+    "successfulBenchmarkCount": 71,
+    "successfulBenchmarkSuitesCount": 14,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/restic/restic/internal/archiver",
+        "succeded": true,
+        "duration": "6.139s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkArchiverSaveFileSmall-12",
+            "runs": 180,
+            "nsPerOp": 7343909,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkArchiverSaveFileLarge-12",
+            "runs": 5,
+            "nsPerOp": 266714264,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkArchiverSaveFileSmall",
+            "modificationCount": 3,
+            "createdOn": "2018-03-30",
+            "lastUpdateOn": "2022-12-11"
+          },
+          {
+            "name": "BenchmarkArchiverSaveFileLarge",
+            "modificationCount": 3,
+            "createdOn": "2018-03-30",
+            "lastUpdateOn": "2022-12-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/backend/local",
+        "succeded": false,
+        "duration": "8.038s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBackend/BenchmarkLoadFile-12",
+            "runs": 234,
+            "nsPerOp": 4999015,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBackend/BenchmarkLoadPartialFile-12",
+            "runs": 1096,
+            "nsPerOp": 1287674,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBackend/BenchmarkLoadPartialFileOffset-12",
+            "runs": 829,
+            "nsPerOp": 1688473,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBackend/BenchmarkSave-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkBackend",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "local_test.go:19: create new backend at /tmp/restic-test-44769796"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBackend",
+            "modificationCount": 3,
+            "createdOn": "2017-07-08",
+            "lastUpdateOn": "2023-06-08"
+          },
+          {
+            "name": "BenchmarkBackend",
+            "modificationCount": 3,
+            "createdOn": "2017-07-08",
+            "lastUpdateOn": "2023-06-08"
+          },
+          {
+            "name": "BenchmarkBackend",
+            "modificationCount": 3,
+            "createdOn": "2017-07-08",
+            "lastUpdateOn": "2023-06-08"
+          },
+          {
+            "name": "BenchmarkBackend",
+            "modificationCount": 3,
+            "createdOn": "2017-07-08",
+            "lastUpdateOn": "2023-06-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/backend/mem",
+        "succeded": false,
+        "duration": "17.278s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSuiteBackendMem/BenchmarkLoadFile-12",
+            "runs": 616,
+            "nsPerOp": 3110107,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSuiteBackendMem/BenchmarkLoadPartialFile-12",
+            "runs": 2383,
+            "nsPerOp": 754476,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSuiteBackendMem/BenchmarkLoadPartialFileOffset-12",
+            "runs": 2359,
+            "nsPerOp": 547743,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSuiteBackendMem/BenchmarkSave-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSuiteBackendMem",
+            "modificationCount": 3,
+            "createdOn": "2016-01-23",
+            "lastUpdateOn": "2017-05-13"
+          },
+          {
+            "name": "BenchmarkSuiteBackendMem",
+            "modificationCount": 3,
+            "createdOn": "2016-01-23",
+            "lastUpdateOn": "2017-05-13"
+          },
+          {
+            "name": "BenchmarkSuiteBackendMem",
+            "modificationCount": 3,
+            "createdOn": "2016-01-23",
+            "lastUpdateOn": "2017-05-13"
+          },
+          {
+            "name": "BenchmarkSuiteBackendMem",
+            "modificationCount": 3,
+            "createdOn": "2016-01-23",
+            "lastUpdateOn": "2017-05-13"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/bloblru",
+        "succeded": true,
+        "duration": "1.302s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAdd-12",
+            "runs": 1000000,
+            "nsPerOp": 1174,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAdd",
+            "modificationCount": 1,
+            "createdOn": "2022-11-27",
+            "lastUpdateOn": "2022-11-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/checker",
+        "succeded": true,
+        "duration": "12.148s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkChecker-12",
+            "runs": 32,
+            "nsPerOp": 40779178,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCheckerSnapshotScaling/50-12",
+            "runs": 24,
+            "nsPerOp": 48134387,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCheckerSnapshotScaling/100-12",
+            "runs": 36,
+            "nsPerOp": 49352538,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCheckerSnapshotScaling/200-12",
+            "runs": 25,
+            "nsPerOp": 62771159,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkChecker",
+            "modificationCount": 1,
+            "createdOn": "2020-01-02",
+            "lastUpdateOn": "2020-01-02"
+          },
+          {
+            "name": "BenchmarkCheckerSnapshotScaling",
+            "modificationCount": 1,
+            "createdOn": "2020-01-02",
+            "lastUpdateOn": "2020-01-02"
+          },
+          {
+            "name": "BenchmarkCheckerSnapshotScaling",
+            "modificationCount": 1,
+            "createdOn": "2020-01-02",
+            "lastUpdateOn": "2020-01-02"
+          },
+          {
+            "name": "BenchmarkCheckerSnapshotScaling",
+            "modificationCount": 1,
+            "createdOn": "2020-01-02",
+            "lastUpdateOn": "2020-01-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/crypto",
+        "succeded": true,
+        "duration": "4.184s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNonceValid-12",
+            "runs": 123690264,
+            "nsPerOp": 8.314,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncrypt-12",
+            "runs": 63,
+            "nsPerOp": 21406890,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecrypt-12",
+            "runs": 67,
+            "nsPerOp": 18889235,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNonceValid",
+            "modificationCount": 1,
+            "createdOn": "2017-11-01",
+            "lastUpdateOn": "2017-11-01"
+          },
+          {
+            "name": "BenchmarkEncrypt",
+            "modificationCount": 9,
+            "createdOn": "2015-03-14",
+            "lastUpdateOn": "2017-10-28"
+          },
+          {
+            "name": "BenchmarkDecrypt",
+            "modificationCount": 12,
+            "createdOn": "2015-03-14",
+            "lastUpdateOn": "2017-10-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/debug",
+        "succeded": true,
+        "duration": "4.255s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLogStatic-12",
+            "runs": 347854641,
+            "nsPerOp": 2.931,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogIDStr-12",
+            "runs": 33818510,
+            "nsPerOp": 43.53,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogIDString-12",
+            "runs": 34760361,
+            "nsPerOp": 38.24,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLogStatic",
+            "modificationCount": 1,
+            "createdOn": "2018-01-21",
+            "lastUpdateOn": "2018-01-21"
+          },
+          {
+            "name": "BenchmarkLogIDStr",
+            "modificationCount": 2,
+            "createdOn": "2018-01-21",
+            "lastUpdateOn": "2018-01-25"
+          },
+          {
+            "name": "BenchmarkLogIDString",
+            "modificationCount": 2,
+            "createdOn": "2018-01-21",
+            "lastUpdateOn": "2018-01-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/filter",
+        "succeded": true,
+        "duration": "7.033s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFilterLines-12",
+            "runs": 16,
+            "nsPerOp": 83560929,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilterPatterns/Relative-12",
+            "runs": 100,
+            "nsPerOp": 14014786,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilterPatterns/Absolute-12",
+            "runs": 100,
+            "nsPerOp": 11677373,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilterPatterns/Wildcard-12",
+            "runs": 30,
+            "nsPerOp": 42048447,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFilterPatterns/ManyNoMatch-12",
+            "runs": 7,
+            "nsPerOp": 162351496,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFilterLines",
+            "modificationCount": 1,
+            "createdOn": "2015-07-13",
+            "lastUpdateOn": "2015-07-13"
+          },
+          {
+            "name": "BenchmarkFilterPatterns",
+            "modificationCount": 8,
+            "createdOn": "2015-07-13",
+            "lastUpdateOn": "2020-10-07"
+          },
+          {
+            "name": "BenchmarkFilterPatterns",
+            "modificationCount": 8,
+            "createdOn": "2015-07-13",
+            "lastUpdateOn": "2020-10-07"
+          },
+          {
+            "name": "BenchmarkFilterPatterns",
+            "modificationCount": 8,
+            "createdOn": "2015-07-13",
+            "lastUpdateOn": "2020-10-07"
+          },
+          {
+            "name": "BenchmarkFilterPatterns",
+            "modificationCount": 8,
+            "createdOn": "2015-07-13",
+            "lastUpdateOn": "2020-10-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/fuse",
+        "succeded": true,
+        "duration": "2.297s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInode/no_hard_links-12",
+            "runs": 22257553,
+            "nsPerOp": 50.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInode/hard_link-12",
+            "runs": 100000000,
+            "nsPerOp": 10.82,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInode",
+            "modificationCount": 1,
+            "createdOn": "2022-11-11",
+            "lastUpdateOn": "2022-11-11"
+          },
+          {
+            "name": "BenchmarkInode",
+            "modificationCount": 1,
+            "createdOn": "2022-11-11",
+            "lastUpdateOn": "2022-11-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/hashing",
+        "succeded": true,
+        "duration": "3.924s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReader-12",
+            "runs": 418,
+            "nsPerOp": 3467725,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriter-12",
+            "runs": 280,
+            "nsPerOp": 5656960,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReader",
+            "modificationCount": 2,
+            "createdOn": "2017-01-22",
+            "lastUpdateOn": "2022-12-02"
+          },
+          {
+            "name": "BenchmarkWriter",
+            "modificationCount": 2,
+            "createdOn": "2017-01-22",
+            "lastUpdateOn": "2022-12-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/index",
+        "succeded": true,
+        "duration": "454.598s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIndexMapHash-12",
+            "runs": 234620,
+            "nsPerOp": 4776,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeIndex-12",
+            "runs": 1,
+            "nsPerOp": 19633463360,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecodeIndexParallel-12",
+            "runs": 1,
+            "nsPerOp": 15834317779,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeIndex/100-12",
+            "runs": 703,
+            "nsPerOp": 3382646,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeIndex/1000-12",
+            "runs": 90,
+            "nsPerOp": 26914144,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeIndex/10000-12",
+            "runs": 4,
+            "nsPerOp": 272834319,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexHasUnknown-12",
+            "runs": 21203353,
+            "nsPerOp": 151.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexHasKnown-12",
+            "runs": 20100255,
+            "nsPerOp": 52.44,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexAlloc-12",
+            "runs": 2,
+            "nsPerOp": 602672940,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIndexAllocParallel-12",
+            "runs": 4,
+            "nsPerOp": 271355204,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexAlloc-12",
+            "runs": 3,
+            "nsPerOp": 370225023,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupSingleIndex-12",
+            "runs": 9926040,
+            "nsPerOp": 141.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupMultipleIndex-12",
+            "runs": 6788904,
+            "nsPerOp": 330,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupSingleIndexUnknown-12",
+            "runs": 17404743,
+            "nsPerOp": 78.43,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupMultipleIndexUnknown-12",
+            "runs": 13344291,
+            "nsPerOp": 81.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel/known,indices=25-12",
+            "runs": 4417908,
+            "nsPerOp": 302.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel/unknown,indices=25-12",
+            "runs": 9615661,
+            "nsPerOp": 108.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel/known,indices=50-12",
+            "runs": 4009671,
+            "nsPerOp": 292.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel/unknown,indices=50-12",
+            "runs": 8677204,
+            "nsPerOp": 121.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel/known,indices=100-12",
+            "runs": 5341076,
+            "nsPerOp": 290.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel/unknown,indices=100-12",
+            "runs": 8787297,
+            "nsPerOp": 120.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupBlobSize-12",
+            "runs": 24917457,
+            "nsPerOp": 47.01,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexEach-12",
+            "runs": 8,
+            "nsPerOp": 133989887,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMasterIndexGC-12",
+            "runs": 746,
+            "nsPerOp": 1545246,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIndexMapHash",
+            "modificationCount": 2,
+            "createdOn": "2020-06-23",
+            "lastUpdateOn": "2022-02-13"
+          },
+          {
+            "name": "BenchmarkDecodeIndex",
+            "modificationCount": 7,
+            "createdOn": "2017-01-13",
+            "lastUpdateOn": "2022-06-12"
+          },
+          {
+            "name": "BenchmarkDecodeIndexParallel",
+            "modificationCount": 4,
+            "createdOn": "2020-07-05",
+            "lastUpdateOn": "2022-06-12"
+          },
+          {
+            "name": "BenchmarkEncodeIndex",
+            "modificationCount": 1,
+            "createdOn": "2023-01-14",
+            "lastUpdateOn": "2023-01-14"
+          },
+          {
+            "name": "BenchmarkEncodeIndex",
+            "modificationCount": 1,
+            "createdOn": "2023-01-14",
+            "lastUpdateOn": "2023-01-14"
+          },
+          {
+            "name": "BenchmarkEncodeIndex",
+            "modificationCount": 1,
+            "createdOn": "2023-01-14",
+            "lastUpdateOn": "2023-01-14"
+          },
+          {
+            "name": "BenchmarkIndexHasUnknown",
+            "modificationCount": 4,
+            "createdOn": "2018-01-08",
+            "lastUpdateOn": "2020-11-05"
+          },
+          {
+            "name": "BenchmarkIndexHasKnown",
+            "modificationCount": 5,
+            "createdOn": "2018-01-08",
+            "lastUpdateOn": "2020-11-05"
+          },
+          {
+            "name": "BenchmarkIndexAlloc",
+            "modificationCount": 3,
+            "createdOn": "2020-06-12",
+            "lastUpdateOn": "2020-07-04"
+          },
+          {
+            "name": "BenchmarkIndexAllocParallel",
+            "modificationCount": 2,
+            "createdOn": "2020-07-05",
+            "lastUpdateOn": "2020-07-04"
+          },
+          {
+            "name": "BenchmarkMasterIndexAlloc",
+            "modificationCount": 2,
+            "createdOn": "2020-08-05",
+            "lastUpdateOn": "2021-01-30"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupSingleIndex",
+            "modificationCount": 4,
+            "createdOn": "2018-01-12",
+            "lastUpdateOn": "2021-01-30"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupMultipleIndex",
+            "modificationCount": 5,
+            "createdOn": "2018-01-12",
+            "lastUpdateOn": "2021-01-30"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupSingleIndexUnknown",
+            "modificationCount": 4,
+            "createdOn": "2018-01-12",
+            "lastUpdateOn": "2021-01-30"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupMultipleIndexUnknown",
+            "modificationCount": 5,
+            "createdOn": "2018-01-12",
+            "lastUpdateOn": "2021-01-30"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-07-05",
+            "lastUpdateOn": "2022-05-26"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-07-05",
+            "lastUpdateOn": "2022-05-26"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-07-05",
+            "lastUpdateOn": "2022-05-26"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-07-05",
+            "lastUpdateOn": "2022-05-26"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-07-05",
+            "lastUpdateOn": "2022-05-26"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupParallel",
+            "modificationCount": 6,
+            "createdOn": "2020-07-05",
+            "lastUpdateOn": "2022-05-26"
+          },
+          {
+            "name": "BenchmarkMasterIndexLookupBlobSize",
+            "modificationCount": 5,
+            "createdOn": "2020-07-05",
+            "lastUpdateOn": "2021-01-30"
+          },
+          {
+            "name": "BenchmarkMasterIndexEach",
+            "modificationCount": 2,
+            "createdOn": "2022-09-11",
+            "lastUpdateOn": "2022-08-19"
+          },
+          {
+            "name": "BenchmarkMasterIndexGC",
+            "modificationCount": 1,
+            "createdOn": "2022-10-22",
+            "lastUpdateOn": "2022-10-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/repository",
+        "succeded": false,
+        "duration": "16.866s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPackerManager-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkSortCachedPacksFirst-12",
+            "runs": 9166,
+            "nsPerOp": 148776,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSaveAndEncrypt/v1-12",
+            "runs": 93,
+            "nsPerOp": 16159761,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSaveAndEncrypt/v2-12",
+            "runs": 48,
+            "nsPerOp": 34973102,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadBlob/v1-12",
+            "runs": 463,
+            "nsPerOp": 2660651,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadBlob/v2-12",
+            "runs": 406,
+            "nsPerOp": 3126528,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadUnpacked/v1-12",
+            "runs": 418,
+            "nsPerOp": 2754861,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadUnpacked/v2-12",
+            "runs": 474,
+            "nsPerOp": 3728459,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadIndex/v1-12",
+            "runs": 81,
+            "nsPerOp": 15004667,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadIndex/v2-12",
+            "runs": 79,
+            "nsPerOp": 14463658,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPackerManager",
+            "modificationCount": 14,
+            "createdOn": "2016-03-05",
+            "lastUpdateOn": "2022-07-02"
+          },
+          {
+            "name": "BenchmarkSortCachedPacksFirst",
+            "modificationCount": 3,
+            "createdOn": "2020-03-06",
+            "lastUpdateOn": "2020-08-16"
+          },
+          {
+            "name": "BenchmarkSaveAndEncrypt",
+            "modificationCount": 9,
+            "createdOn": "2015-02-16",
+            "lastUpdateOn": "2022-04-29"
+          },
+          {
+            "name": "BenchmarkSaveAndEncrypt",
+            "modificationCount": 9,
+            "createdOn": "2015-02-16",
+            "lastUpdateOn": "2022-04-29"
+          },
+          {
+            "name": "BenchmarkLoadBlob",
+            "modificationCount": 2,
+            "createdOn": "2017-01-13",
+            "lastUpdateOn": "2022-04-29"
+          },
+          {
+            "name": "BenchmarkLoadBlob",
+            "modificationCount": 2,
+            "createdOn": "2017-01-13",
+            "lastUpdateOn": "2022-04-29"
+          },
+          {
+            "name": "BenchmarkLoadUnpacked",
+            "modificationCount": 3,
+            "createdOn": "2017-01-13",
+            "lastUpdateOn": "2022-04-29"
+          },
+          {
+            "name": "BenchmarkLoadUnpacked",
+            "modificationCount": 3,
+            "createdOn": "2017-01-13",
+            "lastUpdateOn": "2022-04-29"
+          },
+          {
+            "name": "BenchmarkLoadIndex",
+            "modificationCount": 2,
+            "createdOn": "2015-07-04",
+            "lastUpdateOn": "2022-04-29"
+          },
+          {
+            "name": "BenchmarkLoadIndex",
+            "modificationCount": 2,
+            "createdOn": "2015-07-04",
+            "lastUpdateOn": "2022-04-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/restic",
+        "succeded": true,
+        "duration": "15.323s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFindUsedBlobs-12",
+            "runs": 2712,
+            "nsPerOp": 430862,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNodeFillUser-12",
+            "runs": 132883,
+            "nsPerOp": 10696,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNodeFromFileInfo-12",
+            "runs": 138172,
+            "nsPerOp": 9842,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTestCreateSnapshot-12",
+            "runs": 376,
+            "nsPerOp": 2891787,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildTree-12",
+            "runs": 145004,
+            "nsPerOp": 8466,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadTree/v1-12",
+            "runs": 1112,
+            "nsPerOp": 1478070,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadTree/v2-12",
+            "runs": 795,
+            "nsPerOp": 2258973,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkZeroPrefixLen-12",
+            "runs": 5623,
+            "nsPerOp": 230110,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFindUsedBlobs",
+            "modificationCount": 9,
+            "createdOn": "2016-08-15",
+            "lastUpdateOn": "2023-07-16"
+          },
+          {
+            "name": "BenchmarkNodeFillUser",
+            "modificationCount": 7,
+            "createdOn": "2015-05-01",
+            "lastUpdateOn": "2022-12-02"
+          },
+          {
+            "name": "BenchmarkNodeFromFileInfo",
+            "modificationCount": 5,
+            "createdOn": "2015-05-02",
+            "lastUpdateOn": "2022-12-02"
+          },
+          {
+            "name": "BenchmarkTestCreateSnapshot",
+            "modificationCount": 3,
+            "createdOn": "2017-01-17",
+            "lastUpdateOn": "2023-07-16"
+          },
+          {
+            "name": "BenchmarkBuildTree",
+            "modificationCount": 2,
+            "createdOn": "2021-09-26",
+            "lastUpdateOn": "2022-06-12"
+          },
+          {
+            "name": "BenchmarkLoadTree",
+            "modificationCount": 1,
+            "createdOn": "2022-06-12",
+            "lastUpdateOn": "2022-06-12"
+          },
+          {
+            "name": "BenchmarkLoadTree",
+            "modificationCount": 1,
+            "createdOn": "2022-06-12",
+            "lastUpdateOn": "2022-06-12"
+          },
+          {
+            "name": "BenchmarkZeroPrefixLen",
+            "modificationCount": 1,
+            "createdOn": "2022-09-04",
+            "lastUpdateOn": "2022-09-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/restic/restic/internal/ui/termstatus",
+        "succeded": true,
+        "duration": "5.154s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTruncateASCII-12",
+            "runs": 15126634,
+            "nsPerOp": 95.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTruncateUnicode-12",
+            "runs": 3336211,
+            "nsPerOp": 350,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTruncateASCII",
+            "modificationCount": 1,
+            "createdOn": "2021-08-29",
+            "lastUpdateOn": "2021-08-29"
+          },
+          {
+            "name": "BenchmarkTruncateUnicode",
+            "modificationCount": 3,
+            "createdOn": "2021-08-29",
+            "lastUpdateOn": "2023-05-01"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "restic/restic",
+    "name": "restic",
+    "private": false,
+    "html_url": "https://github.com/restic/restic",
+    "description": "Fast, secure, efficient backup program",
+    "fork": false,
+    "created_at": "2014-04-27T14:07:58Z",
+    "updated_at": "2023-10-23T16:58:33Z",
+    "pushed_at": "2023-10-23T18:47:20Z",
+    "ssh_url": "git@github.com:restic/restic.git",
+    "homepage": "https://restic.net",
+    "stargazers_count": 21443,
+    "watchers_count": 21443,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1374,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 445,
+    "topics": [
+      "backup",
+      "dedupe",
+      "deduplication",
+      "go",
+      "restic",
+      "secure-by-default"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "bsd-2-clause",
+      "name": "BSD 2-Clause \"Simplified\" License",
+      "url": "https://api.github.com/licenses/bsd-2-clause",
+      "spdx_id": "BSD-2-Clause",
+      "node_id": "MDc6TGljZW5zZTQ=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 458,
+    "Lines": 69431,
+    "Blank": 10906,
+    "Code": 53865,
+    "Comment": 4660,
+    "Bytes": 1790544,
+    "Complexity": 10406
+  }
+}

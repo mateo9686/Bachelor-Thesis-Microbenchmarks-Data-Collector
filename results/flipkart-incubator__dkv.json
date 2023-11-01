@@ -1,0 +1,176 @@
+{
+  "Name": "flipkart-incubator/dkv",
+  "Path": "./repositories/flipkart-incubator__dkv",
+  "GoVersion": "1.15",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T11:37:07Z",
+    "benchmarkCount": 8,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 7,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/flipkart-incubator/dkv/internal/storage/badger",
+        "succeded": false,
+        "duration": "147.204s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSaveChangesOneByOne-12",
+            "runs": 24248,
+            "nsPerOp": 67073,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPutNewKeys-12",
+            "runs": 13003,
+            "nsPerOp": 104304,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPutExistingKey-12",
+            "runs": 10000,
+            "nsPerOp": 105489,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetKey-12",
+            "runs": 26452,
+            "nsPerOp": 55626,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetMissingKey",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "store_test.go:730: Expected an error on missing key, but got no error. Key: BMissingKey, Value: []"
+          },
+          {
+            "name": "BenchmarkCompareAndSet-12",
+            "runs": 16207,
+            "nsPerOp": 71211,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStreamBasedIteration-12",
+            "runs": 999610,
+            "nsPerOp": 4436,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIteratorBasedIteration-12",
+            "runs": 1,
+            "nsPerOp": 3666226316,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSaveChangesOneByOne",
+            "modificationCount": 4,
+            "createdOn": "2020-03-05",
+            "lastUpdateOn": "2020-03-21"
+          },
+          {
+            "name": "BenchmarkPutNewKeys",
+            "modificationCount": 4,
+            "createdOn": "2019-09-27",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkPutExistingKey",
+            "modificationCount": 4,
+            "createdOn": "2019-09-27",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkGetKey",
+            "modificationCount": 5,
+            "createdOn": "2019-09-27",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkGetMissingKey",
+            "modificationCount": 5,
+            "createdOn": "2019-09-27",
+            "lastUpdateOn": "2021-08-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSet",
+            "modificationCount": 4,
+            "createdOn": "2021-04-28",
+            "lastUpdateOn": "2023-01-05"
+          },
+          {
+            "name": "BenchmarkStreamBasedIteration",
+            "modificationCount": 3,
+            "createdOn": "2020-04-16",
+            "lastUpdateOn": "2022-04-07"
+          },
+          {
+            "name": "BenchmarkIteratorBasedIteration",
+            "modificationCount": 2,
+            "createdOn": "2020-04-16",
+            "lastUpdateOn": "2020-10-13"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "flipkart-incubator/dkv",
+    "name": "dkv",
+    "private": false,
+    "html_url": "https://github.com/flipkart-incubator/dkv",
+    "description": "Distributed KV data store with tunable consistency, synchronous replication",
+    "fork": false,
+    "created_at": "2019-09-09T09:01:24Z",
+    "updated_at": "2022-10-30T11:07:19Z",
+    "pushed_at": "2023-07-05T21:14:45Z",
+    "ssh_url": "git@github.com:flipkart-incubator/dkv.git",
+    "stargazers_count": 62,
+    "watchers_count": 62,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 26,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 33,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 55,
+    "Lines": 17526,
+    "Blank": 1968,
+    "Code": 14553,
+    "Comment": 1005,
+    "Bytes": 563747,
+    "Complexity": 3447
+  }
+}

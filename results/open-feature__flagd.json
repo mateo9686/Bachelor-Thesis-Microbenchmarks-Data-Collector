@@ -1,0 +1,528 @@
+{
+  "Name": "open-feature/flagd",
+  "Path": "./repositories/open-feature__flagd",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T07:17:27Z",
+    "benchmarkCount": 34,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 31,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/open-feature/flagd/core/pkg/eval",
+        "succeded": false,
+        "duration": "46.589s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFractionalEvaluation/test@faas.com",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "fractional_evaluation_test.go:501: expected value '#FF0000', got '#0000FF'"
+          },
+          {
+            "name": "BenchmarkFractionalEvaluation/test2@faas.com",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "fractional_evaluation_test.go:501: expected value '#FFFF00', got '#0000FF'"
+          },
+          {
+            "name": "BenchmarkFractionalEvaluation/test3@faas.com",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "fractional_evaluation_test.go:501: expected value '#FF0000', got '#0000FF'"
+          },
+          {
+            "name": "BenchmarkFractionalEvaluation/test4@faas.com-12",
+            "runs": 49186,
+            "nsPerOp": 28266,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue/test_staticBoolFlag-12",
+            "runs": 555994,
+            "nsPerOp": 2215,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue/test_targetingBoolFlag-12",
+            "runs": 59552,
+            "nsPerOp": 21185,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue/test_staticObjectFlag-12",
+            "runs": 472315,
+            "nsPerOp": 2496,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue/test_missingFlag-12",
+            "runs": 522326,
+            "nsPerOp": 2680,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue/test_disabledFlag-12",
+            "runs": 386882,
+            "nsPerOp": 2599,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveStringValue/test_staticStringFlag-12",
+            "runs": 416299,
+            "nsPerOp": 3743,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveStringValue/test_targetingStringFlag-12",
+            "runs": 23191,
+            "nsPerOp": 71702,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveStringValue/test_staticObjectFlag-12",
+            "runs": 142879,
+            "nsPerOp": 7860,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveStringValue/test_missingFlag-12",
+            "runs": 99280,
+            "nsPerOp": 10183,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveStringValue/test_disabledFlag-12",
+            "runs": 127556,
+            "nsPerOp": 10650,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveFloatValue/test:_staticFloatFlag-12",
+            "runs": 150123,
+            "nsPerOp": 10087,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveFloatValue/test:_targetingFloatFlag-12",
+            "runs": 10000,
+            "nsPerOp": 110666,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveFloatValue/test:_staticObjectFlag-12",
+            "runs": 167408,
+            "nsPerOp": 7319,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveFloatValue/test:_missingFlag-12",
+            "runs": 279936,
+            "nsPerOp": 9864,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveFloatValue/test:_disabledFlag-12",
+            "runs": 132034,
+            "nsPerOp": 10061,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveIntValue/test_staticIntFlag-12",
+            "runs": 258424,
+            "nsPerOp": 7012,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveIntValue/test_targetingNumberFlag-12",
+            "runs": 24768,
+            "nsPerOp": 52309,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveIntValue/test_staticObjectFlag-12",
+            "runs": 290877,
+            "nsPerOp": 6047,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveIntValue/test_missingFlag-12",
+            "runs": 255175,
+            "nsPerOp": 5395,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveIntValue/test_disabledFlag-12",
+            "runs": 147432,
+            "nsPerOp": 7144,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveObjectValue/test_staticObjectFlag-12",
+            "runs": 113679,
+            "nsPerOp": 10090,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveObjectValue/test_targetingObjectFlag-12",
+            "runs": 35672,
+            "nsPerOp": 29676,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveObjectValue/test_staticBoolFlag-12",
+            "runs": 416830,
+            "nsPerOp": 2711,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveObjectValue/test_missingFlag-12",
+            "runs": 555714,
+            "nsPerOp": 3530,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkResolveObjectValue/test_disabledFlag-12",
+            "runs": 264614,
+            "nsPerOp": 6527,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFractionalEvaluation",
+            "modificationCount": 6,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-08-29"
+          },
+          {
+            "name": "BenchmarkFractionalEvaluation",
+            "modificationCount": 6,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-08-29"
+          },
+          {
+            "name": "BenchmarkFractionalEvaluation",
+            "modificationCount": 6,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-08-29"
+          },
+          {
+            "name": "BenchmarkFractionalEvaluation",
+            "modificationCount": 6,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-08-29"
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveBooleanValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveStringValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveStringValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveStringValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveStringValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveStringValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveFloatValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveFloatValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveFloatValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveFloatValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveFloatValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveIntValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveIntValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveIntValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveIntValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveIntValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveObjectValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveObjectValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveObjectValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveObjectValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkResolveObjectValue",
+            "modificationCount": 8,
+            "createdOn": "2022-12-13",
+            "lastUpdateOn": "2023-07-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/open-feature/flagd/core/pkg/service/flag-evaluation",
+        "succeded": true,
+        "duration": "12.238s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveBoolean/happy_path-12",
+            "runs": 21115,
+            "nsPerOp": 93473,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveString/happy_path-12",
+            "runs": 32947,
+            "nsPerOp": 34447,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveFloat/happy_path-12",
+            "runs": 29720,
+            "nsPerOp": 34474,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveInt/happy_path-12",
+            "runs": 32623,
+            "nsPerOp": 36049,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveObject/happy_path-12",
+            "runs": 32551,
+            "nsPerOp": 41902,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveBoolean",
+            "modificationCount": 6,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveString",
+            "modificationCount": 6,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveFloat",
+            "modificationCount": 6,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-07-28"
+          },
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveInt",
+            "modificationCount": 7,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-08-02"
+          },
+          {
+            "name": "BenchmarkFlag_Evaluation_ResolveObject",
+            "modificationCount": 7,
+            "createdOn": "2023-03-22",
+            "lastUpdateOn": "2023-08-02"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "open-feature/flagd",
+    "name": "flagd",
+    "private": false,
+    "html_url": "https://github.com/open-feature/flagd",
+    "description": "A feature flag daemon with a Unix philosophy",
+    "fork": false,
+    "created_at": "2022-05-26T12:05:42Z",
+    "updated_at": "2023-10-16T17:24:47Z",
+    "pushed_at": "2023-10-23T14:55:50Z",
+    "ssh_url": "git@github.com:open-feature/flagd.git",
+    "homepage": "https://openfeature.dev",
+    "stargazers_count": 235,
+    "watchers_count": 235,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": true,
+    "has_discussions": false,
+    "forks": 38,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 23,
+    "topics": [
+      "go",
+      "golang",
+      "openfeature"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 95,
+    "Lines": 16533,
+    "Blank": 1574,
+    "Code": 14325,
+    "Comment": 634,
+    "Bytes": 436414,
+    "Complexity": 1532
+  }
+}

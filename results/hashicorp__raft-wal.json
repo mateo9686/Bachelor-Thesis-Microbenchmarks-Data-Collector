@@ -1,0 +1,365 @@
+{
+  "Name": "hashicorp/raft-wal",
+  "Path": "./repositories/hashicorp__raft-wal",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T09:50:28Z",
+    "benchmarkCount": 23,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 20,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/hashicorp/raft-wal/bench",
+        "succeded": false,
+        "duration": "260.991s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAppend/entrySize=10/batchSize=1/v=WAL-12",
+            "runs": 10000,
+            "nsPerOp": 130029,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=10/batchSize=1/v=Bolt-12",
+            "runs": 15721,
+            "nsPerOp": 116786,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=10/batchSize=10/v=WAL-12",
+            "runs": 6266,
+            "nsPerOp": 2005756,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=10/batchSize=10/v=Bolt-12",
+            "runs": 8493,
+            "nsPerOp": 241455,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=1k/batchSize=1/v=WAL-12",
+            "runs": 2526,
+            "nsPerOp": 4879078,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=1k/batchSize=1/v=Bolt-12",
+            "runs": 1890,
+            "nsPerOp": 547059,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=1k/batchSize=10/v=WAL-12",
+            "runs": 939,
+            "nsPerOp": 2215854,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=1k/batchSize=10/v=Bolt-12",
+            "runs": 2022,
+            "nsPerOp": 919308,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=100k/batchSize=1/v=WAL-12",
+            "runs": 528,
+            "nsPerOp": 2541904,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=100k/batchSize=1/v=Bolt-12",
+            "runs": 795,
+            "nsPerOp": 3303389,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=100k/batchSize=10/v=WAL-12",
+            "runs": 212,
+            "nsPerOp": 8188679,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=100k/batchSize=10/v=Bolt-12",
+            "runs": 150,
+            "nsPerOp": 12686183,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=1m/batchSize=1/v=WAL-12",
+            "runs": 207,
+            "nsPerOp": 10962012,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=1m/batchSize=1/v=Bolt-12",
+            "runs": 100,
+            "nsPerOp": 42586785,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=1m/batchSize=10/v=WAL-12",
+            "runs": 8,
+            "nsPerOp": 227963452,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAppend/entrySize=1m/batchSize=10/v=Bolt-12",
+            "runs": 12,
+            "nsPerOp": 151710689,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetLogs/numLogs=1k/v=WAL-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkGetLogs/numLogs=1k/v=Bolt-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkGetLogs/numLogs=1m/v=WAL-12",
+            "runs": 81180,
+            "nsPerOp": 12926,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetLogs/numLogs=1m/v=Bolt-12",
+            "runs": 104780,
+            "nsPerOp": 14845,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetLogs",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "bench_test.go:147: populateTime=4.882312ms"
+          },
+          {
+            "name": "BenchmarkOSCreateAndPreallocate-12",
+            "runs": 6,
+            "nsPerOp": 200923766,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOSRename-12",
+            "runs": 104834,
+            "nsPerOp": 24772,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkAppend",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkGetLogs",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkGetLogs",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkGetLogs",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkGetLogs",
+            "modificationCount": 3,
+            "createdOn": "2022-11-01",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkOSCreateAndPreallocate",
+            "modificationCount": 1,
+            "createdOn": "2022-11-04",
+            "lastUpdateOn": "2022-11-04"
+          },
+          {
+            "name": "BenchmarkOSRename",
+            "modificationCount": 1,
+            "createdOn": "2022-11-04",
+            "lastUpdateOn": "2022-11-04"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "hashicorp/raft-wal",
+    "name": "raft-wal",
+    "private": false,
+    "html_url": "https://github.com/hashicorp/raft-wal",
+    "description": "experimental raft storage",
+    "fork": false,
+    "created_at": "2020-04-17T12:47:30Z",
+    "updated_at": "2023-10-04T03:57:59Z",
+    "pushed_at": "2023-10-23T16:24:43Z",
+    "ssh_url": "git@github.com:hashicorp/raft-wal.git",
+    "stargazers_count": 58,
+    "watchers_count": 58,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 6,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 4,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mpl-2.0",
+      "name": "Mozilla Public License 2.0",
+      "url": "https://api.github.com/licenses/mpl-2.0",
+      "spdx_id": "MPL-2.0",
+      "node_id": "MDc6TGljZW5zZTE0",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 47,
+    "Lines": 10871,
+    "Blank": 1361,
+    "Code": 7689,
+    "Comment": 1821,
+    "Bytes": 307186,
+    "Complexity": 1298
+  }
+}

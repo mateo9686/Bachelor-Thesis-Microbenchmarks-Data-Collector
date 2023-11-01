@@ -1,0 +1,1565 @@
+{
+  "Name": "smallnest/exp",
+  "Path": "./repositories/smallnest__exp",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-23T19:44:09Z",
+    "benchmarkCount": 113,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 113,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/smallnest/exp/container/heap",
+        "succeded": true,
+        "duration": "6.358s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkExpHeap-12",
+            "runs": 2175,
+            "nsPerOp": 654394,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExpHeapDup-12",
+            "runs": 2529,
+            "nsPerOp": 509099,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStdHeap-12",
+            "runs": 969,
+            "nsPerOp": 1102230,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStdHeapDup-12",
+            "runs": 2805,
+            "nsPerOp": 478869,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkExpHeap",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkExpHeapDup",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkStdHeap",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkStdHeapDup",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/smallnest/exp/container/skiplist",
+        "succeded": true,
+        "duration": "144.195s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoadMostlyHits/*skiplist.DeepCopyMap-12",
+            "runs": 247127080,
+            "nsPerOp": 4.981,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*skiplist.RWMutexMap-12",
+            "runs": 22769431,
+            "nsPerOp": 52.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*skiplist.SyncMap[int,int]-12",
+            "runs": 99230872,
+            "nsPerOp": 15.37,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*skiplist.SkipList[int,int]-12",
+            "runs": 3610756,
+            "nsPerOp": 325.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*skiplist.DeepCopyMap-12",
+            "runs": 337668156,
+            "nsPerOp": 5.616,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*skiplist.RWMutexMap-12",
+            "runs": 50161777,
+            "nsPerOp": 47.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*skiplist.SyncMap[int,int]-12",
+            "runs": 137030131,
+            "nsPerOp": 7.689,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*skiplist.SkipList[int,int]-12",
+            "runs": 546168595,
+            "nsPerOp": 1.968,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*skiplist.RWMutexMap-12",
+            "runs": 2206930,
+            "nsPerOp": 595.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*skiplist.SyncMap[int,int]-12",
+            "runs": 1000000,
+            "nsPerOp": 2094,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*skiplist.SkipList[int,int]-12",
+            "runs": 166262,
+            "nsPerOp": 599126,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*skiplist.DeepCopyMap-12",
+            "runs": 1000000,
+            "nsPerOp": 1358,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*skiplist.RWMutexMap-12",
+            "runs": 20363847,
+            "nsPerOp": 69.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*skiplist.SyncMap[int,int]-12",
+            "runs": 5008081,
+            "nsPerOp": 249,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*skiplist.SkipList[int,int]-12",
+            "runs": 53823241,
+            "nsPerOp": 24.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*skiplist.DeepCopyMap-12",
+            "runs": 742485,
+            "nsPerOp": 3923,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*skiplist.RWMutexMap-12",
+            "runs": 17427998,
+            "nsPerOp": 72.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*skiplist.SyncMap[int,int]-12",
+            "runs": 2651062,
+            "nsPerOp": 500.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*skiplist.SkipList[int,int]-12",
+            "runs": 1000000,
+            "nsPerOp": 1114,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*skiplist.DeepCopyMap-12",
+            "runs": 5364796,
+            "nsPerOp": 294.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*skiplist.RWMutexMap-12",
+            "runs": 33510157,
+            "nsPerOp": 54.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*skiplist.SyncMap[int,int]-12",
+            "runs": 186122616,
+            "nsPerOp": 6.785,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*skiplist.SkipList[int,int]-12",
+            "runs": 725452965,
+            "nsPerOp": 1.584,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/smallnest/exp/sync",
+        "succeded": true,
+        "duration": "183.312s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoadMostlyHits/*sync.DeepCopyMap-12",
+            "runs": 118889590,
+            "nsPerOp": 9.746,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*sync.RWMutexMap-12",
+            "runs": 25163544,
+            "nsPerOp": 49.17,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*sync.SyncMap[int,int]-12",
+            "runs": 58402682,
+            "nsPerOp": 22.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits/*sync.Map[int,int]-12",
+            "runs": 69890553,
+            "nsPerOp": 15.59,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*sync.DeepCopyMap-12",
+            "runs": 162577594,
+            "nsPerOp": 7.177,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*sync.RWMutexMap-12",
+            "runs": 20227737,
+            "nsPerOp": 49.74,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*sync.SyncMap[int,int]-12",
+            "runs": 93202099,
+            "nsPerOp": 11.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses/*sync.Map[int,int]-12",
+            "runs": 199817472,
+            "nsPerOp": 5.735,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced/*sync.RWMutexMap-12",
+            "runs": 2761122,
+            "nsPerOp": 502.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced/*sync.SyncMap[int,int]-12",
+            "runs": 1000000,
+            "nsPerOp": 1375,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced/*sync.Map[int,int]-12",
+            "runs": 3626712,
+            "nsPerOp": 512,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*sync.RWMutexMap-12",
+            "runs": 1878213,
+            "nsPerOp": 1006,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*sync.SyncMap[int,int]-12",
+            "runs": 1000000,
+            "nsPerOp": 1434,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique/*sync.Map[int,int]-12",
+            "runs": 2125316,
+            "nsPerOp": 527.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*sync.DeepCopyMap-12",
+            "runs": 806212917,
+            "nsPerOp": 1.812,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*sync.RWMutexMap-12",
+            "runs": 22525960,
+            "nsPerOp": 54.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*sync.SyncMap[int,int]-12",
+            "runs": 100000000,
+            "nsPerOp": 11.24,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision/*sync.Map[int,int]-12",
+            "runs": 352981968,
+            "nsPerOp": 3.214,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteBalanced/*sync.RWMutexMap-12",
+            "runs": 20363793,
+            "nsPerOp": 49.25,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteBalanced/*sync.SyncMap[int,int]-12",
+            "runs": 130604340,
+            "nsPerOp": 8.447,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteBalanced/*sync.Map[int,int]-12",
+            "runs": 192989630,
+            "nsPerOp": 5.269,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteUnique/*sync.RWMutexMap-12",
+            "runs": 23274033,
+            "nsPerOp": 50.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteUnique/*sync.SyncMap[int,int]-12",
+            "runs": 230088938,
+            "nsPerOp": 8.333,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteUnique/*sync.Map[int,int]-12",
+            "runs": 455730316,
+            "nsPerOp": 2.499,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision/*sync.DeepCopyMap-12",
+            "runs": 4051084,
+            "nsPerOp": 303.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision/*sync.RWMutexMap-12",
+            "runs": 19906036,
+            "nsPerOp": 56.68,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision/*sync.SyncMap[int,int]-12",
+            "runs": 120851116,
+            "nsPerOp": 11.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision/*sync.Map[int,int]-12",
+            "runs": 358621663,
+            "nsPerOp": 5.269,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*sync.DeepCopyMap-12",
+            "runs": 323482,
+            "nsPerOp": 3415,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*sync.RWMutexMap-12",
+            "runs": 19526,
+            "nsPerOp": 61044,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*sync.SyncMap[int,int]-12",
+            "runs": 290109,
+            "nsPerOp": 4722,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRange/*sync.Map[int,int]-12",
+            "runs": 366868,
+            "nsPerOp": 3595,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*sync.DeepCopyMap-12",
+            "runs": 1227134,
+            "nsPerOp": 1421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*sync.RWMutexMap-12",
+            "runs": 17186955,
+            "nsPerOp": 58.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*sync.SyncMap[int,int]-12",
+            "runs": 3117409,
+            "nsPerOp": 660.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc/*sync.Map[int,int]-12",
+            "runs": 3178386,
+            "nsPerOp": 457.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*sync.DeepCopyMap-12",
+            "runs": 2956890,
+            "nsPerOp": 513.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*sync.RWMutexMap-12",
+            "runs": 10908290,
+            "nsPerOp": 146.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*sync.SyncMap[int,int]-12",
+            "runs": 3102250,
+            "nsPerOp": 415.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAdversarialDelete/*sync.Map[int,int]-12",
+            "runs": 4878738,
+            "nsPerOp": 259.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*sync.DeepCopyMap-12",
+            "runs": 7076472,
+            "nsPerOp": 218.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*sync.RWMutexMap-12",
+            "runs": 26222869,
+            "nsPerOp": 45.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*sync.SyncMap[int,int]-12",
+            "runs": 160429246,
+            "nsPerOp": 7.064,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeleteCollision/*sync.Map[int,int]-12",
+            "runs": 411597211,
+            "nsPerOp": 3.197,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapCollision/*sync.DeepCopyMap-12",
+            "runs": 796263,
+            "nsPerOp": 1325,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapCollision/*sync.RWMutexMap-12",
+            "runs": 22357162,
+            "nsPerOp": 67.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapCollision/*sync.SyncMap[int,int]-12",
+            "runs": 5678685,
+            "nsPerOp": 240,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapCollision/*sync.Map[int,int]-12",
+            "runs": 11944936,
+            "nsPerOp": 137.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits/*sync.DeepCopyMap-12",
+            "runs": 10020,
+            "nsPerOp": 150061,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits/*sync.RWMutexMap-12",
+            "runs": 12044815,
+            "nsPerOp": 106.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits/*sync.SyncMap[int,int]-12",
+            "runs": 5580110,
+            "nsPerOp": 515.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits/*sync.Map[int,int]-12",
+            "runs": 28147041,
+            "nsPerOp": 55.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses/*sync.DeepCopyMap-12",
+            "runs": 518820,
+            "nsPerOp": 2875,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses/*sync.RWMutexMap-12",
+            "runs": 5267334,
+            "nsPerOp": 230.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses/*sync.SyncMap[int,int]-12",
+            "runs": 929767,
+            "nsPerOp": 1274,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses/*sync.Map[int,int]-12",
+            "runs": 1698195,
+            "nsPerOp": 671.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision/*sync.DeepCopyMap-12",
+            "runs": 433001242,
+            "nsPerOp": 6.611,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision/*sync.RWMutexMap-12",
+            "runs": 16907166,
+            "nsPerOp": 65.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision/*sync.SyncMap[int,int]-12",
+            "runs": 41900536,
+            "nsPerOp": 32.75,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision/*sync.Map[int,int]-12",
+            "runs": 5800010,
+            "nsPerOp": 242.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey/*sync.DeepCopyMap-12",
+            "runs": 470216494,
+            "nsPerOp": 2.908,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey/*sync.RWMutexMap-12",
+            "runs": 21546375,
+            "nsPerOp": 61.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey/*sync.SyncMap[int,int]-12",
+            "runs": 204839539,
+            "nsPerOp": 5.875,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey/*sync.Map[int,int]-12",
+            "runs": 518899984,
+            "nsPerOp": 2.106,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual/*sync.DeepCopyMap-12",
+            "runs": 508619526,
+            "nsPerOp": 2.205,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual/*sync.RWMutexMap-12",
+            "runs": 18240780,
+            "nsPerOp": 60.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual/*sync.SyncMap[int,int]-12",
+            "runs": 64472246,
+            "nsPerOp": 15.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual/*sync.Map[int,int]-12",
+            "runs": 14772300,
+            "nsPerOp": 130.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyHits/*sync.RWMutexMap-12",
+            "runs": 9330284,
+            "nsPerOp": 199.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyHits/*sync.SyncMap[int,int]-12",
+            "runs": 27329785,
+            "nsPerOp": 41.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyHits/*sync.Map[int,int]-12",
+            "runs": 57192008,
+            "nsPerOp": 114.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses/*sync.DeepCopyMap-12",
+            "runs": 58844312,
+            "nsPerOp": 24.07,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses/*sync.RWMutexMap-12",
+            "runs": 11291352,
+            "nsPerOp": 98.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses/*sync.SyncMap[int,int]-12",
+            "runs": 16135864,
+            "nsPerOp": 144.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses/*sync.Map[int,int]-12",
+            "runs": 124085396,
+            "nsPerOp": 10.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision/*sync.DeepCopyMap-12",
+            "runs": 325452084,
+            "nsPerOp": 3.276,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision/*sync.RWMutexMap-12",
+            "runs": 17462005,
+            "nsPerOp": 71.47,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision/*sync.SyncMap[int,int]-12",
+            "runs": 91954206,
+            "nsPerOp": 14.29,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision/*sync.Map[int,int]-12",
+            "runs": 232689969,
+            "nsPerOp": 7.225,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyHits/*sync.RWMutexMap-12",
+            "runs": 5788645,
+            "nsPerOp": 254.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyHits/*sync.SyncMap[int,int]-12",
+            "runs": 5469724,
+            "nsPerOp": 303.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyHits/*sync.Map[int,int]-12",
+            "runs": 16820827,
+            "nsPerOp": 71.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses/*sync.DeepCopyMap-12",
+            "runs": 128251437,
+            "nsPerOp": 11.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses/*sync.RWMutexMap-12",
+            "runs": 17929645,
+            "nsPerOp": 70.22,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses/*sync.SyncMap[int,int]-12",
+            "runs": 276113262,
+            "nsPerOp": 6.168,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses/*sync.Map[int,int]-12",
+            "runs": 180721262,
+            "nsPerOp": 8.955,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreBalanced",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreUnique",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadOrStoreCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteBalanced",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteBalanced",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteBalanced",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteUnique",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteUnique",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteUnique",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkLoadAndDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkRange",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkRange",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkRange",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkRange",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialAlloc",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialDelete",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialDelete",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialDelete",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkAdversarialDelete",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkSwapMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapNoExistingKey",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapValueNotEqual",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndSwapMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteCollision",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyHits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          },
+          {
+            "name": "BenchmarkCompareAndDeleteMostlyMisses",
+            "modificationCount": 1,
+            "createdOn": "2023-06-12",
+            "lastUpdateOn": "2023-06-12"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "smallnest/exp",
+    "name": "exp",
+    "private": false,
+    "html_url": "https://github.com/smallnest/exp",
+    "description": "Experimental packages not in std and golang.org/exp",
+    "fork": false,
+    "created_at": "2023-06-12T01:56:16Z",
+    "updated_at": "2023-07-30T18:10:18Z",
+    "pushed_at": "2023-08-09T02:22:09Z",
+    "ssh_url": "git@github.com:smallnest/exp.git",
+    "stargazers_count": 26,
+    "watchers_count": 26,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 3,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "collections",
+      "container",
+      "generic",
+      "generics",
+      "go"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 41,
+    "Lines": 7146,
+    "Blank": 1065,
+    "Code": 5226,
+    "Comment": 855,
+    "Bytes": 162070,
+    "Complexity": 1048
+  }
+}

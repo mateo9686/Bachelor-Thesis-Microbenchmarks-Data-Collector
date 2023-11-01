@@ -1,0 +1,676 @@
+{
+  "Name": "dusk-network/dusk-blockchain",
+  "Path": "./repositories/dusk-network__dusk-blockchain",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T18:02:04Z",
+    "benchmarkCount": 42,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 39,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/dusk-network/dusk-blockchain/pkg/core/data/base58",
+        "succeded": true,
+        "duration": "2.948s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEncoding-12",
+            "runs": 334171,
+            "nsPerOp": 3541,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecoding-12",
+            "runs": 541770,
+            "nsPerOp": 2532,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEncoding",
+            "modificationCount": 1,
+            "createdOn": "2020-04-10",
+            "lastUpdateOn": "2020-04-10"
+          },
+          {
+            "name": "BenchmarkDecoding",
+            "modificationCount": 1,
+            "createdOn": "2020-04-10",
+            "lastUpdateOn": "2020-04-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/dusk-network/dusk-blockchain/pkg/core/mempool",
+        "succeded": false,
+        "duration": "67.278s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPut-12",
+            "runs": 1,
+            "nsPerOp": 2246108247,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkContains-12",
+            "runs": 33,
+            "nsPerOp": 72548828,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRangeSort-12",
+            "runs": 1746,
+            "nsPerOp": 865462,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessTx_0-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkProcessTx_10-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkProcessTx_20-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPut",
+            "modificationCount": 5,
+            "createdOn": "2019-12-05",
+            "lastUpdateOn": "2022-01-21"
+          },
+          {
+            "name": "BenchmarkContains",
+            "modificationCount": 8,
+            "createdOn": "2019-12-05",
+            "lastUpdateOn": "2022-05-05"
+          },
+          {
+            "name": "BenchmarkRangeSort",
+            "modificationCount": 6,
+            "createdOn": "2019-12-05",
+            "lastUpdateOn": "2022-01-21"
+          },
+          {
+            "name": "BenchmarkProcessTx_0",
+            "modificationCount": 1,
+            "createdOn": "2021-03-24",
+            "lastUpdateOn": "2021-03-24"
+          },
+          {
+            "name": "BenchmarkProcessTx_10",
+            "modificationCount": 1,
+            "createdOn": "2021-03-24",
+            "lastUpdateOn": "2021-03-24"
+          },
+          {
+            "name": "BenchmarkProcessTx_20",
+            "modificationCount": 1,
+            "createdOn": "2021-03-24",
+            "lastUpdateOn": "2021-03-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/dusk-network/dusk-blockchain/pkg/p2p/peer",
+        "succeded": true,
+        "duration": "2.804s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWriter-12",
+            "runs": 230281,
+            "nsPerOp": 4666,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWriter",
+            "modificationCount": 17,
+            "createdOn": "2019-05-20",
+            "lastUpdateOn": "2021-01-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/dusk-network/dusk-blockchain/pkg/p2p/peer/dupemap",
+        "succeded": true,
+        "duration": "9.441s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHasAnywhere-12",
+            "runs": 1,
+            "nsPerOp": 8243381068,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHasAnywhere",
+            "modificationCount": 4,
+            "createdOn": "2019-04-10",
+            "lastUpdateOn": "2021-03-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/dusk-network/dusk-blockchain/pkg/p2p/wire/checksum",
+        "succeded": true,
+        "duration": "5.570s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSHA3256-12",
+            "runs": 533778,
+            "nsPerOp": 2931,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBlake2b-12",
+            "runs": 1756657,
+            "nsPerOp": 670.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSHA3256",
+            "modificationCount": 1,
+            "createdOn": "2019-12-09",
+            "lastUpdateOn": "2019-12-09"
+          },
+          {
+            "name": "BenchmarkBlake2b",
+            "modificationCount": 2,
+            "createdOn": "2019-12-09",
+            "lastUpdateOn": "2020-03-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/dusk-network/dusk-blockchain/pkg/p2p/wire/encoding",
+        "succeded": true,
+        "duration": "56.741s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadUint8Interface-12",
+            "runs": 3142017,
+            "nsPerOp": 330.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadUint8NoInterface-12",
+            "runs": 100000000,
+            "nsPerOp": 23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteUint8Interface-12",
+            "runs": 6166604,
+            "nsPerOp": 269.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteUint8NoInterface-12",
+            "runs": 20476122,
+            "nsPerOp": 275.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadUint16Interface-12",
+            "runs": 8937116,
+            "nsPerOp": 140.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadUint16NoInterface-12",
+            "runs": 96287382,
+            "nsPerOp": 14.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteUint16Interface-12",
+            "runs": 7294579,
+            "nsPerOp": 178.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteUint16NoInterface-12",
+            "runs": 14894402,
+            "nsPerOp": 76.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadUint32Interface-12",
+            "runs": 10708210,
+            "nsPerOp": 105.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadUint32NoInterface-12",
+            "runs": 100000000,
+            "nsPerOp": 12.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteUint32Interface-12",
+            "runs": 7812072,
+            "nsPerOp": 527.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteUint32NoInterface-12",
+            "runs": 6529750,
+            "nsPerOp": 268.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadUint64Interface-12",
+            "runs": 3554376,
+            "nsPerOp": 522.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadUint64NoInterface-12",
+            "runs": 63550430,
+            "nsPerOp": 16.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteUint64Interface-12",
+            "runs": 2698822,
+            "nsPerOp": 516.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteUint64NoInterface-12",
+            "runs": 8775475,
+            "nsPerOp": 144.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadBoolInterface-12",
+            "runs": 5770063,
+            "nsPerOp": 265.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadBoolNoInterface-12",
+            "runs": 75666273,
+            "nsPerOp": 22.52,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteBoolInterface-12",
+            "runs": 3029202,
+            "nsPerOp": 411.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteBoolNoInterface-12",
+            "runs": 5207157,
+            "nsPerOp": 192.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead256Interface-12",
+            "runs": 3261042,
+            "nsPerOp": 535.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead256NoInterface-12",
+            "runs": 60834528,
+            "nsPerOp": 32.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite256Interface-12",
+            "runs": 3563124,
+            "nsPerOp": 347,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite256NoInterface-12",
+            "runs": 5372770,
+            "nsPerOp": 205.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead512Interface-12",
+            "runs": 2458084,
+            "nsPerOp": 473.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead512NoInterface-12",
+            "runs": 99273244,
+            "nsPerOp": 16.69,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite512Interface-12",
+            "runs": 3278767,
+            "nsPerOp": 308.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite512NoInterface-12",
+            "runs": 7300194,
+            "nsPerOp": 267.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadUint8Interface",
+            "modificationCount": 1,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-13"
+          },
+          {
+            "name": "BenchmarkReadUint8NoInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-23"
+          },
+          {
+            "name": "BenchmarkWriteUint8Interface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkWriteUint8NoInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkReadUint16Interface",
+            "modificationCount": 1,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-13"
+          },
+          {
+            "name": "BenchmarkReadUint16NoInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-23"
+          },
+          {
+            "name": "BenchmarkWriteUint16Interface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkWriteUint16NoInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkReadUint32Interface",
+            "modificationCount": 1,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-13"
+          },
+          {
+            "name": "BenchmarkReadUint32NoInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-23"
+          },
+          {
+            "name": "BenchmarkWriteUint32Interface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkWriteUint32NoInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkReadUint64Interface",
+            "modificationCount": 1,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-13"
+          },
+          {
+            "name": "BenchmarkReadUint64NoInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-23"
+          },
+          {
+            "name": "BenchmarkWriteUint64Interface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkWriteUint64NoInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkReadBoolInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkReadBoolNoInterface",
+            "modificationCount": 3,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkWriteBoolInterface",
+            "modificationCount": 1,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-13"
+          },
+          {
+            "name": "BenchmarkWriteBoolNoInterface",
+            "modificationCount": 1,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2019-09-13"
+          },
+          {
+            "name": "BenchmarkRead256Interface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkRead256NoInterface",
+            "modificationCount": 3,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkWrite256Interface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkWrite256NoInterface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkRead512Interface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkRead512NoInterface",
+            "modificationCount": 3,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkWrite512Interface",
+            "modificationCount": 2,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkWrite512NoInterface",
+            "modificationCount": 4,
+            "createdOn": "2019-09-13",
+            "lastUpdateOn": "2023-06-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/dusk-network/dusk-blockchain/pkg/util/nativeutils/sortedset",
+        "succeded": true,
+        "duration": "84.273s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkClusterInsert-12",
+            "runs": 114984,
+            "nsPerOp": 10317,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert-12",
+            "runs": 375219,
+            "nsPerOp": 104797,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkClusterInsert",
+            "modificationCount": 2,
+            "createdOn": "2019-12-09",
+            "lastUpdateOn": "2021-01-22"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 3,
+            "createdOn": "2019-12-07",
+            "lastUpdateOn": "2021-06-30"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "dusk-network/dusk-blockchain",
+    "name": "dusk-blockchain",
+    "private": false,
+    "html_url": "https://github.com/dusk-network/dusk-blockchain",
+    "description": "Reference implementation of the DUSK Network node, written in Golang",
+    "fork": false,
+    "created_at": "2019-07-03T18:19:15Z",
+    "updated_at": "2023-09-07T19:38:19Z",
+    "pushed_at": "2023-09-11T17:25:31Z",
+    "ssh_url": "git@github.com:dusk-network/dusk-blockchain.git",
+    "stargazers_count": 97,
+    "watchers_count": 97,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 40,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 44,
+    "topics": [
+      "blockchain",
+      "cryptocurrency",
+      "golang"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 318,
+    "Lines": 44192,
+    "Blank": 8389,
+    "Code": 28836,
+    "Comment": 6967,
+    "Bytes": 1162839,
+    "Complexity": 5199
+  }
+}

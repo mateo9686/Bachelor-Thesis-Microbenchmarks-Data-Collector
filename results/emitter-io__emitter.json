@@ -1,0 +1,854 @@
+{
+  "Name": "emitter-io/emitter",
+  "Path": "./repositories/emitter-io__emitter",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T21:53:21Z",
+    "benchmarkCount": 53,
+    "benchmarkSuiteCount": 10,
+    "successfulBenchmarkCount": 53,
+    "successfulBenchmarkSuitesCount": 10,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/broker",
+        "succeded": true,
+        "duration": "279.091s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSerial-12",
+            "runs": 120,
+            "nsPerOp": 16617237,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParallel-12",
+            "runs": 438018,
+            "nsPerOp": 19244,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFanOut/8-Clients-12",
+            "runs": 303512,
+            "nsPerOp": 67397,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFanOut/16-Clients-12",
+            "runs": 311644,
+            "nsPerOp": 122609,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFanOut/32-Clients-12",
+            "runs": 339964,
+            "nsPerOp": 385048,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFanOut/64-Clients-12",
+            "runs": 174708,
+            "nsPerOp": 391439,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFanOut/128-Clients-12",
+            "runs": 96999,
+            "nsPerOp": 45923,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSerial",
+            "modificationCount": 14,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkParallel",
+            "modificationCount": 14,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkFanOut",
+            "modificationCount": 14,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkFanOut",
+            "modificationCount": 14,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkFanOut",
+            "modificationCount": 14,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkFanOut",
+            "modificationCount": 14,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkFanOut",
+            "modificationCount": 14,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2021-06-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/event",
+        "succeded": true,
+        "duration": "6.317s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Subscription/encode-12",
+            "runs": 2471562,
+            "nsPerOp": 516.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Subscription/decode-12",
+            "runs": 2680726,
+            "nsPerOp": 511.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_State/contains-12",
+            "runs": 183937,
+            "nsPerOp": 6470,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Subscription",
+            "modificationCount": 2,
+            "createdOn": "2020-05-23",
+            "lastUpdateOn": "2020-05-30"
+          },
+          {
+            "name": "Benchmark_Subscription",
+            "modificationCount": 2,
+            "createdOn": "2020-05-23",
+            "lastUpdateOn": "2020-05-30"
+          },
+          {
+            "name": "Benchmark_State",
+            "modificationCount": 4,
+            "createdOn": "2020-05-23",
+            "lastUpdateOn": "2020-05-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/event/crdt",
+        "succeded": true,
+        "duration": "1.347s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Time/new-12",
+            "runs": 16211434,
+            "nsPerOp": 74.03,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Time",
+            "modificationCount": 1,
+            "createdOn": "2020-05-30",
+            "lastUpdateOn": "2020-05-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/message",
+        "succeded": true,
+        "duration": "38.494s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkID_New-12",
+            "runs": 343207,
+            "nsPerOp": 3730,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkID_Match-12",
+            "runs": 77044431,
+            "nsPerOp": 15.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodec/Encode-12",
+            "runs": 1000000,
+            "nsPerOp": 1019,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCodec/Decode-12",
+            "runs": 1996543,
+            "nsPerOp": 560.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEncodeWithSnappy-12",
+            "runs": 5424,
+            "nsPerOp": 188797,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_DecodeFrame-12",
+            "runs": 3364,
+            "nsPerOp": 352406,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSsidEncode-12",
+            "runs": 8111403,
+            "nsPerOp": 215.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReset-12",
+            "runs": 1804,
+            "nsPerOp": 776380,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieSubscribe-12",
+            "runs": 4469390,
+            "nsPerOp": 258.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieUnsubscribe-12",
+            "runs": 27102099,
+            "nsPerOp": 48.34,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTrieLargeN-12",
+            "runs": 1653,
+            "nsPerOp": 764582,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieLookup-12",
+            "runs": 87094,
+            "nsPerOp": 18304,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieSubscribeCold-12",
+            "runs": 6642018,
+            "nsPerOp": 241.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieUnsubscribeCold-12",
+            "runs": 30758644,
+            "nsPerOp": 35.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieLookupCold-12",
+            "runs": 582591,
+            "nsPerOp": 2078,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieSubscribeMqtt-12",
+            "runs": 5816791,
+            "nsPerOp": 182.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieUnsubscribeMqtt-12",
+            "runs": 34475521,
+            "nsPerOp": 36.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTrieLargeNMqtt-12",
+            "runs": 39627,
+            "nsPerOp": 36069,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieLookupMqtt-12",
+            "runs": 463545,
+            "nsPerOp": 2634,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieSubscribeColdMqtt-12",
+            "runs": 6259192,
+            "nsPerOp": 213.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieUnsubscribeColdMqtt-12",
+            "runs": 54791310,
+            "nsPerOp": 19.93,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieLookupColdMqtt-12",
+            "runs": 1000000,
+            "nsPerOp": 1408,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkID_New",
+            "modificationCount": 2,
+            "createdOn": "2018-06-01",
+            "lastUpdateOn": "2018-06-01"
+          },
+          {
+            "name": "BenchmarkID_Match",
+            "modificationCount": 2,
+            "createdOn": "2018-06-01",
+            "lastUpdateOn": "2018-06-01"
+          },
+          {
+            "name": "BenchmarkCodec",
+            "modificationCount": 19,
+            "createdOn": "2017-11-09",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkCodec",
+            "modificationCount": 19,
+            "createdOn": "2017-11-09",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkEncodeWithSnappy",
+            "modificationCount": 19,
+            "createdOn": "2017-11-09",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "Benchmark_DecodeFrame",
+            "modificationCount": 19,
+            "createdOn": "2017-11-09",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkSsidEncode",
+            "modificationCount": 2,
+            "createdOn": "2017-09-02",
+            "lastUpdateOn": "2019-01-27"
+          },
+          {
+            "name": "BenchmarkReset",
+            "modificationCount": 1,
+            "createdOn": "2019-03-10",
+            "lastUpdateOn": "2019-03-10"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieSubscribe",
+            "modificationCount": 5,
+            "createdOn": "2017-07-09",
+            "lastUpdateOn": "2017-08-27"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieUnsubscribe",
+            "modificationCount": 7,
+            "createdOn": "2017-07-09",
+            "lastUpdateOn": "2019-03-10"
+          },
+          {
+            "name": "BenchmarkTrieLargeN",
+            "modificationCount": 4,
+            "createdOn": "2019-03-02",
+            "lastUpdateOn": "2019-03-10"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieLookup",
+            "modificationCount": 7,
+            "createdOn": "2017-07-09",
+            "lastUpdateOn": "2019-03-02"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieSubscribeCold",
+            "modificationCount": 5,
+            "createdOn": "2017-07-09",
+            "lastUpdateOn": "2017-08-27"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieUnsubscribeCold",
+            "modificationCount": 6,
+            "createdOn": "2017-07-09",
+            "lastUpdateOn": "2017-08-27"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieLookupCold",
+            "modificationCount": 6,
+            "createdOn": "2017-07-09",
+            "lastUpdateOn": "2019-03-02"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieSubscribeMqtt",
+            "modificationCount": 1,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2021-02-14"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieUnsubscribeMqtt",
+            "modificationCount": 1,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2021-02-14"
+          },
+          {
+            "name": "BenchmarkTrieLargeNMqtt",
+            "modificationCount": 1,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2021-02-14"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieLookupMqtt",
+            "modificationCount": 1,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2021-02-14"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieSubscribeColdMqtt",
+            "modificationCount": 1,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2021-02-14"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieUnsubscribeColdMqtt",
+            "modificationCount": 1,
+            "createdOn": "2021-02-14",
+            "lastUpdateOn": "2021-02-14"
+          },
+          {
+            "name": "BenchmarkSubscriptionTrieLookupColdMqtt",
+            "modificationCount": 2,
+            "createdOn": "2017-07-09",
+            "lastUpdateOn": "2021-02-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/network/mqtt",
+        "succeded": true,
+        "duration": "6.833s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPublishEncode-12",
+            "runs": 18287602,
+            "nsPerOp": 97.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPublishDecode-12",
+            "runs": 1000000,
+            "nsPerOp": 1843,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConnectDecode-12",
+            "runs": 1912435,
+            "nsPerOp": 640.2,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPublishEncode",
+            "modificationCount": 1,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2019-06-01"
+          },
+          {
+            "name": "BenchmarkPublishDecode",
+            "modificationCount": 1,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2019-06-01"
+          },
+          {
+            "name": "BenchmarkConnectDecode",
+            "modificationCount": 1,
+            "createdOn": "2019-06-01",
+            "lastUpdateOn": "2019-06-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/provider/storage",
+        "succeded": true,
+        "duration": "94.575s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStore-12",
+            "runs": 1,
+            "nsPerOp": 10834746107,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreParallel-12",
+            "runs": 1,
+            "nsPerOp": 10898920881,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQuery-12",
+            "runs": 1,
+            "nsPerOp": 36488696688,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryParallel-12",
+            "runs": 1,
+            "nsPerOp": 35719935982,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStore",
+            "modificationCount": 2,
+            "createdOn": "2018-05-31",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkStoreParallel",
+            "modificationCount": 1,
+            "createdOn": "2018-05-31",
+            "lastUpdateOn": "2018-05-31"
+          },
+          {
+            "name": "BenchmarkQuery",
+            "modificationCount": 2,
+            "createdOn": "2018-05-31",
+            "lastUpdateOn": "2021-06-26"
+          },
+          {
+            "name": "BenchmarkQueryParallel",
+            "modificationCount": 1,
+            "createdOn": "2018-05-31",
+            "lastUpdateOn": "2018-05-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/security",
+        "succeded": true,
+        "duration": "7.003s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseChannelWithOptions-12",
+            "runs": 1328656,
+            "nsPerOp": 978.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseChannelStatic-12",
+            "runs": 1987790,
+            "nsPerOp": 707.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidateChannel-12",
+            "runs": 4323781,
+            "nsPerOp": 362.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseChannelWithOptions",
+            "modificationCount": 2,
+            "createdOn": "2017-07-09",
+            "lastUpdateOn": "2019-06-05"
+          },
+          {
+            "name": "BenchmarkParseChannelStatic",
+            "modificationCount": 2,
+            "createdOn": "2017-07-09",
+            "lastUpdateOn": "2019-06-05"
+          },
+          {
+            "name": "BenchmarkValidateChannel",
+            "modificationCount": 1,
+            "createdOn": "2019-06-05",
+            "lastUpdateOn": "2019-06-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/security/cipher",
+        "succeded": true,
+        "duration": "14.826s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBase64-12",
+            "runs": 9565708,
+            "nsPerOp": 171.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Salsa_EncryptKey-12",
+            "runs": 1000000,
+            "nsPerOp": 1679,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Salsa_DecryptKey-12",
+            "runs": 1262193,
+            "nsPerOp": 990.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Shuffled_EncryptKey-12",
+            "runs": 662902,
+            "nsPerOp": 1926,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Shuffled_DecryptKey-12",
+            "runs": 1000000,
+            "nsPerOp": 2149,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Xtea_EncryptKey-12",
+            "runs": 1000000,
+            "nsPerOp": 1535,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Xtea_DecryptKey-12",
+            "runs": 816775,
+            "nsPerOp": 2150,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBase64",
+            "modificationCount": 1,
+            "createdOn": "2019-05-27",
+            "lastUpdateOn": "2019-05-27"
+          },
+          {
+            "name": "Benchmark_Salsa_EncryptKey",
+            "modificationCount": 1,
+            "createdOn": "2019-05-27",
+            "lastUpdateOn": "2019-05-27"
+          },
+          {
+            "name": "Benchmark_Salsa_DecryptKey",
+            "modificationCount": 1,
+            "createdOn": "2019-05-27",
+            "lastUpdateOn": "2019-05-27"
+          },
+          {
+            "name": "Benchmark_Shuffled_EncryptKey",
+            "modificationCount": 1,
+            "createdOn": "2020-05-01",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "Benchmark_Shuffled_DecryptKey",
+            "modificationCount": 1,
+            "createdOn": "2020-05-01",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "Benchmark_Xtea_EncryptKey",
+            "modificationCount": 1,
+            "createdOn": "2019-05-27",
+            "lastUpdateOn": "2019-05-27"
+          },
+          {
+            "name": "Benchmark_Xtea_DecryptKey",
+            "modificationCount": 1,
+            "createdOn": "2019-05-27",
+            "lastUpdateOn": "2019-05-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/security/hash",
+        "succeded": true,
+        "duration": "3.079s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkOf-12",
+            "runs": 8301194,
+            "nsPerOp": 176.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOfString-12",
+            "runs": 17330066,
+            "nsPerOp": 59.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkOf",
+            "modificationCount": 3,
+            "createdOn": "2018-05-20",
+            "lastUpdateOn": "2020-05-01"
+          },
+          {
+            "name": "BenchmarkOfString",
+            "modificationCount": 1,
+            "createdOn": "2019-03-10",
+            "lastUpdateOn": "2019-03-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/emitter-io/emitter/internal/service/cluster",
+        "succeded": true,
+        "duration": "2.787s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_ProcessQueue-12",
+            "runs": 178,
+            "nsPerOp": 7139425,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_ProcessQueue",
+            "modificationCount": 2,
+            "createdOn": "2019-05-25",
+            "lastUpdateOn": "2019-05-25"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "emitter-io/emitter",
+    "name": "emitter",
+    "private": false,
+    "html_url": "https://github.com/emitter-io/emitter",
+    "description": "High performance, distributed and low latency publish-subscribe platform.",
+    "fork": false,
+    "created_at": "2016-10-29T08:52:21Z",
+    "updated_at": "2023-10-23T11:01:03Z",
+    "pushed_at": "2023-09-28T18:52:23Z",
+    "ssh_url": "git@github.com:emitter-io/emitter.git",
+    "homepage": "https://emitter.io",
+    "stargazers_count": 3646,
+    "watchers_count": 3646,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 345,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 13,
+    "topics": [
+      "emitter",
+      "go",
+      "golang",
+      "high-performance",
+      "low-latency",
+      "mqtt",
+      "mqtt-broker",
+      "networking",
+      "pubsub",
+      "realtime"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "spdx_id": "AGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTE=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 161,
+    "Lines": 21910,
+    "Blank": 3237,
+    "Code": 14883,
+    "Comment": 3790,
+    "Bytes": 637078,
+    "Complexity": 1737
+  }
+}

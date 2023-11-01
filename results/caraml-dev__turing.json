@@ -1,0 +1,298 @@
+{
+  "Name": "caraml-dev/turing",
+  "Path": "./repositories/caraml-dev__turing",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T13:20:39Z",
+    "benchmarkCount": 16,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 15,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/caraml-dev/turing/engines/router/missionctl",
+        "succeded": true,
+        "duration": "17.344s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMissionControlEnrichSmallPayload-12",
+            "runs": 4068,
+            "nsPerOp": 331489,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMissionControlEnrichMediumPayload-12",
+            "runs": 2270,
+            "nsPerOp": 733587,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMissionControlEnrichLargePayload-12",
+            "runs": 247,
+            "nsPerOp": 4226661,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMissionControlDefaultRouteSmallPayload-12",
+            "runs": 1496,
+            "nsPerOp": 703472,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMissionControlEnsemblingRouteSmallPayload-12",
+            "runs": 1266,
+            "nsPerOp": 922444,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMissionControlDefaultRouteLargePayload-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "{\"level\":\"warn\",\"ts\":1698153860.3308792,\"caller\":\"fiberapi/interceptors.go:101\",\"msg\":\"Route"
+          },
+          {
+            "name": "BenchmarkMissionControlEnsemblingRouteLargePayload-12",
+            "runs": 1315,
+            "nsPerOp": 934850,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMissionControlEnrichSmallPayload",
+            "modificationCount": 1,
+            "createdOn": "2020-10-13",
+            "lastUpdateOn": "2020-10-13"
+          },
+          {
+            "name": "BenchmarkMissionControlEnrichMediumPayload",
+            "modificationCount": 1,
+            "createdOn": "2020-10-13",
+            "lastUpdateOn": "2020-10-13"
+          },
+          {
+            "name": "BenchmarkMissionControlEnrichLargePayload",
+            "modificationCount": 1,
+            "createdOn": "2020-10-13",
+            "lastUpdateOn": "2020-10-13"
+          },
+          {
+            "name": "BenchmarkMissionControlDefaultRouteSmallPayload",
+            "modificationCount": 1,
+            "createdOn": "2020-10-13",
+            "lastUpdateOn": "2020-10-13"
+          },
+          {
+            "name": "BenchmarkMissionControlEnsemblingRouteSmallPayload",
+            "modificationCount": 1,
+            "createdOn": "2020-10-13",
+            "lastUpdateOn": "2020-10-13"
+          },
+          {
+            "name": "BenchmarkMissionControlDefaultRouteLargePayload",
+            "modificationCount": 1,
+            "createdOn": "2020-10-13",
+            "lastUpdateOn": "2020-10-13"
+          },
+          {
+            "name": "BenchmarkMissionControlEnsemblingRouteLargePayload",
+            "modificationCount": 2,
+            "createdOn": "2020-10-13",
+            "lastUpdateOn": "2020-10-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/caraml-dev/turing/engines/router/missionctl/fiberapi",
+        "succeded": true,
+        "duration": "2.289s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTrafficSplittingStrategy_SelectRoute-12",
+            "runs": 517467,
+            "nsPerOp": 4130,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTrafficSplittingStrategy_SelectRoute",
+            "modificationCount": 2,
+            "createdOn": "2022-10-31",
+            "lastUpdateOn": "2022-11-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/caraml-dev/turing/engines/router/missionctl/internal/benchmark",
+        "succeded": true,
+        "duration": "12.882s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Upi_Grpc_Direct_Small-12",
+            "runs": 2682,
+            "nsPerOp": 510998,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Upi_Grpc_Direct_Large-12",
+            "runs": 69,
+            "nsPerOp": 18652612,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Upi_Grpc_Turing_Small-12",
+            "runs": 471,
+            "nsPerOp": 2135242,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Upi_Grpc_Turing_Large-12",
+            "runs": 24,
+            "nsPerOp": 62283747,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Upi_Http_Direct_Small-12",
+            "runs": 694,
+            "nsPerOp": 1864639,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Upi_Http_Direct_Large-12",
+            "runs": 21,
+            "nsPerOp": 50833304,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Upi_Http_Turing_Small-12",
+            "runs": 519,
+            "nsPerOp": 2802579,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_Upi_Http_Turing_Large-12",
+            "runs": 24,
+            "nsPerOp": 44714450,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Upi_Grpc_Direct_Small",
+            "modificationCount": 1,
+            "createdOn": "2022-10-31",
+            "lastUpdateOn": "2022-10-31"
+          },
+          {
+            "name": "Benchmark_Upi_Grpc_Direct_Large",
+            "modificationCount": 1,
+            "createdOn": "2022-10-31",
+            "lastUpdateOn": "2022-10-31"
+          },
+          {
+            "name": "Benchmark_Upi_Grpc_Turing_Small",
+            "modificationCount": 1,
+            "createdOn": "2022-10-31",
+            "lastUpdateOn": "2022-10-31"
+          },
+          {
+            "name": "Benchmark_Upi_Grpc_Turing_Large",
+            "modificationCount": 1,
+            "createdOn": "2022-10-31",
+            "lastUpdateOn": "2022-10-31"
+          },
+          {
+            "name": "Benchmark_Upi_Http_Direct_Small",
+            "modificationCount": 1,
+            "createdOn": "2022-10-31",
+            "lastUpdateOn": "2022-10-31"
+          },
+          {
+            "name": "Benchmark_Upi_Http_Direct_Large",
+            "modificationCount": 1,
+            "createdOn": "2022-10-31",
+            "lastUpdateOn": "2022-10-31"
+          },
+          {
+            "name": "Benchmark_Upi_Http_Turing_Small",
+            "modificationCount": 1,
+            "createdOn": "2022-10-31",
+            "lastUpdateOn": "2022-10-31"
+          },
+          {
+            "name": "Benchmark_Upi_Http_Turing_Large",
+            "modificationCount": 1,
+            "createdOn": "2022-10-31",
+            "lastUpdateOn": "2022-10-31"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "caraml-dev/turing",
+    "name": "turing",
+    "private": false,
+    "html_url": "https://github.com/caraml-dev/turing",
+    "description": "Fast, scalable and extensible system to deploy and evaluate ML experiments in production",
+    "fork": false,
+    "created_at": "2020-09-15T04:17:21Z",
+    "updated_at": "2023-06-04T17:44:11Z",
+    "pushed_at": "2023-10-20T03:10:48Z",
+    "ssh_url": "git@github.com:caraml-dev/turing.git",
+    "stargazers_count": 68,
+    "watchers_count": 68,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 23,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 6,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 348,
+    "Lines": 63847,
+    "Blank": 6333,
+    "Code": 53429,
+    "Comment": 4085,
+    "Bytes": 1876896,
+    "Complexity": 5090
+  }
+}

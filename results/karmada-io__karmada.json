@@ -1,0 +1,255 @@
+{
+  "Name": "karmada-io/karmada",
+  "Path": "./repositories/karmada-io__karmada",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T21:49:48Z",
+    "benchmarkCount": 12,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 10,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/karmada-io/karmada/pkg/detector",
+        "succeded": true,
+        "duration": "8.816s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEventFilterNoSkipNameSpaces-12",
+            "runs": 957276,
+            "nsPerOp": 1281,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventFilterNoMatchSkipNameSpaces-12",
+            "runs": 942606,
+            "nsPerOp": 1593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventFilterNoWildcards-12",
+            "runs": 806670,
+            "nsPerOp": 1420,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventFilterPrefixMatchSkipNameSpaces-12",
+            "runs": 833104,
+            "nsPerOp": 1452,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventFilterSuffixMatchSkipNameSpaces-12",
+            "runs": 587872,
+            "nsPerOp": 2472,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEventFilterMultiSkipNameSpaces-12",
+            "runs": 447651,
+            "nsPerOp": 2440,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEventFilterNoSkipNameSpaces",
+            "modificationCount": 1,
+            "createdOn": "2023-04-07",
+            "lastUpdateOn": "2023-04-07"
+          },
+          {
+            "name": "BenchmarkEventFilterNoMatchSkipNameSpaces",
+            "modificationCount": 1,
+            "createdOn": "2023-04-07",
+            "lastUpdateOn": "2023-04-07"
+          },
+          {
+            "name": "BenchmarkEventFilterNoWildcards",
+            "modificationCount": 1,
+            "createdOn": "2023-04-07",
+            "lastUpdateOn": "2023-04-07"
+          },
+          {
+            "name": "BenchmarkEventFilterPrefixMatchSkipNameSpaces",
+            "modificationCount": 1,
+            "createdOn": "2023-04-07",
+            "lastUpdateOn": "2023-04-07"
+          },
+          {
+            "name": "BenchmarkEventFilterSuffixMatchSkipNameSpaces",
+            "modificationCount": 1,
+            "createdOn": "2023-04-07",
+            "lastUpdateOn": "2023-04-07"
+          },
+          {
+            "name": "BenchmarkEventFilterMultiSkipNameSpaces",
+            "modificationCount": 1,
+            "createdOn": "2023-04-07",
+            "lastUpdateOn": "2023-04-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/karmada-io/karmada/pkg/estimator/server",
+        "succeded": true,
+        "duration": "40.111s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAccurateSchedulerEstimatorServer_MaxAvailableReplicas/500_nodes_and_10,000_pods_without_affinity_and_tolerations-12",
+            "runs": 852,
+            "nsPerOp": 1388740,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAccurateSchedulerEstimatorServer_MaxAvailableReplicas/5000_nodes_and_100,000_pods_without_affinity_and_tolerations-12",
+            "runs": 100,
+            "nsPerOp": 11243342,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAccurateSchedulerEstimatorServer_MaxAvailableReplicas/5000_nodes_and_100,000_pods_with_taint_and_tolerations-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "I1026"
+          },
+          {
+            "name": "BenchmarkAccurateSchedulerEstimatorServer_MaxAvailableReplicas/5000_nodes_and_100,000_pods_with_node_affinity_and_tolerations-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "I1026"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAccurateSchedulerEstimatorServer_MaxAvailableReplicas",
+            "modificationCount": 2,
+            "createdOn": "2022-03-30",
+            "lastUpdateOn": "2022-10-30"
+          },
+          {
+            "name": "BenchmarkAccurateSchedulerEstimatorServer_MaxAvailableReplicas",
+            "modificationCount": 2,
+            "createdOn": "2022-03-30",
+            "lastUpdateOn": "2022-10-30"
+          },
+          {
+            "name": "BenchmarkAccurateSchedulerEstimatorServer_MaxAvailableReplicas",
+            "modificationCount": 2,
+            "createdOn": "2022-03-30",
+            "lastUpdateOn": "2022-10-30"
+          },
+          {
+            "name": "BenchmarkAccurateSchedulerEstimatorServer_MaxAvailableReplicas",
+            "modificationCount": 2,
+            "createdOn": "2022-03-30",
+            "lastUpdateOn": "2022-10-30"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/karmada-io/karmada/pkg/util/restmapper",
+        "succeded": true,
+        "duration": "4.189s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetGroupVersionResourceWithoutCache-12",
+            "runs": 19574,
+            "nsPerOp": 60383,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetGroupVersionResourceWithCache-12",
+            "runs": 15717,
+            "nsPerOp": 92808,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetGroupVersionResourceWithoutCache",
+            "modificationCount": 2,
+            "createdOn": "2022-07-15",
+            "lastUpdateOn": "2023-07-19"
+          },
+          {
+            "name": "BenchmarkGetGroupVersionResourceWithCache",
+            "modificationCount": 2,
+            "createdOn": "2022-07-15",
+            "lastUpdateOn": "2023-07-19"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "karmada-io/karmada",
+    "name": "karmada",
+    "private": false,
+    "html_url": "https://github.com/karmada-io/karmada",
+    "description": "Open, Multi-Cloud, Multi-Cluster Kubernetes Orchestration",
+    "fork": false,
+    "created_at": "2020-11-10T11:35:54Z",
+    "updated_at": "2023-10-23T11:08:48Z",
+    "pushed_at": "2023-10-23T17:13:43Z",
+    "ssh_url": "git@github.com:karmada-io/karmada.git",
+    "homepage": "https://karmada.io",
+    "stargazers_count": 3578,
+    "watchers_count": 3578,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 748,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 343,
+    "topics": [
+      "cloud-computing",
+      "cloud-native",
+      "containers",
+      "k8s",
+      "kubernetes",
+      "multi-cluster",
+      "multicloud"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 8046,
+    "Lines": 2322970,
+    "Blank": 186185,
+    "Code": 1814512,
+    "Comment": 322273,
+    "Bytes": 78485524,
+    "Complexity": 230776
+  }
+}

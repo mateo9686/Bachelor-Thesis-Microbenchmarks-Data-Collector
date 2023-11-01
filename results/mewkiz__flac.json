@@ -1,0 +1,320 @@
+{
+  "Name": "mewkiz/flac",
+  "Path": "./repositories/mewkiz__flac",
+  "GoVersion": "1.14",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T08:50:13Z",
+    "benchmarkCount": 17,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 15,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/mewkiz/flac/frame",
+        "succeded": false,
+        "duration": "0.004s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFrameParse",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "frame_test.go:138: open ../testdata/benchmark/151185.flac: no such file or directory"
+          },
+          {
+            "name": "BenchmarkFrameHash",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "frame_test.go:163: open ../testdata/benchmark/151185.flac: no such file or directory"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFrameParse",
+            "modificationCount": 2,
+            "createdOn": "2016-02-11",
+            "lastUpdateOn": "2016-02-11"
+          },
+          {
+            "name": "BenchmarkFrameHash",
+            "modificationCount": 2,
+            "createdOn": "2016-02-11",
+            "lastUpdateOn": "2016-02-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mewkiz/flac/internal/bits",
+        "succeded": true,
+        "duration": "3.969s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadAlign1-12",
+            "runs": 51609,
+            "nsPerOp": 21126,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadAlign32-12",
+            "runs": 68475,
+            "nsPerOp": 15681,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadAlign64-12",
+            "runs": 143443,
+            "nsPerOp": 9052,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadAlign1",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkReadAlign32",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkReadAlign64",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mewkiz/flac/internal/hashutil/crc16",
+        "succeded": true,
+        "duration": "9.413s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewIBM-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3143,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc16_1K-12",
+            "runs": 441895,
+            "nsPerOp": 3015,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc16_2K-12",
+            "runs": 220785,
+            "nsPerOp": 5242,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc16_4K-12",
+            "runs": 115708,
+            "nsPerOp": 10574,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc16_8K-12",
+            "runs": 57838,
+            "nsPerOp": 27340,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc16_16K-12",
+            "runs": 20462,
+            "nsPerOp": 50894,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewIBM",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc16_1K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc16_2K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc16_4K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc16_8K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc16_16K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mewkiz/flac/internal/hashutil/crc8",
+        "succeded": true,
+        "duration": "8.869s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewATM-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.4696,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc8_1K-12",
+            "runs": 576984,
+            "nsPerOp": 1931,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc8_2K-12",
+            "runs": 338841,
+            "nsPerOp": 3561,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc8_4K-12",
+            "runs": 162094,
+            "nsPerOp": 7057,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc8_8K-12",
+            "runs": 84634,
+            "nsPerOp": 14560,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCrc8_16K-12",
+            "runs": 42621,
+            "nsPerOp": 28922,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewATM",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc8_1K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc8_2K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc8_4K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc8_8K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          },
+          {
+            "name": "BenchmarkCrc8_16K",
+            "modificationCount": 1,
+            "createdOn": "2016-04-05",
+            "lastUpdateOn": "2016-04-05"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "mewkiz/flac",
+    "name": "flac",
+    "private": false,
+    "html_url": "https://github.com/mewkiz/flac",
+    "description": "Package flac provides access to FLAC (Free Lossless Audio Codec) streams.",
+    "fork": false,
+    "created_at": "2012-11-01T20:13:58Z",
+    "updated_at": "2023-10-20T03:49:37Z",
+    "pushed_at": "2023-10-06T12:53:22Z",
+    "ssh_url": "git@github.com:mewkiz/flac.git",
+    "stargazers_count": 270,
+    "watchers_count": 270,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 39,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 10,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "unlicense",
+      "name": "The Unlicense",
+      "url": "https://api.github.com/licenses/unlicense",
+      "spdx_id": "Unlicense",
+      "node_id": "MDc6TGljZW5zZTE1",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 39,
+    "Lines": 6756,
+    "Blank": 517,
+    "Code": 4618,
+    "Comment": 1621,
+    "Bytes": 295286,
+    "Complexity": 1004
+  }
+}

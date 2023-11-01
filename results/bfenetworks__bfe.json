@@ -1,0 +1,1066 @@
+{
+  "Name": "bfenetworks/bfe",
+  "Path": "./repositories/bfenetworks__bfe",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T00:51:15Z",
+    "benchmarkCount": 71,
+    "benchmarkSuiteCount": 8,
+    "successfulBenchmarkCount": 69,
+    "successfulBenchmarkSuitesCount": 8,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/bfenetworks/bfe/bfe_balance/bal_slb",
+        "succeded": true,
+        "duration": "8.688s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSmoothBalance-12",
+            "runs": 1000000,
+            "nsPerOp": 1131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSimpleBalance-12",
+            "runs": 26169895,
+            "nsPerOp": 48.59,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWlcBalance-12",
+            "runs": 210367,
+            "nsPerOp": 6244,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStickyBalance-12",
+            "runs": 658431,
+            "nsPerOp": 2085,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSmoothBalance",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkSimpleBalance",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkWlcBalance",
+            "modificationCount": 1,
+            "createdOn": "2022-07-29",
+            "lastUpdateOn": "2022-07-29"
+          },
+          {
+            "name": "BenchmarkStickyBalance",
+            "modificationCount": 2,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2021-02-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bfenetworks/bfe/bfe_bufio",
+        "succeded": true,
+        "duration": "134.485s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReaderCopyOptimal-12",
+            "runs": 258630,
+            "nsPerOp": 5056,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderCopyUnoptimal-12",
+            "runs": 235971,
+            "nsPerOp": 4530,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderCopyNoWriteTo-12",
+            "runs": 127718,
+            "nsPerOp": 10652,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriterCopyOptimal-12",
+            "runs": 124441,
+            "nsPerOp": 47536,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriterCopyUnoptimal-12",
+            "runs": 139819,
+            "nsPerOp": 12600,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriterCopyNoReadFrom-12",
+            "runs": 99997,
+            "nsPerOp": 11394,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReaderEmpty-12",
+            "runs": 851840,
+            "nsPerOp": 1439,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriterEmpty-12",
+            "runs": 911106,
+            "nsPerOp": 3532,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriterFlush-12",
+            "runs": 26878128,
+            "nsPerOp": 48.94,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReaderCopyOptimal",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkReaderCopyUnoptimal",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkReaderCopyNoWriteTo",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkWriterCopyOptimal",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkWriterCopyUnoptimal",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkWriterCopyNoReadFrom",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkReaderEmpty",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkWriterEmpty",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkWriterFlush",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bfenetworks/bfe/bfe_http2",
+        "succeded": false,
+        "duration": "5.274s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkServerGets-12",
+            "runs": 3546,
+            "nsPerOp": 367253,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkServerPosts-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkServer_GetRequest-12",
+            "runs": 6439,
+            "nsPerOp": 332319,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkServer_PostRequest-12",
+            "runs": 2612,
+            "nsPerOp": 534778,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkServerGets",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkServerPosts",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkServer_GetRequest",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkServer_PostRequest",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bfenetworks/bfe/bfe_modules/mod_compress",
+        "succeded": true,
+        "duration": "77.436s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBrFilterSize1K-12",
+            "runs": 800,
+            "nsPerOp": 1593427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterSize4K-12",
+            "runs": 100,
+            "nsPerOp": 13302125,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterSize16K-12",
+            "runs": 51,
+            "nsPerOp": 20474060,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterSize64K-12",
+            "runs": 62,
+            "nsPerOp": 41511219,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterFlush512-12",
+            "runs": 15,
+            "nsPerOp": 98014237,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterFlush1K-12",
+            "runs": 21,
+            "nsPerOp": 48164504,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterFlush2K-12",
+            "runs": 48,
+            "nsPerOp": 26134311,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel0-12",
+            "runs": 210,
+            "nsPerOp": 5626602,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel1-12",
+            "runs": 100,
+            "nsPerOp": 24076483,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel2-12",
+            "runs": 45,
+            "nsPerOp": 32818195,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel3-12",
+            "runs": 62,
+            "nsPerOp": 49836657,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel4-12",
+            "runs": 20,
+            "nsPerOp": 67136586,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel5-12",
+            "runs": 31,
+            "nsPerOp": 48914848,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel6-12",
+            "runs": 51,
+            "nsPerOp": 36925277,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel7-12",
+            "runs": 27,
+            "nsPerOp": 52632226,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel8-12",
+            "runs": 69,
+            "nsPerOp": 63222150,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel9-12",
+            "runs": 39,
+            "nsPerOp": 62495156,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel10-12",
+            "runs": 3,
+            "nsPerOp": 506077001,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBrFilterLevel11-12",
+            "runs": 3,
+            "nsPerOp": 610908086,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterSize1K-12",
+            "runs": 793,
+            "nsPerOp": 1486234,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterSize4K-12",
+            "runs": 506,
+            "nsPerOp": 2177322,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterSize16K-12",
+            "runs": 237,
+            "nsPerOp": 6320698,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterSize64K-12",
+            "runs": 98,
+            "nsPerOp": 20945861,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterFlush512-12",
+            "runs": 84,
+            "nsPerOp": 23970388,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterFlush1K-12",
+            "runs": 100,
+            "nsPerOp": 20157566,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterFlush2K-12",
+            "runs": 100,
+            "nsPerOp": 15281111,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel0-12",
+            "runs": 993,
+            "nsPerOp": 1531516,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel1-12",
+            "runs": 112,
+            "nsPerOp": 9335563,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel2-12",
+            "runs": 100,
+            "nsPerOp": 11623454,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel3-12",
+            "runs": 100,
+            "nsPerOp": 10600401,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel4-12",
+            "runs": 146,
+            "nsPerOp": 20407497,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel5-12",
+            "runs": 81,
+            "nsPerOp": 14298578,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel6-12",
+            "runs": 91,
+            "nsPerOp": 20862508,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel7-12",
+            "runs": 64,
+            "nsPerOp": 26694924,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel8-12",
+            "runs": 105,
+            "nsPerOp": 12534254,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel9-12",
+            "runs": 108,
+            "nsPerOp": 12701341,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBrFilterSize1K",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterSize4K",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterSize16K",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterSize64K",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterFlush512",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterFlush1K",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterFlush2K",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel0",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel1",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel2",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel3",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel4",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel5",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel6",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel7",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel8",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel9",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel10",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkBrFilterLevel11",
+            "modificationCount": 1,
+            "createdOn": "2020-04-17",
+            "lastUpdateOn": "2020-04-17"
+          },
+          {
+            "name": "BenchmarkGzipFilterSize1K",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterSize4K",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterSize16K",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterSize64K",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterFlush512",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterFlush1K",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterFlush2K",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel0",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel1",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel2",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel3",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel4",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel5",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel6",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel7",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel8",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          },
+          {
+            "name": "BenchmarkGzipFilterLevel9",
+            "modificationCount": 1,
+            "createdOn": "2019-11-26",
+            "lastUpdateOn": "2019-11-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bfenetworks/bfe/bfe_modules/mod_header",
+        "succeded": true,
+        "duration": "5.173s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHeaderConvertCase1-12",
+            "runs": 16178576,
+            "nsPerOp": 62.93,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHeaderConvertCase2-12",
+            "runs": 24573859,
+            "nsPerOp": 81.18,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHeaderConvertCase1",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkHeaderConvertCase2",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bfenetworks/bfe/bfe_net/textproto",
+        "succeded": true,
+        "duration": "3.892s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadMIMEHeader-12",
+            "runs": 136737,
+            "nsPerOp": 12058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUncommon-12",
+            "runs": 171937,
+            "nsPerOp": 6458,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadMIMEHeader",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkUncommon",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bfenetworks/bfe/bfe_spdy",
+        "succeded": false,
+        "duration": "2.002s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkServerGets-12",
+            "runs": 2340,
+            "nsPerOp": 609851,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkServerPosts-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkServerGets",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkServerPosts",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bfenetworks/bfe/bfe_tls",
+        "succeded": true,
+        "duration": "33.677s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkChacha20Poly1305Open_64-12",
+            "runs": 4130647,
+            "nsPerOp": 470.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Seal_64-12",
+            "runs": 1333005,
+            "nsPerOp": 758.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Open_1350-12",
+            "runs": 498806,
+            "nsPerOp": 3271,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Seal_1350-12",
+            "runs": 571736,
+            "nsPerOp": 8118,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Open_8K-12",
+            "runs": 74098,
+            "nsPerOp": 19150,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Seal_8K-12",
+            "runs": 76254,
+            "nsPerOp": 22058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAES128GCMOpen_64-12",
+            "runs": 2628621,
+            "nsPerOp": 671,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAES128GCMSeal_64-12",
+            "runs": 8377032,
+            "nsPerOp": 579,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAES128GCMOpen_1350-12",
+            "runs": 1000000,
+            "nsPerOp": 2049,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAES128GCMSeal_1350-12",
+            "runs": 1000000,
+            "nsPerOp": 2076,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAES128GCMOpen_8K-12",
+            "runs": 145179,
+            "nsPerOp": 7184,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAES128GCMSeal_8K-12",
+            "runs": 180888,
+            "nsPerOp": 7230,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkChacha20Poly1305Open_64",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Seal_64",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Open_1350",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Seal_1350",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Open_8K",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkChacha20Poly1305Seal_8K",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkAES128GCMOpen_64",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkAES128GCMSeal_64",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkAES128GCMOpen_1350",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkAES128GCMSeal_1350",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkAES128GCMOpen_8K",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          },
+          {
+            "name": "BenchmarkAES128GCMSeal_8K",
+            "modificationCount": 1,
+            "createdOn": "2019-07-31",
+            "lastUpdateOn": "2019-07-31"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "bfenetworks/bfe",
+    "name": "bfe",
+    "private": false,
+    "html_url": "https://github.com/bfenetworks/bfe",
+    "description": "A modern layer 7 load balancer from baidu",
+    "fork": false,
+    "created_at": "2019-07-31T02:33:55Z",
+    "updated_at": "2023-10-22T04:20:17Z",
+    "pushed_at": "2023-09-29T14:33:18Z",
+    "ssh_url": "git@github.com:bfenetworks/bfe.git",
+    "homepage": "https://www.bfe-networks.net",
+    "stargazers_count": 5972,
+    "watchers_count": 5972,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": true,
+    "has_discussions": true,
+    "forks": 946,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 68,
+    "topics": [
+      "adc",
+      "bfe",
+      "cncf",
+      "golang",
+      "load-balancer",
+      "reverse-proxy"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 509,
+    "Lines": 102706,
+    "Blank": 13330,
+    "Code": 73775,
+    "Comment": 15601,
+    "Bytes": 2728642,
+    "Complexity": 15708
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "Name": "jackc/pgtype",
+  "Path": "./repositories/jackc__pgtype",
+  "GoVersion": "1.13",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T08:50:08Z",
+    "benchmarkCount": 22,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 22,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/jackc/pgtype",
+        "succeded": true,
+        "duration": "19.129s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBinaryEncodingManual-12",
+            "runs": 100000000,
+            "nsPerOp": 11.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBinaryEncodingHelper-12",
+            "runs": 4743254,
+            "nsPerOp": 254.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBinaryEncodingComposite-12",
+            "runs": 4607829,
+            "nsPerOp": 261.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBinaryEncodingJSON-12",
+            "runs": 2789298,
+            "nsPerOp": 445.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBinaryDecodingManual-12",
+            "runs": 5435548,
+            "nsPerOp": 293.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBinaryDecodingHelpers-12",
+            "runs": 2641782,
+            "nsPerOp": 484.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBinaryDecodingCompositeScan-12",
+            "runs": 1677237,
+            "nsPerOp": 673.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBinaryDecodingJSON-12",
+            "runs": 901440,
+            "nsPerOp": 1458,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConnInfoScanInt4IntoBinaryDecoder-12",
+            "runs": 39898920,
+            "nsPerOp": 27.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConnInfoScanInt4IntoGoInt32-12",
+            "runs": 100000000,
+            "nsPerOp": 18.23,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScanPlanScanInt4IntoBinaryDecoder-12",
+            "runs": 50742700,
+            "nsPerOp": 24.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScanPlanScanInt4IntoGoInt32-12",
+            "runs": 170409442,
+            "nsPerOp": 6.446,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBinaryEncodingManual",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkBinaryEncodingHelper",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkBinaryEncodingComposite",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkBinaryEncodingJSON",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkBinaryDecodingManual",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkBinaryDecodingHelpers",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkBinaryDecodingCompositeScan",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkBinaryDecodingJSON",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkConnInfoScanInt4IntoBinaryDecoder",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkConnInfoScanInt4IntoGoInt32",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkScanPlanScanInt4IntoBinaryDecoder",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkScanPlanScanInt4IntoGoInt32",
+            "modificationCount": 2,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2022-05-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/jackc/pgtype/ext/shopspring-numeric",
+        "succeded": true,
+        "duration": "17.884s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecode/Zero-Text-12",
+            "runs": 3691743,
+            "nsPerOp": 351.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/Zero-Binary-12",
+            "runs": 8059621,
+            "nsPerOp": 148.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/Small-Text-12",
+            "runs": 1964157,
+            "nsPerOp": 520.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/Small-Binary-12",
+            "runs": 2863268,
+            "nsPerOp": 437.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/Medium-Text-12",
+            "runs": 1540900,
+            "nsPerOp": 692.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/Medium-Binary-12",
+            "runs": 2622982,
+            "nsPerOp": 467,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/Large-Text-12",
+            "runs": 1411820,
+            "nsPerOp": 863,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/Large-Binary-12",
+            "runs": 1610454,
+            "nsPerOp": 781.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/Huge-Text-12",
+            "runs": 1115751,
+            "nsPerOp": 1565,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecode/Huge-Binary-12",
+            "runs": 1313463,
+            "nsPerOp": 903.2,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          },
+          {
+            "name": "BenchmarkDecode",
+            "modificationCount": 1,
+            "createdOn": "2021-07-24",
+            "lastUpdateOn": "2021-07-24"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "jackc/pgtype",
+    "name": "pgtype",
+    "private": false,
+    "html_url": "https://github.com/jackc/pgtype",
+    "fork": false,
+    "created_at": "2019-04-21T00:12:27Z",
+    "updated_at": "2023-10-09T08:54:20Z",
+    "pushed_at": "2023-09-23T12:20:10Z",
+    "ssh_url": "git@github.com:jackc/pgtype.git",
+    "stargazers_count": 270,
+    "watchers_count": 270,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 115,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 52,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 196,
+    "Lines": 45523,
+    "Blank": 5583,
+    "Code": 38830,
+    "Comment": 1110,
+    "Bytes": 1188616,
+    "Complexity": 9126
+  }
+}

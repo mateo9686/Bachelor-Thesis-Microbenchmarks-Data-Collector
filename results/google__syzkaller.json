@@ -1,0 +1,217 @@
+{
+  "Name": "google/syzkaller",
+  "Path": "./repositories/google__syzkaller",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T23:51:54Z",
+    "benchmarkCount": 9,
+    "benchmarkSuiteCount": 3,
+    "successfulBenchmarkCount": 5,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/google/syzkaller/pkg/bisect/minimize",
+        "succeded": true,
+        "duration": "6.566s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSplits/1_guilty-12",
+            "runs": 29064,
+            "nsPerOp": 37939,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSplits/2_guilty-12",
+            "runs": 24675,
+            "nsPerOp": 46750,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSplits/3_guilty-12",
+            "runs": 23937,
+            "nsPerOp": 49978,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSplits/4_guilty-12",
+            "runs": 27991,
+            "nsPerOp": 44587,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSplits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-16",
+            "lastUpdateOn": "2023-06-16"
+          },
+          {
+            "name": "BenchmarkSplits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-16",
+            "lastUpdateOn": "2023-06-16"
+          },
+          {
+            "name": "BenchmarkSplits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-16",
+            "lastUpdateOn": "2023-06-16"
+          },
+          {
+            "name": "BenchmarkSplits",
+            "modificationCount": 1,
+            "createdOn": "2023-06-16",
+            "lastUpdateOn": "2023-06-16"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/google/syzkaller/pkg/image",
+        "succeded": false,
+        "duration": "0.006s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDecompress",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "compression_test.go:60: unknown target: linux/amd64 (supported: [])"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDecompress",
+            "modificationCount": 2,
+            "createdOn": "2022-12-17",
+            "lastUpdateOn": "2023-02-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/google/syzkaller/prog",
+        "succeded": false,
+        "duration": "1.292s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHints",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "export_test.go:81: unknown target: linux/amd64 (supported: [])"
+          },
+          {
+            "name": "BenchmarkMutate",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "export_test.go:81: unknown target: linux/amd64 (supported: [])"
+          },
+          {
+            "name": "BenchmarkGenerate",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "export_test.go:81: unknown target: linux/amd64 (supported: [])"
+          },
+          {
+            "name": "BenchmarkStoreLoadInt-12",
+            "runs": 53438875,
+            "nsPerOp": 23.52,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHints",
+            "modificationCount": 6,
+            "createdOn": "2017-12-08",
+            "lastUpdateOn": "2020-05-04"
+          },
+          {
+            "name": "BenchmarkMutate",
+            "modificationCount": 6,
+            "createdOn": "2017-12-13",
+            "lastUpdateOn": "2022-09-20"
+          },
+          {
+            "name": "BenchmarkGenerate",
+            "modificationCount": 4,
+            "createdOn": "2018-02-19",
+            "lastUpdateOn": "2020-05-04"
+          },
+          {
+            "name": "BenchmarkStoreLoadInt",
+            "modificationCount": 1,
+            "createdOn": "2020-02-09",
+            "lastUpdateOn": "2020-02-09"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "google/syzkaller",
+    "name": "syzkaller",
+    "private": false,
+    "html_url": "https://github.com/google/syzkaller",
+    "description": "syzkaller is an unsupervised coverage-guided kernel fuzzer",
+    "fork": false,
+    "created_at": "2015-10-12T06:05:05Z",
+    "updated_at": "2023-10-23T15:42:30Z",
+    "pushed_at": "2023-10-23T12:17:02Z",
+    "ssh_url": "git@github.com:google/syzkaller.git",
+    "stargazers_count": 4874,
+    "watchers_count": 4874,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": false,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1165,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 314,
+    "topics": [
+      "fuzz-testing",
+      "fuzzer",
+      "fuzzing",
+      "kernel",
+      "linux",
+      "security",
+      "security-tools",
+      "security-vulnerability",
+      "testing"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 3726,
+    "Lines": 1472885,
+    "Blank": 119633,
+    "Code": 1086580,
+    "Comment": 266672,
+    "Bytes": 54043403,
+    "Complexity": 160629
+  }
+}

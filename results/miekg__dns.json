@@ -1,0 +1,923 @@
+{
+  "Name": "miekg/dns",
+  "Path": "./repositories/miekg__dns",
+  "GoVersion": "1.19",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T01:42:22Z",
+    "benchmarkCount": 65,
+    "benchmarkSuiteCount": 1,
+    "successfulBenchmarkCount": 65,
+    "successfulBenchmarkSuitesCount": 1,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/miekg/dns",
+        "succeded": true,
+        "duration": "146.192s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMsgLength-12",
+            "runs": 1000000,
+            "nsPerOp": 1508,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMsgLengthNoCompression-12",
+            "runs": 7407016,
+            "nsPerOp": 168.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMsgLengthPack-12",
+            "runs": 296994,
+            "nsPerOp": 4563,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMsgLengthMassive-12",
+            "runs": 15069,
+            "nsPerOp": 94425,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMsgLengthOnlyQuestion-12",
+            "runs": 19968426,
+            "nsPerOp": 61.07,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMsgLengthEscapedName-12",
+            "runs": 4102069,
+            "nsPerOp": 284.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackDomainName-12",
+            "runs": 3379488,
+            "nsPerOp": 299.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackDomainName-12",
+            "runs": 2173977,
+            "nsPerOp": 623.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackDomainNameUnprintable-12",
+            "runs": 1778144,
+            "nsPerOp": 591.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackDomainNameLongest-12",
+            "runs": 479420,
+            "nsPerOp": 3559,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackDomainNameLongestUnprintable-12",
+            "runs": 169904,
+            "nsPerOp": 7264,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCopy-12",
+            "runs": 1007121,
+            "nsPerOp": 1775,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackA-12",
+            "runs": 12535471,
+            "nsPerOp": 210.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackA-12",
+            "runs": 1000000,
+            "nsPerOp": 1170,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackMX-12",
+            "runs": 6882891,
+            "nsPerOp": 264.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackMX-12",
+            "runs": 1000000,
+            "nsPerOp": 1071,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackAAAAA-12",
+            "runs": 6104661,
+            "nsPerOp": 242.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackAAAA-12",
+            "runs": 1000000,
+            "nsPerOp": 1132,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackMsg-12",
+            "runs": 733658,
+            "nsPerOp": 5427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackMsgMassive-12",
+            "runs": 10000,
+            "nsPerOp": 237162,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackMsgOnlyQuestion-12",
+            "runs": 1000000,
+            "nsPerOp": 1307,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackMsg-12",
+            "runs": 208820,
+            "nsPerOp": 9584,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIdGeneration-12",
+            "runs": 566874,
+            "nsPerOp": 2755,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverseAddr/IP4-12",
+            "runs": 2143902,
+            "nsPerOp": 527.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReverseAddr/IP6-12",
+            "runs": 1846876,
+            "nsPerOp": 802.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsFQDN/no_dot-12",
+            "runs": 166813846,
+            "nsPerOp": 6.367,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsFQDN/unescaped-12",
+            "runs": 100000000,
+            "nsPerOp": 11.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsFQDN/escaped-12",
+            "runs": 23099491,
+            "nsPerOp": 75.22,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFQDN/is_fqdn-12",
+            "runs": 100000000,
+            "nsPerOp": 14.54,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFQDN/not_fqdn-12",
+            "runs": 5642934,
+            "nsPerOp": 182.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenerate-12",
+            "runs": 1192,
+            "nsPerOp": 923977,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSplitLabels-12",
+            "runs": 7588245,
+            "nsPerOp": 263,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLenLabels-12",
+            "runs": 29393475,
+            "nsPerOp": 56.93,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompareDomainName-12",
+            "runs": 1941759,
+            "nsPerOp": 789.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIsSubDomain-12",
+            "runs": 1000000,
+            "nsPerOp": 1978,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextLabelSimple-12",
+            "runs": 61914229,
+            "nsPerOp": 30.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrevLabelSimple-12",
+            "runs": 22187253,
+            "nsPerOp": 46.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextLabelComplex-12",
+            "runs": 24675234,
+            "nsPerOp": 55.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrevLabelComplex-12",
+            "runs": 5440344,
+            "nsPerOp": 271.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNextLabelMixed-12",
+            "runs": 14602218,
+            "nsPerOp": 93.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPrevLabelMixed-12",
+            "runs": 10766468,
+            "nsPerOp": 126.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackDataNsec/empty-12",
+            "runs": 318172844,
+            "nsPerOp": 7.793,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackDataNsec/typical-12",
+            "runs": 21000358,
+            "nsPerOp": 55.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPackDataNsec/multiple_windows-12",
+            "runs": 16976840,
+            "nsPerOp": 84.43,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackString/Escaped-12",
+            "runs": 3632367,
+            "nsPerOp": 497.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnpackString/Unescaped-12",
+            "runs": 5963800,
+            "nsPerOp": 223.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMsgTruncate-12",
+            "runs": 49578,
+            "nsPerOp": 27658,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashName/150-12",
+            "runs": 30696,
+            "nsPerOp": 46924,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashName/2500-12",
+            "runs": 1414,
+            "nsPerOp": 942312,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashName/5000-12",
+            "runs": 835,
+            "nsPerOp": 1832585,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashName/10000-12",
+            "runs": 476,
+            "nsPerOp": 2105759,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHashName/65535-12",
+            "runs": 84,
+            "nsPerOp": 14773969,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDedup-12",
+            "runs": 244186,
+            "nsPerOp": 4195,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewRR-12",
+            "runs": 295954,
+            "nsPerOp": 4242,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadRR-12",
+            "runs": 252280,
+            "nsPerOp": 4584,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkZoneParser-12",
+            "runs": 67768,
+            "nsPerOp": 17792,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMuxMatch/lowercase-12",
+            "runs": 2277337,
+            "nsPerOp": 479.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMuxMatch/uppercase-12",
+            "runs": 2988890,
+            "nsPerOp": 417.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkServe-12",
+            "runs": 8204,
+            "nsPerOp": 165084,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkServe6-12",
+            "runs": 7233,
+            "nsPerOp": 148164,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkServeCompress-12",
+            "runs": 8457,
+            "nsPerOp": 149725,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSprintName-12",
+            "runs": 3945243,
+            "nsPerOp": 345.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSprintName_NoEscape-12",
+            "runs": 13766990,
+            "nsPerOp": 89.79,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSprintTxtOctet-12",
+            "runs": 3950982,
+            "nsPerOp": 337.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSprintTxt-12",
+            "runs": 2440692,
+            "nsPerOp": 594.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMsgLength",
+            "modificationCount": 2,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2017-11-08"
+          },
+          {
+            "name": "BenchmarkMsgLengthNoCompression",
+            "modificationCount": 2,
+            "createdOn": "2017-10-14",
+            "lastUpdateOn": "2017-11-08"
+          },
+          {
+            "name": "BenchmarkMsgLengthPack",
+            "modificationCount": 2,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2017-11-08"
+          },
+          {
+            "name": "BenchmarkMsgLengthMassive",
+            "modificationCount": 1,
+            "createdOn": "2018-11-28",
+            "lastUpdateOn": "2018-11-28"
+          },
+          {
+            "name": "BenchmarkMsgLengthOnlyQuestion",
+            "modificationCount": 1,
+            "createdOn": "2018-11-28",
+            "lastUpdateOn": "2018-11-28"
+          },
+          {
+            "name": "BenchmarkMsgLengthEscapedName",
+            "modificationCount": 1,
+            "createdOn": "2018-11-30",
+            "lastUpdateOn": "2018-11-30"
+          },
+          {
+            "name": "BenchmarkPackDomainName",
+            "modificationCount": 1,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2016-05-14"
+          },
+          {
+            "name": "BenchmarkUnpackDomainName",
+            "modificationCount": 1,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2016-05-14"
+          },
+          {
+            "name": "BenchmarkUnpackDomainNameUnprintable",
+            "modificationCount": 1,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2016-05-14"
+          },
+          {
+            "name": "BenchmarkUnpackDomainNameLongest",
+            "modificationCount": 1,
+            "createdOn": "2018-11-30",
+            "lastUpdateOn": "2018-11-30"
+          },
+          {
+            "name": "BenchmarkUnpackDomainNameLongestUnprintable",
+            "modificationCount": 1,
+            "createdOn": "2018-11-30",
+            "lastUpdateOn": "2018-11-30"
+          },
+          {
+            "name": "BenchmarkCopy",
+            "modificationCount": 2,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2017-11-08"
+          },
+          {
+            "name": "BenchmarkPackA",
+            "modificationCount": 2,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2018-11-30"
+          },
+          {
+            "name": "BenchmarkUnpackA",
+            "modificationCount": 2,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2018-11-30"
+          },
+          {
+            "name": "BenchmarkPackMX",
+            "modificationCount": 2,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2018-11-30"
+          },
+          {
+            "name": "BenchmarkUnpackMX",
+            "modificationCount": 2,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2018-11-30"
+          },
+          {
+            "name": "BenchmarkPackAAAAA",
+            "modificationCount": 4,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2019-03-09"
+          },
+          {
+            "name": "BenchmarkUnpackAAAA",
+            "modificationCount": 4,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2019-03-09"
+          },
+          {
+            "name": "BenchmarkPackMsg",
+            "modificationCount": 3,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2018-12-02"
+          },
+          {
+            "name": "BenchmarkPackMsgMassive",
+            "modificationCount": 2,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2018-12-02"
+          },
+          {
+            "name": "BenchmarkPackMsgOnlyQuestion",
+            "modificationCount": 1,
+            "createdOn": "2018-11-28",
+            "lastUpdateOn": "2018-11-28"
+          },
+          {
+            "name": "BenchmarkUnpackMsg",
+            "modificationCount": 3,
+            "createdOn": "2016-05-14",
+            "lastUpdateOn": "2017-11-08"
+          },
+          {
+            "name": "BenchmarkIdGeneration",
+            "modificationCount": 2,
+            "createdOn": "2016-06-04",
+            "lastUpdateOn": "2018-12-30"
+          },
+          {
+            "name": "BenchmarkReverseAddr",
+            "modificationCount": 1,
+            "createdOn": "2018-12-30",
+            "lastUpdateOn": "2018-12-30"
+          },
+          {
+            "name": "BenchmarkReverseAddr",
+            "modificationCount": 1,
+            "createdOn": "2018-12-30",
+            "lastUpdateOn": "2018-12-30"
+          },
+          {
+            "name": "BenchmarkIsFQDN",
+            "modificationCount": 1,
+            "createdOn": "2023-04-27",
+            "lastUpdateOn": "2023-04-27"
+          },
+          {
+            "name": "BenchmarkIsFQDN",
+            "modificationCount": 1,
+            "createdOn": "2023-04-27",
+            "lastUpdateOn": "2023-04-27"
+          },
+          {
+            "name": "BenchmarkIsFQDN",
+            "modificationCount": 1,
+            "createdOn": "2023-04-27",
+            "lastUpdateOn": "2023-04-27"
+          },
+          {
+            "name": "BenchmarkFQDN",
+            "modificationCount": 1,
+            "createdOn": "2023-04-27",
+            "lastUpdateOn": "2023-04-27"
+          },
+          {
+            "name": "BenchmarkFQDN",
+            "modificationCount": 1,
+            "createdOn": "2023-04-27",
+            "lastUpdateOn": "2023-04-27"
+          },
+          {
+            "name": "BenchmarkGenerate",
+            "modificationCount": 1,
+            "createdOn": "2018-10-20",
+            "lastUpdateOn": "2018-10-20"
+          },
+          {
+            "name": "BenchmarkSplitLabels",
+            "modificationCount": 3,
+            "createdOn": "2013-06-22",
+            "lastUpdateOn": "2017-10-15"
+          },
+          {
+            "name": "BenchmarkLenLabels",
+            "modificationCount": 3,
+            "createdOn": "2013-06-22",
+            "lastUpdateOn": "2017-10-15"
+          },
+          {
+            "name": "BenchmarkCompareDomainName",
+            "modificationCount": 5,
+            "createdOn": "2013-06-22",
+            "lastUpdateOn": "2017-10-15"
+          },
+          {
+            "name": "BenchmarkIsSubDomain",
+            "modificationCount": 4,
+            "createdOn": "2013-06-22",
+            "lastUpdateOn": "2019-12-04"
+          },
+          {
+            "name": "BenchmarkNextLabelSimple",
+            "modificationCount": 1,
+            "createdOn": "2019-12-04",
+            "lastUpdateOn": "2019-12-04"
+          },
+          {
+            "name": "BenchmarkPrevLabelSimple",
+            "modificationCount": 1,
+            "createdOn": "2019-12-04",
+            "lastUpdateOn": "2019-12-04"
+          },
+          {
+            "name": "BenchmarkNextLabelComplex",
+            "modificationCount": 1,
+            "createdOn": "2019-12-04",
+            "lastUpdateOn": "2019-12-04"
+          },
+          {
+            "name": "BenchmarkPrevLabelComplex",
+            "modificationCount": 1,
+            "createdOn": "2019-12-04",
+            "lastUpdateOn": "2019-12-04"
+          },
+          {
+            "name": "BenchmarkNextLabelMixed",
+            "modificationCount": 1,
+            "createdOn": "2019-12-04",
+            "lastUpdateOn": "2019-12-04"
+          },
+          {
+            "name": "BenchmarkPrevLabelMixed",
+            "modificationCount": 1,
+            "createdOn": "2019-12-04",
+            "lastUpdateOn": "2019-12-04"
+          },
+          {
+            "name": "BenchmarkPackDataNsec",
+            "modificationCount": 1,
+            "createdOn": "2022-04-01",
+            "lastUpdateOn": "2022-04-01"
+          },
+          {
+            "name": "BenchmarkPackDataNsec",
+            "modificationCount": 1,
+            "createdOn": "2022-04-01",
+            "lastUpdateOn": "2022-04-01"
+          },
+          {
+            "name": "BenchmarkPackDataNsec",
+            "modificationCount": 1,
+            "createdOn": "2022-04-01",
+            "lastUpdateOn": "2022-04-01"
+          },
+          {
+            "name": "BenchmarkUnpackString",
+            "modificationCount": 3,
+            "createdOn": "2018-09-23",
+            "lastUpdateOn": "2020-01-03"
+          },
+          {
+            "name": "BenchmarkUnpackString",
+            "modificationCount": 3,
+            "createdOn": "2018-09-23",
+            "lastUpdateOn": "2020-01-03"
+          },
+          {
+            "name": "BenchmarkMsgTruncate",
+            "modificationCount": 1,
+            "createdOn": "2019-03-24",
+            "lastUpdateOn": "2019-03-24"
+          },
+          {
+            "name": "BenchmarkHashName",
+            "modificationCount": 1,
+            "createdOn": "2018-11-29",
+            "lastUpdateOn": "2018-11-29"
+          },
+          {
+            "name": "BenchmarkHashName",
+            "modificationCount": 1,
+            "createdOn": "2018-11-29",
+            "lastUpdateOn": "2018-11-29"
+          },
+          {
+            "name": "BenchmarkHashName",
+            "modificationCount": 1,
+            "createdOn": "2018-11-29",
+            "lastUpdateOn": "2018-11-29"
+          },
+          {
+            "name": "BenchmarkHashName",
+            "modificationCount": 1,
+            "createdOn": "2018-11-29",
+            "lastUpdateOn": "2018-11-29"
+          },
+          {
+            "name": "BenchmarkHashName",
+            "modificationCount": 1,
+            "createdOn": "2018-11-29",
+            "lastUpdateOn": "2018-11-29"
+          },
+          {
+            "name": "BenchmarkDedup",
+            "modificationCount": 9,
+            "createdOn": "2015-08-25",
+            "lastUpdateOn": "2017-11-08"
+          },
+          {
+            "name": "BenchmarkNewRR",
+            "modificationCount": 1,
+            "createdOn": "2018-10-15",
+            "lastUpdateOn": "2018-10-15"
+          },
+          {
+            "name": "BenchmarkReadRR",
+            "modificationCount": 2,
+            "createdOn": "2018-10-15",
+            "lastUpdateOn": "2018-10-20"
+          },
+          {
+            "name": "BenchmarkZoneParser",
+            "modificationCount": 1,
+            "createdOn": "2018-10-20",
+            "lastUpdateOn": "2018-10-20"
+          },
+          {
+            "name": "BenchmarkMuxMatch",
+            "modificationCount": 1,
+            "createdOn": "2018-09-27",
+            "lastUpdateOn": "2018-09-27"
+          },
+          {
+            "name": "BenchmarkMuxMatch",
+            "modificationCount": 1,
+            "createdOn": "2018-09-27",
+            "lastUpdateOn": "2018-09-27"
+          },
+          {
+            "name": "BenchmarkServe",
+            "modificationCount": 20,
+            "createdOn": "2011-07-06",
+            "lastUpdateOn": "2020-10-25"
+          },
+          {
+            "name": "BenchmarkServe6",
+            "modificationCount": 8,
+            "createdOn": "2014-07-08",
+            "lastUpdateOn": "2020-10-25"
+          },
+          {
+            "name": "BenchmarkServeCompress",
+            "modificationCount": 11,
+            "createdOn": "2013-06-27",
+            "lastUpdateOn": "2020-10-25"
+          },
+          {
+            "name": "BenchmarkSprintName",
+            "modificationCount": 2,
+            "createdOn": "2018-10-06",
+            "lastUpdateOn": "2020-05-13"
+          },
+          {
+            "name": "BenchmarkSprintName_NoEscape",
+            "modificationCount": 2,
+            "createdOn": "2019-09-23",
+            "lastUpdateOn": "2020-05-13"
+          },
+          {
+            "name": "BenchmarkSprintTxtOctet",
+            "modificationCount": 2,
+            "createdOn": "2018-10-06",
+            "lastUpdateOn": "2020-05-13"
+          },
+          {
+            "name": "BenchmarkSprintTxt",
+            "modificationCount": 2,
+            "createdOn": "2018-10-06",
+            "lastUpdateOn": "2020-05-13"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "miekg/dns",
+    "name": "dns",
+    "private": false,
+    "html_url": "https://github.com/miekg/dns",
+    "description": "DNS library in Go",
+    "fork": false,
+    "created_at": "2010-08-03T21:56:23Z",
+    "updated_at": "2023-10-23T11:02:07Z",
+    "pushed_at": "2023-10-16T09:57:25Z",
+    "ssh_url": "git@github.com:miekg/dns.git",
+    "homepage": "https://miek.nl/2014/august/16/go-dns-package",
+    "stargazers_count": 7249,
+    "watchers_count": 7249,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1149,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 10,
+    "topics": [
+      "dns",
+      "dns-library",
+      "dnssec",
+      "go"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "bsd-3-clause",
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "url": "https://api.github.com/licenses/bsd-3-clause",
+      "spdx_id": "BSD-3-Clause",
+      "node_id": "MDc6TGljZW5zZTU=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 89,
+    "Lines": 32977,
+    "Blank": 3110,
+    "Code": 27471,
+    "Comment": 2396,
+    "Bytes": 870201,
+    "Complexity": 6258
+  }
+}

@@ -1,0 +1,557 @@
+{
+  "Name": "centrifugal/centrifuge",
+  "Path": "./repositories/centrifugal__centrifuge",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T18:27:03Z",
+    "benchmarkCount": 33,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 22,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/centrifugal/centrifuge/_examples/custom_engine_tarantool/tntengine",
+        "succeded": false,
+        "duration": "0.209s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTarantoolPublish_OneChannel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          },
+          {
+            "name": "BenchmarkTarantoolPublish_OneChannel_Parallel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          },
+          {
+            "name": "BenchmarkTarantoolSubscribe",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          },
+          {
+            "name": "BenchmarkTarantoolSubscribe_Parallel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          },
+          {
+            "name": "BenchmarkTarantoolRecover_OneChannel_Parallel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          },
+          {
+            "name": "BenchmarkTarantoolPresence_OneChannel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          },
+          {
+            "name": "BenchmarkTarantoolPresence_OneChannel_Parallel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          },
+          {
+            "name": "BenchmarkTarantoolAddPresence_OneChannel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          },
+          {
+            "name": "BenchmarkTarantoolAddPresence_OneChannel_Parallel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          },
+          {
+            "name": "BenchmarkTarantoolPresenceStats_OneChannel_Parallel",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "broker_test.go:45: client connection is not ready (0x4000)"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTarantoolPublish_OneChannel",
+            "modificationCount": 1,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2020-12-25"
+          },
+          {
+            "name": "BenchmarkTarantoolPublish_OneChannel_Parallel",
+            "modificationCount": 1,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2020-12-25"
+          },
+          {
+            "name": "BenchmarkTarantoolSubscribe",
+            "modificationCount": 1,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2020-12-25"
+          },
+          {
+            "name": "BenchmarkTarantoolSubscribe_Parallel",
+            "modificationCount": 1,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2020-12-25"
+          },
+          {
+            "name": "BenchmarkTarantoolRecover_OneChannel_Parallel",
+            "modificationCount": 2,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkTarantoolPresence_OneChannel",
+            "modificationCount": 2,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2021-02-23"
+          },
+          {
+            "name": "BenchmarkTarantoolPresence_OneChannel_Parallel",
+            "modificationCount": 2,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2021-02-23"
+          },
+          {
+            "name": "BenchmarkTarantoolAddPresence_OneChannel",
+            "modificationCount": 2,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2021-02-23"
+          },
+          {
+            "name": "BenchmarkTarantoolAddPresence_OneChannel_Parallel",
+            "modificationCount": 2,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2021-02-23"
+          },
+          {
+            "name": "BenchmarkTarantoolPresenceStats_OneChannel_Parallel",
+            "modificationCount": 3,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2021-08-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/centrifugal/centrifuge/_examples/jwt_token/jwt",
+        "succeded": true,
+        "duration": "3.572s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkConnectTokenVerify_Valid-12",
+            "runs": 152374,
+            "nsPerOp": 7864,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConnectTokenVerify_Expired-12",
+            "runs": 148672,
+            "nsPerOp": 8418,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkConnectTokenVerify_Valid",
+            "modificationCount": 3,
+            "createdOn": "2020-01-30",
+            "lastUpdateOn": "2020-07-06"
+          },
+          {
+            "name": "BenchmarkConnectTokenVerify_Expired",
+            "modificationCount": 2,
+            "createdOn": "2020-05-08",
+            "lastUpdateOn": "2020-07-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/centrifugal/centrifuge",
+        "succeded": false,
+        "duration": "665.838s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMemoryPublish_1Ch-12",
+            "runs": 3893527,
+            "nsPerOp": 299.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemoryPublish_History_1Ch-12",
+            "runs": 130386,
+            "nsPerOp": 9814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemoryHistory_1Ch-12",
+            "runs": 336492,
+            "nsPerOp": 3455,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemoryRecover_1Ch-12",
+            "runs": 96268,
+            "nsPerOp": 11843,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemoryBrokerHistoryIteration-12",
+            "runs": 1718,
+            "nsPerOp": 667656,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWsPubSubV2/JSON-12",
+            "runs": 21472,
+            "nsPerOp": 52653,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWsPubSubV2/PB-12",
+            "runs": 23577,
+            "nsPerOp": 50307,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2/JSON-12",
+            "runs": 13732,
+            "nsPerOp": 83553,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2/PB-12",
+            "runs": 14439,
+            "nsPerOp": 80819,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2Multiple/JSON-12",
+            "runs": 9584,
+            "nsPerOp": 113600,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2Multiple/PB-12",
+            "runs": 7534,
+            "nsPerOp": 150802,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2MultipleParallel/JSON-12",
+            "runs": 4530,
+            "nsPerOp": 244205,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2MultipleParallel/PB-12",
+            "runs": 17415,
+            "nsPerOp": 89499,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHub_Contention-12",
+            "runs": 9874,
+            "nsPerOp": 115072,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHub_MassiveBroadcast/1000-12",
+            "runs": 441,
+            "nsPerOp": 3286993,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHub_MassiveBroadcast/10000-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "SIGQUIT:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMemoryPublish_1Ch",
+            "modificationCount": 14,
+            "createdOn": "2018-05-09",
+            "lastUpdateOn": "2022-09-09"
+          },
+          {
+            "name": "BenchmarkMemoryPublish_History_1Ch",
+            "modificationCount": 15,
+            "createdOn": "2018-05-09",
+            "lastUpdateOn": "2022-09-09"
+          },
+          {
+            "name": "BenchmarkMemoryHistory_1Ch",
+            "modificationCount": 17,
+            "createdOn": "2018-05-09",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkMemoryRecover_1Ch",
+            "modificationCount": 16,
+            "createdOn": "2018-07-21",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkMemoryBrokerHistoryIteration",
+            "modificationCount": 5,
+            "createdOn": "2020-04-06",
+            "lastUpdateOn": "2022-09-09"
+          },
+          {
+            "name": "BenchmarkWsPubSubV2",
+            "modificationCount": 2,
+            "createdOn": "2022-01-17",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkWsPubSubV2",
+            "modificationCount": 2,
+            "createdOn": "2022-01-17",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2",
+            "modificationCount": 3,
+            "createdOn": "2022-01-17",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2",
+            "modificationCount": 3,
+            "createdOn": "2022-01-17",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2Multiple",
+            "modificationCount": 2,
+            "createdOn": "2023-01-08",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2Multiple",
+            "modificationCount": 2,
+            "createdOn": "2023-01-08",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2MultipleParallel",
+            "modificationCount": 2,
+            "createdOn": "2023-01-08",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkWsCommandReplyV2MultipleParallel",
+            "modificationCount": 2,
+            "createdOn": "2023-01-08",
+            "lastUpdateOn": "2023-03-26"
+          },
+          {
+            "name": "BenchmarkHub_Contention",
+            "modificationCount": 5,
+            "createdOn": "2019-12-26",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkHub_MassiveBroadcast",
+            "modificationCount": 6,
+            "createdOn": "2019-12-26",
+            "lastUpdateOn": "2023-01-11"
+          },
+          {
+            "name": "BenchmarkHub_MassiveBroadcast",
+            "modificationCount": 6,
+            "createdOn": "2019-12-26",
+            "lastUpdateOn": "2023-01-11"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/centrifugal/centrifuge/internal/dissolve",
+        "succeded": true,
+        "duration": "3.435s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSubmitAndProcess-12",
+            "runs": 896187,
+            "nsPerOp": 1367,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSubmitAndProcessParallel-12",
+            "runs": 986722,
+            "nsPerOp": 1186,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSubmitAndProcess",
+            "modificationCount": 3,
+            "createdOn": "2020-01-19",
+            "lastUpdateOn": "2020-10-29"
+          },
+          {
+            "name": "BenchmarkSubmitAndProcessParallel",
+            "modificationCount": 3,
+            "createdOn": "2020-01-19",
+            "lastUpdateOn": "2020-10-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/centrifugal/centrifuge/internal/queue",
+        "succeded": true,
+        "duration": "2.877s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkQueueAdd-12",
+            "runs": 7988314,
+            "nsPerOp": 161.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueueAddConsume-12",
+            "runs": 590,
+            "nsPerOp": 2038248,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkQueueAdd",
+            "modificationCount": 4,
+            "createdOn": "2018-02-21",
+            "lastUpdateOn": "2023-01-08"
+          },
+          {
+            "name": "BenchmarkQueueAddConsume",
+            "modificationCount": 2,
+            "createdOn": "2018-02-21",
+            "lastUpdateOn": "2023-01-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/centrifugal/centrifuge/internal/recovery",
+        "succeded": true,
+        "duration": "1.220s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPubSubSync-12",
+            "runs": 235401,
+            "nsPerOp": 4878,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPubSubSync",
+            "modificationCount": 4,
+            "createdOn": "2020-02-23",
+            "lastUpdateOn": "2021-10-06"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "centrifugal/centrifuge",
+    "name": "centrifuge",
+    "private": false,
+    "html_url": "https://github.com/centrifugal/centrifuge",
+    "description": "Real-time messaging library for Go. The simplest way to add feature-rich and scalable WebSocket support to your application. The core of Centrifugo server.",
+    "fork": false,
+    "created_at": "2018-02-21T20:01:53Z",
+    "updated_at": "2023-10-22T16:19:40Z",
+    "pushed_at": "2023-10-23T17:58:52Z",
+    "ssh_url": "git@github.com:centrifugal/centrifuge.git",
+    "homepage": "https://pkg.go.dev/github.com/centrifugal/centrifuge",
+    "stargazers_count": 866,
+    "watchers_count": 866,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 83,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 7,
+    "topics": [
+      "json",
+      "messaging",
+      "protobuf",
+      "pubsub",
+      "real-time",
+      "redis",
+      "scalability",
+      "sockjs",
+      "websocket"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 125,
+    "Lines": 41525,
+    "Blank": 4788,
+    "Code": 34438,
+    "Comment": 2299,
+    "Bytes": 1134072,
+    "Complexity": 6261
+  }
+}

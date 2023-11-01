@@ -1,0 +1,1506 @@
+{
+  "Name": "upper/db",
+  "Path": "./repositories/upper__db",
+  "GoVersion": "1.15",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T21:39:34Z",
+    "benchmarkCount": 107,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 107,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/upper/db/v4/internal/cache",
+        "succeded": true,
+        "duration": "10.562s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewCache-12",
+            "runs": 2149399,
+            "nsPerOp": 530.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewCacheAndClear-12",
+            "runs": 1262834,
+            "nsPerOp": 1230,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadNonExistentValue-12",
+            "runs": 17846665,
+            "nsPerOp": 59.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteSameValue-12",
+            "runs": 5065053,
+            "nsPerOp": 249.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteNewValue-12",
+            "runs": 1000000,
+            "nsPerOp": 1853,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadExistentValue-12",
+            "runs": 4212760,
+            "nsPerOp": 241.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewCache",
+            "modificationCount": 1,
+            "createdOn": "2016-01-10",
+            "lastUpdateOn": "2016-01-10"
+          },
+          {
+            "name": "BenchmarkNewCacheAndClear",
+            "modificationCount": 1,
+            "createdOn": "2022-03-14",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkReadNonExistentValue",
+            "modificationCount": 1,
+            "createdOn": "2016-01-10",
+            "lastUpdateOn": "2016-01-10"
+          },
+          {
+            "name": "BenchmarkWriteSameValue",
+            "modificationCount": 2,
+            "createdOn": "2016-01-10",
+            "lastUpdateOn": "2016-03-12"
+          },
+          {
+            "name": "BenchmarkWriteNewValue",
+            "modificationCount": 1,
+            "createdOn": "2016-03-12",
+            "lastUpdateOn": "2016-03-12"
+          },
+          {
+            "name": "BenchmarkReadExistentValue",
+            "modificationCount": 1,
+            "createdOn": "2016-01-10",
+            "lastUpdateOn": "2016-01-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/upper/db/v4/internal/reflectx",
+        "succeded": true,
+        "duration": "11.660s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFieldNameL1-12",
+            "runs": 1000000,
+            "nsPerOp": 1003,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFieldNameL4-12",
+            "runs": 147615,
+            "nsPerOp": 7008,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFieldPosL1-12",
+            "runs": 7236322,
+            "nsPerOp": 202.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFieldPosL4-12",
+            "runs": 7478302,
+            "nsPerOp": 228.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFieldByIndexL4-12",
+            "runs": 6568776,
+            "nsPerOp": 364.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFieldNameL1",
+            "modificationCount": 1,
+            "createdOn": "2016-04-04",
+            "lastUpdateOn": "2016-04-04"
+          },
+          {
+            "name": "BenchmarkFieldNameL4",
+            "modificationCount": 1,
+            "createdOn": "2016-04-04",
+            "lastUpdateOn": "2016-04-04"
+          },
+          {
+            "name": "BenchmarkFieldPosL1",
+            "modificationCount": 1,
+            "createdOn": "2016-04-04",
+            "lastUpdateOn": "2016-04-04"
+          },
+          {
+            "name": "BenchmarkFieldPosL4",
+            "modificationCount": 1,
+            "createdOn": "2016-04-04",
+            "lastUpdateOn": "2016-04-04"
+          },
+          {
+            "name": "BenchmarkFieldByIndexL4",
+            "modificationCount": 1,
+            "createdOn": "2016-04-04",
+            "lastUpdateOn": "2016-04-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/upper/db/v4/internal/sqladapter/exql",
+        "succeded": true,
+        "duration": "141.702s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkColumnWithName-12",
+            "runs": 810928855,
+            "nsPerOp": 1.706,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnHash-12",
+            "runs": 18585361,
+            "nsPerOp": 83.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnCompile-12",
+            "runs": 3331281,
+            "nsPerOp": 440.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnCompileNoCache-12",
+            "runs": 3808183,
+            "nsPerOp": 377.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnWithDotCompile-12",
+            "runs": 5841634,
+            "nsPerOp": 204.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnWithImplicitAsKeywordCompile-12",
+            "runs": 7267260,
+            "nsPerOp": 190.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnWithAsKeywordCompile-12",
+            "runs": 6243856,
+            "nsPerOp": 381.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewColumnValue-12",
+            "runs": 367794530,
+            "nsPerOp": 5.121,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnValueHash-12",
+            "runs": 1608352,
+            "nsPerOp": 935.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnValueCompile-12",
+            "runs": 1582832,
+            "nsPerOp": 716.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnValueCompileNoCache-12",
+            "runs": 1000000,
+            "nsPerOp": 1510,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJoinColumnValues-12",
+            "runs": 10619130,
+            "nsPerOp": 308.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnValuesHash-12",
+            "runs": 140636,
+            "nsPerOp": 9123,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnValuesCompile-12",
+            "runs": 350604,
+            "nsPerOp": 5335,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnValuesCompileNoCache-12",
+            "runs": 147081,
+            "nsPerOp": 13471,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJoinColumns-12",
+            "runs": 100000000,
+            "nsPerOp": 26.56,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnsHash-12",
+            "runs": 1000000,
+            "nsPerOp": 1176,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnsCompile-12",
+            "runs": 1000000,
+            "nsPerOp": 2303,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkColumnsCompileNoCache-12",
+            "runs": 1000000,
+            "nsPerOp": 2679,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDatabaseHash-12",
+            "runs": 8990058,
+            "nsPerOp": 157.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDatabaseCompile-12",
+            "runs": 5452476,
+            "nsPerOp": 189.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDatabaseCompileNoCache-12",
+            "runs": 4268907,
+            "nsPerOp": 373.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDatabaseCompileNoCache2-12",
+            "runs": 451689,
+            "nsPerOp": 3817,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGroupByColumns-12",
+            "runs": 100000000,
+            "nsPerOp": 11.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGroupByHash-12",
+            "runs": 3718062,
+            "nsPerOp": 286.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGroupByCompile-12",
+            "runs": 2813660,
+            "nsPerOp": 376.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGroupByCompileNoCache-12",
+            "runs": 1289361,
+            "nsPerOp": 982.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJoin-12",
+            "runs": 1486130,
+            "nsPerOp": 1342,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileJoin-12",
+            "runs": 1493582,
+            "nsPerOp": 945.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileJoinNoCache-12",
+            "runs": 767896,
+            "nsPerOp": 2024,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileJoinNoCache2-12",
+            "runs": 75050,
+            "nsPerOp": 18244,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOrderBy-12",
+            "runs": 335653544,
+            "nsPerOp": 5.216,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOrderByHash-12",
+            "runs": 6696368,
+            "nsPerOp": 159.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileOrderByCompile-12",
+            "runs": 5944490,
+            "nsPerOp": 193.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileOrderByCompileNoCache-12",
+            "runs": 1894300,
+            "nsPerOp": 683.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileOrderCompile-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.5254,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileOrderCompileNoCache-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.4989,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSortColumnHash-12",
+            "runs": 11967583,
+            "nsPerOp": 105.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSortColumnCompile-12",
+            "runs": 7004331,
+            "nsPerOp": 158.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSortColumnCompileNoCache-12",
+            "runs": 4054854,
+            "nsPerOp": 273.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSortColumnsHash-12",
+            "runs": 4248396,
+            "nsPerOp": 265.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSortColumnsCompile-12",
+            "runs": 4251075,
+            "nsPerOp": 296.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSortColumnsCompileNoCache-12",
+            "runs": 1810690,
+            "nsPerOp": 913.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawCreate-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3536,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawString-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3467,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawCompile-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3062,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRawHash-12",
+            "runs": 14828397,
+            "nsPerOp": 96.04,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStatementSimpleQuery-12",
+            "runs": 1336666,
+            "nsPerOp": 913.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStatementSimpleQueryHash-12",
+            "runs": 1590070,
+            "nsPerOp": 668.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStatementSimpleQueryNoCache-12",
+            "runs": 731052,
+            "nsPerOp": 1568,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStatementComplexQuery-12",
+            "runs": 1372922,
+            "nsPerOp": 852.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStatementComplexQueryNoCache-12",
+            "runs": 648225,
+            "nsPerOp": 2428,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTableWithName-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3365,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTableHash-12",
+            "runs": 51108553,
+            "nsPerOp": 25.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTableCompile-12",
+            "runs": 25710063,
+            "nsPerOp": 43.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkTableCompileNoCache-12",
+            "runs": 5060509,
+            "nsPerOp": 220.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilIsBlankSymbol-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.2759,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilStdlibIsBlankSymbol-12",
+            "runs": 533569136,
+            "nsPerOp": 2.293,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilTrimBytes-12",
+            "runs": 71863038,
+            "nsPerOp": 17.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilStdlibBytesTrimSpace-12",
+            "runs": 45798198,
+            "nsPerOp": 24.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilTrimString-12",
+            "runs": 73557842,
+            "nsPerOp": 18.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilStdlibStringsTrimSpace-12",
+            "runs": 53622829,
+            "nsPerOp": 23.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilSeparateByComma-12",
+            "runs": 6404754,
+            "nsPerOp": 205.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilRegExpSeparateByComma-12",
+            "runs": 450726,
+            "nsPerOp": 2355,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilSeparateBySpace-12",
+            "runs": 3987612,
+            "nsPerOp": 443.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilRegExpSeparateBySpace-12",
+            "runs": 408802,
+            "nsPerOp": 3669,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilSeparateByAS-12",
+            "runs": 2617982,
+            "nsPerOp": 496.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUtilRegExpSeparateByAS-12",
+            "runs": 391950,
+            "nsPerOp": 4131,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValue-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6229,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueHash-12",
+            "runs": 44210451,
+            "nsPerOp": 38.39,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCompile-12",
+            "runs": 25126384,
+            "nsPerOp": 47.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValueCompileNoCache-12",
+            "runs": 11836710,
+            "nsPerOp": 106,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValues-12",
+            "runs": 576041738,
+            "nsPerOp": 1.904,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValuesHash-12",
+            "runs": 14181693,
+            "nsPerOp": 83.14,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValuesCompile-12",
+            "runs": 11261970,
+            "nsPerOp": 121.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValuesCompileNoCache-12",
+            "runs": 3230212,
+            "nsPerOp": 412.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWhere-12",
+            "runs": 255216908,
+            "nsPerOp": 4.598,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileWhere-12",
+            "runs": 5125047,
+            "nsPerOp": 236.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompileWhereNoCache-12",
+            "runs": 1803032,
+            "nsPerOp": 963.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkColumnWithName",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkColumnHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkColumnCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkColumnCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkColumnWithDotCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkColumnWithImplicitAsKeywordCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkColumnWithAsKeywordCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkNewColumnValue",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkColumnValueHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkColumnValueCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkColumnValueCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkJoinColumnValues",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkColumnValuesHash",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-08-14"
+          },
+          {
+            "name": "BenchmarkColumnValuesCompile",
+            "modificationCount": 4,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-08-14"
+          },
+          {
+            "name": "BenchmarkColumnValuesCompileNoCache",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-08-14"
+          },
+          {
+            "name": "BenchmarkJoinColumns",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkColumnsHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkColumnsCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkColumnsCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkDatabaseHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkDatabaseCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkDatabaseCompileNoCache",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkDatabaseCompileNoCache2",
+            "modificationCount": 3,
+            "createdOn": "2016-01-18",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkGroupByColumns",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkGroupByHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkGroupByCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkGroupByCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkJoin",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkCompileJoin",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkCompileJoinNoCache",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkCompileJoinNoCache2",
+            "modificationCount": 3,
+            "createdOn": "2016-01-18",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkOrderBy",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkOrderByHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkCompileOrderByCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkCompileOrderByCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkCompileOrderCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkCompileOrderCompileNoCache",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkSortColumnHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkSortColumnCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkSortColumnCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkSortColumnsHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkSortColumnsCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkSortColumnsCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkRawCreate",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkRawString",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkRawCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkRawHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkStatementSimpleQuery",
+            "modificationCount": 4,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkStatementSimpleQueryHash",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkStatementSimpleQueryNoCache",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkStatementComplexQuery",
+            "modificationCount": 4,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkStatementComplexQueryNoCache",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkTableWithName",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkTableHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkTableCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkTableCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkUtilIsBlankSymbol",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkUtilStdlibIsBlankSymbol",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkUtilTrimBytes",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkUtilStdlibBytesTrimSpace",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkUtilTrimString",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkUtilStdlibStringsTrimSpace",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkUtilSeparateByComma",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkUtilRegExpSeparateByComma",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkUtilSeparateBySpace",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkUtilRegExpSeparateBySpace",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkUtilSeparateByAS",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkUtilRegExpSeparateByAS",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkValue",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkValueHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkValueCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkValueCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2017-02-05"
+          },
+          {
+            "name": "BenchmarkValues",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkValuesHash",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkValuesCompile",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkValuesCompileNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2017-02-05"
+          },
+          {
+            "name": "BenchmarkWhere",
+            "modificationCount": 1,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2016-01-16"
+          },
+          {
+            "name": "BenchmarkCompileWhere",
+            "modificationCount": 3,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2022-04-03"
+          },
+          {
+            "name": "BenchmarkCompileWhereNoCache",
+            "modificationCount": 2,
+            "createdOn": "2016-01-16",
+            "lastUpdateOn": "2020-02-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/upper/db/v4/internal/sqlbuilder",
+        "succeded": true,
+        "duration": "29.982s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDelete1-12",
+            "runs": 204850,
+            "nsPerOp": 6178,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDelete2-12",
+            "runs": 150853,
+            "nsPerOp": 6851,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert1-12",
+            "runs": 102502,
+            "nsPerOp": 10393,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert2-12",
+            "runs": 108654,
+            "nsPerOp": 9685,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert3-12",
+            "runs": 114169,
+            "nsPerOp": 10814,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert4-12",
+            "runs": 116187,
+            "nsPerOp": 10708,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert5-12",
+            "runs": 120196,
+            "nsPerOp": 8421,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect1-12",
+            "runs": 272954,
+            "nsPerOp": 6117,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect2-12",
+            "runs": 118210,
+            "nsPerOp": 9381,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect3-12",
+            "runs": 148814,
+            "nsPerOp": 7524,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect4-12",
+            "runs": 206172,
+            "nsPerOp": 6071,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelect5-12",
+            "runs": 214574,
+            "nsPerOp": 7139,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdate1-12",
+            "runs": 431262,
+            "nsPerOp": 2888,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdate2-12",
+            "runs": 165374,
+            "nsPerOp": 6715,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdate3-12",
+            "runs": 122145,
+            "nsPerOp": 9771,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdate4-12",
+            "runs": 124182,
+            "nsPerOp": 16699,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUpdate5-12",
+            "runs": 184029,
+            "nsPerOp": 5728,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDelete1",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkDelete2",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkInsert1",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkInsert2",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkInsert3",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkInsert4",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkInsert5",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkSelect1",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkSelect2",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkSelect3",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkSelect4",
+            "modificationCount": 5,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkSelect5",
+            "modificationCount": 6,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2022-03-14"
+          },
+          {
+            "name": "BenchmarkUpdate1",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkUpdate2",
+            "modificationCount": 4,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkUpdate3",
+            "modificationCount": 5,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkUpdate4",
+            "modificationCount": 5,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          },
+          {
+            "name": "BenchmarkUpdate5",
+            "modificationCount": 5,
+            "createdOn": "2016-04-03",
+            "lastUpdateOn": "2020-02-23"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "upper/db",
+    "name": "db",
+    "private": false,
+    "html_url": "https://github.com/upper/db",
+    "description": "Data access layer for PostgreSQL, CockroachDB, MySQL, SQLite and MongoDB with ORM-like features.",
+    "fork": false,
+    "created_at": "2013-10-23T02:04:36Z",
+    "updated_at": "2023-10-23T11:05:39Z",
+    "pushed_at": "2023-09-19T18:40:43Z",
+    "ssh_url": "git@github.com:upper/db.git",
+    "homepage": "https://upper.io/",
+    "stargazers_count": 3394,
+    "watchers_count": 3394,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 239,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 154,
+    "topics": [
+      "cockroachdb",
+      "dal",
+      "database",
+      "db",
+      "go",
+      "golang",
+      "mongodb",
+      "mysql",
+      "nosql",
+      "orm",
+      "postgresql",
+      "sql",
+      "sqlite",
+      "upper"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 198,
+    "Lines": 36777,
+    "Blank": 5536,
+    "Code": 26428,
+    "Comment": 4813,
+    "Bytes": 932802,
+    "Complexity": 3279
+  }
+}

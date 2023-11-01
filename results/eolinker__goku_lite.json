@@ -1,0 +1,815 @@
+{
+  "Name": "eolinker/goku_lite",
+  "Path": "./repositories/eolinker__goku_lite",
+  "GoVersion": "1.15",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T21:26:15Z",
+    "benchmarkCount": 53,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 46,
+    "successfulBenchmarkSuitesCount": 6,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/hashicorp/go-hclog",
+        "succeded": true,
+        "duration": "1.333s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLogger/info_with_10_pairs-12",
+            "runs": 139018,
+            "nsPerOp": 8820,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLogger",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/hashicorp/golang-lru",
+        "succeded": true,
+        "duration": "11.301s",
+        "benchmarks": [
+          {
+            "name": "Benchmark2Q_Rand-12",
+            "runs": 1281820,
+            "nsPerOp": 944.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark2Q_Freq-12",
+            "runs": 1232358,
+            "nsPerOp": 850.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkARC_Rand-12",
+            "runs": 1000000,
+            "nsPerOp": 1276,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkARC_Freq-12",
+            "runs": 1000000,
+            "nsPerOp": 1032,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLRU_Rand-12",
+            "runs": 2271811,
+            "nsPerOp": 491,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLRU_Freq-12",
+            "runs": 3024943,
+            "nsPerOp": 416.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark2Q_Rand",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "Benchmark2Q_Freq",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkARC_Rand",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkARC_Freq",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLRU_Rand",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLRU_Freq",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/mitchellh/mapstructure",
+        "succeded": false,
+        "duration": "2.844s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_Decode-12",
+            "runs": 176679,
+            "nsPerOp": 7515,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_DecodeViaJSON-12",
+            "runs": 170654,
+            "nsPerOp": 7941,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_DecodeBasic-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_Decode",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "Benchmark_DecodeViaJSON",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "Benchmark_DecodeBasic",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/pkg/sftp",
+        "succeded": false,
+        "duration": "8.300s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCopyDown10MiBDelay10Msec",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "client_integration_test.go:2179: write /tmp/sftptest671084914: no space left on device"
+          },
+          {
+            "name": "BenchmarkCopyDown10MiBDelay50Msec",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "client_integration_test.go:2179: write /tmp/sftptest1133095452: no space left on device"
+          },
+          {
+            "name": "BenchmarkCopyDown10MiBDelay150Msec",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "client_integration_test.go:2179: write /tmp/sftptest923793355: no space left on device"
+          },
+          {
+            "name": "BenchmarkCopyUp10MiBDelay10Msec",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "client_integration_test.go:2253: write /tmp/sftptest2570245173: no space left on device"
+          },
+          {
+            "name": "BenchmarkCopyUp10MiBDelay50Msec",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "client_integration_test.go:2253: write /tmp/sftptest418044138: no space left on device"
+          },
+          {
+            "name": "BenchmarkCopyUp10MiBDelay150Msec",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "client_integration_test.go:2253: write /tmp/sftptest1292762970: no space left on device"
+          },
+          {
+            "name": "BenchmarkMarshalInit-12",
+            "runs": 2600812,
+            "nsPerOp": 460.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalOpen-12",
+            "runs": 3440414,
+            "nsPerOp": 333.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalWriteWorstCase-12",
+            "runs": 33127,
+            "nsPerOp": 53162,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshalWrite1k-12",
+            "runs": 686317,
+            "nsPerOp": 1774,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCopyDown10MiBDelay10Msec",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkCopyDown10MiBDelay50Msec",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkCopyDown10MiBDelay150Msec",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkCopyUp10MiBDelay10Msec",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkCopyUp10MiBDelay50Msec",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkCopyUp10MiBDelay150Msec",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMarshalInit",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMarshalOpen",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMarshalWriteWorstCase",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMarshalWrite1k",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/prometheus/common/model",
+        "succeded": true,
+        "duration": "34.431s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLabelNames-12",
+            "runs": 2327419,
+            "nsPerOp": 514.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLabelValues-12",
+            "runs": 2109854,
+            "nsPerOp": 493.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetric-12",
+            "runs": 851190,
+            "nsPerOp": 2147,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLabelToSignatureScalar-12",
+            "runs": 450295393,
+            "nsPerOp": 2.402,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLabelToSignatureSingle-12",
+            "runs": 4830284,
+            "nsPerOp": 271.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLabelToSignatureDouble-12",
+            "runs": 3709609,
+            "nsPerOp": 357.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLabelToSignatureTriple-12",
+            "runs": 3112578,
+            "nsPerOp": 465.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFingerprintScalar-12",
+            "runs": 501931156,
+            "nsPerOp": 2.288,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFingerprintSingle-12",
+            "runs": 5375876,
+            "nsPerOp": 254,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFingerprintDouble-12",
+            "runs": 3238286,
+            "nsPerOp": 371.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFingerprintTriple-12",
+            "runs": 3056394,
+            "nsPerOp": 473.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintScalar-12",
+            "runs": 470014106,
+            "nsPerOp": 2.36,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintSingle-12",
+            "runs": 16683534,
+            "nsPerOp": 65.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintDouble-12",
+            "runs": 10792592,
+            "nsPerOp": 137.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTriple-12",
+            "runs": 8238334,
+            "nsPerOp": 133.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmptyLabelSignature-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000707,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTripleConc1-12",
+            "runs": 9776973,
+            "nsPerOp": 130,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTripleConc2-12",
+            "runs": 18794841,
+            "nsPerOp": 66.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTripleConc4-12",
+            "runs": 22979516,
+            "nsPerOp": 51.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTripleConc8-12",
+            "runs": 49167752,
+            "nsPerOp": 25.86,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLabelNames",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLabelValues",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetric",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLabelToSignatureScalar",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLabelToSignatureSingle",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLabelToSignatureDouble",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLabelToSignatureTriple",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFingerprintScalar",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFingerprintSingle",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFingerprintDouble",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFingerprintTriple",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintScalar",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintSingle",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintDouble",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTriple",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkEmptyLabelSignature",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTripleConc1",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTripleConc2",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTripleConc4",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkMetricToFastFingerprintTripleConc8",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/sirupsen/logrus",
+        "succeded": true,
+        "duration": "24.280s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkErrorTextFormatter-12",
+            "runs": 586797,
+            "nsPerOp": 3016,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSmallTextFormatter-12",
+            "runs": 482512,
+            "nsPerOp": 4063,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLargeTextFormatter-12",
+            "runs": 77589,
+            "nsPerOp": 25243,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSmallColoredTextFormatter-12",
+            "runs": 273120,
+            "nsPerOp": 4676,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLargeColoredTextFormatter-12",
+            "runs": 64581,
+            "nsPerOp": 23771,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSmallJSONFormatter-12",
+            "runs": 226842,
+            "nsPerOp": 5586,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLargeJSONFormatter-12",
+            "runs": 65838,
+            "nsPerOp": 20273,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyLogger-12",
+            "runs": 139928,
+            "nsPerOp": 10831,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyLoggerNoLock-12",
+            "runs": 708476,
+            "nsPerOp": 1674,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggerJSONFormatter-12",
+            "runs": 121983,
+            "nsPerOp": 11307,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoggerTextFormatter-12",
+            "runs": 118600,
+            "nsPerOp": 8679,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWithoutCallerTracing-12",
+            "runs": 133,
+            "nsPerOp": 8535908,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWithCallerTracing-12",
+            "runs": 69,
+            "nsPerOp": 16788044,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkErrorTextFormatter",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkSmallTextFormatter",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLargeTextFormatter",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkSmallColoredTextFormatter",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLargeColoredTextFormatter",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkSmallJSONFormatter",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLargeJSONFormatter",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkDummyLogger",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkDummyLoggerNoLock",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLoggerJSONFormatter",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkLoggerTextFormatter",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkWithoutCallerTracing",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          },
+          {
+            "name": "BenchmarkWithCallerTracing",
+            "modificationCount": 1,
+            "createdOn": "2020-02-29",
+            "lastUpdateOn": "2020-02-29"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "eolinker/goku_lite",
+    "name": "goku_lite",
+    "private": false,
+    "html_url": "https://github.com/eolinker/goku_lite",
+    "description": "A Powerful HTTP API Gateway in pure golang！Goku API Gateway （中文名：悟空 API 网关）是一个基于 Golang开发的微服务网关，能够实现高性能 HTTP API 转发、服务编排、多租户管理、API 访问权限控制等目的，拥有强大的自定义插件系统可以自行扩展，并且提供友好的图形化配置界面，能够快速帮助企业进行 API 服务治理、提高 API 服务的稳定性和安全性。",
+    "fork": false,
+    "created_at": "2018-04-11T13:40:02Z",
+    "updated_at": "2023-10-20T09:12:06Z",
+    "pushed_at": "2023-04-12T09:03:10Z",
+    "ssh_url": "git@github.com:eolinker/goku_lite.git",
+    "homepage": "https://www.eolinker.com/product/api_gateway/",
+    "stargazers_count": 3039,
+    "watchers_count": 3039,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 630,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 21,
+    "topics": [
+      "api",
+      "api-gateway",
+      "gateway",
+      "goku",
+      "microservices",
+      "middleware",
+      "proxy"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "spdx_id": "GPL-3.0",
+      "node_id": "MDc6TGljZW5zZTk=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 1963,
+    "Lines": 620020,
+    "Blank": 65105,
+    "Code": 505002,
+    "Comment": 49913,
+    "Bytes": 19712815,
+    "Complexity": 70883
+  }
+}

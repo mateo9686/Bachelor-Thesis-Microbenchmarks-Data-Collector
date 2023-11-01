@@ -1,0 +1,371 @@
+{
+  "Name": "ycrash/yc-data-script",
+  "Path": "./repositories/ycrash__yc-data-script",
+  "GoVersion": "1.16",
+  "BenchmarkData": {
+    "timestamp": "2023-10-23T23:43:15Z",
+    "benchmarkCount": 21,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 21,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/shirou/gopsutil/v3/load",
+        "succeded": true,
+        "duration": "1.399s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLoad/FirstCall-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000409,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad/SubsequentCalls-12",
+            "runs": 63840,
+            "nsPerOp": 18834,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/shirou/gopsutil/v3/net",
+        "succeded": true,
+        "duration": "3.765s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetConnectionsInet-12",
+            "runs": 67,
+            "nsPerOp": 19762811,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetConnectionsAll-12",
+            "runs": 60,
+            "nsPerOp": 29881016,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetConnectionsInet",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkGetConnectionsAll",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/shirou/gopsutil/v3/process",
+        "succeded": true,
+        "duration": "10.380s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_fillFromCommWithContext-12",
+            "runs": 77624,
+            "nsPerOp": 17338,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_fillFromStatusWithContext-12",
+            "runs": 42081,
+            "nsPerOp": 26886,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewProcess-12",
+            "runs": 9306,
+            "nsPerOp": 129110,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessName-12",
+            "runs": 406339864,
+            "nsPerOp": 4.161,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessPpid-12",
+            "runs": 8282,
+            "nsPerOp": 185671,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_fillFromCommWithContext",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "Benchmark_fillFromStatusWithContext",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkNewProcess",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkProcessName",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          },
+          {
+            "name": "BenchmarkProcessPpid",
+            "modificationCount": 1,
+            "createdOn": "2022-07-27",
+            "lastUpdateOn": "2022-07-27"
+          }
+        ]
+      },
+      {
+        "pkg": "gopkg.in/yaml.v2",
+        "succeded": true,
+        "duration": "26.393s",
+        "benchmarks": [
+          {
+            "name": "Benchmark1000KB100Aliases-12",
+            "runs": 1,
+            "nsPerOp": 2319211683,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1000KBDeeplyNestedSlices-12",
+            "runs": 128,
+            "nsPerOp": 12862810,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1000KBDeeplyNestedMaps-12",
+            "runs": 100,
+            "nsPerOp": 14867853,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1000KBDeeplyNestedIndents-12",
+            "runs": 192,
+            "nsPerOp": 5217924,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1000KB1000IndentLines-12",
+            "runs": 2,
+            "nsPerOp": 595898844,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1KBMaps-12",
+            "runs": 1834,
+            "nsPerOp": 623427,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark10KBMaps-12",
+            "runs": 100,
+            "nsPerOp": 11372193,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark100KBMaps-12",
+            "runs": 8,
+            "nsPerOp": 151431076,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1000KBMaps-12",
+            "runs": 1,
+            "nsPerOp": 2571405340,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeepSlice-12",
+            "runs": 1,
+            "nsPerOp": 2137779490,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDeepFlow-12",
+            "runs": 2,
+            "nsPerOp": 924071977,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark1000KBMaxDepthNested-12",
+            "runs": 1,
+            "nsPerOp": 2474927024,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark1000KB100Aliases",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "Benchmark1000KBDeeplyNestedSlices",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "Benchmark1000KBDeeplyNestedMaps",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "Benchmark1000KBDeeplyNestedIndents",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "Benchmark1000KB1000IndentLines",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "Benchmark1KBMaps",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "Benchmark10KBMaps",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "Benchmark100KBMaps",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "Benchmark1000KBMaps",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "BenchmarkDeepSlice",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "BenchmarkDeepFlow",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          },
+          {
+            "name": "Benchmark1000KBMaxDepthNested",
+            "modificationCount": 1,
+            "createdOn": "2022-03-25",
+            "lastUpdateOn": "2022-03-25"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "ycrash/yc-data-script",
+    "name": "yc-data-script",
+    "private": false,
+    "html_url": "https://github.com/ycrash/yc-data-script",
+    "fork": false,
+    "created_at": "2022-03-25T06:28:27Z",
+    "updated_at": "2023-10-13T05:49:41Z",
+    "pushed_at": "2023-10-01T14:17:40Z",
+    "ssh_url": "git@github.com:ycrash/yc-data-script.git",
+    "stargazers_count": 33,
+    "watchers_count": 33,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 8,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 1,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "spdx_id": "AGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTE=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 298,
+    "Lines": 47686,
+    "Blank": 5336,
+    "Code": 38282,
+    "Comment": 4068,
+    "Bytes": 1206246,
+    "Complexity": 7703
+  }
+}

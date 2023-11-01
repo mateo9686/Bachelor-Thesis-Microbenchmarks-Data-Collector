@@ -1,0 +1,822 @@
+{
+  "Name": "suggest-go/suggest",
+  "Path": "./repositories/suggest-go__suggest",
+  "GoVersion": "1.13",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T11:30:31Z",
+    "benchmarkCount": 52,
+    "benchmarkSuiteCount": 8,
+    "successfulBenchmarkCount": 52,
+    "successfulBenchmarkSuitesCount": 8,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/suggest-go/suggest/pkg/alphabet",
+        "succeded": true,
+        "duration": "3.589s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHas-12",
+            "runs": 14153011,
+            "nsPerOp": 130.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHas",
+            "modificationCount": 2,
+            "createdOn": "2017-04-29",
+            "lastUpdateOn": "2018-08-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/suggest-go/suggest/pkg/analysis",
+        "succeded": true,
+        "duration": "7.448s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNGramTokenizer-12",
+            "runs": 673946,
+            "nsPerOp": 6178,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWordTokenizer-12",
+            "runs": 309084,
+            "nsPerOp": 9238,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNGramTokenizer",
+            "modificationCount": 1,
+            "createdOn": "2019-08-25",
+            "lastUpdateOn": "2019-08-25"
+          },
+          {
+            "name": "BenchmarkWordTokenizer",
+            "modificationCount": 1,
+            "createdOn": "2019-08-25",
+            "lastUpdateOn": "2019-08-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/suggest-go/suggest/pkg/compression",
+        "succeded": true,
+        "duration": "7.493s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBinaryDecode-12",
+            "runs": 228808,
+            "nsPerOp": 6732,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVBDecode-12",
+            "runs": 153153,
+            "nsPerOp": 14436,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingDecode-12",
+            "runs": 186620,
+            "nsPerOp": 7536,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBinaryDecode",
+            "modificationCount": 3,
+            "createdOn": "2017-12-20",
+            "lastUpdateOn": "2017-12-22"
+          },
+          {
+            "name": "BenchmarkVBDecode",
+            "modificationCount": 2,
+            "createdOn": "2017-12-20",
+            "lastUpdateOn": "2017-12-22"
+          },
+          {
+            "name": "BenchmarkSkippingDecode",
+            "modificationCount": 4,
+            "createdOn": "2019-07-11",
+            "lastUpdateOn": "2019-07-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/suggest-go/suggest/pkg/index",
+        "succeded": true,
+        "duration": "123.199s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDummyNext/Iterate_65-12",
+            "runs": 1000000,
+            "nsPerOp": 1501,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyNext/Iterate_256-12",
+            "runs": 526148,
+            "nsPerOp": 2315,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyNext/Iterate_650-12",
+            "runs": 244424,
+            "nsPerOp": 6003,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyNext/Iterate_6500-12",
+            "runs": 19848,
+            "nsPerOp": 52790,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyNext/Iterate_65000-12",
+            "runs": 2286,
+            "nsPerOp": 536793,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyNext/Iterate_650000-12",
+            "runs": 170,
+            "nsPerOp": 7719444,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingNext/Iterate_65-12",
+            "runs": 1860351,
+            "nsPerOp": 623.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingNext/Iterate_256-12",
+            "runs": 489141,
+            "nsPerOp": 2481,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingNext/Iterate_650-12",
+            "runs": 194094,
+            "nsPerOp": 6694,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingNext/Iterate_6500-12",
+            "runs": 18062,
+            "nsPerOp": 62174,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingNext/Iterate_65000-12",
+            "runs": 1600,
+            "nsPerOp": 648948,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingNext/Iterate_650000-12",
+            "runs": 180,
+            "nsPerOp": 6259176,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapNext/Iterate_65-12",
+            "runs": 977727,
+            "nsPerOp": 1815,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapNext/Iterate_256-12",
+            "runs": 198991,
+            "nsPerOp": 5105,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapNext/Iterate_650-12",
+            "runs": 97642,
+            "nsPerOp": 12374,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapNext/Iterate_6500-12",
+            "runs": 9103,
+            "nsPerOp": 138975,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapNext/Iterate_65000-12",
+            "runs": 883,
+            "nsPerOp": 1382452,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapNext/Iterate_650000-12",
+            "runs": 85,
+            "nsPerOp": 13892540,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyLowerBound/LowerBound_65-12",
+            "runs": 4079545,
+            "nsPerOp": 249.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyLowerBound/LowerBound_256-12",
+            "runs": 1000000,
+            "nsPerOp": 1101,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyLowerBound/LowerBound_650-12",
+            "runs": 682159,
+            "nsPerOp": 1967,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyLowerBound/LowerBound_6500-12",
+            "runs": 59680,
+            "nsPerOp": 19002,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyLowerBound/LowerBound_65000-12",
+            "runs": 33531,
+            "nsPerOp": 122994,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDummyLowerBound/LowerBound_650000-12",
+            "runs": 38704,
+            "nsPerOp": 134597,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound/LowerBound_65-12",
+            "runs": 3824774,
+            "nsPerOp": 414,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound/LowerBound_256-12",
+            "runs": 2812464,
+            "nsPerOp": 432.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound/LowerBound_650-12",
+            "runs": 2243413,
+            "nsPerOp": 557.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound/LowerBound_6500-12",
+            "runs": 770852,
+            "nsPerOp": 1811,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound/LowerBound_65000-12",
+            "runs": 294151,
+            "nsPerOp": 12704,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound/LowerBound_650000-12",
+            "runs": 399736,
+            "nsPerOp": 127979,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound/LowerBound_65-12",
+            "runs": 1241223,
+            "nsPerOp": 982,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound/LowerBound_256-12",
+            "runs": 1000000,
+            "nsPerOp": 1074,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound/LowerBound_650-12",
+            "runs": 2662438,
+            "nsPerOp": 913.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound/LowerBound_6500-12",
+            "runs": 1300269,
+            "nsPerOp": 770.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound/LowerBound_65000-12",
+            "runs": 1339094,
+            "nsPerOp": 955.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound/LowerBound_650000-12",
+            "runs": 443388,
+            "nsPerOp": 3010,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDummyNext",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyNext",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyNext",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyNext",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyNext",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyNext",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkSkippingNext",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingNext",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingNext",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingNext",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingNext",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingNext",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkBitmapNext",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapNext",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapNext",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapNext",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapNext",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapNext",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkDummyLowerBound",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyLowerBound",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyLowerBound",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyLowerBound",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyLowerBound",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkDummyLowerBound",
+            "modificationCount": 2,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-09-05"
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkSkippingLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-07-18",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          },
+          {
+            "name": "BenchmarkBitmapLowerBound",
+            "modificationCount": 1,
+            "createdOn": "2019-08-09",
+            "lastUpdateOn": "2019-08-09"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/suggest-go/suggest/pkg/lm",
+        "succeded": true,
+        "duration": "2.168s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkWalk-12",
+            "runs": 385,
+            "nsPerOp": 3496386,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkWalk",
+            "modificationCount": 3,
+            "createdOn": "2019-03-29",
+            "lastUpdateOn": "2019-07-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/suggest-go/suggest/pkg/merger",
+        "succeded": true,
+        "duration": "1.369s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMergeCandidate-12",
+            "runs": 10900114,
+            "nsPerOp": 108.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMergeCandidate",
+            "modificationCount": 1,
+            "createdOn": "2019-10-21",
+            "lastUpdateOn": "2019-10-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/suggest-go/suggest/pkg/mph",
+        "succeded": true,
+        "duration": "7.640s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMPHGet-12",
+            "runs": 9432609,
+            "nsPerOp": 151.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGoMapGet-12",
+            "runs": 12470739,
+            "nsPerOp": 140.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMPHGet",
+            "modificationCount": 2,
+            "createdOn": "2019-08-12",
+            "lastUpdateOn": "2019-08-22"
+          },
+          {
+            "name": "BenchmarkGoMapGet",
+            "modificationCount": 1,
+            "createdOn": "2019-08-12",
+            "lastUpdateOn": "2019-08-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/suggest-go/suggest/pkg/suggest",
+        "succeded": true,
+        "duration": "10.591s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSuggest-12",
+            "runs": 23962,
+            "nsPerOp": 50006,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAutoComplete-12",
+            "runs": 38332,
+            "nsPerOp": 30437,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRealExampleInMemory-12",
+            "runs": 15384,
+            "nsPerOp": 144773,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRealExampleOnDisc-12",
+            "runs": 8077,
+            "nsPerOp": 143654,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSuggestWordsOnDisc-12",
+            "runs": 2912,
+            "nsPerOp": 370072,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAutocompleteWordsOnDisc-12",
+            "runs": 10000,
+            "nsPerOp": 129968,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSuggest",
+            "modificationCount": 15,
+            "createdOn": "2017-02-13",
+            "lastUpdateOn": "2020-12-27"
+          },
+          {
+            "name": "BenchmarkAutoComplete",
+            "modificationCount": 3,
+            "createdOn": "2019-08-25",
+            "lastUpdateOn": "2020-12-27"
+          },
+          {
+            "name": "BenchmarkRealExampleInMemory",
+            "modificationCount": 16,
+            "createdOn": "2017-02-13",
+            "lastUpdateOn": "2019-04-07"
+          },
+          {
+            "name": "BenchmarkRealExampleOnDisc",
+            "modificationCount": 10,
+            "createdOn": "2017-05-09",
+            "lastUpdateOn": "2019-08-17"
+          },
+          {
+            "name": "BenchmarkSuggestWordsOnDisc",
+            "modificationCount": 3,
+            "createdOn": "2019-08-17",
+            "lastUpdateOn": "2020-12-27"
+          },
+          {
+            "name": "BenchmarkAutocompleteWordsOnDisc",
+            "modificationCount": 4,
+            "createdOn": "2019-04-07",
+            "lastUpdateOn": "2020-12-27"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "suggest-go/suggest",
+    "name": "suggest",
+    "private": false,
+    "html_url": "https://github.com/suggest-go/suggest",
+    "description": "Top-k Approximate String Matching.",
+    "fork": false,
+    "created_at": "2017-02-04T02:44:30Z",
+    "updated_at": "2023-10-14T15:34:44Z",
+    "pushed_at": "2021-12-16T15:49:03Z",
+    "ssh_url": "git@github.com:suggest-go/suggest.git",
+    "homepage": "https://suggest-go.github.io/",
+    "stargazers_count": 62,
+    "watchers_count": 62,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 3,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 10,
+    "topics": [
+      "autocomplete",
+      "fuzzy-search",
+      "fuzzy-string-matching",
+      "golang-library",
+      "language-model",
+      "ngram",
+      "search-engine",
+      "spellchecker",
+      "top-k-approximate-string-matching"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 140,
+    "Lines": 12635,
+    "Blank": 2338,
+    "Code": 9499,
+    "Comment": 798,
+    "Bytes": 279913,
+    "Complexity": 1723
+  }
+}

@@ -1,0 +1,723 @@
+{
+  "Name": "v2ray/v2ray-core",
+  "Path": "./repositories/v2ray__v2ray-core",
+  "GoVersion": "1.15",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T04:20:15Z",
+    "benchmarkCount": 41,
+    "benchmarkSuiteCount": 13,
+    "successfulBenchmarkCount": 41,
+    "successfulBenchmarkSuitesCount": 13,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "v2ray.com/core/app/router",
+        "succeded": true,
+        "duration": "9.351s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGeoIPMatcher4CN-12",
+            "runs": 70077330,
+            "nsPerOp": 19.38,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGeoIPMatcher6US-12",
+            "runs": 3947235,
+            "nsPerOp": 341.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMultiGeoIPMatcher-12",
+            "runs": 5213114,
+            "nsPerOp": 288.4,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGeoIPMatcher4CN",
+            "modificationCount": 2,
+            "createdOn": "2018-11-01",
+            "lastUpdateOn": "2019-02-10"
+          },
+          {
+            "name": "BenchmarkGeoIPMatcher6US",
+            "modificationCount": 2,
+            "createdOn": "2018-11-01",
+            "lastUpdateOn": "2019-02-10"
+          },
+          {
+            "name": "BenchmarkMultiGeoIPMatcher",
+            "modificationCount": 2,
+            "createdOn": "2018-11-07",
+            "lastUpdateOn": "2019-02-10"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/common/buf",
+        "succeded": true,
+        "duration": "14.323s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewBuffer-12",
+            "runs": 15654458,
+            "nsPerOp": 122.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNewBufferStack-12",
+            "runs": 9108979,
+            "nsPerOp": 123.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite2-12",
+            "runs": 354380390,
+            "nsPerOp": 3.425,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite8-12",
+            "runs": 349789455,
+            "nsPerOp": 3.311,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite32-12",
+            "runs": 326797746,
+            "nsPerOp": 3.522,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteByte2-12",
+            "runs": 364611777,
+            "nsPerOp": 2.961,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteByte8-12",
+            "runs": 60973366,
+            "nsPerOp": 21.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCopy-12",
+            "runs": 2746240,
+            "nsPerOp": 476.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSplitBytes-12",
+            "runs": 4262101,
+            "nsPerOp": 253,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewBuffer",
+            "modificationCount": 4,
+            "createdOn": "2016-11-21",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkNewBufferStack",
+            "modificationCount": 1,
+            "createdOn": "2018-11-15",
+            "lastUpdateOn": "2018-11-15"
+          },
+          {
+            "name": "BenchmarkWrite2",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkWrite8",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkWrite32",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkWriteByte2",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkWriteByte8",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkCopy",
+            "modificationCount": 2,
+            "createdOn": "2018-11-15",
+            "lastUpdateOn": "2018-11-15"
+          },
+          {
+            "name": "BenchmarkSplitBytes",
+            "modificationCount": 1,
+            "createdOn": "2018-11-19",
+            "lastUpdateOn": "2018-11-19"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/common/crypto",
+        "succeded": true,
+        "duration": "6.486s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkChaCha20-12",
+            "runs": 392,
+            "nsPerOp": 2770141,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChaCha20IETF-12",
+            "runs": 409,
+            "nsPerOp": 2793302,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAESEncryption-12",
+            "runs": 672,
+            "nsPerOp": 1706933,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAESDecryption-12",
+            "runs": 670,
+            "nsPerOp": 1641414,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkChaCha20",
+            "modificationCount": 1,
+            "createdOn": "2016-02-23",
+            "lastUpdateOn": "2016-02-23"
+          },
+          {
+            "name": "BenchmarkChaCha20IETF",
+            "modificationCount": 1,
+            "createdOn": "2016-02-23",
+            "lastUpdateOn": "2016-02-23"
+          },
+          {
+            "name": "BenchmarkAESEncryption",
+            "modificationCount": 2,
+            "createdOn": "2016-02-23",
+            "lastUpdateOn": "2016-02-25"
+          },
+          {
+            "name": "BenchmarkAESDecryption",
+            "modificationCount": 2,
+            "createdOn": "2016-02-23",
+            "lastUpdateOn": "2016-02-25"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/common/dice",
+        "succeded": true,
+        "duration": "4.554s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRoll1-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.3195,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRoll20-12",
+            "runs": 74776539,
+            "nsPerOp": 16.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntn1-12",
+            "runs": 89708182,
+            "nsPerOp": 12.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntn20-12",
+            "runs": 76958995,
+            "nsPerOp": 14.47,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRoll1",
+            "modificationCount": 1,
+            "createdOn": "2018-02-24",
+            "lastUpdateOn": "2018-02-24"
+          },
+          {
+            "name": "BenchmarkRoll20",
+            "modificationCount": 1,
+            "createdOn": "2018-02-24",
+            "lastUpdateOn": "2018-02-24"
+          },
+          {
+            "name": "BenchmarkIntn1",
+            "modificationCount": 1,
+            "createdOn": "2018-02-24",
+            "lastUpdateOn": "2018-02-24"
+          },
+          {
+            "name": "BenchmarkIntn20",
+            "modificationCount": 1,
+            "createdOn": "2018-02-24",
+            "lastUpdateOn": "2018-02-24"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/common/mux",
+        "succeded": true,
+        "duration": "1.998s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFrameWrite-12",
+            "runs": 8665581,
+            "nsPerOp": 213.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFrameWrite",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/common/net",
+        "succeded": true,
+        "duration": "6.203s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseAddressIPv4-12",
+            "runs": 5902508,
+            "nsPerOp": 253.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseAddressIPv6-12",
+            "runs": 2609894,
+            "nsPerOp": 389.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseAddressDomain-12",
+            "runs": 2672848,
+            "nsPerOp": 515.8,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseAddressIPv4",
+            "modificationCount": 2,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2018-11-19"
+          },
+          {
+            "name": "BenchmarkParseAddressIPv6",
+            "modificationCount": 2,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2018-11-19"
+          },
+          {
+            "name": "BenchmarkParseAddressDomain",
+            "modificationCount": 2,
+            "createdOn": "2018-11-05",
+            "lastUpdateOn": "2018-11-19"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/common/protocol",
+        "succeded": true,
+        "duration": "11.649s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAddressReadingIPv4-12",
+            "runs": 5675606,
+            "nsPerOp": 215.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddressReadingIPv6-12",
+            "runs": 4045891,
+            "nsPerOp": 331.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddressReadingDomain-12",
+            "runs": 2782568,
+            "nsPerOp": 393.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddressWritingIPv4-12",
+            "runs": 10581501,
+            "nsPerOp": 129.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddressWritingIPv6-12",
+            "runs": 11208975,
+            "nsPerOp": 164.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAddressWritingDomain-12",
+            "runs": 3977943,
+            "nsPerOp": 308.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAddressReadingIPv4",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkAddressReadingIPv6",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkAddressReadingDomain",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkAddressWritingIPv4",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkAddressWritingIPv6",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          },
+          {
+            "name": "BenchmarkAddressWritingDomain",
+            "modificationCount": 1,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-11-14"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/common/serial",
+        "succeded": true,
+        "duration": "5.272s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkReadUint16-12",
+            "runs": 23010176,
+            "nsPerOp": 70.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteUint64-12",
+            "runs": 18266378,
+            "nsPerOp": 60.11,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConcat-12",
+            "runs": 5123845,
+            "nsPerOp": 226.5,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkReadUint16",
+            "modificationCount": 1,
+            "createdOn": "2018-11-15",
+            "lastUpdateOn": "2018-11-15"
+          },
+          {
+            "name": "BenchmarkWriteUint64",
+            "modificationCount": 1,
+            "createdOn": "2018-11-15",
+            "lastUpdateOn": "2018-11-15"
+          },
+          {
+            "name": "BenchmarkConcat",
+            "modificationCount": 1,
+            "createdOn": "2018-10-01",
+            "lastUpdateOn": "2018-10-01"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/common/strmatcher",
+        "succeded": true,
+        "duration": "5.190s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDomainMatcherGroup-12",
+            "runs": 23668666,
+            "nsPerOp": 52.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFullMatcherGroup-12",
+            "runs": 97782212,
+            "nsPerOp": 12.61,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarchGroup-12",
+            "runs": 19422508,
+            "nsPerOp": 61.32,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDomainMatcherGroup",
+            "modificationCount": 1,
+            "createdOn": "2018-08-19",
+            "lastUpdateOn": "2018-08-19"
+          },
+          {
+            "name": "BenchmarkFullMatcherGroup",
+            "modificationCount": 1,
+            "createdOn": "2018-08-20",
+            "lastUpdateOn": "2018-08-20"
+          },
+          {
+            "name": "BenchmarkMarchGroup",
+            "modificationCount": 2,
+            "createdOn": "2018-08-19",
+            "lastUpdateOn": "2018-08-20"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/common/task",
+        "succeded": true,
+        "duration": "2.556s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkExecuteOne-12",
+            "runs": 427534,
+            "nsPerOp": 3189,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecuteTwo-12",
+            "runs": 192111,
+            "nsPerOp": 5681,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkExecuteOne",
+            "modificationCount": 2,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-12-06"
+          },
+          {
+            "name": "BenchmarkExecuteTwo",
+            "modificationCount": 2,
+            "createdOn": "2018-11-14",
+            "lastUpdateOn": "2018-12-06"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/transport/internet/tls",
+        "succeded": true,
+        "duration": "1.504s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCertificateIssuing-12",
+            "runs": 2784,
+            "nsPerOp": 512349,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCertificateIssuing",
+            "modificationCount": 1,
+            "createdOn": "2018-11-21",
+            "lastUpdateOn": "2018-11-21"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/transport/internet/xtls",
+        "succeded": true,
+        "duration": "2.279s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCertificateIssuing-12",
+            "runs": 4660,
+            "nsPerOp": 478006,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCertificateIssuing",
+            "modificationCount": 1,
+            "createdOn": "2018-11-21",
+            "lastUpdateOn": "2018-11-21"
+          }
+        ]
+      },
+      {
+        "pkg": "v2ray.com/core/transport/pipe",
+        "succeded": true,
+        "duration": "1.312s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPipeReadWrite-12",
+            "runs": 30681316,
+            "nsPerOp": 41.15,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPipeReadWrite",
+            "modificationCount": 1,
+            "createdOn": "2018-11-17",
+            "lastUpdateOn": "2018-11-17"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "v2ray/v2ray-core",
+    "name": "v2ray-core",
+    "private": false,
+    "html_url": "https://github.com/v2ray/v2ray-core",
+    "description": "A platform for building proxies to bypass network restrictions.",
+    "fork": false,
+    "created_at": "2015-09-04T11:42:53Z",
+    "updated_at": "2023-10-23T14:06:24Z",
+    "pushed_at": "2023-10-18T03:57:30Z",
+    "ssh_url": "git@github.com:v2ray/v2ray-core.git",
+    "homepage": "https://www.v2ray.com/",
+    "stargazers_count": 43212,
+    "watchers_count": 43212,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 8770,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 27,
+    "topics": [
+      "golang",
+      "http-proxy",
+      "proxy",
+      "shadowsocks",
+      "socks",
+      "socks5",
+      "v2ray",
+      "vmess"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 643,
+    "Lines": 78943,
+    "Blank": 10548,
+    "Code": 65279,
+    "Comment": 3116,
+    "Bytes": 2245962,
+    "Complexity": 10576
+  }
+}

@@ -1,0 +1,638 @@
+{
+  "Name": "outcaste-io/ristretto",
+  "Path": "./repositories/outcaste-io__ristretto",
+  "GoVersion": "1.12",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T18:04:04Z",
+    "benchmarkCount": 75,
+    "benchmarkSuiteCount": 2,
+    "successfulBenchmarkCount": 74,
+    "successfulBenchmarkSuitesCount": 2,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/outcaste-io/ristretto",
+        "succeded": true,
+        "duration": "8.106s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSketchIncrement-12",
+            "runs": 99241718,
+            "nsPerOp": 13.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSketchEstimate-12",
+            "runs": 122694786,
+            "nsPerOp": 10.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreGet-12",
+            "runs": 30532507,
+            "nsPerOp": 48.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreSet-12",
+            "runs": 12474800,
+            "nsPerOp": 106.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStoreUpdate-12",
+            "runs": 11325811,
+            "nsPerOp": 123.9,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSketchIncrement",
+            "modificationCount": 2,
+            "createdOn": "2019-09-06",
+            "lastUpdateOn": "2019-10-04"
+          },
+          {
+            "name": "BenchmarkSketchEstimate",
+            "modificationCount": 2,
+            "createdOn": "2019-09-06",
+            "lastUpdateOn": "2019-10-04"
+          },
+          {
+            "name": "BenchmarkStoreGet",
+            "modificationCount": 14,
+            "createdOn": "2019-05-30",
+            "lastUpdateOn": "2021-08-24"
+          },
+          {
+            "name": "BenchmarkStoreSet",
+            "modificationCount": 14,
+            "createdOn": "2019-05-30",
+            "lastUpdateOn": "2021-08-24"
+          },
+          {
+            "name": "BenchmarkStoreUpdate",
+            "modificationCount": 14,
+            "createdOn": "2019-05-30",
+            "lastUpdateOn": "2021-08-24"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/outcaste-io/ristretto/z",
+        "succeded": true,
+        "duration": "187.942s",
+        "benchmarks": [
+          {
+            "name": "Benchmarks",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "relate"
+          },
+          {
+            "name": "BenchmarkAllocate-12",
+            "runs": 52809379,
+            "nsPerOp": 26.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkM_New-12",
+            "runs": 10000,
+            "nsPerOp": 396708,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkM_Clear-12",
+            "runs": 596691,
+            "nsPerOp": 1958,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkM_Add-12",
+            "runs": 540,
+            "nsPerOp": 2214908,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkM_Has-12",
+            "runs": 675,
+            "nsPerOp": 2051259,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPurge/go-mem-12",
+            "runs": 1,
+            "nsPerOp": 9419873159,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPurge/btree-12",
+            "runs": 1,
+            "nsPerOp": 22913200297,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite/map-12",
+            "runs": 1000000,
+            "nsPerOp": 2779,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWrite/btree-12",
+            "runs": 1000000,
+            "nsPerOp": 1463,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead/map-12",
+            "runs": 2501155,
+            "nsPerOp": 415,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead/btree-12",
+            "runs": 1000000,
+            "nsPerOp": 1039,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/linear-8-12",
+            "runs": 81158388,
+            "nsPerOp": 24.74,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/binary-8-12",
+            "runs": 89576704,
+            "nsPerOp": 18.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/unrolled-asm-8-12",
+            "runs": 152282272,
+            "nsPerOp": 10.48,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/linear-16-12",
+            "runs": 60510045,
+            "nsPerOp": 18.86,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/binary-16-12",
+            "runs": 54555350,
+            "nsPerOp": 22.15,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/unrolled-asm-16-12",
+            "runs": 142197162,
+            "nsPerOp": 9.483,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/linear-32-12",
+            "runs": 29505002,
+            "nsPerOp": 51.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/binary-32-12",
+            "runs": 60899868,
+            "nsPerOp": 23.04,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/unrolled-asm-32-12",
+            "runs": 96946962,
+            "nsPerOp": 12.87,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/linear-64-12",
+            "runs": 18358293,
+            "nsPerOp": 90.32,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/binary-64-12",
+            "runs": 50702983,
+            "nsPerOp": 36.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/unrolled-asm-64-12",
+            "runs": 68820073,
+            "nsPerOp": 19.99,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/linear-128-12",
+            "runs": 7467823,
+            "nsPerOp": 140.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/binary-128-12",
+            "runs": 28003388,
+            "nsPerOp": 42.68,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/unrolled-asm-128-12",
+            "runs": 33222381,
+            "nsPerOp": 34.95,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/linear-196-12",
+            "runs": 7444465,
+            "nsPerOp": 281.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/binary-196-12",
+            "runs": 20976498,
+            "nsPerOp": 48.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/unrolled-asm-196-12",
+            "runs": 19041828,
+            "nsPerOp": 85.06,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/linear-255-12",
+            "runs": 5200008,
+            "nsPerOp": 274.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/binary-255-12",
+            "runs": 25995338,
+            "nsPerOp": 44.88,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSearch/unrolled-asm-255-12",
+            "runs": 13890376,
+            "nsPerOp": 78.12,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-64_th-1-12",
+            "runs": 22818645,
+            "nsPerOp": 64.58,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-64_th-2-12",
+            "runs": 20198564,
+            "nsPerOp": 62.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-64_th-4-12",
+            "runs": 19667716,
+            "nsPerOp": 57.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-64_th-8-12",
+            "runs": 24087202,
+            "nsPerOp": 76.92,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-64_th-16-12",
+            "runs": 27667707,
+            "nsPerOp": 53.49,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-64_th-32-12",
+            "runs": 23652426,
+            "nsPerOp": 51.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-64_th-64-12",
+            "runs": 17765536,
+            "nsPerOp": 64.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-128_th-1-12",
+            "runs": 17259729,
+            "nsPerOp": 66.28,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-128_th-2-12",
+            "runs": 18139110,
+            "nsPerOp": 63.96,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-128_th-4-12",
+            "runs": 16019469,
+            "nsPerOp": 63.45,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-128_th-8-12",
+            "runs": 18807920,
+            "nsPerOp": 64.51,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-128_th-16-12",
+            "runs": 23162438,
+            "nsPerOp": 59.21,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-128_th-32-12",
+            "runs": 17517945,
+            "nsPerOp": 83.45,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-128_th-64-12",
+            "runs": 14797993,
+            "nsPerOp": 82.81,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-128_th-128-12",
+            "runs": 12892824,
+            "nsPerOp": 94.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-255_th-1-12",
+            "runs": 13545802,
+            "nsPerOp": 86.18,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-255_th-2-12",
+            "runs": 15520323,
+            "nsPerOp": 73.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-255_th-4-12",
+            "runs": 16609135,
+            "nsPerOp": 95.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-255_th-8-12",
+            "runs": 15176673,
+            "nsPerOp": 68.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-255_th-16-12",
+            "runs": 21066231,
+            "nsPerOp": 67.27,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-255_th-32-12",
+            "runs": 14182305,
+            "nsPerOp": 73.45,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-255_th-64-12",
+            "runs": 17755842,
+            "nsPerOp": 85.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-255_th-128-12",
+            "runs": 11508393,
+            "nsPerOp": 151.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCustomSearch/sz-255_th-256-12",
+            "runs": 8951403,
+            "nsPerOp": 202,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAllocation/Pool-12",
+            "runs": 19770,
+            "nsPerOp": 66750,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAllocation/Calloc-12",
+            "runs": 8595,
+            "nsPerOp": 117269,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemHash-12",
+            "runs": 100000000,
+            "nsPerOp": 12.84,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMemHashString-12",
+            "runs": 100000000,
+            "nsPerOp": 23.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSip-12",
+            "runs": 22581135,
+            "nsPerOp": 56.64,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFarm-12",
+            "runs": 100000000,
+            "nsPerOp": 10.63,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFnv-12",
+            "runs": 14111436,
+            "nsPerOp": 106.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNanoTime-12",
+            "runs": 831620,
+            "nsPerOp": 1509,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCPUTicks-12",
+            "runs": 38048796,
+            "nsPerOp": 36.16,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFastRand-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.196,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandSource-12",
+            "runs": 258958183,
+            "nsPerOp": 3.995,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandGlobal-12",
+            "runs": 31223150,
+            "nsPerOp": 38.49,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRandAtomic-12",
+            "runs": 85826128,
+            "nsPerOp": 12.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": null
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "outcaste-io/ristretto",
+    "name": "ristretto",
+    "private": false,
+    "html_url": "https://github.com/outcaste-io/ristretto",
+    "description": "A high performance memory-bound Go cache",
+    "fork": false,
+    "created_at": "2022-01-25T18:13:05Z",
+    "updated_at": "2023-10-16T04:42:27Z",
+    "pushed_at": "2023-07-27T14:01:24Z",
+    "ssh_url": "git@github.com:outcaste-io/ristretto.git",
+    "stargazers_count": 78,
+    "watchers_count": 78,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 10,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 0,
+    "topics": [
+      "cache",
+      "golang"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 59,
+    "Lines": 10060,
+    "Blank": 1193,
+    "Code": 7373,
+    "Comment": 1494,
+    "Bytes": 240010,
+    "Complexity": 1149
+  }
+}

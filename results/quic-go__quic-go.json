@@ -1,0 +1,198 @@
+{
+  "Name": "quic-go/quic-go",
+  "Path": "./repositories/quic-go__quic-go",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T02:29:59Z",
+    "benchmarkCount": 7,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 6,
+    "successfulBenchmarkSuitesCount": 3,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/quic-go/quic-go/integrationtests/self",
+        "succeded": false,
+        "duration": "0.928s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHandshake-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHandshake",
+            "modificationCount": 4,
+            "createdOn": "2023-01-03",
+            "lastUpdateOn": "2023-04-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/quic-go/quic-go/internal/handshake",
+        "succeded": true,
+        "duration": "6.553s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPacketEncryption-12",
+            "runs": 1641079,
+            "nsPerOp": 760.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPacketDecryption-12",
+            "runs": 2247871,
+            "nsPerOp": 592.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRollKeys-12",
+            "runs": 52030,
+            "nsPerOp": 24257,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPacketEncryption",
+            "modificationCount": 1,
+            "createdOn": "2023-03-28",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkPacketDecryption",
+            "modificationCount": 1,
+            "createdOn": "2023-03-28",
+            "lastUpdateOn": "2023-03-28"
+          },
+          {
+            "name": "BenchmarkRollKeys",
+            "modificationCount": 1,
+            "createdOn": "2023-03-28",
+            "lastUpdateOn": "2023-03-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/quic-go/quic-go/internal/utils/ringbuffer",
+        "succeded": true,
+        "duration": "2.153s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRingBuffer-12",
+            "runs": 155852056,
+            "nsPerOp": 8.207,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRingBuffer",
+            "modificationCount": 1,
+            "createdOn": "2023-06-02",
+            "lastUpdateOn": "2023-06-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/quic-go/quic-go/internal/wire",
+        "succeded": true,
+        "duration": "2.921s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkIs0RTTPacket-12",
+            "runs": 440540182,
+            "nsPerOp": 2.502,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriteShortHeader-12",
+            "runs": 58056249,
+            "nsPerOp": 23.51,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkIs0RTTPacket",
+            "modificationCount": 1,
+            "createdOn": "2023-04-19",
+            "lastUpdateOn": "2023-04-19"
+          },
+          {
+            "name": "BenchmarkWriteShortHeader",
+            "modificationCount": 1,
+            "createdOn": "2023-01-17",
+            "lastUpdateOn": "2023-01-17"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "quic-go/quic-go",
+    "name": "quic-go",
+    "private": false,
+    "html_url": "https://github.com/quic-go/quic-go",
+    "description": "A QUIC implementation in pure go",
+    "fork": false,
+    "created_at": "2016-04-06T20:16:27Z",
+    "updated_at": "2023-10-23T11:14:01Z",
+    "pushed_at": "2023-10-23T11:22:27Z",
+    "ssh_url": "git@github.com:quic-go/quic-go.git",
+    "stargazers_count": 8789,
+    "watchers_count": 8789,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 1219,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 148,
+    "topics": [
+      "go",
+      "golang",
+      "http3",
+      "protocol",
+      "quic",
+      "quic-client",
+      "quic-server"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 439,
+    "Lines": 88207,
+    "Blank": 9998,
+    "Code": 72090,
+    "Comment": 6119,
+    "Bytes": 2971360,
+    "Complexity": 7476
+  }
+}

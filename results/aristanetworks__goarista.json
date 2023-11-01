@@ -1,0 +1,1252 @@
+{
+  "Name": "aristanetworks/goarista",
+  "Path": "./repositories/aristanetworks__goarista",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T04:59:00Z",
+    "benchmarkCount": 88,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 88,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/aristanetworks/goarista/gnmi",
+        "succeded": true,
+        "duration": "12.759s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPathElementToSigleElementName-12",
+            "runs": 91468524,
+            "nsPerOp": 13.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathElementTwoKeys-12",
+            "runs": 2936550,
+            "nsPerOp": 435.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathElementBadKeys-12",
+            "runs": 1347945,
+            "nsPerOp": 920.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathElementMaxKeys-12",
+            "runs": 1672800,
+            "nsPerOp": 774.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyToString/singlekey-12",
+            "runs": 5205590,
+            "nsPerOp": 212.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyToString/fivekeys-12",
+            "runs": 1220208,
+            "nsPerOp": 1007,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyToString/escaped-12",
+            "runs": 1483716,
+            "nsPerOp": 816,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPathElementToSigleElementName",
+            "modificationCount": 1,
+            "createdOn": "2017-07-26",
+            "lastUpdateOn": "2017-07-26"
+          },
+          {
+            "name": "BenchmarkPathElementTwoKeys",
+            "modificationCount": 1,
+            "createdOn": "2017-07-26",
+            "lastUpdateOn": "2017-07-26"
+          },
+          {
+            "name": "BenchmarkPathElementBadKeys",
+            "modificationCount": 1,
+            "createdOn": "2017-07-26",
+            "lastUpdateOn": "2017-07-26"
+          },
+          {
+            "name": "BenchmarkPathElementMaxKeys",
+            "modificationCount": 2,
+            "createdOn": "2017-07-26",
+            "lastUpdateOn": "2022-03-08"
+          },
+          {
+            "name": "BenchmarkKeyToString",
+            "modificationCount": 1,
+            "createdOn": "2022-03-08",
+            "lastUpdateOn": "2022-03-08"
+          },
+          {
+            "name": "BenchmarkKeyToString",
+            "modificationCount": 1,
+            "createdOn": "2022-03-08",
+            "lastUpdateOn": "2022-03-08"
+          },
+          {
+            "name": "BenchmarkKeyToString",
+            "modificationCount": 1,
+            "createdOn": "2022-03-08",
+            "lastUpdateOn": "2022-03-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aristanetworks/goarista/key",
+        "succeded": true,
+        "duration": "112.291s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMapGrow/key.Map-12",
+            "runs": 16885,
+            "nsPerOp": 152058,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapGet/key.Map-12",
+            "runs": 10000,
+            "nsPerOp": 103798,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_\u003cnil\u003e-12",
+            "runs": 163170483,
+            "nsPerOp": 6.718,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_\u003cnil\u003e-12",
+            "runs": 82947740,
+            "nsPerOp": 19.99,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_string-12",
+            "runs": 7058754,
+            "nsPerOp": 197.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_string-12",
+            "runs": 28791812,
+            "nsPerOp": 48.03,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_string#01-12",
+            "runs": 2754223,
+            "nsPerOp": 470.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_string#01-12",
+            "runs": 4091230,
+            "nsPerOp": 344.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_uint64-12",
+            "runs": 6690259,
+            "nsPerOp": 302.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_uint64-12",
+            "runs": 9199002,
+            "nsPerOp": 155.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_int8-12",
+            "runs": 10381958,
+            "nsPerOp": 105.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_int8-12",
+            "runs": 12893602,
+            "nsPerOp": 97.67,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_bool-12",
+            "runs": 100000000,
+            "nsPerOp": 26.27,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_bool-12",
+            "runs": 60150501,
+            "nsPerOp": 34.49,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_float32-12",
+            "runs": 3798668,
+            "nsPerOp": 405.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_float32-12",
+            "runs": 4271694,
+            "nsPerOp": 424.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_float64-12",
+            "runs": 2952118,
+            "nsPerOp": 403.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_float64-12",
+            "runs": 3335920,
+            "nsPerOp": 368.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_map[string]interface_{}-12",
+            "runs": 462387,
+            "nsPerOp": 2593,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_map[string]interface_{}-12",
+            "runs": 1000000,
+            "nsPerOp": 2528,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_[]interface_{}-12",
+            "runs": 488151,
+            "nsPerOp": 2417,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_[]interface_{}-12",
+            "runs": 750259,
+            "nsPerOp": 2529,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SI_key.pointer-12",
+            "runs": 1000000,
+            "nsPerOp": 1135,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringification/SK_key.pointer-12",
+            "runs": 1501462,
+            "nsPerOp": 699.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSetToMapWithStringKey-12",
+            "runs": 1000000,
+            "nsPerOp": 1700,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSetToMapWithUint64Key-12",
+            "runs": 1427985,
+            "nsPerOp": 708.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetFromMapWithMapKey-12",
+            "runs": 1827250,
+            "nsPerOp": 665.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBigMapWithCompositeKeys-12",
+            "runs": 2478296,
+            "nsPerOp": 473.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/string-12",
+            "runs": 10926175,
+            "nsPerOp": 125.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/int8-12",
+            "runs": 135758974,
+            "nsPerOp": 9.286,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/int16-12",
+            "runs": 95327983,
+            "nsPerOp": 13.35,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/int32-12",
+            "runs": 100000000,
+            "nsPerOp": 13.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/int64-12",
+            "runs": 18193580,
+            "nsPerOp": 84.11,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/uint8-12",
+            "runs": 61694950,
+            "nsPerOp": 33.57,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/uint16-12",
+            "runs": 41871282,
+            "nsPerOp": 39.22,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/uint32-12",
+            "runs": 32585796,
+            "nsPerOp": 37.72,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/uint64-12",
+            "runs": 7937278,
+            "nsPerOp": 184.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/float32-12",
+            "runs": 7459660,
+            "nsPerOp": 149.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/float64-12",
+            "runs": 11086524,
+            "nsPerOp": 200.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/bool-12",
+            "runs": 55246927,
+            "nsPerOp": 20.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/map[string]interface_{}-12",
+            "runs": 2418104,
+            "nsPerOp": 438.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKeyTypes/[]interface_{}-12",
+            "runs": 1784702,
+            "nsPerOp": 623.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathString-12",
+            "runs": 930184,
+            "nsPerOp": 1292,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointer/0-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7964,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointer/1-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.273,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointer/2-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7303,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointer/3-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.6903,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointer/4-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.736,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointerAsKey/0-12",
+            "runs": 5189479,
+            "nsPerOp": 193.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointerAsKey/1-12",
+            "runs": 5830609,
+            "nsPerOp": 248.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointerAsKey/2-12",
+            "runs": 3088738,
+            "nsPerOp": 610.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointerAsKey/3-12",
+            "runs": 1425290,
+            "nsPerOp": 1098,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPointerAsKey/4-12",
+            "runs": 2640770,
+            "nsPerOp": 422.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey/0-12",
+            "runs": 9857961,
+            "nsPerOp": 123.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey/1-12",
+            "runs": 10968794,
+            "nsPerOp": 125.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey/2-12",
+            "runs": 10014214,
+            "nsPerOp": 248.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey/3-12",
+            "runs": 5904498,
+            "nsPerOp": 303.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey/4-12",
+            "runs": 3718264,
+            "nsPerOp": 274.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMapGrow",
+            "modificationCount": 2,
+            "createdOn": "2020-02-07",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkMapGet",
+            "modificationCount": 2,
+            "createdOn": "2020-02-07",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkStringification",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkSetToMapWithStringKey",
+            "modificationCount": 6,
+            "createdOn": "2015-03-23",
+            "lastUpdateOn": "2020-02-28"
+          },
+          {
+            "name": "BenchmarkSetToMapWithUint64Key",
+            "modificationCount": 5,
+            "createdOn": "2015-03-23",
+            "lastUpdateOn": "2020-02-28"
+          },
+          {
+            "name": "BenchmarkGetFromMapWithMapKey",
+            "modificationCount": 10,
+            "createdOn": "2015-03-19",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkBigMapWithCompositeKeys",
+            "modificationCount": 5,
+            "createdOn": "2016-03-28",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkKeyTypes",
+            "modificationCount": 3,
+            "createdOn": "2017-08-18",
+            "lastUpdateOn": "2021-11-01"
+          },
+          {
+            "name": "BenchmarkPathString",
+            "modificationCount": 1,
+            "createdOn": "2021-02-01",
+            "lastUpdateOn": "2021-02-01"
+          },
+          {
+            "name": "BenchmarkPointer",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkPointer",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkPointer",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkPointer",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkPointer",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkEmbeddedPointerAsKey",
+            "modificationCount": 1,
+            "createdOn": "2018-05-22",
+            "lastUpdateOn": "2018-05-22"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aristanetworks/goarista/monitor",
+        "succeded": true,
+        "duration": "4.765s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMapSet-12",
+            "runs": 3006014,
+            "nsPerOp": 412.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapSetDifferent-12",
+            "runs": 1000000,
+            "nsPerOp": 1290,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapSetString-12",
+            "runs": 3802956,
+            "nsPerOp": 298.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMapSet",
+            "modificationCount": 1,
+            "createdOn": "2017-09-21",
+            "lastUpdateOn": "2017-09-21"
+          },
+          {
+            "name": "BenchmarkMapSetDifferent",
+            "modificationCount": 1,
+            "createdOn": "2017-09-21",
+            "lastUpdateOn": "2017-09-21"
+          },
+          {
+            "name": "BenchmarkMapSetString",
+            "modificationCount": 1,
+            "createdOn": "2017-09-21",
+            "lastUpdateOn": "2017-09-21"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aristanetworks/goarista/path",
+        "succeded": true,
+        "duration": "30.469s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPathMap1x25-12",
+            "runs": 16132939,
+            "nsPerOp": 67.98,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathMap10x50-12",
+            "runs": 1806558,
+            "nsPerOp": 861,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPathMap20x50-12",
+            "runs": 1000000,
+            "nsPerOp": 1892,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJoin/10_key.Paths-12",
+            "runs": 1559352,
+            "nsPerOp": 853.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJoin/100_key.Paths-12",
+            "runs": 155553,
+            "nsPerOp": 7612,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJoin/1000_key.Paths-12",
+            "runs": 24610,
+            "nsPerOp": 48040,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJoin/10000_key.Paths-12",
+            "runs": 5496,
+            "nsPerOp": 254465,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasElement/1000_Elements_Index_499-12",
+            "runs": 464575,
+            "nsPerOp": 2284,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasElement/1000_Elements_Index_999-12",
+            "runs": 247923,
+            "nsPerOp": 4935,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasElement/10_Elements_Index_4-12",
+            "runs": 35926310,
+            "nsPerOp": 44.31,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasElement/100_Elements_Index_0-12",
+            "runs": 100000000,
+            "nsPerOp": 15.68,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasElement/1000_Elements_Index_0-12",
+            "runs": 96092988,
+            "nsPerOp": 14.94,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasElement/100_Elements_Index_99-12",
+            "runs": 1855345,
+            "nsPerOp": 720.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasElement/10_Elements_Index_0-12",
+            "runs": 93616618,
+            "nsPerOp": 11.78,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasElement/10_Elements_Index_9-12",
+            "runs": 14476615,
+            "nsPerOp": 127.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHasElement/100_Elements_Index_49-12",
+            "runs": 3270586,
+            "nsPerOp": 407.6,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPathMap1x25",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          },
+          {
+            "name": "BenchmarkPathMap10x50",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          },
+          {
+            "name": "BenchmarkPathMap20x50",
+            "modificationCount": 1,
+            "createdOn": "2017-11-20",
+            "lastUpdateOn": "2017-11-20"
+          },
+          {
+            "name": "BenchmarkJoin",
+            "modificationCount": 4,
+            "createdOn": "2018-03-05",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkJoin",
+            "modificationCount": 4,
+            "createdOn": "2018-03-05",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkJoin",
+            "modificationCount": 4,
+            "createdOn": "2018-03-05",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkJoin",
+            "modificationCount": 4,
+            "createdOn": "2018-03-05",
+            "lastUpdateOn": "2018-05-22"
+          },
+          {
+            "name": "BenchmarkHasElement",
+            "modificationCount": 3,
+            "createdOn": "2018-04-03",
+            "lastUpdateOn": "2020-01-29"
+          },
+          {
+            "name": "BenchmarkHasElement",
+            "modificationCount": 3,
+            "createdOn": "2018-04-03",
+            "lastUpdateOn": "2020-01-29"
+          },
+          {
+            "name": "BenchmarkHasElement",
+            "modificationCount": 3,
+            "createdOn": "2018-04-03",
+            "lastUpdateOn": "2020-01-29"
+          },
+          {
+            "name": "BenchmarkHasElement",
+            "modificationCount": 3,
+            "createdOn": "2018-04-03",
+            "lastUpdateOn": "2020-01-29"
+          },
+          {
+            "name": "BenchmarkHasElement",
+            "modificationCount": 3,
+            "createdOn": "2018-04-03",
+            "lastUpdateOn": "2020-01-29"
+          },
+          {
+            "name": "BenchmarkHasElement",
+            "modificationCount": 3,
+            "createdOn": "2018-04-03",
+            "lastUpdateOn": "2020-01-29"
+          },
+          {
+            "name": "BenchmarkHasElement",
+            "modificationCount": 3,
+            "createdOn": "2018-04-03",
+            "lastUpdateOn": "2020-01-29"
+          },
+          {
+            "name": "BenchmarkHasElement",
+            "modificationCount": 3,
+            "createdOn": "2018-04-03",
+            "lastUpdateOn": "2020-01-29"
+          },
+          {
+            "name": "BenchmarkHasElement",
+            "modificationCount": 3,
+            "createdOn": "2018-04-03",
+            "lastUpdateOn": "2020-01-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aristanetworks/goarista/test",
+        "succeded": true,
+        "duration": "8.631s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEqualDeepEqual-12",
+            "runs": 1547482,
+            "nsPerOp": 720.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEqualDiff-12",
+            "runs": 3757497,
+            "nsPerOp": 316.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDiffDeepEqual-12",
+            "runs": 4222293,
+            "nsPerOp": 255.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDiffDiff-12",
+            "runs": 207470,
+            "nsPerOp": 7721,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEqualDeepEqual",
+            "modificationCount": 2,
+            "createdOn": "2015-02-27",
+            "lastUpdateOn": "2015-03-09"
+          },
+          {
+            "name": "BenchmarkEqualDiff",
+            "modificationCount": 4,
+            "createdOn": "2015-02-26",
+            "lastUpdateOn": "2015-03-09"
+          },
+          {
+            "name": "BenchmarkDiffDeepEqual",
+            "modificationCount": 1,
+            "createdOn": "2015-03-09",
+            "lastUpdateOn": "2015-03-09"
+          },
+          {
+            "name": "BenchmarkDiffDiff",
+            "modificationCount": 1,
+            "createdOn": "2015-03-09",
+            "lastUpdateOn": "2015-03-09"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "aristanetworks/goarista",
+    "name": "goarista",
+    "private": false,
+    "html_url": "https://github.com/aristanetworks/goarista",
+    "description": "Fairly general building blocks used in Arista Go code and open-sourced for the benefit of all.",
+    "fork": false,
+    "created_at": "2015-11-03T09:18:43Z",
+    "updated_at": "2023-06-12T21:13:42Z",
+    "pushed_at": "2023-10-12T21:41:44Z",
+    "ssh_url": "git@github.com:aristanetworks/goarista.git",
+    "stargazers_count": 197,
+    "watchers_count": 197,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 65,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 15,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 147,
+    "Lines": 27694,
+    "Blank": 2540,
+    "Code": 22859,
+    "Comment": 2295,
+    "Bytes": 755071,
+    "Complexity": 3620
+  }
+}

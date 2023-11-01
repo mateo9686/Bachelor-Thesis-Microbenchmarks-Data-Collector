@@ -1,0 +1,333 @@
+{
+  "Name": "flashbots/block-validation-geth",
+  "Path": "./repositories/flashbots__block-validation-geth",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-24T03:42:39Z",
+    "benchmarkCount": 18,
+    "benchmarkSuiteCount": 4,
+    "successfulBenchmarkCount": 18,
+    "successfulBenchmarkSuitesCount": 4,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/ethereum/go-ethereum/crypto",
+        "succeded": true,
+        "duration": "6.918s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSha3-12",
+            "runs": 1000000,
+            "nsPerOp": 1668,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEcrecoverSignature-12",
+            "runs": 8548,
+            "nsPerOp": 122866,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVerifySignature-12",
+            "runs": 14787,
+            "nsPerOp": 71590,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDecompressPubkey-12",
+            "runs": 150355,
+            "nsPerOp": 8260,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSha3",
+            "modificationCount": 4,
+            "createdOn": "2015-01-12",
+            "lastUpdateOn": "2017-12-06"
+          },
+          {
+            "name": "BenchmarkEcrecoverSignature",
+            "modificationCount": 3,
+            "createdOn": "2016-10-19",
+            "lastUpdateOn": "2017-12-06"
+          },
+          {
+            "name": "BenchmarkVerifySignature",
+            "modificationCount": 3,
+            "createdOn": "2016-10-19",
+            "lastUpdateOn": "2017-12-06"
+          },
+          {
+            "name": "BenchmarkDecompressPubkey",
+            "modificationCount": 3,
+            "createdOn": "2016-10-19",
+            "lastUpdateOn": "2017-12-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ethereum/go-ethereum/crypto/bls12381",
+        "succeded": true,
+        "duration": "19.232s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkMultiplication-12",
+            "runs": 14884834,
+            "nsPerOp": 99.46,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInverse-12",
+            "runs": 82740,
+            "nsPerOp": 14853,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkG1Add-12",
+            "runs": 780637,
+            "nsPerOp": 1732,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkG1Mul-12",
+            "runs": 4212,
+            "nsPerOp": 273042,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkG1MapToCurve-12",
+            "runs": 6490,
+            "nsPerOp": 247345,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkG2Add-12",
+            "runs": 326184,
+            "nsPerOp": 6159,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkG2Mul-12",
+            "runs": 1341,
+            "nsPerOp": 773349,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkG2SWUMap-12",
+            "runs": 541,
+            "nsPerOp": 2358108,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPairing-12",
+            "runs": 716,
+            "nsPerOp": 1690382,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkMultiplication",
+            "modificationCount": 1,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2020-06-03"
+          },
+          {
+            "name": "BenchmarkInverse",
+            "modificationCount": 1,
+            "createdOn": "2020-11-23",
+            "lastUpdateOn": "2020-11-23"
+          },
+          {
+            "name": "BenchmarkG1Add",
+            "modificationCount": 1,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2020-06-03"
+          },
+          {
+            "name": "BenchmarkG1Mul",
+            "modificationCount": 1,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2020-06-03"
+          },
+          {
+            "name": "BenchmarkG1MapToCurve",
+            "modificationCount": 1,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2020-06-03"
+          },
+          {
+            "name": "BenchmarkG2Add",
+            "modificationCount": 1,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2020-06-03"
+          },
+          {
+            "name": "BenchmarkG2Mul",
+            "modificationCount": 1,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2020-06-03"
+          },
+          {
+            "name": "BenchmarkG2SWUMap",
+            "modificationCount": 1,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2020-06-03"
+          },
+          {
+            "name": "BenchmarkPairing",
+            "modificationCount": 1,
+            "createdOn": "2020-06-03",
+            "lastUpdateOn": "2020-06-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ethereum/go-ethereum/crypto/ecies",
+        "succeded": true,
+        "duration": "6.159s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGenerateKeyP256-12",
+            "runs": 68697,
+            "nsPerOp": 28487,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenSharedKeyP256-12",
+            "runs": 10000,
+            "nsPerOp": 107518,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGenSharedKeyS256-12",
+            "runs": 13844,
+            "nsPerOp": 144949,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGenerateKeyP256",
+            "modificationCount": 3,
+            "createdOn": "2014-12-10",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkGenSharedKeyP256",
+            "modificationCount": 4,
+            "createdOn": "2014-12-10",
+            "lastUpdateOn": "2019-07-18"
+          },
+          {
+            "name": "BenchmarkGenSharedKeyS256",
+            "modificationCount": 5,
+            "createdOn": "2014-12-10",
+            "lastUpdateOn": "2019-07-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/ethereum/go-ethereum/crypto/secp256k1",
+        "succeded": true,
+        "duration": "4.917s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSign-12",
+            "runs": 24042,
+            "nsPerOp": 62917,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRecover-12",
+            "runs": 8011,
+            "nsPerOp": 136681,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSign",
+            "modificationCount": 6,
+            "createdOn": "2015-01-22",
+            "lastUpdateOn": "2018-07-26"
+          },
+          {
+            "name": "BenchmarkRecover",
+            "modificationCount": 5,
+            "createdOn": "2015-02-16",
+            "lastUpdateOn": "2018-07-26"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "flashbots/block-validation-geth",
+    "name": "block-validation-geth",
+    "private": false,
+    "html_url": "https://github.com/flashbots/block-validation-geth",
+    "description": "To be deprecated in favor of https://github.com/flashbots/builder",
+    "fork": false,
+    "created_at": "2022-08-16T16:18:23Z",
+    "updated_at": "2023-03-16T17:42:27Z",
+    "pushed_at": "2023-03-16T16:00:55Z",
+    "ssh_url": "git@github.com:flashbots/block-validation-geth.git",
+    "stargazers_count": 44,
+    "watchers_count": 44,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 14,
+    "language": "Go",
+    "archived": true,
+    "disabled": false,
+    "open_issues": 5,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "lgpl-3.0",
+      "name": "GNU Lesser General Public License v3.0",
+      "url": "https://api.github.com/licenses/lgpl-3.0",
+      "spdx_id": "LGPL-3.0",
+      "node_id": "MDc6TGljZW5zZTEy",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 1183,
+    "Lines": 333976,
+    "Blank": 31456,
+    "Code": 246560,
+    "Comment": 55960,
+    "Bytes": 12550750,
+    "Complexity": 50117
+  }
+}

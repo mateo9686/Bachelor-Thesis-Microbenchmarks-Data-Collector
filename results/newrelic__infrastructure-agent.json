@@ -1,0 +1,675 @@
+{
+  "Name": "newrelic/infrastructure-agent",
+  "Path": "./repositories/newrelic__infrastructure-agent",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T20:08:36Z",
+    "benchmarkCount": 38,
+    "benchmarkSuiteCount": 13,
+    "successfulBenchmarkCount": 31,
+    "successfulBenchmarkSuitesCount": 11,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/internal/agent",
+        "succeded": true,
+        "duration": "8.125s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStorePluginOutput/with_nulls-12",
+            "runs": 9480,
+            "nsPerOp": 178465,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStorePluginOutput/without_nulls-12",
+            "runs": 28946,
+            "nsPerOp": 40571,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPatchReapNoDiff-12",
+            "runs": 8143,
+            "nsPerOp": 167117,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPatchReapWithDiff-12",
+            "runs": 199,
+            "nsPerOp": 12578829,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStorePluginOutput",
+            "modificationCount": 4,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-04-12"
+          },
+          {
+            "name": "BenchmarkStorePluginOutput",
+            "modificationCount": 4,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-04-12"
+          },
+          {
+            "name": "BenchmarkPatchReapNoDiff",
+            "modificationCount": 2,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-04-12"
+          },
+          {
+            "name": "BenchmarkPatchReapWithDiff",
+            "modificationCount": 2,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-04-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/backend/telemetryapi",
+        "succeded": true,
+        "duration": "21.550s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAggregatedMetric-12",
+            "runs": 1684819,
+            "nsPerOp": 727.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkAttributes-12",
+            "runs": 9801,
+            "nsPerOp": 225056,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOrderedAttributes-12",
+            "runs": 1573,
+            "nsPerOp": 732289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRetryBody0-12",
+            "runs": 439,
+            "nsPerOp": 2701583,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRetryBody1-12",
+            "runs": 573,
+            "nsPerOp": 2602897,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRetryBody2-12",
+            "runs": 592,
+            "nsPerOp": 2737389,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRetryBody4-12",
+            "runs": 639,
+            "nsPerOp": 1918675,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRetryBody8-12",
+            "runs": 1096,
+            "nsPerOp": 1479774,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetricsJSON-12",
+            "runs": 100,
+            "nsPerOp": 22153588,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSpansJSON-12",
+            "runs": 61,
+            "nsPerOp": 26452976,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAggregatedMetric",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkAttributes",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkOrderedAttributes",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkRetryBody0",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkRetryBody1",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkRetryBody2",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkRetryBody4",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkRetryBody8",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkMetricsJSON",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          },
+          {
+            "name": "BenchmarkSpansJSON",
+            "modificationCount": 1,
+            "createdOn": "2020-09-17",
+            "lastUpdateOn": "2020-09-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/config",
+        "succeded": true,
+        "duration": "4.400s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDatabindRefresh-12",
+            "runs": 131904,
+            "nsPerOp": 8573,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDatabindDaisyChainedRefresh-12",
+            "runs": 187772,
+            "nsPerOp": 8619,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDatabindRefresh",
+            "modificationCount": 1,
+            "createdOn": "2023-05-03",
+            "lastUpdateOn": "2023-05-03"
+          },
+          {
+            "name": "BenchmarkDatabindDaisyChainedRefresh",
+            "modificationCount": 1,
+            "createdOn": "2023-05-03",
+            "lastUpdateOn": "2023-05-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/helpers/metric",
+        "succeded": true,
+        "duration": "0.645s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTruncateLength_Struct-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.000002,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTruncateLength_Struct",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/integrations/configrequest/protocol",
+        "succeded": true,
+        "duration": "3.775s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetConfigProtocolBuilderValidRequest-12",
+            "runs": 215892,
+            "nsPerOp": 7426,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGetConfigProtocolBuilderBigRequestNotProtocolConfig-12",
+            "runs": 24,
+            "nsPerOp": 63784126,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetConfigProtocolBuilderValidRequest",
+            "modificationCount": 1,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-05-20"
+          },
+          {
+            "name": "BenchmarkGetConfigProtocolBuilderBigRequestNotProtocolConfig",
+            "modificationCount": 1,
+            "createdOn": "2021-05-20",
+            "lastUpdateOn": "2021-05-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/integrations/legacy",
+        "succeded": true,
+        "duration": "4.634s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEmitDataSet_MetricHostnameIsReplacedIfLocalhost/localhost-12",
+            "runs": 10000,
+            "nsPerOp": 148888,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmitDataSet_MetricHostnameIsReplacedIfLocalhost/LOCALHOST-12",
+            "runs": 10000,
+            "nsPerOp": 155371,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkEmitDataSet_MetricHostnameIsReplacedIfLocalhost/127.0.0.1-12",
+            "runs": 10000,
+            "nsPerOp": 130837,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEmitDataSet_MetricHostnameIsReplacedIfLocalhost",
+            "modificationCount": 1,
+            "createdOn": "2022-05-12",
+            "lastUpdateOn": "2022-05-12"
+          },
+          {
+            "name": "BenchmarkEmitDataSet_MetricHostnameIsReplacedIfLocalhost",
+            "modificationCount": 1,
+            "createdOn": "2022-05-12",
+            "lastUpdateOn": "2022-05-12"
+          },
+          {
+            "name": "BenchmarkEmitDataSet_MetricHostnameIsReplacedIfLocalhost",
+            "modificationCount": 1,
+            "createdOn": "2022-05-12",
+            "lastUpdateOn": "2022-05-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/log",
+        "succeded": true,
+        "duration": "19.367s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLogrusConditional/error-12",
+            "runs": 1000000000,
+            "nsPerOp": 1.441,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogrusConditional/debug-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "time=\"2023-10-25T22:10:48+02:00\""
+          },
+          {
+            "name": "BenchmarkLogrusWithFields/error-12",
+            "runs": 1599643,
+            "nsPerOp": 838.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogrusWithFields/debug-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "time=\"2023-10-25T22:10:54+02:00\""
+          },
+          {
+            "name": "BenchmarkFacade/error-12",
+            "runs": 18744508,
+            "nsPerOp": 56.19,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFacade/debug-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "time=\"2023-10-25T22:10:58+02:00\""
+          },
+          {
+            "name": "BenchmarkFacadeFunc/error-12",
+            "runs": 473296340,
+            "nsPerOp": 2.632,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFacadeFunc/debug-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "time=\"2023-10-25T22:11:03+02:00\""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLogrusConditional",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          },
+          {
+            "name": "BenchmarkLogrusConditional",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          },
+          {
+            "name": "BenchmarkLogrusWithFields",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          },
+          {
+            "name": "BenchmarkLogrusWithFields",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          },
+          {
+            "name": "BenchmarkFacade",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          },
+          {
+            "name": "BenchmarkFacade",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          },
+          {
+            "name": "BenchmarkFacadeFunc",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          },
+          {
+            "name": "BenchmarkFacadeFunc",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/log/filter",
+        "succeded": true,
+        "duration": "2.787s",
+        "benchmarks": [
+          {
+            "name": "Benchmark/Enabled-12",
+            "runs": 61927,
+            "nsPerOp": 16453,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark/Disabled-12",
+            "runs": 73759,
+            "nsPerOp": 18241,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark",
+            "modificationCount": 4,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-04-12"
+          },
+          {
+            "name": "Benchmark",
+            "modificationCount": 4,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2023-04-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/metrics",
+        "succeded": true,
+        "duration": "1.507s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSystem-12",
+            "runs": 4980,
+            "nsPerOp": 291088,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSystem",
+            "modificationCount": 2,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2022-10-10"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/metrics/network",
+        "succeded": true,
+        "duration": "1.446s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNetwork-12",
+            "runs": 429,
+            "nsPerOp": 2617707,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNetwork",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/metrics/process",
+        "succeded": false,
+        "duration": "3.012s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkProcessSampler-12",
+            "runs": 10,
+            "nsPerOp": 104699651,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessSampler_NoCache-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "panic:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkProcessSampler",
+            "modificationCount": 1,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-06-19"
+          },
+          {
+            "name": "BenchmarkProcessSampler_NoCache",
+            "modificationCount": 2,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-09-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/pkg/metrics/storage",
+        "succeded": true,
+        "duration": "2.507s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStorage-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "time=\"2023-10-25T22:11:14+02:00\""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStorage",
+            "modificationCount": 3,
+            "createdOn": "2020-06-19",
+            "lastUpdateOn": "2020-09-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/newrelic/infrastructure-agent/test/core",
+        "succeded": true,
+        "duration": "0.245s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInventoryProcessingPipeline-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "time=\"2023-10-25T22:11:17+02:00\""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInventoryProcessingPipeline",
+            "modificationCount": 1,
+            "createdOn": "2020-11-13",
+            "lastUpdateOn": "2020-11-13"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "newrelic/infrastructure-agent",
+    "name": "infrastructure-agent",
+    "private": false,
+    "html_url": "https://github.com/newrelic/infrastructure-agent",
+    "description": "New Relic Infrastructure Agent",
+    "fork": false,
+    "created_at": "2020-04-17T19:36:44Z",
+    "updated_at": "2023-10-16T03:51:29Z",
+    "pushed_at": "2023-10-23T12:44:21Z",
+    "ssh_url": "git@github.com:newrelic/infrastructure-agent.git",
+    "homepage": "https://docs.newrelic.com/docs/infrastructure/install-configure-manage-infrastructure",
+    "stargazers_count": 111,
+    "watchers_count": 111,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 114,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 25,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 748,
+    "Lines": 118887,
+    "Blank": 15682,
+    "Code": 93632,
+    "Comment": 9573,
+    "Bytes": 3811766,
+    "Complexity": 10417
+  }
+}

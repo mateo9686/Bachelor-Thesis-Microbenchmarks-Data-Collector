@@ -1,0 +1,559 @@
+{
+  "Name": "vivint/rothko",
+  "Path": "./repositories/vivint__rothko",
+  "GoVersion": "n/a",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T22:29:39Z",
+    "benchmarkCount": 34,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 34,
+    "successfulBenchmarkSuitesCount": 6,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/vivint/rothko/api/query",
+        "succeded": true,
+        "duration": "7.521s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGlob-12",
+            "runs": 16565494,
+            "nsPerOp": 104.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSpec/Create-12",
+            "runs": 2284551,
+            "nsPerOp": 633.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSpec/Match-12",
+            "runs": 8387835,
+            "nsPerOp": 197.8,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGlob",
+            "modificationCount": 1,
+            "createdOn": "2018-02-02",
+            "lastUpdateOn": "2018-02-02"
+          },
+          {
+            "name": "BenchmarkSpec",
+            "modificationCount": 1,
+            "createdOn": "2018-02-02",
+            "lastUpdateOn": "2018-02-02"
+          },
+          {
+            "name": "BenchmarkSpec",
+            "modificationCount": 1,
+            "createdOn": "2018-02-02",
+            "lastUpdateOn": "2018-02-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/vivint/rothko/data",
+        "succeded": true,
+        "duration": "4.229s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAgg-12",
+            "runs": 31496520,
+            "nsPerOp": 36.42,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriter/Add-12",
+            "runs": 17323671,
+            "nsPerOp": 60.66,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWriter/Iterate-12",
+            "runs": 358674,
+            "nsPerOp": 4708,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAgg",
+            "modificationCount": 4,
+            "createdOn": "2017-09-12",
+            "lastUpdateOn": "2018-02-12"
+          },
+          {
+            "name": "BenchmarkWriter",
+            "modificationCount": 6,
+            "createdOn": "2017-09-12",
+            "lastUpdateOn": "2018-02-19"
+          },
+          {
+            "name": "BenchmarkWriter",
+            "modificationCount": 6,
+            "createdOn": "2017-09-12",
+            "lastUpdateOn": "2018-02-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/vivint/rothko/database/files",
+        "succeded": true,
+        "duration": "38.108s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCache/PutTake-12",
+            "runs": 14049381,
+            "nsPerOp": 100.2,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConvert/MetricToDir-12",
+            "runs": 13474587,
+            "nsPerOp": 83.09,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConvert/DirToMetric-12",
+            "runs": 19514163,
+            "nsPerOp": 65.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConvert/MetricToPath-12",
+            "runs": 14354250,
+            "nsPerOp": 71.26,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDBRead/Metrics-12",
+            "runs": 3375110,
+            "nsPerOp": 373.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDBRead/MetricsContended-12",
+            "runs": 4234800,
+            "nsPerOp": 293.1,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDBRead/PopulateMetrics-12",
+            "runs": 20,
+            "nsPerOp": 56206965,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDBWrite-12",
+            "runs": 89176,
+            "nsPerOp": 23956,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFile/Metadata/Write-12",
+            "runs": 15487419,
+            "nsPerOp": 65.08,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFile/Metadata/Read-12",
+            "runs": 19881918,
+            "nsPerOp": 68.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFile/Record/Write-12",
+            "runs": 15380983,
+            "nsPerOp": 68.76,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFile/Record/Read-12",
+            "runs": 20077093,
+            "nsPerOp": 59.97,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFile/Record/Has-12",
+            "runs": 271784434,
+            "nsPerOp": 4.211,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLockPool-12",
+            "runs": 9391647,
+            "nsPerOp": 124.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetric/Write-12",
+            "runs": 169314,
+            "nsPerOp": 12406,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetric/Read/Small-12",
+            "runs": 64401,
+            "nsPerOp": 15745,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetric/Read/Large-12",
+            "runs": 61310,
+            "nsPerOp": 19379,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetric/ReadLast/Small-12",
+            "runs": 2279730,
+            "nsPerOp": 454,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMetric/ReadLast/Large-12",
+            "runs": 1000000,
+            "nsPerOp": 1008,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRecords/Marshal-12",
+            "runs": 26344700,
+            "nsPerOp": 42.62,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRecords/Parse-12",
+            "runs": 50816854,
+            "nsPerOp": 37.17,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRecords/Complete-12",
+            "runs": 120065334,
+            "nsPerOp": 9.606,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRecords/Split-12",
+            "runs": 26315634,
+            "nsPerOp": 44.84,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCache",
+            "modificationCount": 3,
+            "createdOn": "2017-09-15",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkConvert",
+            "modificationCount": 4,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkConvert",
+            "modificationCount": 4,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkConvert",
+            "modificationCount": 4,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkDBRead",
+            "modificationCount": 5,
+            "createdOn": "2017-09-30",
+            "lastUpdateOn": "2018-02-09"
+          },
+          {
+            "name": "BenchmarkDBRead",
+            "modificationCount": 5,
+            "createdOn": "2017-09-30",
+            "lastUpdateOn": "2018-02-09"
+          },
+          {
+            "name": "BenchmarkDBRead",
+            "modificationCount": 5,
+            "createdOn": "2017-09-30",
+            "lastUpdateOn": "2018-02-09"
+          },
+          {
+            "name": "BenchmarkDBWrite",
+            "modificationCount": 6,
+            "createdOn": "2017-09-15",
+            "lastUpdateOn": "2018-02-19"
+          },
+          {
+            "name": "BenchmarkFile",
+            "modificationCount": 2,
+            "createdOn": "2017-09-14",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkFile",
+            "modificationCount": 2,
+            "createdOn": "2017-09-14",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkFile",
+            "modificationCount": 2,
+            "createdOn": "2017-09-14",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkFile",
+            "modificationCount": 2,
+            "createdOn": "2017-09-14",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkFile",
+            "modificationCount": 2,
+            "createdOn": "2017-09-14",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkLockPool",
+            "modificationCount": 1,
+            "createdOn": "2017-10-26",
+            "lastUpdateOn": "2017-10-26"
+          },
+          {
+            "name": "BenchmarkMetric",
+            "modificationCount": 12,
+            "createdOn": "2017-09-26",
+            "lastUpdateOn": "2018-02-12"
+          },
+          {
+            "name": "BenchmarkMetric",
+            "modificationCount": 12,
+            "createdOn": "2017-09-26",
+            "lastUpdateOn": "2018-02-12"
+          },
+          {
+            "name": "BenchmarkMetric",
+            "modificationCount": 12,
+            "createdOn": "2017-09-26",
+            "lastUpdateOn": "2018-02-12"
+          },
+          {
+            "name": "BenchmarkMetric",
+            "modificationCount": 12,
+            "createdOn": "2017-09-26",
+            "lastUpdateOn": "2018-02-12"
+          },
+          {
+            "name": "BenchmarkMetric",
+            "modificationCount": 12,
+            "createdOn": "2017-09-26",
+            "lastUpdateOn": "2018-02-12"
+          },
+          {
+            "name": "BenchmarkRecords",
+            "modificationCount": 4,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2017-09-26"
+          },
+          {
+            "name": "BenchmarkRecords",
+            "modificationCount": 4,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2017-09-26"
+          },
+          {
+            "name": "BenchmarkRecords",
+            "modificationCount": 4,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2017-09-26"
+          },
+          {
+            "name": "BenchmarkRecords",
+            "modificationCount": 4,
+            "createdOn": "2017-09-13",
+            "lastUpdateOn": "2017-09-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/vivint/rothko/draw/axis",
+        "succeded": true,
+        "duration": "3.288s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkDraw/Vertical-12",
+            "runs": 93001,
+            "nsPerOp": 14159,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDraw/Horizontal-12",
+            "runs": 20284,
+            "nsPerOp": 60778,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkDraw",
+            "modificationCount": 3,
+            "createdOn": "2018-01-16",
+            "lastUpdateOn": "2018-01-23"
+          },
+          {
+            "name": "BenchmarkDraw",
+            "modificationCount": 3,
+            "createdOn": "2018-01-16",
+            "lastUpdateOn": "2018-01-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/vivint/rothko/draw/heatmap",
+        "succeded": true,
+        "duration": "2.273s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkContext/Draw-12",
+            "runs": 2330,
+            "nsPerOp": 555428,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkContext",
+            "modificationCount": 2,
+            "createdOn": "2018-01-16",
+            "lastUpdateOn": "2018-02-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/vivint/rothko/internal/pcg",
+        "succeded": true,
+        "duration": "2.185s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewPCG-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.8313,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPCG-12",
+            "runs": 510967077,
+            "nsPerOp": 1.99,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewPCG",
+            "modificationCount": 1,
+            "createdOn": "2017-10-16",
+            "lastUpdateOn": "2017-10-16"
+          },
+          {
+            "name": "BenchmarkPCG",
+            "modificationCount": 2,
+            "createdOn": "2017-09-27",
+            "lastUpdateOn": "2017-10-16"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "vivint/rothko",
+    "name": "rothko",
+    "private": false,
+    "html_url": "https://github.com/vivint/rothko",
+    "description": "Rothko is an aggregate metric system for large scale deployments.",
+    "fork": false,
+    "created_at": "2018-02-21T22:10:32Z",
+    "updated_at": "2023-10-10T12:49:30Z",
+    "pushed_at": "2018-08-23T21:59:25Z",
+    "ssh_url": "git@github.com:vivint/rothko.git",
+    "stargazers_count": 128,
+    "watchers_count": 128,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 0,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 1,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 139,
+    "Lines": 12294,
+    "Blank": 1770,
+    "Code": 9193,
+    "Comment": 1331,
+    "Bytes": 301542,
+    "Complexity": 1259
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "Name": "bytedance/arishem",
+  "Path": "./repositories/bytedance__arishem",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-25T18:09:13Z",
+    "benchmarkCount": 19,
+    "benchmarkSuiteCount": 5,
+    "successfulBenchmarkCount": 19,
+    "successfulBenchmarkSuitesCount": 5,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/bytedance/arishem/arishem",
+        "succeded": true,
+        "duration": "6.743s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewNoPriorityRule-12",
+            "runs": 10000,
+            "nsPerOp": 121054,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkBuildArishemRules-12",
+            "runs": 28564,
+            "nsPerOp": 41325,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecuteArishemRule-12",
+            "runs": 16038,
+            "nsPerOp": 79243,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSingleComplexRule-12",
+            "runs": 19246,
+            "nsPerOp": 58745,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewNoPriorityRule",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkBuildArishemRules",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkExecuteArishemRule",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkSingleComplexRule",
+            "modificationCount": 2,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-07-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bytedance/arishem/internal/core",
+        "succeded": true,
+        "duration": "6.676s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCdtParse-12",
+            "runs": 38,
+            "nsPerOp": 30319525,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFeaturePreParse-12",
+            "runs": 37,
+            "nsPerOp": 30706623,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConditionVisitNoFact-12",
+            "runs": 647409,
+            "nsPerOp": 2183,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkConditionVisitFactVar-12",
+            "runs": 793428,
+            "nsPerOp": 1276,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCdtParse",
+            "modificationCount": 2,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkFeaturePreParse",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkConditionVisitNoFact",
+            "modificationCount": 3,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-07-18"
+          },
+          {
+            "name": "BenchmarkConditionVisitFactVar",
+            "modificationCount": 3,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-07-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bytedance/arishem/internal/parser",
+        "succeded": true,
+        "duration": "3.238s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseArishemCondition-12",
+            "runs": 38,
+            "nsPerOp": 30048608,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseArishemAim-12",
+            "runs": 9499,
+            "nsPerOp": 132585,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseArishemCondition",
+            "modificationCount": 2,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkParseArishemAim",
+            "modificationCount": 2,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bytedance/arishem/internal/pool",
+        "succeded": true,
+        "duration": "2.011s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkObjPool-12",
+            "runs": 34507544,
+            "nsPerOp": 33.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNoObjPool-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.7052,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkObjPool",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkNoObjPool",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/bytedance/arishem/tools",
+        "succeded": true,
+        "duration": "11.384s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCompat-12",
+            "runs": 252280,
+            "nsPerOp": 4284,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompatByStd-12",
+            "runs": 76868,
+            "nsPerOp": 15178,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompatAlready-12",
+            "runs": 586920,
+            "nsPerOp": 2676,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkCompatAlreadyByStd-12",
+            "runs": 295473,
+            "nsPerOp": 4068,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMarshal-12",
+            "runs": 2232883,
+            "nsPerOp": 555.8,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMapIndex-12",
+            "runs": 5967216,
+            "nsPerOp": 188.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSonicIndex-12",
+            "runs": 10103546,
+            "nsPerOp": 103.2,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCompat",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkCompatByStd",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkCompatAlready",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkCompatAlreadyByStd",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkMarshal",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkMapIndex",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          },
+          {
+            "name": "BenchmarkSonicIndex",
+            "modificationCount": 1,
+            "createdOn": "2023-04-06",
+            "lastUpdateOn": "2023-04-06"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "bytedance/arishem",
+    "name": "arishem",
+    "private": false,
+    "html_url": "https://github.com/bytedance/arishem",
+    "description": "A high performance and lightweight rule engine written by Golang.",
+    "fork": false,
+    "created_at": "2023-04-12T04:12:01Z",
+    "updated_at": "2023-10-23T12:47:44Z",
+    "pushed_at": "2023-10-13T08:55:24Z",
+    "ssh_url": "git@github.com:bytedance/arishem.git",
+    "stargazers_count": 97,
+    "watchers_count": 97,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 10,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 1,
+    "topics": [],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 94,
+    "Lines": 26106,
+    "Blank": 3645,
+    "Code": 20293,
+    "Comment": 2168,
+    "Bytes": 692951,
+    "Complexity": 2371
+  }
+}

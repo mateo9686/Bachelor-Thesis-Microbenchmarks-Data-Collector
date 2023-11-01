@@ -1,0 +1,1221 @@
+{
+  "Name": "wundergraph/graphql-go-tools",
+  "Path": "./repositories/wundergraph__graphql-go-tools",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T14:14:21Z",
+    "benchmarkCount": 77,
+    "benchmarkSuiteCount": 15,
+    "successfulBenchmarkCount": 76,
+    "successfulBenchmarkSuitesCount": 15,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/internal/pkg/unsafebytes",
+        "succeded": true,
+        "duration": "4.446s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkByteSliceToInt-12",
+            "runs": 39026360,
+            "nsPerOp": 38.43,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkByteSliceToFloat-12",
+            "runs": 21992484,
+            "nsPerOp": 58.41,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkByteSliceToString-12",
+            "runs": 286563799,
+            "nsPerOp": 3.563,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkByteSliceToInt",
+            "modificationCount": 1,
+            "createdOn": "2019-09-17",
+            "lastUpdateOn": "2019-09-17"
+          },
+          {
+            "name": "BenchmarkByteSliceToFloat",
+            "modificationCount": 2,
+            "createdOn": "2019-09-17",
+            "lastUpdateOn": "2020-02-10"
+          },
+          {
+            "name": "BenchmarkByteSliceToString",
+            "modificationCount": 1,
+            "createdOn": "2019-09-17",
+            "lastUpdateOn": "2019-09-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/pkg/astvalidation",
+        "succeded": true,
+        "duration": "74.374s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkValidation/simple_query-12",
+            "runs": 344050,
+            "nsPerOp": 4118,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/complex-12",
+            "runs": 182766,
+            "nsPerOp": 6563,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/nested-12",
+            "runs": 218715,
+            "nsPerOp": 6363,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/args-12",
+            "runs": 151155,
+            "nsPerOp": 7958,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/interfaces-12",
+            "runs": 198592,
+            "nsPerOp": 5596,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/union-12",
+            "runs": 48401272,
+            "nsPerOp": 21.82,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/nested_object-12",
+            "runs": 273997,
+            "nsPerOp": 6684,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/nested_object_wrong_type-12",
+            "runs": 258625,
+            "nsPerOp": 5043,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/nested_object_not_optional-12",
+            "runs": 263860,
+            "nsPerOp": 7297,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/nested_object_not_optional_list-12",
+            "runs": 275863,
+            "nsPerOp": 4516,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkValidation/introspection-12",
+            "runs": 13207,
+            "nsPerOp": 104698,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid1-12",
+            "runs": 161647,
+            "nsPerOp": 6335,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid1-12",
+            "runs": 132092,
+            "nsPerOp": 8389,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid5-12",
+            "runs": 88130,
+            "nsPerOp": 11968,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid5-12",
+            "runs": 79867,
+            "nsPerOp": 14149,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid10-12",
+            "runs": 57489,
+            "nsPerOp": 20649,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid10-12",
+            "runs": 58068,
+            "nsPerOp": 23701,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid20-12",
+            "runs": 24505,
+            "nsPerOp": 42380,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid20-12",
+            "runs": 30918,
+            "nsPerOp": 43913,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid30-12",
+            "runs": 18446,
+            "nsPerOp": 100806,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid30-12",
+            "runs": 10000,
+            "nsPerOp": 108228,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid40-12",
+            "runs": 10000,
+            "nsPerOp": 137568,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid40-12",
+            "runs": 10000,
+            "nsPerOp": 104847,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid50-12",
+            "runs": 4309,
+            "nsPerOp": 253580,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid50-12",
+            "runs": 7976,
+            "nsPerOp": 176130,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid60-12",
+            "runs": 6339,
+            "nsPerOp": 190645,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid60-12",
+            "runs": 5600,
+            "nsPerOp": 218256,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid70-12",
+            "runs": 4356,
+            "nsPerOp": 280289,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid70-12",
+            "runs": 3712,
+            "nsPerOp": 343203,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid80-12",
+            "runs": 4215,
+            "nsPerOp": 243612,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid80-12",
+            "runs": 5701,
+            "nsPerOp": 211235,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid90-12",
+            "runs": 4695,
+            "nsPerOp": 257591,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid90-12",
+            "runs": 4476,
+            "nsPerOp": 261098,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid100-12",
+            "runs": 3916,
+            "nsPerOp": 309638,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid100-12",
+            "runs": 4336,
+            "nsPerOp": 329987,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid110-12",
+            "runs": 3741,
+            "nsPerOp": 357565,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid110-12",
+            "runs": 3596,
+            "nsPerOp": 379787,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid120-12",
+            "runs": 3122,
+            "nsPerOp": 411611,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid120-12",
+            "runs": 2754,
+            "nsPerOp": 403834,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid130-12",
+            "runs": 2570,
+            "nsPerOp": 465938,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid130-12",
+            "runs": 2832,
+            "nsPerOp": 486161,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid140-12",
+            "runs": 2323,
+            "nsPerOp": 519087,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid140-12",
+            "runs": 2162,
+            "nsPerOp": 605144,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid150-12",
+            "runs": 1803,
+            "nsPerOp": 606951,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid150-12",
+            "runs": 1827,
+            "nsPerOp": 1450196,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/valid200-12",
+            "runs": 529,
+            "nsPerOp": 2126386,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged/invalid200-12",
+            "runs": 583,
+            "nsPerOp": 1995357,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkValidation",
+            "modificationCount": 8,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2022-01-18"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkOverlappingFieldsCanBeMerged",
+            "modificationCount": 6,
+            "createdOn": "2019-09-25",
+            "lastUpdateOn": "2020-12-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/pkg/graphql",
+        "succeded": false,
+        "duration": "2.354s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkExecutionEngine-12",
+            "runs": 295959,
+            "nsPerOp": 3667,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkExecutionEngineV2",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "execution_engine_v2_test.go:2068:"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkExecutionEngine",
+            "modificationCount": 2,
+            "createdOn": "2020-05-15",
+            "lastUpdateOn": "2020-06-05"
+          },
+          {
+            "name": "BenchmarkExecutionEngineV2",
+            "modificationCount": 5,
+            "createdOn": "2020-12-11",
+            "lastUpdateOn": "2021-06-28"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/internal/pkg/unsafebytes",
+        "succeded": true,
+        "duration": "5.664s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkByteSliceToInt-12",
+            "runs": 76259029,
+            "nsPerOp": 14.85,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkByteSliceToFloat-12",
+            "runs": 34923601,
+            "nsPerOp": 36.02,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkByteSliceToString-12",
+            "runs": 611876142,
+            "nsPerOp": 2.123,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkByteSliceToInt",
+            "modificationCount": 1,
+            "createdOn": "2019-09-17",
+            "lastUpdateOn": "2019-09-17"
+          },
+          {
+            "name": "BenchmarkByteSliceToFloat",
+            "modificationCount": 2,
+            "createdOn": "2019-09-17",
+            "lastUpdateOn": "2020-02-10"
+          },
+          {
+            "name": "BenchmarkByteSliceToString",
+            "modificationCount": 1,
+            "createdOn": "2019-09-17",
+            "lastUpdateOn": "2019-09-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/astnormalization",
+        "succeded": true,
+        "duration": "2.356s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAstNormalization-12",
+            "runs": 1000000,
+            "nsPerOp": 1155,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFragmentSpreadDepthCalc_Get-12",
+            "runs": 575852,
+            "nsPerOp": 1994,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAstNormalization",
+            "modificationCount": 7,
+            "createdOn": "2019-08-19",
+            "lastUpdateOn": "2020-06-16"
+          },
+          {
+            "name": "BenchmarkFragmentSpreadDepthCalc_Get",
+            "modificationCount": 4,
+            "createdOn": "2019-08-19",
+            "lastUpdateOn": "2019-09-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/astparser",
+        "succeded": true,
+        "duration": "13.755s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseStarwars-12",
+            "runs": 16832,
+            "nsPerOp": 90802,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParseGithub-12",
+            "runs": 357,
+            "nsPerOp": 3502948,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkSelectionSet-12",
+            "runs": 679442,
+            "nsPerOp": 1908,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIntrospectionQuery-12",
+            "runs": 138793,
+            "nsPerOp": 9001,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkKitchenSink-12",
+            "runs": 137349,
+            "nsPerOp": 9360,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkParse-12",
+            "runs": 76870,
+            "nsPerOp": 19145,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseStarwars",
+            "modificationCount": 7,
+            "createdOn": "2019-06-23",
+            "lastUpdateOn": "2021-11-12"
+          },
+          {
+            "name": "BenchmarkParseGithub",
+            "modificationCount": 5,
+            "createdOn": "2019-09-01",
+            "lastUpdateOn": "2021-11-12"
+          },
+          {
+            "name": "BenchmarkSelectionSet",
+            "modificationCount": 6,
+            "createdOn": "2019-07-17",
+            "lastUpdateOn": "2021-11-12"
+          },
+          {
+            "name": "BenchmarkIntrospectionQuery",
+            "modificationCount": 6,
+            "createdOn": "2019-07-19",
+            "lastUpdateOn": "2021-11-12"
+          },
+          {
+            "name": "BenchmarkKitchenSink",
+            "modificationCount": 7,
+            "createdOn": "2019-07-05",
+            "lastUpdateOn": "2021-11-12"
+          },
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 7,
+            "createdOn": "2019-06-23",
+            "lastUpdateOn": "2021-11-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/astprinter",
+        "succeded": true,
+        "duration": "1.174s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPrint-12",
+            "runs": 272976,
+            "nsPerOp": 3668,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPrint",
+            "modificationCount": 4,
+            "createdOn": "2019-07-21",
+            "lastUpdateOn": "2019-09-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/astvisitor",
+        "succeded": true,
+        "duration": "5.804s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSimpleVisitor-12",
+            "runs": 3440452,
+            "nsPerOp": 347.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkVisitor-12",
+            "runs": 269392,
+            "nsPerOp": 5106,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkMinimalVisitor-12",
+            "runs": 338889,
+            "nsPerOp": 3165,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSimpleVisitor",
+            "modificationCount": 2,
+            "createdOn": "2019-09-03",
+            "lastUpdateOn": "2019-09-19"
+          },
+          {
+            "name": "BenchmarkVisitor",
+            "modificationCount": 4,
+            "createdOn": "2019-09-03",
+            "lastUpdateOn": "2019-09-23"
+          },
+          {
+            "name": "BenchmarkMinimalVisitor",
+            "modificationCount": 5,
+            "createdOn": "2019-09-03",
+            "lastUpdateOn": "2020-11-29"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/engine/resolve",
+        "succeded": true,
+        "duration": "4.223s",
+        "benchmarks": [
+          {
+            "name": "Benchmark_ResolveGraphQLResponse-12",
+            "runs": 137172,
+            "nsPerOp": 9172,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_NestedBatching-12",
+            "runs": 59124,
+            "nsPerOp": 20889,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "Benchmark_NestedBatchingWithoutChecks-12",
+            "runs": 56516,
+            "nsPerOp": 21229,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "Benchmark_ResolveGraphQLResponse",
+            "modificationCount": 15,
+            "createdOn": "2020-11-29",
+            "lastUpdateOn": "2023-10-02"
+          },
+          {
+            "name": "Benchmark_NestedBatching",
+            "modificationCount": 6,
+            "createdOn": "2023-09-08",
+            "lastUpdateOn": "2023-10-02"
+          },
+          {
+            "name": "Benchmark_NestedBatchingWithoutChecks",
+            "modificationCount": 7,
+            "createdOn": "2023-09-08",
+            "lastUpdateOn": "2023-10-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/escape",
+        "succeded": true,
+        "duration": "1.963s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBytes-12",
+            "runs": 28022150,
+            "nsPerOp": 41.69,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBytes",
+            "modificationCount": 2,
+            "createdOn": "2019-12-08",
+            "lastUpdateOn": "2020-06-23"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/fastbuffer",
+        "succeded": true,
+        "duration": "3.942s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFastBuffer/bytes.Buffer-12",
+            "runs": 109213814,
+            "nsPerOp": 11.13,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFastBuffer/fastBuffer-12",
+            "runs": 134669318,
+            "nsPerOp": 8.647,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFastBuffer",
+            "modificationCount": 2,
+            "createdOn": "2020-11-29",
+            "lastUpdateOn": "2020-12-03"
+          },
+          {
+            "name": "BenchmarkFastBuffer",
+            "modificationCount": 2,
+            "createdOn": "2020-11-29",
+            "lastUpdateOn": "2020-12-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/federation/federationdata",
+        "succeded": true,
+        "duration": "1.593s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGetAllNodes-12",
+            "runs": 25698,
+            "nsPerOp": 43228,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGetAllNodes",
+            "modificationCount": 1,
+            "createdOn": "2021-10-25",
+            "lastUpdateOn": "2021-10-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/introspection",
+        "succeded": true,
+        "duration": "1.772s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJsonConverter_GraphQLDocument-12",
+            "runs": 31,
+            "nsPerOp": 35085606,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJsonConverter_GraphQLDocument",
+            "modificationCount": 2,
+            "createdOn": "2020-05-20",
+            "lastUpdateOn": "2020-05-20"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/lexer",
+        "succeded": true,
+        "duration": "1.213s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLexer-12",
+            "runs": 229837,
+            "nsPerOp": 5021,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLexer",
+            "modificationCount": 16,
+            "createdOn": "2018-11-10",
+            "lastUpdateOn": "2020-01-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/wundergraph/graphql-go-tools/v2/pkg/middleware/operation_complexity",
+        "succeded": true,
+        "duration": "1.236s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkEstimateComplexity-12",
+            "runs": 163447,
+            "nsPerOp": 7036,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkEstimateComplexity",
+            "modificationCount": 10,
+            "createdOn": "2019-09-02",
+            "lastUpdateOn": "2020-09-18"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "wundergraph/graphql-go-tools",
+    "name": "graphql-go-tools",
+    "private": false,
+    "html_url": "https://github.com/wundergraph/graphql-go-tools",
+    "description": "Tools to write high performance GraphQL applications using Go/Golang.",
+    "fork": false,
+    "created_at": "2018-11-10T10:46:56Z",
+    "updated_at": "2023-10-22T23:46:28Z",
+    "pushed_at": "2023-10-23T12:10:32Z",
+    "ssh_url": "git@github.com:wundergraph/graphql-go-tools.git",
+    "homepage": "https://godoc.org/github.com/wundergraph/graphql-go-tools",
+    "stargazers_count": 544,
+    "watchers_count": 544,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 104,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 65,
+    "topics": [
+      "ast",
+      "ast-normalization",
+      "ast-parser",
+      "ast-printer",
+      "ast-transformation",
+      "ast-visitor",
+      "complexity-analysis",
+      "execution",
+      "execution-engine",
+      "golang",
+      "graphql",
+      "graphql-tools",
+      "introspection",
+      "introspection-query",
+      "lexer",
+      "linter",
+      "parser",
+      "parsing",
+      "printing",
+      "validation"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 1095,
+    "Lines": 343342,
+    "Blank": 31050,
+    "Code": 306890,
+    "Comment": 5402,
+    "Bytes": 9783887,
+    "Complexity": 31802
+  }
+}

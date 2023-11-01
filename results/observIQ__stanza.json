@@ -1,0 +1,447 @@
+{
+  "Name": "observIQ/stanza",
+  "Path": "./repositories/observIQ__stanza",
+  "GoVersion": "1.17",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T03:21:58Z",
+    "benchmarkCount": 28,
+    "benchmarkSuiteCount": 9,
+    "successfulBenchmarkCount": 15,
+    "successfulBenchmarkSuitesCount": 9,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/observiq/stanza/operator/buffer",
+        "succeded": true,
+        "duration": "6.044s",
+        "benchmarks": [
+          {
+            "name": "Benchmark:",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "1"
+          },
+          {
+            "name": "BenchmarkDiskBuffer/NoSync-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "Benchmark:"
+          },
+          {
+            "name": "Benchmark:",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "522"
+          },
+          {
+            "name": "Benchmark:",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "11737"
+          },
+          {
+            "name": "Benchmark:",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "112496"
+          },
+          {
+            "name": "Benchmark:",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "1"
+          },
+          {
+            "name": "BenchmarkDiskBuffer/Sync-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "Benchmark:"
+          },
+          {
+            "name": "Benchmark:",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "516"
+          },
+          {
+            "name": "Benchmark:",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "11749"
+          },
+          {
+            "name": "Benchmark:",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "77058"
+          },
+          {
+            "name": "BenchmarkMemoryBuffer-12",
+            "runs": 1349397,
+            "nsPerOp": 987.8,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": null
+      },
+      {
+        "pkg": "github.com/observiq/stanza/operator/builtin/input/file",
+        "succeded": false,
+        "duration": "23.331s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFileInput/Single-12",
+            "runs": 66128,
+            "nsPerOp": 16291,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileInput/Glob-12",
+            "runs": 41185,
+            "nsPerOp": 26128,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileInput/MultiGlob-12",
+            "runs": 42202,
+            "nsPerOp": 23808,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFileInput/MaxConcurrent-12",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "---"
+          },
+          {
+            "name": "BenchmarkFileInput/FngrPrntLarge",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "util.go:50: write /tmp/453917142/test.db: no space left on device"
+          },
+          {
+            "name": "BenchmarkFileInput/FngrPrntSmall",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "util.go:50: write /tmp/230863292/test.db: no space left on device"
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 3,
+            "createdOn": "2021-06-25",
+            "lastUpdateOn": "2021-07-07"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 3,
+            "createdOn": "2021-06-25",
+            "lastUpdateOn": "2021-07-07"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 3,
+            "createdOn": "2021-06-25",
+            "lastUpdateOn": "2021-07-07"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 3,
+            "createdOn": "2021-06-25",
+            "lastUpdateOn": "2021-07-07"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 3,
+            "createdOn": "2021-06-25",
+            "lastUpdateOn": "2021-07-07"
+          },
+          {
+            "name": "BenchmarkFileInput",
+            "modificationCount": 3,
+            "createdOn": "2021-06-25",
+            "lastUpdateOn": "2021-07-07"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/observiq/stanza/operator/builtin/input/goflow",
+        "succeded": true,
+        "duration": "1.769s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse-12",
+            "runs": 40665,
+            "nsPerOp": 31932,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 3,
+            "createdOn": "2021-06-18",
+            "lastUpdateOn": "2021-07-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/observiq/stanza/operator/builtin/input/tcp",
+        "succeded": true,
+        "duration": "6.570s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkTcpInput-12",
+            "runs": 185815,
+            "nsPerOp": 34492,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkTcpInput",
+            "modificationCount": 4,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-10-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/observiq/stanza/operator/builtin/input/udp",
+        "succeded": true,
+        "duration": "4.350s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkUdpInput-12",
+            "runs": 109358,
+            "nsPerOp": 9988,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkUdpInput",
+            "modificationCount": 4,
+            "createdOn": "2020-05-27",
+            "lastUpdateOn": "2020-10-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/observiq/stanza/operator/builtin/output/googlecloud",
+        "succeded": true,
+        "duration": "0.262s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkBuildRequest-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.02921,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkBuildRequest",
+            "modificationCount": 1,
+            "createdOn": "2022-01-03",
+            "lastUpdateOn": "2022-01-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/observiq/stanza/operator/builtin/parser/keyvalue",
+        "succeded": true,
+        "duration": "1.813s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParse-12",
+            "runs": 296284,
+            "nsPerOp": 5950,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParse",
+            "modificationCount": 3,
+            "createdOn": "2021-06-18",
+            "lastUpdateOn": "2021-07-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/observiq/stanza/operator/builtin/parser/uri",
+        "succeded": true,
+        "duration": "7.266s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkURIParserParse-12",
+            "runs": 282037,
+            "nsPerOp": 4754,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkURLToMap-12",
+            "runs": 337389,
+            "nsPerOp": 4221,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryToMap-12",
+            "runs": 705147,
+            "nsPerOp": 1598,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkQueryParamValuesToMap-12",
+            "runs": 6856275,
+            "nsPerOp": 198.1,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkURIParserParse",
+            "modificationCount": 1,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-02-02"
+          },
+          {
+            "name": "BenchmarkURLToMap",
+            "modificationCount": 1,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-02-02"
+          },
+          {
+            "name": "BenchmarkQueryToMap",
+            "modificationCount": 1,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-02-02"
+          },
+          {
+            "name": "BenchmarkQueryParamValuesToMap",
+            "modificationCount": 1,
+            "createdOn": "2021-02-02",
+            "lastUpdateOn": "2021-02-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/observiq/stanza/operator/builtin/transformer/hostmetadata",
+        "succeded": true,
+        "duration": "3.219s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkHostMetadata/Default-12",
+            "runs": 137739,
+            "nsPerOp": 11019,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkHostMetadata/NoHostname-12",
+            "runs": 185350,
+            "nsPerOp": 6915,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkHostMetadata",
+            "modificationCount": 3,
+            "createdOn": "2020-08-10",
+            "lastUpdateOn": "2020-08-12"
+          },
+          {
+            "name": "BenchmarkHostMetadata",
+            "modificationCount": 3,
+            "createdOn": "2020-08-10",
+            "lastUpdateOn": "2020-08-12"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "observIQ/stanza",
+    "name": "stanza",
+    "private": false,
+    "html_url": "https://github.com/observIQ/stanza",
+    "description": "Fast and lightweight log transport and processing.",
+    "fork": false,
+    "created_at": "2020-07-06T18:37:56Z",
+    "updated_at": "2023-10-13T07:26:48Z",
+    "pushed_at": "2023-09-14T17:46:43Z",
+    "ssh_url": "git@github.com:observIQ/stanza.git",
+    "stargazers_count": 171,
+    "watchers_count": 171,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 24,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 46,
+    "topics": [
+      "golang",
+      "log-parsing",
+      "logging",
+      "observability",
+      "telemetry"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "spdx_id": "Apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 273,
+    "Lines": 45123,
+    "Blank": 5192,
+    "Code": 37864,
+    "Comment": 2067,
+    "Bytes": 1130458,
+    "Complexity": 3548
+  }
+}

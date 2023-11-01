@@ -1,0 +1,578 @@
+{
+  "Name": "aretext/aretext",
+  "Path": "./repositories/aretext__aretext",
+  "GoVersion": "1.20",
+  "BenchmarkData": {
+    "timestamp": "2023-10-30T15:30:56Z",
+    "benchmarkCount": 34,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 34,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/aretext/aretext/input",
+        "succeded": true,
+        "duration": "1.245s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkNewInterpreter-12",
+            "runs": 9880,
+            "nsPerOp": 119629,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessEvent/i-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000066,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkProcessEvent/1234gg-12",
+            "runs": 1000000000,
+            "nsPerOp": 0.0000147,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkNewInterpreter",
+            "modificationCount": 2,
+            "createdOn": "2022-03-31",
+            "lastUpdateOn": "2022-05-02"
+          },
+          {
+            "name": "BenchmarkProcessEvent",
+            "modificationCount": 2,
+            "createdOn": "2022-05-02",
+            "lastUpdateOn": "2022-05-02"
+          },
+          {
+            "name": "BenchmarkProcessEvent",
+            "modificationCount": 2,
+            "createdOn": "2022-05-02",
+            "lastUpdateOn": "2022-05-02"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aretext/aretext/menu",
+        "succeded": true,
+        "duration": "3.431s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSearch-12",
+            "runs": 2426,
+            "nsPerOp": 637165,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkIncrementalSearch-12",
+            "runs": 162,
+            "nsPerOp": 6642795,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSearch",
+            "modificationCount": 6,
+            "createdOn": "2020-12-25",
+            "lastUpdateOn": "2021-04-30"
+          },
+          {
+            "name": "BenchmarkIncrementalSearch",
+            "modificationCount": 1,
+            "createdOn": "2021-11-17",
+            "lastUpdateOn": "2021-11-17"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aretext/aretext/menu/fuzzy",
+        "succeded": true,
+        "duration": "9.564s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkRankRecords/small,_short_records-12",
+            "runs": 10000,
+            "nsPerOp": 118873,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRankRecords/small,_long_records-12",
+            "runs": 1546,
+            "nsPerOp": 774465,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRankRecords/medium,_short_records-12",
+            "runs": 2480,
+            "nsPerOp": 440254,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRankRecords/medium,_long_records-12",
+            "runs": 560,
+            "nsPerOp": 2268993,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRankRecords/large,_short_records-12",
+            "runs": 72,
+            "nsPerOp": 17628608,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRankRecords/large,_long_records-12",
+            "runs": 9,
+            "nsPerOp": 117712984,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkRankRecords",
+            "modificationCount": 1,
+            "createdOn": "2022-01-12",
+            "lastUpdateOn": "2022-01-12"
+          },
+          {
+            "name": "BenchmarkRankRecords",
+            "modificationCount": 1,
+            "createdOn": "2022-01-12",
+            "lastUpdateOn": "2022-01-12"
+          },
+          {
+            "name": "BenchmarkRankRecords",
+            "modificationCount": 1,
+            "createdOn": "2022-01-12",
+            "lastUpdateOn": "2022-01-12"
+          },
+          {
+            "name": "BenchmarkRankRecords",
+            "modificationCount": 1,
+            "createdOn": "2022-01-12",
+            "lastUpdateOn": "2022-01-12"
+          },
+          {
+            "name": "BenchmarkRankRecords",
+            "modificationCount": 1,
+            "createdOn": "2022-01-12",
+            "lastUpdateOn": "2022-01-12"
+          },
+          {
+            "name": "BenchmarkRankRecords",
+            "modificationCount": 1,
+            "createdOn": "2022-01-12",
+            "lastUpdateOn": "2022-01-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aretext/aretext/syntax/languages",
+        "succeded": true,
+        "duration": "11.207s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkCParser-12",
+            "runs": 29943,
+            "nsPerOp": 42722,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkGolangParser-12",
+            "runs": 5397,
+            "nsPerOp": 199943,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJsonParser-12",
+            "runs": 231,
+            "nsPerOp": 4511813,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkPythonParser-12",
+            "runs": 7858,
+            "nsPerOp": 161521,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRustParser-12",
+            "runs": 24217,
+            "nsPerOp": 48161,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkXmlParser-12",
+            "runs": 3510,
+            "nsPerOp": 323974,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkXmlParserLongAttrRegression-12",
+            "runs": 5911,
+            "nsPerOp": 215370,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkCParser",
+            "modificationCount": 2,
+            "createdOn": "2022-06-05",
+            "lastUpdateOn": "2023-03-12"
+          },
+          {
+            "name": "BenchmarkGolangParser",
+            "modificationCount": 2,
+            "createdOn": "2022-06-05",
+            "lastUpdateOn": "2023-03-12"
+          },
+          {
+            "name": "BenchmarkJsonParser",
+            "modificationCount": 3,
+            "createdOn": "2021-09-05",
+            "lastUpdateOn": "2023-03-12"
+          },
+          {
+            "name": "BenchmarkPythonParser",
+            "modificationCount": 2,
+            "createdOn": "2022-06-05",
+            "lastUpdateOn": "2023-03-12"
+          },
+          {
+            "name": "BenchmarkRustParser",
+            "modificationCount": 2,
+            "createdOn": "2022-06-05",
+            "lastUpdateOn": "2023-03-12"
+          },
+          {
+            "name": "BenchmarkXmlParser",
+            "modificationCount": 1,
+            "createdOn": "2023-03-12",
+            "lastUpdateOn": "2023-03-12"
+          },
+          {
+            "name": "BenchmarkXmlParserLongAttrRegression",
+            "modificationCount": 1,
+            "createdOn": "2023-03-12",
+            "lastUpdateOn": "2023-03-12"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aretext/aretext/text",
+        "succeded": true,
+        "duration": "22.861s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFindAtEnd-12",
+            "runs": 2631,
+            "nsPerOp": 466467,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad/small-12",
+            "runs": 53865,
+            "nsPerOp": 22158,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad/medium-12",
+            "runs": 19339,
+            "nsPerOp": 61158,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad/large-12",
+            "runs": 118,
+            "nsPerOp": 11370813,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead/small-12",
+            "runs": 47331949,
+            "nsPerOp": 22.9,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead/medium-12",
+            "runs": 2214585,
+            "nsPerOp": 540.3,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkRead/large-12",
+            "runs": 8113,
+            "nsPerOp": 176433,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadRune/small-12",
+            "runs": 9124212,
+            "nsPerOp": 131.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadRune/medium-12",
+            "runs": 43963,
+            "nsPerOp": 24259,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReadRune/large-12",
+            "runs": 188,
+            "nsPerOp": 5918334,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert/empty-12",
+            "runs": 4611957,
+            "nsPerOp": 229.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert/small-12",
+            "runs": 6029518,
+            "nsPerOp": 221.4,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert/medium-12",
+            "runs": 5718241,
+            "nsPerOp": 195.5,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert/large-12",
+            "runs": 5003934,
+            "nsPerOp": 211.3,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFindAtEnd",
+            "modificationCount": 3,
+            "createdOn": "2021-03-18",
+            "lastUpdateOn": "2022-03-01"
+          },
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 5,
+            "createdOn": "2020-06-14",
+            "lastUpdateOn": "2021-03-18"
+          },
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 5,
+            "createdOn": "2020-06-14",
+            "lastUpdateOn": "2021-03-18"
+          },
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 5,
+            "createdOn": "2020-06-14",
+            "lastUpdateOn": "2021-03-18"
+          },
+          {
+            "name": "BenchmarkRead",
+            "modificationCount": 9,
+            "createdOn": "2020-06-14",
+            "lastUpdateOn": "2022-06-14"
+          },
+          {
+            "name": "BenchmarkRead",
+            "modificationCount": 9,
+            "createdOn": "2020-06-14",
+            "lastUpdateOn": "2022-06-14"
+          },
+          {
+            "name": "BenchmarkRead",
+            "modificationCount": 9,
+            "createdOn": "2020-06-14",
+            "lastUpdateOn": "2022-06-14"
+          },
+          {
+            "name": "BenchmarkReadRune",
+            "modificationCount": 1,
+            "createdOn": "2022-06-14",
+            "lastUpdateOn": "2022-06-14"
+          },
+          {
+            "name": "BenchmarkReadRune",
+            "modificationCount": 1,
+            "createdOn": "2022-06-14",
+            "lastUpdateOn": "2022-06-14"
+          },
+          {
+            "name": "BenchmarkReadRune",
+            "modificationCount": 1,
+            "createdOn": "2022-06-14",
+            "lastUpdateOn": "2022-06-14"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 4,
+            "createdOn": "2020-06-20",
+            "lastUpdateOn": "2021-03-18"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 4,
+            "createdOn": "2020-06-20",
+            "lastUpdateOn": "2021-03-18"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 4,
+            "createdOn": "2020-06-20",
+            "lastUpdateOn": "2021-03-18"
+          },
+          {
+            "name": "BenchmarkInsert",
+            "modificationCount": 4,
+            "createdOn": "2020-06-20",
+            "lastUpdateOn": "2021-03-18"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aretext/aretext/text/segment",
+        "succeded": true,
+        "duration": "1.229s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkGraphemeClusterIter-12",
+            "runs": 35855589,
+            "nsPerOp": 32.98,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkGraphemeClusterIter",
+            "modificationCount": 4,
+            "createdOn": "2020-07-31",
+            "lastUpdateOn": "2021-09-03"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/aretext/aretext/text/utf8",
+        "succeded": true,
+        "duration": "1.409s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkValidateAscii-12",
+            "runs": 490450,
+            "nsPerOp": 2801,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkValidateAscii",
+            "modificationCount": 1,
+            "createdOn": "2020-07-25",
+            "lastUpdateOn": "2020-07-25"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "aretext/aretext",
+    "name": "aretext",
+    "private": false,
+    "html_url": "https://github.com/aretext/aretext",
+    "description": "Minimalist text editor with vim-compatible key bindings.",
+    "fork": false,
+    "created_at": "2021-01-17T06:31:14Z",
+    "updated_at": "2023-10-05T20:32:54Z",
+    "pushed_at": "2023-10-19T15:21:08Z",
+    "ssh_url": "git@github.com:aretext/aretext.git",
+    "homepage": "https://aretext.org",
+    "stargazers_count": 227,
+    "watchers_count": 227,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_discussions": true,
+    "forks": 14,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 5,
+    "topics": [
+      "code-editor",
+      "minimalist",
+      "modal-editing",
+      "syntax-highlighting",
+      "terminal-based",
+      "text-editor",
+      "tui",
+      "vim"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "spdx_id": "GPL-3.0",
+      "node_id": "MDc6TGljZW5zZTk=",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 199,
+    "Lines": 115475,
+    "Blank": 3634,
+    "Code": 109596,
+    "Comment": 2245,
+    "Bytes": 3395295,
+    "Complexity": 3906
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "Name": "tidwall/tile38",
+  "Path": "./repositories/tidwall__tile38",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-27T02:26:42Z",
+    "benchmarkCount": 22,
+    "benchmarkSuiteCount": 6,
+    "successfulBenchmarkCount": 16,
+    "successfulBenchmarkSuitesCount": 6,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/tidwall/tile38/internal/collection",
+        "succeded": false,
+        "duration": "9.754s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkInsert_Fields-12",
+            "runs": 976328,
+            "nsPerOp": 2735,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkInsert_NoFields-12",
+            "runs": 1000000,
+            "nsPerOp": 1722,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkReplace_Fields",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "collection_test.go:673: shoot!"
+          },
+          {
+            "name": "BenchmarkReplace_NoFields",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "collection_test.go:673: shoot!"
+          },
+          {
+            "name": "BenchmarkGet_Fields",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "collection_test.go:704: shoot!"
+          },
+          {
+            "name": "BenchmarkGet_NoFields",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "collection_test.go:704: shoot!"
+          },
+          {
+            "name": "BenchmarkRemove_Fields",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "collection_test.go:735: shoot!"
+          },
+          {
+            "name": "BenchmarkRemove_NoFields",
+            "runs": 0,
+            "nsPerOp": 0,
+            "succeded": false,
+            "failureDesc": "collection_test.go:735: shoot!"
+          },
+          {
+            "name": "BenchmarkScan_Fields-12",
+            "runs": 260904,
+            "nsPerOp": 4333,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkScan_NoFields-12",
+            "runs": 253221,
+            "nsPerOp": 4367,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkInsert_Fields",
+            "modificationCount": 2,
+            "createdOn": "2018-10-10",
+            "lastUpdateOn": "2020-03-25"
+          },
+          {
+            "name": "BenchmarkInsert_NoFields",
+            "modificationCount": 2,
+            "createdOn": "2018-10-10",
+            "lastUpdateOn": "2020-03-25"
+          },
+          {
+            "name": "BenchmarkReplace_Fields",
+            "modificationCount": 2,
+            "createdOn": "2018-10-10",
+            "lastUpdateOn": "2020-03-25"
+          },
+          {
+            "name": "BenchmarkReplace_NoFields",
+            "modificationCount": 2,
+            "createdOn": "2018-10-10",
+            "lastUpdateOn": "2020-03-25"
+          },
+          {
+            "name": "BenchmarkGet_Fields",
+            "modificationCount": 2,
+            "createdOn": "2018-10-10",
+            "lastUpdateOn": "2020-03-25"
+          },
+          {
+            "name": "BenchmarkGet_NoFields",
+            "modificationCount": 2,
+            "createdOn": "2018-10-10",
+            "lastUpdateOn": "2020-03-25"
+          },
+          {
+            "name": "BenchmarkRemove_Fields",
+            "modificationCount": 2,
+            "createdOn": "2018-10-10",
+            "lastUpdateOn": "2020-03-25"
+          },
+          {
+            "name": "BenchmarkRemove_NoFields",
+            "modificationCount": 2,
+            "createdOn": "2018-10-10",
+            "lastUpdateOn": "2020-03-25"
+          },
+          {
+            "name": "BenchmarkScan_Fields",
+            "modificationCount": 1,
+            "createdOn": "2020-03-25",
+            "lastUpdateOn": "2020-03-25"
+          },
+          {
+            "name": "BenchmarkScan_NoFields",
+            "modificationCount": 1,
+            "createdOn": "2020-03-25",
+            "lastUpdateOn": "2020-03-25"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tidwall/tile38/internal/glob",
+        "succeded": true,
+        "duration": "2.572s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAscii-12",
+            "runs": 46833405,
+            "nsPerOp": 26.33,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkUnicode-12",
+            "runs": 38941893,
+            "nsPerOp": 32.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAscii",
+            "modificationCount": 2,
+            "createdOn": "2016-07-12",
+            "lastUpdateOn": "2016-09-08"
+          },
+          {
+            "name": "BenchmarkUnicode",
+            "modificationCount": 2,
+            "createdOn": "2016-07-12",
+            "lastUpdateOn": "2016-09-08"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tidwall/tile38/internal/log",
+        "succeded": true,
+        "duration": "3.394s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkLogPrintf-12",
+            "runs": 358964,
+            "nsPerOp": 3300,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLogJSONPrintf-12",
+            "runs": 357338,
+            "nsPerOp": 3462,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkLogPrintf",
+            "modificationCount": 5,
+            "createdOn": "2017-10-03",
+            "lastUpdateOn": "2022-09-26"
+          },
+          {
+            "name": "BenchmarkLogJSONPrintf",
+            "modificationCount": 3,
+            "createdOn": "2021-12-05",
+            "lastUpdateOn": "2022-09-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tidwall/tile38/internal/server",
+        "succeded": true,
+        "duration": "10.214s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJSONString-12",
+            "runs": 12237097,
+            "nsPerOp": 202.6,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkJSONMarshal-12",
+            "runs": 2386414,
+            "nsPerOp": 493.7,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFieldMatch-12",
+            "runs": 15212,
+            "nsPerOp": 78285,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLowerCompare-12",
+            "runs": 48398005,
+            "nsPerOp": 46.25,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkStringsLowerCompare-12",
+            "runs": 4947547,
+            "nsPerOp": 245.2,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJSONString",
+            "modificationCount": 1,
+            "createdOn": "2016-03-04",
+            "lastUpdateOn": "2016-03-04"
+          },
+          {
+            "name": "BenchmarkJSONMarshal",
+            "modificationCount": 2,
+            "createdOn": "2016-03-04",
+            "lastUpdateOn": "2019-10-26"
+          },
+          {
+            "name": "BenchmarkFieldMatch",
+            "modificationCount": 8,
+            "createdOn": "2020-03-25",
+            "lastUpdateOn": "2022-10-20"
+          },
+          {
+            "name": "BenchmarkLowerCompare",
+            "modificationCount": 1,
+            "createdOn": "2016-03-04",
+            "lastUpdateOn": "2016-03-04"
+          },
+          {
+            "name": "BenchmarkStringsLowerCompare",
+            "modificationCount": 1,
+            "createdOn": "2016-03-04",
+            "lastUpdateOn": "2016-03-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tidwall/tile38/internal/sstring",
+        "succeded": true,
+        "duration": "165.142s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkStore-12",
+            "runs": 1000000,
+            "nsPerOp": 1255,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkLoad-12",
+            "runs": 36843333,
+            "nsPerOp": 186.7,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkStore",
+            "modificationCount": 1,
+            "createdOn": "2022-09-19",
+            "lastUpdateOn": "2022-09-19"
+          },
+          {
+            "name": "BenchmarkLoad",
+            "modificationCount": 1,
+            "createdOn": "2022-09-19",
+            "lastUpdateOn": "2022-09-19"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/tidwall/tile38/tests",
+        "succeded": true,
+        "duration": "75.218s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkAll/search/KNN-12",
+            "runs": 2151,
+            "nsPerOp": 1248073,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkAll",
+            "modificationCount": 4,
+            "createdOn": "2020-04-08",
+            "lastUpdateOn": "2022-09-24"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "tidwall/tile38",
+    "name": "tile38",
+    "private": false,
+    "html_url": "https://github.com/tidwall/tile38",
+    "description": "Real-time Geospatial and Geofencing",
+    "fork": false,
+    "created_at": "2016-03-04T23:07:44Z",
+    "updated_at": "2023-10-23T11:13:25Z",
+    "pushed_at": "2023-10-19T16:15:32Z",
+    "ssh_url": "git@github.com:tidwall/tile38.git",
+    "homepage": "https://tile38.com",
+    "stargazers_count": 8732,
+    "watchers_count": 8732,
+    "has_issues": true,
+    "has_projects": false,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 545,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 137,
+    "topics": [
+      "database",
+      "geo",
+      "geofences",
+      "geospatial",
+      "index",
+      "location",
+      "spatial"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 118,
+    "Lines": 30633,
+    "Blank": 2214,
+    "Code": 27028,
+    "Comment": 1391,
+    "Bytes": 852843,
+    "Complexity": 5999
+  }
+}

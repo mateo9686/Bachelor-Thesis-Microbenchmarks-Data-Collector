@@ -1,0 +1,285 @@
+{
+  "Name": "jmigpin/editor",
+  "Path": "./repositories/jmigpin__editor",
+  "GoVersion": "1.18",
+  "BenchmarkData": {
+    "timestamp": "2023-10-26T09:33:33Z",
+    "benchmarkCount": 12,
+    "benchmarkSuiteCount": 7,
+    "successfulBenchmarkCount": 12,
+    "successfulBenchmarkSuitesCount": 7,
+    "goos": "linux",
+    "goarch": "amd64",
+    "suites": [
+      {
+        "pkg": "github.com/jmigpin/editor/core/toolbarparser",
+        "succeded": true,
+        "duration": "1.825s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkParseVars1-12",
+            "runs": 10000,
+            "nsPerOp": 169492,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkParseVars1",
+            "modificationCount": 1,
+            "createdOn": "2022-11-26",
+            "lastUpdateOn": "2022-11-26"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/jmigpin/editor/util/imageutil",
+        "succeded": true,
+        "duration": "8.512s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkFillRect1-12",
+            "runs": 33872,
+            "nsPerOp": 39249,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkFillRect2-12",
+            "runs": 56544,
+            "nsPerOp": 34400,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkDrawBGRA-12",
+            "runs": 476,
+            "nsPerOp": 2566304,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkFillRect1",
+            "modificationCount": 2,
+            "createdOn": "2017-09-28",
+            "lastUpdateOn": "2020-04-29"
+          },
+          {
+            "name": "BenchmarkFillRect2",
+            "modificationCount": 2,
+            "createdOn": "2017-09-28",
+            "lastUpdateOn": "2020-04-29"
+          },
+          {
+            "name": "BenchmarkDrawBGRA",
+            "modificationCount": 2,
+            "createdOn": "2017-09-28",
+            "lastUpdateOn": "2023-02-27"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/jmigpin/editor/util/iout/iorw",
+        "succeded": true,
+        "duration": "2.572s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkPrepareForCompare-12",
+            "runs": 550,
+            "nsPerOp": 2294600,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkPrepareForCompare",
+            "modificationCount": 1,
+            "createdOn": "2022-06-14",
+            "lastUpdateOn": "2022-06-14"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/jmigpin/editor/util/parseutil/pscan",
+        "succeded": true,
+        "duration": "2.105s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkScan1-12",
+            "runs": 5355,
+            "nsPerOp": 223027,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkScan1",
+            "modificationCount": 1,
+            "createdOn": "2023-02-15",
+            "lastUpdateOn": "2023-02-15"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/jmigpin/editor/util/parseutil/reslocparser",
+        "succeded": true,
+        "duration": "1.331s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkResLoc1-12",
+            "runs": 83295,
+            "nsPerOp": 13001,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkResLoc1",
+            "modificationCount": 2,
+            "createdOn": "2022-12-01",
+            "lastUpdateOn": "2022-12-01"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/jmigpin/editor/util/parseutil/sampleparsers",
+        "succeded": true,
+        "duration": "2.078s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkJsonParser-12",
+            "runs": 3164,
+            "nsPerOp": 416098,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkJsonParser",
+            "modificationCount": 1,
+            "createdOn": "2021-06-04",
+            "lastUpdateOn": "2021-06-04"
+          }
+        ]
+      },
+      {
+        "pkg": "github.com/jmigpin/editor/util/syncutil",
+        "succeded": true,
+        "duration": "6.855s",
+        "benchmarks": [
+          {
+            "name": "BenchmarkSyncedQ-12",
+            "runs": 4710,
+            "nsPerOp": 324351,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkChanQ-12",
+            "runs": 1156,
+            "nsPerOp": 1070575,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkWaitForSet-12",
+            "runs": 100,
+            "nsPerOp": 10856727,
+            "succeded": true,
+            "failureDesc": ""
+          },
+          {
+            "name": "BenchmarkNBChan-12",
+            "runs": 122,
+            "nsPerOp": 10605858,
+            "succeded": true,
+            "failureDesc": ""
+          }
+        ],
+        "benchmarkModificationInfo": [
+          {
+            "name": "BenchmarkSyncedQ",
+            "modificationCount": 1,
+            "createdOn": "2020-03-17",
+            "lastUpdateOn": "2020-03-17"
+          },
+          {
+            "name": "BenchmarkChanQ",
+            "modificationCount": 1,
+            "createdOn": "2020-03-17",
+            "lastUpdateOn": "2020-03-17"
+          },
+          {
+            "name": "BenchmarkWaitForSet",
+            "modificationCount": 2,
+            "createdOn": "2020-03-18",
+            "lastUpdateOn": "2020-03-23"
+          },
+          {
+            "name": "BenchmarkNBChan",
+            "modificationCount": 1,
+            "createdOn": "2020-03-18",
+            "lastUpdateOn": "2020-03-18"
+          }
+        ]
+      }
+    ]
+  },
+  "GitRepo": {
+    "full_name": "jmigpin/editor",
+    "name": "editor",
+    "private": false,
+    "html_url": "https://github.com/jmigpin/editor",
+    "description": "Source code editor in pure Go.",
+    "fork": false,
+    "created_at": "2016-10-11T13:31:50Z",
+    "updated_at": "2023-10-23T08:28:52Z",
+    "pushed_at": "2023-10-21T15:36:16Z",
+    "ssh_url": "git@github.com:jmigpin/editor.git",
+    "stargazers_count": 293,
+    "watchers_count": 293,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks": 14,
+    "language": "Go",
+    "archived": false,
+    "disabled": false,
+    "open_issues": 3,
+    "topics": [
+      "editor",
+      "golang"
+    ],
+    "allow_forking": true,
+    "is_template": false,
+    "cloning_error": "",
+    "score": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "url": "https://api.github.com/licenses/mit",
+      "spdx_id": "MIT",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "html_url": ""
+    }
+  },
+  "CodeStatistics": {
+    "Count": 360,
+    "Lines": 59593,
+    "Blank": 8238,
+    "Code": 44621,
+    "Comment": 6734,
+    "Bytes": 1281813,
+    "Complexity": 7691
+  }
+}
