@@ -53,8 +53,21 @@ MainLoop:
 			remainingToClone = maxResultsCount
 		}
 	}
+	repos = removeDuplicates(repos)
 	Save(repos, csvFilePath, strategies.CsvGitReposReadWriteStrategy{})
 	log.Printf("INFO: Data fetched and saved in %s", csvFilePath)
+}
+
+func removeDuplicates(repos []model.GitRepo) []model.GitRepo {
+	isAddedMap := make(map[string]bool)
+	var uniqueRepos []model.GitRepo
+	for _, repo := range repos {
+		if _, alreadyAdded := isAddedMap[repo.FullName]; !alreadyAdded {
+			uniqueRepos = append(uniqueRepos, repo)
+			isAddedMap[repo.FullName] = true
+		}
+	}
+	return uniqueRepos
 }
 
 func calculateRemainingToClone(availableCount, maxAllowedCount int) int {
